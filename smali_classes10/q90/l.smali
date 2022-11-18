@@ -1,36 +1,75 @@
-.class public final synthetic Lq90/l;
-.super Ljava/lang/Object;
+.class public final Lq90/l;
+.super Lxo0/c;
 .source "SourceFile"
 
-# interfaces
-.implements Lrz/g;
+
+# annotations
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.sharechat.appx.coresharechat.utils.PopupAndTooltipUtil"
+    f = "PopupAndTooltipUtil.kt"
+    l = {
+        0x41e,
+        0x25f
+    }
+    m = "checkAndShowDialog"
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Lq90/r;
+.field public b:Lq90/j;
+
+.field public c:Lvv0/u;
+
+.field public synthetic d:Ljava/lang/Object;
+
+.field public final synthetic e:Lq90/j;
+
+.field public f:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq90/r;)V
+.method public constructor <init>(Lq90/j;Lvo0/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq90/j;",
+            "Lvo0/d<",
+            "-",
+            "Lq90/l;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq90/l;->e:Lq90/j;
 
-    iput-object p1, p0, Lq90/l;->b:Lq90/r;
+    invoke-direct {p0, p2}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lq90/l;->b:Lq90/r;
+    iput-object p1, p0, Lq90/l;->d:Ljava/lang/Object;
 
-    check-cast p1, Lsharechat/model/chatroom/local/audiochat/e$a;
+    iget p1, p0, Lq90/l;->f:I
 
-    invoke-static {v0, p1}, Lq90/r;->sl(Lq90/r;Lsharechat/model/chatroom/local/audiochat/e$a;)V
+    const/high16 v0, -0x80000000
 
-    return-void
+    or-int/2addr p1, v0
+
+    iput p1, p0, Lq90/l;->f:I
+
+    iget-object p1, p0, Lq90/l;->e:Lq90/j;
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0, p0}, Lq90/j;->a(Lq90/j;Lvv0/u;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

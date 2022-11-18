@@ -21,6 +21,10 @@
 
 .field public static final com_google_android_gms_fonts_certs_prod:I = 0x7f030002
 
+.field public static final exo_playback_speeds:I = 0x7f030003
+
+.field public static final exo_speed_multiplied_by_100:I = 0x7f030004
+
 
 # direct methods
 .method private constructor <init>()V

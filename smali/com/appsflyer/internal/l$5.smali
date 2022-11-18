@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
@@ -24,10 +24,9 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Class;Lcom/appsflyer/internal/l$a;)V
+.method public constructor <init>(Ljava/lang/Class;Lcom/appsflyer/internal/l$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/l$5;->AFInAppEventParameterName:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/appsflyer/internal/l$5;->values:Lcom/appsflyer/internal/l$a;
@@ -109,14 +108,14 @@
     const-string p3, "com.facebook.platform.APPLINK_NATIVE_URL"
 
     .line 6
-    invoke-virtual {p1, p3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p3}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
     const-string v0, "target_url"
 
     .line 7
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -141,7 +140,7 @@
     const-string v1, "promo_code"
 
     .line 10
-    invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

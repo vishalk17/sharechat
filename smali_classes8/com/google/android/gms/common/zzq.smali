@@ -1,0 +1,118 @@
+.class public final Lcom/google/android/gms/common/zzq;
+.super Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;
+.source "SourceFile"
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/google/android/gms/common/zzq;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field public final b:Z
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:I
+
+.field public final e:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lmj/w;
+
+    invoke-direct {v0}, Lmj/w;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/common/zzq;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(ZLjava/lang/String;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
+
+    iput-boolean p1, p0, Lcom/google/android/gms/common/zzq;->b:Z
+
+    iput-object p2, p0, Lcom/google/android/gms/common/zzq;->c:Ljava/lang/String;
+
+    invoke-static {p3}, Landroidx/lifecycle/i;->q(I)I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    iput p1, p0, Lcom/google/android/gms/common/zzq;->d:I
+
+    .line 2
+    invoke-static {p4}, Lmm/i0;->N(I)I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    iput p1, p0, Lcom/google/android/gms/common/zzq;->e:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 3
+
+    const/16 p2, 0x4f45
+
+    .line 1
+    invoke-static {p1, p2}, Lrj/b;->q(Landroid/os/Parcel;I)I
+
+    move-result p2
+
+    .line 2
+    iget-boolean v0, p0, Lcom/google/android/gms/common/zzq;->b:Z
+
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-static {p1, v1, v0}, Lrj/b;->b(Landroid/os/Parcel;IZ)V
+
+    iget-object v0, p0, Lcom/google/android/gms/common/zzq;->c:Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-static {p1, v1, v0, v2}, Lrj/b;->l(Landroid/os/Parcel;ILjava/lang/String;Z)V
+
+    iget v0, p0, Lcom/google/android/gms/common/zzq;->d:I
+
+    const/4 v1, 0x3
+
+    .line 5
+    invoke-static {p1, v1, v0}, Lrj/b;->g(Landroid/os/Parcel;II)V
+
+    iget v0, p0, Lcom/google/android/gms/common/zzq;->e:I
+
+    const/4 v1, 0x4
+
+    .line 6
+    invoke-static {p1, v1, v0}, Lrj/b;->g(Landroid/os/Parcel;II)V
+
+    .line 7
+    invoke-static {p1, p2}, Lrj/b;->r(Landroid/os/Parcel;I)V
+
+    return-void
+.end method

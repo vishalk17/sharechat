@@ -24,13 +24,19 @@
 
 # virtual methods
 .method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 1
+    .locals 2
 
     iget-object v0, p0, Landroidx/emoji2/text/a;->b:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Landroidx/emoji2/text/b;->a(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
+    .line 1
+    new-instance v1, Ljava/lang/Thread;
 
-    move-result-object p1
+    invoke-direct {v1, p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 
-    return-object p1
+    const/16 p1, 0xa
+
+    .line 2
+    invoke-virtual {v1, p1}, Ljava/lang/Thread;->setPriority(I)V
+
+    return-object v1
 .end method

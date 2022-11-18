@@ -1,98 +1,56 @@
-.class Landroidx/recyclerview/widget/i$a;
+.class public final Landroidx/recyclerview/widget/i$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/recyclerview/widget/i;->v()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/recyclerview/widget/i;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/recyclerview/widget/i$a$a;
+    }
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Ljava/util/ArrayList;
+# static fields
+.field public static final b:Landroidx/recyclerview/widget/i$a;
 
-.field final synthetic c:Landroidx/recyclerview/widget/i;
+
+# instance fields
+.field public final a:Landroidx/recyclerview/widget/i$a$a;
 
 
 # direct methods
-.method constructor <init>(Landroidx/recyclerview/widget/i;Ljava/util/ArrayList;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    .line 1
-    iput-object p1, p0, Landroidx/recyclerview/widget/i$a;->c:Landroidx/recyclerview/widget/i;
+    new-instance v0, Landroidx/recyclerview/widget/i$a;
 
-    iput-object p2, p0, Landroidx/recyclerview/widget/i$a;->b:Ljava/util/ArrayList;
+    sget-object v1, Landroidx/recyclerview/widget/i$a$a;->NO_STABLE_IDS:Landroidx/recyclerview/widget/i$a$a;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0, v1}, Landroidx/recyclerview/widget/i$a;-><init>(Landroidx/recyclerview/widget/i$a$a;)V
+
+    sput-object v0, Landroidx/recyclerview/widget/i$a;->b:Landroidx/recyclerview/widget/i$a;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public run()V
-    .locals 8
+.method public constructor <init>(Landroidx/recyclerview/widget/i$a$a;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/i$a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroidx/recyclerview/widget/i$j;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object v2, p0, Landroidx/recyclerview/widget/i$a;->c:Landroidx/recyclerview/widget/i;
-
-    iget-object v3, v1, Landroidx/recyclerview/widget/i$j;->a:Landroidx/recyclerview/widget/RecyclerView$d0;
-
-    iget v4, v1, Landroidx/recyclerview/widget/i$j;->b:I
-
-    iget v5, v1, Landroidx/recyclerview/widget/i$j;->c:I
-
-    iget v6, v1, Landroidx/recyclerview/widget/i$j;->d:I
-
-    iget v7, v1, Landroidx/recyclerview/widget/i$j;->e:I
-
-    invoke-virtual/range {v2 .. v7}, Landroidx/recyclerview/widget/i;->U(Landroidx/recyclerview/widget/RecyclerView$d0;IIII)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Landroidx/recyclerview/widget/i$a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
-
-    .line 4
-    iget-object v0, p0, Landroidx/recyclerview/widget/i$a;->c:Landroidx/recyclerview/widget/i;
-
-    iget-object v0, v0, Landroidx/recyclerview/widget/i;->m:Ljava/util/ArrayList;
-
-    iget-object v1, p0, Landroidx/recyclerview/widget/i$a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    iput-object p1, p0, Landroidx/recyclerview/widget/i$a;->a:Landroidx/recyclerview/widget/i$a$a;
 
     return-void
 .end method

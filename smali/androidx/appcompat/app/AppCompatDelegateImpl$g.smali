@@ -1,113 +1,68 @@
-.class Landroidx/appcompat/app/AppCompatDelegateImpl$g;
-.super Landroidx/core/view/l0;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/app/AppCompatDelegateImpl;->J0(Lj/b$a;)Lj/b;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/app/AppCompatDelegateImpl;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x9
+    name = "g"
 .end annotation
 
 
-# instance fields
-.field final synthetic a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-
 # direct methods
-.method constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    invoke-direct {p0}, Landroidx/core/view/l0;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public b(Landroid/view/View;)V
-    .locals 1
+.method public static a(Landroid/content/res/Configuration;Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget v0, p0, Landroid/content/res/Configuration;->colorMode:I
 
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroidx/appcompat/widget/ActionBarContextView;
+    and-int/lit8 v0, v0, 0x3
 
-    const/high16 v0, 0x3f800000    # 1.0f
+    iget v1, p1, Landroid/content/res/Configuration;->colorMode:I
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setAlpha(F)V
+    and-int/lit8 v1, v1, 0x3
 
-    .line 2
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->t:Landroidx/core/view/j0;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Landroidx/core/view/j0;->h(Landroidx/core/view/k0;)Landroidx/core/view/j0;
-
-    .line 3
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iput-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->t:Landroidx/core/view/j0;
-
-    return-void
-.end method
-
-.method public c(Landroid/view/View;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
-
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroidx/appcompat/widget/ActionBarContextView;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/ActionBarContextView;->setVisibility(I)V
+    if-eq v0, v1, :cond_0
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget v0, p2, Landroid/content/res/Configuration;->colorMode:I
 
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroidx/appcompat/widget/ActionBarContextView;
+    or-int/2addr v0, v1
 
-    const/16 v0, 0x20
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->sendAccessibilityEvent(I)V
+    iput v0, p2, Landroid/content/res/Configuration;->colorMode:I
 
     .line 3
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    :cond_0
+    iget p0, p0, Landroid/content/res/Configuration;->colorMode:I
 
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroidx/appcompat/widget/ActionBarContextView;
+    and-int/lit8 p0, p0, 0xc
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
+    iget p1, p1, Landroid/content/res/Configuration;->colorMode:I
 
-    move-result-object p1
+    and-int/lit8 p1, p1, 0xc
 
-    instance-of p1, p1, Landroid/view/View;
-
-    if-eqz p1, :cond_0
+    if-eq p0, p1, :cond_1
 
     .line 4
-    iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$g;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget p0, p2, Landroid/content/res/Configuration;->colorMode:I
 
-    iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroidx/appcompat/widget/ActionBarContextView;
+    or-int/2addr p0, p1
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
+    iput p0, p2, Landroid/content/res/Configuration;->colorMode:I
 
-    move-result-object p1
-
-    check-cast p1, Landroid/view/View;
-
-    invoke-static {p1}, Landroidx/core/view/c0;->r0(Landroid/view/View;)V
-
-    :cond_0
+    :cond_1
     return-void
 .end method

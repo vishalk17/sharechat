@@ -1,42 +1,36 @@
-.class public interface abstract Lv/g;
+.class public final Lv/g;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lv/d;
-.implements Lv/b;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lv/d<",
-        "TE;>;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic b:Lv/h$a;
+
+
+# direct methods
+.method public constructor <init>(Lv/h$a;ILandroid/net/Uri;ZLandroid/os/Bundle;)V
+    .locals 0
+
+    iput-object p1, p0, Lv/g;->b:Lv/h$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract add(Ljava/lang/Object;)Lv/g;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)",
-            "Lv/g<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract remove(Ljava/lang/Object;)Lv/g;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)",
-            "Lv/g<",
-            "TE;>;"
-        }
-    .end annotation
+    iget-object v0, p0, Lv/g;->b:Lv/h$a;
+
+    iget-object v0, v0, Lv/h$a;->c:Lv/a;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
 .end method

@@ -19,13 +19,7 @@
 
 .field public static final abc_config_actionMenuItemAllCaps:I = 0x7f050001
 
-.field public static final enable_system_alarm_service_default:I = 0x7f050003
-
-.field public static final enable_system_job_service_default:I = 0x7f050005
-
 .field public static final mtrl_btn_textappearance_all_caps:I = 0x7f05000b
-
-.field public static final workmanager_test_configuration:I = 0x7f05000c
 
 
 # direct methods

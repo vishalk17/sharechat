@@ -1,132 +1,115 @@
-.class final Landroidx/transition/c$b;
-.super Landroid/util/Property;
+.class public final Landroidx/transition/c$b;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroidx/transition/f$d;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/transition/c;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/transition/c;->l(Ljava/lang/Object;Landroid/view/View;Ljava/util/ArrayList;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x1
     name = null
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroid/util/Property<",
-        "Landroid/graphics/drawable/Drawable;",
-        "Landroid/graphics/PointF;",
-        ">;"
-    }
 .end annotation
 
 
 # instance fields
-.field private a:Landroid/graphics/Rect;
+.field public final synthetic b:Landroid/view/View;
+
+.field public final synthetic c:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
+.method public constructor <init>(Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+    iput-object p1, p0, Landroidx/transition/c$b;->b:Landroid/view/View;
 
-    .line 2
-    new-instance p1, Landroid/graphics/Rect;
+    iput-object p2, p0, Landroidx/transition/c$b;->c:Ljava/util/ArrayList;
 
-    invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
-
-    iput-object p1, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/PointF;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->copyBounds(Landroid/graphics/Rect;)V
-
-    .line 2
-    new-instance p1, Landroid/graphics/PointF;
-
-    iget-object v0, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
-
-    iget v1, v0, Landroid/graphics/Rect;->left:I
-
-    int-to-float v1, v1
-
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    int-to-float v0, v0
-
-    invoke-direct {p1, v1, v0}, Landroid/graphics/PointF;-><init>(FF)V
-
-    return-object p1
-.end method
-
-.method public b(Landroid/graphics/drawable/Drawable;Landroid/graphics/PointF;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->copyBounds(Landroid/graphics/Rect;)V
-
-    .line 2
-    iget-object v0, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
-
-    iget v1, p2, Landroid/graphics/PointF;->x:F
-
-    invoke-static {v1}, Ljava/lang/Math;->round(F)I
-
-    move-result v1
-
-    iget p2, p2, Landroid/graphics/PointF;->y:F
-
-    invoke-static {p2}, Ljava/lang/Math;->round(F)I
-
-    move-result p2
-
-    invoke-virtual {v0, v1, p2}, Landroid/graphics/Rect;->offsetTo(II)V
-
-    .line 3
-    iget-object p2, p0, Landroidx/transition/c$b;->a:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
+.method public final a()V
+    .locals 0
 
     return-void
 .end method
 
-.method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final b()V
     .locals 0
 
-    .line 1
-    check-cast p1, Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p0, p1}, Landroidx/transition/c$b;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/PointF;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method
 
-.method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public final c()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d(Landroidx/transition/f;)V
     .locals 0
 
     .line 1
-    check-cast p1, Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p1, p0}, Landroidx/transition/f;->v(Landroidx/transition/f$d;)Landroidx/transition/f;
 
-    check-cast p2, Landroid/graphics/PointF;
+    .line 2
+    invoke-virtual {p1, p0}, Landroidx/transition/f;->a(Landroidx/transition/f$d;)Landroidx/transition/f;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/transition/c$b;->b(Landroid/graphics/drawable/Drawable;Landroid/graphics/PointF;)V
+    return-void
+.end method
 
+.method public final e(Landroidx/transition/f;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1, p0}, Landroidx/transition/f;->v(Landroidx/transition/f$d;)Landroidx/transition/f;
+
+    .line 2
+    iget-object p1, p0, Landroidx/transition/c$b;->b:Landroid/view/View;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 3
+    iget-object p1, p0, Landroidx/transition/c$b;->c:Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p1, :cond_0
+
+    .line 4
+    iget-object v2, p0, Landroidx/transition/c$b;->c:Ljava/util/ArrayList;
+
+    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
     return-void
 .end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/notification_dark_theme_bg" />
+    <corners android:topLeftRadius="@dimen/size16" android:topRightRadius="@dimen/size16" android:bottomLeftRadius="@dimen/size0" android:bottomRightRadius="@dimen/size0" />
+    <padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+</shape>

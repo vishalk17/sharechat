@@ -1,4 +1,4 @@
-.class public Lj4/a;
+.class public final Lj4/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -11,143 +11,202 @@
 .end annotation
 
 
-# instance fields
-.field private final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lj4/a$a<",
-            "*>;>;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method private constructor <init>()V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lj4/a;->a:Ljava/util/List;
-
     return-void
 .end method
 
-
-# virtual methods
-.method public declared-synchronized a(Ljava/lang/Class;Lcom/bumptech/glide/load/d;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;",
-            "Lcom/bumptech/glide/load/d<",
-            "TT;>;)V"
-        }
-    .end annotation
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lj4/a;->a:Ljava/util/List;
-
-    new-instance v1, Lj4/a$a;
-
-    invoke-direct {v1, p1, p2}, Lj4/a$a;-><init>(Ljava/lang/Class;Lcom/bumptech/glide/load/d;)V
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 2
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
-.end method
-
-.method public declared-synchronized b(Ljava/lang/Class;)Lcom/bumptech/glide/load/d;
+.method public static a(ILj4/b;)Landroid/graphics/ColorFilter;
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TT;>;)",
-            "Lcom/bumptech/glide/load/d<",
-            "TT;>;"
-        }
-    .end annotation
-
-    monitor-enter p0
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lj4/a;->a:Ljava/util/List;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    const/16 v2, 0x1d
 
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-lt v0, v2, :cond_1
 
-    move-result v1
+    .line 2
+    invoke-static {p1}, Lj4/d;->a(Lj4/b;)Ljava/lang/Object;
 
-    if-eqz v1, :cond_1
+    move-result-object p1
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-static {p0, p1}, Lj4/a$a;->a(ILjava/lang/Object;)Landroid/graphics/ColorFilter;
 
     move-result-object v1
 
-    check-cast v1, Lj4/a$a;
-
-    .line 2
-    invoke-virtual {v1, p1}, Lj4/a$a;->a(Ljava/lang/Class;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 3
-    iget-object p1, v1, Lj4/a$a;->b:Lcom/bumptech/glide/load/d;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-object p1
+    :cond_0
+    return-object v1
 
     :cond_1
-    const/4 p1, 0x0
+    if-nez p1, :cond_2
+
+    :goto_0
+    move-object p1, v1
+
+    goto :goto_1
 
     .line 4
-    monitor-exit p0
+    :cond_2
+    sget-object v0, Lj4/c;->a:[I
 
-    return-object p1
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
-    :catchall_0
-    move-exception p1
+    move-result p1
 
-    monitor-exit p0
+    aget p1, v0, p1
 
-    throw p1
+    packed-switch p1, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 5
+    :pswitch_0
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->LIGHTEN:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 6
+    :pswitch_1
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DARKEN:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 7
+    :pswitch_2
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->OVERLAY:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 8
+    :pswitch_3
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SCREEN:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 9
+    :pswitch_4
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->MULTIPLY:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 10
+    :pswitch_5
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->ADD:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 11
+    :pswitch_6
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->XOR:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 12
+    :pswitch_7
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DST_ATOP:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 13
+    :pswitch_8
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 14
+    :pswitch_9
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DST_OUT:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 15
+    :pswitch_a
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SRC_OUT:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 16
+    :pswitch_b
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 17
+    :pswitch_c
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 18
+    :pswitch_d
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DST_OVER:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 19
+    :pswitch_e
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SRC_OVER:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 20
+    :pswitch_f
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->DST:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 21
+    :pswitch_10
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->SRC:Landroid/graphics/PorterDuff$Mode;
+
+    goto :goto_1
+
+    .line 22
+    :pswitch_11
+    sget-object p1, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
+
+    :goto_1
+    if-eqz p1, :cond_3
+
+    .line 23
+    new-instance v1, Landroid/graphics/PorterDuffColorFilter;
+
+    invoke-direct {v1, p0, p1}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    :cond_3
+    return-object v1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

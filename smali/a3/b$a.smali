@@ -2,9 +2,6 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements La3/i$a;
-
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingClass;
@@ -16,18 +13,9 @@
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "La3/i$a<",
-        "Landroid/graphics/Bitmap;",
-        ">;"
-    }
-.end annotation
-
 
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>()V
     .locals 0
 
     .line 1
@@ -36,28 +24,62 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;Lg3/m;Lcoil/e;)La3/i;
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
-    .line 1
-    check-cast p1, Landroid/graphics/Bitmap;
+    invoke-direct {p0}, La3/b$a;-><init>()V
 
-    invoke-virtual {p0, p1, p2, p3}, La3/b$a;->b(Landroid/graphics/Bitmap;Lg3/m;Lcoil/e;)La3/i;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method
 
-.method public b(Landroid/graphics/Bitmap;Lg3/m;Lcoil/e;)La3/i;
-    .locals 0
 
-    .line 1
-    new-instance p3, La3/b;
+# virtual methods
+.method public final a(I)Z
+    .locals 1
 
-    invoke-direct {p3, p1, p2}, La3/b;-><init>(Landroid/graphics/Bitmap;Lg3/m;)V
+    invoke-static {p1}, Ljava/lang/Character;->getType(I)I
 
-    return-object p3
+    move-result p1
+
+    const/16 v0, 0x17
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x14
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x16
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x1e
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x1d
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x18
+
+    if-eq p1, v0, :cond_1
+
+    const/16 v0, 0x15
+
+    if-ne p1, v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    :goto_1
+    return p1
 .end method

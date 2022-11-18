@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "d"
 .end annotation
 
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/appsflyer/internal/ae;Lcom/appsflyer/internal/g;B)V
+.method public synthetic constructor <init>(Lcom/appsflyer/internal/ae;Lcom/appsflyer/internal/g;B)V
     .locals 0
 
     .line 1
@@ -83,7 +83,7 @@
     .line 7
     iget-object v3, v1, Lcom/appsflyer/internal/ae$d;->values:Lcom/appsflyer/internal/ae;
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->isStopped()Z
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->isStopped()Z
 
     move-result v3
 
@@ -187,24 +187,24 @@
     iget-object v13, v13, Lcom/appsflyer/internal/bt;->valueOf:Ljava/lang/String;
 
     .line 19
-    invoke-interface {v3, v14, v13}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v14, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v13, "response"
 
     const-string v14, "TIMEOUT"
 
     .line 20
-    invoke-interface {v3, v13, v14}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v13, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 21
     new-instance v13, Lcom/appsflyer/internal/bu;
 
     invoke-direct {v13}, Lcom/appsflyer/internal/bu;-><init>()V
 
-    invoke-interface {v3, v13}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+    invoke-virtual {v3, v13}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     .line 22
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -246,7 +246,7 @@
     :cond_4
     iget-object v3, v13, Lcom/appsflyer/internal/bt;->AFKeystoreWrapper:Ljava/util/Map;
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_5
     :goto_1
@@ -258,7 +258,7 @@
 
     .line 29
     :cond_6
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v3
 

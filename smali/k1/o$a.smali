@@ -1,4 +1,4 @@
-.class Lk1/o$a;
+.class public final Lk1/o$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,47 +9,25 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x19
     name = "a"
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lk1/o;Lj1/e;Ld1/d;I)V
+.method private constructor <init>()V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance p1, Ljava/lang/ref/WeakReference;
+    return-void
+.end method
 
-    invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+.method public synthetic constructor <init>(Lep0/k;)V
+    .locals 0
 
-    .line 3
-    iget-object p1, p2, Lj1/e;->O:Lj1/d;
-
-    invoke-virtual {p3, p1}, Ld1/d;->x(Ljava/lang/Object;)I
-
-    .line 4
-    iget-object p1, p2, Lj1/e;->P:Lj1/d;
-
-    invoke-virtual {p3, p1}, Ld1/d;->x(Ljava/lang/Object;)I
-
-    .line 5
-    iget-object p1, p2, Lj1/e;->Q:Lj1/d;
-
-    invoke-virtual {p3, p1}, Ld1/d;->x(Ljava/lang/Object;)I
-
-    .line 6
-    iget-object p1, p2, Lj1/e;->R:Lj1/d;
-
-    invoke-virtual {p3, p1}, Ld1/d;->x(Ljava/lang/Object;)I
-
-    .line 7
-    iget-object p1, p2, Lj1/e;->S:Lj1/d;
-
-    invoke-virtual {p3, p1}, Ld1/d;->x(Ljava/lang/Object;)I
+    invoke-direct {p0}, Lk1/o$a;-><init>()V
 
     return-void
 .end method

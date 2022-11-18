@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final vector_tint_color:I = 0x7f060366
+.field public static final vector_tint_color:I = 0x7f06051c
 
-.field public static final vector_tint_theme_color:I = 0x7f060367
+.field public static final vector_tint_theme_color:I = 0x7f06051d
 
 
 # direct methods

@@ -8,10 +8,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/appsflyer/internal/ai;
 
     invoke-direct {v0}, Lcom/appsflyer/internal/ai;-><init>()V
@@ -24,13 +23,12 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static AFInAppEventParameterName(Ljava/io/File;)Lcom/appsflyer/internal/h;
+.method public static AFInAppEventParameterName(Ljava/io/File;)Lcom/appsflyer/internal/h;
     .locals 4
 
     const/4 v0, 0x0
@@ -147,7 +145,7 @@
     return-object v0
 .end method
 
-.method static AFInAppEventParameterName(Landroid/content/Context;)Ljava/util/List;
+.method public static AFInAppEventParameterName(Landroid/content/Context;)Ljava/util/List;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -229,7 +227,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -250,7 +248,7 @@
     return-object v0
 .end method
 
-.method static AFKeystoreWrapper()Lcom/appsflyer/internal/ai;
+.method public static AFKeystoreWrapper()Lcom/appsflyer/internal/ai;
     .locals 1
 
     .line 1
@@ -259,7 +257,7 @@
     return-object v0
 .end method
 
-.method static AFKeystoreWrapper(Landroid/content/Context;)Ljava/io/File;
+.method public static AFKeystoreWrapper(Landroid/content/Context;)Ljava/io/File;
     .locals 2
 
     .line 2
@@ -276,7 +274,7 @@
     return-object v0
 .end method
 
-.method static valueOf(Ljava/lang/String;Landroid/content/Context;)V
+.method public static valueOf(Ljava/lang/String;Landroid/content/Context;)V
     .locals 3
 
     .line 1

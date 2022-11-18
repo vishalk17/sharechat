@@ -62,10 +62,9 @@
 
 
 # virtual methods
-.method addListener(Lio/intercom/android/nexus/NexusListener;)V
+.method public addListener(Lio/intercom/android/nexus/NexusListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEventPropagator;->listeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -73,10 +72,9 @@
     return-void
 .end method
 
-.method cacheEvent(Lio/intercom/android/nexus/NexusEvent;)V
+.method public cacheEvent(Lio/intercom/android/nexus/NexusEvent;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEventPropagator;->cache:Landroid/util/LruCache;
 
     invoke-virtual {p1}, Lio/intercom/android/nexus/NexusEvent;->getGuid()Ljava/lang/String;
@@ -353,10 +351,9 @@
     return-void
 .end method
 
-.method removeListener(Lio/intercom/android/nexus/NexusListener;)V
+.method public removeListener(Lio/intercom/android/nexus/NexusListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEventPropagator;->listeners:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z

@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "e"
 .end annotation
 
@@ -55,7 +55,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const/16 v0, 0x70
@@ -185,7 +185,7 @@
     .end array-data
 .end method
 
-.method constructor <init>(Ljava/util/Map;Landroid/content/Context;)V
+.method public constructor <init>(Ljava/util/Map;Landroid/content/Context;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1626,7 +1626,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
@@ -1645,7 +1645,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x0
 
@@ -1656,7 +1656,7 @@
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 8
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 

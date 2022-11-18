@@ -1,4 +1,4 @@
-.class Landroidx/appcompat/app/AlertController$a;
+.class public final Landroidx/appcompat/app/AlertController$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/appcompat/app/AlertController;
+.field public final synthetic b:Landroidx/appcompat/app/AlertController;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/app/AlertController;)V
+.method public constructor <init>(Landroidx/appcompat/app/AlertController;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$a;->b:Landroidx/appcompat/app/AlertController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 2
 
     .line 1
@@ -103,11 +102,11 @@
     :cond_3
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$a;->b:Landroidx/appcompat/app/AlertController;
 
-    iget-object v0, p1, Landroidx/appcompat/app/AlertController;->R:Landroid/os/Handler;
+    iget-object v0, p1, Landroidx/appcompat/app/AlertController;->Q:Landroidx/appcompat/app/AlertController$c;
 
     const/4 v1, 0x1
 
-    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/f;
+    iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/s;
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 

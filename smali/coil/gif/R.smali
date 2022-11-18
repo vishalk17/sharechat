@@ -13,7 +13,6 @@
         Lcoil/gif/R$id;,
         Lcoil/gif/R$integer;,
         Lcoil/gif/R$layout;,
-        Lcoil/gif/R$menu;,
         Lcoil/gif/R$string;,
         Lcoil/gif/R$style;,
         Lcoil/gif/R$styleable;

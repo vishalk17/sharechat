@@ -1,656 +1,1412 @@
-.class public Landroidx/recyclerview/widget/s;
-.super Landroidx/recyclerview/widget/c0;
+.class public final Landroidx/recyclerview/widget/s;
+.super Landroidx/recyclerview/widget/RecyclerView$m;
 .source "SourceFile"
+
+# interfaces
+.implements Landroidx/recyclerview/widget/RecyclerView$r;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/recyclerview/widget/s$d;,
+        Landroidx/recyclerview/widget/s$c;
+    }
+.end annotation
+
+
+# static fields
+.field public static final E:[I
+
+.field public static final F:[I
 
 
 # instance fields
-.field private d:Landroidx/recyclerview/widget/x;
+.field public final A:Landroid/animation/ValueAnimator;
 
-.field private e:Landroidx/recyclerview/widget/x;
+.field public B:I
+
+.field public final C:Landroidx/recyclerview/widget/s$a;
+
+.field public final D:Landroidx/recyclerview/widget/s$b;
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:Landroid/graphics/drawable/StateListDrawable;
+
+.field public final e:Landroid/graphics/drawable/Drawable;
+
+.field public final f:I
+
+.field public final g:I
+
+.field public final h:Landroid/graphics/drawable/StateListDrawable;
+
+.field public final i:Landroid/graphics/drawable/Drawable;
+
+.field public final j:I
+
+.field public final k:I
+
+.field public l:I
+
+.field public m:I
+
+.field public n:F
+
+.field public o:I
+
+.field public p:I
+
+.field public q:F
+
+.field public r:I
+
+.field public s:I
+
+.field public t:Landroidx/recyclerview/widget/RecyclerView;
+
+.field public u:Z
+
+.field public v:Z
+
+.field public w:I
+
+.field public x:I
+
+.field public final y:[I
+
+.field public final z:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [I
+
+    const v1, 0x10100a7
+
+    const/4 v2, 0x0
+
+    aput v1, v0, v2
 
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/c0;-><init>()V
+    sput-object v0, Landroidx/recyclerview/widget/s;->E:[I
+
+    new-array v0, v2, [I
+
+    .line 2
+    sput-object v0, Landroidx/recyclerview/widget/s;->F:[I
 
     return-void
 .end method
 
-.method private m(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;)F
-    .locals 10
+.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;Landroid/graphics/drawable/StateListDrawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/StateListDrawable;Landroid/graphics/drawable/Drawable;III)V
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->U()I
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$m;-><init>()V
 
-    move-result v0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    :cond_0
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const v4, 0x7fffffff
-
-    const/high16 v5, -0x80000000
-
-    move-object v4, v3
-
-    const v5, 0x7fffffff
-
-    const/high16 v6, -0x80000000
-
-    :goto_0
-    if-ge v2, v0, :cond_4
+    const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p1, v2}, Landroidx/recyclerview/widget/RecyclerView$p;->T(I)Landroid/view/View;
-
-    move-result-object v7
+    iput v0, p0, Landroidx/recyclerview/widget/s;->r:I
 
     .line 3
-    invoke-virtual {p1, v7}, Landroidx/recyclerview/widget/RecyclerView$p;->o0(Landroid/view/View;)I
-
-    move-result v8
-
-    const/4 v9, -0x1
-
-    if-ne v8, v9, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    if-ge v8, v5, :cond_2
-
-    move-object v3, v7
-
-    move v5, v8
-
-    :cond_2
-    if-le v8, v6, :cond_3
-
-    move-object v4, v7
-
-    move v6, v8
-
-    :cond_3
-    :goto_1
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_4
-    if-eqz v3, :cond_7
-
-    if-nez v4, :cond_5
-
-    goto :goto_2
+    iput v0, p0, Landroidx/recyclerview/widget/s;->s:I
 
     .line 4
-    :cond_5
-    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/x;->g(Landroid/view/View;)I
-
-    move-result p1
+    iput-boolean v0, p0, Landroidx/recyclerview/widget/s;->u:Z
 
     .line 5
-    invoke-virtual {p2, v4}, Landroidx/recyclerview/widget/x;->g(Landroid/view/View;)I
-
-    move-result v0
+    iput-boolean v0, p0, Landroidx/recyclerview/widget/s;->v:Z
 
     .line 6
-    invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
-
-    move-result p1
+    iput v0, p0, Landroidx/recyclerview/widget/s;->w:I
 
     .line 7
-    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/x;->d(Landroid/view/View;)I
+    iput v0, p0, Landroidx/recyclerview/widget/s;->x:I
 
-    move-result v0
+    const/4 v1, 0x2
+
+    new-array v2, v1, [I
 
     .line 8
-    invoke-virtual {p2, v4}, Landroidx/recyclerview/widget/x;->d(Landroid/view/View;)I
+    iput-object v2, p0, Landroidx/recyclerview/widget/s;->y:[I
 
-    move-result p2
+    new-array v2, v1, [I
 
     .line 9
-    invoke-static {v0, p2}, Ljava/lang/Math;->max(II)I
+    iput-object v2, p0, Landroidx/recyclerview/widget/s;->z:[I
 
-    move-result p2
+    new-array v1, v1, [F
 
-    sub-int/2addr p2, p1
+    .line 10
+    fill-array-data v1, :array_0
 
-    if-nez p2, :cond_6
+    .line 11
+    invoke-static {v1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
-    return v1
+    move-result-object v1
 
-    :cond_6
-    int-to-float p1, p2
+    iput-object v1, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
 
-    mul-float p1, p1, v1
+    .line 12
+    iput v0, p0, Landroidx/recyclerview/widget/s;->B:I
 
-    sub-int/2addr v6, v5
+    .line 13
+    new-instance v0, Landroidx/recyclerview/widget/s$a;
 
-    add-int/lit8 v6, v6, 0x1
+    invoke-direct {v0, p0}, Landroidx/recyclerview/widget/s$a;-><init>(Landroidx/recyclerview/widget/s;)V
 
-    int-to-float p2, v6
+    iput-object v0, p0, Landroidx/recyclerview/widget/s;->C:Landroidx/recyclerview/widget/s$a;
 
-    div-float/2addr p1, p2
+    .line 14
+    new-instance v0, Landroidx/recyclerview/widget/s$b;
 
-    return p1
+    invoke-direct {v0, p0}, Landroidx/recyclerview/widget/s$b;-><init>(Landroidx/recyclerview/widget/s;)V
 
-    :cond_7
-    :goto_2
-    return v1
-.end method
+    iput-object v0, p0, Landroidx/recyclerview/widget/s;->D:Landroidx/recyclerview/widget/s$b;
 
-.method private n(Landroid/view/View;Landroidx/recyclerview/widget/x;)I
-    .locals 1
+    .line 15
+    iput-object p2, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
 
-    .line 1
-    invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/x;->g(Landroid/view/View;)I
+    .line 16
+    iput-object p3, p0, Landroidx/recyclerview/widget/s;->e:Landroid/graphics/drawable/Drawable;
 
-    move-result v0
+    .line 17
+    iput-object p4, p0, Landroidx/recyclerview/widget/s;->h:Landroid/graphics/drawable/StateListDrawable;
 
-    .line 2
-    invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/x;->e(Landroid/view/View;)I
+    .line 18
+    iput-object p5, p0, Landroidx/recyclerview/widget/s;->i:Landroid/graphics/drawable/Drawable;
 
-    move-result p1
+    .line 19
+    invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    div-int/lit8 p1, p1, 0x2
+    move-result v2
 
-    add-int/2addr v0, p1
+    invoke-static {p6, v2}, Ljava/lang/Math;->max(II)I
 
-    .line 3
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/x;->m()I
+    move-result v2
 
-    move-result p1
+    iput v2, p0, Landroidx/recyclerview/widget/s;->f:I
 
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/x;->n()I
+    .line 20
+    invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
-    move-result p2
+    move-result v2
 
-    div-int/lit8 p2, p2, 0x2
+    invoke-static {p6, v2}, Ljava/lang/Math;->max(II)I
 
-    add-int/2addr p1, p2
+    move-result v2
 
-    sub-int/2addr v0, p1
+    iput v2, p0, Landroidx/recyclerview/widget/s;->g:I
 
-    return v0
-.end method
-
-.method private o(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;II)I
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0, p3, p4}, Landroidx/recyclerview/widget/c0;->d(II)[I
-
-    move-result-object p3
-
-    .line 2
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/s;->m(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;)F
-
-    move-result p1
-
-    const/4 p2, 0x0
-
-    const/4 p4, 0x0
-
-    cmpg-float p4, p1, p4
-
-    if-gtz p4, :cond_0
-
-    return p2
-
-    .line 3
-    :cond_0
-    aget p4, p3, p2
-
-    invoke-static {p4}, Ljava/lang/Math;->abs(I)I
+    .line 21
+    invoke-virtual {p4}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p4
 
+    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
+
+    move-result p4
+
+    iput p4, p0, Landroidx/recyclerview/widget/s;->j:I
+
+    .line 22
+    invoke-virtual {p5}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+
+    move-result p4
+
+    invoke-static {p6, p4}, Ljava/lang/Math;->max(II)I
+
+    move-result p4
+
+    iput p4, p0, Landroidx/recyclerview/widget/s;->k:I
+
+    .line 23
+    iput p7, p0, Landroidx/recyclerview/widget/s;->b:I
+
+    .line 24
+    iput p8, p0, Landroidx/recyclerview/widget/s;->c:I
+
+    const/16 p4, 0xff
+
+    .line 25
+    invoke-virtual {p2, p4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    .line 26
+    invoke-virtual {p3, p4}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    .line 27
+    new-instance p2, Landroidx/recyclerview/widget/s$c;
+
+    invoke-direct {p2, p0}, Landroidx/recyclerview/widget/s$c;-><init>(Landroidx/recyclerview/widget/s;)V
+
+    invoke-virtual {v1, p2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    .line 28
+    new-instance p2, Landroidx/recyclerview/widget/s$d;
+
+    invoke-direct {p2, p0}, Landroidx/recyclerview/widget/s$d;-><init>(Landroidx/recyclerview/widget/s;)V
+
+    invoke-virtual {v1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
+
+    .line 29
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    if-ne p2, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    if-eqz p2, :cond_1
+
+    .line 30
+    invoke-virtual {p2, p0}, Landroidx/recyclerview/widget/RecyclerView;->i0(Landroidx/recyclerview/widget/RecyclerView$m;)V
+
+    .line 31
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p2, p0}, Landroidx/recyclerview/widget/RecyclerView;->k0(Landroidx/recyclerview/widget/RecyclerView$r;)V
+
+    .line 32
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->l0(Landroidx/recyclerview/widget/RecyclerView$s;)V
+
+    .line 33
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->f()V
+
+    .line 34
+    :cond_1
+    iput-object p1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    if-eqz p1, :cond_2
+
+    .line 35
+    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->g(Landroidx/recyclerview/widget/RecyclerView$m;)V
+
+    .line 36
+    iget-object p1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->i(Landroidx/recyclerview/widget/RecyclerView$r;)V
+
+    .line 37
+    iget-object p1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->j(Landroidx/recyclerview/widget/RecyclerView$s;)V
+
+    :cond_2
+    :goto_0
+    return-void
+
+    nop
+
+    :array_0
+    .array-data 4
+        0x0
+        0x3f800000    # 1.0f
+    .end array-data
+.end method
+
+
+# virtual methods
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)V
+    .locals 11
+
+    .line 1
+    iget p1, p0, Landroidx/recyclerview/widget/s;->w:I
+
+    if-nez p1, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result p1
+
+    const/4 v0, 0x2
+
+    const/4 v1, 0x1
+
+    if-nez p1, :cond_4
+
+    .line 3
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result p1
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v2
+
+    invoke-virtual {p0, p1, v2}, Landroidx/recyclerview/widget/s;->h(FF)Z
+
+    move-result p1
+
+    .line 4
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v2
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v3
+
+    invoke-virtual {p0, v2, v3}, Landroidx/recyclerview/widget/s;->g(FF)Z
+
+    move-result v2
+
+    if-nez p1, :cond_1
+
+    if-eqz v2, :cond_b
+
+    :cond_1
+    if-eqz v2, :cond_2
+
+    .line 5
+    iput v1, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    .line 6
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    int-to-float p1, p1
+
+    iput p1, p0, Landroidx/recyclerview/widget/s;->q:F
+
+    goto :goto_0
+
+    :cond_2
+    if-eqz p1, :cond_3
+
+    .line 7
+    iput v0, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    .line 8
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    int-to-float p1, p1
+
+    iput p1, p0, Landroidx/recyclerview/widget/s;->n:F
+
+    .line 9
+    :cond_3
+    :goto_0
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/s;->k(I)V
+
+    goto/16 :goto_2
+
+    .line 10
+    :cond_4
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result p1
+
+    const/4 v2, 0x0
+
+    if-ne p1, v1, :cond_5
+
+    iget p1, p0, Landroidx/recyclerview/widget/s;->w:I
+
+    if-ne p1, v0, :cond_5
+
+    const/4 p1, 0x0
+
+    .line 11
+    iput p1, p0, Landroidx/recyclerview/widget/s;->n:F
+
+    .line 12
+    iput p1, p0, Landroidx/recyclerview/widget/s;->q:F
+
+    .line 13
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/s;->k(I)V
+
+    .line 14
+    iput v2, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    goto/16 :goto_2
+
+    .line 15
+    :cond_5
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result p1
+
+    if-ne p1, v0, :cond_b
+
+    iget p1, p0, Landroidx/recyclerview/widget/s;->w:I
+
+    if-ne p1, v0, :cond_b
+
+    .line 16
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->l()V
+
+    .line 17
+    iget p1, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    if-ne p1, v1, :cond_8
+
+    .line 18
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result p1
+
+    .line 19
+    iget-object v7, p0, Landroidx/recyclerview/widget/s;->z:[I
+
+    iget v4, p0, Landroidx/recyclerview/widget/s;->c:I
+
+    aput v4, v7, v2
+
+    .line 20
+    iget v5, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    sub-int/2addr v5, v4
+
+    aput v5, v7, v1
+
+    .line 21
+    aget v4, v7, v2
+
+    int-to-float v4, v4
+
+    aget v5, v7, v1
+
+    int-to-float v5, v5
+
+    invoke-static {v5, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result p1
+
+    invoke-static {v4, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    .line 22
+    iget v4, p0, Landroidx/recyclerview/widget/s;->p:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v4, p1
+
+    invoke-static {v4}, Ljava/lang/Math;->abs(F)F
+
+    move-result v4
+
+    cmpg-float v4, v4, v3
+
+    if-gez v4, :cond_6
+
+    goto :goto_1
+
+    .line 23
+    :cond_6
+    iget v5, p0, Landroidx/recyclerview/widget/s;->q:F
+
+    iget-object v4, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 24
+    invoke-virtual {v4}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollRange()I
+
+    move-result v8
+
+    iget-object v4, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 25
+    invoke-virtual {v4}, Landroidx/recyclerview/widget/RecyclerView;->computeHorizontalScrollOffset()I
+
+    move-result v9
+
+    iget v10, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    move-object v4, p0
+
+    move v6, p1
+
+    .line 26
+    invoke-virtual/range {v4 .. v10}, Landroidx/recyclerview/widget/s;->j(FF[IIII)I
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    .line 27
+    iget-object v5, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v5, v4, v2}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
+
+    .line 28
+    :cond_7
+    iput p1, p0, Landroidx/recyclerview/widget/s;->q:F
+
+    .line 29
+    :cond_8
+    :goto_1
+    iget p1, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    if-ne p1, v0, :cond_b
+
+    .line 30
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result p1
+
+    .line 31
+    iget-object v7, p0, Landroidx/recyclerview/widget/s;->y:[I
+
+    iget p2, p0, Landroidx/recyclerview/widget/s;->c:I
+
+    aput p2, v7, v2
+
+    .line 32
+    iget v0, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    sub-int/2addr v0, p2
+
+    aput v0, v7, v1
+
+    .line 33
+    aget p2, v7, v2
+
+    int-to-float p2, p2
+
+    aget v0, v7, v1
+
+    int-to-float v0, v0
+
+    invoke-static {v0, p1}, Ljava/lang/Math;->min(FF)F
+
+    move-result p1
+
+    invoke-static {p2, p1}, Ljava/lang/Math;->max(FF)F
+
+    move-result p1
+
+    .line 34
+    iget p2, p0, Landroidx/recyclerview/widget/s;->m:I
+
+    int-to-float p2, p2
+
+    sub-float/2addr p2, p1
+
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
+
+    move-result p2
+
+    cmpg-float p2, p2, v3
+
+    if-gez p2, :cond_9
+
+    goto :goto_2
+
+    .line 35
+    :cond_9
+    iget v5, p0, Landroidx/recyclerview/widget/s;->n:F
+
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 36
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollRange()I
+
+    move-result v8
+
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 37
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->computeVerticalScrollOffset()I
+
+    move-result v9
+
+    iget v10, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    move-object v4, p0
+
+    move v6, p1
+
+    .line 38
+    invoke-virtual/range {v4 .. v10}, Landroidx/recyclerview/widget/s;->j(FF[IIII)I
+
+    move-result p2
+
+    if-eqz p2, :cond_a
+
+    .line 39
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {v0, v2, p2}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
+
+    .line 40
+    :cond_a
+    iput p1, p0, Landroidx/recyclerview/widget/s;->n:F
+
+    :cond_b
+    :goto_2
+    return-void
+.end method
+
+.method public final c(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)Z
+    .locals 4
+
+    .line 1
+    iget p1, p0, Landroidx/recyclerview/widget/s;->w:I
+
     const/4 v0, 0x1
 
-    aget v1, p3, v0
+    const/4 v1, 0x2
 
-    invoke-static {v1}, Ljava/lang/Math;->abs(I)I
+    if-ne p1, v0, :cond_3
 
-    move-result v1
+    .line 2
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
-    if-le p4, v1, :cond_1
+    move-result p1
 
-    aget p2, p3, p2
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v2
+
+    invoke-virtual {p0, p1, v2}, Landroidx/recyclerview/widget/s;->h(FF)Z
+
+    move-result p1
+
+    .line 3
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result v2
+
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    move-result v3
+
+    invoke-virtual {p0, v2, v3}, Landroidx/recyclerview/widget/s;->g(FF)Z
+
+    move-result v2
+
+    .line 4
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    if-nez p1, :cond_0
+
+    if-eqz v2, :cond_4
+
+    :cond_0
+    if-eqz v2, :cond_1
+
+    .line 5
+    iput v0, p0, Landroidx/recyclerview/widget/s;->x:I
+
+    .line 6
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    move-result p1
+
+    float-to-int p1, p1
+
+    int-to-float p1, p1
+
+    iput p1, p0, Landroidx/recyclerview/widget/s;->q:F
 
     goto :goto_0
 
     :cond_1
-    aget p2, p3, v0
+    if-eqz p1, :cond_2
 
-    :goto_0
-    int-to-float p2, p2
+    .line 7
+    iput v1, p0, Landroidx/recyclerview/widget/s;->x:I
 
-    div-float/2addr p2, p1
-
-    .line 4
-    invoke-static {p2}, Ljava/lang/Math;->round(F)I
+    .line 8
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
 
     move-result p1
 
+    float-to-int p1, p1
+
+    int-to-float p1, p1
+
+    iput p1, p0, Landroidx/recyclerview/widget/s;->n:F
+
+    .line 9
+    :cond_2
+    :goto_0
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/s;->k(I)V
+
+    goto :goto_1
+
+    :cond_3
+    if-ne p1, v1, :cond_4
+
+    goto :goto_1
+
+    :cond_4
+    const/4 v0, 0x0
+
+    :goto_1
+    return v0
+.end method
+
+.method public final e(Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final f()V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->C:Landroidx/recyclerview/widget/s$a;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
+
+    return-void
+.end method
+
+.method public final g(FF)Z
+    .locals 2
+
+    iget v0, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    iget v1, p0, Landroidx/recyclerview/widget/s;->j:I
+
+    sub-int/2addr v0, v1
+
+    int-to-float v0, v0
+
+    cmpl-float p2, p2, v0
+
+    if-ltz p2, :cond_0
+
+    iget p2, p0, Landroidx/recyclerview/widget/s;->p:I
+
+    iget v0, p0, Landroidx/recyclerview/widget/s;->o:I
+
+    div-int/lit8 v1, v0, 0x2
+
+    sub-int v1, p2, v1
+
+    int-to-float v1, v1
+
+    cmpl-float v1, p1, v1
+
+    if-ltz v1, :cond_0
+
+    div-int/lit8 v0, v0, 0x2
+
+    add-int/2addr v0, p2
+
+    int-to-float p2, v0
+
+    cmpg-float p1, p1, p2
+
+    if-gtz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
     return p1
 .end method
 
-.method private p(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;)Landroid/view/View;
-    .locals 8
+.method public final h(FF)Z
+    .locals 4
 
     .line 1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->U()I
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    sget-object v1, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 2
+    invoke-static {v0}, Lv4/d0$e;->d(Landroid/view/View;)I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
+    const/4 v2, 0x1
 
-    return-object v1
+    if-ne v0, v2, :cond_0
 
-    .line 2
-    :cond_0
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/x;->m()I
-
-    move-result v2
-
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/x;->n()I
-
-    move-result v3
-
-    div-int/lit8 v3, v3, 0x2
-
-    add-int/2addr v2, v3
-
-    const v3, 0x7fffffff
-
-    const/4 v4, 0x0
-
-    :goto_0
-    if-ge v4, v0, :cond_2
-
-    .line 3
-    invoke-virtual {p1, v4}, Landroidx/recyclerview/widget/RecyclerView$p;->T(I)Landroid/view/View;
-
-    move-result-object v5
-
-    .line 4
-    invoke-virtual {p2, v5}, Landroidx/recyclerview/widget/x;->g(Landroid/view/View;)I
-
-    move-result v6
-
-    .line 5
-    invoke-virtual {p2, v5}, Landroidx/recyclerview/widget/x;->e(Landroid/view/View;)I
-
-    move-result v7
-
-    div-int/lit8 v7, v7, 0x2
-
-    add-int/2addr v6, v7
-
-    sub-int/2addr v6, v2
-
-    .line 6
-    invoke-static {v6}, Ljava/lang/Math;->abs(I)I
-
-    move-result v6
-
-    if-ge v6, v3, :cond_1
-
-    move-object v1, v5
-
-    move v3, v6
-
-    :cond_1
-    add-int/lit8 v4, v4, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 3
+    iget v0, p0, Landroidx/recyclerview/widget/s;->f:I
+
+    int-to-float v0, v0
+
+    cmpg-float p1, p1, v0
+
+    if-gtz p1, :cond_2
+
+    goto :goto_1
+
+    :cond_1
+    iget v0, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    iget v3, p0, Landroidx/recyclerview/widget/s;->f:I
+
+    sub-int/2addr v0, v3
+
+    int-to-float v0, v0
+
+    cmpl-float p1, p1, v0
+
+    if-ltz p1, :cond_2
+
+    :goto_1
+    iget p1, p0, Landroidx/recyclerview/widget/s;->m:I
+
+    iget v0, p0, Landroidx/recyclerview/widget/s;->l:I
+
+    div-int/lit8 v3, v0, 0x2
+
+    sub-int v3, p1, v3
+
+    int-to-float v3, v3
+
+    cmpl-float v3, p2, v3
+
+    if-ltz v3, :cond_2
+
+    div-int/lit8 v0, v0, 0x2
+
+    add-int/2addr v0, p1
+
+    int-to-float p1, v0
+
+    cmpg-float p1, p2, p1
+
+    if-gtz p1, :cond_2
+
+    const/4 v1, 0x1
+
     :cond_2
-    return-object v1
+    return v1
 .end method
 
-.method private q(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
+.method public final i()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/s;->e:Landroidx/recyclerview/widget/x;
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
 
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView$p;
-
-    if-eq v0, p1, :cond_1
-
-    .line 2
-    :cond_0
-    invoke-static {p1}, Landroidx/recyclerview/widget/x;->a(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/recyclerview/widget/s;->e:Landroidx/recyclerview/widget/x;
-
-    .line 3
-    :cond_1
-    iget-object p1, p0, Landroidx/recyclerview/widget/s;->e:Landroidx/recyclerview/widget/x;
-
-    return-object p1
+    return-void
 .end method
 
-.method private r(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-    .locals 1
+.method public final j(FF[IIII)I
+    .locals 2
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/s;->d:Landroidx/recyclerview/widget/x;
+    const/4 v0, 0x1
 
-    if-eqz v0, :cond_0
+    aget v0, p3, v0
 
-    iget-object v0, v0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView$p;
+    const/4 v1, 0x0
 
-    if-eq v0, p1, :cond_1
+    aget p3, p3, v1
 
-    .line 2
+    sub-int/2addr v0, p3
+
+    if-nez v0, :cond_0
+
+    return v1
+
     :cond_0
-    invoke-static {p1}, Landroidx/recyclerview/widget/x;->c(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
+    sub-float/2addr p2, p1
 
-    move-result-object p1
+    int-to-float p1, v0
 
-    iput-object p1, p0, Landroidx/recyclerview/widget/s;->d:Landroidx/recyclerview/widget/x;
+    div-float/2addr p2, p1
 
-    .line 3
+    sub-int/2addr p4, p6
+
+    int-to-float p1, p4
+
+    mul-float p2, p2, p1
+
+    float-to-int p1, p2
+
+    add-int/2addr p5, p1
+
+    if-ge p5, p4, :cond_1
+
+    if-ltz p5, :cond_1
+
+    return p1
+
     :cond_1
-    iget-object p1, p0, Landroidx/recyclerview/widget/s;->d:Landroidx/recyclerview/widget/x;
-
-    return-object p1
+    return v1
 .end method
 
-
-# virtual methods
-.method public c(Landroidx/recyclerview/widget/RecyclerView$p;Landroid/view/View;)[I
-    .locals 4
+.method public final k(I)V
+    .locals 5
 
     const/4 v0, 0x2
 
-    new-array v0, v0, [I
+    if-ne p1, v0, :cond_0
 
     .line 1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->v()Z
+    iget v1, p0, Landroidx/recyclerview/widget/s;->w:I
 
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_0
+    if-eq v1, v0, :cond_0
 
     .line 2
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->q(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
 
-    move-result-object v1
+    sget-object v2, Landroidx/recyclerview/widget/s;->E:[I
+
+    invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
     .line 3
-    invoke-direct {p0, p2, v1}, Landroidx/recyclerview/widget/s;->n(Landroid/view/View;Landroidx/recyclerview/widget/x;)I
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->f()V
 
-    move-result v1
+    :cond_0
+    if-nez p1, :cond_1
 
-    aput v1, v0, v2
+    .line 4
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->i()V
 
     goto :goto_0
 
+    .line 5
+    :cond_1
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->l()V
+
+    .line 6
+    :goto_0
+    iget v1, p0, Landroidx/recyclerview/widget/s;->w:I
+
+    if-ne v1, v0, :cond_2
+
+    if-eq p1, v0, :cond_2
+
+    .line 7
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
+
+    sget-object v1, Landroidx/recyclerview/widget/s;->F:[I
+
+    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setState([I)Z
+
+    const/16 v0, 0x4b0
+
+    .line 8
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->f()V
+
+    .line 9
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    iget-object v2, p0, Landroidx/recyclerview/widget/s;->C:Landroidx/recyclerview/widget/s$a;
+
+    int-to-long v3, v0
+
+    invoke-virtual {v1, v2, v3, v4}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v0, 0x1
+
+    if-ne p1, v0, :cond_3
+
+    const/16 v0, 0x5dc
+
+    .line 10
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/s;->f()V
+
+    .line 11
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    iget-object v2, p0, Landroidx/recyclerview/widget/s;->C:Landroidx/recyclerview/widget/s$a;
+
+    int-to-long v3, v0
+
+    invoke-virtual {v1, v2, v3, v4}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    .line 12
+    :cond_3
+    :goto_1
+    iput p1, p0, Landroidx/recyclerview/widget/s;->w:I
+
+    return-void
+.end method
+
+.method public final l()V
+    .locals 5
+
+    .line 1
+    iget v0, p0, Landroidx/recyclerview/widget/s;->B:I
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x3
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    .line 2
     :cond_0
-    aput v2, v0, v2
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
+
+    :cond_1
+    const/4 v0, 0x1
+
+    .line 3
+    iput v0, p0, Landroidx/recyclerview/widget/s;->B:I
 
     .line 4
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
+
+    const/4 v2, 0x2
+
+    new-array v2, v2, [F
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Float;
+
+    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
+
+    move-result v4
+
+    aput v4, v2, v3
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    aput v3, v2, v0
+
+    invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
+
+    .line 5
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
+
+    const-wide/16 v1, 0x1f4
+
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+
+    .line 6
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
+
+    const-wide/16 v1, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
+
+    .line 7
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->A:Landroid/animation/ValueAnimator;
+
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
+
     :goto_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->w()Z
+    return-void
+.end method
+
+.method public final onDrawOver(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$y;)V
+    .locals 5
+
+    .line 1
+    iget p2, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    iget-object p3, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p3}, Landroid/view/View;->getWidth()I
+
+    move-result p3
+
+    const/4 v0, 0x0
+
+    if-ne p2, p3, :cond_5
+
+    iget p2, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    iget-object p3, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 2
+    invoke-virtual {p3}, Landroid/view/View;->getHeight()I
+
+    move-result p3
+
+    if-eq p2, p3, :cond_0
+
+    goto/16 :goto_2
+
+    .line 3
+    :cond_0
+    iget p2, p0, Landroidx/recyclerview/widget/s;->B:I
+
+    if-eqz p2, :cond_4
+
+    .line 4
+    iget-boolean p2, p0, Landroidx/recyclerview/widget/s;->u:Z
+
+    const/4 p3, 0x0
+
+    if-eqz p2, :cond_3
+
+    .line 5
+    iget p2, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    .line 6
+    iget v1, p0, Landroidx/recyclerview/widget/s;->f:I
+
+    sub-int/2addr p2, v1
+
+    .line 7
+    iget v2, p0, Landroidx/recyclerview/widget/s;->m:I
+
+    iget v3, p0, Landroidx/recyclerview/widget/s;->l:I
+
+    div-int/lit8 v4, v3, 0x2
+
+    sub-int/2addr v2, v4
+
+    .line 8
+    iget-object v4, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
+
+    invoke-virtual {v4, v0, v0, v1, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 9
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->e:Landroid/graphics/drawable/Drawable;
+
+    iget v3, p0, Landroidx/recyclerview/widget/s;->g:I
+
+    iget v4, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    .line 10
+    invoke-virtual {v1, v0, v0, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 11
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    sget-object v3, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 12
+    invoke-static {v1}, Lv4/d0$e;->d(Landroid/view/View;)I
 
     move-result v1
 
     const/4 v3, 0x1
 
-    if-eqz v1, :cond_1
-
-    .line 5
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->r(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object p1
-
-    .line 6
-    invoke-direct {p0, p2, p1}, Landroidx/recyclerview/widget/s;->n(Landroid/view/View;Landroidx/recyclerview/widget/x;)I
-
-    move-result p1
-
-    aput p1, v0, v3
-
-    goto :goto_1
-
-    :cond_1
-    aput v2, v0, v3
-
-    :goto_1
-    return-object v0
-.end method
-
-.method public h(Landroidx/recyclerview/widget/RecyclerView$p;)Landroid/view/View;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->w()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->r(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object v0
-
-    invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/s;->p(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 3
-    :cond_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->v()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->q(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object v0
-
-    invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/s;->p(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;)Landroid/view/View;
-
-    move-result-object p1
-
-    return-object p1
-
-    :cond_1
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public i(Landroidx/recyclerview/widget/RecyclerView$p;II)I
-    .locals 8
-
-    .line 1
-    instance-of v0, p1, Landroidx/recyclerview/widget/RecyclerView$z$b;
-
-    const/4 v1, -0x1
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->j0()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    return v1
-
-    .line 3
-    :cond_1
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/s;->h(Landroidx/recyclerview/widget/RecyclerView$p;)Landroid/view/View;
-
-    move-result-object v2
-
-    if-nez v2, :cond_2
-
-    return v1
-
-    .line 4
-    :cond_2
-    invoke-virtual {p1, v2}, Landroidx/recyclerview/widget/RecyclerView$p;->o0(Landroid/view/View;)I
-
-    move-result v2
-
-    if-ne v2, v1, :cond_3
-
-    return v1
-
-    .line 5
-    :cond_3
-    move-object v3, p1
-
-    check-cast v3, Landroidx/recyclerview/widget/RecyclerView$z$b;
-
-    add-int/lit8 v4, v0, -0x1
-
-    .line 6
-    invoke-interface {v3, v4}, Landroidx/recyclerview/widget/RecyclerView$z$b;->a(I)Landroid/graphics/PointF;
-
-    move-result-object v3
-
-    if-nez v3, :cond_4
-
-    return v1
-
-    .line 7
-    :cond_4
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->v()Z
-
-    move-result v5
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    if-eqz v5, :cond_5
-
-    .line 8
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->q(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object v5
-
-    .line 9
-    invoke-direct {p0, p1, v5, p2, v7}, Landroidx/recyclerview/widget/s;->o(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;II)I
-
-    move-result p2
-
-    .line 10
-    iget v5, v3, Landroid/graphics/PointF;->x:F
-
-    cmpg-float v5, v5, v6
-
-    if-gez v5, :cond_6
-
-    neg-int p2, p2
+    if-ne v1, v3, :cond_1
 
     goto :goto_0
 
-    :cond_5
-    const/4 p2, 0x0
+    :cond_1
+    const/4 v3, 0x0
 
-    .line 11
-    :cond_6
     :goto_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->w()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_7
-
-    .line 12
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/s;->r(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object v5
+    if-eqz v3, :cond_2
 
     .line 13
-    invoke-direct {p0, p1, v5, v7, p3}, Landroidx/recyclerview/widget/s;->o(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x;II)I
+    iget-object p2, p0, Landroidx/recyclerview/widget/s;->e:Landroid/graphics/drawable/Drawable;
 
-    move-result p3
+    invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 14
-    iget v3, v3, Landroid/graphics/PointF;->y:F
+    iget p2, p0, Landroidx/recyclerview/widget/s;->f:I
 
-    cmpg-float v3, v3, v6
+    int-to-float p2, p2
 
-    if-gez v3, :cond_8
+    int-to-float v1, v2
 
-    neg-int p3, p3
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Canvas;->translate(FF)V
+
+    const/high16 p2, -0x40800000    # -1.0f
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 15
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Canvas;->scale(FF)V
+
+    .line 16
+    iget-object v3, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
+
+    invoke-virtual {v3, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    .line 17
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Canvas;->scale(FF)V
+
+    .line 18
+    iget p2, p0, Landroidx/recyclerview/widget/s;->f:I
+
+    neg-int p2, p2
+
+    int-to-float p2, p2
+
+    neg-int v1, v2
+
+    int-to-float v1, v1
+
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
     goto :goto_1
 
-    :cond_7
-    const/4 p3, 0x0
+    :cond_2
+    int-to-float v1, p2
 
-    .line 15
-    :cond_8
+    .line 19
+    invoke-virtual {p1, v1, p3}, Landroid/graphics/Canvas;->translate(FF)V
+
+    .line 20
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->e:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    int-to-float v1, v2
+
+    .line 21
+    invoke-virtual {p1, p3, v1}, Landroid/graphics/Canvas;->translate(FF)V
+
+    .line 22
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->d:Landroid/graphics/drawable/StateListDrawable;
+
+    invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    neg-int p2, p2
+
+    int-to-float p2, p2
+
+    neg-int v1, v2
+
+    int-to-float v1, v1
+
+    .line 23
+    invoke-virtual {p1, p2, v1}, Landroid/graphics/Canvas;->translate(FF)V
+
+    .line 24
+    :cond_3
     :goto_1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$p;->w()Z
+    iget-boolean p2, p0, Landroidx/recyclerview/widget/s;->v:Z
+
+    if-eqz p2, :cond_4
+
+    .line 25
+    iget p2, p0, Landroidx/recyclerview/widget/s;->s:I
+
+    .line 26
+    iget v1, p0, Landroidx/recyclerview/widget/s;->j:I
+
+    sub-int/2addr p2, v1
+
+    .line 27
+    iget v2, p0, Landroidx/recyclerview/widget/s;->p:I
+
+    iget v3, p0, Landroidx/recyclerview/widget/s;->o:I
+
+    div-int/lit8 v4, v3, 0x2
+
+    sub-int/2addr v2, v4
+
+    .line 28
+    iget-object v4, p0, Landroidx/recyclerview/widget/s;->h:Landroid/graphics/drawable/StateListDrawable;
+
+    invoke-virtual {v4, v0, v0, v3, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 29
+    iget-object v1, p0, Landroidx/recyclerview/widget/s;->i:Landroid/graphics/drawable/Drawable;
+
+    iget v3, p0, Landroidx/recyclerview/widget/s;->r:I
+
+    iget v4, p0, Landroidx/recyclerview/widget/s;->k:I
+
+    .line 30
+    invoke-virtual {v1, v0, v0, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    int-to-float v0, p2
+
+    .line 31
+    invoke-virtual {p1, p3, v0}, Landroid/graphics/Canvas;->translate(FF)V
+
+    .line 32
+    iget-object v0, p0, Landroidx/recyclerview/widget/s;->i:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    int-to-float v0, v2
+
+    .line 33
+    invoke-virtual {p1, v0, p3}, Landroid/graphics/Canvas;->translate(FF)V
+
+    .line 34
+    iget-object p3, p0, Landroidx/recyclerview/widget/s;->h:Landroid/graphics/drawable/StateListDrawable;
+
+    invoke-virtual {p3, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
+
+    neg-int p3, v2
+
+    int-to-float p3, p3
+
+    neg-int p2, p2
+
+    int-to-float p2, p2
+
+    .line 35
+    invoke-virtual {p1, p3, p2}, Landroid/graphics/Canvas;->translate(FF)V
+
+    :cond_4
+    return-void
+
+    .line 36
+    :cond_5
+    :goto_2
+    iget-object p1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result p1
 
-    if-eqz p1, :cond_9
+    iput p1, p0, Landroidx/recyclerview/widget/s;->r:I
 
-    move p2, p3
+    .line 37
+    iget-object p1, p0, Landroidx/recyclerview/widget/s;->t:Landroidx/recyclerview/widget/RecyclerView;
 
-    :cond_9
-    if-nez p2, :cond_a
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
-    return v1
+    move-result p1
 
-    :cond_a
-    add-int/2addr v2, p2
+    iput p1, p0, Landroidx/recyclerview/widget/s;->s:I
 
-    if-gez v2, :cond_b
+    .line 38
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/s;->k(I)V
 
-    goto :goto_2
-
-    :cond_b
-    move v7, v2
-
-    :goto_2
-    if-lt v7, v0, :cond_c
-
-    goto :goto_3
-
-    :cond_c
-    move v4, v7
-
-    :goto_3
-    return v4
+    return-void
 .end method

@@ -1,134 +1,133 @@
-.class public final Ltq/a;
-.super Ljava/lang/Object;
+.class public final enum Ltq/a;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Ltq/a;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field private static final synthetic $VALUES:[Ltq/a;
+
+.field public static final enum AUTO:Ltq/a;
+
+.field public static final enum BYTE:Ltq/a;
+
+.field public static final enum NUMERIC:Ltq/a;
+
+.field public static final enum TEXT:Ltq/a;
+
+
 # direct methods
-.method public static final a(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 7
-
-    const-string v0, "context"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+    new-instance v0, Ltq/a;
 
-    const/16 v1, 0xc8
-
-    const/16 v2, 0x50
-
-    .line 2
-    invoke-static {v1, v2, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
-
-    move-result-object v1
+    const-string v1, "AUTO"
 
     const/4 v2, 0x0
 
+    invoke-direct {v0, v1, v2}, Ltq/a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ltq/a;->AUTO:Ltq/a;
+
+    .line 2
+    new-instance v1, Ltq/a;
+
+    const-string v3, "TEXT"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4}, Ltq/a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Ltq/a;->TEXT:Ltq/a;
+
     .line 3
-    invoke-virtual {v1, v0, v2}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
+    new-instance v3, Ltq/a;
+
+    const-string v5, "BYTE"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6}, Ltq/a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v3, Ltq/a;->BYTE:Ltq/a;
+
+    .line 4
+    new-instance v5, Ltq/a;
+
+    const-string v7, "NUMERIC"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8}, Ltq/a;-><init>(Ljava/lang/String;I)V
+
+    sput-object v5, Ltq/a;->NUMERIC:Ltq/a;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Ltq/a;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    .line 5
+    sput-object v7, Ltq/a;->$VALUES:[Ltq/a;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Ltq/a;
+    .locals 1
+
+    const-class v0, Ltq/a;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Ltq/a;
+
+    return-object p0
+.end method
+
+.method public static values()[Ltq/a;
+    .locals 1
+
+    sget-object v0, Ltq/a;->$VALUES:[Ltq/a;
+
+    invoke-virtual {v0}, [Ltq/a;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
-    new-instance v3, Landroid/graphics/Canvas;
+    check-cast v0, [Ltq/a;
 
-    invoke-direct {v3, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    .line 5
-    new-instance v4, Landroid/graphics/Paint;
-
-    const/4 v5, 0x1
-
-    invoke-direct {v4, v5}, Landroid/graphics/Paint;-><init>(I)V
-
-    .line 6
-    invoke-static {v2, v2, v2}, Landroid/graphics/Color;->rgb(III)I
-
-    move-result v6
-
-    invoke-virtual {v4, v6}, Landroid/graphics/Paint;->setColor(I)V
-
-    const/16 v6, 0xe
-
-    int-to-float v6, v6
-
-    .line 7
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object p0
-
-    iget p0, p0, Landroid/util/DisplayMetrics;->density:F
-
-    mul-float v6, v6, p0
-
-    invoke-virtual {v4, v6}, Landroid/graphics/Paint;->setTextSize(F)V
-
-    .line 8
-    new-instance p0, Landroid/graphics/Rect;
-
-    invoke-direct {p0}, Landroid/graphics/Rect;-><init>()V
-
-    .line 9
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v6
-
-    invoke-virtual {v4, p1, v2, v6, p0}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
-
-    .line 10
-    invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v2
-
-    invoke-virtual {p0}, Landroid/graphics/Rect;->width()I
-
-    move-result v6
-
-    sub-int/2addr v2, v6
-
-    div-int/lit8 v2, v2, 0x2
-
-    .line 11
-    invoke-virtual {v1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v6
-
-    invoke-virtual {p0}, Landroid/graphics/Rect;->height()I
-
-    move-result p0
-
-    add-int/2addr v6, p0
-
-    div-int/lit8 v6, v6, 0x2
-
-    int-to-float p0, v2
-
-    int-to-float v2, v6
-
-    .line 12
-    invoke-virtual {v3, p1, p0, v2, v4}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
-
-    .line 13
-    invoke-virtual {v0, v1}, Landroid/graphics/Bitmap;->sameAs(Landroid/graphics/Bitmap;)Z
-
-    move-result p0
-
-    xor-int/2addr p0, v5
-
-    .line 14
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
-
-    .line 15
-    invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
-
-    return p0
+    return-object v0
 .end method

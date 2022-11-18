@@ -1,19 +1,19 @@
-.class final Lcoil/util/-Lifecycles$a;
-.super Lkotlin/coroutines/jvm/internal/d;
+.class public final Lcoil/util/-Lifecycles$a;
+.super Lxo0/c;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcoil/util/-Lifecycles;->a(Landroidx/lifecycle/q;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    value = Lcoil/util/-Lifecycles;->a(Landroidx/lifecycle/t;Lvo0/d;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
-.annotation runtime Lkotlin/coroutines/jvm/internal/f;
+.annotation runtime Lxo0/e;
     c = "coil.util.-Lifecycles"
     f = "Lifecycles.kt"
     l = {
@@ -24,29 +24,29 @@
 
 
 # instance fields
-.field b:Ljava/lang/Object;
+.field public b:Landroidx/lifecycle/t;
 
-.field c:Ljava/lang/Object;
+.field public c:Lep0/o0;
 
-.field synthetic d:Ljava/lang/Object;
+.field public synthetic d:Ljava/lang/Object;
 
-.field e:I
+.field public e:I
 
 
 # direct methods
-.method constructor <init>(Lkotlin/coroutines/d;)V
+.method public constructor <init>(Lvo0/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/coroutines/d<",
+            "Lvo0/d<",
             "-",
             "Lcoil/util/-Lifecycles$a;",
             ">;)V"
         }
     .end annotation
 
-    invoke-direct {p0, p1}, Lkotlin/coroutines/jvm/internal/d;-><init>(Lkotlin/coroutines/d;)V
+    invoke-direct {p0, p1}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p0}, Lcoil/util/-Lifecycles;->a(Landroidx/lifecycle/q;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-static {p1, p0}, Lcoil/util/-Lifecycles;->a(Landroidx/lifecycle/t;Lvo0/d;)Ljava/lang/Object;
 
     move-result-object p1
 

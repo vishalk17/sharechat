@@ -1,51 +1,128 @@
 .class public final Lz0/l;
-.super Ljava/lang/Object;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/q;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/q<",
+        "Lx1/h;",
+        "Ll1/g;",
+        "Ljava/lang/Integer;",
+        "Lx1/h;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lz0/k;
 
 
 # direct methods
-.method public static final a(Lz0/k;Lz0/k;F)Lz0/k;
-    .locals 3
+.method public constructor <init>(Lz0/k;)V
+    .locals 0
 
-    const-string v0, "start"
+    iput-object p1, p0, Lz0/l;->b:Lz0/k;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 p1, 0x3
 
-    const-string v0, "stop"
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, Lz0/k;
+    check-cast p1, Lx1/h;
+
+    check-cast p2, Ll1/g;
+
+    check-cast p3, Ljava/lang/Number;
+
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    const-string p3, "$this$composed"
 
     .line 2
-    invoke-virtual {p0}, Lz0/k;->b()F
+    invoke-static {p1, p3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result v1
+    const p1, -0x32c94b6f
 
-    invoke-virtual {p1}, Lz0/k;->b()F
-
-    move-result v2
-
-    invoke-static {v1, v2, p2}, Lc1/a;->a(FFF)F
-
-    move-result v1
+    invoke-interface {p2, p1}, Ll1/g;->E(I)V
 
     .line 3
-    invoke-virtual {p0}, Lz0/k;->c()F
+    invoke-static {p2}, Lsk/yc;->F(Ll1/g;)Lz0/d;
 
-    move-result p0
+    move-result-object p1
 
-    invoke-virtual {p1}, Lz0/k;->c()F
-
-    move-result p1
-
-    invoke-static {p0, p1, p2}, Lc1/a;->a(FFF)F
-
-    move-result p0
+    const p3, 0x44faf204
 
     .line 4
-    invoke-direct {v0, v1, p0}, Lz0/k;-><init>(FF)V
+    invoke-interface {p2, p3}, Ll1/g;->E(I)V
+
+    .line 5
+    invoke-interface {p2, p1}, Ll1/g;->n(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    .line 6
+    invoke-interface {p2}, Ll1/g;->F()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez p3, :cond_0
+
+    .line 7
+    sget-object p3, Ll1/g;->a:Ll1/g$a;
+
+    invoke-static {p3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    sget-object p3, Ll1/g$a;->b:Ll1/g$a$a;
+
+    if-ne v0, p3, :cond_1
+
+    .line 9
+    :cond_0
+    new-instance v0, Lz0/m;
+
+    invoke-direct {v0, p1}, Lz0/m;-><init>(Lz0/d;)V
+
+    .line 10
+    invoke-interface {p2, v0}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    .line 11
+    :cond_1
+    invoke-interface {p2}, Ll1/g;->P()V
+
+    .line 12
+    check-cast v0, Lz0/m;
+
+    .line 13
+    iget-object p1, p0, Lz0/l;->b:Lz0/k;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string p3, "<set-?>"
+
+    .line 14
+    invoke-static {p1, p3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 15
+    iput-object p1, v0, Lz0/m;->e:Lz0/k;
+
+    .line 16
+    invoke-interface {p2}, Ll1/g;->P()V
 
     return-object v0
 .end method

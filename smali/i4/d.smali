@@ -3,381 +3,814 @@
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
-
-
 # instance fields
-.field private final a:Landroid/content/Context;
+.field public final a:Landroid/graphics/Shader;
+
+.field public final b:Landroid/content/res/ColorStateList;
+
+.field public c:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/graphics/Shader;Landroid/content/res/ColorStateList;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Li4/d;->a:Landroid/content/Context;
+    iput-object p1, p0, Li4/d;->a:Landroid/graphics/Shader;
+
+    .line 3
+    iput-object p2, p0, Li4/d;->b:Landroid/content/res/ColorStateList;
+
+    .line 4
+    iput p3, p0, Li4/d;->c:I
 
     return-void
 .end method
 
-.method private static b(Ljava/lang/String;)Li4/b;
-    .locals 3
-
-    .line 1
-    :try_start_0
-    invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :try_start_1
-    new-array v2, v1, [Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {p0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    new-array v1, v1, [Ljava/lang/Object;
-
-    invoke-virtual {v2, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-    :try_end_1
-    .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_3
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_2
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v1
-
-    .line 3
-    invoke-static {p0, v1}, Li4/d;->c(Ljava/lang/Class;Ljava/lang/Exception;)V
-
-    goto :goto_0
-
-    :catch_1
-    move-exception v1
-
-    .line 4
-    invoke-static {p0, v1}, Li4/d;->c(Ljava/lang/Class;Ljava/lang/Exception;)V
-
-    goto :goto_0
-
-    :catch_2
-    move-exception v1
-
-    .line 5
-    invoke-static {p0, v1}, Li4/d;->c(Ljava/lang/Class;Ljava/lang/Exception;)V
-
-    goto :goto_0
-
-    :catch_3
-    move-exception v1
-
-    .line 6
-    invoke-static {p0, v1}, Li4/d;->c(Ljava/lang/Class;Ljava/lang/Exception;)V
-
-    .line 7
-    :goto_0
-    instance-of p0, v0, Li4/b;
-
-    if-eqz p0, :cond_0
-
-    .line 8
-    check-cast v0, Li4/b;
-
-    return-object v0
-
-    .line 9
-    :cond_0
-    new-instance p0, Ljava/lang/RuntimeException;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Expected instanceof GlideModule, but found: "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    :catch_4
-    move-exception p0
-
-    .line 10
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    const-string v1, "Unable to find GlideModule implementation"
-
-    invoke-direct {v0, v1, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw v0
-.end method
-
-.method private static c(Ljava/lang/Class;Ljava/lang/Exception;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
+.method public static a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Li4/d;
+    .locals 27
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Exception;",
-            ")V"
+            Ljava/io/IOException;,
+            Lorg/xmlpull/v1/XmlPullParserException;
         }
     .end annotation
 
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
     .line 1
-    new-instance v0, Ljava/lang/RuntimeException;
+    invoke-virtual/range {p0 .. p1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
+
+    move-result-object v2
+
+    .line 2
+    invoke-static {v2}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
+
+    move-result-object v3
+
+    .line 3
+    :goto_0
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v4
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x1
+
+    if-eq v4, v5, :cond_0
+
+    if-eq v4, v6, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    if-ne v4, v5, :cond_15
+
+    .line 4
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 5
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v7, "gradient"
+
+    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    const/4 v9, 0x0
+
+    if-nez v8, :cond_2
+
+    const-string v5, "selector"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 6
+    invoke-static {v0, v2, v3, v1}, Li4/c;->b(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
+
+    move-result-object v0
+
+    .line 7
+    new-instance v1, Li4/d;
+
+    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
+
+    move-result v2
+
+    invoke-direct {v1, v9, v0, v2}, Li4/d;-><init>(Landroid/graphics/Shader;Landroid/content/res/ColorStateList;I)V
+
+    return-object v1
+
+    .line 8
+    :cond_1
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "Unable to instantiate GlideModule implementation for "
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getPositionDescription()Ljava/lang/String;
+
+    move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ": unsupported complex color tag "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p0
+    move-result-object v1
 
-    invoke-direct {v0, p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 9
+    :cond_2
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 10
+    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_14
+
+    .line 11
+    sget-object v4, Landroidx/core/R$styleable;->GradientColor:[I
+
+    invoke-static {v0, v1, v3, v4}, Li4/l;->m(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object v4
+
+    .line 12
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_startX:I
+
+    const-string v8, "startX"
+
+    const/4 v10, 0x0
+
+    invoke-static {v4, v2, v8, v7, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v12
+
+    .line 13
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_startY:I
+
+    const-string v8, "startY"
+
+    invoke-static {v4, v2, v8, v7, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v13
+
+    .line 14
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_endX:I
+
+    const-string v8, "endX"
+
+    invoke-static {v4, v2, v8, v7, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v14
+
+    .line 15
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_endY:I
+
+    const-string v8, "endY"
+
+    invoke-static {v4, v2, v8, v7, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v15
+
+    .line 16
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_centerX:I
+
+    const-string v8, "centerX"
+
+    invoke-static {v4, v2, v8, v7, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v7
+
+    .line 17
+    sget v8, Landroidx/core/R$styleable;->GradientColor_android_centerY:I
+
+    const-string v11, "centerY"
+
+    invoke-static {v4, v2, v11, v8, v10}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v8
+
+    .line 18
+    sget v11, Landroidx/core/R$styleable;->GradientColor_android_type:I
+
+    const-string v9, "type"
+
+    const/4 v5, 0x0
+
+    invoke-static {v4, v2, v9, v11, v5}, Li4/l;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+
+    move-result v9
+
+    .line 19
+    sget v11, Landroidx/core/R$styleable;->GradientColor_android_startColor:I
+
+    const-string v6, "startColor"
+
+    invoke-static {v4, v2, v6, v11}, Li4/l;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)I
+
+    move-result v6
+
+    const-string v11, "centerColor"
+
+    .line 20
+    invoke-static {v2, v11}, Li4/l;->l(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
+
+    move-result v18
+
+    .line 21
+    sget v10, Landroidx/core/R$styleable;->GradientColor_android_centerColor:I
+
+    invoke-static {v4, v2, v11, v10}, Li4/l;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)I
+
+    move-result v10
+
+    .line 22
+    sget v11, Landroidx/core/R$styleable;->GradientColor_android_endColor:I
+
+    const-string v5, "endColor"
+
+    invoke-static {v4, v2, v5, v11}, Li4/l;->c(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)I
+
+    move-result v5
+
+    .line 23
+    sget v11, Landroidx/core/R$styleable;->GradientColor_android_tileMode:I
+
+    const-string v0, "tileMode"
+
+    move/from16 v20, v7
+
+    const/4 v7, 0x0
+
+    invoke-static {v4, v2, v0, v11, v7}, Li4/l;->g(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;II)I
+
+    move-result v0
+
+    .line 24
+    sget v7, Landroidx/core/R$styleable;->GradientColor_android_gradientRadius:I
+
+    const-string v11, "gradientRadius"
+
+    move/from16 v21, v8
+
+    const/4 v8, 0x0
+
+    invoke-static {v4, v2, v11, v7, v8}, Li4/l;->f(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;IF)F
+
+    move-result v7
+
+    .line 25
+    invoke-virtual {v4}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 26
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
+
+    move-result v4
+
+    const/4 v8, 0x1
+
+    add-int/2addr v4, v8
+
+    .line 27
+    new-instance v11, Ljava/util/ArrayList;
+
+    const/16 v8, 0x14
+
+    invoke-direct {v11, v8}, Ljava/util/ArrayList;-><init>(I)V
+
+    move/from16 v22, v7
+
+    .line 28
+    new-instance v7, Ljava/util/ArrayList;
+
+    invoke-direct {v7, v8}, Ljava/util/ArrayList;-><init>(I)V
+
+    move-object/from16 v8, p0
+
+    move/from16 v23, v15
+
+    .line 29
+    :goto_1
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
+
+    move-result v15
+
+    move/from16 v24, v14
+
+    const/4 v14, 0x1
+
+    if-eq v15, v14, :cond_8
+
+    .line 30
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
+
+    move-result v14
+
+    move/from16 v25, v13
+
+    if-ge v14, v4, :cond_3
+
+    const/4 v13, 0x3
+
+    if-eq v15, v13, :cond_9
+
+    :cond_3
+    const/4 v13, 0x2
+
+    if-eq v15, v13, :cond_4
+
+    goto :goto_3
+
+    :cond_4
+    if-gt v14, v4, :cond_7
+
+    .line 31
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v13
+
+    const-string v14, "item"
+
+    invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_5
+
+    goto :goto_3
+
+    .line 32
+    :cond_5
+    sget-object v13, Landroidx/core/R$styleable;->GradientColorItem:[I
+
+    invoke-static {v8, v1, v3, v13}, Li4/l;->m(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object v8
+
+    .line 33
+    sget v13, Landroidx/core/R$styleable;->GradientColorItem_android_color:I
+
+    invoke-virtual {v8, v13}, Landroid/content/res/TypedArray;->hasValue(I)Z
+
+    move-result v14
+
+    .line 34
+    sget v15, Landroidx/core/R$styleable;->GradientColorItem_android_offset:I
+
+    invoke-virtual {v8, v15}, Landroid/content/res/TypedArray;->hasValue(I)Z
+
+    move-result v26
+
+    if-eqz v14, :cond_6
+
+    if-eqz v26, :cond_6
+
+    const/4 v14, 0x0
+
+    .line 35
+    invoke-virtual {v8, v13, v14}, Landroid/content/res/TypedArray;->getColor(II)I
+
+    move-result v13
+
+    const/4 v14, 0x0
+
+    .line 36
+    invoke-virtual {v8, v15, v14}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v15
+
+    .line 37
+    invoke-virtual {v8}, Landroid/content/res/TypedArray;->recycle()V
+
+    .line 38
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    invoke-static {v15}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v8
+
+    invoke-virtual {v11, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 40
+    :cond_6
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 41
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getPositionDescription()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ": <item> tag requires a \'color\' attribute and a \'offset\' attribute!"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_7
+    :goto_2
+    move-object/from16 v8, p0
+
+    :goto_3
+    move/from16 v14, v24
+
+    move/from16 v13, v25
+
+    goto :goto_1
+
+    :cond_8
+    move/from16 v25, v13
+
+    .line 42
+    :cond_9
+    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-lez v1, :cond_a
+
+    new-instance v1, Li4/f;
+
+    invoke-direct {v1, v7, v11}, Li4/f;-><init>(Ljava/util/List;Ljava/util/List;)V
+
+    goto :goto_4
+
+    :cond_a
+    const/4 v1, 0x0
+
+    :goto_4
+    if-eqz v1, :cond_b
+
+    goto :goto_5
+
+    :cond_b
+    if-eqz v18, :cond_c
+
+    .line 43
+    new-instance v1, Li4/f;
+
+    invoke-direct {v1, v6, v10, v5}, Li4/f;-><init>(III)V
+
+    goto :goto_5
+
+    .line 44
+    :cond_c
+    new-instance v1, Li4/f;
+
+    invoke-direct {v1, v6, v5}, Li4/f;-><init>(II)V
+
+    :goto_5
+    const/4 v2, 0x1
+
+    if-eq v9, v2, :cond_10
+
+    const/4 v3, 0x2
+
+    if-eq v9, v3, :cond_f
+
+    .line 45
+    new-instance v4, Landroid/graphics/LinearGradient;
+
+    iget-object v5, v1, Li4/f;->a:[I
+
+    iget-object v1, v1, Li4/f;->b:[F
+
+    if-eq v0, v2, :cond_e
+
+    if-eq v0, v3, :cond_d
+
+    .line 46
+    sget-object v0, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    goto :goto_6
+
+    .line 47
+    :cond_d
+    sget-object v0, Landroid/graphics/Shader$TileMode;->MIRROR:Landroid/graphics/Shader$TileMode;
+
+    goto :goto_6
+
+    .line 48
+    :cond_e
+    sget-object v0, Landroid/graphics/Shader$TileMode;->REPEAT:Landroid/graphics/Shader$TileMode;
+
+    :goto_6
+    move-object/from16 v18, v0
+
+    move-object v11, v4
+
+    move/from16 v13, v25
+
+    move/from16 v14, v24
+
+    move/from16 v15, v23
+
+    move-object/from16 v16, v5
+
+    move-object/from16 v17, v1
+
+    .line 49
+    invoke-direct/range {v11 .. v18}, Landroid/graphics/LinearGradient;-><init>(FFFF[I[FLandroid/graphics/Shader$TileMode;)V
+
+    goto :goto_8
+
+    .line 50
+    :cond_f
+    new-instance v4, Landroid/graphics/SweepGradient;
+
+    iget-object v0, v1, Li4/f;->a:[I
+
+    iget-object v1, v1, Li4/f;->b:[F
+
+    move/from16 v2, v20
+
+    move/from16 v3, v21
+
+    invoke-direct {v4, v2, v3, v0, v1}, Landroid/graphics/SweepGradient;-><init>(FF[I[F)V
+
+    goto :goto_8
+
+    :cond_10
+    move/from16 v2, v20
+
+    move/from16 v3, v21
+
+    const/4 v4, 0x0
+
+    cmpg-float v4, v22, v4
+
+    if-lez v4, :cond_13
+
+    .line 51
+    new-instance v4, Landroid/graphics/RadialGradient;
+
+    iget-object v5, v1, Li4/f;->a:[I
+
+    iget-object v1, v1, Li4/f;->b:[F
+
+    const/4 v6, 0x1
+
+    if-eq v0, v6, :cond_12
+
+    const/4 v6, 0x2
+
+    if-eq v0, v6, :cond_11
+
+    .line 52
+    sget-object v0, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    goto :goto_7
+
+    .line 53
+    :cond_11
+    sget-object v0, Landroid/graphics/Shader$TileMode;->MIRROR:Landroid/graphics/Shader$TileMode;
+
+    goto :goto_7
+
+    .line 54
+    :cond_12
+    sget-object v0, Landroid/graphics/Shader$TileMode;->REPEAT:Landroid/graphics/Shader$TileMode;
+
+    :goto_7
+    move-object/from16 v16, v4
+
+    move/from16 v17, v2
+
+    move/from16 v18, v3
+
+    move/from16 v19, v22
+
+    move-object/from16 v20, v5
+
+    move-object/from16 v21, v1
+
+    move-object/from16 v22, v0
+
+    .line 55
+    invoke-direct/range {v16 .. v22}, Landroid/graphics/RadialGradient;-><init>(FFF[I[FLandroid/graphics/Shader$TileMode;)V
+
+    .line 56
+    :goto_8
+    new-instance v0, Li4/d;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v4, v2, v1}, Li4/d;-><init>(Landroid/graphics/Shader;Landroid/content/res/ColorStateList;I)V
+
+    return-object v0
+
+    .line 57
+    :cond_13
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
+
+    const-string v1, "<gradient> tag requires \'gradientRadius\' attribute with radial type"
+
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 58
+    :cond_14
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 59
+    invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getPositionDescription()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ": invalid gradient color tag "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 60
+    :cond_15
+    new-instance v0, Lorg/xmlpull/v1/XmlPullParserException;
+
+    const-string v1, "No start tag found"
+
+    invoke-direct {v0, v1}, Lorg/xmlpull/v1/XmlPullParserException;-><init>(Ljava/lang/String;)V
 
     throw v0
 .end method
 
 
 # virtual methods
-.method public a()Ljava/util/List;
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Li4/b;",
-            ">;"
-        }
-    .end annotation
+.method public final b()Z
+    .locals 1
 
-    const-string v0, "ManifestParser"
+    iget-object v0, p0, Li4/d;->a:Landroid/graphics/Shader;
 
-    const/4 v1, 0x3
+    if-eqz v0, :cond_0
 
-    .line 1
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    const-string v2, "Loading Glide modules"
-
-    .line 2
-    invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 3
-    :cond_0
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    .line 4
-    :try_start_0
-    iget-object v3, p0, Li4/d;->a:Landroid/content/Context;
-
-    .line 5
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v3
-
-    iget-object v4, p0, Li4/d;->a:Landroid/content/Context;
-
-    .line 6
-    invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v4
-
-    const/16 v5, 0x80
-
-    invoke-virtual {v3, v4, v5}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v3
-
-    .line 7
-    iget-object v4, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    if-nez v4, :cond_2
-
-    .line 8
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    const-string v1, "Got null app info metadata"
-
-    .line 9
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    :cond_1
-    return-object v2
-
-    :cond_2
-    const/4 v4, 0x2
-
-    .line 10
-    invoke-static {v0, v4}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_3
-
-    .line 11
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "Got app info metadata: "
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v5, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v0, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 12
-    :cond_3
-    iget-object v4, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    invoke-virtual {v4}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
-
-    move-result-object v4
-
-    invoke-interface {v4}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :cond_4
-    :goto_0
-    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_5
-
-    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    const-string v6, "GlideModule"
-
-    .line 13
-    iget-object v7, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
-
-    invoke-virtual {v7, v5}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    .line 14
-    invoke-static {v5}, Li4/d;->b(Ljava/lang/String;)Li4/b;
-
-    move-result-object v6
-
-    invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 15
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    .line 16
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v7, "Loaded Glide module: "
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v0, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 17
-    :cond_5
-    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    iget-object v0, p0, Li4/d;->a:Landroid/graphics/Shader;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Li4/d;->b:Landroid/content/res/ColorStateList;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->isStateful()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final d([I)Z
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Li4/d;->c()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Li4/d;->b:Landroid/content/res/ColorStateList;
+
+    .line 3
+    invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    .line 4
+    invoke-virtual {v0, p1, v1}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
-    const-string v1, "Finished loading Glide modules"
+    move-result p1
 
-    .line 18
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .line 5
+    iget v0, p0, Li4/d;->c:I
 
-    :cond_6
-    return-object v2
+    if-eq p1, v0, :cond_0
 
-    :catch_0
-    move-exception v0
+    const/4 v0, 0x1
 
-    .line 19
-    new-instance v1, Ljava/lang/RuntimeException;
+    .line 6
+    iput p1, p0, Li4/d;->c:I
 
-    const-string v2, "Unable to find metadata to parse GlideModules"
+    goto :goto_0
 
-    invoke-direct {v1, v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    :cond_0
+    const/4 v0, 0x0
 
-    throw v1
+    :goto_0
+    return v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    invoke-virtual {p0}, Li4/d;->b()Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    iget v0, p0, Li4/d;->c:I
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    return v0
 .end method

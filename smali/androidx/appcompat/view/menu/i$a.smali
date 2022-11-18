@@ -1,49 +1,22 @@
-.class Landroidx/appcompat/view/menu/i$a;
+.class public interface abstract Landroidx/appcompat/view/menu/i$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/core/view/b$b;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/view/menu/i;->b(Landroidx/core/view/b;)Lo1/b;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/view/menu/i;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x609
+    name = "a"
 .end annotation
 
 
-# instance fields
-.field final synthetic a:Landroidx/appcompat/view/menu/i;
-
-
-# direct methods
-.method constructor <init>(Landroidx/appcompat/view/menu/i;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/i$a;->a:Landroidx/appcompat/view/menu/i;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract b(Landroidx/appcompat/view/menu/e;Z)V
 .end method
 
-
-# virtual methods
-.method public onActionProviderVisibilityChanged(Z)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/view/menu/i$a;->a:Landroidx/appcompat/view/menu/i;
-
-    iget-object v0, p1, Landroidx/appcompat/view/menu/i;->n:Landroidx/appcompat/view/menu/g;
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/g;->L(Landroidx/appcompat/view/menu/i;)V
-
-    return-void
+.method public abstract c(Landroidx/appcompat/view/menu/e;)Z
 .end method

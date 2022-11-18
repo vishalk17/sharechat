@@ -9,18 +9,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4008
+    accessFlags = 0x4011
     name = null
 .end annotation
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lio/intercom/android/nexus/NexusEventType;-><init>(Ljava/lang/String;ILio/intercom/android/nexus/NexusEventType$1;)V
 
     return-void
@@ -28,10 +27,27 @@
 
 
 # virtual methods
-.method protected toStringEncodedJsonObject(Lio/intercom/android/nexus/NexusEvent;)Ljava/lang/String;
-    .locals 0
+.method public toJsonObject(Lio/intercom/android/nexus/NexusEvent;)Lorg/json/JSONObject;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
 
-    const-string p1, ""
+    .line 1
+    invoke-super {p0, p1}, Lio/intercom/android/nexus/NexusEventType;->toJsonObject(Lio/intercom/android/nexus/NexusEvent;)Lorg/json/JSONObject;
 
-    return-object p1
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {p1}, Lio/intercom/android/nexus/NexusEvent;->getUserId()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v1, "nx.ToUser"
+
+    invoke-virtual {v0, v1, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    return-object v0
 .end method

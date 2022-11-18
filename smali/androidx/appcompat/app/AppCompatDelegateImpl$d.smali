@@ -1,32 +1,31 @@
-.class Landroidx/appcompat/app/AppCompatDelegateImpl$d;
+.class public final Landroidx/appcompat/app/AppCompatDelegateImpl$d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/widget/w$a;
+.implements Landroidx/appcompat/view/menu/i$a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/app/AppCompatDelegateImpl;->U()Landroid/view/ViewGroup;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/app/AppCompatDelegateImpl;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x11
+    name = "d"
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public final synthetic b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,19 +34,35 @@
 
 
 # virtual methods
-.method public a(Landroid/graphics/Rect;)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
+    .locals 0
+
+    iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
+
+    invoke-virtual {p2, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->G(Landroidx/appcompat/view/menu/e;)V
+
+    return-void
+.end method
+
+.method public final c(Landroidx/appcompat/view/menu/e;)Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$d;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    const/4 v1, 0x0
+    invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->R()Landroid/view/Window$Callback;
 
-    invoke-virtual {v0, v1, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->O0(Landroidx/core/view/p0;Landroid/graphics/Rect;)I
+    move-result-object v0
 
-    move-result v0
+    if-eqz v0, :cond_0
 
-    iput v0, p1, Landroid/graphics/Rect;->top:I
+    const/16 v1, 0x6c
 
-    return-void
+    .line 2
+    invoke-interface {v0, v1, p1}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
 .end method

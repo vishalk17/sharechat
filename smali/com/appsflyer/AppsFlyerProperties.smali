@@ -101,10 +101,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/appsflyer/AppsFlyerProperties;
 
     invoke-direct {v0}, Lcom/appsflyer/AppsFlyerProperties;-><init>()V
@@ -138,7 +137,6 @@
 .method private AFKeystoreWrapper()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/AppsFlyerProperties;->AFInAppEventType:Z
 
     return v0
@@ -147,7 +145,6 @@
 .method public static getInstance()Lcom/appsflyer/AppsFlyerProperties;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/appsflyer/AppsFlyerProperties;->AFKeystoreWrapper:Lcom/appsflyer/AppsFlyerProperties;
 
     return-object v0
@@ -235,7 +232,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/appsflyer/AppsFlyerProperties;->values:Ljava/util/Map;
 
@@ -312,7 +308,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/appsflyer/AppsFlyerProperties;->values:Ljava/util/Map;
 
@@ -376,7 +371,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
@@ -391,7 +385,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lcom/appsflyer/AppsFlyerProperties;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
@@ -818,7 +811,6 @@
 .method public final values()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/AppsFlyerProperties;->AFInAppEventParameterName:Z
 
     return v0

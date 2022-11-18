@@ -1,595 +1,384 @@
 .class public final Lqp/a;
-.super Ljava/lang/Object;
+.super Lhq/y;
 .source "SourceFile"
+
+# interfaces
+.implements Lhq/v0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lqp/a$e;,
-        Lqp/a$b;,
-        Lqp/a$d;,
-        Lqp/a$c;,
-        Lqp/a$a;
+        Lqp/a$b;
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<STATE:",
-        "Ljava/lang/Object;",
-        "EVENT:",
-        "Ljava/lang/Object;",
-        "SIDE_EFFECT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        "Lhq/y<",
+        "Lqp/a;",
+        "Lqp/a$b;",
+        ">;",
+        "Lhq/v0;"
     }
 .end annotation
 
 
 # static fields
-.field public static final c:Lqp/a$a;
+.field private static final DEFAULT_INSTANCE:Lqp/a;
+
+.field public static final PACKAGE_NAME_FIELD_NUMBER:I = 0x1
+
+.field private static volatile PARSER:Lhq/d1; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhq/d1<",
+            "Lqp/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final SDK_VERSION_FIELD_NUMBER:I = 0x2
+
+.field public static final VERSION_NAME_FIELD_NUMBER:I = 0x3
 
 
 # instance fields
-.field private final a:Lqp/a$b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lqp/a$b<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-.end field
+.field private bitField0_:I
 
-.field private final b:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "TSTATE;>;"
-        }
-    .end annotation
-.end field
+.field private packageName_:Ljava/lang/String;
+
+.field private sdkVersion_:Ljava/lang/String;
+
+.field private versionName_:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, Lqp/a$a;
+    .line 1
+    new-instance v0, Lqp/a;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lqp/a;-><init>()V
 
-    invoke-direct {v0, v1}, Lqp/a$a;-><init>(Lkotlin/jvm/internal/h;)V
+    .line 2
+    sput-object v0, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
 
-    sput-object v0, Lqp/a;->c:Lqp/a$a;
+    .line 3
+    const-class v1, Lqp/a;
+
+    invoke-static {v1, v0}, Lhq/y;->F(Ljava/lang/Class;Lhq/y;)V
 
     return-void
 .end method
 
-.method private constructor <init>(Lqp/a$b;)V
+.method private constructor <init>()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lqp/a$b<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;)V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lhq/y;-><init>()V
+
+    const-string v0, ""
 
     .line 2
-    iput-object p1, p0, Lqp/a;->a:Lqp/a$b;
+    iput-object v0, p0, Lqp/a;->packageName_:Ljava/lang/String;
 
     .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lqp/a;->sdkVersion_:Ljava/lang/String;
 
-    invoke-virtual {p1}, Lqp/a$b;->a()Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lqp/a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    .line 4
+    iput-object v0, p0, Lqp/a;->versionName_:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lqp/a$b;Lkotlin/jvm/internal/h;)V
-    .locals 0
+.method public static synthetic H()Lqp/a;
+    .locals 1
 
-    invoke-direct {p0, p1}, Lqp/a;-><init>(Lqp/a$b;)V
-
-    return-void
-.end method
-
-.method private final a(Ljava/lang/Object;)Lqp/a$b$a;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TSTATE;)",
-            "Lqp/a$b$a<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lqp/a;->a:Lqp/a$b;
-
-    invoke-virtual {v0}, Lqp/a$b;->c()Ljava/util/Map;
-
-    move-result-object v0
-
-    .line 2
-    new-instance v1, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 3
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    .line 4
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lqp/a$d;
-
-    invoke-virtual {v3, p1}, Lqp/a$d;->b(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 5
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-interface {v1}, Ljava/util/Map;->size()I
-
-    move-result v2
-
-    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 7
-    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    .line 8
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lqp/a$b$a;
-
-    invoke-interface {v0, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 9
-    :cond_2
-    invoke-static {v0}, Lkotlin/collections/t;->k0(Ljava/util/List;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lqp/a$b$a;
-
-    if-eqz v0, :cond_3
-
-    return-object v0
-
-    .line 10
-    :cond_3
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 11
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "Missing definition for state "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 p1, 0x21
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private final b(Ljava/lang/Object;Ljava/lang/Object;)Lqp/a$e;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TSTATE;TEVENT;)",
-            "Lqp/a$e<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1}, Lqp/a;->a(Ljava/lang/Object;)Lqp/a$b$a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lqp/a$b$a;->c()Ljava/util/LinkedHashMap;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/Map$Entry;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lqp/a$d;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lr00/p;
-
-    .line 2
-    invoke-virtual {v2, p2}, Lqp/a$d;->b(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    .line 3
-    invoke-interface {v1, p1, p2}, Lr00/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lqp/a$b$a$a;
-
-    invoke-virtual {v0}, Lqp/a$b$a$a;->a()Ljava/lang/Object;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Lqp/a$b$a$a;->b()Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 4
-    new-instance v2, Lqp/a$e$b;
-
-    invoke-direct {v2, p1, p2, v1, v0}, Lqp/a$e$b;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v2
-
-    .line 5
-    :cond_1
-    new-instance v0, Lqp/a$e$a;
-
-    invoke-direct {v0, p1, p2}, Lqp/a$e$a;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    sget-object v0, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
 
     return-object v0
 .end method
 
-.method private final c(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TSTATE;TEVENT;)V"
-        }
-    .end annotation
+.method public static I(Lqp/a;Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lqp/a;->a(Ljava/lang/Object;)Lqp/a$b$a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lqp/a$b$a;->a()Ljava/util/List;
-
-    move-result-object v0
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lr00/p;
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    invoke-interface {v1, p1, p2}, Lr00/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget v0, p0, Lqp/a;->bitField0_:I
 
-    goto :goto_0
+    or-int/lit8 v0, v0, 0x1
 
-    :cond_0
+    iput v0, p0, Lqp/a;->bitField0_:I
+
+    .line 4
+    iput-object p1, p0, Lqp/a;->packageName_:Ljava/lang/String;
+
     return-void
 .end method
 
-.method private final d(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TSTATE;TEVENT;)V"
-        }
-    .end annotation
+.method public static J(Lqp/a;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lqp/a;->a(Ljava/lang/Object;)Lqp/a$b$a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lqp/a$b$a;->b()Ljava/util/List;
-
-    move-result-object v0
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget v0, p0, Lqp/a;->bitField0_:I
 
-    move-result-object v0
+    or-int/lit8 v0, v0, 0x2
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    iput v0, p0, Lqp/a;->bitField0_:I
 
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lr00/p;
+    const-string v0, "20.1.0"
 
     .line 3
-    invoke-interface {v1, p1, p2}, Lr00/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object v0, p0, Lqp/a;->sdkVersion_:Ljava/lang/String;
 
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 
-.method private final e(Lqp/a$e;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lqp/a$e<",
-            "+TSTATE;+TEVENT;+TSIDE_EFFECT;>;)V"
-        }
-    .end annotation
+.method public static K(Lqp/a;Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lqp/a;->a:Lqp/a$b;
-
-    invoke-virtual {v0}, Lqp/a$b;->b()Ljava/util/List;
-
-    move-result-object v0
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget v0, p0, Lqp/a;->bitField0_:I
+
+    or-int/lit8 v0, v0, 0x4
+
+    iput v0, p0, Lqp/a;->bitField0_:I
+
+    .line 3
+    iput-object p1, p0, Lqp/a;->versionName_:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public static L()Lqp/a;
+    .locals 1
+
+    sget-object v0, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
+
+    return-object v0
+.end method
+
+.method public static O()Lqp/a$b;
+    .locals 1
+
+    sget-object v0, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
+
+    invoke-virtual {v0}, Lhq/y;->v()Lhq/y$a;
 
     move-result-object v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    check-cast v0, Lqp/a$b;
 
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lr00/l;
-
-    .line 3
-    invoke-interface {v1, p1}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    :cond_0
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)Lqp/a$e;
+.method public final M()Z
+    .locals 2
+
+    iget v0, p0, Lqp/a;->bitField0_:I
+
+    const/4 v1, 0x1
+
+    and-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    return v1
+.end method
+
+.method public final N()Z
+    .locals 1
+
+    iget v0, p0, Lqp/a;->bitField0_:I
+
+    and-int/lit8 v0, v0, 0x2
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final w(Lhq/y$f;)Ljava/lang/Object;
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TEVENT;)",
-            "Lqp/a$e<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-
-    const-string v0, "event"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    monitor-enter p0
+    sget-object v0, Lqp/a$a;->a:[I
+
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result p1
+
+    aget p1, v0, p1
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    packed-switch p1, :pswitch_data_0
 
     .line 2
-    :try_start_0
-    iget-object v0, p0, Lqp/a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    move-result-object v0
+    throw p1
 
-    const-string v1, "fromState"
+    :pswitch_0
+    return-object v1
 
     .line 3
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    :pswitch_1
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
-    invoke-direct {p0, v0, p1}, Lqp/a;->b(Ljava/lang/Object;Ljava/lang/Object;)Lqp/a$e;
+    move-result-object p1
 
-    move-result-object v0
+    return-object p1
 
     .line 4
-    instance-of v1, v0, Lqp/a$e$b;
+    :pswitch_2
+    sget-object p1, Lqp/a;->PARSER:Lhq/d1;
 
-    if-eqz v1, :cond_0
+    if-nez p1, :cond_1
 
     .line 5
-    iget-object v1, p0, Lqp/a;->b:Ljava/util/concurrent/atomic/AtomicReference;
+    const-class v0, Lqp/a;
 
-    move-object v2, v0
-
-    check-cast v2, Lqp/a$e$b;
-
-    invoke-virtual {v2}, Lqp/a$e$b;->d()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    monitor-enter v0
 
     .line 6
-    :cond_0
-    monitor-exit p0
+    :try_start_0
+    sget-object p1, Lqp/a;->PARSER:Lhq/d1;
+
+    if-nez p1, :cond_0
 
     .line 7
-    invoke-direct {p0, v0}, Lqp/a;->e(Lqp/a$e;)V
+    new-instance p1, Lhq/y$b;
+
+    sget-object v1, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
+
+    invoke-direct {p1, v1}, Lhq/y$b;-><init>(Lhq/y;)V
 
     .line 8
-    instance-of v1, v0, Lqp/a$e$b;
-
-    if-eqz v1, :cond_1
+    sput-object p1, Lqp/a;->PARSER:Lhq/d1;
 
     .line 9
-    move-object v1, v0
+    :cond_0
+    monitor-exit v0
 
-    check-cast v1, Lqp/a$e$b;
-
-    .line 10
-    invoke-virtual {v1}, Lqp/a$e$b;->b()Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 11
-    invoke-direct {p0, v2, p1}, Lqp/a;->d(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 12
-    invoke-virtual {v1}, Lqp/a$e$b;->d()Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 13
-    invoke-direct {p0, v1, p1}, Lqp/a;->c(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    :cond_1
-    return-object v0
+    goto :goto_0
 
     :catchall_0
     move-exception p1
 
-    .line 14
-    monitor-exit p0
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
+
+    :cond_1
+    :goto_0
+    return-object p1
+
+    .line 10
+    :pswitch_3
+    sget-object p1, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
+
+    return-object p1
+
+    :pswitch_4
+    const/4 p1, 0x4
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    const-string v2, "bitField0_"
+
+    aput-object v2, p1, v1
+
+    const-string v1, "packageName_"
+
+    aput-object v1, p1, v0
+
+    const/4 v0, 0x2
+
+    const-string v1, "sdkVersion_"
+
+    aput-object v1, p1, v0
+
+    const/4 v0, 0x3
+
+    const-string v1, "versionName_"
+
+    aput-object v1, p1, v0
+
+    const-string v0, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001\u1008\u0000\u0002\u1008\u0001\u0003\u1008\u0002"
+
+    .line 11
+    sget-object v1, Lqp/a;->DEFAULT_INSTANCE:Lqp/a;
+
+    .line 12
+    new-instance v2, Lhq/i1;
+
+    invoke-direct {v2, v1, v0, p1}, Lhq/i1;-><init>(Lhq/u0;Ljava/lang/String;[Ljava/lang/Object;)V
+
+    return-object v2
+
+    .line 13
+    :pswitch_5
+    new-instance p1, Lqp/a$b;
+
+    invoke-direct {p1, v1}, Lqp/a$b;-><init>(Lqp/a$a;)V
+
+    return-object p1
+
+    .line 14
+    :pswitch_6
+    new-instance p1, Lqp/a;
+
+    invoke-direct {p1}, Lqp/a;-><init>()V
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

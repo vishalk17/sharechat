@@ -1,55 +1,221 @@
-.class public Landroidx/transition/b;
-.super Landroidx/transition/p;
+.class public final Landroidx/transition/b;
+.super Landroidx/transition/l;
 .source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/transition/b$b;
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/transition/p;-><init>()V
-
-    .line 2
-    invoke-direct {p0}, Landroidx/transition/b;->t0()V
+    .line 4
+    invoke-direct {p0}, Landroidx/transition/l;-><init>()V
 
     return-void
 .end method
 
-.method private t0()V
+.method public constructor <init>(I)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Landroidx/transition/l;-><init>()V
+
+    and-int/lit8 v0, p1, -0x4
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iput p1, p0, Landroidx/transition/l;->z:I
+
+    return-void
+
+    .line 3
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "Only MODE_IN and MODE_OUT flags are allowed"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final K(Landroid/view/View;Lp6/i;)Landroid/animation/Animator;
     .locals 3
+
+    const/4 v0, 0x0
+
+    if-eqz p2, :cond_0
+
+    .line 1
+    iget-object p2, p2, Lp6/i;->a:Ljava/util/HashMap;
+
+    const-string v1, "android:fade:transitionAlpha"
+
+    invoke-virtual {p2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/Float;
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+
+    move-result p2
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p2, 0x0
+
+    :goto_0
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    cmpl-float v2, p2, v1
+
+    if-nez v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    move v0, p2
+
+    .line 3
+    :goto_1
+    invoke-virtual {p0, p1, v0, v1}, Landroidx/transition/b;->M(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final L(Landroid/view/View;Lp6/i;)Landroid/animation/Animator;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lp6/m;->a:Lp6/o;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iget-object p2, p2, Lp6/i;->a:Ljava/util/HashMap;
+
+    const-string v0, "android:fade:transitionAlpha"
+
+    invoke-virtual {p2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/Float;
+
+    if-eqz p2, :cond_0
+
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+
+    move-result p2
+
+    goto :goto_0
+
+    :cond_0
+    const/high16 p2, 0x3f800000    # 1.0f
+
+    :goto_0
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p0, p1, p2, v0}, Landroidx/transition/b;->M(Landroid/view/View;FF)Landroid/animation/Animator;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final M(Landroid/view/View;FF)Landroid/animation/Animator;
+    .locals 2
+
+    cmpl-float v0, p2, p3
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
+
+    .line 1
+    :cond_0
+    invoke-static {p1, p2}, Lp6/m;->c(Landroid/view/View;F)V
+
+    .line 2
+    sget-object p2, Lp6/m;->b:Lp6/m$a;
 
     const/4 v0, 0x1
 
-    .line 1
-    invoke-virtual {p0, v0}, Landroidx/transition/p;->q0(I)Landroidx/transition/p;
+    new-array v0, v0, [F
 
-    .line 2
-    new-instance v1, Landroidx/transition/d;
+    const/4 v1, 0x0
 
-    const/4 v2, 0x2
+    aput p3, v0, v1
 
-    invoke-direct {v1, v2}, Landroidx/transition/d;-><init>(I)V
+    invoke-static {p1, p2, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
 
-    invoke-virtual {p0, v1}, Landroidx/transition/p;->i0(Landroidx/transition/l;)Landroidx/transition/p;
-
-    move-result-object v1
-
-    new-instance v2, Landroidx/transition/c;
-
-    invoke-direct {v2}, Landroidx/transition/c;-><init>()V
+    move-result-object p2
 
     .line 3
-    invoke-virtual {v1, v2}, Landroidx/transition/p;->i0(Landroidx/transition/l;)Landroidx/transition/p;
+    new-instance p3, Landroidx/transition/b$b;
 
-    move-result-object v1
-
-    new-instance v2, Landroidx/transition/d;
-
-    invoke-direct {v2, v0}, Landroidx/transition/d;-><init>(I)V
+    invoke-direct {p3, p1}, Landroidx/transition/b$b;-><init>(Landroid/view/View;)V
 
     .line 4
-    invoke-virtual {v1, v2}, Landroidx/transition/p;->i0(Landroidx/transition/l;)Landroidx/transition/p;
+    invoke-virtual {p2, p3}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
+
+    .line 5
+    new-instance p3, Landroidx/transition/b$a;
+
+    invoke-direct {p3, p1}, Landroidx/transition/b$a;-><init>(Landroid/view/View;)V
+
+    invoke-virtual {p0, p3}, Landroidx/transition/f;->a(Landroidx/transition/f$d;)Landroidx/transition/f;
+
+    return-object p2
+.end method
+
+.method public final g(Lp6/i;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroidx/transition/l;->I(Lp6/i;)V
+
+    .line 2
+    iget-object v0, p1, Lp6/i;->a:Ljava/util/HashMap;
+
+    iget-object p1, p1, Lp6/i;->b:Landroid/view/View;
+
+    .line 3
+    invoke-static {p1}, Lp6/m;->a(Landroid/view/View;)F
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p1
+
+    const-string v1, "android:fade:transitionAlpha"
+
+    .line 4
+    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

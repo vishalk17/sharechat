@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/platform/w1;
@@ -23,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,34 +30,14 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/ActionMode;)V
+.method public final a(Landroid/view/RenderNode;)V
     .locals 1
 
-    const-string v0, "actionMode"
+    const-string v0, "renderNode"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    invoke-virtual {p1}, Landroid/view/ActionMode;->invalidateContentRect()V
+    invoke-virtual {p1}, Landroid/view/RenderNode;->discardDisplayList()V
 
     return-void
-.end method
-
-.method public final b(Landroid/view/View;Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
-    .locals 1
-
-    const-string v0, "view"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "actionModeCallback"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1, p2, p3}, Landroid/view/View;->startActionMode(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
-
-    move-result-object p1
-
-    return-object p1
 .end method

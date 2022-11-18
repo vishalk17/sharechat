@@ -1,195 +1,155 @@
-.class Landroidx/work/impl/WorkDatabase_Impl$a;
-.super Landroidx/room/y0$a;
+.class public final Landroidx/work/impl/WorkDatabase_Impl$a;
+.super Lg6/a0$a;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/work/impl/WorkDatabase_Impl;->createOpenHelper(Landroidx/room/q;)Ll2/g;
+    value = Landroidx/work/impl/WorkDatabase_Impl;->createOpenHelper(Lg6/h;)Ll6/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/work/impl/WorkDatabase_Impl;
+.field public final synthetic a:Landroidx/work/impl/WorkDatabase_Impl;
 
 
 # direct methods
-.method constructor <init>(Landroidx/work/impl/WorkDatabase_Impl;I)V
+.method public constructor <init>(Landroidx/work/impl/WorkDatabase_Impl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-direct {p0, p2}, Landroidx/room/y0$a;-><init>(I)V
+    const/16 p1, 0xc
+
+    invoke-direct {p0, p1}, Lg6/a0$a;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public createAllTables(Landroidx/sqlite/db/a;)V
-    .locals 1
+.method public final createAllTables(Ll6/b;)V
+    .locals 4
 
     const-string v0, "CREATE TABLE IF NOT EXISTS `Dependency` (`work_spec_id` TEXT NOT NULL, `prerequisite_id` TEXT NOT NULL, PRIMARY KEY(`work_spec_id`, `prerequisite_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`prerequisite_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
 
+    const-string v1, "CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)"
+
+    const-string v2, "CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)"
+
+    const-string v3, "CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `out_of_quota_policy` INTEGER NOT NULL, `required_network_type` INTEGER, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB, PRIMARY KEY(`id`))"
+
     .line 1
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX IF NOT EXISTS `index_Dependency_work_spec_id` ON `Dependency` (`work_spec_id`)"
-
-    .line 2
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX IF NOT EXISTS `index_Dependency_prerequisite_id` ON `Dependency` (`prerequisite_id`)"
-
-    .line 3
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE IF NOT EXISTS `WorkSpec` (`id` TEXT NOT NULL, `state` INTEGER NOT NULL, `worker_class_name` TEXT NOT NULL, `input_merger_class_name` TEXT, `input` BLOB NOT NULL, `output` BLOB NOT NULL, `initial_delay` INTEGER NOT NULL, `interval_duration` INTEGER NOT NULL, `flex_duration` INTEGER NOT NULL, `run_attempt_count` INTEGER NOT NULL, `backoff_policy` INTEGER NOT NULL, `backoff_delay_duration` INTEGER NOT NULL, `period_start_time` INTEGER NOT NULL, `minimum_retention_duration` INTEGER NOT NULL, `schedule_requested_at` INTEGER NOT NULL, `run_in_foreground` INTEGER NOT NULL, `required_network_type` INTEGER, `requires_charging` INTEGER NOT NULL, `requires_device_idle` INTEGER NOT NULL, `requires_battery_not_low` INTEGER NOT NULL, `requires_storage_not_low` INTEGER NOT NULL, `trigger_content_update_delay` INTEGER NOT NULL, `trigger_max_content_delay` INTEGER NOT NULL, `content_uri_triggers` BLOB, PRIMARY KEY(`id`))"
-
-    .line 4
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    invoke-static {p1, v0, v1, v2, v3}, Lq2/w;->d(Ll6/b;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "CREATE INDEX IF NOT EXISTS `index_WorkSpec_schedule_requested_at` ON `WorkSpec` (`schedule_requested_at`)"
 
-    .line 5
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    const-string v1, "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `WorkSpec` (`period_start_time`)"
 
-    const-string v0, "CREATE INDEX IF NOT EXISTS `index_WorkSpec_period_start_time` ON `WorkSpec` (`period_start_time`)"
+    const-string v2, "CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
 
-    .line 6
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    const-string v3, "CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)"
 
-    const-string v0, "CREATE TABLE IF NOT EXISTS `WorkTag` (`tag` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`tag`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
-
-    .line 7
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "CREATE INDEX IF NOT EXISTS `index_WorkTag_work_spec_id` ON `WorkTag` (`work_spec_id`)"
-
-    .line 8
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 2
+    invoke-static {p1, v0, v1, v2, v3}, Lq2/w;->d(Ll6/b;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "CREATE TABLE IF NOT EXISTS `SystemIdInfo` (`work_spec_id` TEXT NOT NULL, `system_id` INTEGER NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
 
-    .line 9
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    const-string v1, "CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
 
-    const-string v0, "CREATE TABLE IF NOT EXISTS `WorkName` (`name` TEXT NOT NULL, `work_spec_id` TEXT NOT NULL, PRIMARY KEY(`name`, `work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
+    const-string v2, "CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)"
 
-    .line 10
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    const-string v3, "CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
 
-    const-string v0, "CREATE INDEX IF NOT EXISTS `index_WorkName_work_spec_id` ON `WorkName` (`work_spec_id`)"
-
-    .line 11
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "CREATE TABLE IF NOT EXISTS `WorkProgress` (`work_spec_id` TEXT NOT NULL, `progress` BLOB NOT NULL, PRIMARY KEY(`work_spec_id`), FOREIGN KEY(`work_spec_id`) REFERENCES `WorkSpec`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )"
-
-    .line 12
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 3
+    invoke-static {p1, v0, v1, v2, v3}, Lq2/w;->d(Ll6/b;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))"
 
-    .line 13
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 4
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
     const-string v0, "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
 
-    .line 14
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 5
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
-    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \'cf029002fffdcadf079e8d0a1c9a70ac\')"
+    const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \'c103703e120ae8cc73c9248622f3cd1e\')"
 
-    .line 15
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 6
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public dropAllTables(Landroidx/sqlite/db/a;)V
-    .locals 3
+.method public final dropAllTables(Ll6/b;)V
+    .locals 4
 
     const-string v0, "DROP TABLE IF EXISTS `Dependency`"
 
+    const-string v1, "DROP TABLE IF EXISTS `WorkSpec`"
+
+    const-string v2, "DROP TABLE IF EXISTS `WorkTag`"
+
+    const-string v3, "DROP TABLE IF EXISTS `SystemIdInfo`"
+
     .line 1
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "DROP TABLE IF EXISTS `WorkSpec`"
-
-    .line 2
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "DROP TABLE IF EXISTS `WorkTag`"
-
-    .line 3
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
-    const-string v0, "DROP TABLE IF EXISTS `SystemIdInfo`"
-
-    .line 4
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    invoke-static {p1, v0, v1, v2, v3}, Lq2/w;->d(Ll6/b;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "DROP TABLE IF EXISTS `WorkName`"
 
-    .line 5
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 2
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
     const-string v0, "DROP TABLE IF EXISTS `WorkProgress`"
 
-    .line 6
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    .line 3
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
     const-string v0, "DROP TABLE IF EXISTS `Preference`"
 
+    .line 4
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
+
+    .line 5
+    iget-object p1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
+
+    sget v0, Landroidx/work/impl/WorkDatabase_Impl;->k:I
+
+    .line 6
+    iget-object p1, p1, Lg6/w;->mCallbacks:Ljava/util/List;
+
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x0
+
     .line 7
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    :goto_0
+    if-ge v0, p1, :cond_0
 
     .line 8
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
-
-    invoke-static {v0}, Landroidx/work/impl/WorkDatabase_Impl;->n(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x0
+    iget-object v1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
     .line 9
-    iget-object v1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
+    iget-object v1, v1, Lg6/w;->mCallbacks:Ljava/util/List;
 
-    invoke-static {v1}, Landroidx/work/impl/WorkDatabase_Impl;->o(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
+    .line 10
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    check-cast v1, Lg6/w$b;
 
-    move-result v1
-
-    :goto_0
-    if-ge v0, v1, :cond_0
-
-    .line 10
-    iget-object v2, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
-
-    invoke-static {v2}, Landroidx/work/impl/WorkDatabase_Impl;->q(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/room/w0$b;
-
-    invoke-virtual {v2, p1}, Landroidx/room/w0$b;->b(Landroidx/sqlite/db/a;)V
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -199,48 +159,43 @@
     return-void
 .end method
 
-.method protected onCreate(Landroidx/sqlite/db/a;)V
-    .locals 3
+.method public final onCreate(Ll6/b;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
+    iget-object p1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-static {v0}, Landroidx/work/impl/WorkDatabase_Impl;->r(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
+    sget v0, Landroidx/work/impl/WorkDatabase_Impl;->k:I
 
-    move-result-object v0
+    .line 2
+    iget-object p1, p1, Lg6/w;->mCallbacks:Ljava/util/List;
 
-    if-eqz v0, :cond_0
+    if-eqz p1, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2
+    .line 3
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    :goto_0
+    if-ge v0, p1, :cond_0
+
+    .line 4
     iget-object v1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-static {v1}, Landroidx/work/impl/WorkDatabase_Impl;->s(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
+    .line 5
+    iget-object v1, v1, Lg6/w;->mCallbacks:Ljava/util/List;
+
+    .line 6
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    invoke-interface {v1}, Ljava/util/List;->size()I
+    check-cast v1, Lg6/w$b;
 
-    move-result v1
-
-    :goto_0
-    if-ge v0, v1, :cond_0
-
-    .line 3
-    iget-object v2, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
-
-    invoke-static {v2}, Landroidx/work/impl/WorkDatabase_Impl;->t(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/room/w0$b;
-
-    invoke-virtual {v2, p1}, Landroidx/room/w0$b;->a(Landroidx/sqlite/db/a;)V
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
 
@@ -250,65 +205,62 @@
     return-void
 .end method
 
-.method public onOpen(Landroidx/sqlite/db/a;)V
+.method public final onOpen(Ll6/b;)V
     .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-static {v0, p1}, Landroidx/work/impl/WorkDatabase_Impl;->u(Landroidx/work/impl/WorkDatabase_Impl;Landroidx/sqlite/db/a;)Landroidx/sqlite/db/a;
+    sget v1, Landroidx/work/impl/WorkDatabase_Impl;->k:I
+
+    .line 2
+    iput-object p1, v0, Lg6/w;->mDatabase:Ll6/b;
 
     const-string v0, "PRAGMA foreign_keys = ON"
 
-    .line 2
-    invoke-interface {p1, v0}, Landroidx/sqlite/db/a;->O0(Ljava/lang/String;)V
-
     .line 3
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
-
-    invoke-static {v0, p1}, Landroidx/work/impl/WorkDatabase_Impl;->v(Landroidx/work/impl/WorkDatabase_Impl;Landroidx/sqlite/db/a;)V
+    invoke-interface {p1, v0}, Ll6/b;->A0(Ljava/lang/String;)V
 
     .line 4
     iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-static {v0}, Landroidx/work/impl/WorkDatabase_Impl;->w(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
+    .line 5
+    invoke-virtual {v0, p1}, Lg6/w;->internalInitInvalidationTracker(Ll6/b;)V
 
-    move-result-object v0
+    .line 6
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
+
+    .line 7
+    iget-object v0, v0, Lg6/w;->mCallbacks:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    .line 5
-    iget-object v1, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
+    .line 8
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    invoke-static {v1}, Landroidx/work/impl/WorkDatabase_Impl;->x(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
+    move-result v0
 
     :goto_0
-    if-ge v0, v1, :cond_0
+    if-ge v1, v0, :cond_0
 
-    .line 6
+    .line 9
     iget-object v2, p0, Landroidx/work/impl/WorkDatabase_Impl$a;->a:Landroidx/work/impl/WorkDatabase_Impl;
 
-    invoke-static {v2}, Landroidx/work/impl/WorkDatabase_Impl;->p(Landroidx/work/impl/WorkDatabase_Impl;)Ljava/util/List;
+    .line 10
+    iget-object v2, v2, Lg6/w;->mCallbacks:Ljava/util/List;
+
+    .line 11
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    check-cast v2, Lg6/w$b;
 
-    move-result-object v2
+    invoke-virtual {v2, p1}, Lg6/w$b;->a(Ll6/b;)V
 
-    check-cast v2, Landroidx/room/w0$b;
-
-    invoke-virtual {v2, p1}, Landroidx/room/w0$b;->c(Landroidx/sqlite/db/a;)V
-
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
@@ -316,22 +268,21 @@
     return-void
 .end method
 
-.method public onPostMigrate(Landroidx/sqlite/db/a;)V
+.method public final onPostMigrate(Ll6/b;)V
     .locals 0
 
     return-void
 .end method
 
-.method public onPreMigrate(Landroidx/sqlite/db/a;)V
+.method public final onPreMigrate(Ll6/b;)V
     .locals 0
 
-    .line 1
-    invoke-static {p1}, Lk2/c;->b(Landroidx/sqlite/db/a;)V
+    invoke-static {p1}, Lj6/c;->a(Ll6/b;)V
 
     return-void
 .end method
 
-.method protected onValidateSchema(Landroidx/sqlite/db/a;)Landroidx/room/y0$b;
+.method public final onValidateSchema(Ll6/b;)Lg6/a0$b;
     .locals 28
 
     move-object/from16 v0, p1
@@ -344,7 +295,7 @@
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
     .line 2
-    new-instance v10, Lk2/g$a;
+    new-instance v10, Lj6/f$a;
 
     const-string v4, "work_spec_id"
 
@@ -360,14 +311,14 @@
 
     move-object v3, v10
 
-    invoke-direct/range {v3 .. v9}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v3 .. v9}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v3, "work_spec_id"
 
     invoke-virtual {v1, v3, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
     const-string v12, "prerequisite_id"
 
@@ -383,19 +334,17 @@
 
     move-object v11, v4
 
-    invoke-direct/range {v11 .. v17}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v11 .. v17}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v5, "prerequisite_id"
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 4
-    new-instance v4, Ljava/util/HashSet;
+    invoke-static {v1, v5, v4, v2}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    invoke-direct {v4, v2}, Ljava/util/HashSet;-><init>(I)V
+    move-result-object v4
 
     .line 5
-    new-instance v12, Lk2/g$b;
+    new-instance v12, Lj6/f$b;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -423,12 +372,12 @@
 
     move-object v6, v12
 
-    invoke-direct/range {v6 .. v11}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v6 .. v11}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v12}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 6
-    new-instance v6, Lk2/g$b;
+    new-instance v6, Lj6/f$b;
 
     filled-new-array {v5}, [Ljava/lang/String;
 
@@ -454,7 +403,7 @@
 
     move-object v14, v6
 
-    invoke-direct/range {v14 .. v19}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v14 .. v19}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v6}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -464,7 +413,7 @@
     invoke-direct {v6, v2}, Ljava/util/HashSet;-><init>(I)V
 
     .line 8
-    new-instance v7, Lk2/g$d;
+    new-instance v7, Lj6/f$d;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -478,12 +427,16 @@
 
     const/4 v10, 0x0
 
-    invoke-direct {v7, v9, v10, v8}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
-
-    invoke-virtual {v6, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    const/4 v11, 0x0
 
     .line 9
-    new-instance v7, Lk2/g$d;
+    invoke-direct {v7, v9, v10, v8, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
+
+    .line 10
+    invoke-virtual {v6, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    .line 11
+    new-instance v7, Lj6/f$d;
 
     filled-new-array {v5}, [Ljava/lang/String;
 
@@ -495,24 +448,26 @@
 
     const-string v8, "index_Dependency_prerequisite_id"
 
-    invoke-direct {v7, v8, v10, v5}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    .line 12
+    invoke-direct {v7, v8, v10, v5, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
+    .line 13
     invoke-virtual {v6, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 10
-    new-instance v5, Lk2/g;
+    .line 14
+    new-instance v5, Lj6/f;
 
     const-string v7, "Dependency"
 
-    invoke-direct {v5, v7, v1, v4, v6}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v5, v7, v1, v4, v6}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 11
-    invoke-static {v0, v7}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 15
+    invoke-static {v0, v7}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 12
-    invoke-virtual {v5, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 16
+    invoke-virtual {v5, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -520,49 +475,39 @@
 
     if-nez v4, :cond_0
 
-    .line 13
-    new-instance v0, Landroidx/room/y0$b;
+    .line 17
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "Dependency(androidx.work.impl.model.Dependency).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Dependency(androidx.work.impl.model.Dependency).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 18
+    invoke-static {v2, v5, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 19
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 14
+    .line 20
     :cond_0
     new-instance v1, Ljava/util/HashMap;
 
-    const/16 v4, 0x18
+    const/16 v4, 0x19
 
     invoke-direct {v1, v4}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 15
-    new-instance v4, Lk2/g$a;
+    .line 21
+    new-instance v4, Lj6/f$a;
 
-    const/16 v17, 0x1
+    const/4 v5, 0x1
 
     const/16 v18, 0x1
 
-    const/16 v19, 0x0
+    const/4 v7, 0x0
 
-    const/16 v20, 0x1
+    const/4 v8, 0x1
 
     const-string v15, "id"
 
@@ -570,37 +515,43 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move/from16 v17, v5
+
+    move-object/from16 v19, v7
+
+    move/from16 v20, v8
+
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     invoke-virtual {v1, v13, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
-    new-instance v4, Lk2/g$a;
+    .line 22
+    new-instance v4, Lj6/f$a;
 
-    const/16 v24, 0x1
+    const/16 v22, 0x1
 
-    const/16 v25, 0x0
+    const/16 v23, 0x0
 
-    const/16 v26, 0x0
+    const/16 v24, 0x0
 
-    const/16 v27, 0x1
+    const/16 v25, 0x1
 
-    const-string v22, "state"
+    const-string v20, "state"
 
-    const-string v23, "INTEGER"
+    const-string v21, "INTEGER"
 
-    move-object/from16 v21, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v21 .. v27}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v5, "state"
+    const-string v9, "state"
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v9, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 17
-    new-instance v4, Lk2/g$a;
+    .line 23
+    new-instance v4, Lj6/f$a;
 
-    const/16 v18, 0x0
+    const/4 v9, 0x0
 
     const-string v15, "worker_class_name"
 
@@ -608,441 +559,464 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move/from16 v18, v9
+
+    move-object/from16 v19, v7
+
+    move/from16 v20, v8
+
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v5, "worker_class_name"
 
     invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
-    new-instance v4, Lk2/g$a;
+    .line 24
+    new-instance v4, Lj6/f$a;
 
-    const/16 v17, 0x0
+    const/16 v22, 0x0
 
-    const-string v15, "input_merger_class_name"
+    const-string v20, "input_merger_class_name"
 
-    const-string v16, "TEXT"
+    const-string v21, "TEXT"
 
-    move-object v14, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move/from16 v23, v9
+
+    move-object/from16 v24, v7
+
+    move/from16 v25, v8
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v5, "input_merger_class_name"
 
     invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 19
-    new-instance v4, Lk2/g$a;
-
-    const/16 v17, 0x1
-
-    const-string v15, "input"
-
-    const-string v16, "BLOB"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "input"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 20
-    new-instance v4, Lk2/g$a;
-
-    const-string v15, "output"
-
-    const-string v16, "BLOB"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "output"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 21
-    new-instance v4, Lk2/g$a;
-
-    const-string v15, "initial_delay"
-
-    const-string v16, "INTEGER"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "initial_delay"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 22
-    new-instance v4, Lk2/g$a;
-
-    const-string v15, "interval_duration"
-
-    const-string v16, "INTEGER"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "interval_duration"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 23
-    new-instance v4, Lk2/g$a;
-
-    const-string v15, "flex_duration"
-
-    const-string v16, "INTEGER"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "flex_duration"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 24
-    new-instance v4, Lk2/g$a;
-
-    const-string v15, "run_attempt_count"
-
-    const-string v16, "INTEGER"
-
-    move-object v14, v4
-
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
-
-    const-string v5, "run_attempt_count"
-
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 25
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
-    const-string v15, "backoff_policy"
+    const/4 v5, 0x1
 
-    const-string v16, "INTEGER"
+    const-string v20, "input"
 
-    move-object v14, v4
+    const-string v21, "BLOB"
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move-object/from16 v19, v4
 
-    const-string v5, "backoff_policy"
+    move/from16 v22, v5
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "input"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
-    const-string v15, "backoff_delay_duration"
+    const-string v20, "output"
 
-    const-string v16, "INTEGER"
+    const-string v21, "BLOB"
 
-    move-object v14, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v5, "backoff_delay_duration"
+    const-string v12, "output"
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
-    const-string v15, "period_start_time"
+    const-string v20, "initial_delay"
 
-    const-string v16, "INTEGER"
+    const-string v21, "INTEGER"
 
-    move-object v14, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v5, "period_start_time"
+    const-string v12, "initial_delay"
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 28
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
-    const-string v15, "minimum_retention_duration"
+    const-string v20, "interval_duration"
 
-    const-string v16, "INTEGER"
+    const-string v21, "INTEGER"
 
-    move-object v14, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v7, "minimum_retention_duration"
+    const-string v12, "interval_duration"
 
-    invoke-virtual {v1, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 29
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
 
-    const-string v15, "schedule_requested_at"
+    const-string v20, "flex_duration"
 
-    const-string v16, "INTEGER"
+    const-string v21, "INTEGER"
 
-    move-object v14, v4
+    move-object/from16 v19, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v7, "schedule_requested_at"
+    const-string v12, "flex_duration"
 
-    invoke-virtual {v1, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 30
-    new-instance v4, Lk2/g$a;
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "run_attempt_count"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "run_attempt_count"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 31
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "backoff_policy"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "backoff_policy"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 32
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "backoff_delay_duration"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "backoff_delay_duration"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 33
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "period_start_time"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "period_start_time"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 34
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "minimum_retention_duration"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v14, "minimum_retention_duration"
+
+    invoke-virtual {v1, v14, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 35
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "schedule_requested_at"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v14, "schedule_requested_at"
+
+    invoke-virtual {v1, v14, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 36
+    new-instance v4, Lj6/f$a;
+
+    const-string v20, "run_in_foreground"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "run_in_foreground"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 37
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "out_of_quota_policy"
 
-    const-string v8, "run_in_foreground"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 31
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const/16 v17, 0x0
+    const-string v5, "out_of_quota_policy"
 
-    const-string v15, "required_network_type"
+    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    const-string v16, "INTEGER"
+    .line 38
+    new-instance v4, Lj6/f$a;
 
-    move-object v14, v4
+    const/16 v22, 0x0
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "required_network_type"
 
-    const-string v8, "required_network_type"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 32
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const/16 v17, 0x1
+    const-string v5, "required_network_type"
+
+    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 39
+    new-instance v4, Lj6/f$a;
+
+    const/4 v5, 0x1
+
+    const-string v20, "requires_charging"
+
+    const-string v21, "INTEGER"
+
+    move-object/from16 v19, v4
+
+    move/from16 v22, v5
+
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "requires_charging"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 40
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "requires_device_idle"
 
-    const-string v8, "requires_charging"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 33
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "requires_device_idle"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 41
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "requires_battery_not_low"
 
-    const-string v8, "requires_device_idle"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 34
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "requires_battery_not_low"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 42
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "requires_storage_not_low"
 
-    const-string v8, "requires_battery_not_low"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 35
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "requires_storage_not_low"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 43
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "trigger_content_update_delay"
 
-    const-string v8, "requires_storage_not_low"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 36
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v15, "trigger_content_update_delay"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v15, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 44
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const-string v20, "trigger_max_content_delay"
 
-    const-string v8, "trigger_content_update_delay"
+    const-string v21, "INTEGER"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object/from16 v19, v4
 
-    .line 37
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v15, "trigger_max_content_delay"
+    const-string v5, "trigger_max_content_delay"
 
-    const-string v16, "INTEGER"
+    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-object v14, v4
+    .line 45
+    new-instance v4, Lj6/f$a;
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    const/16 v22, 0x0
 
-    const-string v8, "trigger_max_content_delay"
+    const-string v20, "content_uri_triggers"
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const-string v21, "BLOB"
 
-    .line 38
-    new-instance v4, Lk2/g$a;
+    move-object/from16 v19, v4
 
-    const/16 v17, 0x0
+    invoke-direct/range {v19 .. v25}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    const-string v15, "content_uri_triggers"
+    const-string v5, "content_uri_triggers"
 
-    const-string v16, "BLOB"
+    .line 46
+    invoke-static {v1, v5, v4, v10}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    move-object v14, v4
+    move-result-object v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    .line 47
+    new-instance v5, Ljava/util/HashSet;
 
-    const-string v8, "content_uri_triggers"
+    invoke-direct {v5, v2}, Ljava/util/HashSet;-><init>(I)V
 
-    invoke-virtual {v1, v8, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 48
+    new-instance v7, Lj6/f$d;
 
-    .line 39
-    new-instance v4, Ljava/util/HashSet;
+    filled-new-array {v14}, [Ljava/lang/String;
 
-    invoke-direct {v4, v10}, Ljava/util/HashSet;-><init>(I)V
+    move-result-object v8
 
-    .line 40
-    new-instance v8, Ljava/util/HashSet;
+    invoke-static {v8}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    invoke-direct {v8, v2}, Ljava/util/HashSet;-><init>(I)V
+    move-result-object v8
 
-    .line 41
-    new-instance v9, Lk2/g$d;
+    const-string v9, "index_WorkSpec_schedule_requested_at"
 
-    filled-new-array {v7}, [Ljava/lang/String;
+    .line 49
+    invoke-direct {v7, v9, v10, v8, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
-    move-result-object v7
+    .line 50
+    invoke-virtual {v5, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    invoke-static {v7}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    .line 51
+    new-instance v7, Lj6/f$d;
 
-    move-result-object v7
+    filled-new-array {v12}, [Ljava/lang/String;
 
-    const-string v11, "index_WorkSpec_schedule_requested_at"
+    move-result-object v8
 
-    invoke-direct {v9, v11, v10, v7}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    invoke-static {v8}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
-    invoke-virtual {v8, v9}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    .line 42
-    new-instance v7, Lk2/g$d;
-
-    filled-new-array {v5}, [Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v5}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v5
+    move-result-object v8
 
     const-string v9, "index_WorkSpec_period_start_time"
 
-    invoke-direct {v7, v9, v10, v5}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    .line 52
+    invoke-direct {v7, v9, v10, v8, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
-    invoke-virtual {v8, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    .line 53
+    invoke-virtual {v5, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 43
-    new-instance v5, Lk2/g;
+    .line 54
+    new-instance v7, Lj6/f;
 
-    const-string v7, "WorkSpec"
+    const-string v8, "WorkSpec"
 
-    invoke-direct {v5, v7, v1, v4, v8}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v7, v8, v1, v4, v5}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 44
-    invoke-static {v0, v7}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 55
+    invoke-static {v0, v8}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 45
-    invoke-virtual {v5, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 56
+    invoke-virtual {v7, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 46
-    new-instance v0, Landroidx/room/y0$b;
+    .line 57
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "WorkSpec(androidx.work.impl.model.WorkSpec).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "WorkSpec(androidx.work.impl.model.WorkSpec).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 58
+    invoke-static {v2, v7, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 59
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 47
+    .line 60
     :cond_1
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 48
-    new-instance v4, Lk2/g$a;
+    .line 61
+    new-instance v4, Lj6/f$a;
 
-    const/16 v17, 0x1
+    const/4 v5, 0x1
 
     const/16 v18, 0x1
 
-    const/16 v19, 0x0
+    const/4 v7, 0x0
 
-    const/16 v20, 0x1
+    const/4 v8, 0x1
 
     const-string v15, "tag"
 
@@ -1050,14 +1024,20 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move/from16 v17, v5
 
-    const-string v5, "tag"
+    move-object/from16 v19, v7
 
-    invoke-virtual {v1, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move/from16 v20, v8
 
-    .line 49
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v9, "tag"
+
+    invoke-virtual {v1, v9, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 62
+    new-instance v4, Lj6/f$a;
 
     const/16 v18, 0x2
 
@@ -1067,19 +1047,15 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 63
+    invoke-static {v1, v3, v4, v5}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    .line 50
-    new-instance v4, Ljava/util/HashSet;
+    move-result-object v4
 
-    const/4 v5, 0x1
-
-    invoke-direct {v4, v5}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 51
-    new-instance v7, Lk2/g$b;
+    .line 64
+    new-instance v7, Lj6/f$b;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1105,17 +1081,17 @@
 
     move-object v14, v7
 
-    invoke-direct/range {v14 .. v19}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v14 .. v19}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 52
+    .line 65
     new-instance v7, Ljava/util/HashSet;
 
     invoke-direct {v7, v5}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 53
-    new-instance v8, Lk2/g$d;
+    .line 66
+    new-instance v8, Lj6/f$d;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1125,64 +1101,56 @@
 
     move-result-object v9
 
-    const-string v11, "index_WorkTag_work_spec_id"
+    const-string v12, "index_WorkTag_work_spec_id"
 
-    invoke-direct {v8, v11, v10, v9}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    .line 67
+    invoke-direct {v8, v12, v10, v9, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
+    .line 68
     invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 54
-    new-instance v8, Lk2/g;
+    .line 69
+    new-instance v8, Lj6/f;
 
     const-string v9, "WorkTag"
 
-    invoke-direct {v8, v9, v1, v4, v7}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v8, v9, v1, v4, v7}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 55
-    invoke-static {v0, v9}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 70
+    invoke-static {v0, v9}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 56
-    invoke-virtual {v8, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 71
+    invoke-virtual {v8, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_2
 
-    .line 57
-    new-instance v0, Landroidx/room/y0$b;
+    .line 72
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "WorkTag(androidx.work.impl.model.WorkTag).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "WorkTag(androidx.work.impl.model.WorkTag).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 73
+    invoke-static {v2, v8, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 74
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 58
+    .line 75
     :cond_2
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 59
-    new-instance v4, Lk2/g$a;
+    .line 76
+    new-instance v4, Lj6/f$a;
 
     const/16 v17, 0x1
 
@@ -1198,12 +1166,12 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 60
-    new-instance v4, Lk2/g$a;
+    .line 77
+    new-instance v4, Lj6/f$a;
 
     const/16 v24, 0x1
 
@@ -1219,19 +1187,17 @@
 
     move-object/from16 v21, v4
 
-    invoke-direct/range {v21 .. v27}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v21 .. v27}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v7, "system_id"
 
-    invoke-virtual {v1, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 78
+    invoke-static {v1, v7, v4, v5}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    .line 61
-    new-instance v4, Ljava/util/HashSet;
+    move-result-object v4
 
-    invoke-direct {v4, v5}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 62
-    new-instance v7, Lk2/g$b;
+    .line 79
+    new-instance v7, Lj6/f$b;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1257,75 +1223,65 @@
 
     move-object v14, v7
 
-    invoke-direct/range {v14 .. v19}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v14 .. v19}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 63
+    .line 80
     new-instance v7, Ljava/util/HashSet;
 
     invoke-direct {v7, v10}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 64
-    new-instance v8, Lk2/g;
+    .line 81
+    new-instance v8, Lj6/f;
 
     const-string v9, "SystemIdInfo"
 
-    invoke-direct {v8, v9, v1, v4, v7}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v8, v9, v1, v4, v7}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 65
-    invoke-static {v0, v9}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 82
+    invoke-static {v0, v9}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 66
-    invoke-virtual {v8, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 83
+    invoke-virtual {v8, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_3
 
-    .line 67
-    new-instance v0, Landroidx/room/y0$b;
+    .line 84
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "SystemIdInfo(androidx.work.impl.model.SystemIdInfo).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "SystemIdInfo(androidx.work.impl.model.SystemIdInfo).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 85
+    invoke-static {v2, v8, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 86
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 68
+    .line 87
     :cond_3
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 69
-    new-instance v4, Lk2/g$a;
+    .line 88
+    new-instance v4, Lj6/f$a;
 
-    const/16 v17, 0x1
+    const/4 v7, 0x1
 
     const/16 v18, 0x1
 
-    const/16 v19, 0x0
+    const/4 v8, 0x0
 
-    const/16 v20, 0x1
+    const/4 v9, 0x1
 
     const-string v15, "name"
 
@@ -1333,14 +1289,20 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move/from16 v17, v7
 
-    const-string v7, "name"
+    move-object/from16 v19, v8
 
-    invoke-virtual {v1, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move/from16 v20, v9
 
-    .line 70
-    new-instance v4, Lk2/g$a;
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+
+    const-string v12, "name"
+
+    invoke-virtual {v1, v12, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 89
+    new-instance v4, Lj6/f$a;
 
     const/16 v18, 0x2
 
@@ -1350,17 +1312,15 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
-    invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 90
+    invoke-static {v1, v3, v4, v5}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    .line 71
-    new-instance v4, Ljava/util/HashSet;
+    move-result-object v4
 
-    invoke-direct {v4, v5}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 72
-    new-instance v7, Lk2/g$b;
+    .line 91
+    new-instance v7, Lj6/f$b;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1386,17 +1346,17 @@
 
     move-object v14, v7
 
-    invoke-direct/range {v14 .. v19}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v14 .. v19}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 73
+    .line 92
     new-instance v7, Ljava/util/HashSet;
 
     invoke-direct {v7, v5}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 74
-    new-instance v8, Lk2/g$d;
+    .line 93
+    new-instance v8, Lj6/f$d;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1406,64 +1366,56 @@
 
     move-result-object v9
 
-    const-string v11, "index_WorkName_work_spec_id"
+    const-string v12, "index_WorkName_work_spec_id"
 
-    invoke-direct {v8, v11, v10, v9}, Lk2/g$d;-><init>(Ljava/lang/String;ZLjava/util/List;)V
+    .line 94
+    invoke-direct {v8, v12, v10, v9, v11}, Lj6/f$d;-><init>(Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
 
+    .line 95
     invoke-virtual {v7, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 75
-    new-instance v8, Lk2/g;
+    .line 96
+    new-instance v8, Lj6/f;
 
     const-string v9, "WorkName"
 
-    invoke-direct {v8, v9, v1, v4, v7}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v8, v9, v1, v4, v7}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 76
-    invoke-static {v0, v9}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 97
+    invoke-static {v0, v9}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 77
-    invoke-virtual {v8, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 98
+    invoke-virtual {v8, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_4
 
-    .line 78
-    new-instance v0, Landroidx/room/y0$b;
+    .line 99
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "WorkName(androidx.work.impl.model.WorkName).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "WorkName(androidx.work.impl.model.WorkName).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 100
+    invoke-static {v2, v8, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 101
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 79
+    .line 102
     :cond_4
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 80
-    new-instance v4, Lk2/g$a;
+    .line 103
+    new-instance v4, Lj6/f$a;
 
     const/16 v17, 0x1
 
@@ -1479,12 +1431,12 @@
 
     move-object v14, v4
 
-    invoke-direct/range {v14 .. v20}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v14 .. v20}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     invoke-virtual {v1, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 81
-    new-instance v4, Lk2/g$a;
+    .line 104
+    new-instance v4, Lj6/f$a;
 
     const/16 v24, 0x1
 
@@ -1500,19 +1452,17 @@
 
     move-object/from16 v21, v4
 
-    invoke-direct/range {v21 .. v27}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v21 .. v27}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v7, "progress"
 
-    invoke-virtual {v1, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 105
+    invoke-static {v1, v7, v4, v5}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    .line 82
-    new-instance v4, Ljava/util/HashSet;
+    move-result-object v4
 
-    invoke-direct {v4, v5}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 83
-    new-instance v7, Lk2/g$b;
+    .line 106
+    new-instance v7, Lj6/f$b;
 
     filled-new-array {v3}, [Ljava/lang/String;
 
@@ -1538,168 +1488,148 @@
 
     move-object v14, v7
 
-    invoke-direct/range {v14 .. v19}, Lk2/g$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
+    invoke-direct/range {v14 .. v19}, Lj6/f$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
 
     invoke-virtual {v4, v7}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 84
+    .line 107
     new-instance v3, Ljava/util/HashSet;
 
     invoke-direct {v3, v10}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 85
-    new-instance v7, Lk2/g;
+    .line 108
+    new-instance v7, Lj6/f;
 
     const-string v8, "WorkProgress"
 
-    invoke-direct {v7, v8, v1, v4, v3}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v7, v8, v1, v4, v3}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 86
-    invoke-static {v0, v8}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 109
+    invoke-static {v0, v8}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v1
 
-    .line 87
-    invoke-virtual {v7, v1}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 110
+    invoke-virtual {v7, v1}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_5
 
-    .line 88
-    new-instance v0, Landroidx/room/y0$b;
+    .line 111
+    new-instance v0, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "WorkProgress(androidx.work.impl.model.WorkProgress).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "WorkProgress(androidx.work.impl.model.WorkProgress).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 112
+    invoke-static {v2, v7, v6, v1}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {v0, v10, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 113
+    invoke-direct {v0, v10, v1}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 
-    .line 89
+    .line 114
     :cond_5
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 90
-    new-instance v2, Lk2/g$a;
-
-    const/4 v14, 0x1
+    .line 115
+    new-instance v2, Lj6/f$a;
 
     const/4 v15, 0x1
 
-    const/16 v16, 0x0
+    const/16 v16, 0x1
 
-    const/16 v17, 0x1
+    const/16 v22, 0x0
 
-    const-string v12, "key"
+    const/16 v23, 0x1
 
-    const-string v13, "TEXT"
+    const-string v13, "key"
 
-    move-object v11, v2
+    const-string v14, "TEXT"
 
-    invoke-direct/range {v11 .. v17}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    move-object v12, v2
+
+    move-object/from16 v17, v22
+
+    move/from16 v18, v23
+
+    invoke-direct/range {v12 .. v18}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v3, "key"
 
     invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 91
-    new-instance v2, Lk2/g$a;
+    .line 116
+    new-instance v2, Lj6/f$a;
 
-    const/4 v14, 0x0
+    const/16 v20, 0x0
 
-    const/4 v15, 0x0
+    const/16 v21, 0x0
 
-    const-string v12, "long_value"
+    const-string v18, "long_value"
 
-    const-string v13, "INTEGER"
+    const-string v19, "INTEGER"
 
-    move-object v11, v2
+    move-object/from16 v17, v2
 
-    invoke-direct/range {v11 .. v17}, Lk2/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
+    invoke-direct/range {v17 .. v23}, Lj6/f$a;-><init>(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/String;I)V
 
     const-string v3, "long_value"
 
-    invoke-virtual {v1, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 117
+    invoke-static {v1, v3, v2, v10}, Landroidx/appcompat/widget/l0;->d(Ljava/util/HashMap;Ljava/lang/String;Lj6/f$a;I)Ljava/util/HashSet;
 
-    .line 92
-    new-instance v2, Ljava/util/HashSet;
+    move-result-object v2
 
-    invoke-direct {v2, v10}, Ljava/util/HashSet;-><init>(I)V
-
-    .line 93
+    .line 118
     new-instance v3, Ljava/util/HashSet;
 
     invoke-direct {v3, v10}, Ljava/util/HashSet;-><init>(I)V
 
-    .line 94
-    new-instance v4, Lk2/g;
+    .line 119
+    new-instance v4, Lj6/f;
 
     const-string v7, "Preference"
 
-    invoke-direct {v4, v7, v1, v2, v3}, Lk2/g;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
+    invoke-direct {v4, v7, v1, v2, v3}, Lj6/f;-><init>(Ljava/lang/String;Ljava/util/Map;Ljava/util/Set;Ljava/util/Set;)V
 
-    .line 95
-    invoke-static {v0, v7}, Lk2/g;->a(Landroidx/sqlite/db/a;Ljava/lang/String;)Lk2/g;
+    .line 120
+    invoke-static {v0, v7}, Lj6/f;->a(Ll6/b;Ljava/lang/String;)Lj6/f;
 
     move-result-object v0
 
-    .line 96
-    invoke-virtual {v4, v0}, Lk2/g;->equals(Ljava/lang/Object;)Z
+    .line 121
+    invoke-virtual {v4, v0}, Lj6/f;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    .line 97
-    new-instance v1, Landroidx/room/y0$b;
+    .line 122
+    new-instance v1, Lg6/a0$b;
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v2, "Preference(androidx.work.impl.model.Preference).\n Expected:\n"
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "Preference(androidx.work.impl.model.Preference).\n Expected:\n"
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 123
+    invoke-static {v2, v4, v6, v0}, Lv6/k;->a(Ljava/lang/String;Lj6/f;Ljava/lang/String;Lj6/f;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {v1, v10, v0}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    .line 124
+    invoke-direct {v1, v10, v0}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v1
 
-    .line 98
+    .line 125
     :cond_6
-    new-instance v0, Landroidx/room/y0$b;
+    new-instance v0, Lg6/a0$b;
 
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v5, v1}, Landroidx/room/y0$b;-><init>(ZLjava/lang/String;)V
+    invoke-direct {v0, v5, v11}, Lg6/a0$b;-><init>(ZLjava/lang/String;)V
 
     return-object v0
 .end method

@@ -29,7 +29,7 @@
 
 .field public final valueOf:Ljava/lang/String;
 
-.field final values:Ljava/lang/Runnable;
+.field public final values:Ljava/lang/Runnable;
 
 
 # direct methods

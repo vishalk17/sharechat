@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final a:Landroidx/work/e;
+.field public final a:Landroidx/work/b;
 
 
 # direct methods
@@ -23,37 +23,32 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/work/e;->c:Landroidx/work/e;
-
-    invoke-direct {p0, v0}, Landroidx/work/ListenableWorker$a$c;-><init>(Landroidx/work/e;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroidx/work/e;)V
-    .locals 0
+    sget-object v0, Landroidx/work/b;->c:Landroidx/work/b;
 
     .line 2
     invoke-direct {p0}, Landroidx/work/ListenableWorker$a;-><init>()V
 
     .line 3
-    iput-object p1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
+    iput-object v0, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/work/b;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Landroidx/work/ListenableWorker$a;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public e()Landroidx/work/e;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
-
-    return-object v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     if-ne p0, p1, :cond_0
@@ -81,11 +76,11 @@
     check-cast p1, Landroidx/work/ListenableWorker$a$c;
 
     .line 3
-    iget-object v0, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
+    iget-object v0, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
 
-    iget-object p1, p1, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
+    iget-object p1, p1, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
 
-    invoke-virtual {v0, p1}, Landroidx/work/e;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Landroidx/work/b;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -98,7 +93,7 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
     .line 1
@@ -115,30 +110,29 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
+    iget-object v1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
 
-    invoke-virtual {v1}, Landroidx/work/e;->hashCode()I
+    invoke-virtual {v1}, Landroidx/work/b;->hashCode()I
 
     move-result v1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    return v0
+    return v1
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
+    const-string v0, "Success {mOutputData="
+
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "Success {mOutputData="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/e;
+    .line 2
+    iget-object v1, p0, Landroidx/work/ListenableWorker$a$c;->a:Landroidx/work/b;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

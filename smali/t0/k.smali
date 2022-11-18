@@ -1,64 +1,87 @@
-.class public Lt0/k;
-.super Landroid/text/style/MetricAffectingSpan;
+.class public final Lt0/k;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Le2/c;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final b:F
+.field public final synthetic b:Lc2/h0$a;
+
+.field public final synthetic c:Lc2/o;
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method public constructor <init>(Lc2/h0$a;Lc2/o;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    iput-object p1, p0, Lt0/k;->b:Lc2/h0$a;
 
-    iput p1, p0, Lt0/k;->b:F
+    iput-object p2, p0, Lt0/k;->c:Lc2/o;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 2
-
-    const-string v0, "textPaint"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget v0, p0, Lt0/k;->b:F
+    move-object v0, p1
 
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextSkewX()F
+    check-cast v0, Le2/c;
 
-    move-result v1
+    const-string p1, "$this$onDrawWithContent"
 
-    add-float/2addr v0, v1
+    .line 2
+    invoke-static {v0, p1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setTextSkewX(F)V
+    .line 3
+    invoke-interface {v0}, Le2/c;->T()V
 
-    return-void
-.end method
+    .line 4
+    iget-object p1, p0, Lt0/k;->b:Lc2/h0$a;
 
-.method public updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 2
+    .line 5
+    iget-object v1, p1, Lc2/h0$a;->a:Lc2/l0;
 
-    const-string v0, "textPaint"
+    .line 6
+    iget-object v2, p0, Lt0/k;->c:Lc2/o;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v3, 0x0
 
-    .line 1
-    iget v0, p0, Lt0/k;->b:F
+    const/4 v4, 0x0
 
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextSkewX()F
+    const/4 v5, 0x0
 
-    move-result v1
+    const/4 v6, 0x0
 
-    add-float/2addr v0, v1
+    const/16 v7, 0x3c
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setTextSkewX(F)V
+    const/4 v8, 0x0
 
-    return-void
+    invoke-static/range {v0 .. v8}, Le2/e;->h(Le2/f;Lc2/l0;Lc2/o;FLe2/g;Lc2/x;IILjava/lang/Object;)V
+
+    .line 7
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

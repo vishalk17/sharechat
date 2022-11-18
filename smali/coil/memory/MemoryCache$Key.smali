@@ -16,6 +16,24 @@
     name = "Key"
 .end annotation
 
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0007\u0018\u00002\u00020\u0001\u00a8\u0006\u0002"
+    }
+    d2 = {
+        "Lcoil/memory/MemoryCache$Key;",
+        "Landroid/os/Parcelable;",
+        "coil-base_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
 
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
@@ -30,9 +48,9 @@
 
 
 # instance fields
-.field private final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field private final c:Ljava/util/Map;
+.field public final c:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -45,7 +63,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lcoil/memory/MemoryCache$Key$a;
@@ -53,6 +71,20 @@
     invoke-direct {v0}, Lcoil/memory/MemoryCache$Key$a;-><init>()V
 
     sput-object v0, Lcoil/memory/MemoryCache$Key;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    .line 4
+    invoke-static {}, Lso0/r0;->d()Ljava/util/Map;
+
+    move-result-object v0
+
+    .line 5
+    invoke-direct {p0, p1, v0}, Lcoil/memory/MemoryCache$Key;-><init>(Ljava/lang/String;Ljava/util/Map;)V
 
     return-void
 .end method
@@ -82,93 +114,9 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/h;)V
-    .locals 0
-
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_0
-
-    .line 4
-    invoke-static {}, Lkotlin/collections/o0;->i()Ljava/util/Map;
-
-    move-result-object p2
-
-    .line 5
-    :cond_0
-    invoke-direct {p0, p1, p2}, Lcoil/memory/MemoryCache$Key;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    return-void
-.end method
-
-.method public static synthetic b(Lcoil/memory/MemoryCache$Key;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lcoil/memory/MemoryCache$Key;
-    .locals 0
-
-    and-int/lit8 p4, p3, 0x1
-
-    if-eqz p4, :cond_0
-
-    .line 1
-    iget-object p1, p0, Lcoil/memory/MemoryCache$Key;->b:Ljava/lang/String;
-
-    :cond_0
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_1
-
-    iget-object p2, p0, Lcoil/memory/MemoryCache$Key;->c:Ljava/util/Map;
-
-    :cond_1
-    invoke-virtual {p0, p1, p2}, Lcoil/memory/MemoryCache$Key;->a(Ljava/lang/String;Ljava/util/Map;)Lcoil/memory/MemoryCache$Key;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/util/Map;)Lcoil/memory/MemoryCache$Key;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)",
-            "Lcoil/memory/MemoryCache$Key;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lcoil/memory/MemoryCache$Key;
-
-    invoke-direct {v0, p1, p2}, Lcoil/memory/MemoryCache$Key;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    return-object v0
-.end method
-
-.method public final c()Ljava/util/Map;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lcoil/memory/MemoryCache$Key;->c:Ljava/util/Map;
-
-    return-object v0
-.end method
-
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -176,7 +124,7 @@
     return v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     const/4 v0, 0x1
@@ -198,7 +146,7 @@
 
     iget-object v2, p1, Lcoil/memory/MemoryCache$Key;->b:Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -209,7 +157,7 @@
 
     iget-object p1, p1, Lcoil/memory/MemoryCache$Key;->c:Ljava/util/Map;
 
-    invoke-static {v1, p1}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -224,7 +172,7 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
     .line 1
@@ -243,23 +191,22 @@
 
     move-result v1
 
-    add-int/2addr v0, v1
+    add-int/2addr v1, v0
 
-    return v0
+    return v1
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "Key(key="
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "Key(key="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 2
     iget-object v1, p0, Lcoil/memory/MemoryCache$Key;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -270,20 +217,17 @@
 
     iget-object v1, p0, Lcoil/memory/MemoryCache$Key;->c:Ljava/util/Map;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const/16 v2, 0x29
 
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Lj6/e;->c(Ljava/lang/StringBuilder;Ljava/util/Map;C)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
     iget-object p2, p0, Lcoil/memory/MemoryCache$Key;->b:Ljava/lang/String;

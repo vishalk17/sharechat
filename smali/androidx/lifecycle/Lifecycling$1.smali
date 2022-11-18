@@ -3,21 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/u;
-
-
-# instance fields
-.field final synthetic b:Landroidx/lifecycle/u;
+.implements Landroidx/lifecycle/z;
 
 
 # virtual methods
-.method public h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
-    .locals 1
+.method public final e(Landroidx/lifecycle/b0;Landroidx/lifecycle/t$b;)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/Lifecycling$1;->b:Landroidx/lifecycle/u;
+    const/4 p1, 0x0
 
-    invoke-interface {v0, p1, p2}, Landroidx/lifecycle/u;->h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
-
-    return-void
+    throw p1
 .end method

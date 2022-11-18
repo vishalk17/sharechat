@@ -1,143 +1,94 @@
-.class Lcom/afollestad/materialdialogs/c;
-.super Landroid/app/Dialog;
+.class public final Lcom/afollestad/materialdialogs/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnShowListener;
+.implements Landroid/text/TextWatcher;
 
 
 # instance fields
-.field protected b:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
-
-.field private c:Landroid/content/DialogInterface$OnShowListener;
+.field public final synthetic b:Lcom/afollestad/materialdialogs/d;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;I)V
+.method public constructor <init>(Lcom/afollestad/materialdialogs/d;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/d;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method final b()V
+.method public final afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-
-    .line 1
-    invoke-super {p0, p0}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     return-void
 .end method
 
-.method final d(Landroid/view/View;)V
+.method public final beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
     return-void
 .end method
 
-.method public findViewById(I)Landroid/view/View;
-    .locals 1
+.method public final onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
-
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    return-object p1
-.end method
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-.method public onShow(Landroid/content/DialogInterface;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/c;->c:Landroid/content/DialogInterface$OnShowListener;
-
-    if-eqz v0, :cond_0
+    move-result p1
 
     .line 2
-    invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnShowListener;->onShow(Landroid/content/DialogInterface;)V
+    iget-object p2, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/d;
+
+    iget-object p2, p2, Lcom/afollestad/materialdialogs/d;->d:Lcom/afollestad/materialdialogs/d$b;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    if-nez p1, :cond_0
+
+    const/4 p2, 0x1
+
+    goto :goto_0
 
     :cond_0
-    return-void
-.end method
-
-.method public setContentView(I)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalAccessError;
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 1
-    new-instance p1, Ljava/lang/IllegalAccessError;
-
-    const-string v0, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalAccessError;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public setContentView(Landroid/view/View;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalAccessError;
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 2
-    new-instance p1, Ljava/lang/IllegalAccessError;
-
-    const-string v0, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalAccessError;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalAccessError;
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    const/4 p2, 0x0
 
     .line 3
-    new-instance p1, Ljava/lang/IllegalAccessError;
+    :goto_0
+    iget-object p3, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/d;
 
-    const-string p2, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
+    sget-object p4, Lc8/a;->POSITIVE:Lc8/a;
 
-    invoke-direct {p1, p2}, Ljava/lang/IllegalAccessError;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p3, p4}, Lcom/afollestad/materialdialogs/d;->c(Lc8/a;)Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    throw p1
-.end method
+    move-result-object p3
 
-.method public final setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
-    .locals 0
+    xor-int/lit8 p4, p2, 0x1
 
-    .line 1
-    iput-object p1, p0, Lcom/afollestad/materialdialogs/c;->c:Landroid/content/DialogInterface$OnShowListener;
+    .line 4
+    invoke-virtual {p3, p4}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 5
+    iget-object p3, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/d;
+
+    invoke-virtual {p3, p1, p2}, Lcom/afollestad/materialdialogs/d;->e(IZ)V
+
+    .line 6
+    iget-object p1, p0, Lcom/afollestad/materialdialogs/c;->b:Lcom/afollestad/materialdialogs/d;
+
+    iget-object p1, p1, Lcom/afollestad/materialdialogs/d;->d:Lcom/afollestad/materialdialogs/d$b;
+
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

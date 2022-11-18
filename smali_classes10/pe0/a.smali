@@ -1,40 +1,74 @@
-.class public final synthetic Lpe0/a;
-.super Ljava/lang/Object;
+.class public final Lpe0/a;
+.super Landroidx/recyclerview/widget/RecyclerView$b0;
 .source "SourceFile"
 
-# interfaces
-.implements Lrz/c;
+
+# static fields
+.field public static final synthetic d:I
 
 
 # instance fields
-.field public final synthetic a:Lpe0/e;
+.field public final a:Lre0/n5;
+
+.field public final b:Lie0/f;
+
+.field public final c:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Lpe0/e;)V
-    .locals 0
+.method public constructor <init>(Lre0/n5;Lie0/f;Z)V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "mClickListener"
 
-    iput-object p1, p0, Lpe0/a;->a:Lpe0/e;
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p1, Lre0/n5;->b:Landroid/widget/RelativeLayout;
+
+    .line 2
+    invoke-direct {p0, v0}, Landroidx/recyclerview/widget/RecyclerView$b0;-><init>(Landroid/view/View;)V
+
+    .line 3
+    iput-object p1, p0, Lpe0/a;->a:Lre0/n5;
+
+    .line 4
+    iput-object p2, p0, Lpe0/a;->b:Lie0/f;
+
+    .line 5
+    iput-boolean p3, p0, Lpe0/a;->c:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final h7(Z)V
     .locals 1
 
-    iget-object v0, p0, Lpe0/a;->a:Lpe0/e;
+    if-nez p1, :cond_0
 
-    check-cast p1, Ljava/lang/Boolean;
+    .line 1
+    iget-object p1, p0, Lpe0/a;->a:Lre0/n5;
 
-    check-cast p2, Ljava/lang/Boolean;
+    iget-object p1, p1, Lre0/n5;->e:Landroid/widget/TextView;
 
-    invoke-static {v0, p1, p2}, Lpe0/e;->g(Lpe0/e;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lv40/n;
+    const v0, 0x7f0802cc
 
-    move-result-object p1
+    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundResource(I)V
 
-    return-object p1
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iget-object p1, p0, Lpe0/a;->a:Lre0/n5;
+
+    iget-object p1, p1, Lre0/n5;->e:Landroid/widget/TextView;
+
+    const v0, 0x7f0802cb
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setBackgroundResource(I)V
+
+    :goto_0
+    return-void
 .end method

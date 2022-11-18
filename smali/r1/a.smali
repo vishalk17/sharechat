@@ -1,102 +1,101 @@
-.class public Lr1/a;
+.class public final Lr1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public a:I
+
+
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput v0, p0, Lr1/a;->a:I
+
     return-void
 .end method
 
-.method protected static a(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 2
+.method public constructor <init>(IILep0/k;)V
+    .locals 0
 
-    const-string v0, "REL"
-
-    .line 1
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    return v1
+    const/4 p1, 0x0
 
     .line 2
-    :cond_0
-    invoke-virtual {p1, p0}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result p0
+    iput p1, p0, Lr1/a;->a:I
 
-    if-ltz p0, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
+    return-void
 .end method
 
-.method public static b()Z
-    .locals 2
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1e
-
-    if-lt v0, v1, :cond_0
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     const/4 v0, 0x1
 
-    goto :goto_0
+    if-ne p0, p1, :cond_0
+
+    return v0
 
     :cond_0
-    const/4 v0, 0x0
+    instance-of v1, p1, Lr1/a;
 
-    :goto_0
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lr1/a;
+
+    iget v1, p0, Lr1/a;->a:I
+
+    iget p1, p1, Lr1/a;->a:I
+
+    if-eq v1, p1, :cond_2
+
+    return v2
+
+    :cond_2
     return v0
 .end method
 
-.method public static c()Z
-    .locals 2
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, Lr1/a;->a:I
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "DeltaCounter(count="
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x1f
+    move-result-object v0
 
-    if-ge v0, v1, :cond_1
+    .line 2
+    iget v1, p0, Lr1/a;->a:I
 
-    sget-object v0, Landroid/os/Build$VERSION;->CODENAME:Ljava/lang/String;
+    const/16 v2, 0x29
 
-    const-string v1, "S"
+    .line 3
+    invoke-static {v0, v1, v2}, Lf9/d;->e(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
-    invoke-static {v1, v0}, Lr1/a;->a(Ljava/lang/String;Ljava/lang/String;)Z
+    move-result-object v0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
-    :goto_1
-    return v0
+    return-object v0
 .end method

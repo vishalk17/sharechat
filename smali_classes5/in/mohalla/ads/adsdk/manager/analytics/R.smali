@@ -19,7 +19,6 @@
         Lin/mohalla/ads/adsdk/manager/analytics/R$integer;,
         Lin/mohalla/ads/adsdk/manager/analytics/R$interpolator;,
         Lin/mohalla/ads/adsdk/manager/analytics/R$layout;,
-        Lin/mohalla/ads/adsdk/manager/analytics/R$menu;,
         Lin/mohalla/ads/adsdk/manager/analytics/R$plurals;,
         Lin/mohalla/ads/adsdk/manager/analytics/R$raw;,
         Lin/mohalla/ads/adsdk/manager/analytics/R$string;,

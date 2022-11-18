@@ -17,37 +17,37 @@
 # static fields
 .field public static final action:I = 0x7f040002
 
-.field public static final argType:I = 0x7f040046
+.field public static final argType:I = 0x7f040043
 
-.field public static final destination:I = 0x7f0401d4
+.field public static final destination:I = 0x7f040207
 
-.field public static final enterAnim:I = 0x7f040226
+.field public static final enterAnim:I = 0x7f040262
 
-.field public static final exitAnim:I = 0x7f040234
+.field public static final exitAnim:I = 0x7f040270
 
-.field public static final launchSingleTop:I = 0x7f0402ee
+.field public static final launchSingleTop:I = 0x7f04033d
 
-.field public static final mimeType:I = 0x7f0403de
+.field public static final mimeType:I = 0x7f04043d
 
-.field public static final nullable:I = 0x7f040428
+.field public static final nullable:I = 0x7f040487
 
-.field public static final popEnterAnim:I = 0x7f04046c
+.field public static final popEnterAnim:I = 0x7f0404c8
 
-.field public static final popExitAnim:I = 0x7f04046d
+.field public static final popExitAnim:I = 0x7f0404c9
 
-.field public static final popUpTo:I = 0x7f04046e
+.field public static final popUpTo:I = 0x7f0404ca
 
-.field public static final popUpToInclusive:I = 0x7f04046f
+.field public static final popUpToInclusive:I = 0x7f0404cb
 
-.field public static final popUpToSaveState:I = 0x7f040470
+.field public static final popUpToSaveState:I = 0x7f0404cc
 
-.field public static final restoreState:I = 0x7f0404ab
+.field public static final restoreState:I = 0x7f040503
 
-.field public static final route:I = 0x7f0404cd
+.field public static final route:I = 0x7f040515
 
-.field public static final startDestination:I = 0x7f040548
+.field public static final startDestination:I = 0x7f040590
 
-.field public static final uri:I = 0x7f040630
+.field public static final uri:I = 0x7f040694
 
 
 # direct methods

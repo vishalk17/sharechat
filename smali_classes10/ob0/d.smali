@@ -1,44 +1,39 @@
-.class public final synthetic Lob0/d;
+.class public interface abstract Lob0/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lrz/g;
-
-
-# static fields
-.field public static final synthetic b:Lob0/d;
-
-
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lob0/d;
-
-    invoke-direct {v0}, Lob0/d;-><init>()V
-
-    sput-object v0, Lob0/d;->b:Lob0/d;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+.implements Lta0/c;
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 0
+.method public abstract J(Ljava/lang/String;Lsharechat/data/user/FollowData;)V
+.end method
 
-    check-cast p1, Ljava/lang/Throwable;
+.method public abstract X2()V
+.end method
 
-    invoke-static {p1}, Lob0/e;->k(Ljava/lang/Throwable;)V
+.method public abstract cw(Lw60/c;)V
+.end method
 
-    return-void
+.method public abstract f5(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/data/remote/model/ZeroStateGenreMeta;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract ua(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/data/repository/user/UserModel;",
+            ">;)V"
+        }
+    .end annotation
 .end method

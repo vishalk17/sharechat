@@ -4,61 +4,14 @@
 
 
 # static fields
-.field private static final a:Landroidx/compose/runtime/c1;
+.field public static a:Landroidx/compose/ui/platform/z$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/content/res/Configuration;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final b:Landroidx/compose/runtime/c1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final c:Landroidx/compose/runtime/c1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/c1<",
-            "Lp0/d;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final d:Landroidx/compose/runtime/c1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/c1<",
-            "Landroidx/lifecycle/x;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final e:Landroidx/compose/runtime/c1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/c1<",
-            "Landroidx/savedstate/d;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private static final f:Landroidx/compose/runtime/c1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/view/View;",
+            "Ldp0/l<",
+            "-",
+            "Lf3/s;",
+            "+",
+            "Lf3/y;",
             ">;"
         }
     .end annotation
@@ -66,777 +19,248 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-static {}, Landroidx/compose/runtime/u1;->i()Landroidx/compose/runtime/t1;
+    sget-object v0, Landroidx/compose/ui/platform/z$a;->b:Landroidx/compose/ui/platform/z$a;
 
-    move-result-object v0
-
-    .line 2
-    sget-object v1, Landroidx/compose/ui/platform/z$a;->b:Landroidx/compose/ui/platform/z$a;
-
-    invoke-static {v0, v1}, Landroidx/compose/runtime/s;->b(Landroidx/compose/runtime/t1;Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->a:Landroidx/compose/runtime/c1;
-
-    .line 3
-    sget-object v0, Landroidx/compose/ui/platform/z$b;->b:Landroidx/compose/ui/platform/z$b;
-
-    invoke-static {v0}, Landroidx/compose/runtime/s;->d(Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->b:Landroidx/compose/runtime/c1;
-
-    .line 4
-    sget-object v0, Landroidx/compose/ui/platform/z$c;->b:Landroidx/compose/ui/platform/z$c;
-
-    invoke-static {v0}, Landroidx/compose/runtime/s;->d(Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->c:Landroidx/compose/runtime/c1;
-
-    .line 5
-    sget-object v0, Landroidx/compose/ui/platform/z$d;->b:Landroidx/compose/ui/platform/z$d;
-
-    invoke-static {v0}, Landroidx/compose/runtime/s;->d(Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->d:Landroidx/compose/runtime/c1;
-
-    .line 6
-    sget-object v0, Landroidx/compose/ui/platform/z$e;->b:Landroidx/compose/ui/platform/z$e;
-
-    invoke-static {v0}, Landroidx/compose/runtime/s;->d(Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->e:Landroidx/compose/runtime/c1;
-
-    .line 7
-    sget-object v0, Landroidx/compose/ui/platform/z$f;->b:Landroidx/compose/ui/platform/z$f;
-
-    invoke-static {v0}, Landroidx/compose/runtime/s;->d(Lr00/a;)Landroidx/compose/runtime/c1;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/z;->f:Landroidx/compose/runtime/c1;
+    sput-object v0, Landroidx/compose/ui/platform/z;->a:Landroidx/compose/ui/platform/z$a;
 
     return-void
 .end method
 
-.method public static final a(Landroidx/compose/ui/platform/AndroidComposeView;Lr00/p;Landroidx/compose/runtime/i;I)V
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/ui/platform/AndroidComposeView;",
-            "Lr00/p<",
-            "-",
-            "Landroidx/compose/runtime/i;",
-            "-",
-            "Ljava/lang/Integer;",
-            "Li00/a0;",
-            ">;",
-            "Landroidx/compose/runtime/i;",
-            "I)V"
-        }
-    .end annotation
+.method public static final a([F[F)V
+    .locals 21
 
-    const-string v0, "owner"
+    move-object/from16 v0, p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v1, p1
 
-    const-string v0, "content"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {}, Landroidx/compose/runtime/k;->O()Z
-
-    move-result v0
-
-    const v1, 0x5342453c
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, -0x1
-
-    const-string v2, "androidx.compose.ui.platform.ProvideAndroidCompositionLocals (AndroidCompositionLocals.android.kt:83)"
+    const/4 v2, 0x0
 
     .line 1
-    invoke-static {v1, v0, v0, v2}, Landroidx/compose/runtime/k;->Z(IIILjava/lang/String;)V
+    invoke-static {v1, v2, v0, v2}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    :cond_0
-    invoke-interface {p2, v1}, Landroidx/compose/runtime/i;->w(I)Landroidx/compose/runtime/i;
+    move-result v3
 
-    move-result-object p2
+    const/4 v4, 0x1
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-static {v1, v2, v0, v4}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v0
+    move-result v5
 
-    const v1, -0x1d58f75c
+    const/4 v6, 0x2
 
     .line 3
-    invoke-interface {p2, v1}, Landroidx/compose/runtime/i;->H(I)V
+    invoke-static {v1, v2, v0, v6}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
+
+    move-result v7
+
+    const/4 v8, 0x3
 
     .line 4
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
+    invoke-static {v1, v2, v0, v8}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v2
+    move-result v9
 
     .line 5
-    sget-object v3, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/i$a;
+    invoke-static {v1, v4, v0, v2}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    invoke-virtual {v3}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
-
-    move-result-object v4
-
-    if-ne v2, v4, :cond_1
+    move-result v10
 
     .line 6
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-static {v1, v4, v0, v4}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v2
+    move-result v11
 
     .line 7
-    invoke-static {}, Landroidx/compose/runtime/u1;->i()Landroidx/compose/runtime/t1;
+    invoke-static {v1, v4, v0, v6}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v4
+    move-result v12
 
     .line 8
-    invoke-static {v2, v4}, Landroidx/compose/runtime/u1;->g(Ljava/lang/Object;Landroidx/compose/runtime/t1;)Landroidx/compose/runtime/t0;
+    invoke-static {v1, v4, v0, v8}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v2
+    move-result v13
 
     .line 9
-    invoke-interface {p2, v2}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
+    invoke-static {v1, v6, v0, v2}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
+
+    move-result v14
 
     .line 10
-    :cond_1
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
+    invoke-static {v1, v6, v0, v4}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
+
+    move-result v15
 
     .line 11
-    check-cast v2, Landroidx/compose/runtime/t0;
+    invoke-static {v1, v6, v0, v6}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    const v4, 0x44faf204
+    move-result v16
 
     .line 12
-    invoke-interface {p2, v4}, Landroidx/compose/runtime/i;->H(I)V
+    invoke-static {v1, v6, v0, v8}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
+
+    move-result v17
 
     .line 13
-    invoke-interface {p2, v2}, Landroidx/compose/runtime/i;->n(Ljava/lang/Object;)Z
+    invoke-static {v1, v8, v0, v2}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result v4
+    move-result v18
 
     .line 14
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
+    invoke-static {v1, v8, v0, v4}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v5
-
-    if-nez v4, :cond_2
+    move-result v19
 
     .line 15
-    invoke-virtual {v3}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
+    invoke-static {v1, v8, v0, v6}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    move-result-object v4
-
-    if-ne v5, v4, :cond_3
+    move-result v20
 
     .line 16
-    :cond_2
-    new-instance v5, Landroidx/compose/ui/platform/z$g;
+    invoke-static {v1, v8, v0, v8}, Landroidx/compose/ui/platform/z;->b([FI[FI)F
 
-    invoke-direct {v5, v2}, Landroidx/compose/ui/platform/z$g;-><init>(Landroidx/compose/runtime/t0;)V
+    move-result v1
 
     .line 17
-    invoke-interface {p2, v5}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
+    aput v3, v0, v2
 
     .line 18
-    :cond_3
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
-
-    check-cast v5, Lr00/l;
+    aput v5, v0, v4
 
     .line 19
-    invoke-virtual {p0, v5}, Landroidx/compose/ui/platform/AndroidComposeView;->setConfigurationChangeObserver(Lr00/l;)V
+    aput v7, v0, v6
 
     .line 20
-    invoke-interface {p2, v1}, Landroidx/compose/runtime/i;->H(I)V
+    aput v9, v0, v8
+
+    const/4 v2, 0x4
 
     .line 21
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
+    aput v10, v0, v2
 
-    move-result-object v4
+    const/4 v2, 0x5
 
     .line 22
-    invoke-virtual {v3}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
+    aput v11, v0, v2
 
-    move-result-object v5
-
-    const-string v6, "context"
-
-    if-ne v4, v5, :cond_4
+    const/4 v2, 0x6
 
     .line 23
-    new-instance v4, Landroidx/compose/ui/platform/f0;
+    aput v12, v0, v2
 
-    invoke-static {v0, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {v4, v0}, Landroidx/compose/ui/platform/f0;-><init>(Landroid/content/Context;)V
+    const/4 v2, 0x7
 
     .line 24
-    invoke-interface {p2, v4}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
+    aput v13, v0, v2
+
+    const/16 v2, 0x8
 
     .line 25
-    :cond_4
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
+    aput v14, v0, v2
+
+    const/16 v2, 0x9
 
     .line 26
-    check-cast v4, Landroidx/compose/ui/platform/f0;
+    aput v15, v0, v2
+
+    const/16 v2, 0xa
 
     .line 27
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView;->getViewTreeOwners()Landroidx/compose/ui/platform/AndroidComposeView$b;
+    aput v16, v0, v2
 
-    move-result-object v5
-
-    if-eqz v5, :cond_8
+    const/16 v2, 0xb
 
     .line 28
-    invoke-interface {p2, v1}, Landroidx/compose/runtime/i;->H(I)V
+    aput v17, v0, v2
+
+    const/16 v2, 0xc
 
     .line 29
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
+    aput v18, v0, v2
 
-    move-result-object v1
+    const/16 v2, 0xd
 
     .line 30
-    invoke-virtual {v3}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
+    aput v19, v0, v2
 
-    move-result-object v3
-
-    if-ne v1, v3, :cond_5
+    const/16 v2, 0xe
 
     .line 31
-    invoke-virtual {v5}, Landroidx/compose/ui/platform/AndroidComposeView$b;->b()Landroidx/savedstate/d;
+    aput v20, v0, v2
 
-    move-result-object v1
-
-    invoke-static {p0, v1}, Landroidx/compose/ui/platform/q0;->a(Landroid/view/View;Landroidx/savedstate/d;)Landroidx/compose/ui/platform/p0;
-
-    move-result-object v1
+    const/16 v2, 0xf
 
     .line 32
-    invoke-interface {p2, v1}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
+    aput v1, v0, v2
 
-    .line 33
-    :cond_5
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
+    return-void
+.end method
 
-    .line 34
-    check-cast v1, Landroidx/compose/ui/platform/p0;
-
-    .line 35
-    sget-object v3, Li00/a0;->a:Li00/a0;
-
-    new-instance v7, Landroidx/compose/ui/platform/z$h;
-
-    invoke-direct {v7, v1}, Landroidx/compose/ui/platform/z$h;-><init>(Landroidx/compose/ui/platform/p0;)V
-
-    const/4 v8, 0x0
-
-    invoke-static {v3, v7, p2, v8}, Landroidx/compose/runtime/d0;->c(Ljava/lang/Object;Lr00/l;Landroidx/compose/runtime/i;I)V
-
-    .line 36
-    invoke-static {v0, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v2}, Landroidx/compose/ui/platform/z;->b(Landroidx/compose/runtime/t0;)Landroid/content/res/Configuration;
-
-    move-result-object v3
-
-    const/16 v6, 0x48
-
-    invoke-static {v0, v3, p2, v6}, Landroidx/compose/ui/platform/z;->m(Landroid/content/Context;Landroid/content/res/Configuration;Landroidx/compose/runtime/i;I)Lp0/d;
-
-    move-result-object v3
-
-    const/4 v6, 0x7
-
-    new-array v6, v6, [Landroidx/compose/runtime/d1;
-
-    .line 37
-    sget-object v7, Landroidx/compose/ui/platform/z;->a:Landroidx/compose/runtime/c1;
-
-    invoke-static {v2}, Landroidx/compose/ui/platform/z;->b(Landroidx/compose/runtime/t0;)Landroid/content/res/Configuration;
-
-    move-result-object v2
-
-    const-string v9, "configuration"
-
-    invoke-static {v2, v9}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v7, v2}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v2
-
-    aput-object v2, v6, v8
-
-    .line 38
-    sget-object v2, Landroidx/compose/ui/platform/z;->b:Landroidx/compose/runtime/c1;
-
-    invoke-virtual {v2, v0}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v0
-
-    const/4 v2, 0x1
-
-    aput-object v0, v6, v2
-
-    const/4 v0, 0x2
-
-    .line 39
-    sget-object v7, Landroidx/compose/ui/platform/z;->d:Landroidx/compose/runtime/c1;
-
-    invoke-virtual {v5}, Landroidx/compose/ui/platform/AndroidComposeView$b;->a()Landroidx/lifecycle/x;
-
-    move-result-object v8
-
-    invoke-virtual {v7, v8}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v7
-
-    aput-object v7, v6, v0
-
-    const/4 v0, 0x3
-
-    .line 40
-    sget-object v7, Landroidx/compose/ui/platform/z;->e:Landroidx/compose/runtime/c1;
-
-    invoke-virtual {v5}, Landroidx/compose/ui/platform/AndroidComposeView$b;->b()Landroidx/savedstate/d;
-
-    move-result-object v5
-
-    invoke-virtual {v7, v5}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v5
-
-    aput-object v5, v6, v0
+.method public static final b([FI[FI)F
+    .locals 3
 
     const/4 v0, 0x4
 
-    .line 41
-    invoke-static {}, Landroidx/compose/runtime/saveable/h;->b()Landroidx/compose/runtime/c1;
+    mul-int/lit8 p1, p1, 0x4
 
-    move-result-object v5
-
-    invoke-virtual {v5, v1}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v1
-
-    aput-object v1, v6, v0
-
-    const/4 v0, 0x5
-
-    .line 42
-    sget-object v1, Landroidx/compose/ui/platform/z;->f:Landroidx/compose/runtime/c1;
-
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/AndroidComposeView;->getView()Landroid/view/View;
-
-    move-result-object v5
-
-    invoke-virtual {v1, v5}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v1
-
-    aput-object v1, v6, v0
-
-    const/4 v0, 0x6
-
-    .line 43
-    sget-object v1, Landroidx/compose/ui/platform/z;->c:Landroidx/compose/runtime/c1;
-
-    invoke-virtual {v1, v3}, Landroidx/compose/runtime/c1;->c(Ljava/lang/Object;)Landroidx/compose/runtime/d1;
-
-    move-result-object v1
-
-    aput-object v1, v6, v0
-
-    const v0, 0x57b729fc
-
-    .line 44
-    new-instance v1, Landroidx/compose/ui/platform/z$i;
-
-    invoke-direct {v1, p0, v4, p1, p3}, Landroidx/compose/ui/platform/z$i;-><init>(Landroidx/compose/ui/platform/AndroidComposeView;Landroidx/compose/ui/platform/f0;Lr00/p;I)V
-
-    invoke-static {p2, v0, v2, v1}, La0/c;->b(Landroidx/compose/runtime/i;IZLjava/lang/Object;)La0/a;
-
-    move-result-object v0
-
-    const/16 v1, 0x38
-
-    .line 45
-    invoke-static {v6, v0, p2, v1}, Landroidx/compose/runtime/s;->a([Landroidx/compose/runtime/d1;Lr00/p;Landroidx/compose/runtime/i;I)V
-
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->y()Landroidx/compose/runtime/l1;
-
-    move-result-object p2
-
-    if-nez p2, :cond_6
-
-    goto :goto_0
-
-    :cond_6
-    new-instance v0, Landroidx/compose/ui/platform/z$j;
-
-    invoke-direct {v0, p0, p1, p3}, Landroidx/compose/ui/platform/z$j;-><init>(Landroidx/compose/ui/platform/AndroidComposeView;Lr00/p;I)V
-
-    invoke-interface {p2, v0}, Landroidx/compose/runtime/l1;->a(Lr00/p;)V
-
-    :goto_0
-    invoke-static {}, Landroidx/compose/runtime/k;->O()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_7
-
-    invoke-static {}, Landroidx/compose/runtime/k;->Y()V
-
-    :cond_7
-    return-void
-
-    .line 46
-    :cond_8
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    const-string p1, "Called when the ViewTreeOwnersAvailability is not yet in Available state"
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method private static final b(Landroidx/compose/runtime/t0;)Landroid/content/res/Configuration;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/t0<",
-            "Landroid/content/res/Configuration;",
-            ">;)",
-            "Landroid/content/res/Configuration;"
-        }
-    .end annotation
+    add-int/lit8 v1, p1, 0x0
 
     .line 1
-    invoke-interface {p0}, Landroidx/compose/runtime/c2;->getValue()Ljava/lang/Object;
+    aget v1, p0, v1
 
-    move-result-object p0
+    const/4 v2, 0x0
 
-    check-cast p0, Landroid/content/res/Configuration;
+    add-int/2addr v2, p3
 
-    return-object p0
-.end method
+    aget v2, p2, v2
 
-.method private static final c(Landroidx/compose/runtime/t0;Landroid/content/res/Configuration;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/runtime/t0<",
-            "Landroid/content/res/Configuration;",
-            ">;",
-            "Landroid/content/res/Configuration;",
-            ")V"
-        }
-    .end annotation
+    mul-float v1, v1, v2
 
-    .line 1
-    invoke-interface {p0, p1}, Landroidx/compose/runtime/t0;->setValue(Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public static final synthetic d(Landroidx/compose/runtime/t0;Landroid/content/res/Configuration;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/ui/platform/z;->c(Landroidx/compose/runtime/t0;Landroid/content/res/Configuration;)V
-
-    return-void
-.end method
-
-.method public static final synthetic e(Ljava/lang/String;)Ljava/lang/Void;
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Landroidx/compose/ui/platform/z;->l(Ljava/lang/String;)Ljava/lang/Void;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final f()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/content/res/Configuration;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->a:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method public static final g()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->b:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method public static final h()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Lp0/d;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->c:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method public static final i()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Landroidx/lifecycle/x;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->d:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method public static final j()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Landroidx/savedstate/d;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->e:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method public static final k()Landroidx/compose/runtime/c1;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/compose/runtime/c1<",
-            "Landroid/view/View;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/z;->f:Landroidx/compose/runtime/c1;
-
-    return-object v0
-.end method
-
-.method private static final l(Ljava/lang/String;)Ljava/lang/Void;
-    .locals 3
-
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 1
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "CompositionLocal "
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " not present"
-
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private static final m(Landroid/content/Context;Landroid/content/res/Configuration;Landroidx/compose/runtime/i;I)Lp0/d;
-    .locals 5
-
-    const p3, -0x1cf65f46
-
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/i;->H(I)V
-
-    const p3, -0x1d58f75c
-
-    .line 1
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/i;->H(I)V
+    add-int/lit8 v2, p1, 0x1
 
     .line 2
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
+    aget v2, p0, v2
 
-    move-result-object v0
+    add-int/2addr v0, p3
+
+    aget v0, p2, v0
+
+    mul-float v2, v2, v0
+
+    add-float/2addr v2, v1
+
+    add-int/lit8 v0, p1, 0x2
 
     .line 3
-    sget-object v1, Landroidx/compose/runtime/i;->a:Landroidx/compose/runtime/i$a;
+    aget v0, p0, v0
 
-    invoke-virtual {v1}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
+    const/16 v1, 0x8
 
-    move-result-object v2
+    add-int/2addr v1, p3
 
-    if-ne v0, v2, :cond_0
+    aget v1, p2, v1
+
+    mul-float v0, v0, v1
+
+    add-float/2addr v0, v2
+
+    add-int/lit8 p1, p1, 0x3
 
     .line 4
-    new-instance v0, Lp0/d;
+    aget p0, p0, p1
 
-    invoke-direct {v0}, Lp0/d;-><init>()V
+    const/16 p1, 0xc
 
-    .line 5
-    invoke-interface {p2, v0}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
+    add-int/2addr p1, p3
 
-    .line 6
-    :cond_0
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
+    aget p1, p2, p1
 
-    .line 7
-    check-cast v0, Lp0/d;
+    mul-float p0, p0, p1
 
-    .line 8
-    new-instance v2, Lkotlin/jvm/internal/j0;
+    add-float/2addr p0, v0
 
-    invoke-direct {v2}, Lkotlin/jvm/internal/j0;-><init>()V
-
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/i;->H(I)V
-
-    .line 9
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
-
-    move-result-object v3
-
-    .line 10
-    invoke-virtual {v1}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
-
-    move-result-object v4
-
-    if-ne v3, v4, :cond_1
-
-    .line 11
-    invoke-interface {p2, p1}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object p1, v3
-
-    .line 12
-    :goto_0
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
-
-    .line 13
-    iput-object p1, v2, Lkotlin/jvm/internal/j0;->b:Ljava/lang/Object;
-
-    .line 14
-    invoke-interface {p2, p3}, Landroidx/compose/runtime/i;->H(I)V
-
-    .line 15
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->I()Ljava/lang/Object;
-
-    move-result-object p1
-
-    .line 16
-    invoke-virtual {v1}, Landroidx/compose/runtime/i$a;->a()Ljava/lang/Object;
-
-    move-result-object p3
-
-    if-ne p1, p3, :cond_2
-
-    .line 17
-    new-instance p1, Landroidx/compose/ui/platform/z$l;
-
-    invoke-direct {p1, v2, v0}, Landroidx/compose/ui/platform/z$l;-><init>(Lkotlin/jvm/internal/j0;Lp0/d;)V
-
-    .line 18
-    invoke-interface {p2, p1}, Landroidx/compose/runtime/i;->C(Ljava/lang/Object;)V
-
-    .line 19
-    :cond_2
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
-
-    .line 20
-    check-cast p1, Landroidx/compose/ui/platform/z$l;
-
-    .line 21
-    new-instance p3, Landroidx/compose/ui/platform/z$k;
-
-    invoke-direct {p3, p0, p1}, Landroidx/compose/ui/platform/z$k;-><init>(Landroid/content/Context;Landroidx/compose/ui/platform/z$l;)V
-
-    const/16 p0, 0x8
-
-    invoke-static {v0, p3, p2, p0}, Landroidx/compose/runtime/d0;->c(Ljava/lang/Object;Lr00/l;Landroidx/compose/runtime/i;I)V
-
-    invoke-interface {p2}, Landroidx/compose/runtime/i;->Q()V
-
-    return-object v0
+    return p0
 .end method

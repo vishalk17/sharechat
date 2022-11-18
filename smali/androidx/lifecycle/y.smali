@@ -3,26 +3,37 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/lifecycle/y$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static a:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+
 # direct methods
-.method public static final a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
-    const-string v0, "<this>"
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    .line 1
-    invoke-interface {p0}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/q;
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    move-result-object p0
+    sput-object v0, Landroidx/lifecycle/y;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    const-string v0, "lifecycle"
+    return-void
+.end method
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+.method private constructor <init>()V
+    .locals 0
 
-    invoke-static {p0}, Landroidx/lifecycle/v;->a(Landroidx/lifecycle/q;)Landroidx/lifecycle/r;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

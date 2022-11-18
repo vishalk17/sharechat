@@ -13,242 +13,251 @@
     name = "a"
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Ljava/lang/Object;
+
+.field public b:Lq3/b$d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lq3/b$d<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public c:Lq3/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lq3/c<",
+            "Ljava/lang/Void;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public d:Z
+
 
 # direct methods
-.method public static synthetic a(Lq3/b;Lcom/airbnb/lottie/d;IIFLq3/h;FZLq3/g;Lkotlin/coroutines/d;ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 12
-
-    move/from16 v0, p10
-
-    if-nez p11, :cond_7
-
-    and-int/lit8 v1, v0, 0x2
-
-    if-eqz v1, :cond_0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-interface {p0}, Lq3/f;->l()I
-
-    move-result v1
-
-    move v4, v1
-
-    goto :goto_0
-
-    :cond_0
-    move v4, p2
-
-    :goto_0
-    and-int/lit8 v1, v0, 0x4
-
-    if-eqz v1, :cond_1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-interface {p0}, Lq3/f;->d()I
+    invoke-static {}, Lq3/c;->k()Lq3/c;
 
-    move-result v1
+    move-result-object v0
 
-    move v5, v1
+    iput-object v0, p0, Lq3/b$a;->c:Lq3/c;
 
-    goto :goto_1
+    return-void
+.end method
 
-    :cond_1
-    move v5, p3
 
-    :goto_1
-    and-int/lit8 v1, v0, 0x8
+# virtual methods
+.method public final a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lq3/b$a;->c:Lq3/c;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0, p1, p2}, Lq3/a;->a(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final b(Ljava/lang/Object;)Z
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Lq3/b$a;->d:Z
+
+    .line 2
+    iget-object v1, p0, Lq3/b$a;->b:Lq3/b$d;
+
+    const/4 v2, 0x0
 
     if-eqz v1, :cond_2
 
     .line 3
-    invoke-interface {p0}, Lq3/f;->e()F
+    iget-object v1, v1, Lq3/b$d;->c:Lq3/b$d$a;
 
-    move-result v1
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move v6, v1
-
-    goto :goto_2
-
-    :cond_2
-    move/from16 v6, p4
-
-    :goto_2
-    and-int/lit8 v1, v0, 0x10
-
-    if-eqz v1, :cond_3
+    if-nez p1, :cond_0
 
     .line 4
-    invoke-interface {p0}, Lq3/f;->o()Lq3/h;
-
-    move-result-object v1
-
-    move-object v7, v1
-
-    goto :goto_3
-
-    :cond_3
-    move-object/from16 v7, p5
-
-    :goto_3
-    and-int/lit8 v1, v0, 0x20
-
-    if-eqz v1, :cond_4
-
-    move-object v1, p1
+    sget-object p1, Lq3/a;->h:Ljava/lang/Object;
 
     .line 5
-    invoke-static {p1, v7, v6}, Lq3/d;->b(Lcom/airbnb/lottie/d;Lq3/h;F)F
-
-    move-result v2
-
-    move v8, v2
-
-    goto :goto_4
-
-    :cond_4
-    move-object v1, p1
-
-    move/from16 v8, p6
-
-    :goto_4
-    and-int/lit8 v2, v0, 0x40
-
-    if-eqz v2, :cond_5
-
-    const/4 v2, 0x0
-
-    const/4 v9, 0x0
-
-    goto :goto_5
-
-    :cond_5
-    move/from16 v9, p7
-
-    :goto_5
-    and-int/lit16 v0, v0, 0x80
-
-    if-eqz v0, :cond_6
-
-    .line 6
-    sget-object v0, Lq3/g;->Immediately:Lq3/g;
-
-    move-object v10, v0
-
-    goto :goto_6
-
-    :cond_6
-    move-object/from16 v10, p8
-
-    :goto_6
-    move-object v2, p0
-
-    move-object v3, p1
-
-    move-object/from16 v11, p9
-
-    .line 7
-    invoke-interface/range {v2 .. v11}, Lq3/b;->h(Lcom/airbnb/lottie/d;IIFLq3/h;FZLq3/g;Lkotlin/coroutines/d;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-
-    :cond_7
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    const-string v1, "Super calls with default arguments not supported in this target, function: animate"
-
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public static synthetic b(Lq3/b;Lcom/airbnb/lottie/d;FIZLkotlin/coroutines/d;ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 6
-
-    if-nez p7, :cond_5
-
-    and-int/lit8 p7, p6, 0x1
-
-    if-eqz p7, :cond_0
-
-    .line 1
-    invoke-interface {p0}, Lq3/f;->i()Lcom/airbnb/lottie/d;
-
-    move-result-object p1
-
     :cond_0
-    move-object v1, p1
+    sget-object v3, Lq3/a;->g:Lq3/a$b;
 
-    and-int/lit8 p1, p6, 0x2
+    const/4 v4, 0x0
 
-    if-eqz p1, :cond_1
-
-    .line 2
-    invoke-interface {p0}, Lq3/f;->a()F
-
-    move-result p2
-
-    :cond_1
-    move v2, p2
-
-    and-int/lit8 p1, p6, 0x4
-
-    if-eqz p1, :cond_2
-
-    .line 3
-    invoke-interface {p0}, Lq3/f;->l()I
-
-    move-result p3
-
-    :cond_2
-    move v3, p3
-
-    and-int/lit8 p1, p6, 0x8
-
-    if-eqz p1, :cond_4
-
-    .line 4
-    invoke-interface {p0}, Lq3/f;->a()F
+    invoke-virtual {v3, v1, v4, p1}, Lq3/a$b;->b(Lq3/a;Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
-    const/4 p2, 0x1
+    if-eqz p1, :cond_1
 
-    cmpg-float p1, v2, p1
-
-    if-nez p1, :cond_3
+    .line 6
+    invoke-static {v1}, Lq3/a;->d(Lq3/a;)V
 
     const/4 p1, 0x1
 
     goto :goto_0
 
-    :cond_3
+    :cond_1
     const/4 p1, 0x0
 
     :goto_0
-    xor-int/lit8 p4, p1, 0x1
+    if-eqz p1, :cond_2
 
-    :cond_4
-    move v4, p4
+    goto :goto_1
 
-    move-object v0, p0
+    :cond_2
+    const/4 v0, 0x0
 
-    move-object v5, p5
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 7
+    invoke-virtual {p0}, Lq3/b$a;->c()V
+
+    :cond_3
+    return v0
+.end method
+
+.method public final c()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    iput-object v0, p0, Lq3/b$a;->a:Ljava/lang/Object;
+
+    .line 2
+    iput-object v0, p0, Lq3/b$a;->b:Lq3/b$d;
+
+    .line 3
+    iput-object v0, p0, Lq3/b$a;->c:Lq3/c;
+
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Throwable;)Z
+    .locals 2
+
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, Lq3/b$a;->d:Z
+
+    .line 2
+    iget-object v1, p0, Lq3/b$a;->b:Lq3/b$d;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-virtual {v1, p1}, Lq3/b$d;->b(Ljava/lang/Throwable;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-virtual {p0}, Lq3/b$a;->c()V
+
+    :cond_1
+    return v0
+.end method
+
+.method public final finalize()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lq3/b$a;->b:Lq3/b$d;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Lq3/b$d;->isDone()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 3
+    new-instance v1, Lq3/b$b;
+
+    const-string v2, "The completer object was garbage collected - this future would otherwise never complete. The tag was: "
+
+    .line 4
+    invoke-static {v2}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
 
     .line 5
-    invoke-interface/range {v0 .. v5}, Lq3/b;->m(Lcom/airbnb/lottie/d;FIZLkotlin/coroutines/d;)Ljava/lang/Object;
+    iget-object v3, p0, Lq3/b$a;->a:Ljava/lang/Object;
 
-    move-result-object p0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    return-object p0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    :cond_5
-    new-instance p0, Ljava/lang/UnsupportedOperationException;
+    move-result-object v2
 
-    const-string p1, "Super calls with default arguments not supported in this target, function: snapTo"
+    invoke-direct {v1, v2}, Lq3/b$b;-><init>(Ljava/lang/String;)V
 
-    invoke-direct {p0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lq3/b$d;->b(Ljava/lang/Throwable;)Z
 
-    throw p0
+    .line 6
+    :cond_0
+    iget-boolean v0, p0, Lq3/b$a;->d:Z
+
+    if-nez v0, :cond_1
+
+    .line 7
+    iget-object v0, p0, Lq3/b$a;->c:Lq3/c;
+
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x0
+
+    .line 8
+    invoke-virtual {v0, v1}, Lq3/c;->l(Ljava/lang/Object;)Z
+
+    :cond_1
+    return-void
 .end method

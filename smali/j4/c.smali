@@ -1,297 +1,487 @@
-.class public Lj4/c;
+.class public final synthetic Lj4/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field private static final c:Lcom/bumptech/glide/load/engine/t;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/bumptech/glide/load/engine/t<",
-            "***>;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field private final a:Ln/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ln/a<",
-            "Lcom/bumptech/glide/util/i;",
-            "Lcom/bumptech/glide/load/engine/t<",
-            "***>;>;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lcom/bumptech/glide/util/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 14
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    new-instance v6, Lcom/bumptech/glide/load/engine/t;
-
-    const-class v1, Ljava/lang/Object;
-
-    const-class v2, Ljava/lang/Object;
-
-    const-class v3, Ljava/lang/Object;
-
-    new-instance v0, Lcom/bumptech/glide/load/engine/i;
-
-    const-class v8, Ljava/lang/Object;
-
-    const-class v9, Ljava/lang/Object;
-
-    const-class v10, Ljava/lang/Object;
-
-    .line 2
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v11
-
-    new-instance v12, Lh4/g;
-
-    invoke-direct {v12}, Lh4/g;-><init>()V
-
-    const/4 v13, 0x0
-
-    move-object v7, v0
-
-    invoke-direct/range {v7 .. v13}, Lcom/bumptech/glide/load/engine/i;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;Lh4/e;Lt1/f;)V
-
-    .line 3
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v4
-
-    const/4 v5, 0x0
-
-    move-object v0, v6
-
-    invoke-direct/range {v0 .. v5}, Lcom/bumptech/glide/load/engine/t;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;Lt1/f;)V
-
-    sput-object v6, Lj4/c;->c:Lcom/bumptech/glide/load/engine/t;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ln/a;
-
-    invoke-direct {v0}, Ln/a;-><init>()V
-
-    iput-object v0, p0, Lj4/c;->a:Ln/a;
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lj4/c;->b:Ljava/util/concurrent/atomic/AtomicReference;
-
-    return-void
-.end method
-
-.method private b(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/util/i;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Lcom/bumptech/glide/util/i;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj4/c;->b:Ljava/util/concurrent/atomic/AtomicReference;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {}, Lj4/b;->values()[Lj4/b;
 
     move-result-object v0
 
-    check-cast v0, Lcom/bumptech/glide/util/i;
+    array-length v0, v0
 
-    if-nez v0, :cond_0
+    new-array v0, v0, [I
 
-    .line 2
-    new-instance v0, Lcom/bumptech/glide/util/i;
+    sput-object v0, Lj4/c;->a:[I
 
-    invoke-direct {v0}, Lcom/bumptech/glide/util/i;-><init>()V
-
-    .line 3
-    :cond_0
-    invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/engine/t;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<Data:",
-            "Ljava/lang/Object;",
-            "TResource:",
-            "Ljava/lang/Object;",
-            "Transcode:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TData;>;",
-            "Ljava/lang/Class<",
-            "TTResource;>;",
-            "Ljava/lang/Class<",
-            "TTranscode;>;)",
-            "Lcom/bumptech/glide/load/engine/t<",
-            "TData;TTResource;TTranscode;>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lj4/c;->b(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/util/i;
-
-    move-result-object p1
-
-    .line 2
-    iget-object p2, p0, Lj4/c;->a:Ln/a;
-
-    monitor-enter p2
-
-    .line 3
     :try_start_0
-    iget-object p3, p0, Lj4/c;->a:Ln/a;
+    sget-object v1, Lj4/b;->CLEAR:Lj4/b;
 
-    invoke-virtual {p3, p1}, Ln/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    move-result-object p3
+    move-result v1
 
-    check-cast p3, Lcom/bumptech/glide/load/engine/t;
+    const/4 v2, 0x1
 
-    .line 4
-    monitor-exit p2
+    aput v2, v0, v1
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5
-    iget-object p2, p0, Lj4/c;->b:Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-virtual {p2, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
-
-    return-object p3
-
-    :catchall_0
-    move-exception p1
-
-    .line 6
+    :catch_0
     :try_start_1
-    monitor-exit p2
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SRC:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
     :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    throw p1
-.end method
+    :catch_1
+    :try_start_2
+    sget-object v0, Lj4/c;->a:[I
 
-.method public c(Lcom/bumptech/glide/load/engine/t;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/bumptech/glide/load/engine/t<",
-            "***>;)Z"
-        }
-    .end annotation
+    sget-object v1, Lj4/b;->DST:Lj4/b;
 
-    .line 1
-    sget-object v0, Lj4/c;->c:Lcom/bumptech/glide/load/engine/t;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    move-result v1
 
-    move-result p1
+    const/4 v2, 0x3
 
-    return p1
-.end method
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-.method public d(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/engine/t;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Lcom/bumptech/glide/load/engine/t<",
-            "***>;)V"
-        }
-    .end annotation
+    :catch_2
+    :try_start_3
+    sget-object v0, Lj4/c;->a:[I
 
-    .line 1
-    iget-object v0, p0, Lj4/c;->a:Ln/a;
+    sget-object v1, Lj4/b;->SRC_OVER:Lj4/b;
 
-    monitor-enter v0
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj4/c;->a:Ln/a;
+    move-result v1
 
-    new-instance v2, Lcom/bumptech/glide/util/i;
+    const/4 v2, 0x4
 
-    invoke-direct {v2, p1, p2, p3}, Lcom/bumptech/glide/util/i;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
-    if-eqz p4, :cond_0
+    :catch_3
+    :try_start_4
+    sget-object v0, Lj4/c;->a:[I
 
-    goto :goto_0
+    sget-object v1, Lj4/b;->DST_OVER:Lj4/b;
 
-    .line 3
-    :cond_0
-    sget-object p4, Lj4/c;->c:Lcom/bumptech/glide/load/engine/t;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 4
-    :goto_0
-    invoke-virtual {v1, v2, p4}, Ln/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result v1
 
-    .line 5
-    monitor-exit v0
+    const/4 v2, 0x5
 
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SRC_IN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->DST_IN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    :try_start_7
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SRC_OUT:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x8
+
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    :catch_7
+    :try_start_8
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->DST_OUT:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x9
+
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    :catch_8
+    :try_start_9
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SRC_ATOP:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xa
+
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    :catch_9
+    :try_start_a
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->DST_ATOP:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xb
+
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :try_start_b
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->XOR:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xc
+
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    :catch_b
+    :try_start_c
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->PLUS:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xd
+
+    aput v2, v0, v1
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+
+    :catch_c
+    :try_start_d
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->MODULATE:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xe
+
+    aput v2, v0, v1
+    :try_end_d
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+
+    :catch_d
+    :try_start_e
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SCREEN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0xf
+
+    aput v2, v0, v1
+    :try_end_e
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
+
+    :catch_e
+    :try_start_f
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->OVERLAY:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x10
+
+    aput v2, v0, v1
+    :try_end_f
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
+
+    :catch_f
+    :try_start_10
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->DARKEN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x11
+
+    aput v2, v0, v1
+    :try_end_10
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
+
+    :catch_10
+    :try_start_11
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->LIGHTEN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x12
+
+    aput v2, v0, v1
+    :try_end_11
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
+
+    :catch_11
+    :try_start_12
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->COLOR_DODGE:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x13
+
+    aput v2, v0, v1
+    :try_end_12
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
+
+    :catch_12
+    :try_start_13
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->COLOR_BURN:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x14
+
+    aput v2, v0, v1
+    :try_end_13
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
+
+    :catch_13
+    :try_start_14
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->HARD_LIGHT:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x15
+
+    aput v2, v0, v1
+    :try_end_14
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
+
+    :catch_14
+    :try_start_15
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SOFT_LIGHT:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x16
+
+    aput v2, v0, v1
+    :try_end_15
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
+
+    :catch_15
+    :try_start_16
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->DIFFERENCE:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x17
+
+    aput v2, v0, v1
+    :try_end_16
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_16 .. :try_end_16} :catch_16
+
+    :catch_16
+    :try_start_17
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->EXCLUSION:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x18
+
+    aput v2, v0, v1
+    :try_end_17
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_17 .. :try_end_17} :catch_17
+
+    :catch_17
+    :try_start_18
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->MULTIPLY:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x19
+
+    aput v2, v0, v1
+    :try_end_18
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_18 .. :try_end_18} :catch_18
+
+    :catch_18
+    :try_start_19
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->HUE:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1a
+
+    aput v2, v0, v1
+    :try_end_19
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_19 .. :try_end_19} :catch_19
+
+    :catch_19
+    :try_start_1a
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->SATURATION:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1b
+
+    aput v2, v0, v1
+    :try_end_1a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1a .. :try_end_1a} :catch_1a
+
+    :catch_1a
+    :try_start_1b
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->COLOR:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1c
+
+    aput v2, v0, v1
+    :try_end_1b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1b .. :try_end_1b} :catch_1b
+
+    :catch_1b
+    :try_start_1c
+    sget-object v0, Lj4/c;->a:[I
+
+    sget-object v1, Lj4/b;->LUMINOSITY:Lj4/b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x1d
+
+    aput v2, v0, v1
+    :try_end_1c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1c .. :try_end_1c} :catch_1c
+
+    :catch_1c
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
 .end method

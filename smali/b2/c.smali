@@ -3,205 +3,444 @@
 .source "SourceFile"
 
 
-# instance fields
-.field private final a:Landroid/content/SharedPreferences;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lb2/c$a;
+    }
+.end annotation
 
-.field private final b:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+
+# static fields
+.field public static final b:Lb2/c$a;
+
+.field public static final c:J
+
+.field public static final d:J
+
+.field public static final e:J
+
+
+# instance fields
+.field public final a:J
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/SharedPreferences;Ljava/util/Set;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/SharedPreferences;",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 2
 
-    const-string v0, "prefs"
+    new-instance v0, Lb2/c$a;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lb2/c$a;-><init>(Lep0/k;)V
+
+    sput-object v0, Lb2/c;->b:Lb2/c$a;
+
+    const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0, v0}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lb2/c;->c:J
+
+    const/high16 v0, 0x7f800000    # Float.POSITIVE_INFINITY
 
     .line 2
-    iput-object p1, p0, Lb2/c;->a:Landroid/content/SharedPreferences;
+    invoke-static {v0, v0}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lb2/c;->d:J
+
+    const/high16 v0, 0x7fc00000    # Float.NaN
 
     .line 3
-    iput-object p2, p0, Lb2/c;->b:Ljava/util/Set;
+    invoke-static {v0, v0}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide v0
+
+    sput-wide v0, Lb2/c;->e:J
 
     return-void
 .end method
 
+.method public synthetic constructor <init>(J)V
+    .locals 0
 
-# virtual methods
-.method public final a()Ljava/util/Map;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    iget-object v0, p0, Lb2/c;->a:Landroid/content/SharedPreferences;
+    iput-wide p1, p0, Lb2/c;->a:J
 
-    invoke-interface {v0}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
+    return-void
+.end method
 
-    move-result-object v0
+.method public static final a(JJ)Z
+    .locals 1
 
-    const-string v1, "prefs.all"
+    cmp-long v0, p0, p2
 
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    if-nez v0, :cond_0
 
-    .line 2
-    new-instance v1, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 3
-    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/util/Map$Entry;
-
-    .line 4
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/String;
-
-    .line 5
-    iget-object v4, p0, Lb2/c;->b:Ljava/util/Set;
-
-    if-nez v4, :cond_1
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    invoke-interface {v4, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    :goto_1
-    if-eqz v3, :cond_0
-
-    .line 6
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v3
-
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v2
-
-    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p0, 0x1
 
     goto :goto_0
 
-    .line 7
-    :cond_2
-    new-instance v0, Ljava/util/LinkedHashMap;
+    :cond_0
+    const/4 p0, 0x0
 
-    invoke-interface {v1}, Ljava/util/Map;->size()I
+    :goto_0
+    return p0
+.end method
 
-    move-result v2
+.method public static final b(J)F
+    .locals 2
 
-    invoke-static {v2}, Lkotlin/collections/o0;->e(I)I
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
 
-    move-result v2
+    move-result v0
 
-    invoke-direct {v0, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
 
-    .line 8
-    invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    move-result v1
+
+    mul-float v1, v1, v0
+
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
+
+    move-result v0
+
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
+
+    move-result p0
+
+    mul-float p0, p0, v0
+
+    add-float/2addr p0, v1
+
+    float-to-double p0, p0
+
+    invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
+
+    move-result-wide p0
+
+    double-to-float p0, p0
+
+    return p0
+.end method
+
+.method public static final c(J)F
+    .locals 3
+
+    .line 1
+    sget-wide v0, Lb2/c;->e:J
+
+    cmp-long v2, p0, v0
+
+    if-eqz v2, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 2
+    sget-object v0, Lep0/m;->a:Lep0/m;
+
+    const/16 v0, 0x20
+
+    shr-long/2addr p0, v0
+
+    long-to-int p1, p0
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "Offset is unspecified"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static final d(J)F
+    .locals 3
+
+    .line 1
+    sget-wide v0, Lb2/c;->e:J
+
+    cmp-long v2, p0, v0
+
+    if-eqz v2, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 2
+    sget-object v0, Lep0/m;->a:Lep0/m;
+
+    const-wide v0, 0xffffffffL
+
+    and-long/2addr p0, v0
+
+    long-to-int p1, p0
+
+    invoke-static {p1}, Ljava/lang/Float;->intBitsToFloat(I)F
+
+    move-result p0
+
+    return p0
+
+    .line 3
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "Offset is unspecified"
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static e(J)I
+    .locals 2
+
+    const/16 v0, 0x20
+
+    ushr-long v0, p0, v0
+
+    xor-long/2addr p0, v0
+
+    long-to-int p1, p0
+
+    return p1
+.end method
+
+.method public static final f(JJ)J
+    .locals 2
+
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Lb2/c;->c(J)F
+
+    move-result v1
+
+    sub-float/2addr v0, v1
+
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
+
+    move-result p0
+
+    invoke-static {p2, p3}, Lb2/c;->d(J)F
+
+    move-result p1
+
+    sub-float/2addr p0, p1
+
+    invoke-static {v0, p0}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final g(JJ)J
+    .locals 2
+
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
+
+    move-result v0
+
+    invoke-static {p2, p3}, Lb2/c;->c(J)F
+
+    move-result v1
+
+    add-float/2addr v1, v0
+
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
+
+    move-result p0
+
+    invoke-static {p2, p3}, Lb2/c;->d(J)F
+
+    move-result p1
+
+    add-float/2addr p1, p0
+
+    invoke-static {v1, p1}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static final h(JF)J
+    .locals 1
+
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
+
+    move-result v0
+
+    mul-float v0, v0, p2
+
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
+
+    move-result p0
+
+    mul-float p0, p0, p2
+
+    invoke-static {v0, p0}, Lcom/google/android/play/core/appupdate/d;->c(FF)J
+
+    move-result-wide p0
+
+    return-wide p0
+.end method
+
+.method public static i(J)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/google/android/play/core/appupdate/d;->m(J)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "Offset("
+
+    .line 2
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 3
+    invoke-static {p0, p1}, Lb2/c;->c(J)F
+
+    move-result v1
+
+    invoke-static {v1}, Lqk/f0;->q0(F)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 9
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    const-string v1, ", "
 
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v2
+    invoke-static {p0, p1}, Lb2/c;->d(J)F
 
-    if-eqz v2, :cond_4
+    move-result p0
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {p0}, Lqk/f0;->q0(F)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object p0
 
-    .line 10
-    check-cast v2, Ljava/util/Map$Entry;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    const/16 p0, 0x29
 
-    move-result-object v3
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 12
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object p0
 
-    .line 13
-    instance-of v4, v2, Ljava/util/Set;
+    goto :goto_0
 
-    if-eqz v4, :cond_3
+    :cond_0
+    const-string p0, "Offset.Unspecified"
 
-    .line 14
-    check-cast v2, Ljava/lang/Iterable;
+    :goto_0
+    return-object p0
+.end method
 
-    invoke-static {v2}, Lkotlin/collections/t;->c1(Ljava/lang/Iterable;)Ljava/util/Set;
 
-    move-result-object v2
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
 
-    .line 15
-    :cond_3
-    invoke-interface {v0, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-wide v0, p0, Lb2/c;->a:J
 
-    goto :goto_2
+    .line 1
+    instance-of v2, p1, Lb2/c;
 
-    :cond_4
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    check-cast p1, Lb2/c;
+
+    .line 2
+    iget-wide v4, p1, Lb2/c;->a:J
+
+    cmp-long p1, v0, v4
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v3, 0x1
+
+    :goto_0
+    return v3
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget-wide v0, p0, Lb2/c;->a:J
+
+    invoke-static {v0, v1}, Lb2/c;->e(J)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    iget-wide v0, p0, Lb2/c;->a:J
+
+    invoke-static {v0, v1}, Lb2/c;->i(J)Ljava/lang/String;
+
+    move-result-object v0
+
     return-object v0
 .end method

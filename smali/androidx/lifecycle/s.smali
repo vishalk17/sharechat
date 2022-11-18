@@ -1,14 +1,11 @@
-.class public final Landroidx/lifecycle/s;
-.super Ljava/util/concurrent/CancellationException;
+.class public interface abstract Landroidx/lifecycle/s;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# virtual methods
+.method public abstract getDefaultViewModelCreationExtras()Lt5/a;
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/concurrent/CancellationException;-><init>()V
-
-    return-void
+.method public abstract getDefaultViewModelProviderFactory()Landroidx/lifecycle/e1$b;
 .end method

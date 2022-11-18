@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private final b:I
+.field public final b:I
 
-.field private final c:I
+.field public final c:I
 
 
 # direct methods
@@ -17,7 +17,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
@@ -30,7 +30,7 @@
     iput p1, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->b:I
 
     .line 3
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
@@ -47,11 +47,11 @@
 
 
 # virtual methods
-.method protected onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/LinearLayout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 

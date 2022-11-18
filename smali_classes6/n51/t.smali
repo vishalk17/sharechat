@@ -1,0 +1,133 @@
+.class public final Ln51/t;
+.super Lep0/u;
+.source "SourceFile"
+
+# interfaces
+.implements Ldp0/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;
+
+.field public final synthetic c:Ll1/l2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll1/l2<",
+            "Lax1/o;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;Ll1/l2;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;",
+            "Ll1/l2<",
+            "Lax1/o;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Ln51/t;->b:Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;
+
+    iput-object p2, p0, Ln51/t;->c:Ll1/l2;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Ln51/t;->c:Ll1/l2;
+
+    invoke-static {v0}, Ln51/x0;->a(Ll1/l2;)Lax1/o;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v0, v0, Lax1/o;->m:Lsharechat/model/chatroom/local/referral_program/states/RefereeMetaViewData;
+
+    .line 3
+    invoke-virtual {v0}, Lsharechat/model/chatroom/local/referral_program/states/RefereeMetaViewData;->getOffset()I
+
+    move-result v0
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_0
+
+    .line 4
+    iget-object v0, p0, Ln51/t;->b:Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;
+
+    .line 5
+    sget-object v1, Lzw1/a;->SUCCESSFUL:Lzw1/a;
+
+    invoke-virtual {v1}, Lzw1/a;->getValue()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 6
+    iget-object v2, p0, Ln51/t;->c:Ll1/l2;
+
+    invoke-static {v2}, Ln51/x0;->a(Ll1/l2;)Lax1/o;
+
+    move-result-object v2
+
+    .line 7
+    iget-object v2, v2, Lax1/o;->m:Lsharechat/model/chatroom/local/referral_program/states/RefereeMetaViewData;
+
+    .line 8
+    invoke-virtual {v2}, Lsharechat/model/chatroom/local/referral_program/states/RefereeMetaViewData;->getOffset()I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    .line 9
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v3, "status"
+
+    .line 10
+    invoke-static {v1, v3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    new-instance v3, Ln51/o1;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, v0, v2, v1, v4}, Ln51/o1;-><init>(Lsharechat/feature/chatroom/referral_program/ReferralProgramViewModel;Ljava/lang/Integer;Ljava/lang/String;Lvo0/d;)V
+
+    invoke-static {v0, v3}, Lyt0/d;->a(Ltt0/b;Ldp0/p;)V
+
+    .line 12
+    :cond_0
+    sget-object v0, Lro0/x;->a:Lro0/x;
+
+    return-object v0
+.end method

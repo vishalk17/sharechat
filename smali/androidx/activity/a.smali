@@ -1,4 +1,4 @@
-.class interface abstract Landroidx/activity/a;
+.class public interface abstract Landroidx/activity/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 

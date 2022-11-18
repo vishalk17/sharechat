@@ -124,7 +124,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -185,28 +185,28 @@
 
     const-string v4, "ttl"
 
-    invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     iget-object v3, p0, Lcom/appsflyer/internal/ak;->AppsFlyer2dXConversionCallback:Ljava/lang/String;
 
     const-string v4, "uuid"
 
-    invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     iget-object v3, p0, Lcom/appsflyer/CreateOneLinkHttpTask;->AFLogger$LogLevel:Ljava/util/Map;
 
     const-string v4, "data"
 
-    invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     iget-object v3, p0, Lcom/appsflyer/internal/ak;->getLevel:Ljava/util/Map;
 
     const-string v4, "meta"
 
-    invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     iget-object v3, p0, Lcom/appsflyer/CreateOneLinkHttpTask;->valueOf:Ljava/lang/String;
@@ -216,7 +216,7 @@
     const-string v4, "brand_domain"
 
     .line 10
-    invoke-interface {v2, v4, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     :cond_0

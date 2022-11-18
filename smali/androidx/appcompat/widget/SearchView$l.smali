@@ -15,8 +15,5 @@
 
 
 # virtual methods
-.method public abstract c9(Ljava/lang/String;)Z
-.end method
-
-.method public abstract n(Ljava/lang/String;)Z
+.method public abstract a()Z
 .end method

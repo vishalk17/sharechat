@@ -6,5 +6,12 @@
         <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
         <ImageView android:id="@id/lightbox_send_button" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="66.0dip" app:srcCompat="@drawable/intercom_composer_send_icon" />
     </LinearLayout>
-    <ImageView android:id="@id/lightbox_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/intercom_composer_lightbox_padding" android:scaleType="fitCenter" android:layout_weight="1.0" android:layout_marginStart="@dimen/intercom_composer_lightbox_padding" android:layout_marginEnd="@dimen/intercom_composer_lightbox_padding" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/intercom_composer_lightbox_padding" android:layout_weight="1.0" android:layout_marginStart="@dimen/intercom_composer_lightbox_padding" android:layout_marginEnd="@dimen/intercom_composer_lightbox_padding">
+        <ImageView android:id="@id/lightbox_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        <View android:id="@id/video_duration_shadow" android:background="@drawable/intercom_video_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="@id/video_details_layout" />
+        <LinearLayout android:orientation="vertical" android:id="@id/video_details_layout" android:paddingTop="24.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:layout_constraintBottom_toBottomOf="parent">
+            <TextView android:textColor="@color/intercom_composer_white" android:id="@id/file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="sans-serif-medium" />
+            <TextView android:textColor="@color/intercom_composer_white" android:id="@id/video_duration" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

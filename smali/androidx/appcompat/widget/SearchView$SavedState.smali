@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field d:Z
+.field public d:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/appcompat/widget/SearchView$SavedState$a;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/SearchView$SavedState$a;-><init>()V
@@ -68,7 +67,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
     .line 1
@@ -79,17 +78,15 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
+    const-string v0, "SearchView.SavedState{"
+
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "SearchView.SavedState{"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 2
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
@@ -121,11 +118,13 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
     iget-boolean p2, p0, Landroidx/appcompat/widget/SearchView$SavedState;->d:Z

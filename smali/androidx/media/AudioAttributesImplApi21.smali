@@ -35,40 +35,43 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/media/AudioAttributes;)V
-    .locals 1
-
-    const/4 v0, -0x1
+.method public constructor <init>(Landroid/media/AudioAttributes;)V
+    .locals 0
 
     .line 3
-    invoke-direct {p0, p1, v0}, Landroidx/media/AudioAttributesImplApi21;-><init>(Landroid/media/AudioAttributes;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+
+    const/4 p1, -0x1
+
+    .line 5
+    iput p1, p0, Landroidx/media/AudioAttributesImplApi21;->b:I
 
     return-void
 .end method
 
-.method constructor <init>(Landroid/media/AudioAttributes;I)V
-    .locals 1
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, -0x1
-
-    .line 5
-    iput v0, p0, Landroidx/media/AudioAttributesImplApi21;->b:I
+.method public constructor <init>(Landroid/media/AudioAttributes;I)V
+    .locals 0
 
     .line 6
-    iput-object p1, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 7
-    iput p2, p0, Landroidx/media/AudioAttributesImplApi21;->b:I
+    iput-object p1, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
+
+    const/4 p1, -0x1
+
+    .line 8
+    iput p1, p0, Landroidx/media/AudioAttributesImplApi21;->b:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
@@ -96,10 +99,9 @@
     return p1
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
 
     invoke-virtual {v0}, Landroid/media/AudioAttributes;->hashCode()I
@@ -109,18 +111,17 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
+    const-string v0, "AudioAttributesCompat: audioattributes="
+
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "AudioAttributesCompat: audioattributes="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 2
     iget-object v1, p0, Landroidx/media/AudioAttributesImplApi21;->a:Landroid/media/AudioAttributes;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

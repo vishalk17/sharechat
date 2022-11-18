@@ -1,4 +1,4 @@
-.class public interface abstract Lk3/c$a;
+.class public final Lk3/c$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
+    accessFlags = 0x19
     name = "a"
 .end annotation
 
@@ -21,26 +21,104 @@
 
 
 # static fields
-.field public static final a:Lk3/c$a;
+.field public static final a:Lk3/c$a$a;
+
+.field public static final b:I
+
+.field public static final c:I
+
+.field public static final d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
-    sget-object v0, Lk3/c$a$a;->a:Lk3/c$a$a;
+    new-instance v0, Lk3/c$a$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lk3/c$a$a;-><init>(Lep0/k;)V
+
+    sput-object v0, Lk3/c$a;->a:Lk3/c$a$a;
+
+    const/4 v0, 0x0
 
     .line 1
-    new-instance v0, Lk3/b$a;
+    invoke-static {v0}, Lk3/c$a;->a(I)I
 
-    invoke-direct {v0}, Lk3/b$a;-><init>()V
+    const/16 v0, 0x32
 
-    sput-object v0, Lk3/c$a;->a:Lk3/c$a;
+    .line 2
+    invoke-static {v0}, Lk3/c$a;->a(I)I
+
+    sput v0, Lk3/c$a;->b:I
+
+    const/4 v0, -0x1
+
+    .line 3
+    invoke-static {v0}, Lk3/c$a;->a(I)I
+
+    sput v0, Lk3/c$a;->c:I
+
+    const/16 v0, 0x64
+
+    .line 4
+    invoke-static {v0}, Lk3/c$a;->a(I)I
+
+    sput v0, Lk3/c$a;->d:I
 
     return-void
 .end method
 
+.method public static a(I)I
+    .locals 3
 
-# virtual methods
-.method public abstract a(Lk3/d;Lg3/i;)Lk3/c;
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    if-ltz p0, :cond_0
+
+    const/16 v2, 0x65
+
+    if-ge p0, v2, :cond_0
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    if-nez v2, :cond_2
+
+    const/4 v2, -0x1
+
+    if-ne p0, v2, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :cond_2
+    :goto_1
+    if-eqz v0, :cond_3
+
+    return p0
+
+    :cond_3
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string v0, "topRatio should be in [0..100] range or -1"
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

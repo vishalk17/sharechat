@@ -1,133 +1,135 @@
-.class public Landroidx/lifecycle/q0;
-.super Ljava/lang/Object;
+.class public final Landroidx/lifecycle/q0;
+.super Landroidx/lifecycle/m;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/lifecycle/q0$a;
-    }
-.end annotation
-
-
 # instance fields
-.field private final a:Landroidx/lifecycle/z;
-
-.field private final b:Landroid/os/Handler;
-
-.field private c:Landroidx/lifecycle/q0$a;
+.field public final synthetic this$0:Landroidx/lifecycle/p0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/lifecycle/x;)V
-    .locals 1
+.method public constructor <init>(Landroidx/lifecycle/p0;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Landroidx/lifecycle/q0;->this$0:Landroidx/lifecycle/p0;
 
-    .line 2
-    new-instance v0, Landroidx/lifecycle/z;
-
-    invoke-direct {v0, p1}, Landroidx/lifecycle/z;-><init>(Landroidx/lifecycle/x;)V
-
-    iput-object v0, p0, Landroidx/lifecycle/q0;->a:Landroidx/lifecycle/z;
-
-    .line 3
-    new-instance p1, Landroid/os/Handler;
-
-    invoke-direct {p1}, Landroid/os/Handler;-><init>()V
-
-    iput-object p1, p0, Landroidx/lifecycle/q0;->b:Landroid/os/Handler;
-
-    return-void
-.end method
-
-.method private f(Landroidx/lifecycle/q$b;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/q0;->c:Landroidx/lifecycle/q0$a;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {v0}, Landroidx/lifecycle/q0$a;->run()V
-
-    .line 3
-    :cond_0
-    new-instance v0, Landroidx/lifecycle/q0$a;
-
-    iget-object v1, p0, Landroidx/lifecycle/q0;->a:Landroidx/lifecycle/z;
-
-    invoke-direct {v0, v1, p1}, Landroidx/lifecycle/q0$a;-><init>(Landroidx/lifecycle/z;Landroidx/lifecycle/q$b;)V
-
-    iput-object v0, p0, Landroidx/lifecycle/q0;->c:Landroidx/lifecycle/q0$a;
-
-    .line 4
-    iget-object p1, p0, Landroidx/lifecycle/q0;->b:Landroid/os/Handler;
-
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->postAtFrontOfQueue(Ljava/lang/Runnable;)Z
+    invoke-direct {p0}, Landroidx/lifecycle/m;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Landroidx/lifecycle/q;
+.method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/q0;->a:Landroidx/lifecycle/z;
+    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    return-object v0
-.end method
+    const/16 v0, 0x1d
 
-.method public b()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
-
-    invoke-direct {p0, v0}, Landroidx/lifecycle/q0;->f(Landroidx/lifecycle/q$b;)V
-
-    return-void
-.end method
-
-.method public c()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_CREATE:Landroidx/lifecycle/q$b;
-
-    invoke-direct {p0, v0}, Landroidx/lifecycle/q0;->f(Landroidx/lifecycle/q$b;)V
-
-    return-void
-.end method
-
-.method public d()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_STOP:Landroidx/lifecycle/q$b;
-
-    invoke-direct {p0, v0}, Landroidx/lifecycle/q0;->f(Landroidx/lifecycle/q$b;)V
+    if-ge p2, v0, :cond_0
 
     .line 2
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_DESTROY:Landroidx/lifecycle/q$b;
+    sget p2, Landroidx/lifecycle/r0;->c:I
 
-    invoke-direct {p0, v0}, Landroidx/lifecycle/q0;->f(Landroidx/lifecycle/q$b;)V
+    .line 3
+    invoke-virtual {p1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
+
+    move-result-object p1
+
+    const-string p2, "androidx.lifecycle.LifecycleDispatcher.report_fragment_tag"
+
+    invoke-virtual {p1, p2}, Landroid/app/FragmentManager;->findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/lifecycle/r0;
+
+    .line 4
+    iget-object p2, p0, Landroidx/lifecycle/q0;->this$0:Landroidx/lifecycle/p0;
+
+    iget-object p2, p2, Landroidx/lifecycle/p0;->i:Landroidx/lifecycle/p0$b;
+
+    .line 5
+    iput-object p2, p1, Landroidx/lifecycle/r0;->b:Landroidx/lifecycle/r0$a;
+
+    :cond_0
+    return-void
+.end method
+
+.method public onActivityPaused(Landroid/app/Activity;)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Landroidx/lifecycle/q0;->this$0:Landroidx/lifecycle/p0;
+
+    .line 2
+    iget v0, p1, Landroidx/lifecycle/p0;->c:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p1, Landroidx/lifecycle/p0;->c:I
+
+    if-nez v0, :cond_0
+
+    .line 3
+    iget-object v0, p1, Landroidx/lifecycle/p0;->f:Landroid/os/Handler;
+
+    iget-object p1, p1, Landroidx/lifecycle/p0;->h:Landroidx/lifecycle/p0$a;
+
+    const-wide/16 v1, 0x2bc
+
+    invoke-virtual {v0, p1, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+
+    :cond_0
+    return-void
+.end method
+
+.method public onActivityPreCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+    .locals 0
+
+    new-instance p2, Landroidx/lifecycle/q0$a;
+
+    invoke-direct {p2, p0}, Landroidx/lifecycle/q0$a;-><init>(Landroidx/lifecycle/q0;)V
+
+    invoke-virtual {p1, p2}, Landroid/app/Activity;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     return-void
 .end method
 
-.method public e()V
-    .locals 1
+.method public onActivityStopped(Landroid/app/Activity;)V
+    .locals 3
 
     .line 1
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
+    iget-object p1, p0, Landroidx/lifecycle/q0;->this$0:Landroidx/lifecycle/p0;
 
-    invoke-direct {p0, v0}, Landroidx/lifecycle/q0;->f(Landroidx/lifecycle/q$b;)V
+    .line 2
+    iget v0, p1, Landroidx/lifecycle/p0;->b:I
 
+    const/4 v1, 0x1
+
+    sub-int/2addr v0, v1
+
+    iput v0, p1, Landroidx/lifecycle/p0;->b:I
+
+    if-nez v0, :cond_0
+
+    .line 3
+    iget-boolean v0, p1, Landroidx/lifecycle/p0;->d:Z
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    iget-object v0, p1, Landroidx/lifecycle/p0;->g:Landroidx/lifecycle/c0;
+
+    sget-object v2, Landroidx/lifecycle/t$b;->ON_STOP:Landroidx/lifecycle/t$b;
+
+    invoke-virtual {v0, v2}, Landroidx/lifecycle/c0;->f(Landroidx/lifecycle/t$b;)V
+
+    .line 5
+    iput-boolean v1, p1, Landroidx/lifecycle/p0;->e:Z
+
+    :cond_0
     return-void
 .end method

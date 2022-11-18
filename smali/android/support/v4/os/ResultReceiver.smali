@@ -9,8 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroid/support/v4/os/ResultReceiver$b;,
-        Landroid/support/v4/os/ResultReceiver$c;
+        Landroid/support/v4/os/ResultReceiver$b;
     }
 .end annotation
 
@@ -28,16 +27,13 @@
 
 
 # instance fields
-.field final b:Landroid/os/Handler;
-
-.field c:Landroid/support/v4/os/a;
+.field public b:Landroid/support/v4/os/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/os/ResultReceiver$a;
 
     invoke-direct {v0}, Landroid/support/v4/os/ResultReceiver$a;-><init>()V
@@ -47,40 +43,71 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
-    .locals 1
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, Landroid/support/v4/os/ResultReceiver;->b:Landroid/os/Handler;
-
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object p1
 
-    invoke-static {p1}, Landroid/support/v4/os/a$a;->w1(Landroid/os/IBinder;)Landroid/support/v4/os/a;
+    sget v0, Landroid/support/v4/os/a$a;->b:I
 
-    move-result-object p1
+    if-nez p1, :cond_0
 
-    iput-object p1, p0, Landroid/support/v4/os/ResultReceiver;->c:Landroid/support/v4/os/a;
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, "android.support.v4.os.IResultReceiver"
+
+    .line 3
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    instance-of v1, v0, Landroid/support/v4/os/a;
+
+    if-eqz v1, :cond_1
+
+    .line 5
+    move-object p1, v0
+
+    check-cast p1, Landroid/support/v4/os/a;
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    new-instance v0, Landroid/support/v4/os/a$a$a;
+
+    invoke-direct {v0, p1}, Landroid/support/v4/os/a$a$a;-><init>(Landroid/os/IBinder;)V
+
+    move-object p1, v0
+
+    .line 7
+    :goto_0
+    iput-object p1, p0, Landroid/support/v4/os/ResultReceiver;->b:Landroid/support/v4/os/a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected a(ILandroid/os/Bundle;)V
+.method public a(ILandroid/os/Bundle;)V
     .locals 0
 
     return-void
 .end method
 
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -88,7 +115,7 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
@@ -96,7 +123,7 @@
 
     .line 2
     :try_start_0
-    iget-object p2, p0, Landroid/support/v4/os/ResultReceiver;->c:Landroid/support/v4/os/a;
+    iget-object p2, p0, Landroid/support/v4/os/ResultReceiver;->b:Landroid/support/v4/os/a;
 
     if-nez p2, :cond_0
 
@@ -105,11 +132,11 @@
 
     invoke-direct {p2, p0}, Landroid/support/v4/os/ResultReceiver$b;-><init>(Landroid/support/v4/os/ResultReceiver;)V
 
-    iput-object p2, p0, Landroid/support/v4/os/ResultReceiver;->c:Landroid/support/v4/os/a;
+    iput-object p2, p0, Landroid/support/v4/os/ResultReceiver;->b:Landroid/support/v4/os/a;
 
     .line 4
     :cond_0
-    iget-object p2, p0, Landroid/support/v4/os/ResultReceiver;->c:Landroid/support/v4/os/a;
+    iget-object p2, p0, Landroid/support/v4/os/ResultReceiver;->b:Landroid/support/v4/os/a;
 
     invoke-interface {p2}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 

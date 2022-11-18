@@ -7,7 +7,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method protected onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 6
 
     .line 1
@@ -55,7 +54,7 @@
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->setMaxLines(I)V
 
     .line 7
-    invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

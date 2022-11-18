@@ -1,4 +1,4 @@
-.class synthetic Landroidx/fragment/app/b$a;
+.class public final synthetic Landroidx/fragment/app/b$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,21 +9,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
-    invoke-static {}, Landroidx/fragment/app/y$e$c;->values()[Landroidx/fragment/app/y$e$c;
+    invoke-static {}, Landroidx/fragment/app/i0$e$c;->values()[Landroidx/fragment/app/i0$e$c;
 
     move-result-object v0
 
@@ -34,7 +33,7 @@
     sput-object v0, Landroidx/fragment/app/b$a;->a:[I
 
     :try_start_0
-    sget-object v1, Landroidx/fragment/app/y$e$c;->GONE:Landroidx/fragment/app/y$e$c;
+    sget-object v1, Landroidx/fragment/app/i0$e$c;->GONE:Landroidx/fragment/app/i0$e$c;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -50,7 +49,7 @@
     :try_start_1
     sget-object v0, Landroidx/fragment/app/b$a;->a:[I
 
-    sget-object v1, Landroidx/fragment/app/y$e$c;->INVISIBLE:Landroidx/fragment/app/y$e$c;
+    sget-object v1, Landroidx/fragment/app/i0$e$c;->INVISIBLE:Landroidx/fragment/app/i0$e$c;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -66,7 +65,7 @@
     :try_start_2
     sget-object v0, Landroidx/fragment/app/b$a;->a:[I
 
-    sget-object v1, Landroidx/fragment/app/y$e$c;->REMOVED:Landroidx/fragment/app/y$e$c;
+    sget-object v1, Landroidx/fragment/app/i0$e$c;->REMOVED:Landroidx/fragment/app/i0$e$c;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -82,7 +81,7 @@
     :try_start_3
     sget-object v0, Landroidx/fragment/app/b$a;->a:[I
 
-    sget-object v1, Landroidx/fragment/app/y$e$c;->VISIBLE:Landroidx/fragment/app/y$e$c;
+    sget-object v1, Landroidx/fragment/app/i0$e$c;->VISIBLE:Landroidx/fragment/app/i0$e$c;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

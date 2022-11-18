@@ -14,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,10 +22,10 @@
 .method public constructor <init>(Lcom/appsflyer/internal/bf;)V
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/appsflyer/internal/m;->AFKeystoreWrapper:Lcom/appsflyer/internal/bf;
 
     return-void
@@ -101,7 +100,7 @@
     .line 22
     :cond_1
     :goto_1
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
 
@@ -191,7 +190,7 @@
     .line 14
     :cond_1
     :goto_1
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 

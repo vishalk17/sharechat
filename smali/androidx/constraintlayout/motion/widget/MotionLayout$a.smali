@@ -1,4 +1,4 @@
-.class Landroidx/constraintlayout/motion/widget/MotionLayout$a;
+.class public final Landroidx/constraintlayout/motion/widget/MotionLayout$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -8,25 +8,24 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/constraintlayout/motion/widget/MotionLayout;->n(Landroid/view/View;II[II)V
+    value = Landroidx/constraintlayout/motion/widget/MotionLayout;->l(Landroid/view/View;II[II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroid/view/View;
+.field public final synthetic b:Landroid/view/View;
 
 
 # direct methods
-.method constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;Landroid/view/View;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->b:Landroid/view/View;
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->b:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,10 +34,9 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->b:Landroid/view/View;
 
     const/4 v1, 0x1

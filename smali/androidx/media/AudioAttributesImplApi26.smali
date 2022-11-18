@@ -21,7 +21,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/media/AudioAttributes;)V
+.method public constructor <init>(Landroid/media/AudioAttributes;)V
     .locals 1
 
     const/4 v0, -0x1

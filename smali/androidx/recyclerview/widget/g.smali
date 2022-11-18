@@ -1,422 +1,186 @@
-.class public final Landroidx/recyclerview/widget/g;
-.super Landroidx/recyclerview/widget/RecyclerView$h;
+.class public final synthetic Landroidx/recyclerview/widget/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/recyclerview/widget/g$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroidx/recyclerview/widget/RecyclerView$h<",
-        "Landroidx/recyclerview/widget/RecyclerView$d0;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Landroidx/recyclerview/widget/h;
-
-
 # direct methods
-.method public constructor <init>(Landroidx/recyclerview/widget/g$a;Ljava/util/List;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/recyclerview/widget/g$a;",
-            "Ljava/util/List<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;>;)V"
-        }
-    .end annotation
+.method public static a(Lq2/f0;IILjava/util/Map;Ldp0/l;)Lq2/d0;
+    .locals 7
 
-    .line 3
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$h;-><init>()V
+    const-string v0, "alignmentLines"
 
-    .line 4
-    new-instance v0, Landroidx/recyclerview/widget/h;
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v0, p0, p1}, Landroidx/recyclerview/widget/h;-><init>(Landroidx/recyclerview/widget/g;Landroidx/recyclerview/widget/g$a;)V
+    const-string v0, "placementBlock"
 
-    iput-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
+    invoke-static {p4, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 5
-    invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    new-instance v0, Lq2/e0;
 
-    move-result-object p1
+    move-object v1, v0
 
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    move v2, p1
 
-    move-result p2
+    move v3, p2
 
-    if-eqz p2, :cond_0
+    move-object v4, p3
 
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    move-object v5, p0
 
-    move-result-object p2
+    move-object v6, p4
 
-    check-cast p2, Landroidx/recyclerview/widget/RecyclerView$h;
-
-    .line 6
-    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/g;->z(Landroidx/recyclerview/widget/RecyclerView$h;)Z
-
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    iget-object p1, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/h;->t()Z
-
-    move-result p1
-
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$h;->setHasStableIds(Z)V
-
-    return-void
-.end method
-
-.method public varargs constructor <init>(Landroidx/recyclerview/widget/g$a;[Landroidx/recyclerview/widget/RecyclerView$h;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/recyclerview/widget/g$a;",
-            "[",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/SafeVarargs;
-    .end annotation
-
-    .line 2
-    invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p2
-
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/g;-><init>(Landroidx/recyclerview/widget/g$a;Ljava/util/List;)V
-
-    return-void
-.end method
-
-.method public varargs constructor <init>([Landroidx/recyclerview/widget/RecyclerView$h;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/SafeVarargs;
-    .end annotation
-
-    .line 1
-    sget-object v0, Landroidx/recyclerview/widget/g$a;->c:Landroidx/recyclerview/widget/g$a;
-
-    invoke-direct {p0, v0, p1}, Landroidx/recyclerview/widget/g;-><init>(Landroidx/recyclerview/widget/g$a;[Landroidx/recyclerview/widget/RecyclerView$h;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public A()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/h;->n()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object v0
+    invoke-direct/range {v1 .. v6}, Lq2/e0;-><init>(IILjava/util/Map;Lq2/f0;Ldp0/l;)V
 
     return-object v0
 .end method
 
-.method B(Landroidx/recyclerview/widget/RecyclerView$h$a;)V
+.method public static synthetic b(Lq2/f0;IILjava/util/Map;Ldp0/l;ILjava/lang/Object;)Lq2/d0;
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$h;->setStateRestorationPolicy(Landroidx/recyclerview/widget/RecyclerView$h$a;)V
+    invoke-static {}, Lso0/r0;->d()Ljava/util/Map;
+
+    move-result-object p3
+
+    .line 2
+    invoke-interface {p0, p1, p2, p3, p4}, Lq2/f0;->w0(IILjava/util/Map;Ldp0/l;)Lq2/d0;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static c(Landroidx/recyclerview/widget/RecyclerView;Ljava/lang/StringBuilder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->C()Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 2
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static d(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/StringBuilder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 5
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    return-object v0
+.end method
+
+.method public static e(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    invoke-direct {v0, p0}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 5
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    return-object v0
+.end method
+
+.method public static f(Lyr0/c0;)Lvo0/f;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lm30/d;->a()Lm30/a;
+
+    move-result-object v0
+
+    .line 2
+    invoke-interface {v0}, Lm30/a;->d()Lyr0/b0;
+
+    move-result-object v0
+
+    .line 3
+    invoke-interface {p0, v0}, Lvo0/f;->plus(Lvo0/f;)Lvo0/f;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static g(Lsk/q1;Ljava/util/HashMap;Lsk/q1;Ljava/util/HashMap;)V
+    .locals 0
+
+    .line 1
+    check-cast p0, Lsk/l1;
+
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    const-class p0, Lsk/q1;
+
+    .line 3
+    invoke-interface {p1, p0, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    new-instance p0, Ljava/util/HashMap;
+
+    .line 5
+    invoke-direct {p0, p3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    .line 6
+    invoke-static {p0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     return-void
 .end method
 
-.method public C(Landroidx/recyclerview/widget/RecyclerView$h;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;)Z"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->F(Landroidx/recyclerview/widget/RecyclerView$h;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public findRelativeAdapterPositionIn(Landroidx/recyclerview/widget/RecyclerView$h;Landroidx/recyclerview/widget/RecyclerView$d0;I)I
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            "I)I"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1, p2, p3}, Landroidx/recyclerview/widget/h;->q(Landroidx/recyclerview/widget/RecyclerView$h;Landroidx/recyclerview/widget/RecyclerView$d0;I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public getItemCount()I
+.method public static h(Lyr0/c0;)Lvo0/f;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
+    invoke-static {}, Lm30/d;->a()Lm30/a;
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/h;->r()I
+    move-result-object v0
 
-    move-result v0
+    .line 2
+    invoke-interface {v0}, Lm30/a;->c()Lyr0/b0;
 
-    return v0
-.end method
+    move-result-object v0
 
-.method public getItemId(I)J
-    .locals 2
+    .line 3
+    invoke-interface {p0, v0}, Lvo0/f;->plus(Lvo0/f;)Lvo0/f;
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
+    move-result-object p0
 
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->o(I)J
-
-    move-result-wide v0
-
-    return-wide v0
-.end method
-
-.method public getItemViewType(I)I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->p(I)I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public onAttachedToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->w(Landroidx/recyclerview/widget/RecyclerView;)V
-
-    return-void
-.end method
-
-.method public onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/h;->x(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
-
-    return-void
-.end method
-
-.method public onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/h;->y(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public onDetachedFromRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->z(Landroidx/recyclerview/widget/RecyclerView;)V
-
-    return-void
-.end method
-
-.method public onFailedToRecycleView(Landroidx/recyclerview/widget/RecyclerView$d0;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->A(Landroidx/recyclerview/widget/RecyclerView$d0;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public onViewAttachedToWindow(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->B(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-
-    return-void
-.end method
-
-.method public onViewDetachedFromWindow(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->C(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-
-    return-void
-.end method
-
-.method public onViewRecycled(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->D(Landroidx/recyclerview/widget/RecyclerView$d0;)V
-
-    return-void
-.end method
-
-.method public setHasStableIds(Z)V
-    .locals 1
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    const-string v0, "Calling setHasStableIds is not allowed on the ConcatAdapter. Use the Config object passed in the constructor to control this behavior"
-
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public setStateRestorationPolicy(Landroidx/recyclerview/widget/RecyclerView$h$a;)V
-    .locals 1
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    const-string v0, "Calling setStateRestorationPolicy is not allowed on the ConcatAdapter. This value is inferred from added adapters"
-
-    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public y(ILandroidx/recyclerview/widget/RecyclerView$h;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;)Z"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/h;->g(ILandroidx/recyclerview/widget/RecyclerView$h;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public z(Landroidx/recyclerview/widget/RecyclerView$h;)Z
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/recyclerview/widget/RecyclerView$h<",
-            "+",
-            "Landroidx/recyclerview/widget/RecyclerView$d0;",
-            ">;)Z"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/g;->a:Landroidx/recyclerview/widget/h;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/h;->h(Landroidx/recyclerview/widget/RecyclerView$h;)Z
-
-    move-result p1
-
-    return p1
+    return-object p0
 .end method

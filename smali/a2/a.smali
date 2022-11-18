@@ -1,54 +1,113 @@
 .class public final La2/a;
-.super Ljava/lang/Object;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/datastore/core/b;
+.implements Ldp0/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Landroidx/datastore/core/b<",
-        "TT;>;"
+        "Lep0/u;",
+        "Ldp0/l<",
+        "La2/a0;",
+        "Lro0/x;",
+        ">;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# instance fields
+.field public final synthetic b:Ll1/w0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll1/w0<",
+            "La2/a0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public final synthetic c:Ldp0/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/l<",
+            "La2/a0;",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ll1/w0;Ldp0/l;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ll1/w0<",
+            "La2/a0;",
+            ">;",
+            "Ldp0/l<",
+            "-",
+            "La2/a0;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, La2/a;->b:Ll1/w0;
+
+    iput-object p2, p0, La2/a;->c:Ldp0/l;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroidx/datastore/core/a;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/datastore/core/a;",
-            "Lkotlin/coroutines/d<",
-            "-TT;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroidx/datastore/core/a;
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    throw p1
+    check-cast p1, La2/a0;
+
+    const-string v0, "it"
+
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object v0, p0, La2/a;->b:Ll1/w0;
+
+    invoke-interface {v0}, Ll1/w0;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, La2/a;->b:Ll1/w0;
+
+    invoke-interface {v0, p1}, Ll1/w0;->setValue(Ljava/lang/Object;)V
+
+    .line 5
+    iget-object v0, p0, La2/a;->c:Ldp0/l;
+
+    invoke-interface {v0, p1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    :cond_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

@@ -13,8 +13,6 @@
     <string name="account_setting_description">Profile image, peyar, status, idam</string>
     <string name="account_settings">Account Settings</string>
     <string name="account_type">Account Vagai</string>
-    <string name="ad_adult_abusive">aabasam / thavarana</string>
-    <string name="ad_fake_news">polliyana seithi</string>
     <string name="ad_in_appropriate">ithu poruthamatrathu</string>
     <string name="ad_irrelevant">ithu thodarbatrathu</string>
     <string name="ad_opt_out_not_interested">intha vilambarathil aarvam ilai</string>
@@ -723,6 +721,7 @@ ungal virupappadi mudivu seiyungal."</string>
     <string name="suggested_topcreator">parinthuraikkappatta sirantha padaippaalar</string>
     <string name="suggestions_title">Parinthuraigal</string>
     <string name="tag_discuss">nabar intha thalaipai vivathithu kondu irukirargal</string>
+    <string name="tap_here_to_select_emoji">ஈமோஜியைத் தேர்ந்தெடுக்க இங்கே தட்டவும்</string>
     <string name="tap_here_to_start">Olipathivu seiya aluthungal</string>
     <string name="tap_to_retry">Meendum Muyarchikka</string>
     <string name="tell_your_friends">Ungal nanbargalukkum sollungal</string>

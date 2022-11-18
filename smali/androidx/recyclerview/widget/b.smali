@@ -3,68 +3,64 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/recyclerview/widget/u;
+.implements Landroidx/recyclerview/widget/c0;
 
 
 # instance fields
-.field private final a:Landroidx/recyclerview/widget/RecyclerView$h;
+.field public final a:Landroidx/recyclerview/widget/RecyclerView$f;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$h;)V
+.method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView$f;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+    iput-object p1, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(II)V
+.method public final a(IILjava/lang/Object;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->notifyItemRangeInserted(II)V
+    invoke-virtual {v0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRangeChanged(IILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public b(II)V
+.method public final b(II)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->notifyItemRangeRemoved(II)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRangeInserted(II)V
 
     return-void
 .end method
 
-.method public d(IILjava/lang/Object;)V
+.method public final c(II)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
-    invoke-virtual {v0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$h;->notifyItemRangeChanged(IILjava/lang/Object;)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRangeRemoved(II)V
 
     return-void
 .end method
 
-.method public e(II)V
+.method public final d(II)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$h;
+    iget-object v0, p0, Landroidx/recyclerview/widget/b;->a:Landroidx/recyclerview/widget/RecyclerView$f;
 
-    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->notifyItemMoved(II)V
+    invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemMoved(II)V
 
     return-void
 .end method

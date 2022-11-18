@@ -1,4 +1,4 @@
-.class Landroidx/emoji2/text/b$a;
+.class public final Landroidx/emoji2/text/b$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
@@ -18,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +26,6 @@
 .method public static a(Landroid/os/Looper;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Landroid/os/Handler;->createAsync(Landroid/os/Looper;)Landroid/os/Handler;
 
     move-result-object p0

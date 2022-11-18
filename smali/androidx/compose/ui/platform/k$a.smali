@@ -1,4 +1,4 @@
-.class final Landroidx/compose/ui/platform/k$a;
+.class public final Landroidx/compose/ui/platform/k$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x19
     name = "a"
 .end annotation
 
@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Landroidx/compose/ui/platform/k$a;-><init>()V

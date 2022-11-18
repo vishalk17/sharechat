@@ -1,4 +1,4 @@
-.class final Landroidx/viewpager/widget/ViewPager$a;
+.class public final Landroidx/viewpager/widget/ViewPager$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,20 +37,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/viewpager/widget/ViewPager$f;Landroidx/viewpager/widget/ViewPager$f;)I
-    .locals 0
-
-    .line 1
-    iget p1, p1, Landroidx/viewpager/widget/ViewPager$f;->b:I
-
-    iget p2, p2, Landroidx/viewpager/widget/ViewPager$f;->b:I
-
-    sub-int/2addr p1, p2
-
-    return p1
-.end method
-
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
     .line 1
@@ -59,9 +45,12 @@
 
     check-cast p2, Landroidx/viewpager/widget/ViewPager$f;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/viewpager/widget/ViewPager$a;->a(Landroidx/viewpager/widget/ViewPager$f;Landroidx/viewpager/widget/ViewPager$f;)I
+    .line 2
+    iget p1, p1, Landroidx/viewpager/widget/ViewPager$f;->b:I
 
-    move-result p1
+    iget p2, p2, Landroidx/viewpager/widget/ViewPager$f;->b:I
+
+    sub-int/2addr p1, p2
 
     return p1
 .end method

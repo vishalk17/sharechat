@@ -1,397 +1,194 @@
-.class final Landroidx/viewpager2/widget/c;
-.super Ljava/lang/Object;
+.class public final Landroidx/viewpager2/widget/c;
+.super Landroidx/viewpager2/widget/ViewPager2$g;
 .source "SourceFile"
 
 
 # instance fields
-.field private final a:Landroidx/viewpager2/widget/ViewPager2;
-
-.field private final b:Landroidx/viewpager2/widget/e;
-
-.field private final c:Landroidx/recyclerview/widget/RecyclerView;
-
-.field private d:Landroid/view/VelocityTracker;
-
-.field private e:I
-
-.field private f:F
-
-.field private g:I
-
-.field private h:J
+.field public final a:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroidx/viewpager2/widget/ViewPager2$g;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method constructor <init>(Landroidx/viewpager2/widget/ViewPager2;Landroidx/viewpager2/widget/e;Landroidx/recyclerview/widget/RecyclerView;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$g;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/viewpager2/widget/c;->a:Landroidx/viewpager2/widget/ViewPager2;
+    new-instance v0, Ljava/util/ArrayList;
 
-    .line 3
-    iput-object p2, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
+    const/4 v1, 0x3
 
-    .line 4
-    iput-object p3, p0, Landroidx/viewpager2/widget/c;->c:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    return-void
-.end method
+    iput-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-.method private a(JIFF)V
-    .locals 8
-
-    .line 1
-    iget-wide v0, p0, Landroidx/viewpager2/widget/c;->h:J
-
-    const/4 v7, 0x0
-
-    move-wide v2, p1
-
-    move v4, p3
-
-    move v5, p4
-
-    move v6, p5
-
-    invoke-static/range {v0 .. v7}, Landroid/view/MotionEvent;->obtain(JJIFFI)Landroid/view/MotionEvent;
-
-    move-result-object p1
-
-    .line 2
-    iget-object p2, p0, Landroidx/viewpager2/widget/c;->d:Landroid/view/VelocityTracker;
-
-    invoke-virtual {p2, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
-
-    .line 3
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->recycle()V
-
-    return-void
-.end method
-
-.method private c()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->d:Landroid/view/VelocityTracker;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/viewpager2/widget/c;->d:Landroid/view/VelocityTracker;
-
-    .line 3
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Landroidx/viewpager2/widget/ViewPager2;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
-
-    move-result-object v0
-
-    .line 4
-    invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
-
-    move-result v0
-
-    iput v0, p0, Landroidx/viewpager2/widget/c;->e:I
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
-
-    :goto_0
     return-void
 .end method
 
 
 # virtual methods
-.method b()Z
-    .locals 7
+.method public final a(I)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
+    :try_start_0
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->g()Z
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result v0
+    move-result-object v0
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    iput v1, p0, Landroidx/viewpager2/widget/c;->g:I
-
-    int-to-float v0, v1
-
-    iput v0, p0, Landroidx/viewpager2/widget/c;->f:F
-
-    .line 3
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v0
-
-    iput-wide v0, p0, Landroidx/viewpager2/widget/c;->h:J
-
-    .line 4
-    invoke-direct {p0}, Landroidx/viewpager2/widget/c;->c()V
-
-    .line 5
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->k()V
-
-    .line 6
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->i()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 7
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->c:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->C1()V
-
-    .line 8
-    :cond_1
-    iget-wide v2, p0, Landroidx/viewpager2/widget/c;->h:J
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    move-object v1, p0
-
-    invoke-direct/range {v1 .. v6}, Landroidx/viewpager2/widget/c;->a(JIFF)V
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method d()Z
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->h()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->m()V
-
-    .line 3
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->d:Landroid/view/VelocityTracker;
-
-    const/16 v1, 0x3e8
-
-    .line 4
-    iget v2, p0, Landroidx/viewpager2/widget/c;->e:I
-
-    int-to-float v2, v2
-
-    invoke-virtual {v0, v1, v2}, Landroid/view/VelocityTracker;->computeCurrentVelocity(IF)V
-
-    .line 5
-    invoke-virtual {v0}, Landroid/view/VelocityTracker;->getXVelocity()F
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    float-to-int v1, v1
+    if-eqz v1, :cond_0
 
-    .line 6
-    invoke-virtual {v0}, Landroid/view/VelocityTracker;->getYVelocity()F
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result v0
+    move-result-object v1
 
-    float-to-int v0, v0
-
-    .line 7
-    iget-object v2, p0, Landroidx/viewpager2/widget/c;->c:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {v2, v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->d0(II)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 8
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Landroidx/viewpager2/widget/ViewPager2;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->q()V
-
-    :cond_1
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method e(F)Z
-    .locals 9
-
-    .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->h()Z
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
+    check-cast v1, Landroidx/viewpager2/widget/ViewPager2$g;
 
     .line 2
-    :cond_0
-    iget v0, p0, Landroidx/viewpager2/widget/c;->f:F
-
-    sub-float/2addr v0, p1
-
-    iput v0, p0, Landroidx/viewpager2/widget/c;->f:F
-
-    .line 3
-    iget p1, p0, Landroidx/viewpager2/widget/c;->g:I
-
-    int-to-float p1, p1
-
-    sub-float/2addr v0, p1
-
-    invoke-static {v0}, Ljava/lang/Math;->round(F)I
-
-    move-result p1
-
-    .line 4
-    iget v0, p0, Landroidx/viewpager2/widget/c;->g:I
-
-    add-int/2addr v0, p1
-
-    iput v0, p0, Landroidx/viewpager2/widget/c;->g:I
-
-    .line 5
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-
-    move-result-wide v3
-
-    .line 6
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Landroidx/viewpager2/widget/ViewPager2;
-
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->getOrientation()I
-
-    move-result v0
-
-    const/4 v8, 0x1
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
+    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/ViewPager2$g;->a(I)V
+    :try_end_0
+    .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    :cond_1
-    const/4 v0, 0x0
+    :cond_0
+    return-void
 
-    :goto_0
-    if-eqz v0, :cond_2
+    :catch_0
+    move-exception p1
 
-    move v2, p1
+    .line 3
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
 
-    goto :goto_1
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_1
-    if-eqz v0, :cond_3
-
-    goto :goto_2
-
-    :cond_3
-    move v1, p1
-
-    :goto_2
     const/4 p1, 0x0
 
-    if-eqz v0, :cond_4
-
-    .line 7
-    iget v5, p0, Landroidx/viewpager2/widget/c;->f:F
-
-    move v6, v5
-
-    goto :goto_3
-
-    :cond_4
-    const/4 v6, 0x0
-
-    :goto_3
-    if-eqz v0, :cond_5
-
-    const/4 v7, 0x0
-
-    goto :goto_4
-
-    .line 8
-    :cond_5
-    iget p1, p0, Landroidx/viewpager2/widget/c;->f:F
-
-    move v7, p1
-
-    .line 9
-    :goto_4
-    iget-object p1, p0, Landroidx/viewpager2/widget/c;->c:Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1, v2, v1}, Landroidx/recyclerview/widget/RecyclerView;->scrollBy(II)V
-
-    const/4 v5, 0x2
-
-    move-object v2, p0
-
-    .line 10
-    invoke-direct/range {v2 .. v7}, Landroidx/viewpager2/widget/c;->a(JIFF)V
-
-    return v8
+    throw p1
 .end method
 
-.method f()Z
-    .locals 1
+.method public final b(IFI)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager2/widget/c;->b:Landroidx/viewpager2/widget/e;
+    :try_start_0
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
 
-    invoke-virtual {v0}, Landroidx/viewpager2/widget/e;->h()Z
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result v0
+    move-result-object v0
 
-    return v0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/viewpager2/widget/ViewPager2$g;
+
+    .line 2
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/viewpager2/widget/ViewPager2$g;->b(IFI)V
+    :try_end_0
+    .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final c(I)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/viewpager2/widget/ViewPager2$g;
+
+    .line 2
+    invoke-virtual {v1, p1}, Landroidx/viewpager2/widget/ViewPager2$g;->c(I)V
+    :try_end_0
+    .catch Ljava/util/ConcurrentModificationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 3
+    invoke-virtual {p0, p1}, Landroidx/viewpager2/widget/c;->e(Ljava/util/ConcurrentModificationException;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final d(Landroidx/viewpager2/widget/ViewPager2$g;)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/viewpager2/widget/c;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method public final e(Ljava/util/ConcurrentModificationException;)V
+    .locals 2
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "Adding and removing callbacks during dispatch to callbacks is not supported"
+
+    invoke-direct {v0, v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
 .end method

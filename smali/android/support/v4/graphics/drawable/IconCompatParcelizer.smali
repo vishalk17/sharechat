@@ -7,28 +7,25 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/graphics/drawable/IconCompatParcelizer;-><init>()V
 
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/b;)Landroidx/core/graphics/drawable/IconCompat;
+.method public static read(Lr6/b;)Landroidx/core/graphics/drawable/IconCompat;
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->read(Landroidx/versionedparcelable/b;)Landroidx/core/graphics/drawable/IconCompat;
+    invoke-static {p0}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->read(Lr6/b;)Landroidx/core/graphics/drawable/IconCompat;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static write(Landroidx/core/graphics/drawable/IconCompat;Landroidx/versionedparcelable/b;)V
+.method public static write(Landroidx/core/graphics/drawable/IconCompat;Lr6/b;)V
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->write(Landroidx/core/graphics/drawable/IconCompat;Landroidx/versionedparcelable/b;)V
+    invoke-static {p0, p1}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->write(Landroidx/core/graphics/drawable/IconCompat;Lr6/b;)V
 
     return-void
 .end method

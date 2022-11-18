@@ -3,34 +3,22 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/i;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/emoji2/text/EmojiCompatInitializer;->c(Landroid/content/Context;)V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
+.implements Landroidx/lifecycle/j;
 
 
 # instance fields
-.field final synthetic b:Landroidx/lifecycle/q;
+.field public final synthetic b:Landroidx/lifecycle/t;
 
-.field final synthetic c:Landroidx/emoji2/text/EmojiCompatInitializer;
+.field public final synthetic c:Landroidx/emoji2/text/EmojiCompatInitializer;
 
 
 # direct methods
-.method constructor <init>(Landroidx/emoji2/text/EmojiCompatInitializer;Landroidx/lifecycle/q;)V
+.method public constructor <init>(Landroidx/emoji2/text/EmojiCompatInitializer;Landroidx/lifecycle/t;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->c:Landroidx/emoji2/text/EmojiCompatInitializer;
 
-    iput-object p2, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->b:Landroidx/lifecycle/q;
+    iput-object p2, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->b:Landroidx/lifecycle/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,58 +27,62 @@
 
 
 # virtual methods
-.method public b(Landroidx/lifecycle/x;)V
+.method public final synthetic b(Landroidx/lifecycle/b0;)V
     .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onDestroy(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onPause(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onResume(Landroidx/lifecycle/b0;)V
+    .locals 3
 
     .line 1
     iget-object p1, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->c:Landroidx/emoji2/text/EmojiCompatInitializer;
 
-    invoke-virtual {p1}, Landroidx/emoji2/text/EmojiCompatInitializer;->d()V
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget-object p1, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->b:Landroidx/lifecycle/q;
+    invoke-static {}, Landroidx/emoji2/text/b;->b()Landroid/os/Handler;
 
-    invoke-virtual {p1, p0}, Landroidx/lifecycle/q;->c(Landroidx/lifecycle/w;)V
+    move-result-object p1
 
-    return-void
-.end method
+    .line 3
+    new-instance v0, Landroidx/emoji2/text/EmojiCompatInitializer$c;
 
-.method public synthetic c(Landroidx/lifecycle/x;)V
-    .locals 0
+    invoke-direct {v0}, Landroidx/emoji2/text/EmojiCompatInitializer$c;-><init>()V
 
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->e(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
+    const-wide/16 v1, 0x1f4
 
-    return-void
-.end method
+    invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-.method public synthetic d(Landroidx/lifecycle/x;)V
-    .locals 0
+    .line 4
+    iget-object p1, p0, Landroidx/emoji2/text/EmojiCompatInitializer$1;->b:Landroidx/lifecycle/t;
 
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->a(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/t;->c(Landroidx/lifecycle/a0;)V
 
     return-void
 .end method
 
-.method public synthetic k(Landroidx/lifecycle/x;)V
+.method public final synthetic onStart(Landroidx/lifecycle/b0;)V
     .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->c(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
 
     return-void
 .end method
 
-.method public synthetic m(Landroidx/lifecycle/x;)V
+.method public final synthetic onStop(Landroidx/lifecycle/b0;)V
     .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->b(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public synthetic u(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->f(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
 
     return-void
 .end method

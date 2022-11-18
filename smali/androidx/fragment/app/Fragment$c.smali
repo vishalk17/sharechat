@@ -1,4 +1,4 @@
-.class Landroidx/fragment/app/Fragment$c;
+.class public final Landroidx/fragment/app/Fragment$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,21 +12,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/fragment/app/y;
+.field public final synthetic b:Landroidx/fragment/app/i0;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/y;)V
+.method public constructor <init>(Landroidx/fragment/app/i0;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/fragment/app/Fragment$c;->b:Landroidx/fragment/app/y;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$c;->b:Landroidx/fragment/app/i0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,12 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$c;->b:Landroidx/fragment/app/y;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$c;->b:Landroidx/fragment/app/i0;
 
-    invoke-virtual {v0}, Landroidx/fragment/app/y;->g()V
+    invoke-virtual {v0}, Landroidx/fragment/app/i0;->c()V
 
     return-void
 .end method

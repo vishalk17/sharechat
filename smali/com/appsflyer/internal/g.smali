@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field AFInAppEventParameterName:Ljava/lang/String;
+.field public AFInAppEventParameterName:Ljava/lang/String;
 
 .field public final AFInAppEventType:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -17,21 +17,21 @@
     .end annotation
 .end field
 
-.field AFKeystoreWrapper:Lcom/appsflyer/attribution/AppsFlyerRequestListener;
+.field public AFKeystoreWrapper:Lcom/appsflyer/attribution/AppsFlyerRequestListener;
 
-.field AFLogger$LogLevel:Ljava/lang/String;
+.field public AFLogger$LogLevel:Ljava/lang/String;
 
 .field public AFVersionDeclaration:Ljava/lang/String;
 
-.field AppsFlyer2dXConversionCallback:[B
+.field public AppsFlyer2dXConversionCallback:[B
 
-.field getLevel:Ljava/lang/String;
+.field public getLevel:Ljava/lang/String;
 
-.field init:Ljava/lang/String;
+.field public init:Ljava/lang/String;
 
 .field public onAppOpenAttributionNative:Ljava/lang/String;
 
-.field onAttributionFailureNative:Z
+.field public onAttributionFailureNative:Z
 
 .field private final onDeepLinkingNative:Z
 
@@ -39,7 +39,7 @@
 
 .field public valueOf:Landroid/app/Application;
 
-.field values:Ljava/util/Map;
+.field public values:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -123,7 +123,7 @@
     return-object p0
 .end method
 
-.method final AFInAppEventParameterName()[B
+.method public final AFInAppEventParameterName()[B
     .locals 1
 
     .line 2
@@ -144,13 +144,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/g;->AFInAppEventType:Ljava/util/Map;
 
     return-object v0
 .end method
 
-.method protected final AFKeystoreWrapper(Ljava/lang/String;)Ljava/lang/String;
+.method public final AFKeystoreWrapper(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 2
@@ -208,7 +207,7 @@
     return v0
 .end method
 
-.method protected final valueOf(Ljava/util/Map;)Lcom/appsflyer/internal/g;
+.method public final valueOf(Ljava/util/Map;)Lcom/appsflyer/internal/g;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -220,7 +219,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/g;->AFInAppEventType:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
@@ -231,7 +229,6 @@
 .method public final values()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/g;->onDeepLinkingNative:Z
 
     return v0

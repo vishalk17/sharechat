@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "NexusThreadFactory"
 .end annotation
 
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lio/intercom/android/nexus/NexusClient$1;)V
+.method public synthetic constructor <init>(Lio/intercom/android/nexus/NexusClient$1;)V
     .locals 0
 
     .line 4
@@ -73,15 +73,14 @@
 
     iput v0, p0, Lio/intercom/android/nexus/NexusClient$NexusThreadFactory;->threadCount:I
 
+    const-string v0, "IntercomNexus-"
+
     .line 3
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "IntercomNexus-"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 4
     iget v1, p0, Lio/intercom/android/nexus/NexusClient$NexusThreadFactory;->threadCount:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;

@@ -2,26 +2,37 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lx1/h$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lx1/h$b;"
+    }
+.end annotation
+
 
 # virtual methods
-.method public abstract a(Ljava/util/List;)V
+.method public abstract getKey()Lr2/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
+            "()",
+            "Lr2/e<",
+            "TT;>;"
         }
     .end annotation
 .end method
 
-.method public abstract f(Ljava/util/List;)V
+.method public abstract getValue()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
+            "()TT;"
         }
     .end annotation
 .end method

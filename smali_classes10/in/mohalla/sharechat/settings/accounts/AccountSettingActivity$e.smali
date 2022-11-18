@@ -1,14 +1,11 @@
 .class public final Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$e;
-.super Ljava/lang/Object;
+.super Landroid/app/DatePickerDialog;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/text/TextWatcher;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;->dk()V
+    value = Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;->pi()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,53 +14,49 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;
-
-
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;)V
-    .locals 0
+.method public constructor <init>(Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;III)V
+    .locals 7
 
-    iput-object p1, p0, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$e;->b:Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;
+    const v2, 0x1030073
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v3, p1
+
+    move v4, p2
+
+    move v5, p3
+
+    move v6, p4
+
+    invoke-direct/range {v0 .. v6}, Landroid/app/DatePickerDialog;-><init>(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public afterTextChanged(Landroid/text/Editable;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public onTextChanged(Ljava/lang/CharSequence;III)V
+.method public final onCreate(Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$e;->b:Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;
+    invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 2
+    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
-    const/4 p3, 0x0
-
-    const/4 p4, 0x2
+    if-eqz p1, :cond_0
 
     const/4 v0, 0x0
 
-    invoke-static {p2, p1, p3, p4, v0}, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;->dj(Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 3
+    invoke-static {v0, p1}, Lg3/e;->i(ILandroid/view/Window;)V
 
+    :cond_0
     return-void
 .end method

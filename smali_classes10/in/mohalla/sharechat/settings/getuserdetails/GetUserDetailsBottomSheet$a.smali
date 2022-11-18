@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;-><init>()V
@@ -32,68 +32,39 @@
     return-void
 .end method
 
-.method private final a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroid/os/Bundle;
-
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    const-string v1, "KEY_REFERRER"
-
-    .line 2
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string p1, "KEY_NAME_HEADER_TEXT"
-
-    .line 3
-    invoke-virtual {v0, p1, p3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string p1, "KEY_ACTION_TYPE"
-
-    .line 4
-    invoke-virtual {v0, p1, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 5
-    new-instance p1, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;
-
-    invoke-direct {p1}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;-><init>()V
-
-    .line 6
-    invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
-
-    return-object p1
-.end method
-
 
 # virtual methods
-.method public final b(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+.method public final a(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
 
-    const-string v0, "fragmentManager"
+    const-string v0, "KEY_REFERRER"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "referrer"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "actionType"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v1, "KEY_NAME_HEADER_TEXT"
 
     .line 1
-    invoke-direct {p0, p2, p3, p4}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;
+    invoke-static {v0, p2, v1, p4}, Lcom/facebook/internal/z;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p2
 
+    const-string p4, "KEY_ACTION_TYPE"
+
     .line 2
-    invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->getTag()Ljava/lang/String;
+    invoke-virtual {p2, p4, p3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object p3
+    .line 3
+    new-instance p3, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;
 
-    invoke-virtual {p2, p1, p3}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-direct {p3}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;-><init>()V
+
+    .line 4
+    invoke-virtual {p3, p2}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
+
+    .line 5
+    invoke-virtual {p3}, Landroidx/fragment/app/Fragment;->getTag()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p3, p1, p2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     return-void
 .end method

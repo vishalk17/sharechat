@@ -1,50 +1,107 @@
-.class public Lp1/a;
-.super Ljava/lang/Object;
+.class public abstract Lp1/a;
+.super Lso0/h;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<E::",
+        "Ljava/util/Map$Entry<",
+        "+TK;+TV;>;K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lso0/h<",
+        "TE;>;"
+    }
+.end annotation
+
+
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lso0/h;-><init>()V
 
     return-void
 .end method
 
-.method public static a(FFF)F
+
+# virtual methods
+.method public final contains(Ljava/lang/Object;)Z
     .locals 1
 
-    cmpg-float v0, p0, p1
+    .line 1
+    instance-of v0, p1, Ljava/util/Map$Entry;
 
-    if-gez v0, :cond_0
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
 
     return p1
 
     :cond_0
-    cmpl-float p1, p0, p2
+    check-cast p1, Ljava/util/Map$Entry;
 
-    if-lez p1, :cond_1
+    const-string v0, "element"
 
-    return p2
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    :cond_1
-    return p0
+    .line 3
+    invoke-virtual {p0, p1}, Lp1/a;->e(Ljava/util/Map$Entry;)Z
+
+    move-result p1
+
+    return p1
 .end method
 
-.method public static b(III)I
-    .locals 0
+.method public abstract e(Ljava/util/Map$Entry;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map$Entry<",
+            "+TK;+TV;>;)Z"
+        }
+    .end annotation
+.end method
 
-    if-ge p0, p1, :cond_0
+.method public abstract g(Ljava/util/Map$Entry;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map$Entry<",
+            "+TK;+TV;>;)Z"
+        }
+    .end annotation
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Ljava/util/Map$Entry;
+
+    if-nez v0, :cond_0
+
+    const/4 p1, 0x0
 
     return p1
 
     :cond_0
-    if-le p0, p2, :cond_1
+    check-cast p1, Ljava/util/Map$Entry;
 
-    return p2
+    const-string v0, "element"
 
-    :cond_1
-    return p0
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p0, p1}, Lp1/a;->g(Ljava/util/Map$Entry;)Z
+
+    move-result p1
+
+    return p1
 .end method

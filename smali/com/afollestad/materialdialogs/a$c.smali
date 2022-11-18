@@ -1,4 +1,4 @@
-.class interface abstract Lcom/afollestad/materialdialogs/a$c;
+.class public interface abstract Lcom/afollestad/materialdialogs/a$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,11 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x608
+    accessFlags = 0x609
     name = "c"
 .end annotation
-
-
-# virtual methods
-.method public abstract a(Lcom/afollestad/materialdialogs/f;Landroid/view/View;ILjava/lang/CharSequence;Z)Z
-.end method

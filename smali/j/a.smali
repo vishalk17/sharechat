@@ -1,301 +1,302 @@
-.class public Lj/a;
+.class public final Lj/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lj/a$a;
+    }
+.end annotation
+
+
 # instance fields
-.field private a:Landroid/content/Context;
+.field public final a:Landroid/content/Context;
+
+.field public final b:Lj/a$a;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Lk/a;
+
+.field public final e:Ljava/util/concurrent/atomic/AtomicLong;
 
 
 # direct methods
-.method private constructor <init>(Landroid/content/Context;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 11
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Li/f;,
+            Ljava/io/IOException;,
+            Ljava/util/concurrent/TimeoutException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj/a;->a:Landroid/content/Context;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
-    return-void
-.end method
+    const-wide/16 v1, 0x0
 
-.method public static b(Landroid/content/Context;)Lj/a;
-    .locals 1
+    invoke-direct {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
-    .line 1
-    new-instance v0, Lj/a;
-
-    invoke-direct {v0, p0}, Lj/a;-><init>(Landroid/content/Context;)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public a()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
-
-    const/16 v1, 0xe
-
-    if-ge v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    div-int/lit8 v0, v0, 0x2
-
-    return v0
-.end method
-
-.method public d()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    .line 2
-    iget v1, v0, Landroid/content/res/Configuration;->screenWidthDp:I
+    iput-object v0, p0, Lj/a;->e:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 3
-    iget v2, v0, Landroid/content/res/Configuration;->screenHeightDp:I
+    iput-object p1, p0, Lj/a;->a:Landroid/content/Context;
 
     .line 4
-    iget v0, v0, Landroid/content/res/Configuration;->smallestScreenWidthDp:I
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    const/16 v3, 0x258
+    move-result-object p1
 
-    if-gt v0, v3, :cond_6
-
-    if-gt v1, v3, :cond_6
-
-    const/16 v0, 0x2d0
-
-    const/16 v3, 0x3c0
-
-    if-le v1, v3, :cond_0
-
-    if-gt v2, v0, :cond_6
-
-    :cond_0
-    if-le v1, v0, :cond_1
-
-    if-le v2, v3, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    const/16 v0, 0x1f4
-
-    if-ge v1, v0, :cond_5
-
-    const/16 v0, 0x1e0
-
-    const/16 v3, 0x280
-
-    if-le v1, v3, :cond_2
-
-    if-gt v2, v0, :cond_5
-
-    :cond_2
-    if-le v1, v0, :cond_3
-
-    if-le v2, v3, :cond_3
-
-    goto :goto_0
-
-    :cond_3
-    const/16 v0, 0x168
-
-    if-lt v1, v0, :cond_4
-
-    const/4 v0, 0x3
-
-    return v0
-
-    :cond_4
-    const/4 v0, 0x2
-
-    return v0
-
-    :cond_5
-    :goto_0
-    const/4 v0, 0x4
-
-    return v0
-
-    :cond_6
-    :goto_1
-    const/4 v0, 0x5
-
-    return v0
-.end method
-
-.method public e()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    .line 5
+    invoke-static {p1}, Li/g;->a(Landroid/content/pm/PackageManager;)Ljava/util/List;
 
     move-result-object v0
 
-    sget v1, Landroidx/appcompat/R$dimen;->abc_action_bar_stacked_tab_max_width:I
+    .line 6
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    move-result v1
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public f()I
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    sget-object v1, Landroidx/appcompat/R$styleable;->ActionBar:[I
-
-    sget v2, Landroidx/appcompat/R$attr;->actionBarStyle:I
+    const/4 v2, 0x1
 
     const/4 v3, 0x0
 
-    const/4 v4, 0x0
+    if-eqz v1, :cond_0
 
-    invoke-virtual {v0, v3, v1, v2, v4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
-
-    move-result-object v0
-
-    .line 2
-    sget v1, Landroidx/appcompat/R$styleable;->ActionBar_height:I
-
-    invoke-virtual {v0, v1, v4}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
-
-    move-result v1
-
-    .line 3
-    iget-object v2, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    .line 4
-    invoke-virtual {p0}, Lj/a;->g()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    .line 5
-    sget v3, Landroidx/appcompat/R$dimen;->abc_action_bar_stacked_max_height:I
-
-    .line 6
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result v2
+    goto :goto_3
 
     .line 7
-    invoke-static {v1, v2}, Ljava/lang/Math;->min(II)I
+    :cond_0
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    move-result v1
+    move-result-object v0
+
+    move-object v1, v3
+
+    :cond_1
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_6
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/content/pm/ServiceInfo;
 
     .line 8
-    :cond_0
-    invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
+    :try_start_0
+    iget-object v5, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
-    return v1
-.end method
+    const/16 v6, 0x1000
 
-.method public g()Z
-    .locals 2
+    .line 9
+    invoke-virtual {p1, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    .line 1
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
+    move-result-object v5
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    if-eqz v1, :cond_5
 
-    move-result-object v0
+    .line 10
+    invoke-static {v5}, Li/g;->b(Landroid/content/pm/PackageInfo;)Z
 
-    sget v1, Landroidx/appcompat/R$bool;->abc_action_bar_embed_tabs:I
+    move-result v6
 
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
+    .line 11
+    invoke-static {v1}, Li/g;->b(Landroid/content/pm/PackageInfo;)Z
+
+    move-result v7
+
+    if-eq v6, v7, :cond_2
+
+    goto :goto_2
+
+    .line 12
+    :cond_2
+    iget-wide v6, v5, Landroid/content/pm/PackageInfo;->firstInstallTime:J
+
+    iget-wide v8, v1, Landroid/content/pm/PackageInfo;->firstInstallTime:J
+
+    cmp-long v10, v6, v8
+
+    if-eqz v10, :cond_3
+
+    if-gez v10, :cond_4
+
+    goto :goto_1
+
+    .line 13
+    :cond_3
+    iget-object v6, v5, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    iget-object v7, v1, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
+
+    move-result v6
+
+    if-gez v6, :cond_4
+
+    :goto_1
+    const/4 v6, 0x1
+
+    goto :goto_2
+
+    :cond_4
+    const/4 v6, 0x0
+
+    :goto_2
+    if-eqz v6, :cond_1
+
+    :cond_5
+    move-object v3, v4
+
+    move-object v1, v5
+
+    goto :goto_0
+
+    :catch_0
+    nop
+
+    goto :goto_0
+
+    :cond_6
+    :goto_3
+    if-eqz v3, :cond_a
+
+    .line 14
+    new-instance p1, Landroid/content/ComponentName;
+
+    iget-object v0, v3, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+
+    iget-object v1, v3, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+
+    invoke-direct {p1, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 15
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "androidx.ads.identifier.provider.GET_AD_ID"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 16
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 17
+    new-instance v1, Lj/a$a;
+
+    invoke-direct {v1, p0}, Lj/a$a;-><init>(Lj/a;)V
+
+    .line 18
+    iget-object v3, p0, Lj/a;->a:Landroid/content/Context;
+
+    invoke-virtual {v3, v0, v1, v2}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     move-result v0
 
-    return v0
-.end method
+    if-eqz v0, :cond_9
 
-.method public h()Z
-    .locals 3
+    .line 19
+    iput-object v1, p0, Lj/a;->b:Lj/a$a;
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    .line 20
+    iget-object v0, v1, Lj/a$a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    const/4 v1, 0x1
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    const/16 v2, 0x13
+    const-wide/16 v2, 0xa
 
-    if-lt v0, v2, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Lj/a;->a:Landroid/content/Context;
-
-    invoke-static {v0}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
+    .line 21
+    invoke-virtual {v0, v2, v3, v1}, Ljava/util/concurrent/LinkedBlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/ViewConfiguration;->hasPermanentMenuKey()Z
+    check-cast v0, Landroid/os/IBinder;
 
-    move-result v0
+    if-eqz v0, :cond_8
 
-    xor-int/2addr v0, v1
+    .line 22
+    sget v1, Lk/a$a;->b:I
 
-    return v0
+    const-string v1, "androidx.ads.identifier.provider.IAdvertisingIdService"
+
+    .line 23
+    invoke-interface {v0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_7
+
+    .line 24
+    instance-of v2, v1, Lk/a;
+
+    if-eqz v2, :cond_7
+
+    .line 25
+    check-cast v1, Lk/a;
+
+    goto :goto_4
+
+    .line 26
+    :cond_7
+    new-instance v1, Lk/a$a$a;
+
+    invoke-direct {v1, v0}, Lk/a$a$a;-><init>(Landroid/os/IBinder;)V
+
+    .line 27
+    :goto_4
+    iput-object v1, p0, Lj/a;->d:Lk/a;
+
+    .line 28
+    invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lj/a;->c:Ljava/lang/String;
+
+    return-void
+
+    .line 29
+    :cond_8
+    new-instance p1, Ljava/util/concurrent/TimeoutException;
+
+    const-string v0, "Timed out waiting for the service connection"
+
+    invoke-direct {p1, v0}, Ljava/util/concurrent/TimeoutException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 30
+    :cond_9
+    new-instance p1, Ljava/io/IOException;
+
+    const-string v0, "Connection failure"
+
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 31
+    :cond_a
+    new-instance p1, Li/f;
+
+    const-string v0, "No compatible AndroidX Advertising ID Provider available."
+
+    invoke-direct {p1, v0}, Li/f;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

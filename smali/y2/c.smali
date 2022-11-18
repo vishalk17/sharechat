@@ -1,140 +1,158 @@
-.class public final Ly2/c;
-.super Lokio/l;
+.class public final enum Ly2/c;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field private final b:Lr00/l;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lr00/l<",
-            "Ljava/io/IOException;",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Ly2/c;",
+        ">;"
+    }
+.end annotation
 
-.field private c:Z
+
+# static fields
+.field private static final synthetic $VALUES:[Ly2/c;
+
+.field public static final enum Paragraph:Ly2/c;
+
+.field public static final enum Span:Ly2/c;
+
+.field public static final enum String:Ly2/c;
+
+.field public static final enum VerbatimTts:Ly2/c;
 
 
 # direct methods
-.method public constructor <init>(Lokio/g0;Lr00/l;)V
+.method private static final synthetic $values()[Ly2/c;
+    .locals 3
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [Ly2/c;
+
+    sget-object v1, Ly2/c;->Paragraph:Ly2/c;
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Ly2/c;->Span:Ly2/c;
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Ly2/c;->VerbatimTts:Ly2/c;
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Ly2/c;->String:Ly2/c;
+
+    const/4 v2, 0x3
+
+    aput-object v1, v0, v2
+
+    return-object v0
+.end method
+
+.method public static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Ly2/c;
+
+    const-string v1, "Paragraph"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Ly2/c;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ly2/c;->Paragraph:Ly2/c;
+
+    .line 2
+    new-instance v0, Ly2/c;
+
+    const-string v1, "Span"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Ly2/c;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ly2/c;->Span:Ly2/c;
+
+    .line 3
+    new-instance v0, Ly2/c;
+
+    const-string v1, "VerbatimTts"
+
+    const/4 v2, 0x2
+
+    invoke-direct {v0, v1, v2}, Ly2/c;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ly2/c;->VerbatimTts:Ly2/c;
+
+    .line 4
+    new-instance v0, Ly2/c;
+
+    const-string v1, "String"
+
+    const/4 v2, 0x3
+
+    invoke-direct {v0, v1, v2}, Ly2/c;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Ly2/c;->String:Ly2/c;
+
+    invoke-static {}, Ly2/c;->$values()[Ly2/c;
+
+    move-result-object v0
+
+    sput-object v0, Ly2/c;->$VALUES:[Ly2/c;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lokio/g0;",
-            "Lr00/l<",
-            "-",
-            "Ljava/io/IOException;",
-            "Li00/a0;",
-            ">;)V"
+            "()V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lokio/l;-><init>(Lokio/g0;)V
-
-    .line 2
-    iput-object p2, p0, Ly2/c;->b:Lr00/l;
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public close()V
-    .locals 2
-
-    .line 1
-    :try_start_0
-    invoke-super {p0}, Lokio/l;->close()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const/4 v1, 0x1
-
-    .line 2
-    iput-boolean v1, p0, Ly2/c;->c:Z
-
-    .line 3
-    iget-object v1, p0, Ly2/c;->b:Lr00/l;
-
-    invoke-interface {v1, v0}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    :goto_0
-    return-void
-.end method
-
-.method public flush()V
-    .locals 2
-
-    .line 1
-    :try_start_0
-    invoke-super {p0}, Lokio/l;->flush()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const/4 v1, 0x1
-
-    .line 2
-    iput-boolean v1, p0, Ly2/c;->c:Z
-
-    .line 3
-    iget-object v1, p0, Ly2/c;->b:Lr00/l;
-
-    invoke-interface {v1, v0}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    :goto_0
-    return-void
-.end method
-
-.method public write(Lokio/c;J)V
+.method public static valueOf(Ljava/lang/String;)Ly2/c;
     .locals 1
 
-    .line 1
-    iget-boolean v0, p0, Ly2/c;->c:Z
+    const-class v0, Ly2/c;
 
-    if-eqz v0, :cond_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 2
-    invoke-virtual {p1, p2, p3}, Lokio/c;->skip(J)V
+    move-result-object p0
 
-    return-void
+    check-cast p0, Ly2/c;
 
-    .line 3
-    :cond_0
-    :try_start_0
-    invoke-super {p0, p1, p2, p3}, Lokio/l;->write(Lokio/c;J)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    return-object p0
+.end method
 
-    goto :goto_0
+.method public static values()[Ly2/c;
+    .locals 1
 
-    :catch_0
-    move-exception p1
+    sget-object v0, Ly2/c;->$VALUES:[Ly2/c;
 
-    const/4 p2, 0x1
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 4
-    iput-boolean p2, p0, Ly2/c;->c:Z
+    move-result-object v0
 
-    .line 5
-    iget-object p2, p0, Ly2/c;->b:Lr00/l;
+    check-cast v0, [Ly2/c;
 
-    invoke-interface {p2, p1}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    :goto_0
-    return-void
+    return-object v0
 .end method

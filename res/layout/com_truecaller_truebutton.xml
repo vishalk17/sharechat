@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/com_truecaller_truebutton_background" android:layout_width="fill_parent" android:layout_height="@dimen/com_truecaller_truebutton_height" android:layout_margin="@dimen/com_truecaller_truebutton_margin" android:elevation="@dimen/com_truecaller_truebutton_elevation"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:gravity="center" android:id="@id/com_truecaller_truebutton_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/com_truecaller_truebutton_text_auto_fill" style="@style/com_truecaller_truebutton_text_style" />
-    <ImageView android:padding="@dimen/com_truecaller_truebutton_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/com_truecaller_icon" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@string/tc_logo" />
-</RelativeLayout>

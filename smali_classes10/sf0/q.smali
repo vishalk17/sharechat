@@ -1,0 +1,222 @@
+.class public final Lsf0/q;
+.super Lxo0/i;
+.source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lxo0/i;",
+        "Ldp0/p<",
+        "Lyr0/e0;",
+        "Lvo0/d<",
+        "-",
+        "Lro0/x;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.sharechat.feed.tag.tagV3.TagFeedFragmentV3$setupViewInitialization$handleRedirect$1$1"
+    f = "TagFeedFragmentV3.kt"
+    l = {
+        0x2f2
+    }
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field public b:I
+
+.field public final synthetic c:Landroidx/fragment/app/FragmentActivity;
+
+.field public final synthetic d:Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;
+
+.field public final synthetic e:Lsharechat/library/cvo/WebCardObject;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/fragment/app/FragmentActivity;Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;Lsharechat/library/cvo/WebCardObject;Lvo0/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/fragment/app/FragmentActivity;",
+            "Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;",
+            "Lsharechat/library/cvo/WebCardObject;",
+            "Lvo0/d<",
+            "-",
+            "Lsf0/q;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lsf0/q;->c:Landroidx/fragment/app/FragmentActivity;
+
+    iput-object p2, p0, Lsf0/q;->d:Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;
+
+    iput-object p3, p0, Lsf0/q;->e:Lsharechat/library/cvo/WebCardObject;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p4}, Lxo0/i;-><init>(ILvo0/d;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lvo0/d<",
+            "*>;)",
+            "Lvo0/d<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance p1, Lsf0/q;
+
+    iget-object v0, p0, Lsf0/q;->c:Landroidx/fragment/app/FragmentActivity;
+
+    iget-object v1, p0, Lsf0/q;->d:Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;
+
+    iget-object v2, p0, Lsf0/q;->e:Lsharechat/library/cvo/WebCardObject;
+
+    invoke-direct {p1, v0, v1, v2, p2}, Lsf0/q;-><init>(Landroidx/fragment/app/FragmentActivity;Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;Lsharechat/library/cvo/WebCardObject;Lvo0/d;)V
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lyr0/e0;
+
+    check-cast p2, Lvo0/d;
+
+    invoke-virtual {p0, p1, p2}, Lsf0/q;->create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
+
+    move-result-object p1
+
+    check-cast p1, Lsf0/q;
+
+    sget-object p2, Lro0/x;->a:Lro0/x;
+
+    invoke-virtual {p1, p2}, Lsf0/q;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
+
+    .line 1
+    sget-object v0, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
+
+    .line 2
+    iget v1, p0, Lsf0/q;->b:I
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1}, Lc20/e;->a0(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 4
+    :cond_1
+    invoke-static {p1}, Lc20/e;->a0(Ljava/lang/Object;)V
+
+    .line 5
+    new-instance v1, Loc0/j;
+
+    iget-object p1, p0, Lsf0/q;->c:Landroidx/fragment/app/FragmentActivity;
+
+    const-string v3, "context"
+
+    invoke-static {p1, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v3, p0, Lsf0/q;->d:Lin/mohalla/sharechat/feed/tag/tagV3/TagFeedFragmentV3;
+
+    invoke-virtual {v3}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_2
+
+    const-string v4, "REFERRER"
+
+    invoke-virtual {v3, v4}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    if-nez v3, :cond_3
+
+    :cond_2
+    const-string v3, "unknown"
+
+    :cond_3
+    const/4 v4, 0x0
+
+    .line 6
+    invoke-direct {v1, p1, v3, v4}, Loc0/j;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    iget-object p1, p0, Lsf0/q;->e:Lsharechat/library/cvo/WebCardObject;
+
+    const-string v3, "webObj"
+
+    invoke-static {p1, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    const/4 v6, 0x6
+
+    iput v2, p0, Lsf0/q;->b:I
+
+    move-object v2, p1
+
+    move-object v5, p0
+
+    invoke-static/range {v1 .. v6}, Loc0/j;->b(Loc0/j;Lsharechat/library/cvo/WebCardObject;Ljava/lang/Integer;Landroid/app/Activity;Lvo0/d;I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-ne p1, v0, :cond_4
+
+    return-object v0
+
+    .line 8
+    :cond_4
+    :goto_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
+.end method

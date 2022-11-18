@@ -3,10 +3,10 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lin/mohalla/sharechat/web/b;
-.implements Ldv/n;
-.implements Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/i;
-.implements Lhl0/c;
+.implements Lxm0/c;
+.implements Lef0/l;
+.implements Lym0/e;
+.implements Lst1/c;
 
 
 # annotations
@@ -16,15 +16,43 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lin/mohalla/sharechat/common/base/BaseMvpActivity<",
-        "Lin/mohalla/sharechat/web/b;",
-        ">;",
-        "Lin/mohalla/sharechat/web/b;",
-        "Ldv/n;",
-        "Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/i;",
-        "Lhl0/c;"
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u0005:\u0001\u0017B\u0007\u00a2\u0006\u0004\u0008\u0015\u0010\u0016R\"\u0010\r\u001a\u00020\u00068\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u0007\u0010\u0008\u001a\u0004\u0008\t\u0010\n\"\u0004\u0008\u000b\u0010\u000cR\"\u0010\u000f\u001a\u00020\u000e8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\u0011\u0010\u0012\"\u0004\u0008\u0013\u0010\u0014\u00a8\u0006\u0018"
+    }
+    d2 = {
+        "Lin/mohalla/sharechat/web/WebViewActivity;",
+        "Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;",
+        "Lxm0/c;",
+        "Lef0/l;",
+        "Lym0/e;",
+        "Lst1/c;",
+        "Lcom/google/gson/Gson;",
+        "D",
+        "Lcom/google/gson/Gson;",
+        "getMGson",
+        "()Lcom/google/gson/Gson;",
+        "setMGson",
+        "(Lcom/google/gson/Gson;)V",
+        "mGson",
+        "Lxm0/e;",
+        "mPresenter",
+        "Lxm0/e;",
+        "ch",
+        "()Lxm0/e;",
+        "setMPresenter",
+        "(Lxm0/e;)V",
+        "<init>",
+        "()V",
+        "a",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
     }
 .end annotation
 
@@ -34,42 +62,40 @@
 
 
 # instance fields
-.field protected B:Lin/mohalla/sharechat/web/g;
+.field public C:Lxm0/e;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected C:Lcom/google/gson/Gson;
+.field public D:Lcom/google/gson/Gson;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private D:Ljava/lang/String;
+.field public E:Ljava/lang/String;
 
-.field private E:Ljava/lang/String;
+.field public F:Ljava/lang/String;
 
-.field private F:Z
+.field public G:Z
 
-.field private G:Landroid/webkit/WebView;
+.field public H:Landroid/webkit/WebView;
 
-.field private H:Landroid/widget/TextView;
+.field public I:Landroid/widget/TextView;
 
-.field private I:Landroid/widget/ProgressBar;
+.field public J:Landroid/widget/ProgressBar;
 
-.field private J:Lsharechat/library/cvo/MiniAppData;
-
-.field private K:Lru/i0;
+.field public K:Lre0/g0;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lin/mohalla/sharechat/web/WebViewActivity$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lin/mohalla/sharechat/web/WebViewActivity$a;-><init>(Lkotlin/jvm/internal/h;)V
+    invoke-direct {v0, v1}, Lin/mohalla/sharechat/web/WebViewActivity$a;-><init>(Lep0/k;)V
 
     sput-object v0, Lin/mohalla/sharechat/web/WebViewActivity;->L:Lin/mohalla/sharechat/web/WebViewActivity$a;
 
@@ -85,217 +111,271 @@
     const-string v0, "https://www.sharechat.com"
 
     .line 2
-    iput-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iput-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
     return-void
 .end method
 
-.method private static final Dh(Lin/mohalla/sharechat/web/WebViewActivity;Lcom/afollestad/materialdialogs/f;Lcom/afollestad/materialdialogs/b;)V
+
+# virtual methods
+.method public final Gg()Z
     .locals 1
 
-    const-string v0, "this$0"
+    const/4 v0, 0x1
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    return v0
+.end method
 
-    const-string v0, "<anonymous parameter 0>"
+.method public final Iu()V
+    .locals 0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "<anonymous parameter 1>"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     return-void
 .end method
 
-.method private static final Hh(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
-    .locals 0
+.method public final M3()V
+    .locals 8
 
-    const-string p1, "this$0"
+    invoke-virtual {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->Gp()Lnm0/a;
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->onBackPressed()V
+    const-string v2, "numberVerifyReferrer"
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x1
+
+    const/4 v6, 0x4
+
+    const/4 v7, 0x0
+
+    move-object v1, p0
+
+    invoke-static/range {v0 .. v7}, Lnm0/a$a;->z(Lnm0/a;Landroid/content/Context;Ljava/lang/String;ZZZILjava/lang/Object;)V
 
     return-void
 .end method
 
-.method public static synthetic Lg(Lin/mohalla/sharechat/web/WebViewActivity;Lcom/afollestad/materialdialogs/f;Lcom/afollestad/materialdialogs/b;)V
+.method public final Uq(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-
-    invoke-static {p0, p1, p2}, Lin/mohalla/sharechat/web/WebViewActivity;->Dh(Lin/mohalla/sharechat/web/WebViewActivity;Lcom/afollestad/materialdialogs/f;Lcom/afollestad/materialdialogs/b;)V
 
     return-void
 .end method
 
-.method private final Mh()V
-    .locals 6
+.method public final Vg()Lq60/m;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lq60/m<",
+            "Lxm0/c;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
-    const-string v1, "binding"
+    move-result-object v0
 
-    const/4 v2, 0x0
+    return-object v0
+.end method
 
-    if-nez v0, :cond_0
+.method public final Wg(Lsharechat/library/cvo/OAuthData;)V
+    .locals 1
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
-    move-object v0, v2
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lxm0/e;->hm(Lsharechat/library/cvo/OAuthData;)V
+
+    return-void
+.end method
+
+.method public final ch()Lxm0/e;
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->C:Lxm0/e;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
 
     :cond_0
-    iget-object v0, v0, Lru/i0;->e:Landroidx/appcompat/widget/Toolbar;
+    const-string v0, "mPresenter"
 
-    const-string v3, "binding.webToolbar"
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
 
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final dismiss()V
+    .locals 1
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/web/WebViewActivity;->i1(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final eh()V
+    .locals 13
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v2, v0, Lre0/g0;->e:Landroidx/appcompat/widget/Toolbar;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v1
+
+    :goto_0
+    if-eqz v0, :cond_1
 
     .line 2
-    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    iget-object v0, v0, Lre0/g0;->d:Landroid/widget/ProgressBar;
 
-    if-nez v3, :cond_1
+    if-eqz v0, :cond_1
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
-
-    :cond_1
-    iget-object v3, v3, Lru/i0;->d:Landroid/widget/ProgressBar;
-
-    const-string v4, "binding.webProgress"
-
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v3}, Lkp/e;->F(Landroid/view/View;)V
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
 
     .line 3
-    invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
+    :cond_1
+    invoke-virtual {p0, v2}, Landroidx/appcompat/app/AppCompatActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
 
     .line 4
     invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    const v3, 0x7f0d05f5
+    const v2, 0x7f0d0641
 
-    invoke-virtual {v0, v3, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v0, v2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
 
-    const v3, 0x7f0a0be2
+    const v2, 0x7f0a0c9e
 
     .line 5
-    invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    const-string v5, "null cannot be cast to non-null type android.widget.TextView"
+    const-string v3, "null cannot be cast to non-null type android.widget.TextView"
 
-    invoke-static {v3, v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v2, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    check-cast v3, Landroid/widget/TextView;
+    check-cast v2, Landroid/widget/TextView;
 
-    iput-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/widget/TextView;
+    iput-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/TextView;
 
     .line 6
-    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    if-nez v3, :cond_2
+    if-eqz v2, :cond_2
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object v2, v2, Lre0/g0;->d:Landroid/widget/ProgressBar;
 
-    move-object v3, v2
+    goto :goto_1
 
     :cond_2
-    iget-object v3, v3, Lru/i0;->d:Landroid/widget/ProgressBar;
+    move-object v2, v1
 
-    invoke-static {v3, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    :goto_1
+    iput-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->J:Landroid/widget/ProgressBar;
 
-    iput-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/ProgressBar;
-
-    const v3, 0x7f0a01a0
+    const v2, 0x7f0a01d7
 
     .line 7
-    invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    new-instance v4, Lin/mohalla/sharechat/web/h;
+    const-string v3, "null cannot be cast to non-null type android.widget.ImageView"
 
-    invoke-direct {v4, p0}, Lin/mohalla/sharechat/web/h;-><init>(Lin/mohalla/sharechat/web/WebViewActivity;)V
+    invoke-static {v2, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    check-cast v2, Landroid/widget/ImageView;
 
     .line 8
-    iget-boolean v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Z
+    new-instance v3, Lsh0/d;
 
-    const-string v4, "pageTitle"
+    const/16 v4, 0x15
+
+    invoke-direct {v3, p0, v4}, Lsh0/d;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 9
+    iget-boolean v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Z
 
     if-eqz v3, :cond_4
 
-    .line 9
-    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/widget/TextView;
+    .line 10
+    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/TextView;
 
     if-nez v3, :cond_3
 
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
+    goto :goto_2
 
     :cond_3
     const/16 v4, 0x11
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setGravity(I)V
 
-    goto :goto_0
+    goto :goto_2
 
-    .line 10
+    .line 11
     :cond_4
-    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/widget/TextView;
+    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/TextView;
 
     if-nez v3, :cond_5
 
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
+    goto :goto_2
 
     :cond_5
     const v4, 0x800003
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 11
-    :goto_0
+    .line 12
+    :goto_2
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/a;
 
     move-result-object v3
 
     if-nez v3, :cond_6
 
-    goto :goto_1
-
-    .line 12
-    :cond_6
-    invoke-virtual {v3, v0}, Landroidx/appcompat/app/a;->q(Landroid/view/View;)V
-
-    :goto_1
-    if-nez v3, :cond_7
-
-    goto :goto_2
-
-    :cond_7
-    const/16 v4, 0x10
+    goto :goto_3
 
     .line 13
-    invoke-virtual {v3, v4}, Landroidx/appcompat/app/a;->t(I)V
+    :cond_6
+    invoke-virtual {v3, v0}, Landroidx/appcompat/app/a;->l(Landroid/view/View;)V
+
+    :goto_3
+    if-nez v3, :cond_7
+
+    goto :goto_4
 
     .line 14
-    :goto_2
+    :cond_7
+    invoke-virtual {v3}, Landroidx/appcompat/app/a;->o()V
+
+    .line 15
+    :goto_4
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -308,362 +388,428 @@
 
     const/4 v3, 0x0
 
-    .line 15
+    .line 16
     invoke-virtual {v0, v3, v3}, Landroidx/appcompat/widget/Toolbar;->setContentInsetsAbsolute(II)V
 
-    .line 16
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    .line 17
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    if-nez v0, :cond_8
+    if-eqz v0, :cond_8
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object v0, v0, Lre0/g0;->d:Landroid/widget/ProgressBar;
 
-    move-object v0, v2
-
-    :cond_8
-    iget-object v0, v0, Lru/i0;->d:Landroid/widget/ProgressBar;
+    if-eqz v0, :cond_8
 
     invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 17
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    if-eqz v0, :cond_8
+
+    .line 18
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
+
+    const-string v4, "#1abc9c"
+
+    const-string v5, "#2ecc71"
+
+    const-string v6, "#3498db"
+
+    const-string v7, "#9b59b6"
+
+    const-string v8, "#34495e"
+
+    const-string v9, "#f39c12"
+
+    const-string v10, "#d35400"
+
+    const-string v11, "#e74c3c"
+
+    const-string v12, "#7f8c8d"
+
+    .line 19
+    filled-new-array/range {v4 .. v12}, [Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lin/mohalla/sharechat/web/g;->Gl()I
+    .line 20
+    new-instance v5, Ljava/util/Random;
+
+    invoke-direct {v5}, Ljava/util/Random;-><init>()V
+
+    const/16 v6, 0x9
+
+    invoke-virtual {v5, v6}, Ljava/util/Random;->nextInt(I)I
+
+    move-result v5
+
+    .line 21
+    aget-object v4, v4, v5
+
+    invoke-static {v4}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 18
+    .line 22
     sget-object v5, Landroid/graphics/PorterDuff$Mode;->SRC_ATOP:Landroid/graphics/PorterDuff$Mode;
 
-    .line 19
+    .line 23
     invoke-virtual {v0, v4, v5}, Landroid/graphics/drawable/Drawable;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
 
-    .line 20
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    .line 24
+    :cond_8
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    if-nez v0, :cond_9
+    if-eqz v0, :cond_9
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object v0, v0, Lre0/g0;->d:Landroid/widget/ProgressBar;
 
-    move-object v0, v2
+    goto :goto_5
 
     :cond_9
-    iget-object v0, v0, Lru/i0;->d:Landroid/widget/ProgressBar;
+    move-object v0, v1
 
-    invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setSecondaryProgress(I)V
-
-    .line 21
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
-
+    :goto_5
     if-nez v0, :cond_a
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_3
+    goto :goto_6
 
     :cond_a
-    move-object v2, v0
+    invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setSecondaryProgress(I)V
 
-    :goto_3
-    iget-object v0, v2, Lru/i0;->d:Landroid/widget/ProgressBar;
+    .line 25
+    :goto_6
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
+    if-eqz v0, :cond_b
+
+    iget-object v0, v0, Lre0/g0;->d:Landroid/widget/ProgressBar;
+
+    goto :goto_7
+
+    :cond_b
+    move-object v0, v1
+
+    :goto_7
+    if-nez v0, :cond_c
+
+    goto :goto_8
+
+    :cond_c
     invoke-virtual {v0, v3}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 22
-    invoke-direct {p0, v3}, Lin/mohalla/sharechat/web/WebViewActivity;->Qh(Z)V
+    .line 26
+    :goto_8
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
-    return-void
-.end method
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-.method private static final Oh(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
-    .locals 0
+    move-result-object v0
 
-    const-string p1, "this$0"
+    .line 27
+    invoke-virtual {v0}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v4
 
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->onBackPressed()V
+    if-eqz v4, :cond_d
 
-    return-void
-.end method
+    const-string v5, "darkMode"
 
-.method public static synthetic Pg(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
-    .locals 0
+    .line 28
+    invoke-interface {v4, v5}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/web/WebViewActivity;->Oh(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
+    move-result v4
 
-    return-void
-.end method
+    if-eqz v4, :cond_d
 
-.method private final Qh(Z)V
-    .locals 10
+    .line 29
+    invoke-virtual {v0, v5, v3}, Landroid/net/Uri;->getBooleanQueryParameter(Ljava/lang/String;Z)Z
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    move-result v0
 
-    const/4 v1, 0x0
+    goto :goto_9
 
-    if-nez v0, :cond_0
+    :cond_d
+    const/4 v0, 0x0
 
-    const-string v0, "binding"
+    :goto_9
+    if-eqz v0, :cond_11
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 30
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/TextView;
 
+    const v4, 0x7f060524
+
+    if-eqz v0, :cond_e
+
+    .line 31
+    invoke-static {p0, v4}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result v5
+
+    .line 32
+    invoke-virtual {v0, v5}, Landroid/widget/TextView;->setTextColor(I)V
+
+    .line 33
+    :cond_e
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
+
+    if-eqz v0, :cond_f
+
+    iget-object v0, v0, Lre0/g0;->e:Landroidx/appcompat/widget/Toolbar;
+
+    goto :goto_a
+
+    :cond_f
     move-object v0, v1
 
-    :cond_0
-    iget-object v0, v0, Lru/i0;->f:Landroid/webkit/WebView;
+    :goto_a
+    const v5, 0x7f0600f0
 
-    const-string v2, "binding.webview"
+    if-nez v0, :cond_10
 
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    goto :goto_b
 
-    iput-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    :cond_10
+    new-instance v6, Landroid/graphics/drawable/ColorDrawable;
 
-    const-string v2, "webView"
+    .line 34
+    invoke-static {p0, v5}, Lg4/a;->b(Landroid/content/Context;I)I
 
-    if-nez v0, :cond_1
+    move-result v7
 
-    .line 2
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 35
+    invoke-direct {v6, v7}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
+    invoke-virtual {v0, v6}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 36
+    :goto_b
+    invoke-static {v2, v4}, Lha0/c;->y(Landroid/widget/ImageView;I)V
+
+    .line 37
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    const/high16 v2, 0x4000000
+
+    .line 38
+    invoke-virtual {v0, v2}, Landroid/view/Window;->clearFlags(I)V
+
+    const/high16 v2, -0x80000000
+
+    .line 39
+    invoke-virtual {v0, v2}, Landroid/view/Window;->addFlags(I)V
+
+    .line 40
+    invoke-static {p0, v5}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result v2
+
+    .line 41
+    invoke-virtual {v0, v2}, Landroid/view/Window;->setStatusBarColor(I)V
+
+    .line 42
+    :cond_11
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
+
+    if-eqz v0, :cond_12
+
+    iget-object v0, v0, Lre0/g0;->f:Landroid/webkit/WebView;
+
+    goto :goto_c
+
+    :cond_12
     move-object v0, v1
 
-    :cond_1
+    :goto_c
+    iput-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_13
+
+    .line 43
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
 
-    const-string v3, "webView.settings"
+    goto :goto_d
 
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v3, 0x0
-
-    .line 3
-    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
-
-    .line 4
-    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V
-
-    const/4 v4, 0x1
-
-    .line 5
-    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
-
-    .line 6
-    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setLoadWithOverviewMode(Z)V
-
-    .line 7
-    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
-
-    .line 8
-    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
-
-    .line 9
-    invoke-virtual {v0, v4}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
-
-    .line 10
-    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
-
-    .line 11
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    if-nez v0, :cond_2
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
+    :cond_13
     move-object v0, v1
 
-    :cond_2
-    new-instance v3, Lin/mohalla/sharechat/web/WebViewActivity$c;
+    :goto_d
+    if-eqz v0, :cond_14
 
-    invoke-direct {v3, p1, p0}, Lin/mohalla/sharechat/web/WebViewActivity$c;-><init>(ZLin/mohalla/sharechat/web/WebViewActivity;)V
+    .line 44
+    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
 
-    invoke-virtual {v0, v3}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
+    .line 45
+    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V
 
-    .line 12
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    const/4 v2, 0x1
 
-    if-nez p1, :cond_3
+    .line 46
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 47
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setLoadWithOverviewMode(Z)V
 
-    goto :goto_0
+    .line 48
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAppCacheEnabled(Z)V
 
-    :cond_3
-    move-object v1, p1
+    .line 49
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
-    .line 13
-    :goto_0
-    new-instance p1, Lft/l;
+    .line 50
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    .line 51
+    invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setJavaScriptCanOpenWindowsAutomatically(Z)V
 
-    move-result-object v6
+    .line 52
+    invoke-static {v3}, Landroid/webkit/WebView;->setWebContentsDebuggingEnabled(Z)V
 
-    const/4 v7, 0x0
+    .line 53
+    :cond_14
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    const/16 v8, 0x10
+    if-nez v0, :cond_15
 
-    const/4 v9, 0x0
+    goto :goto_e
+
+    :cond_15
+    new-instance v2, Lxm0/i;
+
+    invoke-direct {v2, p0}, Lxm0/i;-><init>(Lin/mohalla/sharechat/web/WebViewActivity;)V
+
+    invoke-virtual {v0, v2}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
+
+    .line 54
+    :goto_e
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_18
+
+    .line 55
+    new-instance v2, Loc0/h;
+
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v3
 
     const-string v4, "WebView"
 
-    move-object v2, p1
+    invoke-direct {v2, p0, v4, p0, v3}, Loc0/h;-><init>(Landroid/content/Context;Ljava/lang/String;Lef0/l;Lyr0/e0;)V
 
-    move-object v3, p0
+    .line 56
+    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
-    move-object v5, p0
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    invoke-direct/range {v2 .. v9}, Lft/l;-><init>(Landroid/content/Context;Ljava/lang/String;Ldv/n;Lkotlinx/coroutines/s0;Lr00/a;ILkotlin/jvm/internal/h;)V
+    move-result-object v3
 
-    const-string v0, "Android"
+    .line 57
+    invoke-virtual {v3}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
 
-    .line 14
-    invoke-virtual {v1, p1, v0}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v4
 
-    .line 15
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    if-eqz v4, :cond_16
 
-    move-result-object p1
+    const-string v5, "interfaceName"
 
-    invoke-virtual {p1}, Lin/mohalla/sharechat/web/g;->El()V
+    .line 58
+    invoke-interface {v4, v5}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    return-void
-.end method
+    move-result v4
 
-.method public static synthetic Rg(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
-    .locals 0
+    if-eqz v4, :cond_16
 
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/web/WebViewActivity;->Hh(Lin/mohalla/sharechat/web/WebViewActivity;Landroid/view/View;)V
+    .line 59
+    invoke-virtual {v3, v5}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
-    return-void
-.end method
+    move-result-object v3
 
-.method public static final synthetic Sg(Lin/mohalla/sharechat/web/WebViewActivity;)Landroid/widget/TextView;
-    .locals 0
+    if-nez v3, :cond_17
 
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/widget/TextView;
+    const-string v3, ""
 
-    return-object p0
-.end method
+    goto :goto_f
 
-.method public static final synthetic Vg(Lin/mohalla/sharechat/web/WebViewActivity;)Landroid/widget/ProgressBar;
-    .locals 0
+    :cond_16
+    const-string v3, "Android"
 
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->I:Landroid/widget/ProgressBar;
+    .line 60
+    :cond_17
+    :goto_f
+    invoke-virtual {v0, v2, v3}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object p0
-.end method
-
-.method public static final synthetic eh(Lin/mohalla/sharechat/web/WebViewActivity;)Landroid/webkit/WebView;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    return-object p0
-.end method
-
-.method public static final synthetic hh(Lin/mohalla/sharechat/web/WebViewActivity;)Z
-    .locals 0
-
-    .line 1
-    iget-boolean p0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Z
-
-    return p0
-.end method
-
-
-# virtual methods
-.method public Bf()Lin/mohalla/sharechat/common/base/j;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lin/mohalla/sharechat/common/base/j<",
-            "Lin/mohalla/sharechat/web/b;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    .line 61
+    :cond_18
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    .line 62
+    invoke-virtual {v0}, Lq60/d;->em()Lyr0/e0;
 
-.method public Bh()Ljava/lang/String;
-    .locals 1
+    move-result-object v2
 
-    const-string v0, "WebViewActivity"
+    new-instance v3, Lxm0/f;
 
-    return-object v0
-.end method
+    invoke-direct {v3, v0, v1}, Lxm0/f;-><init>(Lxm0/e;Lvo0/d;)V
 
-.method public Pt()V
-    .locals 0
+    const/4 v0, 0x3
 
-    .line 1
-    invoke-static {p0}, Ldv/n$a;->b(Ldv/n;)V
+    invoke-static {v2, v1, v1, v3, v0}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
     return-void
 .end method
 
-.method public Yp(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public final gc(Ljava/lang/String;)V
+    .locals 4
 
     .line 1
-    invoke-static {p0, p1, p2}, Ldv/n$a;->d(Ldv/n;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
+
+    move-result-object p1
+
+    .line 2
+    invoke-virtual {p1}, Lq60/d;->em()Lyr0/e0;
+
+    move-result-object v0
+
+    new-instance v1, Lxm0/g;
+
+    const-string v2, "WebAction"
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, p1, v2, v3}, Lxm0/g;-><init>(Lxm0/e;Ljava/lang/String;Lvo0/d;)V
+
+    const/4 p1, 0x3
+
+    invoke-static {v0, v3, v3, v1, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
     return-void
 .end method
 
-.method public Zf()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public dismiss()V
-    .locals 1
-
-    const-string v0, ""
-
-    .line 1
-    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/web/WebViewActivity;->f1(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public es(Lsharechat/library/cvo/OAuthData;)V
+.method public final gt(Lsharechat/library/cvo/OAuthData;)V
     .locals 3
 
     const-string v0, "oAuthData"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
     .line 2
-    sget-object v0, Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment;->y:Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment$a;
+    sget-object v0, Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment;->x:Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment$a;
 
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
 
@@ -671,141 +817,109 @@
 
     const-string v2, "supportFragmentManager"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->oh()Lcom/google/gson/Gson;
+    .line 3
+    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Lcom/google/gson/Gson;
 
-    move-result-object v2
+    if-eqz v2, :cond_0
 
-    invoke-virtual {v0, v1, p1, v2}, Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment$a;->b(Landroidx/fragment/app/FragmentManager;Lsharechat/library/cvo/OAuthData;Lcom/google/gson/Gson;)V
+    .line 4
+    invoke-virtual {v0, v1, p1, v2}, Lin/mohalla/sharechat/web/webViewForThirdPartyMiniApps/PermissionBottomSheetFragment$a;->a(Landroidx/fragment/app/FragmentManager;Lsharechat/library/cvo/OAuthData;Lcom/google/gson/Gson;)V
+
+    goto :goto_0
 
     :cond_0
+    const-string p1, "mGson"
+
+    .line 5
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+
+    :cond_1
+    :goto_0
     return-void
 .end method
 
-.method public f1(Ljava/lang/String;)V
-    .locals 6
+.method public final i1(Ljava/lang/String;)V
+    .locals 3
 
     const-string v0, "grantToken"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    const-string v1, "webView"
+    if-eqz v0, :cond_0
 
-    const-string v2, "\')"
-
-    const-string v3, "javascript:grantTokenFromAndroid(\'"
-
-    const/4 v4, 0x0
-
-    const/16 v5, 0x13
-
-    if-lt v0, v5, :cond_1
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    if-nez v0, :cond_0
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v4
-
-    :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "javascript:grantTokenFromAndroid(\'"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p1, "\')"
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {v0, p1, v4}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
+    const/4 v1, 0x0
 
-    goto :goto_1
+    invoke-virtual {v0, p1, v1}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 
-    .line 3
-    :cond_1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    if-nez v0, :cond_2
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_2
-    move-object v4, v0
-
-    :goto_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v4, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
-
-    :goto_1
+    :cond_0
     return-void
 .end method
 
-.method public ia()Ljava/util/Map;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
+.method public final lm(Ljava/lang/String;)V
+    .locals 0
 
-    const/4 v0, 0x0
-
-    return-object v0
+    return-void
 .end method
 
-.method protected final oh()Lcom/google/gson/Gson;
-    .locals 1
+.method public final lp(Ljava/lang/String;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->C:Lcom/google/gson/Gson;
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_0
 
-    return-object v0
+    goto :goto_0
 
     :cond_0
-    const-string v0, "mGson"
+    new-instance v1, Lin/mohalla/sharechat/web/WebViewActivity$b;
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-direct {v1, p1, p0}, Lin/mohalla/sharechat/web/WebViewActivity$b;-><init>(Ljava/lang/String;Lin/mohalla/sharechat/web/WebViewActivity;)V
 
-    const/4 v0, 0x0
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
-    return-object v0
+    .line 2
+    :goto_0
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
+
+    if-eqz p1, :cond_1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    :cond_1
+    return-void
 .end method
 
-.method public onBackPressed()V
-    .locals 9
+.method public final onBackPressed()V
+    .locals 10
 
     .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
@@ -826,188 +940,194 @@
 
     if-ne v0, v1, :cond_0
 
+    const/4 v0, 0x1
+
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_1
 
-    const v3, 0x7f0803d3
+    const v4, 0x7f08049a
 
-    const v4, 0x7f1201ed
+    const v5, 0x7f120220
 
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
     .line 2
-    new-instance v6, Lin/mohalla/sharechat/web/j;
+    new-instance v7, Lbg/c;
 
-    invoke-direct {v6, p0}, Lin/mohalla/sharechat/web/j;-><init>(Lin/mohalla/sharechat/web/WebViewActivity;)V
+    const/16 v0, 0x14
 
-    const v7, 0x7f120aa2
+    invoke-direct {v7, p0, v0}, Lbg/c;-><init>(Ljava/lang/Object;I)V
 
-    const v8, 0x7f120635
+    const v8, 0x7f120c38
 
-    move-object v2, p0
+    const v9, 0x7f12073b
 
-    invoke-static/range {v2 .. v8}, Los/i;->d(Landroid/content/Context;IILjava/lang/Integer;Lcom/afollestad/materialdialogs/f$m;II)Lcom/afollestad/materialdialogs/f;
+    move-object v3, p0
+
+    invoke-static/range {v3 .. v9}, Lwb0/n;->c(Landroid/content/Context;IILjava/lang/Integer;Lcom/afollestad/materialdialogs/d$e;II)Lcom/afollestad/materialdialogs/d;
 
     move-result-object v0
 
     .line 3
-    invoke-virtual {v0}, Lcom/afollestad/materialdialogs/f;->show()V
+    invoke-virtual {v0}, Lcom/afollestad/materialdialogs/d;->show()V
 
-    goto :goto_1
+    goto :goto_2
 
     .line 4
     :cond_1
-    invoke-super {p0}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
+
+    move-result v0
+
+    if-ne v0, v1, :cond_2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v1, 0x0
 
     :goto_1
+    if-eqz v1, :cond_3
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
+
+    goto :goto_2
+
+    .line 6
+    :cond_3
+    invoke-super {p0}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    :cond_4
+    :goto_2
     return-void
 .end method
 
-.method protected onCreate(Landroid/os/Bundle;)V
-    .locals 5
-
-    const-string v0, "binding"
+.method public final onCreate(Landroid/os/Bundle;)V
+    .locals 4
 
     .line 1
-    invoke-super {p0, p1}, Lin/mohalla/sharechat/common/base/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Lin/mohalla/sharechat/common/base/i;->mk(Lin/mohalla/sharechat/common/base/l;)V
+    invoke-virtual {p1, p0}, Lq60/d;->O3(Lq60/n;)V
 
     .line 3
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->J:Lsharechat/library/cvo/MiniAppData;
-
-    const-string v1, ""
-
-    if-eqz p1, :cond_0
-
-    if-eqz p1, :cond_2
-
-    invoke-virtual {p1}, Lsharechat/library/cvo/MiniAppData;->getMiniAppPwaUrl()Ljava/lang/String;
-
-    move-result-object p1
-
-    if-nez p1, :cond_1
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
-    const-string v2, "browserurl"
+    const-string v0, "browserurl"
 
-    invoke-virtual {p1, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    if-nez p1, :cond_1
+    if-nez p1, :cond_0
+
+    const-string p1, ""
+
+    .line 4
+    :cond_0
+    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_1
+
+    const-string v1, "thirdpartyminiappweburl"
+
+    invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result p1
 
     goto :goto_0
 
     :cond_1
-    move-object v1, p1
+    const/4 p1, 0x0
 
-    .line 5
-    :cond_2
     :goto_0
-    iput-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iput-boolean p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Z
 
     .line 6
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
-    const/4 v1, 0x0
+    const-string v1, "ARG_SOURCE"
 
-    if-eqz p1, :cond_3
+    invoke-virtual {p1, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-    const-string v2, "thirdpartyminiappweburl"
+    move-result-object p1
 
-    invoke-virtual {p1, v2, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
-
-    move-result p1
-
-    goto :goto_1
-
-    :cond_3
-    const/4 p1, 0x0
-
-    :goto_1
-    iput-boolean p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Z
+    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Ljava/lang/String;
 
     .line 7
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
-
-    move-result-object p1
-
-    const-string v2, "ARG_SOURCE"
-
-    invoke-virtual {p1, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
-
-    .line 8
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p1
 
-    if-eqz p1, :cond_4
+    if-eqz p1, :cond_2
 
     const-string p1, "http://www.sharechat.com"
 
-    .line 9
-    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    .line 8
+    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
-    .line 10
-    :cond_4
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    .line 9
+    :cond_2
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object p1
 
-    const-string v2, "this as java.lang.String).toLowerCase()"
+    const-string v1, "this as java.lang.String).toLowerCase()"
 
-    invoke-static {p1, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v2, 0x2
+    const-string v1, "http"
 
-    const-string v3, "http"
-
-    const/4 v4, 0x0
-
-    invoke-static {p1, v3, v1, v2, v4}, Lkotlin/text/l;->N(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z
+    .line 10
+    invoke-static {p1, v1, v0}, Ltr0/s;->w(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result p1
 
-    if-nez p1, :cond_5
+    if-nez p1, :cond_3
+
+    const-string p1, "http://"
 
     .line 11
-    new-instance p1, Ljava/lang/StringBuilder;
+    invoke-static {p1}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object p1
 
-    const-string v1, "http://"
-
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    .line 12
+    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1015,10 +1135,10 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
-    .line 12
-    :cond_5
+    .line 13
+    :cond_3
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -1029,74 +1149,78 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_6
-
-    .line 13
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
-
-    move-result-object v1
-
-    invoke-virtual {v1, p1}, Lin/mohalla/sharechat/web/g;->Kl(Ljava/lang/String;)V
+    if-eqz p1, :cond_4
 
     .line 14
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object v1
-
-    invoke-virtual {v1}, Lin/mohalla/sharechat/web/g;->Rl()V
 
     .line 15
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    iget-object v1, v1, Lxm0/e;->f:Lp70/s1;
+
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    iput-object p1, v1, Lp70/s1;->b:Ljava/lang/String;
+
+    .line 17
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lin/mohalla/sharechat/web/g;->Ml()V
+    invoke-virtual {v1}, Lxm0/e;->km()V
 
-    .line 16
-    :cond_6
+    .line 18
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
+
+    move-result-object v1
+
+    .line 19
+    iget-object v1, v1, Lxm0/e;->f:Lp70/s1;
+
+    invoke-static {v1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 20
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    iput-wide v2, v1, Lp70/s1;->c:J
+
+    .line 21
+    :cond_4
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v1
 
-    invoke-static {v1}, Lru/i0;->d(Landroid/view/LayoutInflater;)Lru/i0;
+    invoke-static {v1}, Lre0/g0;->a(Landroid/view/LayoutInflater;)Lre0/g0;
 
     move-result-object v1
 
-    const-string v2, "inflate(layoutInflater)"
+    iput-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 22
+    iget-object v1, v1, Lre0/g0;->b:Landroid/widget/RelativeLayout;
 
-    iput-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
-
-    if-nez v1, :cond_7
-
-    .line 17
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v1, v4
-
-    :cond_7
-    invoke-virtual {v1}, Lru/i0;->c()Landroid/widget/RelativeLayout;
-
-    move-result-object v1
-
+    .line 23
     invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
 
-    .line 18
-    invoke-direct {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->Mh()V
+    .line 24
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->eh()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_2
+    goto :goto_1
 
     :catch_0
     nop
 
-    .line 19
+    .line 25
     new-instance v1, Landroid/content/Intent;
 
-    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -1106,8 +1230,8 @@
 
     invoke-direct {v1, v3, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 20
-    invoke-virtual {p0}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
+    .line 26
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
@@ -1115,36 +1239,31 @@
 
     move-result-object v2
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_5
 
-    .line 21
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    .line 27
+    invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 22
-    :cond_8
+    .line 28
+    :cond_5
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
-    :goto_2
-    if-nez p1, :cond_9
+    :goto_1
+    if-nez p1, :cond_6
 
-    .line 23
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->J:Lsharechat/library/cvo/MiniAppData;
-
-    if-nez p1, :cond_9
-
-    .line 24
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    .line 29
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object p1
 
-    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
+    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
 
-    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Ljava/lang/String;
 
-    invoke-virtual {p1, v1, v2}, Lin/mohalla/sharechat/web/g;->Wl(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p1, v1, v2}, Lxm0/e;->mm(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 25
-    :cond_9
+    .line 30
+    :cond_6
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -1157,70 +1276,109 @@
 
     move-result p1
 
-    if-nez p1, :cond_d
+    if-nez p1, :cond_9
 
-    .line 26
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    .line 31
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    if-nez p1, :cond_a
+    if-eqz p1, :cond_7
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object p1, p1, Lre0/g0;->e:Landroidx/appcompat/widget/Toolbar;
 
-    move-object p1, v4
+    if-eqz p1, :cond_7
+
+    invoke-static {p1}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 32
+    :cond_7
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
+
+    if-eqz p1, :cond_8
+
+    iget-object p1, p1, Lre0/g0;->c:Lsharechat/library/ui/customImage/CustomImageView;
+
+    if-eqz p1, :cond_8
+
+    invoke-static {p1}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 33
+    :cond_8
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
+
+    if-eqz p1, :cond_9
+
+    iget-object p1, p1, Lre0/g0;->c:Lsharechat/library/ui/customImage/CustomImageView;
+
+    if-eqz p1, :cond_9
+
+    new-instance v1, Lul0/c;
+
+    const/16 v2, 0xa
+
+    invoke-direct {v1, p0, v2}, Lul0/c;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 34
+    :cond_9
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    .line 35
+    invoke-virtual {p1}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_a
+
+    const-string v2, "hideToolbar"
+
+    .line 36
+    invoke-interface {v1, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_a
+
+    .line 37
+    invoke-virtual {p1, v2, v0}, Landroid/net/Uri;->getBooleanQueryParameter(Ljava/lang/String;Z)Z
+
+    move-result v0
 
     :cond_a
-    iget-object p1, p1, Lru/i0;->e:Landroidx/appcompat/widget/Toolbar;
+    if-eqz v0, :cond_c
 
-    const-string v1, "binding.webToolbar"
+    .line 38
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz p1, :cond_b
 
-    invoke-static {p1}, Lkp/e;->t(Landroid/view/View;)V
+    iget-object p1, p1, Lre0/g0;->e:Landroidx/appcompat/widget/Toolbar;
 
-    .line 27
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
+    if-eqz p1, :cond_b
 
-    if-nez p1, :cond_b
+    invoke-static {p1}, Lv40/d;->j(Landroid/view/View;)V
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p1, v4
-
+    .line 39
     :cond_b
-    iget-object p1, p1, Lru/i0;->c:Lsharechat/library/ui/customImage/CustomImageView;
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lre0/g0;
 
-    const-string v1, "binding.ivBackButton"
+    if-eqz p1, :cond_c
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p1, p1, Lre0/g0;->c:Lsharechat/library/ui/customImage/CustomImageView;
 
-    invoke-static {p1}, Lkp/e;->F(Landroid/view/View;)V
+    if-eqz p1, :cond_c
 
-    .line 28
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->K:Lru/i0;
-
-    if-nez p1, :cond_c
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_3
+    invoke-static {p1}, Lv40/d;->j(Landroid/view/View;)V
 
     :cond_c
-    move-object v4, p1
-
-    :goto_3
-    iget-object p1, v4, Lru/i0;->c:Lsharechat/library/ui/customImage/CustomImageView;
-
-    new-instance v0, Lin/mohalla/sharechat/web/i;
-
-    invoke-direct {v0, p0}, Lin/mohalla/sharechat/web/i;-><init>(Lin/mohalla/sharechat/web/WebViewActivity;)V
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    :cond_d
     return-void
 .end method
 
-.method protected onDestroy()V
+.method public final onDestroy()V
     .locals 2
 
     .line 1
@@ -1237,68 +1395,59 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lin/mohalla/sharechat/web/g;->Ul()V
+    invoke-virtual {v0}, Lxm0/e;->lm()V
 
     .line 3
     :cond_0
-    invoke-super {p0}, Lin/mohalla/sharechat/common/base/BaseMvpActivity;->onDestroy()V
+    invoke-super {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->onDestroy()V
 
     return-void
 .end method
 
-.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+.method public final onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
 
     const-string v0, "event"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x4
 
     if-ne p1, v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
     const/4 v1, 0x0
 
-    const-string v2, "webView"
+    const/4 v2, 0x1
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
     invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-ne v0, v2, :cond_0
+
+    const/4 v1, 0x1
+
+    :cond_0
+    if-eqz v1, :cond_2
 
     .line 2
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    if-nez p1, :cond_1
+    if-eqz p1, :cond_1
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
+    invoke-virtual {p1}, Landroid/webkit/WebView;->goBack()V
 
     :cond_1
-    move-object v1, p1
-
-    :goto_0
-    invoke-virtual {v1}, Landroid/webkit/WebView;->goBack()V
-
-    const/4 p1, 0x1
-
-    return p1
+    return v2
 
     .line 3
     :cond_2
@@ -1309,264 +1458,209 @@
     return p1
 .end method
 
-.method protected onPause()V
-    .locals 3
+.method public final onPause()V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v2, v1}, Lin/mohalla/sharechat/web/g;->Ll(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 2
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onPause()V
 
-    .line 3
+    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    const-string v1, "webView"
+    if-eqz v0, :cond_0
 
-    if-eqz v0, :cond_1
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    .line 4
-    :try_start_1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    if-eqz v0, :cond_2
 
-    if-nez v0, :cond_0
+    const-string v1, "about:blank"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     goto :goto_0
 
+    .line 4
     :cond_0
-    move-object v2, v0
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    :goto_0
-    const-string v0, "about:blank"
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v2, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
-
-    goto :goto_2
+    invoke-virtual {v0}, Landroid/webkit/WebView;->onPause()V
 
     .line 5
     :cond_1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_2
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/webkit/WebView;->pauseTimers()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-object v0, v2
-
-    :cond_2
-    invoke-virtual {v0}, Landroid/webkit/WebView;->onPause()V
-
-    .line 6
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    if-nez v0, :cond_3
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_3
-    move-object v2, v0
-
-    :goto_1
-    invoke-virtual {v2}, Landroid/webkit/WebView;->pauseTimers()V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    goto :goto_2
+    goto :goto_0
 
     :catch_0
     move-exception v0
 
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+    .line 6
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    :goto_2
+    :cond_2
+    :goto_0
     return-void
 .end method
 
-.method protected onResume()V
-    .locals 3
+.method public final onResume()V
+    .locals 5
 
     .line 1
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onResume()V
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    const/4 v1, 0x0
+    if-eqz v0, :cond_0
 
-    const-string v2, "webView"
-
-    if-nez v0, :cond_0
-
-    :try_start_1
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
     invoke-virtual {v0}, Landroid/webkit/WebView;->onResume()V
 
     .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
+    :cond_0
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->H:Landroid/webkit/WebView;
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_1
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v0
-
-    :goto_0
-    invoke-virtual {v1}, Landroid/webkit/WebView;->resumeTimers()V
+    invoke-virtual {v0}, Landroid/webkit/WebView;->resumeTimers()V
 
     .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
+    :cond_1
+    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->Bh()Ljava/lang/String;
+    const-string v1, "postid"
 
-    move-result-object v1
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v2, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+    move-result-object v0
 
-    invoke-virtual {v0, v1, v2}, Lin/mohalla/sharechat/web/g;->Ll(Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    if-nez v0, :cond_2
 
-    goto :goto_1
+    const-string v0, ""
+
+    .line 5
+    :cond_2
+    iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->E:Ljava/lang/String;
+
+    const-string v2, "url"
+
+    .line 6
+    invoke-static {v1, v2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 7
+    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->ch()Lxm0/e;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lin/mohalla/sharechat/web/WebViewActivity;->F:Ljava/lang/String;
+
+    const-string v4, "WebViewActivity"
+
+    invoke-virtual {v2, v4, v3, v0, v1}, Lxm0/e;->jm(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
 
     :catch_0
     move-exception v0
 
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
-
-    :goto_1
-    return-void
-.end method
-
-.method public qo(Ljava/lang/String;)V
-    .locals 4
-
-    const-string v0, "jsScripts"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    const/4 v1, 0x0
-
-    const-string v2, "webView"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    new-instance v3, Lin/mohalla/sharechat/web/WebViewActivity$b;
-
-    invoke-direct {v3, p1, p0}, Lin/mohalla/sharechat/web/WebViewActivity$b;-><init>(Ljava/lang/String;Lin/mohalla/sharechat/web/WebViewActivity;)V
-
-    invoke-virtual {v0, v3}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
-
-    .line 2
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->G:Landroid/webkit/WebView;
-
-    if-nez p1, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, p1
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewActivity;->D:Ljava/lang/String;
-
-    invoke-virtual {v1, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
-
     return-void
 .end method
 
-.method public rl(Ljava/lang/String;)V
+.method public final ta()Ljava/util/Map;
     .locals 1
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public sg(Lsharechat/library/cvo/OAuthData;)V
-    .locals 1
-
-    const-string v0, "oAuthData"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/web/WebViewActivity;->wh()Lin/mohalla/sharechat/web/g;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/web/g;->yl(Lsharechat/library/cvo/OAuthData;)V
-
-    return-void
-.end method
-
-.method public ss()V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Ldv/n$a;->a(Ldv/n;)V
-
-    return-void
-.end method
-
-.method protected final wh()Lin/mohalla/sharechat/web/g;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewActivity;->B:Lin/mohalla/sharechat/web/g;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mPresenter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
     const/4 v0, 0x0
 
     return-object v0
+.end method
+
+.method public final tw()V
+    .locals 21
+
+    move-object/from16 v1, p0
+
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->Gp()Lnm0/a;
+
+    move-result-object v0
+
+    const-string v2, "WebViewActivity"
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const v19, 0x3fffc
+
+    const/16 v20, 0x0
+
+    invoke-static/range {v0 .. v20}, Lnm0/a$a;->B(Lnm0/a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZZZILsharechat/data/user/FollowData;ZLjava/lang/String;ZLjava/lang/String;ZLkv1/k;ZLandroidx/activity/result/c;Lvv0/f1;ILjava/lang/Object;)V
+
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+
+    return-void
+.end method
+
+.method public final xt()V
+    .locals 0
+
+    return-void
 .end method

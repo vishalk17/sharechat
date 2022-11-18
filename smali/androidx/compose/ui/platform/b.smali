@@ -7,18 +7,12 @@
 
 
 # instance fields
-.field protected a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
-.field private final b:[I
+.field public final b:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 1
 
@@ -37,7 +31,7 @@
 
 
 # virtual methods
-.method protected final c(II)[I
+.method public final c(II)[I
     .locals 2
 
     if-ltz p1, :cond_1
@@ -70,10 +64,9 @@
     return-object p1
 .end method
 
-.method protected final d()Ljava/lang/String;
+.method public final d()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/compose/ui/platform/b;->a:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -83,11 +76,11 @@
     :cond_0
     const-string v0, "text"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    return-object v0
+    throw v0
 .end method
 
 .method public e(Ljava/lang/String;)V
@@ -95,22 +88,8 @@
 
     const-string v0, "text"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/b;->f(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method protected final f(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "<set-?>"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
     iput-object p1, p0, Landroidx/compose/ui/platform/b;->a:Ljava/lang/String;
 
     return-void

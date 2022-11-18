@@ -3,42 +3,64 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lo/k;
+.implements Landroid/text/method/TransformationMethod;
 
 
 # instance fields
-.field private final a:Lo/b;
+.field public b:Ljava/util/Locale;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-
-    return-void
-.end method
-
-.method public constructor <init>(Lo/b;)V
-    .locals 1
-
-    const-string v0, "start"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lo/a;->a:Lo/b;
+    .line 2
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object p1
+
+    iget-object p1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
+
+    iput-object p1, p0, Lo/a;->b:Ljava/util/Locale;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lo/b;
-    .locals 1
+.method public final getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lo/a;->a:Lo/b;
+    if-eqz p1, :cond_0
 
-    return-object v0
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lo/a;->b:Ljava/util/Locale;
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return-object p1
+.end method
+
+.method public final onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
+    .locals 0
+
+    return-void
 .end method

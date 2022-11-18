@@ -1,9 +1,9 @@
-.class Landroidx/appcompat/widget/ActionMenuView$b;
+.class public final Landroidx/appcompat/widget/ActionMenuView$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/view/menu/m$a;
+.implements Landroidx/appcompat/view/menu/i$a;
 
 
 # annotations
@@ -12,16 +12,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "b"
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +28,13 @@
 
 
 # virtual methods
-.method public b(Landroidx/appcompat/view/menu/g;Z)V
+.method public final b(Landroidx/appcompat/view/menu/e;Z)V
     .locals 0
 
     return-void
 .end method
 
-.method public c(Landroidx/appcompat/view/menu/g;)Z
+.method public final c(Landroidx/appcompat/view/menu/e;)Z
     .locals 0
 
     const/4 p1, 0x0

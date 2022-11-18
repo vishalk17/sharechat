@@ -1,9 +1,9 @@
-.class final Landroidx/compose/foundation/lazy/layout/a;
+.class public final Landroidx/compose/foundation/lazy/layout/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/foundation/lazy/layout/k$a;
+.implements Landroidx/compose/foundation/lazy/layout/m$a;
 
 
 # static fields
@@ -11,7 +11,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Landroidx/compose/foundation/lazy/layout/a;
@@ -26,7 +26,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +33,7 @@
 
 
 # virtual methods
-.method public cancel()V
+.method public final cancel()V
     .locals 0
 
     return-void

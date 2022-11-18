@@ -3,28 +3,22 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrz/m;
+.implements Landroid/view/View$OnClickListener;
 
 
-# static fields
-.field public static final synthetic b:Lam0/a;
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lam0/a;
-
-    invoke-direct {v0}, Lam0/a;-><init>()V
-
-    sput-object v0, Lam0/a;->b:Lam0/a;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
+.method public synthetic constructor <init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;I)V
     .locals 0
+
+    iput p2, p0, Lam0/a;->b:I
+
+    iput-object p1, p0, Lam0/a;->c:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,14 +27,50 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
 
-    check-cast p1, Ljava/lang/Throwable;
+    iget p1, p0, Lam0/a;->b:I
 
-    invoke-static {p1}, Lam0/b$a;->a(Ljava/lang/Throwable;)Lin/mohalla/sharechat/common/abtest/a;
+    const-string v0, "this$0"
 
-    move-result-object p1
+    packed-switch p1, :pswitch_data_0
 
-    return-object p1
+    goto :goto_0
+
+    :pswitch_0
+    iget-object p1, p0, Lam0/a;->c:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
+
+    sget-object v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
+
+    .line 1
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    return-void
+
+    .line 3
+    :goto_0
+    iget-object p1, p0, Lam0/a;->c:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
+
+    sget-object v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
+
+    .line 4
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x3
+
+    .line 5
+    invoke-virtual {p1, v0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->gh(I)V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

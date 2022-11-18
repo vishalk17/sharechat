@@ -1,4 +1,4 @@
-.class Landroidx/emoji2/text/b;
+.class public final Landroidx/emoji2/text/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -15,23 +15,12 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static synthetic a(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/emoji2/text/b;->c(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method static b(Ljava/lang/String;)Ljava/util/concurrent/ThreadPoolExecutor;
+.method public static a(Ljava/lang/String;)Ljava/util/concurrent/ThreadPoolExecutor;
     .locals 8
 
     .line 1
@@ -66,23 +55,7 @@
     return-object p0
 .end method
 
-.method private static synthetic c(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/lang/Thread;
-
-    invoke-direct {v0, p1, p0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
-
-    const/16 p0, 0xa
-
-    .line 2
-    invoke-virtual {v0, p0}, Ljava/lang/Thread;->setPriority(I)V
-
-    return-object v0
-.end method
-
-.method static d()Landroid/os/Handler;
+.method public static b()Landroid/os/Handler;
     .locals 2
 
     .line 1

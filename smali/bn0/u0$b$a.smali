@@ -1,0 +1,38 @@
+.class public final Lbn0/u0$b$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lbn0/u0$b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public a:Ljava/lang/Integer;
+
+.field public b:Lbn0/z0;
+
+.field public c:Lbn0/g1;
+
+.field public d:Lbn0/u0$h;
+
+.field public e:Ljava/util/concurrent/ScheduledExecutorService;
+
+.field public f:Ljava/util/concurrent/Executor;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

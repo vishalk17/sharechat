@@ -34,12 +34,11 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     const-wide/high16 v0, 0x4014000000000000L    # 5.0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -56,9 +55,9 @@
 
     move-result-wide v2
 
-    mul-double v0, v0, v2
+    mul-double v2, v2, v0
 
-    double-to-int v0, v0
+    double-to-int v0, v2
 
     int-to-short v0, v0
 
@@ -493,9 +492,9 @@
 
     sub-int/2addr v13, v1
 
-    mul-int v14, v14, v13
+    mul-int v13, v13, v14
 
-    add-int/2addr v14, v5
+    add-int/2addr v13, v5
 
     shl-int/lit8 v10, v5, 0x4
 
@@ -504,7 +503,7 @@
 
     add-int/2addr v10, v11
 
-    xor-int/2addr v10, v14
+    xor-int/2addr v10, v13
 
     ushr-int/lit8 v11, v5, 0x5
 
@@ -769,8 +768,7 @@
 
     if-gez v2, :cond_0
 
-    .line 1
-    invoke-virtual {p0}, Ljava/io/InputStream;->read()I
+    invoke-virtual {p0}, Lcom/appsflyer/internal/ca;->read()I
 
     move-result v2
 

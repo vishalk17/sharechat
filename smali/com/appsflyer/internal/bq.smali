@@ -4,10 +4,9 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Ljava/lang/Runnable;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/appsflyer/internal/bt;-><init>(Ljava/lang/String;Ljava/lang/Runnable;)V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method final AFInAppEventParameterName(Landroid/content/Context;Lcom/appsflyer/internal/aw;)V
+.method public final AFInAppEventParameterName(Landroid/content/Context;Lcom/appsflyer/internal/aw;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

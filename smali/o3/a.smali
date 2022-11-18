@@ -1,1556 +1,528 @@
-.class public abstract Lo3/a;
+.class public final Lo3/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lp3/a$b;
-.implements Lo3/k;
-.implements Lo3/e;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lo3/a$b;
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Landroid/graphics/PathMeasure;
-
-.field private final b:Landroid/graphics/Path;
-
-.field private final c:Landroid/graphics/Path;
-
-.field private final d:Landroid/graphics/RectF;
-
-.field private final e:Lcom/airbnb/lottie/f;
-
-.field protected final f:Lt3/a;
-
-.field private final g:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lo3/a$b;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final h:[F
-
-.field final i:Landroid/graphics/Paint;
-
-.field private final j:Lp3/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lp3/a<",
-            "*",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final k:Lp3/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lp3/a<",
-            "*",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final l:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lp3/a<",
-            "*",
-            "Ljava/lang/Float;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private final m:Lp3/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lp3/a<",
-            "*",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private n:Lp3/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lp3/a<",
-            "Landroid/graphics/ColorFilter;",
-            "Landroid/graphics/ColorFilter;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method constructor <init>(Lcom/airbnb/lottie/f;Lt3/a;Landroid/graphics/Paint$Cap;Landroid/graphics/Paint$Join;FLcom/airbnb/lottie/model/animatable/d;Lcom/airbnb/lottie/model/animatable/b;Ljava/util/List;Lcom/airbnb/lottie/model/animatable/b;)V
-    .locals 2
+.method public static final a(Ldp0/q;Lx1/h;Ldp0/l;Ll1/g;II)V
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lcom/airbnb/lottie/f;",
-            "Lt3/a;",
-            "Landroid/graphics/Paint$Cap;",
-            "Landroid/graphics/Paint$Join;",
-            "F",
-            "Lcom/airbnb/lottie/model/animatable/d;",
-            "Lcom/airbnb/lottie/model/animatable/b;",
-            "Ljava/util/List<",
-            "Lcom/airbnb/lottie/model/animatable/b;",
+            "<T::",
+            "Ls6/a;",
+            ">(",
+            "Ldp0/q<",
+            "-",
+            "Landroid/view/LayoutInflater;",
+            "-",
+            "Landroid/view/ViewGroup;",
+            "-",
+            "Ljava/lang/Boolean;",
+            "+TT;>;",
+            "Lx1/h;",
+            "Ldp0/l<",
+            "-TT;",
+            "Lro0/x;",
             ">;",
-            "Lcom/airbnb/lottie/model/animatable/b;",
-            ")V"
+            "Ll1/g;",
+            "II)V"
         }
     .end annotation
 
+    move-object v1, p0
+
+    move/from16 v4, p4
+
+    const-string v0, "factory"
+
+    invoke-static {p0, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object v0, Ll1/o;->a:Ll1/o$b;
+
+    const v0, -0x7655255a
+
+    move-object/from16 v2, p3
+
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-interface {v2, v0}, Ll1/g;->u(I)Ll1/g;
 
-    .line 2
-    new-instance v0, Landroid/graphics/PathMeasure;
+    move-result-object v0
 
-    invoke-direct {v0}, Landroid/graphics/PathMeasure;-><init>()V
+    and-int/lit8 v2, p5, 0x1
 
-    iput-object v0, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
+    if-eqz v2, :cond_0
 
-    .line 3
-    new-instance v0, Landroid/graphics/Path;
-
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
-
-    iput-object v0, p0, Lo3/a;->b:Landroid/graphics/Path;
-
-    .line 4
-    new-instance v0, Landroid/graphics/Path;
-
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
-
-    iput-object v0, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    .line 5
-    new-instance v0, Landroid/graphics/RectF;
-
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object v0, p0, Lo3/a;->d:Landroid/graphics/RectF;
-
-    .line 6
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lo3/a;->g:Ljava/util/List;
-
-    .line 7
-    new-instance v0, Ln3/a;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Ln3/a;-><init>(I)V
-
-    iput-object v0, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    .line 8
-    iput-object p1, p0, Lo3/a;->e:Lcom/airbnb/lottie/f;
-
-    .line 9
-    iput-object p2, p0, Lo3/a;->f:Lt3/a;
-
-    .line 10
-    sget-object p1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
-
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
-
-    .line 11
-    invoke-virtual {v0, p3}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
-
-    .line 12
-    invoke-virtual {v0, p4}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
-
-    .line 13
-    invoke-virtual {v0, p5}, Landroid/graphics/Paint;->setStrokeMiter(F)V
-
-    .line 14
-    invoke-virtual {p6}, Lcom/airbnb/lottie/model/animatable/d;->j()Lp3/a;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lo3/a;->k:Lp3/a;
-
-    .line 15
-    invoke-virtual {p7}, Lcom/airbnb/lottie/model/animatable/b;->j()Lp3/a;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lo3/a;->j:Lp3/a;
-
-    if-nez p9, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 16
-    iput-object p1, p0, Lo3/a;->m:Lp3/a;
-
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    invoke-virtual {p9}, Lcom/airbnb/lottie/model/animatable/b;->j()Lp3/a;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lo3/a;->m:Lp3/a;
-
-    .line 18
-    :goto_0
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-interface {p8}, Ljava/util/List;->size()I
-
-    move-result p3
-
-    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(I)V
-
-    iput-object p1, p0, Lo3/a;->l:Ljava/util/List;
-
-    .line 19
-    invoke-interface {p8}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    new-array p1, p1, [F
-
-    iput-object p1, p0, Lo3/a;->h:[F
-
-    const/4 p1, 0x0
-
-    const/4 p3, 0x0
-
-    .line 20
-    :goto_1
-    invoke-interface {p8}, Ljava/util/List;->size()I
-
-    move-result p4
-
-    if-ge p3, p4, :cond_1
-
-    .line 21
-    iget-object p4, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {p8, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p5
-
-    check-cast p5, Lcom/airbnb/lottie/model/animatable/b;
-
-    invoke-virtual {p5}, Lcom/airbnb/lottie/model/animatable/b;->j()Lp3/a;
-
-    move-result-object p5
-
-    invoke-interface {p4, p5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 p3, p3, 0x1
+    or-int/lit8 v2, v4, 0x6
 
     goto :goto_1
 
-    .line 22
+    :cond_0
+    and-int/lit8 v2, v4, 0xe
+
+    if-nez v2, :cond_2
+
+    invoke-interface {v0, p0}, Ll1/g;->n(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    const/4 v2, 0x4
+
+    goto :goto_0
+
     :cond_1
-    iget-object p3, p0, Lo3/a;->k:Lp3/a;
+    const/4 v2, 0x2
 
-    invoke-virtual {p2, p3}, Lt3/a;->i(Lp3/a;)V
+    :goto_0
+    or-int/2addr v2, v4
 
-    .line 23
-    iget-object p3, p0, Lo3/a;->j:Lp3/a;
+    goto :goto_1
 
-    invoke-virtual {p2, p3}, Lt3/a;->i(Lp3/a;)V
-
-    const/4 p3, 0x0
-
-    .line 24
-    :goto_2
-    iget-object p4, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {p4}, Ljava/util/List;->size()I
-
-    move-result p4
-
-    if-ge p3, p4, :cond_2
-
-    .line 25
-    iget-object p4, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {p4, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p4
-
-    check-cast p4, Lp3/a;
-
-    invoke-virtual {p2, p4}, Lt3/a;->i(Lp3/a;)V
-
-    add-int/lit8 p3, p3, 0x1
-
-    goto :goto_2
-
-    .line 26
     :cond_2
-    iget-object p3, p0, Lo3/a;->m:Lp3/a;
+    move v2, v4
 
-    if-eqz p3, :cond_3
+    :goto_1
+    and-int/lit8 v3, p5, 0x2
 
-    .line 27
-    invoke-virtual {p2, p3}, Lt3/a;->i(Lp3/a;)V
+    if-eqz v3, :cond_3
 
-    .line 28
-    :cond_3
-    iget-object p2, p0, Lo3/a;->k:Lp3/a;
-
-    invoke-virtual {p2, p0}, Lp3/a;->a(Lp3/a$b;)V
-
-    .line 29
-    iget-object p2, p0, Lo3/a;->j:Lp3/a;
-
-    invoke-virtual {p2, p0}, Lp3/a;->a(Lp3/a$b;)V
-
-    .line 30
-    :goto_3
-    invoke-interface {p8}, Ljava/util/List;->size()I
-
-    move-result p2
-
-    if-ge p1, p2, :cond_4
-
-    .line 31
-    iget-object p2, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {p2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Lp3/a;
-
-    invoke-virtual {p2, p0}, Lp3/a;->a(Lp3/a$b;)V
-
-    add-int/lit8 p1, p1, 0x1
+    or-int/lit8 v2, v2, 0x30
 
     goto :goto_3
 
-    .line 32
-    :cond_4
-    iget-object p1, p0, Lo3/a;->m:Lp3/a;
-
-    if-eqz p1, :cond_5
-
-    .line 33
-    invoke-virtual {p1, p0}, Lp3/a;->a(Lp3/a$b;)V
-
-    :cond_5
-    return-void
-.end method
-
-.method private b(Landroid/graphics/Matrix;)V
-    .locals 5
-
-    const-string v0, "StrokeContent#applyDashPattern"
-
-    .line 1
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
-
-    .line 2
-    iget-object v1, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-
-    .line 4
-    :cond_0
-    invoke-static {p1}, Lcom/airbnb/lottie/utils/h;->g(Landroid/graphics/Matrix;)F
-
-    move-result p1
-
-    const/4 v1, 0x0
-
-    .line 5
-    :goto_0
-    iget-object v2, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_3
-
-    .line 6
-    iget-object v2, p0, Lo3/a;->h:[F
-
-    iget-object v3, p0, Lo3/a;->l:Ljava/util/List;
-
-    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lp3/a;
-
-    invoke-virtual {v3}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Float;
-
-    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
-
-    move-result v3
-
-    aput v3, v2, v1
-
-    .line 7
-    rem-int/lit8 v2, v1, 0x2
-
-    if-nez v2, :cond_1
-
-    .line 8
-    iget-object v2, p0, Lo3/a;->h:[F
-
-    aget v3, v2, v1
-
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    cmpg-float v3, v3, v4
-
-    if-gez v3, :cond_2
-
-    .line 9
-    aput v4, v2, v1
-
-    goto :goto_1
-
-    .line 10
-    :cond_1
-    iget-object v2, p0, Lo3/a;->h:[F
-
-    aget v3, v2, v1
-
-    const v4, 0x3dcccccd    # 0.1f
-
-    cmpg-float v3, v3, v4
-
-    if-gez v3, :cond_2
-
-    .line 11
-    aput v4, v2, v1
-
-    .line 12
-    :cond_2
-    :goto_1
-    iget-object v2, p0, Lo3/a;->h:[F
-
-    aget v3, v2, v1
-
-    mul-float v3, v3, p1
-
-    aput v3, v2, v1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    .line 13
     :cond_3
-    iget-object v1, p0, Lo3/a;->m:Lp3/a;
+    and-int/lit8 v5, v4, 0x70
 
-    if-nez v1, :cond_4
+    if-nez v5, :cond_5
 
-    const/4 p1, 0x0
+    move-object v5, p1
 
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {v1}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Float;
-
-    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
-
-    move-result v1
-
-    mul-float p1, p1, v1
-
-    .line 14
-    :goto_2
-    iget-object v1, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    new-instance v2, Landroid/graphics/DashPathEffect;
-
-    iget-object v3, p0, Lo3/a;->h:[F
-
-    invoke-direct {v2, v3, p1}, Landroid/graphics/DashPathEffect;-><init>([FF)V
-
-    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setPathEffect(Landroid/graphics/PathEffect;)Landroid/graphics/PathEffect;
-
-    .line 15
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-.end method
-
-.method private h(Landroid/graphics/Canvas;Lo3/a$b;Landroid/graphics/Matrix;)V
-    .locals 12
-
-    const-string v0, "StrokeContent#applyTrimPath"
-
-    .line 1
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
-
-    .line 2
-    invoke-static {p2}, Lo3/a$b;->b(Lo3/a$b;)Lo3/s;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    .line 3
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-
-    .line 4
-    :cond_0
-    iget-object v1, p0, Lo3/a;->b:Landroid/graphics/Path;
-
-    invoke-virtual {v1}, Landroid/graphics/Path;->reset()V
-
-    .line 5
-    invoke-static {p2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
-
-    :goto_0
-    if-ltz v1, :cond_1
-
-    .line 6
-    iget-object v2, p0, Lo3/a;->b:Landroid/graphics/Path;
-
-    invoke-static {p2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v3
-
-    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lo3/m;
-
-    invoke-interface {v3}, Lo3/m;->getPath()Landroid/graphics/Path;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3, p3}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;Landroid/graphics/Matrix;)V
-
-    add-int/lit8 v1, v1, -0x1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    iget-object v1, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    iget-object v2, p0, Lo3/a;->b:Landroid/graphics/Path;
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v1, v2, v3}, Landroid/graphics/PathMeasure;->setPath(Landroid/graphics/Path;Z)V
-
-    .line 8
-    iget-object v1, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    invoke-virtual {v1}, Landroid/graphics/PathMeasure;->getLength()F
-
-    move-result v1
-
-    .line 9
-    :goto_1
-    iget-object v2, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    invoke-virtual {v2}, Landroid/graphics/PathMeasure;->nextContour()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 10
-    iget-object v2, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    invoke-virtual {v2}, Landroid/graphics/PathMeasure;->getLength()F
-
-    move-result v2
-
-    add-float/2addr v1, v2
-
-    goto :goto_1
-
-    .line 11
-    :cond_2
-    invoke-static {p2}, Lo3/a$b;->b(Lo3/a$b;)Lo3/s;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lo3/s;->g()Lp3/a;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Float;
-
-    invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
-
-    move-result v2
-
-    mul-float v2, v2, v1
-
-    const/high16 v4, 0x43b40000    # 360.0f
-
-    div-float/2addr v2, v4
-
-    .line 12
-    invoke-static {p2}, Lo3/a$b;->b(Lo3/a$b;)Lo3/s;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lo3/s;->h()Lp3/a;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/lang/Float;
-
-    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
-
-    move-result v4
-
-    mul-float v4, v4, v1
-
-    const/high16 v5, 0x42c80000    # 100.0f
-
-    div-float/2addr v4, v5
-
-    add-float/2addr v4, v2
-
-    .line 13
-    invoke-static {p2}, Lo3/a$b;->b(Lo3/a$b;)Lo3/s;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Lo3/s;->f()Lp3/a;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/Float;
-
-    invoke-virtual {v6}, Ljava/lang/Float;->floatValue()F
+    invoke-interface {v0, p1}, Ll1/g;->n(Ljava/lang/Object;)Z
 
     move-result v6
 
-    mul-float v6, v6, v1
+    if-eqz v6, :cond_4
 
-    div-float/2addr v6, v5
+    const/16 v6, 0x20
 
-    add-float/2addr v6, v2
-
-    .line 14
-    invoke-static {p2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, -0x1
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
-
-    :goto_2
-    if-ltz v2, :cond_a
-
-    .line 15
-    iget-object v8, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    invoke-static {p2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v9
-
-    invoke-interface {v9, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v9
-
-    check-cast v9, Lo3/m;
-
-    invoke-interface {v9}, Lo3/m;->getPath()Landroid/graphics/Path;
-
-    move-result-object v9
-
-    invoke-virtual {v8, v9}, Landroid/graphics/Path;->set(Landroid/graphics/Path;)V
-
-    .line 16
-    iget-object v8, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    invoke-virtual {v8, p3}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
-
-    .line 17
-    iget-object v8, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    iget-object v9, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    invoke-virtual {v8, v9, v3}, Landroid/graphics/PathMeasure;->setPath(Landroid/graphics/Path;Z)V
-
-    .line 18
-    iget-object v8, p0, Lo3/a;->a:Landroid/graphics/PathMeasure;
-
-    invoke-virtual {v8}, Landroid/graphics/PathMeasure;->getLength()F
-
-    move-result v8
-
-    const/high16 v9, 0x3f800000    # 1.0f
-
-    cmpl-float v10, v6, v1
-
-    if-lez v10, :cond_4
-
-    sub-float v10, v6, v1
-
-    add-float v11, v7, v8
-
-    cmpg-float v11, v10, v11
-
-    if-gez v11, :cond_4
-
-    cmpg-float v11, v7, v10
-
-    if-gez v11, :cond_4
-
-    cmpl-float v11, v4, v1
-
-    if-lez v11, :cond_3
-
-    sub-float v11, v4, v1
-
-    div-float/2addr v11, v8
-
-    goto :goto_3
-
-    :cond_3
-    const/4 v11, 0x0
-
-    :goto_3
-    div-float/2addr v10, v8
-
-    .line 19
-    invoke-static {v10, v9}, Ljava/lang/Math;->min(FF)F
-
-    move-result v9
-
-    .line 20
-    iget-object v10, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    invoke-static {v10, v11, v9, v5}, Lcom/airbnb/lottie/utils/h;->a(Landroid/graphics/Path;FFF)V
-
-    .line 21
-    iget-object v9, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    iget-object v10, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v9, v10}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
-
-    goto :goto_6
+    goto :goto_2
 
     :cond_4
-    add-float v10, v7, v8
+    const/16 v6, 0x10
 
-    cmpg-float v11, v10, v4
+    :goto_2
+    or-int/2addr v2, v6
 
-    if-ltz v11, :cond_9
-
-    cmpl-float v11, v7, v6
-
-    if-lez v11, :cond_5
-
-    goto :goto_6
+    goto :goto_4
 
     :cond_5
-    cmpg-float v11, v10, v6
+    :goto_3
+    move-object v5, p1
 
-    if-gtz v11, :cond_6
+    :goto_4
+    and-int/lit8 v6, p5, 0x4
 
-    cmpg-float v11, v4, v7
+    if-eqz v6, :cond_6
 
-    if-gez v11, :cond_6
-
-    .line 22
-    iget-object v9, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    iget-object v10, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v9, v10}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
+    or-int/lit16 v2, v2, 0x180
 
     goto :goto_6
 
     :cond_6
-    cmpg-float v11, v4, v7
+    and-int/lit16 v7, v4, 0x380
 
-    if-gez v11, :cond_7
+    if-nez v7, :cond_8
 
-    const/4 v11, 0x0
+    move-object/from16 v7, p2
 
-    goto :goto_4
+    invoke-interface {v0, v7}, Ll1/g;->n(Ljava/lang/Object;)Z
 
-    :cond_7
-    sub-float v11, v4, v7
+    move-result v8
 
-    div-float/2addr v11, v8
+    if-eqz v8, :cond_7
 
-    :goto_4
-    cmpl-float v10, v6, v10
-
-    if-lez v10, :cond_8
+    const/16 v8, 0x100
 
     goto :goto_5
 
-    :cond_8
-    sub-float v9, v6, v7
+    :cond_7
+    const/16 v8, 0x80
 
-    div-float/2addr v9, v8
-
-    .line 23
     :goto_5
-    iget-object v10, p0, Lo3/a;->c:Landroid/graphics/Path;
+    or-int/2addr v2, v8
 
-    invoke-static {v10, v11, v9, v5}, Lcom/airbnb/lottie/utils/h;->a(Landroid/graphics/Path;FFF)V
+    goto :goto_7
 
-    .line 24
-    iget-object v9, p0, Lo3/a;->c:Landroid/graphics/Path;
-
-    iget-object v10, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    invoke-virtual {p1, v9, v10}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
-
-    :cond_9
+    :cond_8
     :goto_6
-    add-float/2addr v7, v8
+    move-object/from16 v7, p2
 
-    add-int/lit8 v2, v2, -0x1
+    :goto_7
+    and-int/lit16 v8, v2, 0x2db
 
-    goto/16 :goto_2
+    const/16 v9, 0x92
 
-    .line 25
+    if-ne v8, v9, :cond_a
+
+    invoke-interface {v0}, Ll1/g;->b()Z
+
+    move-result v8
+
+    if-nez v8, :cond_9
+
+    goto :goto_8
+
+    .line 2
+    :cond_9
+    invoke-interface {v0}, Ll1/g;->j()V
+
+    move-object v2, v5
+
+    move-object v3, v7
+
+    goto/16 :goto_e
+
     :cond_a
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Landroid/graphics/RectF;Landroid/graphics/Matrix;Z)V
-    .locals 6
-
-    const-string p3, "StrokeContent#getBounds"
-
-    .line 1
-    invoke-static {p3}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
-
-    .line 2
-    iget-object v0, p0, Lo3/a;->b:Landroid/graphics/Path;
-
-    invoke-virtual {v0}, Landroid/graphics/Path;->reset()V
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
+    :goto_8
+    if-eqz v3, :cond_b
 
     .line 3
-    :goto_0
-    iget-object v2, p0, Lo3/a;->g:Ljava/util/List;
+    sget-object v3, Lx1/h;->C0:Lx1/h$a;
 
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    goto :goto_9
 
-    move-result v2
+    :cond_b
+    move-object v3, v5
 
-    if-ge v1, v2, :cond_1
+    :goto_9
+    if-eqz v6, :cond_c
 
     .line 4
-    iget-object v2, p0, Lo3/a;->g:Ljava/util/List;
+    sget-object v5, Lo3/a$a;->b:Lo3/a$a;
 
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    move-object v11, v5
 
-    move-result-object v2
+    goto :goto_a
 
-    check-cast v2, Lo3/a$b;
+    :cond_c
+    move-object v11, v7
 
-    const/4 v3, 0x0
+    :goto_a
+    const v5, -0x1d58f75c
 
     .line 5
-    :goto_1
-    invoke-static {v2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v4
-
-    invoke-interface {v4}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    if-ge v3, v4, :cond_0
+    invoke-interface {v0, v5}, Ll1/g;->E(I)V
 
     .line 6
-    iget-object v4, p0, Lo3/a;->b:Landroid/graphics/Path;
+    invoke-interface {v0}, Ll1/g;->F()Ljava/lang/Object;
 
-    invoke-static {v2}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v5
-
-    invoke-interface {v5, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Lo3/m;
-
-    invoke-interface {v5}, Lo3/m;->getPath()Landroid/graphics/Path;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5, p2}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;Landroid/graphics/Matrix;)V
-
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
+    move-result-object v6
 
     .line 7
-    :cond_1
-    iget-object p2, p0, Lo3/a;->b:Landroid/graphics/Path;
+    sget-object v7, Ll1/g;->a:Ll1/g$a;
 
-    iget-object v1, p0, Lo3/a;->d:Landroid/graphics/RectF;
-
-    invoke-virtual {p2, v1, v0}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
+    invoke-static {v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    iget-object p2, p0, Lo3/a;->j:Lp3/a;
+    sget-object v7, Ll1/g$a;->b:Ll1/g$a$a;
 
-    check-cast p2, Lp3/c;
-
-    invoke-virtual {p2}, Lp3/c;->p()F
-
-    move-result p2
+    if-ne v6, v7, :cond_d
 
     .line 9
-    iget-object v0, p0, Lo3/a;->d:Landroid/graphics/RectF;
+    new-instance v6, Ls2/f0;
 
-    iget v1, v0, Landroid/graphics/RectF;->left:F
-
-    const/high16 v2, 0x40000000    # 2.0f
-
-    div-float/2addr p2, v2
-
-    sub-float/2addr v1, p2
-
-    iget v2, v0, Landroid/graphics/RectF;->top:F
-
-    sub-float/2addr v2, p2
-
-    iget v3, v0, Landroid/graphics/RectF;->right:F
-
-    add-float/2addr v3, p2
-
-    iget v4, v0, Landroid/graphics/RectF;->bottom:F
-
-    add-float/2addr v4, p2
-
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;->set(FFFF)V
+    invoke-direct {v6}, Ls2/f0;-><init>()V
 
     .line 10
-    iget-object p2, p0, Lo3/a;->d:Landroid/graphics/RectF;
-
-    invoke-virtual {p1, p2}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
+    invoke-interface {v0, v6}, Ll1/g;->z(Ljava/lang/Object;)V
 
     .line 11
-    iget p2, p1, Landroid/graphics/RectF;->left:F
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    sub-float/2addr p2, v0
-
-    iget v1, p1, Landroid/graphics/RectF;->top:F
-
-    sub-float/2addr v1, v0
-
-    iget v2, p1, Landroid/graphics/RectF;->right:F
-
-    add-float/2addr v2, v0
-
-    iget v3, p1, Landroid/graphics/RectF;->bottom:F
-
-    add-float/2addr v3, v0
-
-    invoke-virtual {p1, p2, v1, v2, v3}, Landroid/graphics/RectF;->set(FFFF)V
+    :cond_d
+    invoke-interface {v0}, Ll1/g;->P()V
 
     .line 12
-    invoke-static {p3}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-.end method
-
-.method public c(Landroid/graphics/Canvas;Landroid/graphics/Matrix;I)V
-    .locals 6
-
-    const-string v0, "StrokeContent#draw"
-
-    .line 1
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
-
-    .line 2
-    invoke-static {p2}, Lcom/airbnb/lottie/utils/h;->h(Landroid/graphics/Matrix;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 3
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-
-    :cond_0
-    int-to-float p3, p3
-
-    const/high16 v1, 0x437f0000    # 255.0f
-
-    div-float/2addr p3, v1
-
-    .line 4
-    iget-object v2, p0, Lo3/a;->k:Lp3/a;
-
-    check-cast v2, Lp3/e;
-
-    invoke-virtual {v2}, Lp3/e;->p()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    mul-float p3, p3, v2
-
-    const/high16 v2, 0x42c80000    # 100.0f
-
-    div-float/2addr p3, v2
-
-    mul-float p3, p3, v1
-
-    float-to-int p3, p3
-
-    .line 5
-    iget-object v1, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    const/16 v2, 0xff
-
-    const/4 v3, 0x0
-
-    invoke-static {p3, v3, v2}, Lcom/airbnb/lottie/utils/g;->d(III)I
-
-    move-result p3
-
-    invoke-virtual {v1, p3}, Landroid/graphics/Paint;->setAlpha(I)V
-
-    .line 6
-    iget-object p3, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    iget-object v1, p0, Lo3/a;->j:Lp3/a;
-
-    check-cast v1, Lp3/c;
-
-    invoke-virtual {v1}, Lp3/c;->p()F
-
-    move-result v1
-
-    invoke-static {p2}, Lcom/airbnb/lottie/utils/h;->g(Landroid/graphics/Matrix;)F
-
-    move-result v2
-
-    mul-float v1, v1, v2
-
-    invoke-virtual {p3, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
-
-    .line 7
-    iget-object p3, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    invoke-virtual {p3}, Landroid/graphics/Paint;->getStrokeWidth()F
-
-    move-result p3
-
-    const/4 v1, 0x0
-
-    cmpg-float p3, p3, v1
-
-    if-gtz p3, :cond_1
-
-    .line 8
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
-
-    return-void
-
-    .line 9
-    :cond_1
-    invoke-direct {p0, p2}, Lo3/a;->b(Landroid/graphics/Matrix;)V
-
-    .line 10
-    iget-object p3, p0, Lo3/a;->n:Lp3/a;
-
-    if-eqz p3, :cond_2
-
-    .line 11
-    iget-object v1, p0, Lo3/a;->i:Landroid/graphics/Paint;
-
-    invoke-virtual {p3}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object p3
-
-    check-cast p3, Landroid/graphics/ColorFilter;
-
-    invoke-virtual {v1, p3}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
-
-    .line 12
-    :cond_2
-    :goto_0
-    iget-object p3, p0, Lo3/a;->g:Ljava/util/List;
-
-    invoke-interface {p3}, Ljava/util/List;->size()I
-
-    move-result p3
-
-    if-ge v3, p3, :cond_5
+    check-cast v6, Ls2/f0;
 
     .line 13
-    iget-object p3, p0, Lo3/a;->g:Ljava/util/List;
-
-    invoke-interface {p3, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p3
-
-    check-cast p3, Lo3/a$b;
+    sget-object v8, Landroidx/compose/ui/platform/a0;->f:Ll1/m2;
 
     .line 14
-    invoke-static {p3}, Lo3/a$b;->b(Lo3/a$b;)Lo3/s;
+    invoke-interface {v0, v8}, Ll1/g;->i(Ll1/u;)Ljava/lang/Object;
 
-    move-result-object v1
-
-    if-eqz v1, :cond_3
+    move-result-object v8
 
     .line 15
-    invoke-direct {p0, p1, p3, p2}, Lo3/a;->h(Landroid/graphics/Canvas;Lo3/a$b;Landroid/graphics/Matrix;)V
+    check-cast v8, Landroid/view/View;
 
-    goto :goto_2
-
-    :cond_3
-    const-string v1, "StrokeContent#buildPath"
+    const v9, 0x44faf204
 
     .line 16
-    invoke-static {v1}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
+    invoke-interface {v0, v9}, Ll1/g;->E(I)V
 
     .line 17
-    iget-object v2, p0, Lo3/a;->b:Landroid/graphics/Path;
+    invoke-interface {v0, v8}, Ll1/g;->n(Ljava/lang/Object;)Z
 
-    invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
+    move-result v10
 
     .line 18
-    invoke-static {p3}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
+    invoke-interface {v0}, Ll1/g;->F()Ljava/lang/Object;
+
+    move-result-object v12
+
+    if-nez v10, :cond_e
+
+    if-ne v12, v7, :cond_f
+
+    .line 19
+    :cond_e
+    :try_start_0
+    invoke-static {v8}, Lmm/i0;->n(Landroid/view/View;)Landroidx/fragment/app/Fragment;
+
+    move-result-object v7
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_b
+    move-object v12, v7
+
+    goto :goto_c
+
+    :catch_0
+    const/4 v7, 0x0
+
+    goto :goto_b
+
+    .line 20
+    :goto_c
+    invoke-interface {v0, v12}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    .line 21
+    :cond_f
+    invoke-interface {v0}, Ll1/g;->P()V
+
+    .line 22
+    check-cast v12, Landroidx/fragment/app/Fragment;
+
+    .line 23
+    invoke-interface {v0, v5}, Ll1/g;->E(I)V
+
+    .line 24
+    invoke-interface {v0}, Ll1/g;->F()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 25
+    sget-object v7, Ll1/g;->a:Ll1/g$a;
+
+    invoke-static {v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 26
+    sget-object v7, Ll1/g$a;->b:Ll1/g$a$a;
+
+    if-ne v5, v7, :cond_10
+
+    .line 27
+    new-instance v5, Lv1/t;
+
+    invoke-direct {v5}, Lv1/t;-><init>()V
+
+    .line 28
+    invoke-interface {v0, v5}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    .line 29
+    :cond_10
+    invoke-interface {v0}, Ll1/g;->P()V
+
+    .line 30
+    move-object v13, v5
+
+    check-cast v13, Lv1/t;
+
+    .line 31
+    invoke-interface {v0, v9}, Ll1/g;->E(I)V
+
+    .line 32
+    invoke-interface {v0, v8}, Ll1/g;->n(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    .line 33
+    invoke-interface {v0}, Ll1/g;->F()Ljava/lang/Object;
+
+    move-result-object v8
+
+    if-nez v5, :cond_11
+
+    if-ne v8, v7, :cond_12
+
+    .line 34
+    :cond_11
+    new-instance v8, Lo3/a$e;
+
+    invoke-direct {v8, v12, p0, v6, v13}, Lo3/a$e;-><init>(Landroidx/fragment/app/Fragment;Ldp0/q;Ls2/f0;Lv1/t;)V
+
+    .line 35
+    invoke-interface {v0, v8}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    .line 36
+    :cond_12
+    invoke-interface {v0}, Ll1/g;->P()V
+
+    .line 37
+    move-object v5, v8
+
+    check-cast v5, Ldp0/l;
+
+    .line 38
+    new-instance v7, Lo3/a$b;
+
+    invoke-direct {v7, v6, v11}, Lo3/a$b;-><init>(Ls2/f0;Ldp0/l;)V
+
+    and-int/lit8 v9, v2, 0x70
+
+    const/4 v10, 0x0
+
+    move-object v6, v3
+
+    move-object v8, v0
+
+    invoke-static/range {v5 .. v10}, Lo3/e;->a(Ldp0/l;Lx1/h;Ldp0/l;Ll1/g;II)V
+
+    .line 39
+    sget-object v2, Landroidx/compose/ui/platform/a0;->b:Ll1/m2;
+
+    .line 40
+    invoke-interface {v0, v2}, Ll1/g;->i(Ll1/u;)Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-interface {v2}, Ljava/util/List;->size()I
+    .line 41
+    check-cast v2, Landroid/content/Context;
 
-    move-result v2
+    const/4 v5, 0x0
 
-    add-int/lit8 v2, v2, -0x1
+    .line 42
+    invoke-virtual {v13}, Lv1/t;->size()I
 
-    :goto_1
-    if-ltz v2, :cond_4
+    move-result v6
 
-    .line 19
-    iget-object v4, p0, Lo3/a;->b:Landroid/graphics/Path;
+    :goto_d
+    if-ge v5, v6, :cond_13
 
-    invoke-static {p3}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
+    .line 43
+    invoke-virtual {v13, v5}, Lv1/t;->get(I)Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-interface {v5, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 44
+    check-cast v7, Landroidx/fragment/app/FragmentContainerView;
 
-    move-result-object v5
+    .line 45
+    new-instance v8, Lo3/a$c;
 
-    check-cast v5, Lo3/m;
+    invoke-direct {v8, v12, v2, v7}, Lo3/a$c;-><init>(Landroidx/fragment/app/Fragment;Landroid/content/Context;Landroidx/fragment/app/FragmentContainerView;)V
 
-    invoke-interface {v5}, Lo3/m;->getPath()Landroid/graphics/Path;
+    invoke-static {v2, v7, v8, v0}, Ll1/f0;->b(Ljava/lang/Object;Ljava/lang/Object;Ldp0/l;Ll1/g;)V
 
-    move-result-object v5
+    add-int/lit8 v5, v5, 0x1
 
-    invoke-virtual {v4, v5, p2}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;Landroid/graphics/Matrix;)V
+    goto :goto_d
 
-    add-int/lit8 v2, v2, -0x1
+    :cond_13
+    move-object v2, v3
 
-    goto :goto_1
+    move-object v3, v11
 
-    .line 20
-    :cond_4
-    invoke-static {v1}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
+    .line 46
+    :goto_e
+    invoke-interface {v0}, Ll1/g;->w()Ll1/v1;
 
-    const-string p3, "StrokeContent#drawPath"
+    move-result-object v6
 
-    .line 21
-    invoke-static {p3}, Lcom/airbnb/lottie/c;->a(Ljava/lang/String;)V
+    if-nez v6, :cond_14
 
-    .line 22
-    iget-object v1, p0, Lo3/a;->b:Landroid/graphics/Path;
+    goto :goto_f
 
-    iget-object v2, p0, Lo3/a;->i:Landroid/graphics/Paint;
+    :cond_14
+    new-instance v7, Lo3/a$d;
 
-    invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
+    move-object v0, v7
 
-    .line 23
-    invoke-static {p3}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
+    move-object v1, p0
 
-    :goto_2
-    add-int/lit8 v3, v3, 0x1
+    move/from16 v4, p4
 
-    goto :goto_0
+    move/from16 v5, p5
 
-    .line 24
-    :cond_5
-    invoke-static {v0}, Lcom/airbnb/lottie/c;->b(Ljava/lang/String;)F
+    invoke-direct/range {v0 .. v5}, Lo3/a$d;-><init>(Ldp0/q;Lx1/h;Ldp0/l;II)V
 
-    return-void
-.end method
+    invoke-interface {v6, v7}, Ll1/v1;->a(Ldp0/p;)V
 
-.method public d()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lo3/a;->e:Lcom/airbnb/lottie/f;
-
-    invoke-virtual {v0}, Lcom/airbnb/lottie/f;->invalidateSelf()V
+    :goto_f
+    sget-object v0, Ll1/o;->a:Ll1/o$b;
 
     return-void
 .end method
 
-.method public e(Ljava/util/List;Ljava/util/List;)V
-    .locals 7
+.method public static final b(Landroid/view/ViewGroup;Ljava/util/List;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
+            "Landroid/view/ViewGroup;",
             "Ljava/util/List<",
-            "Lo3/c;",
-            ">;",
-            "Ljava/util/List<",
-            "Lo3/c;",
+            "Landroidx/fragment/app/FragmentContainerView;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    instance-of v0, p0, Landroidx/fragment/app/FragmentContainerView;
 
-    move-result v0
-
-    add-int/lit8 v0, v0, -0x1
-
-    const/4 v1, 0x0
-
-    move-object v2, v1
-
-    :goto_0
-    if-ltz v0, :cond_1
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lo3/c;
-
-    .line 3
-    instance-of v4, v3, Lo3/s;
-
-    if-eqz v4, :cond_0
-
-    check-cast v3, Lo3/s;
-
-    .line 4
-    invoke-virtual {v3}, Lo3/s;->i()Ls3/q$a;
-
-    move-result-object v4
-
-    sget-object v5, Ls3/q$a;->INDIVIDUALLY:Ls3/q$a;
-
-    if-ne v4, v5, :cond_0
-
-    move-object v2, v3
-
-    :cond_0
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    if-eqz v2, :cond_2
-
-    .line 5
-    invoke-virtual {v2, p0}, Lo3/s;->b(Lp3/a$b;)V
-
-    .line 6
-    :cond_2
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, -0x1
-
-    move-object v0, v1
-
-    :goto_1
-    if-ltz p1, :cond_7
-
-    .line 7
-    invoke-interface {p2, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lo3/c;
-
-    .line 8
-    instance-of v4, v3, Lo3/s;
-
-    if-eqz v4, :cond_4
-
-    move-object v4, v3
-
-    check-cast v4, Lo3/s;
-
-    .line 9
-    invoke-virtual {v4}, Lo3/s;->i()Ls3/q$a;
-
-    move-result-object v5
-
-    sget-object v6, Ls3/q$a;->INDIVIDUALLY:Ls3/q$a;
-
-    if-ne v5, v6, :cond_4
-
-    if-eqz v0, :cond_3
-
-    .line 10
-    iget-object v3, p0, Lo3/a;->g:Ljava/util/List;
-
-    invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 11
-    :cond_3
-    new-instance v0, Lo3/a$b;
-
-    invoke-direct {v0, v4, v1}, Lo3/a$b;-><init>(Lo3/s;Lo3/a$a;)V
-
-    .line 12
-    invoke-virtual {v4, p0}, Lo3/s;->b(Lp3/a$b;)V
-
-    goto :goto_2
-
-    .line 13
-    :cond_4
-    instance-of v4, v3, Lo3/m;
-
-    if-eqz v4, :cond_6
-
-    if-nez v0, :cond_5
-
-    .line 14
-    new-instance v0, Lo3/a$b;
-
-    invoke-direct {v0, v2, v1}, Lo3/a$b;-><init>(Lo3/s;Lo3/a$a;)V
-
-    .line 15
-    :cond_5
-    invoke-static {v0}, Lo3/a$b;->a(Lo3/a$b;)Ljava/util/List;
-
-    move-result-object v4
-
-    check-cast v3, Lo3/m;
-
-    invoke-interface {v4, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_6
-    :goto_2
-    add-int/lit8 p1, p1, -0x1
+    invoke-interface {p1, p0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    :cond_7
-    if-eqz v0, :cond_8
-
-    .line 16
-    iget-object p1, p0, Lo3/a;->g:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    :cond_8
-    return-void
-.end method
-
-.method public f(Ljava/lang/Object;Lv3/c;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(TT;",
-            "Lv3/c<",
-            "TT;>;)V"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/airbnb/lottie/k;->d:Ljava/lang/Integer;
-
-    if-ne p1, v0, :cond_0
-
-    .line 2
-    iget-object p1, p0, Lo3/a;->k:Lp3/a;
-
-    invoke-virtual {p1, p2}, Lp3/a;->n(Lv3/c;)V
-
-    goto :goto_0
+    :cond_0
+    const/4 v0, 0x0
 
     .line 3
-    :cond_0
-    sget-object v0, Lcom/airbnb/lottie/k;->q:Ljava/lang/Float;
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
-    if-ne p1, v0, :cond_1
+    move-result v1
+
+    :goto_0
+    if-ge v0, v1, :cond_2
 
     .line 4
-    iget-object p1, p0, Lo3/a;->j:Lp3/a;
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
-    invoke-virtual {p1, p2}, Lp3/a;->n(Lv3/c;)V
+    move-result-object v2
 
-    goto :goto_0
+    const-string v3, "getChildAt(index)"
+
+    invoke-static {v2, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
-    :cond_1
-    sget-object v0, Lcom/airbnb/lottie/k;->E:Landroid/graphics/ColorFilter;
+    instance-of v3, v2, Landroid/view/ViewGroup;
 
-    if-ne p1, v0, :cond_4
+    if-eqz v3, :cond_1
 
     .line 6
-    iget-object p1, p0, Lo3/a;->n:Lp3/a;
+    check-cast v2, Landroid/view/ViewGroup;
 
-    if-eqz p1, :cond_2
+    invoke-static {v2, p1}, Lo3/a;->b(Landroid/view/ViewGroup;Ljava/util/List;)V
 
-    .line 7
-    iget-object v0, p0, Lo3/a;->f:Lt3/a;
-
-    invoke-virtual {v0, p1}, Lt3/a;->C(Lp3/a;)V
-
-    :cond_2
-    if-nez p2, :cond_3
-
-    const/4 p1, 0x0
-
-    .line 8
-    iput-object p1, p0, Lo3/a;->n:Lp3/a;
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 9
-    :cond_3
-    new-instance p1, Lp3/p;
-
-    invoke-direct {p1, p2}, Lp3/p;-><init>(Lv3/c;)V
-
-    iput-object p1, p0, Lo3/a;->n:Lp3/a;
-
-    .line 10
-    invoke-virtual {p1, p0}, Lp3/a;->a(Lp3/a$b;)V
-
-    .line 11
-    iget-object p1, p0, Lo3/a;->f:Lt3/a;
-
-    iget-object p2, p0, Lo3/a;->n:Lp3/a;
-
-    invoke-virtual {p1, p2}, Lt3/a;->i(Lp3/a;)V
-
-    :cond_4
-    :goto_0
-    return-void
-.end method
-
-.method public g(Lcom/airbnb/lottie/model/e;ILjava/util/List;Lcom/airbnb/lottie/model/e;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/airbnb/lottie/model/e;",
-            "I",
-            "Ljava/util/List<",
-            "Lcom/airbnb/lottie/model/e;",
-            ">;",
-            "Lcom/airbnb/lottie/model/e;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1, p2, p3, p4, p0}, Lcom/airbnb/lottie/utils/g;->m(Lcom/airbnb/lottie/model/e;ILjava/util/List;Lcom/airbnb/lottie/model/e;Lo3/k;)V
-
+    :cond_2
+    :goto_1
     return-void
 .end method

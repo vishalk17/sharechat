@@ -6,7 +6,6 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Landroidx/databinding/ktx/R$anim;,
         Landroidx/databinding/ktx/R$attr;,
         Landroidx/databinding/ktx/R$color;,
         Landroidx/databinding/ktx/R$dimen;,

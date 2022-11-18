@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/w;
+.implements Landroidx/lifecycle/a0;
 
 
 # annotations
@@ -12,13 +12,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "OnStartListener"
 .end annotation
 
 
 # instance fields
-.field final b:Ljava/lang/ref/WeakReference;
+.field public final b:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -30,13 +30,13 @@
 
 
 # direct methods
-.method private constructor <init>(Landroidx/databinding/ViewDataBinding;)V
+.method public constructor <init>(Landroidx/databinding/ViewDataBinding;)V
     .locals 1
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -46,27 +46,18 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroidx/databinding/ViewDataBinding;Landroidx/databinding/ViewDataBinding$a;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Landroidx/databinding/ViewDataBinding$OnStartListener;-><init>(Landroidx/databinding/ViewDataBinding;)V
-
-    return-void
-.end method
-
 
 # virtual methods
 .method public onStart()V
     .locals 1
-    .annotation runtime Landroidx/lifecycle/j0;
-        value = .enum Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
+    .annotation runtime Landroidx/lifecycle/m0;
+        value = .enum Landroidx/lifecycle/t$b;->ON_START:Landroidx/lifecycle/t$b;
     .end annotation
 
     .line 1
     iget-object v0, p0, Landroidx/databinding/ViewDataBinding$OnStartListener;->b:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -75,7 +66,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->q()V
+    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->h()V
 
     :cond_0
     return-void

@@ -1,59 +1,52 @@
-.class Landroidx/appcompat/app/AlertController$d;
-.super Ljava/lang/Object;
+.class public final Landroidx/appcompat/app/AlertController$d;
+.super Landroid/widget/ArrayAdapter;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/widget/AbsListView$OnScrollListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/app/AlertController;->q(Landroid/view/ViewGroup;Landroid/view/View;II)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/app/AlertController;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x9
+    name = "d"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/widget/ArrayAdapter<",
+        "Ljava/lang/CharSequence;",
+        ">;"
+    }
 .end annotation
 
 
-# instance fields
-.field final synthetic a:Landroid/view/View;
-
-.field final synthetic b:Landroid/view/View;
-
-
 # direct methods
-.method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;I[Ljava/lang/CharSequence;)V
+    .locals 1
 
-    .line 1
-    iput-object p2, p0, Landroidx/appcompat/app/AlertController$d;->a:Landroid/view/View;
+    const v0, 0x1020014
 
-    iput-object p3, p0, Landroidx/appcompat/app/AlertController$d;->b:Landroid/view/View;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, v0, p3}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;II[Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onScroll(Landroid/widget/AbsListView;III)V
-    .locals 0
+.method public final getItemId(I)J
+    .locals 2
 
-    .line 1
-    iget-object p2, p0, Landroidx/appcompat/app/AlertController$d;->a:Landroid/view/View;
+    int-to-long v0, p1
 
-    iget-object p3, p0, Landroidx/appcompat/app/AlertController$d;->b:Landroid/view/View;
-
-    invoke-static {p1, p2, p3}, Landroidx/appcompat/app/AlertController;->g(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
-
-    return-void
+    return-wide v0
 .end method
 
-.method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
-    .locals 0
+.method public final hasStableIds()Z
+    .locals 1
 
-    return-void
+    const/4 v0, 0x1
+
+    return v0
 .end method

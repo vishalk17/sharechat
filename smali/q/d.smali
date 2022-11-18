@@ -1,206 +1,284 @@
-.class public final Lq/d;
+.class public abstract Lq/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lq/f;
+.implements Landroidx/appcompat/view/menu/i;
+.implements Landroid/widget/AdapterView$OnItemClickListener;
 
-# static fields
-.field private static a:Landroidx/compose/ui/graphics/vector/c;
+
+# instance fields
+.field public b:Landroid/graphics/Rect;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static n(Landroid/widget/ListAdapter;Landroid/content/Context;I)I
+    .locals 10
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result v1
+
+    .line 2
+    invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
+    move-result v2
+
+    .line 3
+    invoke-interface {p0}, Landroid/widget/Adapter;->getCount()I
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    move-object v7, v4
+
+    move-object v8, v7
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    :goto_0
+    if-ge v0, v3, :cond_4
+
+    .line 4
+    invoke-interface {p0, v0}, Landroid/widget/Adapter;->getItemViewType(I)I
+
+    move-result v9
+
+    if-eq v9, v6, :cond_0
+
+    move-object v8, v4
+
+    move v6, v9
+
+    :cond_0
+    if-nez v7, :cond_1
+
+    .line 5
+    new-instance v7, Landroid/widget/FrameLayout;
+
+    invoke-direct {v7, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+
+    .line 6
+    :cond_1
+    invoke-interface {p0, v0, v8, v7}, Landroid/widget/Adapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v8
+
+    .line 7
+    invoke-virtual {v8, v1, v2}, Landroid/view/View;->measure(II)V
+
+    .line 8
+    invoke-virtual {v8}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v9
+
+    if-lt v9, p2, :cond_2
+
+    return p2
+
+    :cond_2
+    if-le v9, v5, :cond_3
+
+    move v5, v9
+
+    :cond_3
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    return v5
+.end method
+
+.method public static v(Landroidx/appcompat/view/menu/e;)Z
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/e;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_1
+
+    .line 2
+    invoke-virtual {p0, v2}, Landroidx/appcompat/view/menu/e;->getItem(I)Landroid/view/MenuItem;
+
+    move-result-object v3
+
+    .line 3
+    invoke-interface {v3}, Landroid/view/MenuItem;->isVisible()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-interface {v3}, Landroid/view/MenuItem;->getIcon()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    :goto_1
+    return v1
+.end method
+
+
+# virtual methods
+.method public final d(Landroidx/appcompat/view/menu/g;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final g(Landroid/content/Context;Landroidx/appcompat/view/menu/e;)V
     .locals 0
 
     return-void
 .end method
 
-.method public static final a(Lp/a$a;)Landroidx/compose/ui/graphics/vector/c;
-    .locals 29
+.method public final getId()I
+    .locals 1
 
-    const-string v0, "<this>"
+    const/4 v0, 0x0
 
-    move-object/from16 v1, p0
+    return v0
+.end method
 
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final j(Landroidx/appcompat/view/menu/g;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public abstract m(Landroidx/appcompat/view/menu/e;)V
+.end method
+
+.method public abstract o(Landroid/view/View;)V
+.end method
+
+.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/widget/AdapterView<",
+            "*>;",
+            "Landroid/view/View;",
+            "IJ)V"
+        }
+    .end annotation
 
     .line 1
-    sget-object v0, Lq/d;->a:Landroidx/compose/ui/graphics/vector/c;
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getAdapter()Landroid/widget/Adapter;
 
-    if-eqz v0, :cond_0
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ListAdapter;
 
     .line 2
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
+    instance-of p2, p1, Landroid/widget/HeaderViewListAdapter;
 
-    return-object v0
+    if-eqz p2, :cond_0
 
     .line 3
-    :cond_0
-    new-instance v1, Landroidx/compose/ui/graphics/vector/c$a;
+    move-object p2, p1
 
-    move-object v12, v1
+    check-cast p2, Landroid/widget/HeaderViewListAdapter;
 
-    const/high16 v0, 0x41c00000    # 24.0f
+    invoke-virtual {p2}, Landroid/widget/HeaderViewListAdapter;->getWrappedAdapter()Landroid/widget/ListAdapter;
+
+    move-result-object p2
+
+    check-cast p2, Landroidx/appcompat/view/menu/d;
+
+    goto :goto_0
 
     .line 4
-    invoke-static {v0}, Lb1/g;->k(F)F
+    :cond_0
+    move-object p2, p1
 
-    move-result v3
-
-    invoke-static {v0}, Lb1/g;->k(F)F
-
-    move-result v4
-
-    const/high16 v5, 0x41c00000    # 24.0f
-
-    const/high16 v6, 0x41c00000    # 24.0f
-
-    const-wide/16 v7, 0x0
-
-    const/4 v9, 0x0
-
-    const/16 v10, 0x60
-
-    const/4 v11, 0x0
-
-    const-string v2, "Filled.Close"
+    check-cast p2, Landroidx/appcompat/view/menu/d;
 
     .line 5
-    invoke-direct/range {v1 .. v11}, Landroidx/compose/ui/graphics/vector/c$a;-><init>(Ljava/lang/String;FFFFJIILkotlin/jvm/internal/h;)V
-
-    const/high16 v17, 0x3f800000    # 1.0f
-
-    const/high16 v19, 0x3f800000    # 1.0f
+    :goto_0
+    iget-object p2, p2, Landroidx/appcompat/view/menu/d;->b:Landroidx/appcompat/view/menu/e;
 
     .line 6
-    invoke-static {}, Landroidx/compose/ui/graphics/vector/p;->b()I
+    invoke-interface {p1, p3}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
-    move-result v14
+    move-result-object p1
+
+    check-cast p1, Landroid/view/MenuItem;
 
     .line 7
-    new-instance v0, Landroidx/compose/ui/graphics/m1;
+    instance-of p3, p0, Landroidx/appcompat/view/menu/b;
 
-    move-object/from16 v16, v0
+    xor-int/lit8 p3, p3, 0x1
 
-    sget-object v1, Landroidx/compose/ui/graphics/e0;->b:Landroidx/compose/ui/graphics/e0$a;
+    if-eqz p3, :cond_1
 
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/e0$a;->a()J
+    const/4 p3, 0x0
 
-    move-result-wide v1
+    goto :goto_1
 
-    const/4 v3, 0x0
-
-    invoke-direct {v0, v1, v2, v3}, Landroidx/compose/ui/graphics/m1;-><init>(JLkotlin/jvm/internal/h;)V
-
-    const/16 v18, 0x0
-
-    const/high16 v20, 0x3f800000    # 1.0f
+    :cond_1
+    const/4 p3, 0x4
 
     .line 8
-    sget-object v0, Landroidx/compose/ui/graphics/n1;->b:Landroidx/compose/ui/graphics/n1$a;
+    :goto_1
+    invoke-virtual {p2, p1, p0, p3}, Landroidx/appcompat/view/menu/e;->t(Landroid/view/MenuItem;Landroidx/appcompat/view/menu/i;I)Z
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/n1$a;->a()I
+    return-void
+.end method
 
-    move-result v21
+.method public abstract p(Z)V
+.end method
 
-    .line 9
-    sget-object v0, Landroidx/compose/ui/graphics/o1;->b:Landroidx/compose/ui/graphics/o1$a;
+.method public abstract q(I)V
+.end method
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/o1$a;->a()I
+.method public abstract r(I)V
+.end method
 
-    move-result v22
+.method public abstract s(Landroid/widget/PopupWindow$OnDismissListener;)V
+.end method
 
-    const/high16 v23, 0x3f800000    # 1.0f
+.method public abstract t(Z)V
+.end method
 
-    .line 10
-    new-instance v0, Landroidx/compose/ui/graphics/vector/d;
-
-    invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/d;-><init>()V
-
-    const/high16 v1, 0x41980000    # 19.0f
-
-    const v2, 0x40cd1eb8    # 6.41f
-
-    .line 11
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/graphics/vector/d;->j(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v3, 0x418cb852    # 17.59f
-
-    const/high16 v4, 0x40a00000    # 5.0f
-
-    .line 12
-    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v5, 0x41400000    # 12.0f
-
-    const v6, 0x412970a4    # 10.59f
-
-    .line 13
-    invoke-virtual {v0, v5, v6}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 14
-    invoke-virtual {v0, v2, v4}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 15
-    invoke-virtual {v0, v4, v2}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 16
-    invoke-virtual {v0, v6, v5}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 17
-    invoke-virtual {v0, v4, v3}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 18
-    invoke-virtual {v0, v2, v1}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v2, 0x41568f5c    # 13.41f
-
-    .line 19
-    invoke-virtual {v0, v5, v2}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 20
-    invoke-virtual {v0, v3, v1}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 21
-    invoke-virtual {v0, v1, v3}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 22
-    invoke-virtual {v0, v2, v5}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 23
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/d;->b()Landroidx/compose/ui/graphics/vector/d;
-
-    .line 24
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/d;->e()Ljava/util/List;
-
-    move-result-object v13
-
-    const/16 v24, 0x0
-
-    const/16 v25, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x3800
-
-    const/16 v28, 0x0
-
-    const-string v15, ""
-
-    .line 25
-    invoke-static/range {v12 .. v28}, Landroidx/compose/ui/graphics/vector/c$a;->d(Landroidx/compose/ui/graphics/vector/c$a;Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/w;FLandroidx/compose/ui/graphics/w;FFIIFFFFILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/c$a;
-
-    move-result-object v0
-
-    .line 26
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/c$a;->f()Landroidx/compose/ui/graphics/vector/c;
-
-    move-result-object v0
-
-    .line 27
-    sput-object v0, Lq/d;->a:Landroidx/compose/ui/graphics/vector/c;
-
-    .line 28
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    return-object v0
+.method public abstract u(I)V
 .end method

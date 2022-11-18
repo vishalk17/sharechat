@@ -1,56 +1,93 @@
-.class public Landroidx/work/impl/a;
+.class public final Landroidx/work/impl/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/work/s;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/work/impl/a$i;,
+        Landroidx/work/impl/a$h;
+    }
+.end annotation
 
 
-# instance fields
-.field private final a:Landroid/os/Handler;
+# static fields
+.field public static a:Landroidx/work/impl/a$a;
+
+.field public static b:Landroidx/work/impl/a$b;
+
+.field public static c:Landroidx/work/impl/a$c;
+
+.field public static d:Landroidx/work/impl/a$d;
+
+.field public static e:Landroidx/work/impl/a$e;
+
+.field public static f:Landroidx/work/impl/a$f;
+
+.field public static g:Landroidx/work/impl/a$g;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/work/impl/a$a;
+
+    invoke-direct {v0}, Landroidx/work/impl/a$a;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->a:Landroidx/work/impl/a$a;
 
     .line 2
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    new-instance v0, Landroidx/work/impl/a$b;
 
-    move-result-object v0
+    invoke-direct {v0}, Landroidx/work/impl/a$b;-><init>()V
 
-    invoke-static {v0}, Lr1/e;->a(Landroid/os/Looper;)Landroid/os/Handler;
+    sput-object v0, Landroidx/work/impl/a;->b:Landroidx/work/impl/a$b;
 
-    move-result-object v0
+    .line 3
+    new-instance v0, Landroidx/work/impl/a$c;
 
-    iput-object v0, p0, Landroidx/work/impl/a;->a:Landroid/os/Handler;
+    invoke-direct {v0}, Landroidx/work/impl/a$c;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->c:Landroidx/work/impl/a$c;
+
+    .line 4
+    new-instance v0, Landroidx/work/impl/a$d;
+
+    invoke-direct {v0}, Landroidx/work/impl/a$d;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->d:Landroidx/work/impl/a$d;
+
+    .line 5
+    new-instance v0, Landroidx/work/impl/a$e;
+
+    invoke-direct {v0}, Landroidx/work/impl/a$e;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->e:Landroidx/work/impl/a$e;
+
+    .line 6
+    new-instance v0, Landroidx/work/impl/a$f;
+
+    invoke-direct {v0}, Landroidx/work/impl/a$f;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->f:Landroidx/work/impl/a$f;
+
+    .line 7
+    new-instance v0, Landroidx/work/impl/a$g;
+
+    invoke-direct {v0}, Landroidx/work/impl/a$g;-><init>()V
+
+    sput-object v0, Landroidx/work/impl/a;->g:Landroidx/work/impl/a$g;
 
     return-void
 .end method
 
+.method private constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public a(Ljava/lang/Runnable;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/impl/a;->a:Landroid/os/Handler;
-
-    invoke-virtual {v0, p1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method public b(JLjava/lang/Runnable;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/impl/a;->a:Landroid/os/Handler;
-
-    invoke-virtual {v0, p3, p1, p2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

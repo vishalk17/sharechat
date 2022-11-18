@@ -1,14 +1,14 @@
 .class public final Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;
-.super Lkotlin/coroutines/jvm/internal/l;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/p;
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Mz()V
+    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->o2(Ljava/lang/String;Ljava/lang/String;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,178 +18,107 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/coroutines/jvm/internal/l;",
-        "Lr00/p<",
-        "Lkotlinx/coroutines/s0;",
-        "Lkotlin/coroutines/d<",
-        "-",
-        "Li00/a0;",
-        ">;",
-        "Ljava/lang/Object;",
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Landroid/content/Context;",
+        "Landroidx/fragment/app/FragmentActivity;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lkotlin/coroutines/jvm/internal/f;
-    c = "in.mohalla.sharechat.videoplayer.VideoPlayerFragment$onPauseViewHolder$$inlined$mainImmediate$default$1"
-    f = "VideoPlayerFragment.kt"
-    l = {
-        0x4c
-    }
-    m = "invokeSuspend"
-.end annotation
-
 
 # instance fields
-.field b:I
+.field public final synthetic b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-.field private synthetic c:Ljava/lang/Object;
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:Z
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/coroutines/d;)V
-    .locals 1
+.method public constructor <init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Z)V
+    .locals 0
 
-    const/4 v0, 0x2
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    invoke-direct {p0, v0, p1}, Lkotlin/coroutines/jvm/internal/l;-><init>(ILkotlin/coroutines/d;)V
+    iput-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->c:Ljava/lang/String;
+
+    iput-object p3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->d:Ljava/lang/String;
+
+    iput-boolean p4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->e:Z
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Lkotlin/coroutines/d<",
-            "*>;)",
-            "Lkotlin/coroutines/d<",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;
+    .line 1
+    check-cast p1, Landroid/content/Context;
 
-    invoke-direct {v0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;-><init>(Lkotlin/coroutines/d;)V
+    check-cast p2, Landroidx/fragment/app/FragmentActivity;
 
-    iput-object p1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->c:Ljava/lang/Object;
+    const-string v0, "<anonymous parameter 0>"
 
-    return-object v0
-.end method
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    const-string p1, "<anonymous parameter 1>"
 
-    check-cast p1, Lkotlinx/coroutines/s0;
+    invoke-static {p2, p1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast p2, Lkotlin/coroutines/d;
+    .line 3
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->invoke(Lkotlinx/coroutines/s0;Lkotlin/coroutines/d;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invoke(Lkotlinx/coroutines/s0;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlinx/coroutines/s0;",
-            "Lkotlin/coroutines/d<",
-            "-",
-            "Li00/a0;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
-
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
-
-    move-result-object p1
-
-    check-cast p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;
-
-    sget-object p2, Li00/a0;->a:Li00/a0;
-
-    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    invoke-static {}, Ll00/b;->d()Ljava/lang/Object;
+    invoke-virtual {p1}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
 
     move-result-object v0
 
-    iget v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:I
-
-    const/4 v2, 0x1
-
-    if-eqz v1, :cond_1
-
-    if-ne v1, v2, :cond_0
-
-    .line 1
-    invoke-static {p1}, Li00/q;->b(Ljava/lang/Object;)V
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    .line 3
-    :cond_1
-    invoke-static {p1}, Li00/q;->b(Ljava/lang/Object;)V
-
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->c:Ljava/lang/Object;
-
-    check-cast p1, Lkotlinx/coroutines/s0;
-
     .line 4
-    sget-object p1, Lon/a;->a:Lon/a;
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    invoke-virtual {p1}, Lon/a;->b()Lkotlinx/coroutines/flow/h;
-
-    move-result-object p1
-
-    const/4 v1, 0x0
-
-    invoke-static {v1}, Lkotlin/coroutines/jvm/internal/b;->a(Z)Ljava/lang/Boolean;
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v1
 
-    iput v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:I
+    const-string p1, "childFragmentManager"
 
-    invoke-interface {p1, v1, p0}, Lkotlinx/coroutines/flow/h;->emit(Ljava/lang/Object;Lkotlin/coroutines/d;)Ljava/lang/Object;
+    invoke-static {v1, p1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    if-ne p1, v0, :cond_2
+    invoke-interface {p1}, Lom0/n;->M2()Ljava/lang/String;
 
-    return-object v0
+    move-result-object v2
 
-    .line 5
-    :cond_2
-    :goto_0
-    sget-object p1, Li00/a0;->a:Li00/a0;
+    .line 6
+    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->c:Ljava/lang/String;
+
+    .line 7
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->d:Ljava/lang/String;
+
+    .line 8
+    iget-boolean v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;->e:Z
+
+    .line 9
+    invoke-interface/range {v0 .. v5}, Lnm0/a;->b0(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 10
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

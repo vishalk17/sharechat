@@ -12,13 +12,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "a"
 .end annotation
 
 
 # instance fields
-.field final AFInAppEventType:Ljava/util/concurrent/LinkedBlockingQueue;
+.field public final AFInAppEventType:Ljava/util/concurrent/LinkedBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/LinkedBlockingQueue<",
@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field values:Z
+.field public values:Z
 
 
 # direct methods
@@ -55,7 +55,7 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(B)V
+.method public synthetic constructor <init>(B)V
     .locals 0
 
     .line 4
@@ -69,7 +69,6 @@
 .method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 0
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/appsflyer/internal/ac$a;->AFInAppEventType:Ljava/util/concurrent/LinkedBlockingQueue;
 

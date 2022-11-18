@@ -1,73 +1,44 @@
-.class public Ls2/a;
-.super Ls2/c;
+.class public interface abstract Ls2/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Ls2/c<",
-        "Ljava/lang/Boolean;",
-        ">;"
+        Ls2/a$a;
     }
 .end annotation
 
 
+# static fields
+.field public static final y0:Ls2/a$a;
+
+
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lw2/a;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-static {p1, p2}, Lt2/g;->c(Landroid/content/Context;Lw2/a;)Lt2/g;
+    sget-object v0, Ls2/a$a;->a:Ls2/a$a;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Lt2/g;->a()Lt2/a;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ls2/c;-><init>(Lt2/d;)V
+    sput-object v0, Ls2/a;->y0:Ls2/a$a;
 
     return-void
 .end method
 
 
 # virtual methods
-.method b(Landroidx/work/impl/model/p;)Z
-    .locals 0
-
-    .line 1
-    iget-object p1, p1, Landroidx/work/impl/model/p;->j:Landroidx/work/c;
-
-    invoke-virtual {p1}, Landroidx/work/c;->g()Z
-
-    move-result p1
-
-    return p1
+.method public abstract b(Ln3/b;)V
 .end method
 
-.method bridge synthetic c(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    check-cast p1, Ljava/lang/Boolean;
-
-    invoke-virtual {p0, p1}, Ls2/a;->i(Ljava/lang/Boolean;)Z
-
-    move-result p1
-
-    return p1
+.method public abstract c(Landroidx/compose/ui/platform/m2;)V
 .end method
 
-.method i(Ljava/lang/Boolean;)Z
-    .locals 0
+.method public abstract d(Lq2/c0;)V
+.end method
 
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+.method public abstract e(Lx1/h;)V
+.end method
 
-    move-result p1
-
-    xor-int/lit8 p1, p1, 0x1
-
-    return p1
+.method public abstract g(Ln3/j;)V
 .end method

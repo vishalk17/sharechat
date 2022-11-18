@@ -13,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +58,7 @@
     return-void
 .end method
 
-.method static valueOf(Ljava/lang/String;)V
+.method public static valueOf(Ljava/lang/String;)V
     .locals 3
 
     .line 1

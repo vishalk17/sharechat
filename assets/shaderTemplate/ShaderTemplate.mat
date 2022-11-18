@@ -1,0 +1,57 @@
+#type vertex
+attribute vec3 a_Position;
+attribute vec2 a_TexCoord;
+varying vec2 v_TexCoord;
+vec4 vertex(){
+    v_TexCoord = a_TexCoord;
+    return u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
+}
+
+#type fragment
+#extension GL_OES_EGL_image_external : enable
+precision mediump float;
+uniform samplerExternalOES u_Texture;
+varying vec2 v_TexCoord;
+uniform float position;
+
+uniform float u_Intensity;
+%s
+
+%s
+
+%s
+
+%s
+
+vec4 fragment(){
+    vec4 filterLColor = ColorL();
+    vec4 filterMColor = ColorM();
+    vec4 filterRColor = ColorR();
+
+    vec4 colorGt = ((filterLColor * (max(sign(v_TexCoord.y - abs(position)), 0.0)) + filterMColor * (max(sign(abs(position) - v_TexCoord.y), 0.0))) * max(sign(position), 0.0));
+    vec4 colorLt = ((filterMColor * (max(sign(v_TexCoord.y - abs(position)), 0.0)) + filterRColor * (max(sign(abs(position) - v_TexCoord.y), 0.0))) * max(sign(-position), 0.0));
+    vec4 colorEq = (filterMColor * (1.0 - abs(sign(position))));
+
+    vec4 finalColor =  (colorGt + colorLt + colorEq);
+
+    return finalColor;
+}
+
+#type shader_data
+{
+  "ShaderData" : [
+    {
+      "type" : "Video2D",
+      "value" : "Platform",
+      "name" : "u_Texture",
+      "function" : "fragment"
+    },
+    {
+      "type" : "Float",
+      "value" : "1.0",
+      "name" : "u_Intensity",
+      "function" : "fragment"
+    }
+    %s
+  ]
+}

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lin/mohalla/sharechat/settings/help/feedback/o;
+.implements Lam0/e;
 
 
 # annotations
@@ -13,24 +13,44 @@
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lin/mohalla/sharechat/common/base/BaseMvpActivity<",
-        "Lin/mohalla/sharechat/settings/help/feedback/o;",
-        ">;",
-        "Lin/mohalla/sharechat/settings/help/feedback/o;"
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\n\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0002:\u0001\u000cB\u0007\u00a2\u0006\u0004\u0008\n\u0010\u000bR\"\u0010\u0004\u001a\u00020\u00038\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u0004\u0010\u0005\u001a\u0004\u0008\u0006\u0010\u0007\"\u0004\u0008\u0008\u0010\t\u00a8\u0006\r"
+    }
+    d2 = {
+        "Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;",
+        "Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;",
+        "Lam0/e;",
+        "Lam0/h;",
+        "mPresenter",
+        "Lam0/h;",
+        "eh",
+        "()Lam0/h;",
+        "setMPresenter",
+        "(Lam0/h;)V",
+        "<init>",
+        "()V",
+        "a",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
     }
 .end annotation
 
 
 # static fields
-.field public static final G:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
+.field public static final H:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
 
-.field static final synthetic H:[Lkotlin/reflect/l;
+.field public static final synthetic I:[Llp0/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
-            "Lkotlin/reflect/l<",
+            "Llp0/l<",
             "Ljava/lang/Object;",
             ">;"
         }
@@ -39,56 +59,54 @@
 
 
 # instance fields
-.field protected B:Lin/mohalla/sharechat/settings/help/feedback/t;
+.field public C:Lam0/h;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private C:I
+.field public D:I
 
-.field private D:Landroid/widget/TextView;
+.field public E:Landroid/widget/TextView;
 
-.field private E:Ljava/lang/String;
+.field public F:Ljava/lang/String;
 
-.field private final F:Lu00/e;
+.field public final G:Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public static constructor <clinit>()V
+    .locals 5
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lkotlin/reflect/l;
+    new-array v0, v0, [Llp0/l;
 
     .line 1
-    new-instance v1, Lkotlin/jvm/internal/v;
+    const-class v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
 
-    const-class v2, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;
+    const-string v2, "binding"
 
-    const-string v3, "binding"
+    const-string v3, "getBinding()Lin/mohalla/sharechat/databinding/ActivityFeedbackBinding;"
 
-    const-string v4, "getBinding()Lin/mohalla/sharechat/databinding/ActivityFeedbackBinding;"
+    const/4 v4, 0x0
 
-    const/4 v5, 0x0
-
-    invoke-direct {v1, v2, v3, v4, v5}, Lkotlin/jvm/internal/v;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    invoke-static {v1}, Lkotlin/jvm/internal/k0;->f(Lkotlin/jvm/internal/u;)Lkotlin/reflect/j;
+    .line 2
+    invoke-static {v1, v2, v3, v4}, Ld50/d;->l(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)Llp0/j;
 
     move-result-object v1
 
-    aput-object v1, v0, v5
+    aput-object v1, v0, v4
 
-    sput-object v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:[Lkotlin/reflect/l;
+    .line 3
+    sput-object v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->I:[Llp0/l;
 
     new-instance v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;-><init>(Lkotlin/jvm/internal/h;)V
+    invoke-direct {v0, v1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;-><init>(Lep0/k;)V
 
-    sput-object v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->G:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
+    sput-object v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity$a;
 
     return-void
 .end method
@@ -102,1010 +120,27 @@
     const/4 v0, -0x1
 
     .line 2
-    iput v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:I
+    iput v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->D:I
 
     .line 3
-    invoke-static {p0}, Lin/mohalla/core/util/ReleaseOnDestroyDelegateKt;->a(Landroidx/lifecycle/x;)Lu00/e;
+    invoke-static {p0}, Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt;->a(Landroidx/lifecycle/b0;)Lhp0/e;
 
     move-result-object v0
 
-    iput-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->F:Lu00/e;
+    check-cast v0, Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;
 
-    return-void
-.end method
-
-.method private static final Ai(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x2
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Zi(I)V
-
-    return-void
-.end method
-
-.method public static synthetic Bh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ki(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public static synthetic Dh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Ai(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final Gi(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x3
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Zi(I)V
-
-    return-void
-.end method
-
-.method private final Hh(I)V
-    .locals 5
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->o:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    invoke-static {v0}, Lcom/transitionseverywhere/j;->d(Landroid/view/ViewGroup;)V
-
-    sget-object v0, Li00/a0;->a:Li00/a0;
-
-    .line 2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->k:Landroid/widget/ImageView;
-
-    const/4 v1, 0x1
-
-    const v2, 0x3fa66666    # 1.3f
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    if-ne p1, v1, :cond_0
-
-    const v4, 0x3fa66666    # 1.3f
-
-    goto :goto_0
-
-    :cond_0
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    :goto_0
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setScaleX(F)V
-
-    .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->k:Landroid/widget/ImageView;
-
-    if-ne p1, v1, :cond_1
-
-    const v1, 0x3fa66666    # 1.3f
-
-    goto :goto_1
-
-    :cond_1
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    :goto_1
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleY(F)V
-
-    .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->m:Landroid/widget/ImageView;
-
-    const/4 v1, 0x2
-
-    if-ne p1, v1, :cond_2
-
-    const v4, 0x3fa66666    # 1.3f
-
-    goto :goto_2
-
-    :cond_2
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    :goto_2
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setScaleX(F)V
-
-    .line 5
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->m:Landroid/widget/ImageView;
-
-    if-ne p1, v1, :cond_3
-
-    const v1, 0x3fa66666    # 1.3f
-
-    goto :goto_3
-
-    :cond_3
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    :goto_3
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleY(F)V
-
-    .line 6
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->l:Landroid/widget/ImageView;
-
-    const/4 v1, 0x3
-
-    if-ne p1, v1, :cond_4
-
-    const v4, 0x3fa66666    # 1.3f
-
-    goto :goto_4
-
-    :cond_4
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    :goto_4
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setScaleX(F)V
-
-    .line 7
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->l:Landroid/widget/ImageView;
-
-    if-ne p1, v1, :cond_5
-
-    const v1, 0x3fa66666    # 1.3f
-
-    goto :goto_5
-
-    :cond_5
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    :goto_5
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleY(F)V
-
-    .line 8
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->j:Landroid/widget/ImageView;
-
-    const/4 v1, 0x5
-
-    if-ne p1, v1, :cond_6
-
-    const v4, 0x3fa66666    # 1.3f
-
-    goto :goto_6
-
-    :cond_6
-    const/high16 v4, 0x3f800000    # 1.0f
-
-    :goto_6
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setScaleX(F)V
-
-    .line 9
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->j:Landroid/widget/ImageView;
-
-    if-ne p1, v1, :cond_7
-
-    goto :goto_7
-
-    :cond_7
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    :goto_7
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setScaleY(F)V
-
-    return-void
-.end method
-
-.method private static final Ki(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x5
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Zi(I)V
-
-    return-void
-.end method
-
-.method public static synthetic Lg(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Yh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final Li(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/widget/TextView;Landroid/view/View;)V
-    .locals 0
-
-    const-string p2, "this$0"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p2, "$textView"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object p2, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->D:Landroid/widget/TextView;
-
-    if-eqz p2, :cond_0
-
-    .line 2
-    invoke-direct {p0, p2}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->dj(Landroid/widget/TextView;)V
-
-    .line 3
-    :cond_0
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->cj(Landroid/widget/TextView;)V
-
-    .line 4
-    invoke-virtual {p1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->E:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method private final Mh()V
-    .locals 2
-
-    .line 1
-    invoke-static {p0}, Ldq/a;->e(Landroid/app/Activity;)V
-
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:I
-
-    const/4 v1, 0x4
-
-    if-lt v0, v1, :cond_0
-
-    .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->r:Landroidx/core/widget/NestedScrollView;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->n:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 5
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ej()V
-
-    :cond_0
-    return-void
-.end method
-
-.method private static final Oh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-    .locals 1
-
-    const-string v0, "this$0"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    return-void
-.end method
-
-.method public static synthetic Pg(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Gi(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private final Qh()Lru/i;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->F:Lu00/e;
-
-    sget-object v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:[Lkotlin/reflect/l;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0, p0, v1}, Lu00/e;->a(Ljava/lang/Object;Lkotlin/reflect/l;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lru/i;
-
-    return-object v0
-.end method
-
-.method public static synthetic Rg(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-    .locals 0
-
-    invoke-static {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Oh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    return-void
-.end method
-
-.method public static synthetic Sg(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ai(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private final Ti(Lru/i;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->F:Lu00/e;
-
-    sget-object v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->H:[Lkotlin/reflect/l;
-
-    const/4 v2, 0x0
-
-    aget-object v1, v1, v2
-
-    invoke-interface {v0, p0, v1, p1}, Lu00/e;->e(Ljava/lang/Object;Lkotlin/reflect/l;Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public static synthetic Vg(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->bj(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final Yh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 2
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object p1
-
-    iget-object p1, p1, Lru/i;->h:Landroid/widget/EditText;
-
-    invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:I
-
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_0
-
-    const p1, 0x7f1208a1
-
-    .line 3
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ae(I)V
-
-    return-void
-
-    .line 4
-    :cond_0
-    invoke-static {p1}, Lkotlin/text/l;->b1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_2
-
-    const p1, 0x7f1202de
-
-    .line 5
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ae(I)V
-
-    return-void
-
-    .line 6
-    :cond_2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Mh()V
-
-    .line 7
-    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Vh()Lin/mohalla/sharechat/settings/help/feedback/t;
-
-    move-result-object v0
-
-    iget v1, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:I
-
-    iget-object p0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->E:Ljava/lang/String;
-
-    invoke-virtual {v0, v1, p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/t;->vl(ILjava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method private final Yi(I)V
-    .locals 1
-
-    const/4 v0, 0x3
-
-    if-gt p1, v0, :cond_0
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object p1
-
-    iget-object p1, p1, Lru/i;->s:Landroid/widget/TextView;
-
-    const v0, 0x7f12034e
-
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object p1
-
-    iget-object p1, p1, Lru/i;->s:Landroid/widget/TextView;
-
-    const v0, 0x7f12034d
-
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    :goto_0
-    return-void
-.end method
-
-.method private final Zi(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:I
-
-    .line 2
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Yi(I)V
-
-    .line 3
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Hh(I)V
-
-    return-void
-.end method
-
-.method private static final ai(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    return-void
-.end method
-
-.method private final aj()V
-    .locals 2
-
-    const v0, 0x7f060305
-
-    .line 1
-    invoke-static {p0, v0}, Landroidx/core/content/a;->d(Landroid/content/Context;I)I
-
-    move-result v1
-
-    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/common/base/BaseMvpActivity;->vg(I)V
-
-    const v1, 0x7f0a0fb5
-
-    .line 2
-    invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroidx/appcompat/widget/Toolbar;
-
-    .line 3
-    invoke-static {p0, v0}, Landroidx/core/content/a;->d(Landroid/content/Context;I)I
-
-    move-result v0
-
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->setBackgroundColor(I)V
-
-    .line 4
-    invoke-virtual {p0, v1}, Landroidx/appcompat/app/AppCompatActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
-
-    .line 5
-    new-instance v0, Lin/mohalla/sharechat/settings/help/feedback/e;
-
-    invoke-direct {v0, p0}, Lin/mohalla/sharechat/settings/help/feedback/e;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v1, v0}, Landroidx/appcompat/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 6
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    const v1, 0x7f120393
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/a;->x(I)V
-
-    :cond_0
-    return-void
-.end method
-
-.method private static final bj(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/activity/ComponentActivity;->onBackPressed()V
-
-    return-void
-.end method
-
-.method private final cj(Landroid/widget/TextView;)V
-    .locals 1
-
-    const v0, 0x7f0800ad
-
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setBackgroundResource(I)V
-
-    const v0, 0x7f060305
-
-    .line 2
-    invoke-static {p0, v0}, Landroidx/core/content/a;->d(Landroid/content/Context;I)I
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 3
-    iput-object p1, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->D:Landroid/widget/TextView;
-
-    return-void
-.end method
-
-.method private final dj(Landroid/widget/TextView;)V
-    .locals 1
-
-    const v0, 0x7f0800ac
-
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setBackgroundResource(I)V
-
-    const v0, 0x7f060304
-
-    .line 2
-    invoke-static {p0, v0}, Landroidx/core/content/a;->d(Landroid/content/Context;I)I
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
-
-    return-void
-.end method
-
-.method public static synthetic eh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->fi(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private final ej()V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
-
-    const v1, 0x7f110050
-
-    invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
-
-    .line 2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
-
-    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->s()V
-
-    return-void
-.end method
-
-.method private static final fi(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 1
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    const/4 v0, 0x3
-
-    .line 1
-    invoke-static {p0, p1, p1, v0, p1}, Lqq/a;->i(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    return-void
-.end method
-
-.method public static synthetic hh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ri(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private final init()V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
-
-    const-string v1, "lottie_images/"
-
-    invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setImageAssetsFolder(Ljava/lang/String;)V
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Vh()Lin/mohalla/sharechat/settings/help/feedback/t;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/settings/help/feedback/t;->T1()V
-
-    .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->g:Landroid/widget/Button;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/a;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/a;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->e:Landroid/widget/Button;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/d;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/d;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 5
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->f:Landroid/widget/Button;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/f;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/f;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 6
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/i;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/i;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 7
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->k:Landroid/widget/ImageView;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/g;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/g;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 8
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->m:Landroid/widget/ImageView;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/j;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/j;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 9
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->l:Landroid/widget/ImageView;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/c;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/c;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 10
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->j:Landroid/widget/ImageView;
-
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/h;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/h;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    return-void
-.end method
-
-.method private static final ki(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 1
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    const/4 v0, 0x3
-
-    .line 1
-    invoke-static {p0, p1, p1, v0, p1}, Lqq/a;->i(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
-
-    return-void
-.end method
-
-.method private final kj()V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->d:Lcom/airbnb/lottie/LottieAnimationView;
-
-    const v1, 0x7f110055
-
-    invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
-
-    .line 2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->d:Lcom/airbnb/lottie/LottieAnimationView;
-
-    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->s()V
-
-    return-void
-.end method
-
-.method public static synthetic oh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Ki(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final ri(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/view/View;)V
-    .locals 0
-
-    const-string p1, "this$0"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x1
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Zi(I)V
-
-    return-void
-.end method
-
-.method public static synthetic wh(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/widget/TextView;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Li(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/widget/TextView;Landroid/view/View;)V
+    iput-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->G:Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Bf()Lin/mohalla/sharechat/common/base/j;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lin/mohalla/sharechat/common/base/j<",
-            "Lin/mohalla/sharechat/settings/help/feedback/o;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Vh()Lin/mohalla/sharechat/settings/help/feedback/t;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected final Vh()Lin/mohalla/sharechat/settings/help/feedback/t;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->B:Lin/mohalla/sharechat/settings/help/feedback/t;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mPresenter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public ae(I)V
+.method public final De(I)V
     .locals 1
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
     move-result-object p1
@@ -1115,100 +150,98 @@
     return-void
 .end method
 
-.method public d()V
-    .locals 4
+.method public final Ob()V
+    .locals 2
 
     .line 1
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
-
-    .line 2
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/b;
-
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/settings/help/feedback/b;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;)V
-
-    const-wide/16 v2, 0x7d0
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    return-void
-.end method
-
-.method public i(Z)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
     move-result-object v0
 
-    iget-object v0, v0, Lru/i;->q:Landroid/widget/ProgressBar;
+    iget-object v0, v0, Lre0/i;->r:Landroidx/core/widget/NestedScrollView;
 
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 p1, 0x8
-
-    :goto_0
-    invoke-virtual {v0, p1}, Landroid/widget/ProgressBar;->setVisibility(I)V
-
-    return-void
-.end method
-
-.method protected onCreate(Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Lin/mohalla/sharechat/common/base/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
+    const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Vh()Lin/mohalla/sharechat/settings/help/feedback/t;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Lin/mohalla/sharechat/common/base/i;->mk(Lin/mohalla/sharechat/common/base/l;)V
+    invoke-static {v0, v1}, Lcom/transitionseverywhere/f;->b(Landroid/view/ViewGroup;Lcom/transitionseverywhere/e;)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lru/i;->d(Landroid/view/LayoutInflater;)Lru/i;
-
-    move-result-object p1
-
-    const-string v0, "inflate(layoutInflater)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Ti(Lru/i;)V
+    sget-object v0, Lro0/x;->a:Lro0/x;
 
     .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-virtual {p1}, Lru/i;->c()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
+    iget-object v0, v0, Lre0/i;->p:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 5
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->aj()V
+    invoke-static {v0, v1}, Lcom/transitionseverywhere/f;->b(Landroid/view/ViewGroup;Lcom/transitionseverywhere/e;)V
 
     .line 6
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->init()V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->r:Landroidx/core/widget/NestedScrollView;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 7
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->p:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 8
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->d:Lcom/airbnb/lottie/LottieAnimationView;
+
+    const v1, 0x7f110057
+
+    invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
+
+    .line 9
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->d:Lcom/airbnb/lottie/LottieAnimationView;
+
+    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->j()V
 
     return-void
 .end method
 
-.method public pf(Ljava/util/List;)V
+.method public final Vg()Lq60/m;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lq60/m<",
+            "Lam0/e;",
+            ">;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->eh()Lam0/h;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final Xf(Ljava/util/List;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1221,7 +254,7 @@
 
     const-string v0, "categories"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
@@ -1231,24 +264,24 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
     move-result-object p1
 
-    iget-object p1, p1, Lru/i;->s:Landroid/widget/TextView;
+    iget-object p1, p1, Lre0/i;->s:Landroid/widget/TextView;
 
     const/16 v0, 0x8
 
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
     move-result-object p1
 
-    iget-object p1, p1, Lru/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
+    iget-object p1, p1, Lre0/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->setVisibility(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
 
@@ -1276,7 +309,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    const v2, 0x7f0d026a
+    const v2, 0x7f0d028e
 
     const/4 v3, 0x0
 
@@ -1295,11 +328,13 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 8
-    new-instance v1, Lin/mohalla/sharechat/settings/help/feedback/k;
+    new-instance v1, Lp20/i;
 
-    invoke-direct {v1, p0, v2}, Lin/mohalla/sharechat/settings/help/feedback/k;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;Landroid/widget/TextView;)V
+    const/16 v3, 0x13
 
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {v1, p0, v2, v3}, Lp20/i;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 9
     new-instance v1, Landroid/view/View;
@@ -1311,7 +346,7 @@
 
     const/high16 v4, 0x41000000    # 8.0f
 
-    invoke-static {p0, v4}, Lip/a;->b(Landroid/content/Context;F)F
+    invoke-static {p0, v4}, Lc2/a;->b(Landroid/content/Context;F)F
 
     move-result v4
 
@@ -1325,20 +360,20 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 12
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
     move-result-object v3
 
-    iget-object v3, v3, Lru/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
+    iget-object v3, v3, Lre0/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
 
     invoke-virtual {v3, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 13
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
 
     move-result-object v2
 
-    iget-object v2, v2, Lru/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
+    iget-object v2, v2, Lre0/i;->i:Lorg/apmem/tools/layouts/FlowLayout;
 
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -1348,53 +383,878 @@
     return-void
 .end method
 
-.method public wb()V
-    .locals 2
+.method public final b()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    new-instance v0, Landroid/os/Handler;
 
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->r:Landroidx/core/widget/NestedScrollView;
-
-    invoke-static {v0}, Lcom/transitionseverywhere/j;->d(Landroid/view/ViewGroup;)V
-
-    sget-object v0, Li00/a0;->a:Li00/a0;
+    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     .line 2
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
+    new-instance v1, Lg6/o;
 
-    move-result-object v0
+    const/16 v2, 0xf
 
-    iget-object v0, v0, Lru/i;->p:Landroidx/constraintlayout/widget/ConstraintLayout;
+    invoke-direct {v1, p0, v2}, Lg6/o;-><init>(Ljava/lang/Object;I)V
 
-    invoke-static {v0}, Lcom/transitionseverywhere/j;->d(Landroid/view/ViewGroup;)V
+    const-wide/16 v2, 0x7d0
 
-    .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->r:Landroidx/core/widget/NestedScrollView;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
-
-    .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->Qh()Lru/i;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lru/i;->p:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 5
-    invoke-direct {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->kj()V
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
+.end method
+
+.method public final ch()Lre0/i;
+    .locals 3
+
+    iget-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->G:Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;
+
+    sget-object v1, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->I:[Llp0/l;
+
+    const/4 v2, 0x0
+
+    aget-object v1, v1, v2
+
+    invoke-virtual {v0, p0, v1}, Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;->a(Ljava/lang/Object;Llp0/l;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lre0/i;
+
+    return-object v0
+.end method
+
+.method public final eh()Lam0/h;
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->C:Lam0/h;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "mPresenter"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final g(Z)V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object p1
+
+    iget-object p1, p1, Lre0/i;->q:Landroid/widget/ProgressBar;
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    return-void
+.end method
+
+.method public final gh(I)V
+    .locals 6
+
+    .line 1
+    iput p1, p0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->D:I
+
+    const/4 v0, 0x3
+
+    if-gt p1, v0, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->s:Landroid/widget/TextView;
+
+    const v2, 0x7f1203d2
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->s:Landroid/widget/TextView;
+
+    const v2, 0x7f1203d1
+
+    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 4
+    :goto_0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->o:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-static {v1, v2}, Lcom/transitionseverywhere/f;->b(Landroid/view/ViewGroup;Lcom/transitionseverywhere/e;)V
+
+    .line 6
+    sget-object v1, Lro0/x;->a:Lro0/x;
+
+    .line 7
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->k:Landroid/widget/ImageView;
+
+    const/4 v2, 0x1
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    const v4, 0x3fa66666    # 1.3f
+
+    if-ne p1, v2, :cond_1
+
+    const v5, 0x3fa66666    # 1.3f
+
+    goto :goto_1
+
+    :cond_1
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    :goto_1
+    invoke-virtual {v1, v5}, Landroid/view/View;->setScaleX(F)V
+
+    .line 8
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->k:Landroid/widget/ImageView;
+
+    if-ne p1, v2, :cond_2
+
+    const v2, 0x3fa66666    # 1.3f
+
+    goto :goto_2
+
+    :cond_2
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    :goto_2
+    invoke-virtual {v1, v2}, Landroid/view/View;->setScaleY(F)V
+
+    .line 9
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->m:Landroid/widget/ImageView;
+
+    const/4 v2, 0x2
+
+    if-ne p1, v2, :cond_3
+
+    const v5, 0x3fa66666    # 1.3f
+
+    goto :goto_3
+
+    :cond_3
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    :goto_3
+    invoke-virtual {v1, v5}, Landroid/view/View;->setScaleX(F)V
+
+    .line 10
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->m:Landroid/widget/ImageView;
+
+    if-ne p1, v2, :cond_4
+
+    const v2, 0x3fa66666    # 1.3f
+
+    goto :goto_4
+
+    :cond_4
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    :goto_4
+    invoke-virtual {v1, v2}, Landroid/view/View;->setScaleY(F)V
+
+    .line 11
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->l:Landroid/widget/ImageView;
+
+    if-ne p1, v0, :cond_5
+
+    const v2, 0x3fa66666    # 1.3f
+
+    goto :goto_5
+
+    :cond_5
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    :goto_5
+    invoke-virtual {v1, v2}, Landroid/view/View;->setScaleX(F)V
+
+    .line 12
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lre0/i;->l:Landroid/widget/ImageView;
+
+    if-ne p1, v0, :cond_6
+
+    const v0, 0x3fa66666    # 1.3f
+
+    goto :goto_6
+
+    :cond_6
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    :goto_6
+    invoke-virtual {v1, v0}, Landroid/view/View;->setScaleY(F)V
+
+    .line 13
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->j:Landroid/widget/ImageView;
+
+    const/4 v1, 0x5
+
+    if-ne p1, v1, :cond_7
+
+    const v2, 0x3fa66666    # 1.3f
+
+    goto :goto_7
+
+    :cond_7
+    const/high16 v2, 0x3f800000    # 1.0f
+
+    :goto_7
+    invoke-virtual {v0, v2}, Landroid/view/View;->setScaleX(F)V
+
+    .line 14
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->j:Landroid/widget/ImageView;
+
+    if-ne p1, v1, :cond_8
+
+    const v3, 0x3fa66666    # 1.3f
+
+    :cond_8
+    invoke-virtual {v0, v3}, Landroid/view/View;->setScaleY(F)V
+
+    return-void
+.end method
+
+.method public final init()V
+    .locals 7
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
+
+    const-string v1, "lottie_images/"
+
+    invoke-virtual {v0, v1}, Lcom/airbnb/lottie/LottieAnimationView;->setImageAssetsFolder(Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->eh()Lam0/h;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, v0, Lq60/d;->c:Lon0/a;
+
+    .line 4
+    iget-object v2, v0, Lam0/h;->f:Lz80/g;
+
+    .line 5
+    iget-object v2, v2, Lz80/g;->b:La90/d;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x2
+
+    invoke-static {v2, v4, v5, v6, v3}, Li12/a$a;->a(Li12/a;ZZILjava/lang/Object;)Lmn0/a0;
+
+    move-result-object v2
+
+    sget-object v3, Lp70/f0;->o:Lp70/f0;
+
+    .line 6
+    invoke-virtual {v2, v3}, Lmn0/a0;->v(Lrn0/h;)Lmn0/a0;
+
+    move-result-object v2
+
+    .line 7
+    iget-object v3, v0, Lam0/h;->g:Lhb0/a;
+
+    invoke-static {v3}, Lds0/r;->G(Lq30/a;)Lmn0/f0;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lmn0/a0;->g(Lmn0/f0;)Lmn0/a0;
+
+    move-result-object v2
+
+    .line 8
+    new-instance v3, Lam0/g;
+
+    invoke-direct {v3, v0, v5}, Lam0/g;-><init>(Ljava/lang/Object;I)V
+
+    sget-object v0, Lvk0/f;->g:Lvk0/f;
+
+    invoke-virtual {v2, v3, v0}, Lmn0/a0;->D(Lrn0/e;Lrn0/e;)Lon0/b;
+
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v1, v0}, Lon0/a;->b(Lon0/b;)Z
+
+    .line 10
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->g:Landroid/widget/Button;
+
+    new-instance v1, Lam0/b;
+
+    invoke-direct {v1, p0, v5}, Lam0/b;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 11
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->e:Landroid/widget/Button;
+
+    new-instance v1, Lmk0/c;
+
+    const/4 v2, 0x6
+
+    invoke-direct {v1, p0, v2}, Lmk0/c;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 12
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->f:Landroid/widget/Button;
+
+    new-instance v1, Lo10/k;
+
+    const/16 v2, 0x18
+
+    invoke-direct {v1, p0, v2}, Lo10/k;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 13
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->c:Lcom/airbnb/lottie/LottieAnimationView;
+
+    new-instance v1, Lul0/c;
+
+    invoke-direct {v1, p0, v6}, Lul0/c;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 14
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->k:Landroid/widget/ImageView;
+
+    new-instance v1, Lo10/j;
+
+    const/16 v2, 0x1a
+
+    invoke-direct {v1, p0, v2}, Lo10/j;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 15
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->m:Landroid/widget/ImageView;
+
+    new-instance v1, Lsh0/d;
+
+    const/16 v2, 0xf
+
+    invoke-direct {v1, p0, v2}, Lsh0/d;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 16
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->l:Landroid/widget/ImageView;
+
+    new-instance v1, Lam0/a;
+
+    invoke-direct {v1, p0, v4}, Lam0/a;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 17
+    invoke-virtual {p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lre0/i;->j:Landroid/widget/ImageView;
+
+    new-instance v1, Lam0/b;
+
+    invoke-direct {v1, p0, v4}, Lam0/b;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+.end method
+
+.method public final onCreate(Landroid/os/Bundle;)V
+    .locals 24
+
+    move-object/from16 v0, p0
+
+    .line 1
+    invoke-super/range {p0 .. p1}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->eh()Lam0/h;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lq60/d;->O3(Lq60/n;)V
+
+    .line 3
+    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getLayoutInflater()Landroid/view/LayoutInflater;
+
+    move-result-object v1
+
+    const v2, 0x7f0d0036
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    .line 4
+    invoke-virtual {v1, v2, v3, v4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v1
+
+    const v2, 0x7f0a00ac
+
+    .line 5
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v7, v3
+
+    check-cast v7, Lcom/airbnb/lottie/LottieAnimationView;
+
+    const v3, 0x7f0a10a2
+
+    if-eqz v7, :cond_2
+
+    const v2, 0x7f0a00ad
+
+    .line 6
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v8, v5
+
+    check-cast v8, Lcom/airbnb/lottie/LottieAnimationView;
+
+    if-eqz v8, :cond_2
+
+    const v2, 0x7f0a01d8
+
+    .line 7
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v9, v5
+
+    check-cast v9, Landroid/widget/Button;
+
+    if-eqz v9, :cond_2
+
+    const v2, 0x7f0a01dd
+
+    .line 8
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v10, v5
+
+    check-cast v10, Landroid/widget/Button;
+
+    if-eqz v10, :cond_2
+
+    const v2, 0x7f0a01e4
+
+    .line 9
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v11, v5
+
+    check-cast v11, Landroid/widget/Button;
+
+    if-eqz v11, :cond_2
+
+    const v2, 0x7f0a04ff
+
+    .line 10
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v12, v5
+
+    check-cast v12, Landroid/widget/EditText;
+
+    if-eqz v12, :cond_2
+
+    const v2, 0x7f0a05c2
+
+    .line 11
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v13, v5
+
+    check-cast v13, Lorg/apmem/tools/layouts/FlowLayout;
+
+    if-eqz v13, :cond_2
+
+    const v2, 0x7f0a08cb
+
+    .line 12
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v14, v5
+
+    check-cast v14, Landroid/widget/ImageView;
+
+    if-eqz v14, :cond_2
+
+    const v2, 0x7f0a092f
+
+    .line 13
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object v15, v5
+
+    check-cast v15, Landroid/widget/ImageView;
+
+    if-eqz v15, :cond_2
+
+    const v2, 0x7f0a09d6
+
+    .line 14
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v16, v5
+
+    check-cast v16, Landroid/widget/ImageView;
+
+    if-eqz v16, :cond_2
+
+    const v2, 0x7f0a09ef
+
+    .line 15
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v17, v5
+
+    check-cast v17, Landroid/widget/ImageView;
+
+    if-eqz v17, :cond_2
+
+    const v2, 0x7f0a0a41
+
+    .line 16
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v18, v5
+
+    check-cast v18, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    if-eqz v18, :cond_2
+
+    const v2, 0x7f0a0a4f
+
+    .line 17
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v19, v5
+
+    check-cast v19, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    if-eqz v19, :cond_2
+
+    const v2, 0x7f0a0a51
+
+    .line 18
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v20, v5
+
+    check-cast v20, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    if-eqz v20, :cond_2
+
+    const v2, 0x7f0a0d4d
+
+    .line 19
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v21, v5
+
+    check-cast v21, Landroid/widget/ProgressBar;
+
+    if-eqz v21, :cond_2
+
+    const v2, 0x7f0a0eef
+
+    .line 20
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v22, v5
+
+    check-cast v22, Landroidx/core/widget/NestedScrollView;
+
+    if-eqz v22, :cond_2
+
+    .line 21
+    invoke-static {v1, v3}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/appcompat/widget/Toolbar;
+
+    if-eqz v2, :cond_1
+
+    const v2, 0x7f0a130b
+
+    .line 22
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    move-object/from16 v23, v5
+
+    check-cast v23, Landroid/widget/TextView;
+
+    if-eqz v23, :cond_2
+
+    const v2, 0x7f0a1310
+
+    .line 23
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Lin/mohalla/sharechat/common/views/customText/CustomTextView;
+
+    if-eqz v5, :cond_2
+
+    const v2, 0x7f0a13ac
+
+    .line 24
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/widget/TextView;
+
+    if-eqz v5, :cond_2
+
+    .line 25
+    new-instance v2, Lre0/i;
+
+    move-object v5, v2
+
+    move-object v6, v1
+
+    check-cast v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    invoke-direct/range {v5 .. v23}, Lre0/i;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/airbnb/lottie/LottieAnimationView;Lcom/airbnb/lottie/LottieAnimationView;Landroid/widget/Button;Landroid/widget/Button;Landroid/widget/Button;Landroid/widget/EditText;Lorg/apmem/tools/layouts/FlowLayout;Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/ImageView;Landroid/widget/ImageView;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroidx/constraintlayout/widget/ConstraintLayout;Landroid/widget/ProgressBar;Landroidx/core/widget/NestedScrollView;Landroid/widget/TextView;)V
+
+    .line 26
+    iget-object v1, v0, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->G:Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;
+
+    sget-object v5, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->I:[Llp0/l;
+
+    aget-object v5, v5, v4
+
+    invoke-virtual {v1, v0, v5, v2}, Lin/mohalla/sharechat/appx/core/util/ReleaseOnDestroyDelegateKt$releaseOnDestroy$1;->c(Ljava/lang/Object;Llp0/l;Ljava/lang/Object;)V
+
+    .line 27
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->ch()Lre0/i;
+
+    move-result-object v1
+
+    .line 28
+    iget-object v1, v1, Lre0/i;->b:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    .line 29
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/AppCompatActivity;->setContentView(Landroid/view/View;)V
+
+    const v1, 0x7f0604b7
+
+    .line 30
+    invoke-static {v0, v1}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result v2
+
+    invoke-virtual {v0, v2}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->Zg(I)V
+
+    .line 31
+    invoke-virtual {v0, v3}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/appcompat/widget/Toolbar;
+
+    .line 32
+    invoke-static {v0, v1}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result v1
+
+    invoke-virtual {v2, v1}, Landroid/view/View;->setBackgroundColor(I)V
+
+    .line 33
+    invoke-virtual {v0, v2}, Landroidx/appcompat/app/AppCompatActivity;->setSupportActionBar(Landroidx/appcompat/widget/Toolbar;)V
+
+    .line 34
+    new-instance v1, Lam0/a;
+
+    invoke-direct {v1, v0, v4}, Lam0/a;-><init>(Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;I)V
+
+    invoke-virtual {v2, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 35
+    invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/app/AppCompatActivity;->getSupportActionBar()Landroidx/appcompat/app/a;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    const v2, 0x7f12042b
+
+    invoke-virtual {v1, v2}, Landroidx/appcompat/app/a;->s(I)V
+
+    .line 36
+    :cond_0
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/settings/help/feedback/FeedbackActivity;->init()V
+
+    return-void
+
+    :cond_1
+    const v2, 0x7f0a10a2
+
+    .line 37
+    :cond_2
+    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 38
+    new-instance v2, Ljava/lang/NullPointerException;
+
+    const-string v3, "Missing required view with ID: "
+
+    invoke-virtual {v3, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v2, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v2
 .end method

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/ll_root_expanded" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/bg_expanded_notif_creator_reactive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_container" android:layout_alignBottom="@id/ll_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:paddingRight="14.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="14.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_sharechat_logo" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/txt_primary_ws" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharechat" android:layout_marginStart="6.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/txt_primary_ws" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/grey0" android:ellipsize="end" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <RelativeLayout android:id="@id/rl_post" android:layout_width="wrap_content" android:layout_height="166.0dip">
+                <ImageView android:id="@id/iv_post" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <FrameLayout android:background="@drawable/bg_notif_dark_round_rect_gradient_8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white100" android:id="@id/tv_post_views" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white100" android:ellipsize="end" android:id="@id/tv_post_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:maxLines="2" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/ll_cta" android:layout_alignParentStart="true" />
+                <LinearLayout android:gravity="center" android:id="@id/ll_cta" android:background="@drawable/bg_notif_round_rect_corner_blue_5" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="8.0dip" android:paddingHorizontal="8.0dip">
+                    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/white100" android:ellipsize="end" android:id="@id/tv_cta" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:maxLines="2" android:maxLength="160" android:paddingVertical="7.0dip" />
+                    <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_notif_small_next_white" android:layout_marginStart="8.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

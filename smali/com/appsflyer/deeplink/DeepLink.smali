@@ -568,7 +568,6 @@
 .method public getClickEvent()Lorg/json/JSONObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/deeplink/DeepLink;->AFInAppEventParameterName:Lorg/json/JSONObject;
 
     return-object v0
@@ -740,7 +739,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/deeplink/DeepLink;->AFInAppEventParameterName:Lorg/json/JSONObject;
 
     invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;

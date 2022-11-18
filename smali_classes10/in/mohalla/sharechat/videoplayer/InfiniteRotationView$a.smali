@@ -1,5 +1,5 @@
 .class public final Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;
-.super Landroidx/recyclerview/widget/RecyclerView$u;
+.super Landroidx/recyclerview/widget/RecyclerView$s;
 .source "SourceFile"
 
 
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field private final a:I
+.field public final a:I
 
-.field private final b:Landroidx/recyclerview/widget/LinearLayoutManager;
+.field public final b:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-.field private final c:Lr00/l;
+.field public final c:Ldp0/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lr00/l<",
+            "Ldp0/l<",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;"
         }
     .end annotation
@@ -32,36 +32,26 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public constructor <init>(ILandroidx/recyclerview/widget/LinearLayoutManager;Lr00/l;)V
+.method public constructor <init>(ILandroidx/recyclerview/widget/LinearLayoutManager;Ldp0/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
             "Landroidx/recyclerview/widget/LinearLayoutManager;",
-            "Lr00/l<",
+            "Ldp0/l<",
             "-",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "layoutManager"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "stateChanged"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$u;-><init>()V
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$s;-><init>()V
 
     .line 2
     iput p1, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->a:I
@@ -70,49 +60,49 @@
     iput-object p2, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->b:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 4
-    iput-object p3, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->c:Lr00/l;
+    iput-object p3, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->c:Ldp0/l;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+.method public final onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 1
 
     const-string v0, "recyclerView"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$u;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$s;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
 
     .line 2
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->c:Lr00/l;
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->c:Ldp0/l;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
 
-    invoke-interface {p1, p2}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p2}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
+.method public final onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
     .locals 1
 
     const-string v0, "recyclerView"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$u;->onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
+    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$s;->onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
 
     .line 2
     iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/InfiniteRotationView$a;->b:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->l2()I
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->r1()I
 
     move-result p2
 
@@ -130,7 +120,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->p1(I)V
+    invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->q0(I)V
 
     goto :goto_0
 
@@ -142,7 +132,7 @@
 
     sub-int/2addr p2, p3
 
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->p1(I)V
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->q0(I)V
 
     :cond_1
     :goto_0

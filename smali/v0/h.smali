@@ -1,19 +1,16 @@
-.class public interface abstract Lv0/h;
+.class public final Lv0/h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lv0/k;
 
-# virtual methods
-.method public abstract a()Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lv0/g;",
-            ">;"
-        }
-    .end annotation
-.end method
 
-.method public abstract b(Ljava/lang/String;)Lv0/g;
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method

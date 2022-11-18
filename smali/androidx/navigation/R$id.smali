@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final nav_controller_view_tag:I = 0x7f0a0b7c
+.field public static final nav_controller_view_tag:I = 0x7f0a0c20
 
 
 # direct methods

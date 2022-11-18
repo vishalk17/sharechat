@@ -1,4 +1,4 @@
-.class Landroidx/databinding/ObservableParcelable$a;
+.class public final Landroidx/databinding/ObservableParcelable$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,10 +37,9 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Landroidx/databinding/ObservableParcelable;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/databinding/ObservableParcelable;
 
     const-class v1, Landroidx/databinding/ObservableParcelable$a;
@@ -59,33 +57,10 @@
     return-object v0
 .end method
 
-.method public b(I)[Landroidx/databinding/ObservableParcelable;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Landroidx/databinding/ObservableParcelable;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/databinding/ObservableParcelable$a;->a(Landroid/os/Parcel;)Landroidx/databinding/ObservableParcelable;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/databinding/ObservableParcelable$a;->b(I)[Landroidx/databinding/ObservableParcelable;
-
-    move-result-object p1
 
     return-object p1
 .end method

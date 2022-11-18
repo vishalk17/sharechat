@@ -1,544 +1,291 @@
 .class public final Liq/a;
-.super Ljava/lang/Object;
+.super Lhq/y;
 .source "SourceFile"
 
+# interfaces
+.implements Lhq/v0;
 
-# direct methods
-.method public static final a(Ljava/lang/Exception;Ljava/lang/String;I)Ljava/lang/String;
-    .locals 2
 
-    const-string v0, "<this>"
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Liq/a$b;
+    }
+.end annotation
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lhq/y<",
+        "Liq/a;",
+        "Liq/a$b;",
+        ">;",
+        "Lhq/v0;"
+    }
+.end annotation
 
-    const-string v0, "errorKey"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+# static fields
+.field public static final CODE_FIELD_NUMBER:I = 0x1
 
-    .line 1
-    instance-of v0, p0, Lretrofit2/j;
+.field private static final DEFAULT_INSTANCE:Liq/a;
 
-    if-eqz v0, :cond_0
+.field public static final DETAILS_FIELD_NUMBER:I = 0x3
 
-    move-object v0, p0
+.field public static final MESSAGE_FIELD_NUMBER:I = 0x2
 
-    check-cast v0, Lretrofit2/j;
-
-    invoke-virtual {v0}, Lretrofit2/j;->a()I
-
-    move-result v1
-
-    if-lt v1, p2, :cond_0
-
-    invoke-virtual {v0}, Lretrofit2/j;->a()I
-
-    move-result p2
-
-    const/16 v0, 0x1f4
-
-    if-gt p2, v0, :cond_0
-
-    .line 2
-    :try_start_0
-    check-cast p0, Lretrofit2/j;
-
-    invoke-virtual {p0}, Lretrofit2/j;->c()Lretrofit2/t;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lretrofit2/t;->d()Lokhttp3/ResponseBody;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Lokhttp3/ResponseBody;->string()Ljava/lang/String;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    .line 3
-    new-instance p2, Lorg/json/JSONObject;
-
-    invoke-direct {p2, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    invoke-virtual {p2, p1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    .line 5
-    invoke-virtual {p2, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p0
-
-    :catch_0
-    move-exception p0
-
-    .line 6
-    invoke-virtual {p0}, Lorg/json/JSONException;->printStackTrace()V
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return-object p0
-.end method
-
-.method public static synthetic b(Ljava/lang/Exception;Ljava/lang/String;IILjava/lang/Object;)Ljava/lang/String;
-    .locals 0
-
-    and-int/lit8 p4, p3, 0x1
-
-    if-eqz p4, :cond_0
-
-    const-string p1, "errMessage"
-
-    :cond_0
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_1
-
-    const/16 p2, 0x190
-
-    .line 1
-    :cond_1
-    invoke-static {p0, p1, p2}, Liq/a;->a(Ljava/lang/Exception;Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Li00/o;
-    .locals 2
+.field private static volatile PARSER:Lhq/d1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/lang/Throwable;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Li00/o<",
-            "Ljava/lang/Boolean;",
-            "Ljava/lang/String;",
+            "Lhq/d1<",
+            "Liq/a;",
             ">;"
         }
     .end annotation
+.end field
 
-    const-string v0, "<this>"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+# instance fields
+.field private code_:I
 
-    const-string v0, "errorObjectKey"
+.field private details_:Lhq/b0$e;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhq/b0$e<",
+            "Lhq/e;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.field private message_:Ljava/lang/String;
 
-    const-string v0, "errorMsgKey"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    instance-of v0, p0, Lretrofit2/j;
+    new-instance v0, Liq/a;
 
-    if-eqz v0, :cond_7
+    invoke-direct {v0}, Liq/a;-><init>()V
 
     .line 2
-    :try_start_0
-    check-cast p0, Lretrofit2/j;
-
-    invoke-virtual {p0}, Lretrofit2/j;->c()Lretrofit2/t;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_7
-
-    invoke-virtual {p0}, Lretrofit2/t;->d()Lokhttp3/ResponseBody;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_7
-
-    invoke-virtual {p0}, Lokhttp3/ResponseBody;->string()Ljava/lang/String;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_7
+    sput-object v0, Liq/a;->DEFAULT_INSTANCE:Liq/a;
 
     .line 3
-    new-instance v0, Lorg/json/JSONObject;
+    const-class v1, Liq/a;
 
-    invoke-direct {v0, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lhq/y;->F(Ljava/lang/Class;Lhq/y;)V
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lhq/y;-><init>()V
+
+    const-string v0, ""
+
+    .line 2
+    iput-object v0, p0, Liq/a;->message_:Ljava/lang/String;
+
+    .line 3
+    sget-object v0, Lhq/h1;->e:Lhq/h1;
 
     .line 4
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    iput-object v0, p0, Liq/a;->details_:Lhq/b0$e;
 
-    move-result p0
+    return-void
+.end method
 
-    if-eqz p0, :cond_7
+.method public static synthetic H()Liq/a;
+    .locals 1
 
-    .line 5
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+    sget-object v0, Liq/a;->DEFAULT_INSTANCE:Liq/a;
 
-    move-result-object p0
+    return-object v0
+.end method
 
-    .line 6
-    instance-of p1, p0, Ljava/lang/String;
+.method public static J()Liq/a;
+    .locals 1
 
-    if-eqz p1, :cond_0
+    sget-object v0, Liq/a;->DEFAULT_INSTANCE:Liq/a;
 
-    .line 7
-    new-instance p1, Li00/o;
+    return-object v0
+.end method
 
-    sget-object p2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    invoke-direct {p1, p2, p0}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+# virtual methods
+.method public final I()I
+    .locals 1
 
-    return-object p1
+    iget v0, p0, Liq/a;->code_:I
 
-    .line 8
-    :cond_0
-    instance-of p1, p0, Lorg/json/JSONObject;
+    return v0
+.end method
 
-    if-eqz p1, :cond_7
+.method public final K()Ljava/lang/String;
+    .locals 1
 
-    const/4 p1, 0x0
+    iget-object v0, p0, Liq/a;->message_:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final w(Lhq/y$f;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    sget-object v0, Liq/a$a;->a:[I
+
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result p1
+
+    aget p1, v0, p1
 
     const/4 v0, 0x1
 
-    if-eqz p3, :cond_2
-
-    .line 9
-    invoke-interface {p3}, Ljava/lang/CharSequence;->length()I
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
     const/4 v1, 0x0
 
-    goto :goto_1
+    packed-switch p1, :pswitch_data_0
 
-    :cond_2
-    :goto_0
-    const/4 v1, 0x1
+    .line 2
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    :goto_1
-    if-nez v1, :cond_6
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    if-eqz p4, :cond_3
+    throw p1
 
-    invoke-interface {p4}, Ljava/lang/CharSequence;->length()I
+    :pswitch_0
+    return-object v1
 
-    move-result v1
-
-    if-nez v1, :cond_4
-
-    :cond_3
-    const/4 p1, 0x1
-
-    :cond_4
-    if-nez p1, :cond_6
-
-    move-object p1, p0
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    invoke-virtual {p1, p3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    move-object p1, p0
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_6
-
-    .line 10
-    move-object p1, p0
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    invoke-virtual {p1, p3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 3
+    :pswitch_1
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object p1
 
-    invoke-static {p1, p4}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_5
-
-    .line 11
-    new-instance p1, Li00/o;
-
-    sget-object p3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    check-cast p0, Lorg/json/JSONObject;
-
-    invoke-virtual {p0, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p3, p0}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    goto :goto_2
-
-    .line 12
-    :cond_5
-    new-instance p1, Li00/o;
-
-    sget-object p3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    check-cast p0, Lorg/json/JSONObject;
-
-    invoke-virtual {p0, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p3, p0}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    :goto_2
     return-object p1
-
-    .line 13
-    :cond_6
-    move-object p1, p0
-
-    check-cast p1, Lorg/json/JSONObject;
-
-    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_7
-
-    .line 14
-    new-instance p1, Li00/o;
-
-    sget-object p3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    check-cast p0, Lorg/json/JSONObject;
-
-    invoke-virtual {p0, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-direct {p1, p3, p0}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    :catch_0
-    move-exception p0
-
-    .line 15
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
-
-    .line 16
-    :cond_7
-    new-instance p0, Li00/o;
-
-    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    const/4 p2, 0x0
-
-    invoke-direct {p0, p1, p2}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object p0
-.end method
-
-.method public static synthetic d(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Li00/o;
-    .locals 1
-
-    and-int/lit8 p6, p5, 0x1
-
-    if-eqz p6, :cond_0
-
-    const-string p1, "err"
-
-    :cond_0
-    and-int/lit8 p6, p5, 0x2
-
-    if-eqz p6, :cond_1
-
-    const-string p2, "message"
-
-    :cond_1
-    and-int/lit8 p6, p5, 0x4
-
-    const/4 v0, 0x0
-
-    if-eqz p6, :cond_2
-
-    move-object p3, v0
-
-    :cond_2
-    and-int/lit8 p5, p5, 0x8
-
-    if-eqz p5, :cond_3
-
-    move-object p4, v0
-
-    .line 1
-    :cond_3
-    invoke-static {p0, p1, p2, p3, p4}, Liq/a;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Li00/o;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final e(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "errorObjectKey"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "errorMsgKey"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    instance-of v0, p0, Lretrofit2/j;
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    :try_start_0
-    check-cast p0, Lretrofit2/j;
-
-    invoke-virtual {p0}, Lretrofit2/j;->c()Lretrofit2/t;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Lretrofit2/t;->d()Lokhttp3/ResponseBody;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Lokhttp3/ResponseBody;->string()Ljava/lang/String;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_1
-
-    .line 3
-    new-instance v0, Lorg/json/JSONObject;
-
-    invoke-direct {v0, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
     .line 4
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    :pswitch_2
+    sget-object p1, Liq/a;->PARSER:Lhq/d1;
 
-    move-result p0
-
-    if-eqz p0, :cond_1
+    if-nez p1, :cond_1
 
     .line 5
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+    const-class v0, Liq/a;
 
-    move-result-object p0
+    monitor-enter v0
 
     .line 6
-    instance-of p1, p0, Ljava/lang/String;
+    :try_start_0
+    sget-object p1, Liq/a;->PARSER:Lhq/d1;
 
-    if-eqz p1, :cond_0
+    if-nez p1, :cond_0
 
     .line 7
-    check-cast p0, Ljava/lang/String;
+    new-instance p1, Lhq/y$b;
 
-    return-object p0
+    sget-object v1, Liq/a;->DEFAULT_INSTANCE:Liq/a;
+
+    invoke-direct {p1, v1}, Lhq/y$b;-><init>(Lhq/y;)V
 
     .line 8
-    :cond_0
-    instance-of p1, p0, Lorg/json/JSONObject;
-
-    if-eqz p1, :cond_1
+    sput-object p1, Liq/a;->PARSER:Lhq/d1;
 
     .line 9
-    move-object p1, p0
+    :cond_0
+    monitor-exit v0
 
-    check-cast p1, Lorg/json/JSONObject;
+    goto :goto_0
 
-    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+    :catchall_0
+    move-exception p1
 
-    move-result p1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-eqz p1, :cond_1
+    throw p1
+
+    :cond_1
+    :goto_0
+    return-object p1
 
     .line 10
-    check-cast p0, Lorg/json/JSONObject;
+    :pswitch_3
+    sget-object p1, Liq/a;->DEFAULT_INSTANCE:Liq/a;
 
-    invoke-virtual {p0, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    return-object p1
 
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :pswitch_4
+    const/4 p1, 0x4
 
-    return-object p0
+    new-array p1, p1, [Ljava/lang/Object;
 
-    :catch_0
-    move-exception p0
+    const/4 v1, 0x0
+
+    const-string v2, "code_"
+
+    aput-object v2, p1, v1
+
+    const-string v1, "message_"
+
+    aput-object v1, p1, v0
+
+    const/4 v0, 0x2
+
+    const-string v1, "details_"
+
+    aput-object v1, p1, v0
+
+    const/4 v0, 0x3
 
     .line 11
-    invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
+    const-class v1, Lhq/e;
 
-    :cond_1
-    const/4 p0, 0x0
+    aput-object v1, p1, v0
 
-    return-object p0
-.end method
+    const-string v0, "\u0000\u0003\u0000\u0000\u0001\u0003\u0003\u0000\u0001\u0000\u0001\u0004\u0002\u0208\u0003\u001b"
 
-.method public static synthetic f(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
-    .locals 0
+    .line 12
+    sget-object v1, Liq/a;->DEFAULT_INSTANCE:Liq/a;
 
-    and-int/lit8 p4, p3, 0x1
+    .line 13
+    new-instance v2, Lhq/i1;
 
-    if-eqz p4, :cond_0
+    invoke-direct {v2, v1, v0, p1}, Lhq/i1;-><init>(Lhq/u0;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    const-string p1, "error"
+    return-object v2
 
-    :cond_0
-    and-int/lit8 p3, p3, 0x2
+    .line 14
+    :pswitch_5
+    new-instance p1, Liq/a$b;
 
-    if-eqz p3, :cond_1
+    invoke-direct {p1, v1}, Liq/a$b;-><init>(Liq/a$a;)V
 
-    const-string p2, "msg"
+    return-object p1
 
-    .line 1
-    :cond_1
-    invoke-static {p0, p1, p2}, Liq/a;->e(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 15
+    :pswitch_6
+    new-instance p1, Liq/a;
 
-    move-result-object p0
+    invoke-direct {p1}, Liq/a;-><init>()V
 
-    return-object p0
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

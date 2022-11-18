@@ -12,68 +12,73 @@
 
 
 # instance fields
-.field private a:I
+.field public a:I
 
-.field private b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static c()Lcom/android/billingclient/api/e$a;
+.method public static a()Lcom/android/billingclient/api/e$a;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/android/billingclient/api/e$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/android/billingclient/api/e$a;-><init>(Lcom/android/billingclient/api/t;)V
+    invoke-direct {v0, v1}, Lcom/android/billingclient/api/e$a;-><init>(Lcom/google/android/play/core/appupdate/d;)V
 
     return-object v0
-.end method
-
-.method static synthetic d(Lcom/android/billingclient/api/e;I)I
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lcom/android/billingclient/api/e;->a:I
-
-    return p1
-.end method
-
-.method static synthetic e(Lcom/android/billingclient/api/e;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    return-object p1
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final b()I
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 4
 
     .line 1
     iget v0, p0, Lcom/android/billingclient/api/e;->a:I
 
-    return v0
+    sget v1, Ltk/j;->a:I
+
+    .line 2
+    invoke-static {v0}, Ltk/a;->zza(I)Ltk/a;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, p0, Lcom/android/billingclient/api/e;->b:Ljava/lang/String;
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Response Code: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", Debug Message: "
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

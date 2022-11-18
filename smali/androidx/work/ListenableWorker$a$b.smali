@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/work/ListenableWorker$a;-><init>()V
 
     return-void
@@ -26,7 +25,7 @@
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     const/4 v0, 0x1
@@ -38,7 +37,6 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 1
     const-class v1, Landroidx/work/ListenableWorker$a$b;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -56,7 +54,7 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
     .line 1
@@ -74,7 +72,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 1
 
     const-string v0, "Retry"

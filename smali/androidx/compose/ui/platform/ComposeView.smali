@@ -3,106 +3,113 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\n\u0002\u0010\u000b\n\u0002\u0008\t\u0008\u0007\u0018\u00002\u00020\u0001J\u0008\u0010\u0003\u001a\u00020\u0002H\u0016J\u001b\u0010\u0007\u001a\u00020\u00052\u000c\u0010\u0006\u001a\u0008\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0004\u0008\u0007\u0010\u0008R*\u0010\u0011\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t8\u0014@RX\u0094\u000e\u00a2\u0006\u0012\n\u0004\u0008\u000b\u0010\u000c\u0012\u0004\u0008\u000f\u0010\u0010\u001a\u0004\u0008\r\u0010\u000e\u00a8\u0006\u0012"
+    }
+    d2 = {
+        "Landroidx/compose/ui/platform/ComposeView;",
+        "Landroidx/compose/ui/platform/a;",
+        "",
+        "getAccessibilityClassName",
+        "Lkotlin/Function0;",
+        "Lro0/x;",
+        "content",
+        "setContent",
+        "(Ldp0/p;)V",
+        "",
+        "<set-?>",
+        "j",
+        "Z",
+        "getShouldCreateCompositionOnAttachedToWindow",
+        "()Z",
+        "getShouldCreateCompositionOnAttachedToWindow$annotations",
+        "()V",
+        "shouldCreateCompositionOnAttachedToWindow",
+        "ui_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
 # static fields
-.field public static final k:I = 0x8
+.field public static final synthetic k:I
 
 
 # instance fields
-.field private final i:Landroidx/compose/runtime/t0;
+.field public final i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/compose/runtime/t0<",
-            "Lr00/p<",
-            "Landroidx/compose/runtime/i;",
+            "Ll1/w0<",
+            "Ldp0/p<",
+            "Ll1/g;",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;>;"
         }
     .end annotation
 .end field
 
-.field private j:Z
+.field public j:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 7
+    .locals 1
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v4, 0x0
+    const/4 v0, 0x4
 
-    const/4 v5, 0x4
-
-    const/4 v6, 0x0
-
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    invoke-direct/range {v1 .. v6}, Landroidx/compose/ui/platform/ComposeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/h;)V
+    invoke-direct {p0, p1, p2, v0}, Landroidx/compose/ui/platform/ComposeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 1
+    .locals 2
 
-    const-string v0, "context"
+    and-int/lit8 p3, p3, 0x2
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v0, 0x0
+
+    if-eqz p3, :cond_0
+
+    move-object p2, v0
+
+    :cond_0
+    const/4 p3, 0x0
+
+    const-string v1, "context"
+
+    .line 1
+    invoke-static {p1, v1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/platform/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const/4 p1, 0x0
-
-    const/4 p2, 0x2
-
     .line 3
-    invoke-static {p1, p1, p2, p1}, Landroidx/compose/runtime/u1;->h(Ljava/lang/Object;Landroidx/compose/runtime/t1;ILjava/lang/Object;)Landroidx/compose/runtime/t0;
+    invoke-static {v0}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/t0;
+    check-cast p1, Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    iput-object p1, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/h;)V
-    .locals 0
-
-    and-int/lit8 p5, p4, 0x2
-
-    if-eqz p5, :cond_0
-
-    const/4 p2, 0x0
-
-    :cond_0
-    and-int/lit8 p4, p4, 0x4
-
-    if-eqz p4, :cond_1
-
-    const/4 p3, 0x0
-
-    .line 1
-    :cond_1
-    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/ui/platform/ComposeView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    return-void
-.end method
-
-.method protected static synthetic getShouldCreateCompositionOnAttachedToWindow$annotations()V
+.method public static synthetic getShouldCreateCompositionOnAttachedToWindow$annotations()V
     .locals 0
 
     return-void
@@ -110,124 +117,94 @@
 
 
 # virtual methods
-.method public a(Landroidx/compose/runtime/i;I)V
-    .locals 3
+.method public final a(Ll1/g;I)V
+    .locals 2
 
-    invoke-static {}, Landroidx/compose/runtime/k;->O()Z
-
-    move-result v0
-
-    const v1, 0x190bf45a
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, -0x1
-
-    const-string v2, "androidx.compose.ui.platform.ComposeView.Content (ComposeView.android.kt:400)"
+    const v0, 0x190bf45a
 
     .line 1
-    invoke-static {v1, v0, v0, v2}, Landroidx/compose/runtime/k;->Z(IIILjava/lang/String;)V
-
-    :cond_0
-    invoke-interface {p1, v1}, Landroidx/compose/runtime/i;->w(I)Landroidx/compose/runtime/i;
+    invoke-interface {p1, v0}, Ll1/g;->u(I)Ll1/g;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/t0;
+    iget-object v0, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    invoke-interface {v0}, Landroidx/compose/runtime/t0;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Ll1/c2;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lr00/p;
+    check-cast v0, Ldp0/p;
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
     goto :goto_0
 
-    :cond_1
+    :cond_0
     const/4 v1, 0x0
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    invoke-interface {v0, p1, v1}, Lr00/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1, v1}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
-    invoke-interface {p1}, Landroidx/compose/runtime/i;->y()Landroidx/compose/runtime/l1;
+    invoke-interface {p1}, Ll1/g;->w()Ll1/v1;
 
     move-result-object p1
 
-    if-nez p1, :cond_2
+    if-nez p1, :cond_1
 
     goto :goto_1
 
-    :cond_2
+    :cond_1
     new-instance v0, Landroidx/compose/ui/platform/ComposeView$a;
 
     invoke-direct {v0, p0, p2}, Landroidx/compose/ui/platform/ComposeView$a;-><init>(Landroidx/compose/ui/platform/ComposeView;I)V
 
-    invoke-interface {p1, v0}, Landroidx/compose/runtime/l1;->a(Lr00/p;)V
+    invoke-interface {p1, v0}, Ll1/v1;->a(Ldp0/p;)V
 
     :goto_1
-    invoke-static {}, Landroidx/compose/runtime/k;->O()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    invoke-static {}, Landroidx/compose/runtime/k;->Y()V
-
-    :cond_3
     return-void
 .end method
 
 .method public getAccessibilityClassName()Ljava/lang/CharSequence;
-    .locals 2
+    .locals 1
 
-    .line 1
     const-class v0, Landroidx/compose/ui/platform/ComposeView;
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "javaClass.name"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "androidx.compose.ui.platform.ComposeView"
 
     return-object v0
 .end method
 
-.method protected getShouldCreateCompositionOnAttachedToWindow()Z
+.method public getShouldCreateCompositionOnAttachedToWindow()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/compose/ui/platform/ComposeView;->j:Z
 
     return v0
 .end method
 
-.method public final setContent(Lr00/p;)V
+.method public final setContent(Ldp0/p;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lr00/p<",
+            "Ldp0/p<",
             "-",
-            "Landroidx/compose/runtime/i;",
+            "Ll1/g;",
             "-",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "content"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -235,19 +212,19 @@
     iput-boolean v0, p0, Landroidx/compose/ui/platform/ComposeView;->j:Z
 
     .line 2
-    iget-object v0, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/t0;
+    iget-object v0, p0, Landroidx/compose/ui/platform/ComposeView;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    invoke-interface {v0, p1}, Landroidx/compose/runtime/t0;->setValue(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Ll1/c2;->setValue(Ljava/lang/Object;)V
 
     .line 3
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->isAttachedToWindow()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAttachedToWindow()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 4
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/a;->d()V
+    invoke-virtual {p0}, Landroidx/compose/ui/platform/a;->c()V
 
     :cond_0
     return-void

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView android:id="@id/ll_profile_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:gravity="center_horizontal" android:id="@id/tv_block_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="35.0dip" android:text="@string/after_block_info" android:maxLines="2" />
-        <android.widget.Button android:layout_gravity="center" android:id="@id/bt_block_list_profile" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:text="@string/block_list_title" />
-    </LinearLayout>
-</androidx.core.widget.NestedScrollView>

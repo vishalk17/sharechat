@@ -13,7 +13,6 @@
         Lcoil/svg/R$id;,
         Lcoil/svg/R$integer;,
         Lcoil/svg/R$layout;,
-        Lcoil/svg/R$menu;,
         Lcoil/svg/R$string;,
         Lcoil/svg/R$style;,
         Lcoil/svg/R$styleable;

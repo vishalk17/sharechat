@@ -1,114 +1,77 @@
 .class public final Landroidx/compose/ui/platform/x0;
-.super Ljava/lang/Object;
+.super Lep0/u;
 .source "SourceFile"
 
+# interfaces
+.implements Ldp0/a;
 
-# static fields
-.field private static final a:Lr00/l;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lr00/l<",
-            "Landroidx/compose/ui/platform/z0;",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
-.end field
 
-.field private static b:Z
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
-.field public static final synthetic c:I
+
+# instance fields
+.field public final synthetic b:Z
+
+.field public final synthetic c:Lk6/a;
+
+.field public final synthetic d:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(ZLk6/a;Ljava/lang/String;)V
+    .locals 0
 
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/x0$a;->b:Landroidx/compose/ui/platform/x0$a;
+    iput-boolean p1, p0, Landroidx/compose/ui/platform/x0;->b:Z
 
-    sput-object v0, Landroidx/compose/ui/platform/x0;->a:Lr00/l;
+    iput-object p2, p0, Landroidx/compose/ui/platform/x0;->c:Lk6/a;
+
+    iput-object p3, p0, Landroidx/compose/ui/platform/x0;->d:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
-.method public static final a()Lr00/l;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lr00/l<",
-            "Landroidx/compose/ui/platform/z0;",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/platform/x0;->a:Lr00/l;
+    iget-boolean v0, p0, Landroidx/compose/ui/platform/x0;->b:Z
 
-    return-object v0
-.end method
-
-.method public static final b(Landroidx/compose/ui/h;Lr00/l;Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/compose/ui/h;",
-            "Lr00/l<",
-            "-",
-            "Landroidx/compose/ui/platform/z0;",
-            "Li00/a0;",
-            ">;",
-            "Landroidx/compose/ui/h;",
-            ")",
-            "Landroidx/compose/ui/h;"
-        }
-    .end annotation
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "inspectorInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "wrapped"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Landroidx/compose/ui/platform/w0;
-
-    invoke-direct {v0, p1}, Landroidx/compose/ui/platform/w0;-><init>(Lr00/l;)V
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {p0, v0}, Landroidx/compose/ui/h;->D(Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
+    iget-object v0, p0, Landroidx/compose/ui/platform/x0;->c:Lk6/a;
 
-    move-result-object p0
+    iget-object v1, p0, Landroidx/compose/ui/platform/x0;->d:Ljava/lang/String;
 
-    invoke-interface {p0, p2}, Landroidx/compose/ui/h;->D(Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p0
+    const-string v2, "key"
 
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/w0;->c()Landroidx/compose/ui/platform/w0$a;
+    .line 3
+    invoke-static {v1, v2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object p1
+    .line 4
+    iget-object v0, v0, Lk6/a;->a:Ls/b;
 
-    invoke-interface {p0, p1}, Landroidx/compose/ui/h;->D(Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
+    invoke-virtual {v0, v1}, Ls/b;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p0
+    .line 5
+    :cond_0
+    sget-object v0, Lro0/x;->a:Lro0/x;
 
-    return-object p0
-.end method
-
-.method public static final c()Z
-    .locals 1
-
-    .line 1
-    sget-boolean v0, Landroidx/compose/ui/platform/x0;->b:Z
-
-    return v0
+    return-object v0
 .end method

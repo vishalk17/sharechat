@@ -12,23 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic AFInAppEventParameterName:Lcom/appsflyer/internal/ag$b;
+.field public final synthetic AFInAppEventParameterName:Lcom/appsflyer/internal/ag$b;
 
 .field private synthetic AFInAppEventType:Ljava/util/concurrent/Executor;
 
-.field valueOf:Z
+.field public valueOf:Z
 
-.field values:Z
+.field public values:Z
 
 
 # direct methods
-.method constructor <init>(Ljava/util/concurrent/Executor;Lcom/appsflyer/internal/ag$b;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lcom/appsflyer/internal/ag$b;)V
     .locals 0
 
     .line 1
@@ -51,7 +51,6 @@
 .method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     iget-object p2, p0, Lcom/appsflyer/internal/ag$3;->AFInAppEventType:Ljava/util/concurrent/Executor;
 
     new-instance v0, Lcom/appsflyer/internal/ag$3$1;
@@ -72,7 +71,6 @@
 .method public final onActivityPaused(Landroid/app/Activity;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/ag$3;->AFInAppEventType:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/appsflyer/internal/ag$3$4;
@@ -87,7 +85,6 @@
 .method public final onActivityResumed(Landroid/app/Activity;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/ag$3;->AFInAppEventType:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/appsflyer/internal/ag$3$5;

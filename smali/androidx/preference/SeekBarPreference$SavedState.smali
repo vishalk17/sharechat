@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,18 +27,17 @@
 
 
 # instance fields
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field d:I
+.field public d:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/preference/SeekBarPreference$SavedState$a;
 
     invoke-direct {v0}, Landroidx/preference/SeekBarPreference$SavedState$a;-><init>()V
@@ -48,7 +47,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
     .line 1
@@ -80,7 +79,7 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1

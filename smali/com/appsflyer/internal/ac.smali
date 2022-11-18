@@ -17,16 +17,15 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static AFInAppEventParameterName(Landroid/content/Context;)Lcom/appsflyer/internal/ac$c;
+.method public static AFInAppEventParameterName(Landroid/content/Context;)Lcom/appsflyer/internal/ac$c;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {

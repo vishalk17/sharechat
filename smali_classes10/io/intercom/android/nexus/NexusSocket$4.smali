@@ -1,4 +1,4 @@
-.class final Lio/intercom/android/nexus/NexusSocket$4;
+.class Lio/intercom/android/nexus/NexusSocket$4;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,16 +12,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +53,6 @@
 .method public request()Lokhttp3/Request;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "ClosedSocket has no request"
@@ -72,7 +70,7 @@
     return p1
 .end method
 
-.method public send(Lokio/f;)Z
+.method public send(Lmt0/f;)Z
     .locals 0
 
     const/4 p1, 0x0

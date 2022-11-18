@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/web/WebViewFragment;->qo(Ljava/lang/String;)V
+    value = Lin/mohalla/sharechat/web/WebViewFragment;->lp(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -14,43 +14,32 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic a:Ljava/lang/String;
+# static fields
+.field public static final synthetic c:I
 
-.field final synthetic b:Lru/s2;
+
+# instance fields
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Lre0/l2;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Lru/s2;)V
+.method public constructor <init>(Ljava/lang/String;Lre0/l2;)V
     .locals 0
 
     iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->b:Lru/s2;
+    iput-object p2, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->b:Lre0/l2;
 
-    .line 1
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
-
-    return-void
-.end method
-
-.method public static synthetic a(Ljava/lang/String;)V
-    .locals 0
-
-    invoke-static {p0}, Lin/mohalla/sharechat/web/WebViewFragment$b;->b(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method private static final b(Ljava/lang/String;)V
-    .locals 0
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onLoadResource(Landroid/webkit/WebView;Ljava/lang/String;)V
+.method public final onLoadResource(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 3
 
     .line 1
@@ -73,13 +62,13 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->b:Lru/s2;
+    iget-object v0, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->b:Lre0/l2;
 
-    iget-object v0, v0, Lru/s2;->c:Landroid/webkit/WebView;
+    iget-object v0, v0, Lre0/l2;->c:Landroid/webkit/WebView;
 
     iget-object v1, p0, Lin/mohalla/sharechat/web/WebViewFragment$b;->a:Ljava/lang/String;
 
-    sget-object v2, Lin/mohalla/sharechat/web/n;->a:Lin/mohalla/sharechat/web/n;
+    sget-object v2, Lxm0/k;->a:Lxm0/k;
 
     invoke-virtual {v0, v1, v2}, Landroid/webkit/WebView;->evaluateJavascript(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 

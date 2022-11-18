@@ -1,163 +1,64 @@
-.class public Ls3/c;
+.class public final Ls3/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field private final a:[F
+.field public a:Lo2/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo2/d;"
+        }
+    .end annotation
+.end field
 
-.field private final b:[I
+.field public b:Lo2/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lo2/d;"
+        }
+    .end annotation
+.end field
+
+.field public c:[Ls3/f;
 
 
 # direct methods
-.method public constructor <init>([F[I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Ls3/c;->a:[F
+    new-instance v0, Lo2/d;
+
+    const/16 v1, 0x100
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lo2/d;-><init>(II)V
 
     .line 3
-    iput-object p2, p0, Ls3/c;->b:[I
+    new-instance v0, Lo2/d;
 
-    return-void
-.end method
+    invoke-direct {v0, v1, v2}, Lo2/d;-><init>(II)V
 
-
-# virtual methods
-.method public a()[I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ls3/c;->b:[I
-
-    return-object v0
-.end method
-
-.method public b()[F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ls3/c;->a:[F
-
-    return-object v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ls3/c;->b:[I
-
-    array-length v0, v0
-
-    return v0
-.end method
-
-.method public d(Ls3/c;Ls3/c;F)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p1, Ls3/c;->b:[I
-
-    array-length v0, v0
-
-    iget-object v1, p2, Ls3/c;->b:[I
-
-    array-length v1, v1
-
-    if-ne v0, v1, :cond_1
-
-    const/4 v0, 0x0
-
-    .line 2
-    :goto_0
-    iget-object v1, p1, Ls3/c;->b:[I
-
-    array-length v1, v1
-
-    if-ge v0, v1, :cond_0
-
-    .line 3
-    iget-object v1, p0, Ls3/c;->a:[F
-
-    iget-object v2, p1, Ls3/c;->a:[F
-
-    aget v2, v2, v0
-
-    iget-object v3, p2, Ls3/c;->a:[F
-
-    aget v3, v3, v0
-
-    invoke-static {v2, v3, p3}, Lcom/airbnb/lottie/utils/g;->k(FFF)F
-
-    move-result v2
-
-    aput v2, v1, v0
+    iput-object v0, p0, Ls3/c;->a:Lo2/d;
 
     .line 4
-    iget-object v1, p0, Ls3/c;->b:[I
+    new-instance v0, Lo2/d;
 
-    iget-object v2, p1, Ls3/c;->b:[I
+    invoke-direct {v0, v1, v2}, Lo2/d;-><init>(II)V
 
-    aget v2, v2, v0
+    iput-object v0, p0, Ls3/c;->b:Lo2/d;
 
-    iget-object v3, p2, Ls3/c;->b:[I
+    const/16 v0, 0x20
 
-    aget v3, v3, v0
-
-    invoke-static {p3, v2, v3}, Lcom/airbnb/lottie/utils/b;->c(FII)I
-
-    move-result v2
-
-    aput v2, v1, v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-void
+    new-array v0, v0, [Ls3/f;
 
     .line 5
-    :cond_1
-    new-instance p3, Ljava/lang/IllegalArgumentException;
+    iput-object v0, p0, Ls3/c;->c:[Ls3/f;
 
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Cannot interpolate between gradients. Lengths vary ("
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p1, p1, Ls3/c;->b:[I
-
-    array-length p1, p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, " vs "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object p1, p2, Ls3/c;->b:[I
-
-    array-length p1, p1
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string p1, ")"
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p3, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p3
+    return-void
 .end method

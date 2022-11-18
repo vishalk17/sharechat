@@ -65,13 +65,11 @@
     return v2
 
     :cond_0
-    const-string v0, "com.android.installreferrer.api.InstallReferrerClient"
-
     :try_start_0
-    const-string v1, "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+    const-string v0, "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
 
     .line 5
-    invoke-static {p0, v1}, Lcom/appsflyer/internal/aa;->AFInAppEventParameterName(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lcom/appsflyer/internal/aa;->AFInAppEventParameterName(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result p0
 
@@ -100,6 +98,8 @@
     :catchall_0
     move-exception p0
 
+    const-string v0, "com.android.installreferrer.api.InstallReferrerClient"
+
     const-string v1, "An error occurred while trying to verify manifest : "
 
     .line 8
@@ -111,24 +111,10 @@
 
     return v2
 
-    .line 9
     :catch_0
-    new-instance p0, Ljava/lang/StringBuilder;
+    const-string p0, "Class com.android.installreferrer.api.InstallReferrerClient not found"
 
-    const-string v1, "Class "
-
-    invoke-direct {p0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, " not found"
-
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
+    .line 9
     invoke-static {p0}, Lcom/appsflyer/AFLogger;->AFInAppEventParameterName(Ljava/lang/String;)V
 
     return v2

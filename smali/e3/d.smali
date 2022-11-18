@@ -1,128 +1,189 @@
 .class public final Le3/d;
-.super Ljava/lang/Object;
+.super Lr4/j$c;
 .source "SourceFile"
-
-# interfaces
-.implements Lcoil/memory/MemoryCache;
 
 
 # instance fields
-.field private final a:Le3/g;
+.field public final synthetic a:Lyr0/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lyr0/l<",
+            "Landroid/graphics/Typeface;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private final b:Le3/h;
+.field public final synthetic b:Ld3/a;
 
 
 # direct methods
-.method public constructor <init>(Le3/g;Le3/h;)V
+.method public constructor <init>(Lyr0/l;Ld3/a;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lyr0/l<",
+            "-",
+            "Landroid/graphics/Typeface;",
+            ">;",
+            "Ld3/a;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Le3/d;->a:Lyr0/l;
 
-    .line 2
-    iput-object p1, p0, Le3/d;->a:Le3/g;
+    iput-object p2, p0, Le3/d;->b:Ld3/a;
 
-    .line 3
-    iput-object p2, p0, Le3/d;->b:Le3/h;
+    invoke-direct {p0}, Lr4/j$c;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le3/d;->a:Le3/g;
-
-    invoke-interface {v0, p1}, Le3/g;->a(I)V
-
-    .line 2
-    iget-object v0, p0, Le3/d;->b:Le3/h;
-
-    invoke-interface {v0, p1}, Le3/h;->a(I)V
-
-    return-void
-.end method
-
-.method public c(Lcoil/memory/MemoryCache$Key;)Lcoil/memory/MemoryCache$b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le3/d;->a:Le3/g;
-
-    invoke-interface {v0, p1}, Le3/g;->c(Lcoil/memory/MemoryCache$Key;)Lcoil/memory/MemoryCache$b;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Le3/d;->b:Le3/h;
-
-    invoke-interface {v0, p1}, Le3/h;->c(Lcoil/memory/MemoryCache$Key;)Lcoil/memory/MemoryCache$b;
-
-    move-result-object v0
-
-    :cond_0
-    return-object v0
-.end method
-
-.method public clear()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Le3/d;->a:Le3/g;
-
-    invoke-interface {v0}, Le3/g;->b()V
-
-    .line 2
-    iget-object v0, p0, Le3/d;->b:Le3/h;
-
-    invoke-interface {v0}, Le3/h;->b()V
-
-    return-void
-.end method
-
-.method public d(Lcoil/memory/MemoryCache$Key;Lcoil/memory/MemoryCache$b;)V
+.method public final a(I)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Le3/d;->a:Le3/g;
+    iget-object v0, p0, Le3/d;->a:Lyr0/l;
 
     .line 2
-    invoke-virtual {p1}, Lcoil/memory/MemoryCache$Key;->c()Ljava/util/Map;
+    new-instance v1, Ljava/lang/IllegalStateException;
 
-    move-result-object v1
+    const-string v2, "Failed to load "
 
-    invoke-static {v1}, Lcoil/util/c;->b(Ljava/util/Map;)Ljava/util/Map;
+    .line 3
+    invoke-static {v2}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    const/4 v2, 0x0
+    .line 4
+    iget-object v3, p0, Le3/d;->b:Ld3/a;
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v3, " (reason="
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v3, ", "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/4 v3, -0x4
+
+    if-eq p1, v3, :cond_6
+
+    const/4 v3, -0x3
+
+    if-eq p1, v3, :cond_5
+
+    const/4 v3, -0x2
+
+    if-eq p1, v3, :cond_4
+
+    const/4 v3, -0x1
+
+    if-eq p1, v3, :cond_3
 
     const/4 v3, 0x1
 
-    invoke-static {p1, v2, v1, v3, v2}, Lcoil/memory/MemoryCache$Key;->b(Lcoil/memory/MemoryCache$Key;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Lcoil/memory/MemoryCache$Key;
+    if-eq p1, v3, :cond_2
+
+    const/4 v3, 0x2
+
+    if-eq p1, v3, :cond_1
+
+    const/4 v3, 0x3
+
+    if-eq p1, v3, :cond_0
+
+    const-string p1, "Unknown error code"
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "The given query was not supported by this provider."
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "The provider found the queried font, but it is currently unavailable."
+
+    goto :goto_0
+
+    :cond_2
+    const-string p1, "Font not found, please check availability on GoogleFont.Provider.AllFontsList: "
+
+    .line 5
+    invoke-static {p1}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
-    .line 3
-    invoke-virtual {p2}, Lcoil/memory/MemoryCache$b;->a()Landroid/graphics/Bitmap;
+    .line 6
+    sget-object v3, Le3/b;->e:Le3/b$a;
 
-    move-result-object v1
+    invoke-static {v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
-    invoke-virtual {p2}, Lcoil/memory/MemoryCache$b;->b()Ljava/util/Map;
+    .line 7
+    sget-object v3, Le3/b;->f:Landroid/net/Uri;
 
-    move-result-object p2
+    .line 8
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    invoke-static {p2}, Lcoil/util/c;->b(Ljava/util/Map;)Ljava/util/Map;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p2
+    move-result-object p1
 
-    .line 5
-    invoke-interface {v0, p1, v1, p2}, Le3/g;->d(Lcoil/memory/MemoryCache$Key;Landroid/graphics/Bitmap;Ljava/util/Map;)V
+    goto :goto_0
+
+    :cond_3
+    const-string p1, "The requested provider was not found on this device."
+
+    goto :goto_0
+
+    :cond_4
+    const-string p1, "The given provider cannot be authenticated with the certificates given."
+
+    goto :goto_0
+
+    :cond_5
+    const-string p1, "Generic error loading font, for example variation settings were not parsable"
+
+    goto :goto_0
+
+    :cond_6
+    const-string p1, "Font was not loaded due to security issues. This usually means the font was attempted to load in a restricted context"
+
+    :goto_0
+    const/16 v3, 0x29
+
+    .line 9
+    invoke-static {v2, p1, v3}, Ld50/c;->b(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 10
+    invoke-direct {v1, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 11
+    invoke-interface {v0, v1}, Lyr0/l;->v(Ljava/lang/Throwable;)Z
+
+    return-void
+.end method
+
+.method public final b(Landroid/graphics/Typeface;)V
+    .locals 2
+
+    iget-object v0, p0, Le3/d;->a:Lyr0/l;
+
+    sget-object v1, Lro0/n;->c:Lro0/n$a;
+
+    invoke-interface {v0, p1}, Lvo0/d;->resumeWith(Ljava/lang/Object;)V
 
     return-void
 .end method

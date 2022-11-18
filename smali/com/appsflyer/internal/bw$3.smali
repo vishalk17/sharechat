@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -29,10 +29,9 @@
 
 
 # direct methods
-.method varargs constructor <init>(Lcom/appsflyer/internal/bw;Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)V
+.method public varargs constructor <init>(Lcom/appsflyer/internal/bw;Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/bw$3;->AFInAppEventType:Lcom/appsflyer/internal/bw;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/appsflyer/internal/aw;-><init>(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)V
@@ -200,7 +199,7 @@
 
     move-result-object v5
 
-    invoke-interface {v3, v4, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v4, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     const-string v4, "click_server_ts"
@@ -219,7 +218,7 @@
     invoke-static {v4, v3, v2}, Lcom/appsflyer/internal/bw$3;->AFKeystoreWrapper(Ljava/lang/String;Ljava/util/Map;Landroid/database/Cursor;)V
 
     .line 17
-    invoke-interface {v3}, Ljava/util/Map;->isEmpty()Z
+    invoke-virtual {v3}, Ljava/util/HashMap;->isEmpty()Z
 
     move-result v4
 

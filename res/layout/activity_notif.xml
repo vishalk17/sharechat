@@ -10,7 +10,7 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
-    <include android:id="@id/layout_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/app_bar" layout="@layout/notification_category_header" />
+    <include android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/app_bar" layout="@layout/notification_category_header" />
     <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_header" android:layout_width="fill_parent" android:layout_height="0.0dip" app:barrierDirection="bottom" app:constraint_referenced_ids="app_bar,layout_header" />
     <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/barrier_header" />
     <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:id="@id/tv_empty_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_notifications" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />

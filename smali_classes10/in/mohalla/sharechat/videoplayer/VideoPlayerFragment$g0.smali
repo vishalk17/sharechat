@@ -1,86 +1,80 @@
-.class final Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;
-.super Lkotlin/jvm/internal/r;
+.class public final Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/p;
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G()V
+    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->D()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/p<",
+        "Lep0/u;",
+        "Ldp0/p<",
         "Landroid/content/Context;",
         "Landroidx/fragment/app/FragmentActivity;",
-        "Li00/a0;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+.field public final synthetic b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
 
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+.method public constructor <init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
     .locals 0
 
     iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/content/Context;Landroidx/fragment/app/FragmentActivity;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "<anonymous parameter 1>"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-    invoke-virtual {p2}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->Jo()Lbz/a;
-
-    move-result-object p2
-
-    invoke-interface {p2, p1}, Lbz/a;->q0(Landroid/content/Context;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
 
     .line 1
     check-cast p1, Landroid/content/Context;
 
     check-cast p2, Landroidx/fragment/app/FragmentActivity;
 
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;->a(Landroid/content/Context;Landroidx/fragment/app/FragmentActivity;)V
+    const-string v0, "context"
 
-    sget-object p1, Li00/a0;->a:Li00/a0;
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+
+    invoke-virtual {p2}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
+
+    move-result-object p2
+
+    invoke-interface {p2, p1}, Lnm0/a;->B0(Landroid/content/Context;)V
+
+    .line 4
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

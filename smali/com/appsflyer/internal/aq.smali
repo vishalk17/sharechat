@@ -36,12 +36,6 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public constructor <init>(Landroid/content/Context;Lcom/appsflyer/internal/au;)V
     .locals 7
 
@@ -145,7 +139,7 @@
     return-object p1
 .end method
 
-.method static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/aq;)V
+.method public static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/aq;)V
     .locals 7
 
     .line 5
@@ -182,7 +176,7 @@
     if-eq v5, v6, :cond_0
 
     .line 11
-    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_0
     add-int/lit8 v3, v3, 0x1
@@ -191,14 +185,14 @@
 
     .line 12
     :cond_1
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
     iput v1, p0, Lcom/appsflyer/internal/aq;->AppsFlyerLib:I
 
     .line 13
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
@@ -399,7 +393,7 @@
     .line 9
     iget-object v2, p0, Lcom/appsflyer/internal/g;->AFInAppEventType:Ljava/util/Map;
 
-    invoke-virtual {v0, p1}, Lcom/appsflyer/AppsFlyerLib;->getAppsFlyerUID(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/appsflyer/internal/ae;->getAppsFlyerUID(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -482,7 +476,7 @@
     const-string v5, "UTC"
 
     .line 19
-    invoke-static {v5}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    invoke-static {v5}, Lj$/util/DesugarTimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v5
 
@@ -578,12 +572,12 @@
 
     check-cast v4, Ljava/lang/String;
 
-    invoke-interface {v5, v7, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v7, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v4, "value"
 
     .line 30
-    invoke-interface {v5, v4, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v5, v4, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
@@ -594,13 +588,13 @@
     if-eqz v5, :cond_3
 
     .line 31
-    invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 32
     :cond_5
-    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
@@ -648,7 +642,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v5
 
@@ -789,7 +783,7 @@
     return v0
 .end method
 
-.method static synthetic valueOf(Lcom/appsflyer/internal/aq;Landroid/content/Context;)Lcom/appsflyer/deeplink/DeepLinkResult;
+.method public static synthetic valueOf(Lcom/appsflyer/internal/aq;Landroid/content/Context;)Lcom/appsflyer/deeplink/DeepLinkResult;
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1052,7 +1046,7 @@
     return-object p0
 .end method
 
-.method static synthetic valueOf(Lcom/appsflyer/internal/aq;Lcom/appsflyer/internal/bt;)V
+.method public static synthetic valueOf(Lcom/appsflyer/internal/aq;Lcom/appsflyer/internal/bt;)V
     .locals 0
 
     .line 1
@@ -1178,7 +1172,7 @@
     return v2
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/aq;)Landroid/app/Application;
+.method public static synthetic values(Lcom/appsflyer/internal/aq;)Landroid/app/Application;
     .locals 0
 
     .line 7
@@ -1187,7 +1181,7 @@
     return-object p0
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/aq;Landroid/content/Context;)V
+.method public static synthetic values(Lcom/appsflyer/internal/aq;Landroid/content/Context;)V
     .locals 0
 
     .line 1

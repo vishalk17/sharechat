@@ -19,11 +19,11 @@
 
 
 # static fields
-.field static final serialVersionUID:J = 0x1L
+.field public static final serialVersionUID:J = 0x1L
 
 
 # instance fields
-.field private c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -57,20 +57,4 @@
     iput-object p1, p0, Landroidx/databinding/i;->c:Ljava/lang/Object;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public f()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/databinding/i;->c:Ljava/lang/Object;
-
-    return-object v0
 .end method

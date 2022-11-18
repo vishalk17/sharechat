@@ -1,67 +1,113 @@
 .class public final Ly0/a;
-.super Landroid/text/style/CharacterStyle;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/text/style/UpdateAppearance;
+.implements Ly0/d0;
 
 
-# instance fields
-.field private final b:Landroidx/compose/ui/graphics/g1;
+# static fields
+.field public static final a:Ly0/a;
 
-.field private c:Le0/l;
+.field public static final b:Lso0/f0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ly0/j;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final c:Lu0/m0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/graphics/g1;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "shaderBrush"
+    new-instance v0, Ly0/a;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Ly0/a;-><init>()V
+
+    sput-object v0, Ly0/a;->a:Ly0/a;
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
+    sget-object v0, Lso0/f0;->b:Lso0/f0;
 
     .line 2
-    iput-object p1, p0, Ly0/a;->b:Landroidx/compose/ui/graphics/g1;
+    sput-object v0, Ly0/a;->b:Lso0/f0;
+
+    .line 3
+    sget-object v0, Ln3/i;->b:Ln3/i$a;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    sget-object v0, Ln3/i;->b:Ln3/i$a;
+
+    .line 5
+    sget-object v0, Lu0/m0;->Vertical:Lu0/m0;
+
+    sput-object v0, Ly0/a;->c:Lu0/m0;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Le0/l;)V
-    .locals 0
+.method public final a()Lu0/m0;
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Ly0/a;->c:Le0/l;
+    sget-object v0, Ly0/a;->c:Lu0/m0;
 
-    return-void
+    return-object v0
 .end method
 
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 3
+.method public final b()I
+    .locals 1
 
-    if-eqz p1, :cond_0
+    const/4 v0, 0x0
 
-    .line 1
-    iget-object v0, p0, Ly0/a;->c:Le0/l;
+    return v0
+.end method
 
-    if-eqz v0, :cond_0
+.method public final c()I
+    .locals 1
 
-    invoke-virtual {v0}, Le0/l;->m()J
+    const/4 v0, 0x0
 
-    move-result-wide v0
+    return v0
+.end method
 
-    iget-object v2, p0, Ly0/a;->b:Landroidx/compose/ui/graphics/g1;
+.method public final d()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ly0/j;",
+            ">;"
+        }
+    .end annotation
 
-    invoke-virtual {v2, v0, v1}, Landroidx/compose/ui/graphics/g1;->b(J)Landroid/graphics/Shader;
+    sget-object v0, Ly0/a;->b:Lso0/f0;
 
-    move-result-object v0
+    return-object v0
+.end method
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+.method public final e()I
+    .locals 1
 
-    :cond_0
-    return-void
+    const/4 v0, 0x0
+
+    return v0
 .end method

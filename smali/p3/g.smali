@@ -1,194 +1,102 @@
-.class public Lp3/g;
-.super Ljava/lang/Object;
+.class public final Lp3/g;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Ll1/g;",
+        "Ljava/lang/Integer;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lp3/a<",
-            "Ls3/l;",
-            "Landroid/graphics/Path;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic b:Lx1/h;
 
-.field private final b:Ljava/util/List;
+.field public final synthetic c:Ldp0/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List<",
-            "Lp3/a<",
+            "Ldp0/p<",
+            "Ll1/g;",
             "Ljava/lang/Integer;",
-            "Ljava/lang/Integer;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private final c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ls3/g;",
+            "Lro0/x;",
             ">;"
         }
     .end annotation
 .end field
 
+.field public final synthetic d:I
+
+.field public final synthetic e:I
+
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 3
+.method public constructor <init>(Lx1/h;Ldp0/p;II)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/List<",
-            "Ls3/g;",
-            ">;)V"
+            "Lx1/h;",
+            "Ldp0/p<",
+            "-",
+            "Ll1/g;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lro0/x;",
+            ">;II)V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lp3/g;->b:Lx1/h;
 
-    .line 2
-    iput-object p1, p0, Lp3/g;->c:Ljava/util/List;
+    iput-object p2, p0, Lp3/g;->c:Ldp0/p;
 
-    .line 3
-    new-instance v0, Ljava/util/ArrayList;
+    iput p3, p0, Lp3/g;->d:I
 
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    iput p4, p0, Lp3/g;->e:I
 
-    move-result v1
+    const/4 p1, 0x2
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
-    iput-object v0, p0, Lp3/g;->a:Ljava/util/List;
-
-    .line 4
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
-
-    iput-object v0, p0, Lp3/g;->b:Ljava/util/List;
-
-    const/4 v0, 0x0
-
-    .line 5
-    :goto_0
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_0
-
-    .line 6
-    iget-object v1, p0, Lp3/g;->a:Ljava/util/List;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ls3/g;
-
-    invoke-virtual {v2}, Ls3/g;->b()Lcom/airbnb/lottie/model/animatable/h;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/airbnb/lottie/model/animatable/h;->j()Lp3/a;
-
-    move-result-object v2
-
-    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ls3/g;
-
-    invoke-virtual {v1}, Ls3/g;->c()Lcom/airbnb/lottie/model/animatable/d;
-
-    move-result-object v1
-
-    .line 8
-    iget-object v2, p0, Lp3/g;->b:Ljava/util/List;
-
-    invoke-virtual {v1}, Lcom/airbnb/lottie/model/animatable/d;->j()Lp3/a;
-
-    move-result-object v1
-
-    invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lp3/a<",
-            "Ls3/l;",
-            "Landroid/graphics/Path;",
-            ">;>;"
-        }
-    .end annotation
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    check-cast p1, Ll1/g;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
     .line 1
-    iget-object v0, p0, Lp3/g;->a:Ljava/util/List;
+    iget-object p2, p0, Lp3/g;->b:Lx1/h;
 
-    return-object v0
-.end method
+    iget-object v0, p0, Lp3/g;->c:Ldp0/p;
 
-.method public b()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ls3/g;",
-            ">;"
-        }
-    .end annotation
+    iget v1, p0, Lp3/g;->d:I
 
-    .line 1
-    iget-object v0, p0, Lp3/g;->c:Ljava/util/List;
+    or-int/lit8 v1, v1, 0x1
 
-    return-object v0
-.end method
+    iget v2, p0, Lp3/g;->e:I
 
-.method public c()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Lp3/a<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Integer;",
-            ">;>;"
-        }
-    .end annotation
+    invoke-static {p2, v0, p1, v1, v2}, Lp3/c;->b(Lx1/h;Ldp0/p;Ll1/g;II)V
 
-    .line 1
-    iget-object v0, p0, Lp3/g;->b:Ljava/util/List;
+    .line 2
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
-    return-object v0
+    return-object p1
 .end method

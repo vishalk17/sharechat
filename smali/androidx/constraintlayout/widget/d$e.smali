@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/d$e;
+.class public final Landroidx/constraintlayout/widget/d$e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field private static o:Landroid/util/SparseIntArray;
+.field public static o:Landroid/util/SparseIntArray;
 
 
 # instance fields
@@ -49,7 +49,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 1
@@ -231,7 +231,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/widget/d$e;)V
+.method public final a(Landroidx/constraintlayout/widget/d$e;)V
     .locals 1
 
     .line 1
@@ -307,8 +307,8 @@
     return-void
 .end method
 
-.method b(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 5
+.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 4
 
     .line 1
     sget-object v0, Landroidx/constraintlayout/widget/R$styleable;->Transform:[I
@@ -330,7 +330,7 @@
     const/4 v1, 0x0
 
     :goto_0
-    if-ge v1, v0, :cond_1
+    if-ge v1, v0, :cond_0
 
     .line 4
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
@@ -344,8 +344,6 @@
 
     move-result v3
 
-    const/16 v4, 0x15
-
     packed-switch v3, :pswitch_data_0
 
     goto/16 :goto_1
@@ -354,24 +352,21 @@
     :pswitch_0
     iget v3, p0, Landroidx/constraintlayout/widget/d$e;->i:I
 
-    invoke-static {p1, v2, v3}, Landroidx/constraintlayout/widget/d;->a(Landroid/content/res/TypedArray;II)I
+    .line 7
+    invoke-static {p1, v2, v3}, Landroidx/constraintlayout/widget/d;->q(Landroid/content/res/TypedArray;II)I
 
     move-result v2
 
+    .line 8
     iput v2, p0, Landroidx/constraintlayout/widget/d$e;->i:I
 
-    goto/16 :goto_1
-
-    .line 7
-    :pswitch_1
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-lt v3, v4, :cond_0
-
-    .line 8
-    iput-boolean p2, p0, Landroidx/constraintlayout/widget/d$e;->m:Z
+    goto :goto_1
 
     .line 9
+    :pswitch_1
+    iput-boolean p2, p0, Landroidx/constraintlayout/widget/d$e;->m:Z
+
+    .line 10
     iget v3, p0, Landroidx/constraintlayout/widget/d$e;->n:F
 
     invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -382,13 +377,8 @@
 
     goto :goto_1
 
-    .line 10
-    :pswitch_2
-    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    if-lt v3, v4, :cond_0
-
     .line 11
+    :pswitch_2
     iget v3, p0, Landroidx/constraintlayout/widget/d$e;->l:F
 
     invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -505,19 +495,16 @@
 
     iput v2, p0, Landroidx/constraintlayout/widget/d$e;->b:F
 
-    :cond_0
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto/16 :goto_0
 
     .line 21
-    :cond_1
+    :cond_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x1

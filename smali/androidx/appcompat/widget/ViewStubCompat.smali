@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field private b:I
+.field public b:I
 
-.field private c:I
+.field public c:I
 
-.field private d:Ljava/lang/ref/WeakReference;
+.field public d:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -26,53 +26,42 @@
     .end annotation
 .end field
 
-.field private e:Landroid/view/LayoutInflater;
+.field public e:Landroid/view/LayoutInflater;
 
-.field private f:Landroidx/appcompat/widget/ViewStubCompat$a;
+.field public f:Landroidx/appcompat/widget/ViewStubCompat$a;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 1
+    .locals 2
 
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/ViewStubCompat;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 2
+    invoke-direct {p0, p1, p2, v0}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
-    invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    const/4 v0, 0x0
-
-    .line 3
     iput v0, p0, Landroidx/appcompat/widget/ViewStubCompat;->b:I
 
-    .line 4
+    .line 3
     sget-object v1, Landroidx/appcompat/R$styleable;->ViewStubCompat:[I
 
-    invoke-virtual {p1, p2, v1, p3, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, v1, v0, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 5
+    .line 4
     sget p2, Landroidx/appcompat/R$styleable;->ViewStubCompat_android_inflatedId:I
 
-    const/4 p3, -0x1
+    const/4 v1, -0x1
 
-    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p2
 
     iput p2, p0, Landroidx/appcompat/widget/ViewStubCompat;->c:I
 
-    .line 6
+    .line 5
     sget p2, Landroidx/appcompat/R$styleable;->ViewStubCompat_android_layout:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -81,26 +70,26 @@
 
     iput p2, p0, Landroidx/appcompat/widget/ViewStubCompat;->b:I
 
-    .line 7
+    .line 6
     sget p2, Landroidx/appcompat/R$styleable;->ViewStubCompat_android_id:I
 
-    invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+    invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p2
 
     invoke-virtual {p0, p2}, Landroid/view/View;->setId(I)V
 
-    .line 8
+    .line 7
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     const/16 p1, 0x8
 
-    .line 9
+    .line 8
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ViewStubCompat;->setVisibility(I)V
 
     const/4 p1, 0x1
 
-    .line 10
+    .line 9
     invoke-virtual {p0, p1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     return-void
@@ -108,7 +97,7 @@
 
 
 # virtual methods
-.method public a()Landroid/view/View;
+.method public final a()Landroid/view/View;
     .locals 4
 
     .line 1
@@ -205,7 +194,7 @@
     if-eqz v0, :cond_3
 
     .line 17
-    invoke-interface {v0, p0, v1}, Landroidx/appcompat/widget/ViewStubCompat$a;->a(Landroidx/appcompat/widget/ViewStubCompat;Landroid/view/View;)V
+    invoke-interface {v0}, Landroidx/appcompat/widget/ViewStubCompat$a;->a()V
 
     :cond_3
     return-object v1
@@ -231,13 +220,13 @@
     throw v0
 .end method
 
-.method protected dispatchDraw(Landroid/graphics/Canvas;)V
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
 
     return-void
 .end method
 
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 0
 
     return-void
@@ -246,7 +235,6 @@
 .method public getInflatedId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/widget/ViewStubCompat;->c:I
 
     return v0
@@ -255,7 +243,6 @@
 .method public getLayoutInflater()Landroid/view/LayoutInflater;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ViewStubCompat;->e:Landroid/view/LayoutInflater;
 
     return-object v0
@@ -264,18 +251,16 @@
 .method public getLayoutResource()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/widget/ViewStubCompat;->b:I
 
     return v0
 .end method
 
-.method protected onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 0
 
     const/4 p1, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, p1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
@@ -284,7 +269,6 @@
 .method public setInflatedId(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/appcompat/widget/ViewStubCompat;->c:I
 
     return-void
@@ -293,7 +277,6 @@
 .method public setLayoutInflater(Landroid/view/LayoutInflater;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ViewStubCompat;->e:Landroid/view/LayoutInflater;
 
     return-void
@@ -302,7 +285,6 @@
 .method public setLayoutResource(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/appcompat/widget/ViewStubCompat;->b:I
 
     return-void
@@ -311,7 +293,6 @@
 .method public setOnInflateListener(Landroidx/appcompat/widget/ViewStubCompat$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ViewStubCompat;->f:Landroidx/appcompat/widget/ViewStubCompat$a;
 
     return-void
@@ -326,7 +307,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 

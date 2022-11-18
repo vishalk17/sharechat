@@ -19,11 +19,9 @@
 
 .field public static final abc_config_actionMenuItemAllCaps:I = 0x7f050001
 
-.field public static final intercom_composer_fits_system_windows:I = 0x7f050006
+.field public static final intercom_composer_fits_system_windows:I = 0x7f050007
 
-.field public static final intercom_composer_keyboard_takes_full_screen_in_landscape:I = 0x7f050007
-
-.field public static final intercom_is_two_pane:I = 0x7f050008
+.field public static final intercom_composer_keyboard_takes_full_screen_in_landscape:I = 0x7f050008
 
 .field public static final mtrl_btn_textappearance_all_caps:I = 0x7f05000b
 

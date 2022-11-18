@@ -3,134 +3,151 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ld3/c;
+.implements Ld3/b0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ld3/c<",
-        "Ljava/lang/Integer;",
-        "Landroid/net/Uri;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput p1, p0, Ld3/d;->a:I
+
     return-void
-.end method
-
-.method private final b(ILandroid/content/Context;)Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    :try_start_0
-    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Landroid/content/res/Resources;->getResourceEntryName(I)Ljava/lang/String;
-
-    move-result-object p1
-    :try_end_0
-    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    const/4 v0, 0x1
-
-    :catch_0
-    :cond_0
-    return v0
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;Lg3/m;)Ljava/lang/Object;
-    .locals 0
+.method public final a(Ld3/w;)Ld3/w;
+    .locals 2
+
+    const-string v0, "fontWeight"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    check-cast p1, Ljava/lang/Number;
+    iget v0, p0, Ld3/d;->a:I
 
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    if-eqz v0, :cond_1
+
+    const v1, 0x7fffffff
+
+    if-ne v0, v1, :cond_0
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iget p1, p1, Ld3/w;->b:I
+
+    add-int/2addr p1, v0
+
+    const/4 v0, 0x1
+
+    const/16 v1, 0x3e8
+
+    .line 3
+    invoke-static {p1, v0, v1}, Lkp0/n;->d(III)I
 
     move-result p1
 
-    invoke-virtual {p0, p1, p2}, Ld3/d;->c(ILg3/m;)Landroid/net/Uri;
+    .line 4
+    new-instance v0, Ld3/w;
 
-    move-result-object p1
+    invoke-direct {v0, p1}, Ld3/w;-><init>(I)V
+
+    return-object v0
+
+    :cond_1
+    :goto_0
+    return-object p1
+.end method
+
+.method public final b(Ld3/l;)Ld3/l;
+    .locals 0
 
     return-object p1
 .end method
 
-.method public c(ILg3/m;)Landroid/net/Uri;
-    .locals 2
+.method public final c(I)I
+    .locals 0
+
+    return p1
+.end method
+
+.method public final d(I)I
+    .locals 0
+
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Ld3/d;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Ld3/d;
+
+    iget v1, p0, Ld3/d;->a:I
+
+    iget p1, p1, Ld3/d;->a:I
+
+    if-eq v1, p1, :cond_2
+
+    return v2
+
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    iget v0, p0, Ld3/d;->a:I
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "AndroidFontResolveInterceptor(fontWeightAdjustment="
 
     .line 1
-    invoke-virtual {p2}, Lg3/m;->g()Landroid/content/Context;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, v0}, Ld3/d;->b(ILandroid/content/Context;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
     .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v1, p0, Ld3/d;->a:I
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "android.resource://"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p2}, Lg3/m;->g()Landroid/content/Context;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 p2, 0x2f
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
+    const/16 v2, 0x29
 
     .line 3
-    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v0, v1, v2}, Lf9/d;->e(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v0
 
-    const-string p2, "parse(this)"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p1
+    return-object v0
 .end method

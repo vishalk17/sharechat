@@ -7,28 +7,25 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/media/AudioAttributesCompatParcelizer;-><init>()V
 
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/b;)Landroidx/media/AudioAttributesCompat;
+.method public static read(Lr6/b;)Landroidx/media/AudioAttributesCompat;
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Landroidx/media/AudioAttributesCompatParcelizer;->read(Landroidx/versionedparcelable/b;)Landroidx/media/AudioAttributesCompat;
+    invoke-static {p0}, Landroidx/media/AudioAttributesCompatParcelizer;->read(Lr6/b;)Landroidx/media/AudioAttributesCompat;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesCompat;Landroidx/versionedparcelable/b;)V
+.method public static write(Landroidx/media/AudioAttributesCompat;Lr6/b;)V
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Landroidx/media/AudioAttributesCompatParcelizer;->write(Landroidx/media/AudioAttributesCompat;Landroidx/versionedparcelable/b;)V
+    invoke-static {p0, p1}, Landroidx/media/AudioAttributesCompatParcelizer;->write(Landroidx/media/AudioAttributesCompat;Lr6/b;)V
 
     return-void
 .end method

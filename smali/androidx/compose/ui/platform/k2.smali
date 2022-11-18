@@ -1,30 +1,57 @@
-.class public interface abstract Landroidx/compose/ui/platform/k2;
-.super Ljava/lang/Object;
+.class public final Landroidx/compose/ui/platform/k2;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/node/d0;
+.implements Ldp0/a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Landroidx/compose/ui/platform/k2$a;
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lro0/x;",
+        ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g0:Landroidx/compose/ui/platform/k2$a;
+# instance fields
+.field public final synthetic b:Landroidx/lifecycle/t;
+
+.field public final synthetic c:Landroidx/lifecycle/z;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroidx/lifecycle/t;Landroidx/lifecycle/z;)V
+    .locals 0
 
-    sget-object v0, Landroidx/compose/ui/platform/k2$a;->a:Landroidx/compose/ui/platform/k2$a;
+    iput-object p1, p0, Landroidx/compose/ui/platform/k2;->b:Landroidx/lifecycle/t;
 
-    sput-object v0, Landroidx/compose/ui/platform/k2;->g0:Landroidx/compose/ui/platform/k2$a;
+    iput-object p2, p0, Landroidx/compose/ui/platform/k2;->c:Landroidx/lifecycle/z;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/platform/k2;->b:Landroidx/lifecycle/t;
+
+    iget-object v1, p0, Landroidx/compose/ui/platform/k2;->c:Landroidx/lifecycle/z;
+
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/t;->c(Landroidx/lifecycle/a0;)V
+
+    .line 2
+    sget-object v0, Lro0/x;->a:Lro0/x;
+
+    return-object v0
 .end method

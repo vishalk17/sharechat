@@ -3,46 +3,40 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/u;
+.implements Landroidx/lifecycle/z;
 
 
 # instance fields
-.field private final b:Landroidx/lifecycle/o;
+.field public final b:Landroidx/lifecycle/r;
 
 
 # direct methods
-.method constructor <init>(Landroidx/lifecycle/o;)V
+.method public constructor <init>(Landroidx/lifecycle/r;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/o;
+    iput-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/r;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
-    .locals 3
+.method public final e(Landroidx/lifecycle/b0;Landroidx/lifecycle/t$b;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/o;
+    iget-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/r;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    invoke-interface {v0, p1, p2, v1, v2}, Landroidx/lifecycle/o;->a(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;ZLandroidx/lifecycle/g0;)V
+    invoke-interface {p1}, Landroidx/lifecycle/r;->a()V
 
     .line 2
-    iget-object v0, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/o;
+    iget-object p1, p0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;->b:Landroidx/lifecycle/r;
 
-    const/4 v1, 0x1
-
-    invoke-interface {v0, p1, p2, v1, v2}, Landroidx/lifecycle/o;->a(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;ZLandroidx/lifecycle/g0;)V
+    invoke-interface {p1}, Landroidx/lifecycle/r;->a()V
 
     return-void
 .end method

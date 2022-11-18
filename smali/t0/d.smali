@@ -1,89 +1,78 @@
 .class public final Lt0/d;
-.super Landroid/text/style/MetricAffectingSpan;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Lq2/p0$a;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final b:F
+.field public final synthetic b:Lq2/p0;
+
+.field public final synthetic c:I
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method public constructor <init>(Lq2/p0;I)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    iput-object p1, p0, Lt0/d;->b:Lq2/p0;
 
-    iput p1, p0, Lt0/d;->b:F
+    iput p2, p0, Lt0/d;->c:I
 
-    return-void
-.end method
+    const/4 p1, 0x1
 
-.method private final a(Landroid/text/TextPaint;)V
-    .locals 2
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
-    .line 1
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextSize()F
-
-    move-result v0
-
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextScaleX()F
-
-    move-result v1
-
-    mul-float v0, v0, v1
-
-    const/4 v1, 0x0
-
-    cmpg-float v1, v0, v1
-
-    if-nez v1, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-nez v1, :cond_1
-
-    .line 2
-    iget v1, p0, Lt0/d;->b:F
-
-    div-float/2addr v1, v0
-
-    invoke-virtual {p1, v1}, Landroid/text/TextPaint;->setLetterSpacing(F)V
-
-    :cond_1
     return-void
 .end method
 
 
 # virtual methods
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
-
-    const-string v0, "textPaint"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    invoke-direct {p0, p1}, Lt0/d;->a(Landroid/text/TextPaint;)V
+    move-object v0, p1
 
-    return-void
-.end method
+    check-cast v0, Lq2/p0$a;
 
-.method public updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 1
+    const-string p1, "$this$layout"
 
-    const-string v0, "textPaint"
+    .line 2
+    invoke-static {v0, p1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 3
+    iget-object v1, p0, Lt0/d;->b:Lq2/p0;
 
-    .line 1
-    invoke-direct {p0, p1}, Lt0/d;->a(Landroid/text/TextPaint;)V
+    iget p1, p0, Lt0/d;->c:I
 
-    return-void
+    div-int/lit8 v3, p1, 0x2
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x0
+
+    move v2, v3
+
+    invoke-static/range {v0 .. v6}, Lq2/p0$a;->d(Lq2/p0$a;Lq2/p0;IIFILjava/lang/Object;)V
+
+    .line 4
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

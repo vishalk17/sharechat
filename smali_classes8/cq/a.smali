@@ -2,554 +2,438 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Laq/h;
+
+
+# instance fields
+.field public volatile a:Landroid/graphics/Bitmap;
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:I
+
+.field public final e:I
+
 
 # direct methods
-.method public static final a(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    .locals 10
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "otherBitmap"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public constructor <init>(Landroid/graphics/Bitmap;)V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcq/a;->a:Landroid/graphics/Bitmap;
+
+    .line 2
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
+    iput v0, p0, Lcq/a;->b:I
+
+    .line 3
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    move-result p1
+
+    iput p1, p0, Lcq/a;->c:I
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Lcq/a;->d:I
+
+    const/4 p1, -0x1
+
+    iput p1, p0, Lcq/a;->e:I
+
+    return-void
+.end method
+
+.method public static a(Landroid/graphics/Bitmap;)Lcq/a;
+    .locals 15
+
+    .line 1
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    new-instance v2, Lcq/a;
+
+    .line 2
+    invoke-direct {v2, p0}, Lcq/a;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 3
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
-    move-result v1
+    move-result v3
 
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
+    .line 4
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
-    move-result-object v2
+    move-result v4
 
-    invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+    .line 5
+    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getAllocationByteCount()I
+
+    move-result p0
+
+    .line 6
+    const-class v5, Lrk/ba;
+
+    monitor-enter v5
+
+    .line 7
+    :try_start_0
+    new-instance v6, Lrk/k9;
+
+    invoke-direct {v6}, Lrk/k9;-><init>()V
+
+    const-string v7, "vision-common"
+
+    .line 8
+    iput-object v7, v6, Lrk/k9;->a:Ljava/lang/String;
+
+    const/4 v7, 0x1
+
+    .line 9
+    iput-boolean v7, v6, Lrk/k9;->b:Z
+
+    iget-byte v8, v6, Lrk/k9;->d:B
+
+    or-int/2addr v8, v7
+
+    int-to-byte v8, v8
+
+    .line 10
+    iput v7, v6, Lrk/k9;->c:I
+
+    or-int/lit8 v7, v8, 0x2
+
+    int-to-byte v7, v7
+
+    iput-byte v7, v6, Lrk/k9;->d:B
+
+    .line 11
+    invoke-virtual {v6}, Lrk/k9;->a()Lrk/o9;
+
+    move-result-object v6
+
+    .line 12
+    monitor-enter v5
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 13
+    :try_start_1
+    sget-object v7, Lrk/ba;->a:Lrk/aa;
+
+    const/4 v8, 0x0
+
+    if-nez v7, :cond_0
+
+    new-instance v7, Lrk/aa;
+
+    invoke-direct {v7, v8}, Lrk/aa;-><init>(Las0/k;)V
+
+    sput-object v7, Lrk/ba;->a:Lrk/aa;
+
+    :cond_0
+    sget-object v7, Lrk/ba;->a:Lrk/aa;
+
+    .line 14
+    invoke-virtual {v7, v6}, Laq/e;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    move-object v8, v6
+
+    check-cast v8, Lrk/t9;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    monitor-exit v5
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 15
+    monitor-exit v5
+
+    .line 16
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v5
+
+    sub-long/2addr v5, v0
+
+    .line 17
+    sget-object v10, Lrk/r6;->zzby:Lrk/r6;
+
+    invoke-static {v8}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v0
+
+    iget-object v7, v8, Lrk/t9;->i:Ljava/util/HashMap;
+
+    .line 19
+    invoke-virtual {v7, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    if-nez v7, :cond_1
+
+    goto :goto_0
+
+    .line 20
+    :cond_1
+    iget-object v7, v8, Lrk/t9;->i:Ljava/util/HashMap;
+
+    .line 21
+    invoke-virtual {v7, v10}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/lang/Long;
+
+    invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v11
+
+    sub-long v11, v0, v11
+
+    sget-object v7, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const-wide/16 v13, 0x1e
+
+    invoke-virtual {v7, v13, v14}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    move-result-wide v13
+
+    cmp-long v7, v11, v13
+
+    if-gtz v7, :cond_2
+
+    goto/16 :goto_2
+
+    .line 22
+    :cond_2
+    :goto_0
+    iget-object v7, v8, Lrk/t9;->i:Ljava/util/HashMap;
+
+    .line 23
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
-    .line 2
-    new-instance v1, Landroid/graphics/Canvas;
+    invoke-virtual {v7, v10, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+    new-instance v0, Lrk/k6;
 
-    .line 3
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-direct {v0}, Lrk/k6;-><init>()V
 
-    move-result v2
+    .line 24
+    sget-object v1, Lrk/g6;->zzg:Lrk/g6;
 
-    .line 4
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
+    .line 25
+    iput-object v1, v0, Lrk/k6;->c:Lrk/g6;
 
-    move-result v3
+    .line 26
+    sget-object v1, Lrk/l6;->zzb:Lrk/l6;
 
-    .line 5
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+    .line 27
+    iput-object v1, v0, Lrk/k6;->b:Lrk/l6;
 
-    move-result v4
+    .line 28
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-gtz v4, :cond_0
+    move-result-object p0
 
-    return-object p0
+    .line 29
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
-    .line 6
-    :cond_0
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+    move-result p0
 
-    move-result v4
+    const v1, 0x7fffffff
 
-    int-to-float v4, v4
+    and-int/2addr p0, v1
 
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result v5
+    move-result-object p0
 
-    int-to-float v5, v5
+    iput-object p0, v0, Lrk/k6;->d:Ljava/lang/Integer;
 
-    div-float/2addr v4, v5
+    .line 30
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v5, 0x0
+    move-result-object p0
 
-    cmpg-float v6, v4, v5
+    .line 31
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
-    if-gtz v6, :cond_1
+    move-result p0
 
-    return-object p0
+    and-int/2addr p0, v1
 
-    .line 7
-    :cond_1
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result v6
+    move-result-object p0
 
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+    iput-object p0, v0, Lrk/k6;->f:Ljava/lang/Integer;
 
-    move-result v7
+    .line 32
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v8, 0x1
+    move-result-object p0
 
-    if-gt v6, v7, :cond_3
+    .line 33
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
-    int-to-float v6, v2
+    move-result p0
 
-    div-float/2addr v6, v4
+    and-int/2addr p0, v1
 
-    float-to-int v6, v6
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-ge v6, v3, :cond_2
+    move-result-object p0
 
-    int-to-float v2, v3
+    iput-object p0, v0, Lrk/k6;->e:Ljava/lang/Integer;
 
-    mul-float v2, v2, v4
+    .line 34
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    float-to-int v2, v2
+    move-result-object p0
 
-    goto :goto_0
-
-    :cond_2
-    move v3, v6
-
-    .line 8
-    :goto_0
-    invoke-static {p1, v2, v3, v8}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    goto :goto_1
-
-    :cond_3
-    int-to-float v2, v3
-
-    mul-float v2, v2, v4
-
-    float-to-int v2, v2
-
-    .line 9
-    invoke-static {p1, v2, v3, v8}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    .line 10
-    :goto_1
-    new-instance v2, Landroid/graphics/Matrix;
-
-    invoke-direct {v2}, Landroid/graphics/Matrix;-><init>()V
-
-    .line 11
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v4
-
-    sub-int/2addr v3, v4
-
-    int-to-double v3, v3
-
-    const-wide/high16 v6, 0x3fe0000000000000L    # 0.5
-
-    mul-double v3, v3, v6
-
-    invoke-static {v3, v4}, Ljava/lang/Math;->rint(D)D
+    .line 35
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v3
 
-    double-to-float v3, v3
+    const-wide v5, 0x7fffffffffffffffL
 
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
+    and-long/2addr v3, v5
 
-    move-result v4
-
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v8
-
-    sub-int/2addr v4, v8
-
-    int-to-double v8, v4
-
-    mul-double v8, v8, v6
-
-    invoke-static {v8, v9}, Ljava/lang/Math;->rint(D)D
-
-    move-result-wide v6
-
-    double-to-float v4, v6
-
-    invoke-virtual {v2, v3, v4}, Landroid/graphics/Matrix;->setTranslate(FF)V
-
-    const/4 v3, 0x0
-
-    .line 12
-    invoke-virtual {v1, p1, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
-
-    .line 13
-    invoke-virtual {v1, p0, v5, v5, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
-
-    const-string p0, "bmOverlay"
-
-    .line 14
-    invoke-static {v0, p0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public static final b(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
-    .locals 4
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    if-gt v0, p1, :cond_0
-
-    const/16 v2, 0x65
-
-    if-ge p1, v2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-nez v0, :cond_1
-
-    goto :goto_1
-
-    .line 2
-    :cond_1
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    div-float/2addr v0, v2
-
-    .line 3
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    int-to-float p1, p1
-
-    const/high16 v3, 0x42c80000    # 100.0f
-
-    div-float/2addr p1, v3
-
-    mul-float v2, v2, p1
-
-    float-to-int p1, v2
-
-    int-to-float v2, p1
-
-    mul-float v0, v0, v2
-
-    float-to-int v0, v0
-
-    .line 4
-    invoke-static {p0, v0, p1, v1}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
 
-    return-object p0
+    iput-object p0, v0, Lrk/k6;->a:Ljava/lang/Long;
 
-    :cond_2
-    :goto_1
     const/4 p0, 0x0
 
-    return-object p0
-.end method
-
-.method public static final c(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    .locals 8
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v6, Landroid/graphics/Matrix;
-
-    invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    div-float/2addr v0, v1
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    div-float/2addr v2, v1
-
-    const/high16 v1, -0x40800000    # -1.0f
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    invoke-virtual {v6, v1, v3, v0, v2}, Landroid/graphics/Matrix;->postScale(FFFF)Z
-
-    .line 2
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v4
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v5
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v7, 0x1
-
-    move-object v1, p0
-
-    invoke-static/range {v1 .. v7}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
+    .line 36
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    const-string v0, "createBitmap(this, 0, 0,\u2026th, height, matrix, true)"
+    .line 37
+    invoke-virtual {p0}, Ljava/lang/Integer;->intValue()I
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result p0
 
-    return-object p0
-.end method
+    and-int/2addr p0, v1
 
-.method public static final d(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
-    .locals 8
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v6, Landroid/graphics/Matrix;
-
-    invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    div-float/2addr v0, v1
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
-
-    int-to-float v2, v2
-
-    div-float/2addr v2, v1
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    const/high16 v3, -0x40800000    # -1.0f
-
-    invoke-virtual {v6, v1, v3, v0, v2}, Landroid/graphics/Matrix;->postScale(FFFF)Z
-
-    .line 2
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v4
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v5
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v7, 0x1
-
-    move-object v1, p0
-
-    invoke-static/range {v1 .. v7}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
 
-    const-string v0, "createBitmap(this, 0, 0,\u2026th, height, matrix, true)"
+    iput-object p0, v0, Lrk/k6;->g:Ljava/lang/Integer;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 38
+    new-instance p0, Lrk/m6;
 
-    return-object p0
-.end method
+    invoke-direct {p0, v0}, Lrk/m6;-><init>(Lrk/k6;)V
 
-.method public static final e(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
-    .locals 8
+    .line 39
+    new-instance v0, Lrk/s6;
 
-    const-string v0, "<this>"
+    invoke-direct {v0}, Lrk/s6;-><init>()V
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 40
+    iput-object p0, v0, Lrk/s6;->c:Lrk/m6;
 
-    .line 1
-    new-instance v6, Landroid/graphics/Matrix;
+    .line 41
+    new-instance v9, Lrk/u9;
 
-    invoke-direct {v6}, Landroid/graphics/Matrix;-><init>()V
+    invoke-direct {v9, v0}, Lrk/u9;-><init>(Lrk/s6;)V
 
-    int-to-float v0, p1
+    .line 42
+    iget-object p0, v8, Lrk/t9;->e:Lel/g0;
 
-    .line 2
-    invoke-virtual {v6, v0}, Landroid/graphics/Matrix;->postRotate(F)Z
+    .line 43
+    invoke-virtual {p0}, Lel/g0;->q()Z
 
-    if-eqz p2, :cond_2
+    move-result p0
 
-    const/16 v0, 0x10e
+    if-eqz p0, :cond_3
 
-    const/16 v1, 0x5a
+    iget-object p0, v8, Lrk/t9;->e:Lel/g0;
 
-    if-eq p1, v1, :cond_0
+    .line 44
+    invoke-virtual {p0}, Lel/g0;->m()Ljava/lang/Object;
 
-    if-eq p1, v0, :cond_0
+    move-result-object p0
 
-    .line 3
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v2
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v2
-
-    :goto_0
-    div-int/lit8 v2, v2, 0x2
-
-    int-to-float v2, v2
-
-    if-eq p1, v1, :cond_1
-
-    if-eq p1, v0, :cond_1
-
-    .line 4
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result p1
+    check-cast p0, Ljava/lang/String;
 
     goto :goto_1
 
-    :cond_1
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result p1
-
-    :goto_1
-    div-int/lit8 p1, p1, 0x2
-
-    int-to-float p1, p1
-
-    const/high16 v0, -0x40800000    # -1.0f
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    .line 5
-    invoke-virtual {v6, v0, v1, v2, p1}, Landroid/graphics/Matrix;->postScale(FFFF)Z
-
-    :cond_2
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    .line 6
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v4
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result v5
-
-    const/4 v7, 0x1
-
-    move-object v1, p0
-
-    invoke-static/range {v1 .. v7}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    .line 7
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->isRecycled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_3
-
-    if-eqz p2, :cond_3
-
-    .line 8
-    invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
-
+    .line 45
     :cond_3
-    const-string p0, "newBitmap"
+    sget-object p0, Lqj/i;->c:Lqj/i;
 
-    .line 9
-    invoke-static {p1, p0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 46
+    iget-object v0, v8, Lrk/t9;->g:Ljava/lang/String;
 
-    return-object p1
-.end method
-
-.method public static synthetic f(Landroid/graphics/Bitmap;IZILjava/lang/Object;)Landroid/graphics/Bitmap;
-    .locals 0
-
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x0
-
-    .line 1
-    :cond_0
-    invoke-static {p0, p1, p2}, Lcq/a;->e(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
+    invoke-virtual {p0, v0}, Lqj/i;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    return-object p0
+    :goto_1
+    move-object v11, p0
+
+    .line 47
+    sget-object p0, Laq/g;->b:Ljava/lang/Object;
+
+    .line 48
+    sget-object p0, Laq/q;->zza:Laq/q;
+
+    .line 49
+    new-instance v0, Lrk/r9;
+
+    const/4 v12, 0x0
+
+    move-object v7, v0
+
+    invoke-direct/range {v7 .. v12}, Lrk/r9;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Enum;Ljava/lang/String;I)V
+
+    .line 50
+    invoke-interface {p0, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    :goto_2
+    return-object v2
+
+    :catchall_0
+    move-exception p0
+
+    .line 51
+    :try_start_3
+    monitor-exit v5
+
+    throw p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :catchall_1
+    move-exception p0
+
+    monitor-exit v5
+
+    throw p0
 .end method

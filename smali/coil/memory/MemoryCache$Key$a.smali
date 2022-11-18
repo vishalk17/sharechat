@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcoil/memory/MemoryCache$Key;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcoil/memory/MemoryCache$Key;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/os/Parcel;)Lcoil/memory/MemoryCache$Key;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 6
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -65,7 +65,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v2, v4, v5}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v4, v5}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v3, v3, 0x1
 
@@ -79,30 +79,10 @@
     return-object p1
 .end method
 
-.method public final b(I)[Lcoil/memory/MemoryCache$Key;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
     new-array p1, p1, [Lcoil/memory/MemoryCache$Key;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcoil/memory/MemoryCache$Key$a;->a(Landroid/os/Parcel;)Lcoil/memory/MemoryCache$Key;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    invoke-virtual {p0, p1}, Lcoil/memory/MemoryCache$Key$a;->b(I)[Lcoil/memory/MemoryCache$Key;
-
-    move-result-object p1
 
     return-object p1
 .end method

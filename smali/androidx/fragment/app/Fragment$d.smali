@@ -1,38 +1,37 @@
-.class Landroidx/fragment/app/Fragment$d;
-.super Landroidx/fragment/app/d;
+.class public final Landroidx/fragment/app/Fragment$d;
+.super Landroidx/fragment/app/l;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/Fragment;->createFragmentContainer()Landroidx/fragment/app/d;
+    value = Landroidx/fragment/app/Fragment;->createFragmentContainer()Landroidx/fragment/app/l;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/fragment/app/Fragment;
+.field public final synthetic a:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/Fragment;)V
+.method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/Fragment$d;->a:Landroidx/fragment/app/Fragment;
 
-    invoke-direct {p0}, Landroidx/fragment/app/d;-><init>()V
+    invoke-direct {p0}, Landroidx/fragment/app/l;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public c(I)Landroid/view/View;
+.method public final b(I)Landroid/view/View;
     .locals 2
 
     .line 1
@@ -53,14 +52,14 @@
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "Fragment "
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 4
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "Fragment "
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 5
     iget-object v1, p0, Landroidx/fragment/app/Fragment$d;->a:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -78,10 +77,9 @@
     throw p1
 .end method
 
-.method public d()Z
+.method public final c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/Fragment$d;->a:Landroidx/fragment/app/Fragment;
 
     iget-object v0, v0, Landroidx/fragment/app/Fragment;->mView:Landroid/view/View;

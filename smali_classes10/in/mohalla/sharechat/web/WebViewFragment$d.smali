@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/web/WebViewFragment;->Ny()V
+    value = Lin/mohalla/sharechat/web/WebViewFragment;->Fz()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,19 @@
 
 
 # instance fields
-.field private b:I
+.field public b:I
 
-.field private c:I
+.field public c:I
 
-.field final synthetic d:Lru/s2;
+.field public final synthetic d:Lre0/l2;
 
 
 # direct methods
-.method constructor <init>(Lru/s2;)V
+.method public constructor <init>(Lre0/l2;)V
     .locals 0
 
-    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lru/s2;
+    iput-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lre0/l2;
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,12 +38,12 @@
 
 
 # virtual methods
-.method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
 
     const-string p1, "event"
 
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
@@ -109,21 +108,21 @@
     if-le p1, p2, :cond_3
 
     .line 6
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lru/s2;
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lre0/l2;
 
-    iget-object p1, p1, Lru/s2;->c:Landroid/webkit/WebView;
+    iget-object p1, p1, Lre0/l2;->c:Landroid/webkit/WebView;
 
-    invoke-virtual {p1, v2}, Landroid/webkit/WebView;->requestDisallowInterceptTouchEvent(Z)V
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
     goto :goto_0
 
     .line 7
     :cond_1
-    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lru/s2;
+    iget-object p1, p0, Lin/mohalla/sharechat/web/WebViewFragment$d;->d:Lre0/l2;
 
-    iget-object p1, p1, Lru/s2;->c:Landroid/webkit/WebView;
+    iget-object p1, p1, Lre0/l2;->c:Landroid/webkit/WebView;
 
-    invoke-virtual {p1, v1}, Landroid/webkit/WebView;->requestDisallowInterceptTouchEvent(Z)V
+    invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
     goto :goto_0
 

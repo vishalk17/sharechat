@@ -1,384 +1,295 @@
-.class final Lr0/p;
+.class public final Lr0/p;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lr0/o;
+.implements Lr0/u;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lr0/p$a;
-    }
-.end annotation
+# instance fields
+.field public final a:F
 
+.field public final b:F
 
-# static fields
-.field public static final a:Lr0/p$a;
+.field public final c:F
 
-.field private static b:Z
-
-.field private static c:Ljava/lang/reflect/Constructor;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/reflect/Constructor<",
-            "Landroid/text/StaticLayout;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final d:F
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Lr0/p$a;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lr0/p$a;-><init>(Lkotlin/jvm/internal/h;)V
-
-    sput-object v0, Lr0/p;->a:Lr0/p$a;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(FFF)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    .line 2
+    iput p1, p0, Lr0/p;->a:F
 
-.method public static final synthetic b()Ljava/lang/reflect/Constructor;
-    .locals 1
+    const/4 p1, 0x0
 
-    .line 1
-    sget-object v0, Lr0/p;->c:Ljava/lang/reflect/Constructor;
+    .line 3
+    iput p1, p0, Lr0/p;->b:F
 
-    return-object v0
-.end method
+    .line 4
+    iput p2, p0, Lr0/p;->c:F
 
-.method public static final synthetic c()Z
-    .locals 1
-
-    .line 1
-    sget-boolean v0, Lr0/p;->b:Z
-
-    return v0
-.end method
-
-.method public static final synthetic d(Z)V
-    .locals 0
-
-    .line 1
-    sput-boolean p0, Lr0/p;->b:Z
-
-    return-void
-.end method
-
-.method public static final synthetic e(Ljava/lang/reflect/Constructor;)V
-    .locals 0
-
-    .line 1
-    sput-object p0, Lr0/p;->c:Ljava/lang/reflect/Constructor;
+    .line 5
+    iput p3, p0, Lr0/p;->d:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lr0/q;)Landroid/text/StaticLayout;
-    .locals 17
+.method public final a(F)F
+    .locals 6
 
-    const-string v0, "unable to call constructor"
+    const/4 v0, 0x0
 
-    const-string v1, "StaticLayoutFactory"
+    cmpl-float v1, p1, v0
 
-    const-string v2, "params"
+    if-lez v1, :cond_2
 
-    move-object/from16 v3, p1
+    const/high16 v1, 0x3f800000    # 1.0f
 
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    cmpg-float v2, p1, v1
+
+    if-gez v2, :cond_2
+
+    :goto_0
+    add-float v2, v0, v1
+
+    const/4 v3, 0x2
+
+    int-to-float v3, v3
+
+    div-float/2addr v2, v3
 
     .line 1
-    sget-object v2, Lr0/p;->a:Lr0/p$a;
+    iget v3, p0, Lr0/p;->a:F
 
-    invoke-static {v2}, Lr0/p$a;->a(Lr0/p$a;)Ljava/lang/reflect/Constructor;
+    iget v4, p0, Lr0/p;->c:F
 
-    move-result-object v2
+    invoke-virtual {p0, v3, v4, v2}, Lr0/p;->b(FFF)F
 
-    const/4 v4, 0x0
+    move-result v3
 
-    if-eqz v2, :cond_0
-
-    const/16 v5, 0xd
-
-    :try_start_0
-    new-array v5, v5, [Ljava/lang/Object;
-
-    const/4 v6, 0x0
+    sub-float v4, p1, v3
 
     .line 2
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->p()Ljava/lang/CharSequence;
+    invoke-static {v4}, Ljava/lang/Math;->abs(F)F
 
-    move-result-object v7
+    move-result v4
 
-    aput-object v7, v5, v6
+    const v5, 0x3a83126f    # 0.001f
 
-    const/4 v6, 0x1
+    cmpg-float v4, v4, v5
+
+    if-gez v4, :cond_0
 
     .line 3
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->o()I
+    iget p1, p0, Lr0/p;->b:F
 
-    move-result v7
+    iget v0, p0, Lr0/p;->d:F
 
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p0, p1, v0, v2}, Lr0/p;->b(FFF)F
 
-    move-result-object v7
+    move-result p1
 
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x2
-
-    .line 4
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->e()I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x3
-
-    .line 5
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->m()Landroid/text/TextPaint;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x4
-
-    .line 6
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->s()I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x5
-
-    .line 7
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->a()Landroid/text/Layout$Alignment;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x6
-
-    .line 8
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->q()Landroid/text/TextDirectionHeuristic;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/4 v6, 0x7
-
-    .line 9
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->k()F
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/16 v6, 0x8
-
-    .line 10
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->j()F
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/16 v6, 0x9
-
-    .line 11
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->g()Z
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/16 v6, 0xa
-
-    .line 12
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->c()Landroid/text/TextUtils$TruncateAt;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/16 v6, 0xb
-
-    .line 13
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->d()I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    const/16 v6, 0xc
-
-    .line 14
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->l()I
-
-    move-result v7
-
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    aput-object v7, v5, v6
-
-    .line 15
-    invoke-virtual {v2, v5}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/text/StaticLayout;
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v4, v2
-
-    goto :goto_0
-
-    .line 16
-    :catch_0
-    sput-object v4, Lr0/p;->c:Ljava/lang/reflect/Constructor;
-
-    .line 17
-    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 18
-    :catch_1
-    sput-object v4, Lr0/p;->c:Ljava/lang/reflect/Constructor;
-
-    .line 19
-    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 20
-    :catch_2
-    sput-object v4, Lr0/p;->c:Ljava/lang/reflect/Constructor;
-
-    .line 21
-    invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    return p1
 
     :cond_0
-    :goto_0
-    if-eqz v4, :cond_1
+    cmpg-float v3, v3, p1
 
-    return-object v4
+    if-gez v3, :cond_1
 
-    .line 22
+    move v0, v2
+
+    goto :goto_0
+
     :cond_1
-    new-instance v0, Landroid/text/StaticLayout;
+    move v1, v2
 
-    .line 23
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->p()Ljava/lang/CharSequence;
+    goto :goto_0
 
-    move-result-object v6
+    :cond_2
+    return p1
+.end method
 
-    .line 24
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->o()I
+.method public final b(FFF)F
+    .locals 2
 
-    move-result v7
+    const/4 v0, 0x3
 
-    .line 25
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->e()I
+    int-to-float v0, v0
 
-    move-result v8
+    mul-float p1, p1, v0
 
-    .line 26
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->m()Landroid/text/TextPaint;
+    const/4 v1, 0x1
 
-    move-result-object v9
+    int-to-float v1, v1
 
-    .line 27
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->s()I
+    sub-float/2addr v1, p3
 
-    move-result v10
+    mul-float p1, p1, v1
 
-    .line 28
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->a()Landroid/text/Layout$Alignment;
+    mul-float p1, p1, v1
 
-    move-result-object v11
+    mul-float p1, p1, p3
 
-    .line 29
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->k()F
+    mul-float v0, v0, p2
 
-    move-result v12
+    mul-float v0, v0, v1
 
-    .line 30
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->j()F
+    mul-float v0, v0, p3
 
-    move-result v13
+    mul-float v0, v0, p3
 
-    .line 31
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->g()Z
+    add-float/2addr v0, p1
 
-    move-result v14
+    mul-float p1, p3, p3
 
-    .line 32
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->c()Landroid/text/TextUtils$TruncateAt;
+    mul-float p1, p1, p3
 
-    move-result-object v15
+    add-float/2addr p1, v0
 
-    .line 33
-    invoke-virtual/range {p1 .. p1}, Lr0/q;->d()I
+    return p1
+.end method
 
-    move-result v16
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    move-object v5, v0
+    .line 1
+    instance-of v0, p1, Lr0/p;
 
-    .line 34
-    invoke-direct/range {v5 .. v16}, Landroid/text/StaticLayout;-><init>(Ljava/lang/CharSequence;IILandroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
+    const/4 v1, 0x1
 
-    return-object v0
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_4
+
+    iget v0, p0, Lr0/p;->a:F
+
+    check-cast p1, Lr0/p;
+
+    iget v3, p1, Lr0/p;->a:F
+
+    cmpg-float v0, v0, v3
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_4
+
+    iget v0, p0, Lr0/p;->b:F
+
+    iget v3, p1, Lr0/p;->b:F
+
+    cmpg-float v0, v0, v3
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_1
+    if-eqz v0, :cond_4
+
+    iget v0, p0, Lr0/p;->c:F
+
+    iget v3, p1, Lr0/p;->c:F
+
+    cmpg-float v0, v0, v3
+
+    if-nez v0, :cond_2
+
+    const/4 v0, 0x1
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_2
+    if-eqz v0, :cond_4
+
+    .line 2
+    iget v0, p0, Lr0/p;->d:F
+
+    iget p1, p1, Lr0/p;->d:F
+
+    cmpg-float p1, v0, p1
+
+    if-nez p1, :cond_3
+
+    const/4 p1, 0x1
+
+    goto :goto_3
+
+    :cond_3
+    const/4 p1, 0x0
+
+    :goto_3
+    if-eqz p1, :cond_4
+
+    goto :goto_4
+
+    :cond_4
+    const/4 v1, 0x0
+
+    :goto_4
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lr0/p;->a:F
+
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget v1, p0, Lr0/p;->b:F
+
+    const/16 v2, 0x1f
+
+    .line 2
+    invoke-static {v1, v0, v2}, Landroid/support/v4/media/session/d;->a(FII)I
+
+    move-result v0
+
+    .line 3
+    iget v1, p0, Lr0/p;->c:F
+
+    .line 4
+    invoke-static {v1, v0, v2}, Landroid/support/v4/media/session/d;->a(FII)I
+
+    move-result v0
+
+    .line 5
+    iget v1, p0, Lr0/p;->d:F
+
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
 .end method

@@ -1,140 +1,294 @@
-.class public final enum Lq0/a;
-.super Ljava/lang/Enum;
+.class public final Lq0/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Ljava/lang/Enum<",
-        "Lq0/a;",
-        ">;"
+        Lq0/a$a;
     }
 .end annotation
 
 
 # static fields
-.field private static final synthetic $VALUES:[Lq0/a;
+.field public static final a:Lq0/a;
 
-.field public static final enum Indeterminate:Lq0/a;
-
-.field public static final enum Off:Lq0/a;
-
-.field public static final enum On:Lq0/a;
+.field public static final b:[F
 
 
 # direct methods
-.method private static final synthetic $values()[Lq0/a;
-    .locals 3
+.method public static constructor <clinit>()V
+    .locals 20
 
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Lq0/a;
-
-    sget-object v1, Lq0/a;->On:Lq0/a;
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lq0/a;->Off:Lq0/a;
-
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
-
-    sget-object v1, Lq0/a;->Indeterminate:Lq0/a;
-
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
-
-    return-object v0
-.end method
-
-.method static constructor <clinit>()V
-    .locals 3
-
-    .line 1
     new-instance v0, Lq0/a;
 
-    const-string v1, "On"
+    invoke-direct {v0}, Lq0/a;-><init>()V
+
+    sput-object v0, Lq0/a;->a:Lq0/a;
+
+    const/16 v0, 0x65
+
+    new-array v1, v0, [F
+
+    .line 1
+    sput-object v1, Lq0/a;->b:[F
+
+    new-array v0, v0, [F
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lq0/a;-><init>(Ljava/lang/String;I)V
+    const/4 v3, 0x0
 
-    sput-object v0, Lq0/a;->On:Lq0/a;
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    const/16 v5, 0x64
+
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    if-ge v4, v5, :cond_4
+
+    int-to-float v7, v4
+
+    int-to-float v5, v5
+
+    div-float/2addr v7, v5
+
+    const/high16 v5, 0x3f800000    # 1.0f
+
+    :goto_1
+    sub-float v8, v5, v2
+
+    const/high16 v9, 0x40000000    # 2.0f
+
+    div-float/2addr v8, v9
+
+    add-float/2addr v8, v2
+
+    const/high16 v10, 0x40400000    # 3.0f
+
+    mul-float v11, v8, v10
+
+    sub-float v12, v6, v8
+
+    mul-float v11, v11, v12
+
+    const v13, 0x3e333333    # 0.175f
+
+    mul-float v14, v12, v13
+
+    const v15, 0x3eb33334    # 0.35000002f
+
+    mul-float v16, v8, v15
+
+    add-float v16, v16, v14
+
+    mul-float v16, v16, v11
+
+    mul-float v14, v8, v8
+
+    mul-float v14, v14, v8
+
+    add-float v16, v16, v14
+
+    sub-float v17, v16, v7
 
     .line 2
-    new-instance v0, Lq0/a;
+    invoke-static/range {v17 .. v17}, Ljava/lang/Math;->abs(F)F
 
-    const-string v1, "Off"
+    move-result v15
 
-    const/4 v2, 0x1
+    float-to-double v9, v15
 
-    invoke-direct {v0, v1, v2}, Lq0/a;-><init>(Ljava/lang/String;I)V
+    const-wide v18, 0x3ee4f8b588e368f1L    # 1.0E-5
 
-    sput-object v0, Lq0/a;->Off:Lq0/a;
+    cmpg-double v15, v9, v18
+
+    if-ltz v15, :cond_1
+
+    cmpl-float v9, v16, v7
+
+    if-lez v9, :cond_0
+
+    move v5, v8
+
+    goto :goto_1
+
+    :cond_0
+    move v2, v8
+
+    goto :goto_1
+
+    :cond_1
+    const/high16 v5, 0x3f000000    # 0.5f
+
+    mul-float v12, v12, v5
+
+    add-float/2addr v12, v8
+
+    mul-float v12, v12, v11
+
+    add-float/2addr v12, v14
 
     .line 3
-    new-instance v0, Lq0/a;
+    aput v12, v1, v4
 
-    const-string v1, "Indeterminate"
+    const/high16 v8, 0x3f800000    # 1.0f
 
-    const/4 v2, 0x2
+    :goto_2
+    sub-float v9, v8, v3
 
-    invoke-direct {v0, v1, v2}, Lq0/a;-><init>(Ljava/lang/String;I)V
+    const/high16 v10, 0x40000000    # 2.0f
 
-    sput-object v0, Lq0/a;->Indeterminate:Lq0/a;
+    div-float/2addr v9, v10
 
-    invoke-static {}, Lq0/a;->$values()[Lq0/a;
+    add-float/2addr v9, v3
 
-    move-result-object v0
+    const/high16 v11, 0x40400000    # 3.0f
 
-    sput-object v0, Lq0/a;->$VALUES:[Lq0/a;
+    mul-float v12, v9, v11
+
+    sub-float v14, v6, v9
+
+    mul-float v12, v12, v14
+
+    mul-float v15, v14, v5
+
+    add-float/2addr v15, v9
+
+    mul-float v15, v15, v12
+
+    mul-float v16, v9, v9
+
+    mul-float v16, v16, v9
+
+    add-float v15, v15, v16
+
+    sub-float v17, v15, v7
+
+    .line 4
+    invoke-static/range {v17 .. v17}, Ljava/lang/Math;->abs(F)F
+
+    move-result v5
+
+    float-to-double v10, v5
+
+    cmpg-double v5, v10, v18
+
+    if-ltz v5, :cond_3
+
+    cmpl-float v5, v15, v7
+
+    if-lez v5, :cond_2
+
+    move v8, v9
+
+    goto :goto_3
+
+    :cond_2
+    move v3, v9
+
+    :goto_3
+    const/high16 v5, 0x3f000000    # 0.5f
+
+    goto :goto_2
+
+    :cond_3
+    mul-float v14, v14, v13
+
+    const v5, 0x3eb33334    # 0.35000002f
+
+    mul-float v9, v9, v5
+
+    add-float/2addr v9, v14
+
+    mul-float v9, v9, v12
+
+    add-float v9, v9, v16
+
+    .line 5
+    aput v9, v0, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_0
+
+    :cond_4
+    aput v6, v0, v5
+
+    aget v0, v0, v5
+
+    aput v0, v1, v5
 
     return-void
 .end method
 
-.method private constructor <init>(Ljava/lang/String;I)V
+.method private constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(F)Lq0/a$a;
+    .locals 5
+
+    const/16 v0, 0x64
+
+    int-to-float v1, v0
+
+    mul-float v2, v1, p1
+
+    float-to-int v2, v2
+
+    if-ge v2, v0, :cond_0
+
+    int-to-float v0, v2
+
+    div-float/2addr v0, v1
+
+    add-int/lit8 v3, v2, 0x1
+
+    int-to-float v4, v3
+
+    div-float/2addr v4, v1
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sget-object v1, Lq0/a;->b:[F
 
-    return-void
-.end method
+    aget v2, v1, v2
 
-.method public static valueOf(Ljava/lang/String;)Lq0/a;
-    .locals 1
+    .line 2
+    aget v1, v1, v3
 
-    const-class v0, Lq0/a;
+    sub-float/2addr v1, v2
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    sub-float/2addr v4, v0
 
-    move-result-object p0
+    div-float/2addr v1, v4
 
-    check-cast p0, Lq0/a;
+    invoke-static {p1, v0, v1, v2}, Lm2/a;->e(FFFF)F
 
-    return-object p0
-.end method
+    move-result p1
 
-.method public static values()[Lq0/a;
-    .locals 1
+    goto :goto_0
 
-    sget-object v0, Lq0/a;->$VALUES:[Lq0/a;
+    :cond_0
+    const/high16 p1, 0x3f800000    # 1.0f
 
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    move-result-object v0
+    .line 3
+    :goto_0
+    new-instance v0, Lq0/a$a;
 
-    check-cast v0, [Lq0/a;
+    invoke-direct {v0, p1, v1}, Lq0/a$a;-><init>(FF)V
 
     return-object v0
 .end method

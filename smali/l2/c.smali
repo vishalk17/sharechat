@@ -3,34 +3,43 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ll2/c$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final a:Ll2/c$a;
+
+.field public static final b:I
+
+.field public static final c:I
+
+
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Ll2/c$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Ll2/c$a;-><init>(Lep0/k;)V
+
+    sput-object v0, Ll2/c;->a:Ll2/c$a;
+
+    const/4 v0, 0x1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput v0, Ll2/c;->b:I
+
+    const/4 v0, 0x2
+
+    .line 2
+    sput v0, Ll2/c;->c:I
 
     return-void
-.end method
-
-.method public static a(Landroid/database/Cursor;)Landroid/net/Uri;
-    .locals 0
-
-    .line 1
-    invoke-interface {p0}, Landroid/database/Cursor;->getNotificationUri()Landroid/net/Uri;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static b(Landroid/app/ActivityManager;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/app/ActivityManager;->isLowRamDevice()Z
-
-    move-result p0
-
-    return p0
 .end method

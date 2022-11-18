@@ -1,9 +1,10 @@
-.class Landroidx/appcompat/widget/AppCompatSpinner$e;
-.super Landroidx/appcompat/widget/y;
+.class public final Landroidx/appcompat/widget/AppCompatSpinner$e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/widget/AppCompatSpinner$f;
+.implements Landroidx/appcompat/widget/AppCompatSpinner$h;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -12,452 +13,285 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "e"
 .end annotation
 
 
 # instance fields
-.field private J:Ljava/lang/CharSequence;
+.field public b:Landroidx/appcompat/app/k;
 
-.field K:Landroid/widget/ListAdapter;
+.field public c:Landroid/widget/ListAdapter;
 
-.field private final L:Landroid/graphics/Rect;
+.field public d:Ljava/lang/CharSequence;
 
-.field private M:I
-
-.field final synthetic N:Landroidx/appcompat/widget/AppCompatSpinner;
+.field public final synthetic e:Landroidx/appcompat/widget/AppCompatSpinner;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/content/Context;Landroid/util/AttributeSet;I)V
+.method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    .line 2
-    invoke-direct {p0, p2, p3, p4}, Landroidx/appcompat/widget/y;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    .line 3
-    new-instance p2, Landroid/graphics/Rect;
-
-    invoke-direct {p2}, Landroid/graphics/Rect;-><init>()V
-
-    iput-object p2, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->L:Landroid/graphics/Rect;
-
-    .line 4
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/y;->C(Landroid/view/View;)V
-
-    const/4 p2, 0x1
-
-    .line 5
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/y;->I(Z)V
-
-    const/4 p2, 0x0
-
-    .line 6
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/y;->N(I)V
-
-    .line 7
-    new-instance p2, Landroidx/appcompat/widget/AppCompatSpinner$e$a;
-
-    invoke-direct {p2, p0, p1}, Landroidx/appcompat/widget/AppCompatSpinner$e$a;-><init>(Landroidx/appcompat/widget/AppCompatSpinner$e;Landroidx/appcompat/widget/AppCompatSpinner;)V
-
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/y;->K(Landroid/widget/AdapterView$OnItemClickListener;)V
-
-    return-void
-.end method
-
-.method static synthetic Q(Landroidx/appcompat/widget/AppCompatSpinner$e;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0}, Landroidx/appcompat/widget/y;->show()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method R()V
-    .locals 8
+.method public final a()Z
+    .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/y;->d()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    iget-object v1, v1, Landroidx/appcompat/widget/AppCompatSpinner;->i:Landroid/graphics/Rect;
-
-    invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
-
-    .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-static {v0}, Landroidx/appcompat/widget/r0;->b(Landroid/view/View;)Z
-
-    move-result v0
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
+    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
-    iget-object v0, v0, Landroidx/appcompat/widget/AppCompatSpinner;->i:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->right:I
+    move-result v0
 
     goto :goto_0
 
-    .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    iget-object v0, v0, Landroidx/appcompat/widget/AppCompatSpinner;->i:Landroid/graphics/Rect;
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    neg-int v0, v0
+    const/4 v0, 0x0
 
     :goto_0
-    move v1, v0
-
-    goto :goto_1
-
-    .line 5
-    :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    iget-object v0, v0, Landroidx/appcompat/widget/AppCompatSpinner;->i:Landroid/graphics/Rect;
-
-    iput v1, v0, Landroid/graphics/Rect;->right:I
-
-    iput v1, v0, Landroid/graphics/Rect;->left:I
-
-    .line 6
-    :goto_1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {v0}, Landroid/widget/Spinner;->getPaddingLeft()I
-
-    move-result v0
-
-    .line 7
-    iget-object v2, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {v2}, Landroid/widget/Spinner;->getPaddingRight()I
-
-    move-result v2
-
-    .line 8
-    iget-object v3, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {v3}, Landroid/widget/Spinner;->getWidth()I
-
-    move-result v3
-
-    .line 9
-    iget-object v4, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    iget v5, v4, Landroidx/appcompat/widget/AppCompatSpinner;->h:I
-
-    const/4 v6, -0x2
-
-    if-ne v5, v6, :cond_3
-
-    .line 10
-    iget-object v5, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->K:Landroid/widget/ListAdapter;
-
-    check-cast v5, Landroid/widget/SpinnerAdapter;
-
-    .line 11
-    invoke-virtual {p0}, Landroidx/appcompat/widget/y;->d()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v6
-
-    .line 12
-    invoke-virtual {v4, v5, v6}, Landroidx/appcompat/widget/AppCompatSpinner;->a(Landroid/widget/SpinnerAdapter;Landroid/graphics/drawable/Drawable;)I
-
-    move-result v4
-
-    .line 13
-    iget-object v5, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {v5}, Landroid/widget/Spinner;->getContext()Landroid/content/Context;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v5
-
-    .line 14
-    invoke-virtual {v5}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v5
-
-    iget v5, v5, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    iget-object v6, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    iget-object v6, v6, Landroidx/appcompat/widget/AppCompatSpinner;->i:Landroid/graphics/Rect;
-
-    iget v7, v6, Landroid/graphics/Rect;->left:I
-
-    sub-int/2addr v5, v7
-
-    iget v6, v6, Landroid/graphics/Rect;->right:I
-
-    sub-int/2addr v5, v6
-
-    if-le v4, v5, :cond_2
-
-    move v4, v5
-
-    :cond_2
-    sub-int v5, v3, v0
-
-    sub-int/2addr v5, v2
-
-    .line 15
-    invoke-static {v4, v5}, Ljava/lang/Math;->max(II)I
-
-    move-result v4
-
-    invoke-virtual {p0, v4}, Landroidx/appcompat/widget/y;->E(I)V
-
-    goto :goto_2
-
-    :cond_3
-    const/4 v4, -0x1
-
-    if-ne v5, v4, :cond_4
-
-    sub-int v4, v3, v0
-
-    sub-int/2addr v4, v2
-
-    .line 16
-    invoke-virtual {p0, v4}, Landroidx/appcompat/widget/y;->E(I)V
-
-    goto :goto_2
-
-    .line 17
-    :cond_4
-    invoke-virtual {p0, v5}, Landroidx/appcompat/widget/y;->E(I)V
-
-    .line 18
-    :goto_2
-    iget-object v4, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-static {v4}, Landroidx/appcompat/widget/r0;->b(Landroid/view/View;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_5
-
-    sub-int/2addr v3, v2
-
-    .line 19
-    invoke-virtual {p0}, Landroidx/appcompat/widget/y;->y()I
-
-    move-result v0
-
-    sub-int/2addr v3, v0
-
-    .line 20
-    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->S()I
-
-    move-result v0
-
-    sub-int/2addr v3, v0
-
-    add-int/2addr v1, v3
-
-    goto :goto_3
-
-    .line 21
-    :cond_5
-    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->S()I
-
-    move-result v2
-
-    add-int/2addr v0, v2
-
-    add-int/2addr v1, v0
-
-    .line 22
-    :goto_3
-    invoke-virtual {p0, v1}, Landroidx/appcompat/widget/y;->l(I)V
-
-    return-void
-.end method
-
-.method public S()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->M:I
-
     return v0
 .end method
 
-.method T(Landroid/view/View;)Z
+.method public final c()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 1
-    invoke-static {p1}, Landroidx/core/view/c0;->X(Landroid/view/View;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->L:Landroid/graphics/Rect;
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
-.end method
-
-.method public f(I)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->M:I
-
-    return-void
-.end method
-
-.method public g(II)V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/y;->a()Z
-
-    move-result v0
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->R()V
-
-    const/4 v1, 0x2
-
-    .line 3
-    invoke-virtual {p0, v1}, Landroidx/appcompat/widget/y;->H(I)V
-
-    .line 4
-    invoke-super {p0}, Landroidx/appcompat/widget/y;->show()V
-
-    .line 5
-    invoke-virtual {p0}, Landroidx/appcompat/widget/y;->j()Landroid/widget/ListView;
-
-    move-result-object v1
-
-    const/4 v2, 0x1
-
-    .line 6
-    invoke-virtual {v1, v2}, Landroid/widget/ListView;->setChoiceMode(I)V
-
-    .line 7
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x11
-
-    if-lt v2, v3, :cond_0
-
-    .line 8
-    invoke-virtual {v1, p1}, Landroid/widget/ListView;->setTextDirection(I)V
-
-    .line 9
-    invoke-virtual {v1, p2}, Landroid/widget/ListView;->setTextAlignment(I)V
-
-    .line 10
-    :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {p1}, Landroid/widget/Spinner;->getSelectedItemPosition()I
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/y;->O(I)V
-
-    if-eqz v0, :cond_1
-
-    return-void
-
-    .line 11
-    :cond_1
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->N:Landroidx/appcompat/widget/AppCompatSpinner;
-
-    invoke-virtual {p1}, Landroid/widget/Spinner;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_2
-
-    .line 12
-    new-instance p2, Landroidx/appcompat/widget/AppCompatSpinner$e$b;
-
-    invoke-direct {p2, p0}, Landroidx/appcompat/widget/AppCompatSpinner$e$b;-><init>(Landroidx/appcompat/widget/AppCompatSpinner$e;)V
-
-    .line 13
-    invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    .line 14
-    new-instance p1, Landroidx/appcompat/widget/AppCompatSpinner$e$c;
-
-    invoke-direct {p1, p0, p2}, Landroidx/appcompat/widget/AppCompatSpinner$e$c;-><init>(Landroidx/appcompat/widget/AppCompatSpinner$e;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/y;->J(Landroid/widget/PopupWindow$OnDismissListener;)V
-
-    :cond_2
-    return-void
-.end method
-
-.method public m()Ljava/lang/CharSequence;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->J:Ljava/lang/CharSequence;
+    const/4 v0, 0x0
 
     return-object v0
 .end method
 
-.method public n(Ljava/lang/CharSequence;)V
-    .locals 0
+.method public final d(I)V
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->J:Ljava/lang/CharSequence;
+    const-string p1, "AppCompatSpinner"
+
+    const-string v0, "Cannot set vertical offset for MODE_DIALOG, ignoring"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 .end method
 
-.method public o(Landroid/widget/ListAdapter;)V
-    .locals 0
+.method public final dismiss()V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/appcompat/widget/y;->o(Landroid/widget/ListAdapter;)V
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    if-eqz v0, :cond_0
 
     .line 2
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->K:Landroid/widget/ListAdapter;
+    invoke-virtual {v0}, Landroidx/appcompat/app/s;->dismiss()V
 
+    const/4 v0, 0x0
+
+    .line 3
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    :cond_0
+    return-void
+.end method
+
+.method public final e(I)V
+    .locals 1
+
+    const-string p1, "AppCompatSpinner"
+
+    const-string v0, "Cannot set horizontal (original) offset for MODE_DIALOG, ignoring"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public final f(II)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->c:Landroid/widget/ListAdapter;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Landroidx/appcompat/app/k$a;
+
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    invoke-virtual {v1}, Landroidx/appcompat/widget/AppCompatSpinner;->getPopupContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroidx/appcompat/app/k$a;-><init>(Landroid/content/Context;)V
+
+    .line 3
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->d:Ljava/lang/CharSequence;
+
+    if-eqz v1, :cond_1
+
+    .line 4
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/k$a;->setTitle(Ljava/lang/CharSequence;)Landroidx/appcompat/app/k$a;
+
+    .line 5
+    :cond_1
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->c:Landroid/widget/ListAdapter;
+
+    iget-object v2, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    .line 6
+    invoke-virtual {v2}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
+
+    move-result v2
+
+    .line 7
+    invoke-virtual {v0, v1, v2, p0}, Landroidx/appcompat/app/k$a;->setSingleChoiceItems(Landroid/widget/ListAdapter;ILandroid/content/DialogInterface$OnClickListener;)Landroidx/appcompat/app/k$a;
+
+    move-result-object v0
+
+    .line 8
+    invoke-virtual {v0}, Landroidx/appcompat/app/k$a;->create()Landroidx/appcompat/app/k;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    .line 9
+    iget-object v0, v0, Landroidx/appcompat/app/k;->f:Landroidx/appcompat/app/AlertController;
+
+    .line 10
+    iget-object v0, v0, Landroidx/appcompat/app/AlertController;->g:Landroidx/appcompat/app/AlertController$RecycleListView;
+
+    .line 11
+    invoke-static {v0, p1}, Landroidx/appcompat/widget/AppCompatSpinner$c;->d(Landroid/view/View;I)V
+
+    .line 12
+    invoke-static {v0, p2}, Landroidx/appcompat/widget/AppCompatSpinner$c;->c(Landroid/view/View;I)V
+
+    .line 13
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+
+    return-void
+.end method
+
+.method public final g()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final j()I
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final k(I)V
+    .locals 1
+
+    const-string p1, "AppCompatSpinner"
+
+    const-string v0, "Cannot set horizontal offset for MODE_DIALOG, ignoring"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public final l()Ljava/lang/CharSequence;
+    .locals 1
+
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->d:Ljava/lang/CharSequence;
+
+    return-object v0
+.end method
+
+.method public final m(Ljava/lang/CharSequence;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->d:Ljava/lang/CharSequence;
+
+    return-void
+.end method
+
+.method public final n(Landroid/widget/ListAdapter;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->c:Landroid/widget/ListAdapter;
+
+    return-void
+.end method
+
+.method public final o(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    const-string p1, "AppCompatSpinner"
+
+    const-string v0, "Cannot set popup background for MODE_DIALOG, ignoring"
+
+    invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public final onClick(Landroid/content/DialogInterface;I)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    invoke-virtual {p1, p2}, Landroid/widget/AdapterView;->setSelection(I)V
+
+    .line 2
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->e:Landroidx/appcompat/widget/AppCompatSpinner;
+
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->c:Landroid/widget/ListAdapter;
+
+    invoke-interface {v1, p2}, Landroid/widget/Adapter;->getItemId(I)J
+
+    move-result-wide v1
+
+    invoke-virtual {p1, v0, p2, v1, v2}, Landroid/widget/AdapterView;->performItemClick(Landroid/view/View;IJ)Z
+
+    .line 4
+    :cond_0
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    if-eqz p1, :cond_1
+
+    .line 5
+    invoke-virtual {p1}, Landroidx/appcompat/app/s;->dismiss()V
+
+    .line 6
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e;->b:Landroidx/appcompat/app/k;
+
+    :cond_1
     return-void
 .end method

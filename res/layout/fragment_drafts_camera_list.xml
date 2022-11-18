@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/size8" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_cross" android:layout_width="@dimen/size48" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_draft" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/tv_draft" app:srcCompat="@drawable/ic_cross_white_24dp_roundedge" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/drafts_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_draft" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="20.0sp" android:textColor="@color/white100" android:gravity="center" android:id="@id/tv_draft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/draft" android:fontFamily="@font/manrope_bold" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

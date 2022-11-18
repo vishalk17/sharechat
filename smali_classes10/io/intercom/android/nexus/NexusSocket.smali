@@ -48,10 +48,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/intercom/android/nexus/NexusSocket$4;
 
     invoke-direct {v0}, Lio/intercom/android/nexus/NexusSocket$4;-><init>()V
@@ -61,7 +60,7 @@
     return-void
 .end method
 
-.method constructor <init>(Ljava/lang/String;IZLcom/intercom/twig/Twig;Ljava/util/concurrent/ScheduledExecutorService;Lokhttp3/OkHttpClient;Lio/intercom/android/nexus/NexusListener;Lio/intercom/android/nexus/NexusTopicProvider;)V
+.method public constructor <init>(Ljava/lang/String;IZLcom/intercom/twig/Twig;Ljava/util/concurrent/ScheduledExecutorService;Lokhttp3/OkHttpClient;Lio/intercom/android/nexus/NexusListener;Lio/intercom/android/nexus/NexusTopicProvider;)V
     .locals 2
 
     .line 1
@@ -125,97 +124,87 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lio/intercom/android/nexus/NexusSocket;)V
+.method public static synthetic access$000(Lio/intercom/android/nexus/NexusSocket;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/intercom/android/nexus/NexusSocket;->timedOut()V
 
     return-void
 .end method
 
-.method static synthetic access$102(Lio/intercom/android/nexus/NexusSocket;Ljava/util/concurrent/ScheduledFuture;)Ljava/util/concurrent/ScheduledFuture;
+.method public static synthetic access$102(Lio/intercom/android/nexus/NexusSocket;Ljava/util/concurrent/ScheduledFuture;)Ljava/util/concurrent/ScheduledFuture;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusSocket;->reconnectFuture:Ljava/util/concurrent/ScheduledFuture;
 
     return-object p1
 .end method
 
-.method static synthetic access$200(Lio/intercom/android/nexus/NexusSocket;)Lcom/intercom/twig/Twig;
+.method public static synthetic access$200(Lio/intercom/android/nexus/NexusSocket;)Lcom/intercom/twig/Twig;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/intercom/android/nexus/NexusSocket;->twig:Lcom/intercom/twig/Twig;
 
     return-object p0
 .end method
 
-.method static synthetic access$302(Lio/intercom/android/nexus/NexusSocket;Lokhttp3/WebSocket;)Lokhttp3/WebSocket;
+.method public static synthetic access$302(Lio/intercom/android/nexus/NexusSocket;Lokhttp3/WebSocket;)Lokhttp3/WebSocket;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusSocket;->socket:Lokhttp3/WebSocket;
 
     return-object p1
 .end method
 
-.method static synthetic access$400(Lio/intercom/android/nexus/NexusSocket;)V
+.method public static synthetic access$400(Lio/intercom/android/nexus/NexusSocket;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/intercom/android/nexus/NexusSocket;->resetTimeout()V
 
     return-void
 .end method
 
-.method static synthetic access$500(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusTopicProvider;
+.method public static synthetic access$500(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusTopicProvider;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/intercom/android/nexus/NexusSocket;->topicProvider:Lio/intercom/android/nexus/NexusTopicProvider;
 
     return-object p0
 .end method
 
-.method static synthetic access$600(Lio/intercom/android/nexus/NexusSocket;)Z
+.method public static synthetic access$600(Lio/intercom/android/nexus/NexusSocket;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lio/intercom/android/nexus/NexusSocket;->shouldSendPresence:Z
 
     return p0
 .end method
 
-.method static synthetic access$700(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusListener;
+.method public static synthetic access$700(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lio/intercom/android/nexus/NexusSocket;->listener:Lio/intercom/android/nexus/NexusListener;
 
     return-object p0
 .end method
 
-.method static synthetic access$800(Lio/intercom/android/nexus/NexusSocket;)V
+.method public static synthetic access$800(Lio/intercom/android/nexus/NexusSocket;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/intercom/android/nexus/NexusSocket;->shutdown()V
 
     return-void
 .end method
 
-.method static synthetic access$900(Lio/intercom/android/nexus/NexusSocket;)V
+.method public static synthetic access$900(Lio/intercom/android/nexus/NexusSocket;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/intercom/android/nexus/NexusSocket;->scheduleReconnect()V
 
     return-void
 .end method
 
-.method static calculateReconnectTimerInSeconds(I)J
+.method public static calculateReconnectTimerInSeconds(I)J
     .locals 4
 
     int-to-double v0, p0
@@ -246,9 +235,9 @@
 
     move-result v0
 
-    add-int/2addr p0, v0
+    add-int/2addr v0, p0
 
-    int-to-long v0, p0
+    int-to-long v0, v0
 
     return-wide v0
 .end method
@@ -362,7 +351,7 @@
     const/4 v1, 0x1
 
     .line 2
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     .line 3
     :cond_0
@@ -449,14 +438,13 @@
     return-void
 .end method
 
-.method static shouldReconnectFromFailure(Lokhttp3/Response;)Z
+.method public static shouldReconnectFromFailure(Lokhttp3/Response;)Z
     .locals 2
 
     const/4 v0, 0x1
 
     if-eqz p0, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/Response;->code()I
 
     move-result p0
@@ -495,7 +483,7 @@
     const/4 v1, 0x1
 
     .line 3
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     .line 4
     :cond_0
@@ -540,7 +528,7 @@
 
 
 # virtual methods
-.method connect()V
+.method public connect()V
     .locals 5
 
     .line 1
@@ -610,7 +598,7 @@
     return-void
 .end method
 
-.method disconnect()V
+.method public disconnect()V
     .locals 2
 
     const/16 v0, 0xfa0
@@ -623,7 +611,7 @@
     return-void
 .end method
 
-.method fire(Ljava/lang/String;)V
+.method public fire(Ljava/lang/String;)V
     .locals 4
 
     .line 1
@@ -697,10 +685,9 @@
     return-void
 .end method
 
-.method isConnected()Z
+.method public isConnected()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusSocket;->socket:Lokhttp3/WebSocket;
 
     sget-object v1, Lio/intercom/android/nexus/NexusSocket;->CLOSED_SOCKET:Lokhttp3/WebSocket;

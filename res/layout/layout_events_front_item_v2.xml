@@ -2,5 +2,4 @@
 <androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_events_front_item_v2_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <sharechat.library.ui.customImage.CustomImageView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:minHeight="184.0dip" />
-    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="14.0sp" android:textColor="@color/secondary_bg" android:tag="binding_2" android:background="@drawable/bg_roundrect_dark_with_border" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

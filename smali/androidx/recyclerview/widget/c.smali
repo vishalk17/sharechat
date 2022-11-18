@@ -21,14 +21,12 @@
 
 
 # instance fields
-.field private final a:Ljava/util/concurrent/Executor;
+.field public final a:Ljava/util/concurrent/Executor;
 
-.field private final b:Ljava/util/concurrent/Executor;
-
-.field private final c:Landroidx/recyclerview/widget/j$f;
+.field public final b:Landroidx/recyclerview/widget/q$e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/recyclerview/widget/j$f<",
+            "Landroidx/recyclerview/widget/q$e<",
             "TT;>;"
         }
     .end annotation
@@ -36,14 +34,14 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Landroidx/recyclerview/widget/j$f;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Landroidx/recyclerview/widget/q$e;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/concurrent/Executor;",
             "Ljava/util/concurrent/Executor;",
-            "Landroidx/recyclerview/widget/j$f<",
+            "Landroidx/recyclerview/widget/q$e<",
             "TT;>;)V"
         }
     .end annotation
@@ -55,46 +53,7 @@
     iput-object p1, p0, Landroidx/recyclerview/widget/c;->a:Ljava/util/concurrent/Executor;
 
     .line 3
-    iput-object p2, p0, Landroidx/recyclerview/widget/c;->b:Ljava/util/concurrent/Executor;
-
-    .line 4
-    iput-object p3, p0, Landroidx/recyclerview/widget/c;->c:Landroidx/recyclerview/widget/j$f;
+    iput-object p2, p0, Landroidx/recyclerview/widget/c;->b:Landroidx/recyclerview/widget/q$e;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public a()Ljava/util/concurrent/Executor;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/c;->b:Ljava/util/concurrent/Executor;
-
-    return-object v0
-.end method
-
-.method public b()Landroidx/recyclerview/widget/j$f;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Landroidx/recyclerview/widget/j$f<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/c;->c:Landroidx/recyclerview/widget/j$f;
-
-    return-object v0
-.end method
-
-.method public c()Ljava/util/concurrent/Executor;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/c;->a:Ljava/util/concurrent/Executor;
-
-    return-object v0
 .end method

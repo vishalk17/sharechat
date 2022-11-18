@@ -1,4 +1,4 @@
-.class synthetic Landroidx/constraintlayout/widget/a$a;
+.class public final synthetic Landroidx/constraintlayout/widget/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,20 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/constraintlayout/widget/a$b;->values()[Landroidx/constraintlayout/widget/a$b;
 
     move-result-object v0

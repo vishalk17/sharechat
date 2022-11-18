@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4018
+    accessFlags = 0x4019
     name = "e"
 .end annotation
 
@@ -37,11 +37,11 @@
 
 
 # instance fields
-.field AFInAppEventType:Ljava/lang/String;
+.field public AFInAppEventType:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 8
 
     .line 1
@@ -155,7 +155,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/appsflyer/internal/i$e;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/appsflyer/internal/i$e;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -170,7 +169,6 @@
 .method public static values()[Lcom/appsflyer/internal/i$e;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/appsflyer/internal/i$e;->getLevel:[Lcom/appsflyer/internal/i$e;
 
     invoke-virtual {v0}, [Lcom/appsflyer/internal/i$e;->clone()Ljava/lang/Object;

@@ -12,31 +12,31 @@
 
 
 # static fields
-.field static final ADMIN_AVATAR:Ljava/lang/String; = "adminAvatar"
+.field public static final ADMIN_AVATAR:Ljava/lang/String; = "adminAvatar"
 
-.field static final ADMIN_ID:Ljava/lang/String; = "adminId"
+.field public static final ADMIN_ID:Ljava/lang/String; = "adminId"
 
-.field static final ADMIN_NAME:Ljava/lang/String; = "adminName"
+.field public static final ADMIN_NAME:Ljava/lang/String; = "adminName"
 
-.field static final ADMIN_TIMESTAMP:Ljava/lang/String; = "adminTimestamp"
+.field public static final ADMIN_TIMESTAMP:Ljava/lang/String; = "adminTimestamp"
 
-.field static final ASSIGNEE_ID:Ljava/lang/String; = "assigneeId"
+.field public static final ASSIGNEE_ID:Ljava/lang/String; = "assigneeId"
 
-.field static final CONVERSATION_ID:Ljava/lang/String; = "conversationId"
+.field public static final CONVERSATION_ID:Ljava/lang/String; = "conversationId"
 
-.field static final EVENT_DATA:Ljava/lang/String; = "eventData"
+.field public static final EVENT_DATA:Ljava/lang/String; = "eventData"
 
-.field static final EVENT_GUID:Ljava/lang/String; = "eventGuid"
+.field public static final EVENT_GUID:Ljava/lang/String; = "eventGuid"
 
-.field static final EVENT_NAME:Ljava/lang/String; = "eventName"
+.field public static final EVENT_NAME:Ljava/lang/String; = "eventName"
 
-.field static final NX_FROM_USER:Ljava/lang/String; = "nx.FromUser"
+.field public static final NX_FROM_USER:Ljava/lang/String; = "nx.FromUser"
 
-.field static final NX_TOPICS:Ljava/lang/String; = "nx.Topics"
+.field public static final NX_TOPICS:Ljava/lang/String; = "nx.Topics"
 
-.field static final NX_TO_USER:Ljava/lang/String; = "nx.ToUser"
+.field public static final NX_TO_USER:Ljava/lang/String; = "nx.ToUser"
 
-.field static final TOPIC_PREFIX_CONVERSATION:Ljava/lang/String; = "conversation/"
+.field public static final TOPIC_PREFIX_CONVERSATION:Ljava/lang/String; = "conversation/"
 
 
 # instance fields
@@ -84,7 +84,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    invoke-virtual {v0}, Ljava/util/AbstractMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
@@ -110,7 +110,7 @@
     .line 7
     iget-object v2, p1, Lio/intercom/android/nexus/NexusEvent$Builder;->eventData:Lio/intercom/android/nexus/EventData;
 
-    invoke-virtual {v2, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -119,7 +119,7 @@
     .line 8
     iget-object v3, p0, Lio/intercom/android/nexus/NexusEvent;->eventData:Lio/intercom/android/nexus/EventData;
 
-    invoke-virtual {v3, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v1, v2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -274,7 +274,7 @@
     .line 25
     iget-object v4, p0, Lio/intercom/android/nexus/NexusEvent;->eventData:Lio/intercom/android/nexus/EventData;
 
-    invoke-virtual {v4, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v2, v3}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -435,22 +435,22 @@
     const-string v1, "conversationId"
 
     .line 2
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "adminId"
 
     .line 3
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "adminName"
 
     .line 4
-    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "adminAvatar"
 
     .line 5
-    invoke-virtual {v0, p1, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p3}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     new-instance p1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -499,22 +499,22 @@
     const-string v1, "adminId"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "conversationId"
 
     .line 3
-    invoke-virtual {v0, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "adminName"
 
     .line 4
-    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "adminAvatar"
 
     .line 5
-    invoke-virtual {v0, p1, p3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p3}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     new-instance p1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -563,17 +563,17 @@
     const-string v1, "adminId"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "conversationId"
 
     .line 3
-    invoke-virtual {v0, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p0, "assigneeId"
 
     .line 4
-    invoke-virtual {v0, p0, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p0, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     new-instance p0, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -608,12 +608,12 @@
     const-string v1, "adminId"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "conversationId"
 
     .line 3
-    invoke-virtual {v0, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     new-instance p0, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -648,12 +648,12 @@
     const-string v1, "adminId"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "conversationId"
 
     .line 3
-    invoke-virtual {v0, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     new-instance p0, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -688,7 +688,7 @@
     const-string v1, "conversationId"
 
     .line 2
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     new-instance v1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -737,7 +737,7 @@
     const-string v1, "conversationId"
 
     .line 2
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     new-instance v1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -786,7 +786,7 @@
     const-string v1, "conversationId"
 
     .line 2
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     new-instance v1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -822,6 +822,50 @@
     return-object p0
 .end method
 
+.method public static getNewContentEvent(Ljava/lang/String;J)Lio/intercom/android/nexus/NexusEvent;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lio/intercom/android/nexus/EventData;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Lio/intercom/android/nexus/EventData;-><init>(I)V
+
+    .line 2
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p1
+
+    const-string p2, "entity_type"
+
+    invoke-virtual {v0, p2, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string p1, "entity_id"
+
+    .line 3
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    new-instance p0, Lio/intercom/android/nexus/NexusEvent$Builder;
+
+    sget-object p1, Lio/intercom/android/nexus/NexusEventType;->NewContent:Lio/intercom/android/nexus/NexusEventType;
+
+    invoke-direct {p0, p1}, Lio/intercom/android/nexus/NexusEvent$Builder;-><init>(Lio/intercom/android/nexus/NexusEventType;)V
+
+    .line 5
+    invoke-virtual {p0, v0}, Lio/intercom/android/nexus/NexusEvent$Builder;->withEventData(Lio/intercom/android/nexus/EventData;)Lio/intercom/android/nexus/NexusEvent$Builder;
+
+    move-result-object p0
+
+    .line 6
+    invoke-virtual {p0}, Lio/intercom/android/nexus/NexusEvent$Builder;->build()Lio/intercom/android/nexus/NexusEvent;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
 .method public static getNewNoteEvent(Ljava/lang/String;Ljava/lang/String;)Lio/intercom/android/nexus/NexusEvent;
     .locals 2
 
@@ -835,12 +879,12 @@
     const-string v1, "adminId"
 
     .line 2
-    invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p1, "conversationId"
 
     .line 3
-    invoke-virtual {v0, p1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     new-instance p0, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -939,7 +983,7 @@
     const-string v1, "conversationId"
 
     .line 2
-    invoke-virtual {v0, v1, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     new-instance v1, Lio/intercom/android/nexus/NexusEvent$Builder;
@@ -998,7 +1042,6 @@
 .method public getEventData()Lio/intercom/android/nexus/EventData;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->eventData:Lio/intercom/android/nexus/EventData;
 
     return-object v0
@@ -1007,7 +1050,6 @@
 .method public getEventType()Lio/intercom/android/nexus/NexusEventType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->eventType:Lio/intercom/android/nexus/NexusEventType;
 
     return-object v0
@@ -1016,7 +1058,6 @@
 .method public getGuid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->guid:Ljava/lang/String;
 
     return-object v0
@@ -1033,7 +1074,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->topics:Ljava/util/List;
 
     return-object v0
@@ -1042,7 +1082,6 @@
 .method public getUserId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->userId:Ljava/lang/String;
 
     return-object v0
@@ -1051,7 +1090,6 @@
 .method public toStringEncodedJsonObject()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusEvent;->eventType:Lio/intercom/android/nexus/NexusEventType;
 
     invoke-virtual {v0, p0}, Lio/intercom/android/nexus/NexusEventType;->toStringEncodedJsonObject(Lio/intercom/android/nexus/NexusEvent;)Ljava/lang/String;

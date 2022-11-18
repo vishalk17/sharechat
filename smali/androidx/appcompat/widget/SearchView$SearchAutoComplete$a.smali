@@ -1,4 +1,4 @@
-.class Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;
+.class public final Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
+.field public final synthetic b:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
+.method public constructor <init>(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->b:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,13 +34,38 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 1
+.method public final run()V
+    .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete$a;->b:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->c()V
+    .line 2
+    iget-boolean v1, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->h:Z
 
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-string v2, "input_method"
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/inputmethod/InputMethodManager;
+
+    const/4 v2, 0x0
+
+    .line 4
+    invoke-virtual {v1, v0, v2}, Landroid/view/inputmethod/InputMethodManager;->showSoftInput(Landroid/view/View;I)Z
+
+    .line 5
+    iput-boolean v2, v0, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->h:Z
+
+    :cond_0
     return-void
 .end method

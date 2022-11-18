@@ -1,44 +1,23 @@
-.class public final synthetic Lkc0/a;
+.class public interface abstract Lkc0/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnTouchListener;
-
-
-# static fields
-.field public static final synthetic b:Lkc0/a;
-
-
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lkc0/a;
-
-    invoke-direct {v0}, Lkc0/a;-><init>()V
-
-    sput-object v0, Lkc0/a;->b:Lkc0/a;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
-    .locals 0
+.method public abstract Hr(Ljava/lang/String;Ljava/lang/String;)V
+.end method
 
-    invoke-static {p1, p2}, Lsharechat/feature/creatorhub/leaderboards/CreatorHubLeaderBoardFragment;->qy(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public abstract Ml(Ljava/lang/String;Ljava/lang/String;)V
+.end method
 
-    move-result p1
+.method public abstract Pf(Lin/mohalla/sharechat/data/remote/model/CommentModel;)V
+.end method
 
-    return p1
+.method public abstract j1(Lin/mohalla/sharechat/data/remote/model/CommentModel;Z)V
+.end method
+
+.method public abstract jw(Lin/mohalla/sharechat/data/remote/model/CommentModel;)V
+.end method
+
+.method public abstract z8(Ljava/lang/String;Ljava/lang/String;)V
 .end method

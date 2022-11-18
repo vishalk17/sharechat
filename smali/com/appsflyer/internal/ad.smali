@@ -48,10 +48,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "https://%svalidate.%s/api/v"
@@ -75,7 +74,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -128,7 +127,7 @@
     return-void
 .end method
 
-.method static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/ad;Ljava/util/Map;Ljava/util/Map;Ljava/lang/ref/WeakReference;)V
+.method public static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/ad;Ljava/util/Map;Ljava/util/Map;Ljava/lang/ref/WeakReference;)V
     .locals 8
 
     .line 1
@@ -179,7 +178,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -492,7 +491,7 @@
     return-object p0
 .end method
 
-.method static synthetic valueOf(Lcom/appsflyer/internal/ad;)Ljava/lang/ref/WeakReference;
+.method public static synthetic valueOf(Lcom/appsflyer/internal/ad;)Ljava/lang/ref/WeakReference;
     .locals 0
 
     .line 1
@@ -584,10 +583,9 @@
     return-void
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/ad;)Ljava/util/Map;
+.method public static synthetic values(Lcom/appsflyer/internal/ad;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/appsflyer/internal/ad;->AFLogger$LogLevel:Ljava/util/Map;
 
     return-object p0
@@ -657,21 +655,21 @@
     .line 5
     iget-object v6, p0, Lcom/appsflyer/internal/ad;->AFKeystoreWrapper:Ljava/lang/String;
 
-    invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "sig-data"
 
     .line 6
     iget-object v6, p0, Lcom/appsflyer/internal/ad;->init:Ljava/lang/String;
 
-    invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "signature"
 
     .line 7
     iget-object v6, p0, Lcom/appsflyer/internal/ad;->AppsFlyer2dXConversionCallback:Ljava/lang/String;
 
-    invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     new-instance v5, Ljava/util/HashMap;
@@ -695,7 +693,7 @@
     .line 11
     iget-object v6, p0, Lcom/appsflyer/internal/ad;->values:Ljava/lang/String;
 
-    invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "app_id"
 
@@ -704,7 +702,7 @@
 
     move-result-object v6
 
-    invoke-interface {v4, v5, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v5, "uid"
 
@@ -717,7 +715,7 @@
 
     move-result-object v3
 
-    invoke-interface {v4, v5, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v5, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     invoke-static {}, Lcom/appsflyer/AppsFlyerProperties;->getInstance()Lcom/appsflyer/AppsFlyerProperties;
@@ -731,7 +729,7 @@
     if-eqz v3, :cond_3
 
     .line 15
-    invoke-interface {v4, v0, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     :cond_3
@@ -765,7 +763,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v7}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v7
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/versionedparcelable/d;
+.implements Lr6/d;
 
 
 # annotations

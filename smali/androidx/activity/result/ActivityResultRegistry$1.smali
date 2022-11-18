@@ -3,42 +3,41 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/u;
+.implements Landroidx/lifecycle/z;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/activity/result/ActivityResultRegistry;->i(Ljava/lang/String;Landroidx/lifecycle/x;Ld/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+    value = Landroidx/activity/result/ActivityResultRegistry;->d(Ljava/lang/String;Landroidx/lifecycle/b0;Lh/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Ljava/lang/String;
+.field public final synthetic b:Ljava/lang/String;
 
-.field final synthetic c:Landroidx/activity/result/a;
+.field public final synthetic c:Landroidx/activity/result/a;
 
-.field final synthetic d:Ld/a;
+.field public final synthetic d:Lh/a;
 
-.field final synthetic e:Landroidx/activity/result/ActivityResultRegistry;
+.field public final synthetic e:Landroidx/activity/result/ActivityResultRegistry;
 
 
 # direct methods
-.method constructor <init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/a;Ld/a;)V
+.method public constructor <init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/a;Lh/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
     iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
     iput-object p3, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Landroidx/activity/result/a;
 
-    iput-object p4, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Ld/a;
+    iput-object p4, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Lh/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,13 +46,13 @@
 
 
 # virtual methods
-.method public h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
+.method public final e(Landroidx/lifecycle/b0;Landroidx/lifecycle/t$b;)V
     .locals 3
 
     .line 1
-    sget-object p1, Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
+    sget-object p1, Landroidx/lifecycle/t$b;->ON_START:Landroidx/lifecycle/t$b;
 
-    invoke-virtual {p1, p2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -62,7 +61,7 @@
     .line 2
     iget-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
-    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->f:Ljava/util/Map;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->f:Ljava/util/HashMap;
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
@@ -70,20 +69,20 @@
 
     iget-object v1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Landroidx/activity/result/a;
 
-    iget-object v2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Ld/a;
+    iget-object v2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Lh/a;
 
-    invoke-direct {v0, v1, v2}, Landroidx/activity/result/ActivityResultRegistry$c;-><init>(Landroidx/activity/result/a;Ld/a;)V
+    invoke-direct {v0, v1, v2}, Landroidx/activity/result/ActivityResultRegistry$c;-><init>(Landroidx/activity/result/a;Lh/a;)V
 
-    invoke-interface {p1, p2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
-    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/Map;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/HashMap;
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
-    invoke-interface {p1, p2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -92,22 +91,22 @@
     .line 4
     iget-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
-    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/Map;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/HashMap;
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
-    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 5
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
-    iget-object p2, p2, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/Map;
+    iget-object p2, p2, Landroidx/activity/result/ActivityResultRegistry;->g:Ljava/util/HashMap;
 
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
-    invoke-interface {p2, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p2, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Landroidx/activity/result/a;
@@ -142,20 +141,16 @@
     .line 9
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Landroidx/activity/result/a;
 
-    iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Ld/a;
+    iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$1;->d:Lh/a;
 
     .line 10
-    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->b()I
-
-    move-result v1
+    iget v1, p1, Landroidx/activity/result/ActivityResult;->b:I
 
     .line 11
-    invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->a()Landroid/content/Intent;
-
-    move-result-object p1
+    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->c:Landroid/content/Intent;
 
     .line 12
-    invoke-virtual {v0, v1, p1}, Ld/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, p1}, Lh/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -165,9 +160,9 @@
 
     .line 13
     :cond_1
-    sget-object p1, Landroidx/lifecycle/q$b;->ON_STOP:Landroidx/lifecycle/q$b;
+    sget-object p1, Landroidx/lifecycle/t$b;->ON_STOP:Landroidx/lifecycle/t$b;
 
-    invoke-virtual {p1, p2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -176,19 +171,19 @@
     .line 14
     iget-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$1;->e:Landroidx/activity/result/ActivityResultRegistry;
 
-    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->f:Ljava/util/Map;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResultRegistry;->f:Ljava/util/HashMap;
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
-    invoke-interface {p1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
     .line 15
     :cond_2
-    sget-object p1, Landroidx/lifecycle/q$b;->ON_DESTROY:Landroidx/lifecycle/q$b;
+    sget-object p1, Landroidx/lifecycle/t$b;->ON_DESTROY:Landroidx/lifecycle/t$b;
 
-    invoke-virtual {p1, p2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -199,7 +194,7 @@
 
     iget-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$1;->b:Ljava/lang/String;
 
-    invoke-virtual {p1, p2}, Landroidx/activity/result/ActivityResultRegistry;->l(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Landroidx/activity/result/ActivityResultRegistry;->g(Ljava/lang/String;)V
 
     :cond_3
     :goto_0

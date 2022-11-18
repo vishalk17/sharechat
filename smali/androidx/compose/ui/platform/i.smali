@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(JZZZ)J
+.method public abstract a(JZ)J
 .end method

@@ -1,485 +1,157 @@
-.class Lk1/j;
-.super Lk1/p;
+.class public final Lk1/j;
+.super Lxo0/i;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lxo0/i;",
+        "Ldp0/p<",
+        "Lyr0/e0;",
+        "Lvo0/d<",
+        "-",
+        "Lyr0/l1;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lxo0/e;
+    c = "androidx.compose.material.ripple.RippleAnimation$fadeIn$2"
+    f = "RippleAnimation.kt"
+    l = {}
+    m = "invokeSuspend"
+.end annotation
+
+
+# instance fields
+.field public synthetic b:Ljava/lang/Object;
+
+.field public final synthetic c:Lk1/i;
 
 
 # direct methods
-.method public constructor <init>(Lj1/e;)V
-    .locals 1
+.method public constructor <init>(Lk1/i;Lvo0/d;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk1/i;",
+            "Lvo0/d<",
+            "-",
+            "Lk1/j;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lk1/p;-><init>(Lj1/e;)V
+    iput-object p1, p0, Lk1/j;->c:Lk1/i;
 
-    .line 2
-    iget-object v0, p1, Lj1/e;->d:Lk1/l;
+    const/4 p1, 0x2
 
-    invoke-virtual {v0}, Lk1/l;->f()V
-
-    .line 3
-    iget-object v0, p1, Lj1/e;->e:Lk1/n;
-
-    invoke-virtual {v0}, Lk1/n;->f()V
-
-    .line 4
-    check-cast p1, Lj1/h;
-
-    invoke-virtual {p1}, Lj1/h;->x1()I
-
-    move-result p1
-
-    iput p1, p0, Lk1/p;->f:I
-
-    return-void
-.end method
-
-.method private q(Lk1/f;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 2
-    iget-object p1, p1, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-direct {p0, p1, p2}, Lxo0/i;-><init>(ILvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lk1/d;)V
+.method public final create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lvo0/d<",
+            "*>;)",
+            "Lvo0/d<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    iget-object p1, p0, Lk1/p;->h:Lk1/f;
+    new-instance v0, Lk1/j;
 
-    iget-boolean v0, p1, Lk1/f;->c:Z
+    iget-object v1, p0, Lk1/j;->c:Lk1/i;
 
-    if-nez v0, :cond_0
+    invoke-direct {v0, v1, p2}, Lk1/j;-><init>(Lk1/i;Lvo0/d;)V
 
-    return-void
+    iput-object p1, v0, Lk1/j;->b:Ljava/lang/Object;
 
-    .line 2
-    :cond_0
-    iget-boolean v0, p1, Lk1/f;->j:Z
+    return-object v0
+.end method
 
-    if-eqz v0, :cond_1
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    return-void
+    check-cast p1, Lyr0/e0;
 
-    .line 3
-    :cond_1
-    iget-object p1, p1, Lk1/f;->l:Ljava/util/List;
+    check-cast p2, Lvo0/d;
 
-    const/4 v0, 0x0
-
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lk1/j;->create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
 
     move-result-object p1
 
-    check-cast p1, Lk1/f;
+    check-cast p1, Lk1/j;
 
-    .line 4
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
+    sget-object p2, Lro0/x;->a:Lro0/x;
 
-    check-cast v0, Lj1/h;
+    invoke-virtual {p1, p2}, Lk1/j;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/high16 v1, 0x3f000000    # 0.5f
+    move-result-object p1
 
-    .line 5
-    iget p1, p1, Lk1/f;->g:I
-
-    int-to-float p1, p1
-
-    invoke-virtual {v0}, Lj1/h;->A1()F
-
-    move-result v0
-
-    mul-float p1, p1, v0
-
-    add-float/2addr p1, v1
-
-    float-to-int p1, p1
-
-    .line 6
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-virtual {v0, p1}, Lk1/f;->d(I)V
-
-    return-void
+    return-object p1
 .end method
 
-.method d()V
-    .locals 5
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    check-cast v0, Lj1/h;
+    sget-object v0, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
 
     .line 2
-    invoke-virtual {v0}, Lj1/h;->y1()I
+    invoke-static {p1}, Lc20/e;->a0(Ljava/lang/Object;)V
 
-    move-result v1
+    iget-object p1, p0, Lk1/j;->b:Ljava/lang/Object;
+
+    check-cast p1, Lyr0/e0;
 
     .line 3
-    invoke-virtual {v0}, Lj1/h;->z1()I
+    new-instance v0, Lk1/j$a;
 
-    move-result v2
+    iget-object v1, p0, Lk1/j;->c:Lk1/i;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lk1/j$a;-><init>(Lk1/i;Lvo0/d;)V
+
+    const/4 v1, 0x3
+
+    invoke-static {p1, v2, v2, v0, v1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
     .line 4
-    invoke-virtual {v0}, Lj1/h;->A1()F
+    new-instance v0, Lk1/j$b;
+
+    iget-object v3, p0, Lk1/j;->c:Lk1/i;
+
+    invoke-direct {v0, v3, v2}, Lk1/j$b;-><init>(Lk1/i;Lvo0/d;)V
+
+    invoke-static {p1, v2, v2, v0, v1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
     .line 5
-    invoke-virtual {v0}, Lj1/h;->x1()I
+    new-instance v0, Lk1/j$c;
 
-    move-result v0
+    iget-object v3, p0, Lk1/j;->c:Lk1/i;
 
-    const/4 v3, 0x1
+    invoke-direct {v0, v3, v2}, Lk1/j$c;-><init>(Lk1/i;Lvo0/d;)V
 
-    const/4 v4, -0x1
+    invoke-static {p1, v2, v2, v0, v1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
-    if-ne v0, v3, :cond_2
+    move-result-object p1
 
-    if-eq v1, v4, :cond_0
-
-    .line 6
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v2, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v2, v2, Lj1/e;->a0:Lj1/e;
-
-    iget-object v2, v2, Lj1/e;->d:Lk1/l;
-
-    iget-object v2, v2, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->d:Lk1/l;
-
-    iget-object v0, v0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v2, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 8
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iput v1, v0, Lk1/f;->f:I
-
-    goto :goto_0
-
-    :cond_0
-    if-eq v2, v4, :cond_1
-
-    .line 9
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->a0:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->d:Lk1/l;
-
-    iget-object v1, v1, Lk1/p;->i:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 10
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->d:Lk1/l;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 11
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    neg-int v1, v2
-
-    iput v1, v0, Lk1/f;->f:I
-
-    goto :goto_0
-
-    .line 12
-    :cond_1
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iput-boolean v3, v0, Lk1/f;->b:Z
-
-    .line 13
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->a0:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->d:Lk1/l;
-
-    iget-object v1, v1, Lk1/p;->i:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 14
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->d:Lk1/l;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 15
-    :goto_0
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->d:Lk1/l;
-
-    iget-object v0, v0, Lk1/p;->h:Lk1/f;
-
-    invoke-direct {p0, v0}, Lk1/j;->q(Lk1/f;)V
-
-    .line 16
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->d:Lk1/l;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    invoke-direct {p0, v0}, Lk1/j;->q(Lk1/f;)V
-
-    goto/16 :goto_2
-
-    :cond_2
-    if-eq v1, v4, :cond_3
-
-    .line 17
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v2, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v2, v2, Lj1/e;->a0:Lj1/e;
-
-    iget-object v2, v2, Lj1/e;->e:Lk1/n;
-
-    iget-object v2, v2, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 18
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->e:Lk1/n;
-
-    iget-object v0, v0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v2, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 19
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iput v1, v0, Lk1/f;->f:I
-
-    goto :goto_1
-
-    :cond_3
-    if-eq v2, v4, :cond_4
-
-    .line 20
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->a0:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->e:Lk1/n;
-
-    iget-object v1, v1, Lk1/p;->i:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 21
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->e:Lk1/n;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 22
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    neg-int v1, v2
-
-    iput v1, v0, Lk1/f;->f:I
-
-    goto :goto_1
-
-    .line 23
-    :cond_4
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    iput-boolean v3, v0, Lk1/f;->b:Z
-
-    .line 24
-    iget-object v0, v0, Lk1/f;->l:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->a0:Lj1/e;
-
-    iget-object v1, v1, Lj1/e;->e:Lk1/n;
-
-    iget-object v1, v1, Lk1/p;->i:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 25
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->a0:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->e:Lk1/n;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    iget-object v0, v0, Lk1/f;->k:Ljava/util/List;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 26
-    :goto_1
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->e:Lk1/n;
-
-    iget-object v0, v0, Lk1/p;->h:Lk1/f;
-
-    invoke-direct {p0, v0}, Lk1/j;->q(Lk1/f;)V
-
-    .line 27
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v0, v0, Lj1/e;->e:Lk1/n;
-
-    iget-object v0, v0, Lk1/p;->i:Lk1/f;
-
-    invoke-direct {p0, v0}, Lk1/j;->q(Lk1/f;)V
-
-    :goto_2
-    return-void
-.end method
-
-.method public e()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    check-cast v0, Lj1/h;
-
-    .line 2
-    invoke-virtual {v0}, Lj1/h;->x1()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    iget v1, v1, Lk1/f;->g:I
-
-    invoke-virtual {v0, v1}, Lj1/e;->r1(I)V
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    iget-object v0, p0, Lk1/p;->b:Lj1/e;
-
-    iget-object v1, p0, Lk1/p;->h:Lk1/f;
-
-    iget v1, v1, Lk1/f;->g:I
-
-    invoke-virtual {v0, v1}, Lj1/e;->s1(I)V
-
-    :goto_0
-    return-void
-.end method
-
-.method f()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lk1/p;->h:Lk1/f;
-
-    invoke-virtual {v0}, Lk1/f;->c()V
-
-    return-void
-.end method
-
-.method m()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
+    return-object p1
 .end method

@@ -1,6 +1,9 @@
-.class public Landroidx/lifecycle/h0;
-.super Landroidx/lifecycle/LiveData;
+.class public final Landroidx/lifecycle/h0;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/g0;
 
 
 # annotations
@@ -9,62 +12,110 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Landroidx/lifecycle/LiveData<",
+        "Ljava/lang/Object;",
+        "Landroidx/lifecycle/g0<",
         "TT;>;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# instance fields
+.field public final a:Lvo0/f;
 
-    .line 2
-    invoke-direct {p0}, Landroidx/lifecycle/LiveData;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Object;)V
-    .locals 0
+.field public b:Landroidx/lifecycle/h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TT;)V"
+            "Landroidx/lifecycle/h<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Landroidx/lifecycle/h;Lvo0/f;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/h<",
+            "TT;>;",
+            "Lvo0/f;",
+            ")V"
         }
     .end annotation
 
+    const-string v0, "target"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "context"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 1
-    invoke-direct {p0, p1}, Landroidx/lifecycle/LiveData;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/lifecycle/h0;->b:Landroidx/lifecycle/h;
+
+    .line 2
+    sget-object p1, Lyr0/s0;->a:Lyr0/s0;
+
+    .line 3
+    sget-object p1, Lds0/q;->a:Lyr0/t1;
+
+    .line 4
+    invoke-virtual {p1}, Lyr0/t1;->E0()Lyr0/t1;
+
+    move-result-object p1
+
+    invoke-interface {p2, p1}, Lvo0/f;->plus(Lvo0/f;)Lvo0/f;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/lifecycle/h0;->a:Lvo0/f;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public m(Ljava/lang/Object;)V
-    .locals 0
+.method public final emit(Ljava/lang/Object;Lvo0/d;)Ljava/lang/Object;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TT;)V"
+            "(TT;",
+            "Lvo0/d<",
+            "-",
+            "Lro0/x;",
+            ">;)",
+            "Ljava/lang/Object;"
         }
     .end annotation
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/lifecycle/LiveData;->m(Ljava/lang/Object;)V
+    iget-object v0, p0, Landroidx/lifecycle/h0;->a:Lvo0/f;
 
-    return-void
-.end method
+    new-instance v1, Landroidx/lifecycle/h0$a;
 
-.method public o(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
+    const/4 v2, 0x0
 
-    .line 1
-    invoke-super {p0, p1}, Landroidx/lifecycle/LiveData;->o(Ljava/lang/Object;)V
+    invoke-direct {v1, p0, p1, v2}, Landroidx/lifecycle/h0$a;-><init>(Landroidx/lifecycle/h0;Ljava/lang/Object;Lvo0/d;)V
 
-    return-void
+    invoke-static {v0, v1, p2}, Lyr0/h;->o(Lvo0/f;Ldp0/p;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 2
+    sget-object p2, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

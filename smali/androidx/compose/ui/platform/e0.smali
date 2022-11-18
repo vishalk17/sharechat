@@ -3,255 +3,172 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/runtime/o0;
+.implements Landroid/content/ComponentCallbacks2;
 
 
 # instance fields
-.field private final b:Landroid/view/Choreographer;
+.field public final synthetic b:Lep0/o0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lep0/o0<",
+            "Landroid/content/res/Configuration;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic c:Lv2/b;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lep0/o0;Lv2/b;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lep0/o0<",
+            "Landroid/content/res/Configuration;",
+            ">;",
+            "Lv2/b;",
+            ")V"
+        }
+    .end annotation
 
-    return-void
-.end method
+    iput-object p1, p0, Landroidx/compose/ui/platform/e0;->b:Lep0/o0;
 
-.method public constructor <init>(Landroid/view/Choreographer;)V
-    .locals 1
+    iput-object p2, p0, Landroidx/compose/ui/platform/e0;->c:Lv2/b;
 
-    const-string v0, "choreographer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Landroidx/compose/ui/platform/e0;->b:Landroid/view/Choreographer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public S(Lr00/l;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public final onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lr00/l<",
-            "-",
-            "Ljava/lang/Long;",
-            "+TR;>;",
-            "Lkotlin/coroutines/d<",
-            "-TR;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+
+    const-string v0, "configuration"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-interface {p2}, Lkotlin/coroutines/d;->getContext()Lkotlin/coroutines/g;
+    iget-object v0, p0, Landroidx/compose/ui/platform/e0;->b:Lep0/o0;
 
-    move-result-object v0
+    iget-object v0, v0, Lep0/o0;->b:Ljava/lang/Object;
 
-    sget-object v1, Lkotlin/coroutines/e;->x0:Lkotlin/coroutines/e$b;
+    check-cast v0, Landroid/content/res/Configuration;
 
-    invoke-interface {v0, v1}, Lkotlin/coroutines/g;->get(Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g$b;
+    if-eqz v0, :cond_0
 
-    move-result-object v0
+    invoke-virtual {v0, p1}, Landroid/content/res/Configuration;->updateFrom(Landroid/content/res/Configuration;)I
 
-    instance-of v1, v0, Landroidx/compose/ui/platform/c0;
-
-    if-eqz v1, :cond_0
-
-    check-cast v0, Landroidx/compose/ui/platform/c0;
+    move-result v0
 
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 v0, -0x1
 
     .line 2
     :goto_0
-    new-instance v1, Lkotlinx/coroutines/q;
+    iget-object v1, p0, Landroidx/compose/ui/platform/e0;->c:Lv2/b;
 
-    invoke-static {p2}, Ll00/b;->c(Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
+    .line 3
+    iget-object v1, v1, Lv2/b;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    .line 4
+    :cond_1
+    :goto_1
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    .line 5
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    const/4 v3, 0x1
+    const-string v3, "it.next()"
 
-    invoke-direct {v1, v2, v3}, Lkotlinx/coroutines/q;-><init>(Lkotlin/coroutines/d;I)V
+    invoke-static {v2, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    invoke-virtual {v1}, Lkotlinx/coroutines/q;->v()V
-
-    .line 4
-    new-instance v2, Landroidx/compose/ui/platform/e0$c;
-
-    invoke-direct {v2, v1, p0, p1}, Landroidx/compose/ui/platform/e0$c;-><init>(Lkotlinx/coroutines/p;Landroidx/compose/ui/platform/e0;Lr00/l;)V
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    invoke-virtual {v0}, Landroidx/compose/ui/platform/c0;->J0()Landroid/view/Choreographer;
-
-    move-result-object p1
-
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/e0;->a()Landroid/view/Choreographer;
-
-    move-result-object v3
-
-    invoke-static {p1, v3}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
+    check-cast v2, Ljava/util/Map$Entry;
 
     .line 6
-    invoke-virtual {v0, v2}, Landroidx/compose/ui/platform/c0;->U0(Landroid/view/Choreographer$FrameCallback;)V
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lv2/b$a;
+
+    if-eqz v2, :cond_2
 
     .line 7
-    new-instance p1, Landroidx/compose/ui/platform/e0$a;
+    iget v2, v2, Lv2/b$a;->b:I
 
-    invoke-direct {p1, v0, v2}, Landroidx/compose/ui/platform/e0$a;-><init>(Landroidx/compose/ui/platform/c0;Landroid/view/Choreographer$FrameCallback;)V
+    .line 8
+    invoke-static {v0, v2}, Landroid/content/res/Configuration;->needNewResources(II)Z
 
-    invoke-interface {v1, p1}, Lkotlinx/coroutines/p;->J(Lr00/l;)V
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 9
+    :cond_2
+    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_1
 
-    .line 8
-    :cond_1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/e0;->a()Landroid/view/Choreographer;
-
-    move-result-object p1
-
-    invoke-virtual {p1, v2}, Landroid/view/Choreographer;->postFrameCallback(Landroid/view/Choreographer$FrameCallback;)V
-
-    .line 9
-    new-instance p1, Landroidx/compose/ui/platform/e0$b;
-
-    invoke-direct {p1, p0, v2}, Landroidx/compose/ui/platform/e0$b;-><init>(Landroidx/compose/ui/platform/e0;Landroid/view/Choreographer$FrameCallback;)V
-
-    invoke-interface {v1, p1}, Lkotlinx/coroutines/p;->J(Lr00/l;)V
-
     .line 10
-    :goto_1
-    invoke-virtual {v1}, Lkotlinx/coroutines/q;->s()Ljava/lang/Object;
+    :cond_3
+    iget-object v0, p0, Landroidx/compose/ui/platform/e0;->b:Lep0/o0;
 
-    move-result-object p1
+    iput-object p1, v0, Lep0/o0;->b:Ljava/lang/Object;
 
-    .line 11
-    invoke-static {}, Ll00/b;->d()Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-ne p1, v0, :cond_2
-
-    invoke-static {p2}, Lkotlin/coroutines/jvm/internal/h;->c(Lkotlin/coroutines/d;)V
-
-    :cond_2
-    return-object p1
+    return-void
 .end method
 
-.method public final a()Landroid/view/Choreographer;
+.method public final onLowMemory()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/e0;->b:Landroid/view/Choreographer;
+    iget-object v0, p0, Landroidx/compose/ui/platform/e0;->c:Lv2/b;
 
-    return-object v0
+    .line 2
+    iget-object v0, v0, Lv2/b;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    return-void
 .end method
 
-.method public fold(Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(TR;",
-            "Lr00/p<",
-            "-TR;-",
-            "Lkotlin/coroutines/g$b;",
-            "+TR;>;)TR;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0, p1, p2}, Landroidx/compose/runtime/o0$a;->a(Landroidx/compose/runtime/o0;Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public get(Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g$b;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E::",
-            "Lkotlin/coroutines/g$b;",
-            ">(",
-            "Lkotlin/coroutines/g$c<",
-            "TE;>;)TE;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/runtime/o0$a;->b(Landroidx/compose/runtime/o0;Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g$b;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getKey()Lkotlin/coroutines/g$c;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lkotlin/coroutines/g$c<",
-            "*>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0}, Landroidx/compose/runtime/o0$a;->c(Landroidx/compose/runtime/o0;)Lkotlin/coroutines/g$c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public minusKey(Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/coroutines/g$c<",
-            "*>;)",
-            "Lkotlin/coroutines/g;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/runtime/o0$a;->d(Landroidx/compose/runtime/o0;Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public plus(Lkotlin/coroutines/g;)Lkotlin/coroutines/g;
+.method public final onTrimMemory(I)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/compose/runtime/o0$a;->e(Landroidx/compose/runtime/o0;Lkotlin/coroutines/g;)Lkotlin/coroutines/g;
+    iget-object p1, p0, Landroidx/compose/ui/platform/e0;->c:Lv2/b;
 
-    move-result-object p1
+    .line 2
+    iget-object p1, p1, Lv2/b;->a:Ljava/util/HashMap;
 
-    return-object p1
+    invoke-virtual {p1}, Ljava/util/HashMap;->clear()V
+
+    return-void
 .end method

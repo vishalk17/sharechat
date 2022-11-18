@@ -16,13 +16,13 @@
 
 .field private AFVersionDeclaration:Ljava/lang/String;
 
-.field valueOf:Z
+.field public valueOf:Z
 
-.field values:Lcom/appsflyer/internal/ao$b;
+.field public values:Lcom/appsflyer/internal/ao$b;
 
 
 # direct methods
-.method constructor <init>(Landroid/net/Uri;Lcom/appsflyer/internal/ae;Landroid/content/Context;)V
+.method public constructor <init>(Landroid/net/Uri;Lcom/appsflyer/internal/ae;Landroid/content/Context;)V
     .locals 6
 
     const-string v0, "GET"
@@ -225,7 +225,7 @@
 
 
 # virtual methods
-.method final AFInAppEventParameterName()Ljava/lang/String;
+.method public final AFInAppEventParameterName()Ljava/lang/String;
     .locals 5
 
     .line 9
@@ -256,7 +256,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -294,7 +294,7 @@
     return-object v0
 .end method
 
-.method final AFInAppEventParameterName(Ljavax/net/ssl/HttpsURLConnection;)V
+.method public final AFInAppEventParameterName(Ljavax/net/ssl/HttpsURLConnection;)V
     .locals 4
 
     .line 1
@@ -428,7 +428,7 @@
     return-void
 .end method
 
-.method final AFInAppEventType()V
+.method public final AFInAppEventType()V
     .locals 2
 
     .line 1
@@ -450,7 +450,7 @@
     return-void
 .end method
 
-.method final AFKeystoreWrapper(Ljava/lang/String;)V
+.method public final AFKeystoreWrapper(Ljava/lang/String;)V
     .locals 5
 
     .line 2
@@ -489,7 +489,7 @@
 
     move-result-object v4
 
-    invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
@@ -529,7 +529,7 @@
     return-void
 .end method
 
-.method final AFKeystoreWrapper()Z
+.method public final AFKeystoreWrapper()Z
     .locals 2
 
     .line 1

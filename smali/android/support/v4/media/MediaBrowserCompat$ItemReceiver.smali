@@ -9,20 +9,14 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "ItemReceiver"
 .end annotation
 
 
-# instance fields
-.field private final d:Ljava/lang/String;
-
-.field private final e:Landroid/support/v4/media/MediaBrowserCompat$d;
-
-
 # virtual methods
-.method protected a(ILandroid/os/Bundle;)V
-    .locals 1
+.method public final a(ILandroid/os/Bundle;)V
+    .locals 2
 
     if-eqz p2, :cond_0
 
@@ -32,66 +26,47 @@
     move-result-object p2
 
     :cond_0
-    if-nez p1, :cond_4
+    const/4 v0, 0x0
 
-    if-eqz p2, :cond_4
+    if-nez p1, :cond_3
+
+    if-eqz p2, :cond_3
 
     const-string p1, "media_item"
 
     .line 2
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+    invoke-virtual {p2, p1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result v0
+    move-result v1
 
-    if-nez v0, :cond_1
-
-    goto :goto_2
+    if-eqz v1, :cond_3
 
     .line 3
-    :cond_1
     invoke-virtual {p2, p1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    if-eqz p1, :cond_3
+    if-eqz p1, :cond_2
 
     .line 4
     instance-of p2, p1, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
-    if-eqz p2, :cond_2
+    if-eqz p2, :cond_1
 
     goto :goto_0
 
     .line 5
-    :cond_2
-    iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;->e:Landroid/support/v4/media/MediaBrowserCompat$d;
-
-    iget-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;->d:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/support/v4/media/MediaBrowserCompat$d;->a(Ljava/lang/String;)V
-
-    goto :goto_1
+    :cond_1
+    throw v0
 
     .line 6
-    :cond_3
+    :cond_2
     :goto_0
-    iget-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;->e:Landroid/support/v4/media/MediaBrowserCompat$d;
-
     check-cast p1, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
-    invoke-virtual {p2, p1}, Landroid/support/v4/media/MediaBrowserCompat$d;->b(Landroid/support/v4/media/MediaBrowserCompat$MediaItem;)V
-
-    :goto_1
-    return-void
+    throw v0
 
     .line 7
-    :cond_4
-    :goto_2
-    iget-object p1, p0, Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;->e:Landroid/support/v4/media/MediaBrowserCompat$d;
-
-    iget-object p2, p0, Landroid/support/v4/media/MediaBrowserCompat$ItemReceiver;->d:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/support/v4/media/MediaBrowserCompat$d;->a(Ljava/lang/String;)V
-
-    return-void
+    :cond_3
+    throw v0
 .end method

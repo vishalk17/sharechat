@@ -1,58 +1,57 @@
 .class public final Lu1/a;
-.super Landroid/text/style/ClickableSpan;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final b:I
-
-.field private final c:Lu1/c;
-
-.field private final d:I
-
-
 # direct methods
-.method public constructor <init>(ILu1/c;I)V
-    .locals 0
+.method public static final a(Ldp0/p;Ldp0/l;)Lu1/l;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<Original:",
+            "Ljava/lang/Object;",
+            "Saveable:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ldp0/p<",
+            "-",
+            "Lu1/n;",
+            "-TOriginal;+",
+            "Ljava/util/List<",
+            "+TSaveable;>;>;",
+            "Ldp0/l<",
+            "-",
+            "Ljava/util/List<",
+            "+TSaveable;>;+TOriginal;>;)",
+            "Lu1/l<",
+            "TOriginal;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+
+    const-string v0, "save"
+
+    invoke-static {p0, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "restore"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
+    new-instance v0, Lu1/a$a;
+
+    invoke-direct {v0, p0}, Lu1/a$a;-><init>(Ldp0/p;)V
+
+    const/4 p0, 0x1
 
     .line 2
-    iput p1, p0, Lu1/a;->b:I
+    invoke-static {p1, p0}, Lep0/u0;->e(Ljava/lang/Object;I)Ljava/lang/Object;
 
     .line 3
-    iput-object p2, p0, Lu1/a;->c:Lu1/c;
+    invoke-static {v0, p1}, Lu1/m;->a(Ldp0/p;Ldp0/l;)Lu1/l;
 
-    .line 4
-    iput p3, p0, Lu1/a;->d:I
+    move-result-object p0
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-
-    .line 1
-    new-instance p1, Landroid/os/Bundle;
-
-    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
-
-    .line 2
-    iget v0, p0, Lu1/a;->b:I
-
-    const-string v1, "ACCESSIBILITY_CLICKABLE_SPAN_ID"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 3
-    iget-object v0, p0, Lu1/a;->c:Lu1/c;
-
-    iget v1, p0, Lu1/a;->d:I
-
-    invoke-virtual {v0, v1, p1}, Lu1/c;->S(ILandroid/os/Bundle;)Z
-
-    return-void
+    return-object p0
 .end method

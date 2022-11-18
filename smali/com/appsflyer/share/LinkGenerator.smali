@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field AFInAppEventParameterName:Ljava/lang/String;
+.field public AFInAppEventParameterName:Ljava/lang/String;
 
 .field private AFInAppEventType:Ljava/lang/String;
 
@@ -46,7 +46,7 @@
 
 .field private onInstallConversionFailureNative:Ljava/lang/String;
 
-.field valueOf:Ljava/lang/String;
+.field public valueOf:Ljava/lang/String;
 
 .field private values:Ljava/lang/String;
 
@@ -133,7 +133,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v4
 
@@ -519,16 +519,14 @@
 
     move-result-object v4
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    const-string v5, "="
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    .line 50
+    invoke-static {v3, v5}, Landroid/support/v4/media/b;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
-    const-string v6, "="
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 51
     iget-object v6, p0, Lcom/appsflyer/share/LinkGenerator;->onAppOpenAttributionNative:Ljava/util/Map;
 
     invoke-interface {v6, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -553,14 +551,14 @@
 
     if-nez v4, :cond_c
 
-    .line 50
+    .line 52
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/16 v4, 0x3d
 
-    .line 51
+    .line 53
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     iget-object v4, p0, Lcom/appsflyer/share/LinkGenerator;->onAppOpenAttributionNative:Ljava/util/Map;
@@ -641,7 +639,6 @@
 .method public addParameter(Ljava/lang/String;Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->onAppOpenAttributionNative:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -664,7 +661,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->onAppOpenAttributionNative:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
@@ -829,7 +825,6 @@
 .method public getBrandDomain()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->onInstallConversionFailureNative:Ljava/lang/String;
 
     return-object v0
@@ -838,7 +833,6 @@
 .method public getCampaign()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->values:Ljava/lang/String;
 
     return-object v0
@@ -847,7 +841,6 @@
 .method public getChannel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->AFKeystoreWrapper:Ljava/lang/String;
 
     return-object v0
@@ -856,7 +849,6 @@
 .method public getMediaSource()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->AFInAppEventType:Ljava/lang/String;
 
     return-object v0
@@ -874,7 +866,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/share/LinkGenerator;->onAppOpenAttributionNative:Ljava/util/Map;
 
     return-object v0
@@ -883,7 +874,6 @@
 .method public setBaseDeeplink(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->onInstallConversionDataLoadedNative:Ljava/lang/String;
 
     return-object p0
@@ -964,7 +954,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -994,7 +984,6 @@
 .method public setBrandDomain(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->onInstallConversionFailureNative:Ljava/lang/String;
 
     return-object p0
@@ -1003,7 +992,6 @@
 .method public setCampaign(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->values:Ljava/lang/String;
 
     return-object p0
@@ -1012,7 +1000,6 @@
 .method public setChannel(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->AFKeystoreWrapper:Ljava/lang/String;
 
     return-object p0
@@ -1021,7 +1008,6 @@
 .method public setDeeplinkPath(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->AFLogger$LogLevel:Ljava/lang/String;
 
     return-object p0
@@ -1030,7 +1016,6 @@
 .method public setReferrerCustomerId(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->getLevel:Ljava/lang/String;
 
     return-object p0
@@ -1039,7 +1024,6 @@
 .method public setReferrerImageURL(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->AFVersionDeclaration:Ljava/lang/String;
 
     return-object p0
@@ -1048,7 +1032,6 @@
 .method public setReferrerName(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->AppsFlyer2dXConversionCallback:Ljava/lang/String;
 
     return-object p0
@@ -1057,7 +1040,6 @@
 .method public setReferrerUID(Ljava/lang/String;)Lcom/appsflyer/share/LinkGenerator;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/share/LinkGenerator;->init:Ljava/lang/String;
 
     return-object p0

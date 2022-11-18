@@ -1,87 +1,86 @@
-.class public final Landroidx/lifecycle/k0;
-.super Lkotlinx/coroutines/l0;
+.class public Landroidx/lifecycle/k0;
+.super Landroidx/lifecycle/LiveData;
 .source "SourceFile"
 
 
-# instance fields
-.field public final c:Landroidx/lifecycle/j;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Landroidx/lifecycle/LiveData<",
+        "TT;>;"
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Lkotlinx/coroutines/l0;-><init>()V
+    .locals 0
 
     .line 2
-    new-instance v0, Landroidx/lifecycle/j;
+    invoke-direct {p0}, Landroidx/lifecycle/LiveData;-><init>()V
 
-    invoke-direct {v0}, Landroidx/lifecycle/j;-><init>()V
+    return-void
+.end method
 
-    iput-object v0, p0, Landroidx/lifecycle/k0;->c:Landroidx/lifecycle/j;
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1}, Landroidx/lifecycle/LiveData;-><init>(Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public Z(Lkotlin/coroutines/g;Ljava/lang/Runnable;)V
-    .locals 1
+.method public final j(Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "block"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/k0;->c:Landroidx/lifecycle/j;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/lifecycle/j;->c(Lkotlin/coroutines/g;Ljava/lang/Runnable;)V
+    invoke-super {p0, p1}, Landroidx/lifecycle/LiveData;->j(Ljava/lang/Object;)V
 
     return-void
 .end method
 
-.method public l0(Lkotlin/coroutines/g;)Z
+.method public l(Ljava/lang/Object;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "setValue"
 
     .line 1
-    sget-object v0, Lkotlinx/coroutines/j1;->a:Lkotlinx/coroutines/j1;
-
-    invoke-static {}, Lkotlinx/coroutines/j1;->c()Lkotlinx/coroutines/s2;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lkotlinx/coroutines/s2;->q0()Lkotlinx/coroutines/s2;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lkotlinx/coroutines/l0;->l0(Lkotlin/coroutines/g;)Z
-
-    move-result p1
-
-    const/4 v0, 0x1
-
-    if-eqz p1, :cond_0
-
-    return v0
+    invoke-static {v0}, Landroidx/lifecycle/LiveData;->a(Ljava/lang/String;)V
 
     .line 2
-    :cond_0
-    iget-object p1, p0, Landroidx/lifecycle/k0;->c:Landroidx/lifecycle/j;
+    iget v0, p0, Landroidx/lifecycle/LiveData;->g:I
 
-    invoke-virtual {p1}, Landroidx/lifecycle/j;->b()Z
+    add-int/lit8 v0, v0, 0x1
 
-    move-result p1
+    iput v0, p0, Landroidx/lifecycle/LiveData;->g:I
 
-    xor-int/2addr p1, v0
+    .line 3
+    iput-object p1, p0, Landroidx/lifecycle/LiveData;->e:Ljava/lang/Object;
 
-    return p1
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-virtual {p0, p1}, Landroidx/lifecycle/LiveData;->c(Landroidx/lifecycle/LiveData$c;)V
+
+    return-void
 .end method

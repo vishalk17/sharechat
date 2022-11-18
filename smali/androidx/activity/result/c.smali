@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,31 +25,15 @@
 
 
 # virtual methods
-.method public a(Ljava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TI;)V"
-        }
-    .end annotation
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-virtual {p0, p1, v0}, Landroidx/activity/result/c;->b(Ljava/lang/Object;Landroidx/core/app/b;)V
-
-    return-void
-.end method
-
-.method public abstract b(Ljava/lang/Object;Landroidx/core/app/b;)V
+.method public abstract a(Ljava/lang/Object;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TI;",
-            "Landroidx/core/app/b;",
+            "Lf4/b;",
             ")V"
         }
     .end annotation
 .end method
 
-.method public abstract c()V
+.method public abstract b()V
 .end method

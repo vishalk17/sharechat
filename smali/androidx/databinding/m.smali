@@ -1,24 +1,21 @@
-.class public abstract Landroidx/databinding/m;
+.class public final Landroidx/databinding/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/Choreographer$FrameCallback;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Landroidx/databinding/ViewDataBinding;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+
+# instance fields
+.field public final synthetic b:Landroidx/databinding/ViewDataBinding;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroidx/databinding/ViewDataBinding;)V
     .locals 0
 
-    .line 1
+    iput-object p1, p0, Landroidx/databinding/m;->b:Landroidx/databinding/ViewDataBinding;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,37 +23,17 @@
 
 
 # virtual methods
-.method public a(Landroidx/databinding/ViewDataBinding;)V
+.method public final doFrame(J)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
+
+    .line 1
+    iget-object p1, p0, Landroidx/databinding/m;->b:Landroidx/databinding/ViewDataBinding;
+
+    .line 2
+    iget-object p1, p1, Landroidx/databinding/ViewDataBinding;->c:Landroidx/databinding/ViewDataBinding$g;
+
+    .line 3
+    invoke-virtual {p1}, Landroidx/databinding/ViewDataBinding$g;->run()V
 
     return-void
-.end method
-
-.method public b(Landroidx/databinding/ViewDataBinding;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public c(Landroidx/databinding/ViewDataBinding;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)Z"
-        }
-    .end annotation
-
-    const/4 p1, 0x1
-
-    return p1
 .end method

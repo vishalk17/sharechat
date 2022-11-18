@@ -15,29 +15,29 @@
 
 
 # static fields
-.field public static final close_drawer:I = 0x7f12019b
+.field public static final close_drawer:I = 0x7f1201ca
 
-.field public static final close_sheet:I = 0x7f12019c
+.field public static final close_sheet:I = 0x7f1201cb
 
-.field public static final default_error_message:I = 0x7f120261
+.field public static final default_error_message:I = 0x7f1202ae
 
-.field public static final in_progress:I = 0x7f120417
+.field public static final in_progress:I = 0x7f1204bb
 
-.field public static final indeterminate:I = 0x7f12041b
+.field public static final indeterminate:I = 0x7f1204c0
 
-.field public static final navigation_menu:I = 0x7f120624
+.field public static final navigation_menu:I = 0x7f120729
 
-.field public static final not_selected:I = 0x7f120666
+.field public static final not_selected:I = 0x7f120770
 
-.field public static final off:I = 0x7f120698
+.field public static final off:I = 0x7f1207a5
 
-.field public static final on:I = 0x7f1206a5
+.field public static final on:I = 0x7f1207ab
 
-.field public static final selected:I = 0x7f1208a9
+.field public static final selected:I = 0x7f1209ed
 
-.field public static final tab:I = 0x7f12095e
+.field public static final tab:I = 0x7f120ab6
 
-.field public static final template_percent:I = 0x7f120973
+.field public static final template_percent:I = 0x7f120ad5
 
 
 # direct methods

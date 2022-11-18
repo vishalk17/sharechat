@@ -16,16 +16,15 @@
 
 
 # instance fields
-.field b:Z
+.field public b:Z
 
-.field c:Landroid/os/Bundle;
+.field public c:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/afollestad/materialdialogs/prefs/MaterialMultiSelectListPreference$SavedState$a;
 
     invoke-direct {v0}, Lcom/afollestad/materialdialogs/prefs/MaterialMultiSelectListPreference$SavedState$a;-><init>()V
@@ -35,7 +34,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
     .line 1
@@ -70,11 +69,11 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
     iget-boolean p2, p0, Lcom/afollestad/materialdialogs/prefs/MaterialMultiSelectListPreference$SavedState;->b:Z

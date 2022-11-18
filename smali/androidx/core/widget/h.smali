@@ -13,20 +13,19 @@
 
 
 # static fields
-.field private static a:Ljava/lang/reflect/Method;
+.field public static a:Ljava/lang/reflect/Method;
 
-.field private static b:Z
+.field public static b:Z
 
-.field private static c:Ljava/lang/reflect/Field;
+.field public static c:Ljava/lang/reflect/Field;
 
-.field private static d:Z
+.field public static d:Z
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,12 +46,8 @@
 
     goto :goto_1
 
-    :cond_0
-    const/16 v1, 0x15
-
-    if-lt v0, v1, :cond_2
-
     .line 3
+    :cond_0
     sget-boolean v0, Landroidx/core/widget/h;->d:Z
 
     const-string v1, "PopupWindowCompatApi21"
@@ -74,7 +69,7 @@
     sput-object v2, Landroidx/core/widget/h;->c:Ljava/lang/reflect/Field;
 
     .line 5
-    invoke-virtual {v2, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v2, v0}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -167,7 +162,7 @@
     sput-object v0, Landroidx/core/widget/h;->a:Ljava/lang/reflect/Method;
 
     .line 5
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
+    invoke-virtual {v0, v2}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -197,59 +192,6 @@
 
     :catch_1
     :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method public static c(Landroid/widget/PopupWindow;Landroid/view/View;III)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x13
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-static {p0, p1, p2, p3, p4}, Landroidx/core/widget/h$a;->a(Landroid/widget/PopupWindow;Landroid/view/View;III)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-static {p1}, Landroidx/core/view/c0;->E(Landroid/view/View;)I
-
-    move-result v0
-
-    .line 4
-    invoke-static {p4, v0}, Landroidx/core/view/f;->b(II)I
-
-    move-result p4
-
-    and-int/lit8 p4, p4, 0x7
-
-    const/4 v0, 0x5
-
-    if-ne p4, v0, :cond_1
-
-    .line 5
-    invoke-virtual {p0}, Landroid/widget/PopupWindow;->getWidth()I
-
-    move-result p4
-
-    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
-
-    move-result v0
-
-    sub-int/2addr p4, v0
-
-    sub-int/2addr p2, p4
-
-    .line 6
-    :cond_1
-    invoke-virtual {p0, p1, p2, p3}, Landroid/widget/PopupWindow;->showAsDropDown(Landroid/view/View;II)V
-
     :goto_0
     return-void
 .end method

@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements Li3/b;
-.implements Lk3/d;
-.implements Landroidx/lifecycle/i;
+.implements Ly7/b;
+.implements La8/d;
+.implements Landroidx/lifecycle/j;
 
 
 # annotations
@@ -15,29 +15,66 @@
         "Landroid/view/View;",
         ">",
         "Ljava/lang/Object;",
-        "Li3/b<",
+        "Ly7/b<",
         "TT;>;",
-        "Lk3/d;",
-        "Landroidx/lifecycle/i;"
+        "La8/d;",
+        "Landroidx/lifecycle/j;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0003\u0008&\u0018\u0000*\u0008\u0008\u0000\u0010\u0002*\u00020\u00012\u0008\u0012\u0004\u0012\u00028\u00000\u00032\u00020\u00042\u00020\u0005B\u0007\u00a2\u0006\u0004\u0008\u0006\u0010\u0007\u00a8\u0006\u0008"
+    }
+    d2 = {
+        "Lcoil/target/GenericViewTarget;",
+        "Landroid/view/View;",
+        "T",
+        "Ly7/b;",
+        "La8/d;",
+        "Landroidx/lifecycle/j;",
+        "<init>",
+        "()V",
+        "coil-base_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
     }
 .end annotation
 
 
 # instance fields
-.field private b:Z
+.field public b:Z
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private final j()V
+
+# virtual methods
+.method public abstract a()Landroid/graphics/drawable/Drawable;
+.end method
+
+.method public final synthetic b(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public abstract c(Landroid/graphics/drawable/Drawable;)V
+.end method
+
+.method public final d()V
     .locals 2
 
     .line 1
@@ -78,7 +115,7 @@
     return-void
 .end method
 
-.method private final l(Landroid/graphics/drawable/Drawable;)V
+.method public final f(Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
     .line 1
@@ -107,96 +144,64 @@
 
     .line 2
     :goto_1
-    invoke-virtual {p0, p1}, Lcoil/target/GenericViewTarget;->i(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p1}, Lcoil/target/GenericViewTarget;->c(Landroid/graphics/drawable/Drawable;)V
 
     .line 3
-    invoke-direct {p0}, Lcoil/target/GenericViewTarget;->j()V
+    invoke-virtual {p0}, Lcoil/target/GenericViewTarget;->d()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public abstract a()Landroid/graphics/drawable/Drawable;
-.end method
-
-.method public synthetic b(Landroidx/lifecycle/x;)V
+.method public final synthetic onDestroy(Landroidx/lifecycle/b0;)V
     .locals 0
 
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->d(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
+    return-void
+.end method
+
+.method public final onError(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcoil/target/GenericViewTarget;->f(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method
 
-.method public c(Landroidx/lifecycle/x;)V
+.method public final synthetic onPause(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onResume(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onStart(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcoil/target/GenericViewTarget;->f(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
+.end method
+
+.method public final onStart(Landroidx/lifecycle/b0;)V
     .locals 0
 
     const/4 p1, 0x1
 
-    .line 1
+    .line 2
     iput-boolean p1, p0, Lcoil/target/GenericViewTarget;->b:Z
 
-    .line 2
-    invoke-direct {p0}, Lcoil/target/GenericViewTarget;->j()V
+    .line 3
+    invoke-virtual {p0}, Lcoil/target/GenericViewTarget;->d()V
 
     return-void
 .end method
 
-.method public synthetic d(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->a(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public e(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcoil/target/GenericViewTarget;->l(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public f(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcoil/target/GenericViewTarget;->l(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public g(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lcoil/target/GenericViewTarget;->l(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public abstract i(Landroid/graphics/drawable/Drawable;)V
-.end method
-
-.method public synthetic k(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->c(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public synthetic m(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->b(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public u(Landroidx/lifecycle/x;)V
+.method public final onStop(Landroidx/lifecycle/b0;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -205,7 +210,15 @@
     iput-boolean p1, p0, Lcoil/target/GenericViewTarget;->b:Z
 
     .line 2
-    invoke-direct {p0}, Lcoil/target/GenericViewTarget;->j()V
+    invoke-virtual {p0}, Lcoil/target/GenericViewTarget;->d()V
+
+    return-void
+.end method
+
+.method public final onSuccess(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lcoil/target/GenericViewTarget;->f(Landroid/graphics/drawable/Drawable;)V
 
     return-void
 .end method

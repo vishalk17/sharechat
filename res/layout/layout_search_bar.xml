@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="horizontal" android:id="@id/toolbar" android:background="@drawable/bg_chat_search" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_margin="4.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:layout_gravity="center" android:id="@id/iv_search_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/ic_search_explore" app:tint="@color/secondary" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_search_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/ic_search_explore" app:tint="@color/secondary" />
     <sharechat.library.ui.textSwitcher.AdvTextSwitcher android:textColor="@color/secondary" android:layout_gravity="center_vertical" android:id="@id/tv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_here" android:layout_marginStart="8.0dip" app:textSize="16.0sp" />
 </LinearLayout>

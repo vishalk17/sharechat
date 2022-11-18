@@ -1,5 +1,5 @@
-.class synthetic Landroidx/renderscript/c$a;
-.super Ljava/lang/Object;
+.class public final enum Landroidx/renderscript/c$a;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
@@ -9,256 +9,172 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
-    name = null
+    accessFlags = 0x4019
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Landroidx/renderscript/c$a;",
+        ">;"
+    }
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field private static final synthetic $VALUES:[Landroidx/renderscript/c$a;
 
-.field static final synthetic b:[I
+.field public static final enum NEGATIVE_X:Landroidx/renderscript/c$a;
+
+.field public static final enum NEGATIVE_Y:Landroidx/renderscript/c$a;
+
+.field public static final enum NEGATIVE_Z:Landroidx/renderscript/c$a;
+
+.field public static final enum POSITIVE_X:Landroidx/renderscript/c$a;
+
+.field public static final enum POSITIVE_Y:Landroidx/renderscript/c$a;
+
+.field public static final enum POSITIVE_Z:Landroidx/renderscript/c$a;
+
+
+# instance fields
+.field public mID:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-static {}, Landroidx/renderscript/c$b;->values()[Landroidx/renderscript/c$b;
+    new-instance v0, Landroidx/renderscript/c$a;
+
+    const-string v1, "POSITIVE_X"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2, v2}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v0, Landroidx/renderscript/c$a;->POSITIVE_X:Landroidx/renderscript/c$a;
+
+    .line 2
+    new-instance v1, Landroidx/renderscript/c$a;
+
+    const-string v3, "NEGATIVE_X"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4, v4}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v1, Landroidx/renderscript/c$a;->NEGATIVE_X:Landroidx/renderscript/c$a;
+
+    .line 3
+    new-instance v3, Landroidx/renderscript/c$a;
+
+    const-string v5, "POSITIVE_Y"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6, v6}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v3, Landroidx/renderscript/c$a;->POSITIVE_Y:Landroidx/renderscript/c$a;
+
+    .line 4
+    new-instance v5, Landroidx/renderscript/c$a;
+
+    const-string v7, "NEGATIVE_Y"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8, v8}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v5, Landroidx/renderscript/c$a;->NEGATIVE_Y:Landroidx/renderscript/c$a;
+
+    .line 5
+    new-instance v7, Landroidx/renderscript/c$a;
+
+    const-string v9, "POSITIVE_Z"
+
+    const/4 v10, 0x4
+
+    invoke-direct {v7, v9, v10, v10}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v7, Landroidx/renderscript/c$a;->POSITIVE_Z:Landroidx/renderscript/c$a;
+
+    .line 6
+    new-instance v9, Landroidx/renderscript/c$a;
+
+    const-string v11, "NEGATIVE_Z"
+
+    const/4 v12, 0x5
+
+    invoke-direct {v9, v11, v12, v12}, Landroidx/renderscript/c$a;-><init>(Ljava/lang/String;II)V
+
+    sput-object v9, Landroidx/renderscript/c$a;->NEGATIVE_Z:Landroidx/renderscript/c$a;
+
+    const/4 v11, 0x6
+
+    new-array v11, v11, [Landroidx/renderscript/c$a;
+
+    aput-object v0, v11, v2
+
+    aput-object v1, v11, v4
+
+    aput-object v3, v11, v6
+
+    aput-object v5, v11, v8
+
+    aput-object v7, v11, v10
+
+    aput-object v9, v11, v12
+
+    .line 7
+    sput-object v11, Landroidx/renderscript/c$a;->$VALUES:[Landroidx/renderscript/c$a;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    iput p3, p0, Landroidx/renderscript/c$a;->mID:I
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Landroidx/renderscript/c$a;
+    .locals 1
+
+    const-class v0, Landroidx/renderscript/c$a;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Landroidx/renderscript/c$a;
+
+    return-object p0
+.end method
+
+.method public static values()[Landroidx/renderscript/c$a;
+    .locals 1
+
+    sget-object v0, Landroidx/renderscript/c$a;->$VALUES:[Landroidx/renderscript/c$a;
+
+    invoke-virtual {v0}, [Landroidx/renderscript/c$a;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    array-length v0, v0
+    check-cast v0, [Landroidx/renderscript/c$a;
 
-    new-array v0, v0, [I
-
-    sput-object v0, Landroidx/renderscript/c$a;->b:[I
-
-    const/4 v1, 0x1
-
-    :try_start_0
-    sget-object v2, Landroidx/renderscript/c$b;->PIXEL_LA:Landroidx/renderscript/c$b;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    const/4 v0, 0x2
-
-    :try_start_1
-    sget-object v2, Landroidx/renderscript/c$a;->b:[I
-
-    sget-object v3, Landroidx/renderscript/c$b;->PIXEL_RGB:Landroidx/renderscript/c$b;
-
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v3
-
-    aput v0, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    const/4 v2, 0x3
-
-    :try_start_2
-    sget-object v3, Landroidx/renderscript/c$a;->b:[I
-
-    sget-object v4, Landroidx/renderscript/c$b;->PIXEL_RGBA:Landroidx/renderscript/c$b;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 2
-    :catch_2
-    invoke-static {}, Landroidx/renderscript/c$c;->values()[Landroidx/renderscript/c$c;
-
-    move-result-object v3
-
-    array-length v3, v3
-
-    new-array v3, v3, [I
-
-    sput-object v3, Landroidx/renderscript/c$a;->a:[I
-
-    :try_start_3
-    sget-object v4, Landroidx/renderscript/c$c;->FLOAT_32:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v4
-
-    aput v1, v3, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v1, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v3, Landroidx/renderscript/c$c;->FLOAT_64:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v3
-
-    aput v0, v1, v3
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->SIGNED_8:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->SIGNED_16:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    :try_start_7
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->SIGNED_32:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    :catch_7
-    :try_start_8
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->SIGNED_64:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x6
-
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    :catch_8
-    :try_start_9
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->UNSIGNED_8:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    :catch_9
-    :try_start_a
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->UNSIGNED_16:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x8
-
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    :catch_a
-    :try_start_b
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->UNSIGNED_32:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0x9
-
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    :catch_b
-    :try_start_c
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->UNSIGNED_64:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xa
-
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    :catch_c
-    :try_start_d
-    sget-object v0, Landroidx/renderscript/c$a;->a:[I
-
-    sget-object v1, Landroidx/renderscript/c$c;->BOOLEAN:Landroidx/renderscript/c$c;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/16 v2, 0xb
-
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    :catch_d
-    return-void
+    return-object v0
 .end method

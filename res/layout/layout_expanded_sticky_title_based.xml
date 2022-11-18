@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="205.0dip" android:src="@drawable/bg_expanded_notif_creator_reactive" android:scaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="8.0dip">
+        <ImageView android:id="@id/iv_logo" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_sharechat_logo" android:scaleType="fitXY" android:layout_alignTop="@id/tv_app_title" android:layout_alignBottom="@id/tv_app_title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/iv_logo" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:layout_below="@id/iv_logo" />
+        <ViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="8.0dip" android:inAnimation="@anim/slide_in_from_right_nav_sticky" android:outAnimation="@anim/slide_out_to_left_nav_sticky" android:flipInterval="4500" android:layout_below="@id/tv_title" android:autoStart="true" />
+    </RelativeLayout>
+</FrameLayout>

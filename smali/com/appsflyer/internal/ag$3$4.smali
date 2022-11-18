@@ -12,22 +12,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic AFInAppEventType:Lcom/appsflyer/internal/ag$3;
+.field public final synthetic AFInAppEventType:Lcom/appsflyer/internal/ag$3;
 
 .field private synthetic AFKeystoreWrapper:Landroid/app/Activity;
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/ag$3;Landroid/app/Activity;)V
+.method public constructor <init>(Lcom/appsflyer/internal/ag$3;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/ag$3$4;->AFInAppEventType:Lcom/appsflyer/internal/ag$3;
 
     iput-object p2, p0, Lcom/appsflyer/internal/ag$3$4;->AFKeystoreWrapper:Landroid/app/Activity;

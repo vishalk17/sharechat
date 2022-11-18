@@ -1,5 +1,5 @@
-.class Landroidx/constraintlayout/motion/widget/MotionLayout$d;
-.super Landroidx/constraintlayout/motion/widget/o;
+.class public final Landroidx/constraintlayout/motion/widget/MotionLayout$d;
+.super Lc4/p;
 .source "SourceFile"
 
 
@@ -9,29 +9,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "d"
 .end annotation
 
 
 # instance fields
-.field a:F
+.field public a:F
 
-.field b:F
+.field public b:F
 
-.field c:F
+.field public c:F
 
-.field final synthetic d:Landroidx/constraintlayout/motion/widget/MotionLayout;
+.field public final synthetic d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
 
 # direct methods
-.method constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
+.method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/o;-><init>()V
+    invoke-direct {p0}, Lc4/p;-><init>()V
 
     const/4 p1, 0x0
 
@@ -46,10 +46,9 @@
 
 
 # virtual methods
-.method public a()F
+.method public final a()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v0, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->y:F
@@ -57,22 +56,7 @@
     return v0
 .end method
 
-.method public b(FFF)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:F
-
-    .line 2
-    iput p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:F
-
-    .line 3
-    iput p3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c:F
-
-    return-void
-.end method
-
-.method public getInterpolation(F)F
+.method public final getInterpolation(F)F
     .locals 5
 
     .line 1
@@ -120,7 +104,6 @@
     .line 4
     iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:F
 
-    :goto_0
     add-float/2addr v0, p1
 
     return v0
@@ -159,10 +142,12 @@
 
     div-float/2addr v3, v1
 
-    add-float/2addr v0, v3
+    add-float/2addr v3, v0
 
     .line 7
     iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:F
 
-    goto :goto_0
+    add-float/2addr v3, p1
+
+    return v3
 .end method

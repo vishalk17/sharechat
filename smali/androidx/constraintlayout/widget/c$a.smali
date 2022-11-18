@@ -1,4 +1,4 @@
-.class Landroidx/constraintlayout/widget/c$a;
+.class public final Landroidx/constraintlayout/widget/c$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,15 +9,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:Ljava/util/ArrayList;
+.field public b:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -27,14 +27,14 @@
     .end annotation
 .end field
 
-.field c:I
+.field public c:I
 
-.field d:Landroidx/constraintlayout/widget/d;
+.field public d:Landroidx/constraintlayout/widget/d;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
-    .locals 5
+    .locals 6
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -148,7 +148,20 @@
     .line 16
     iget v3, p0, Landroidx/constraintlayout/widget/c$a;->c:I
 
-    invoke-virtual {v2, p1, v3}, Landroidx/constraintlayout/widget/d;->o(Landroid/content/Context;I)V
+    .line 17
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v4, v3, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-virtual {v2, v3}, Landroidx/constraintlayout/widget/d;->f(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     :cond_1
     :goto_1
@@ -156,7 +169,7 @@
 
     goto :goto_0
 
-    .line 17
+    .line 18
     :cond_2
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -165,18 +178,7 @@
 
 
 # virtual methods
-.method a(Landroidx/constraintlayout/widget/c$b;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/c$a;->b:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public b(FF)I
+.method public final a(FF)I
     .locals 2
 
     const/4 v0, 0x0

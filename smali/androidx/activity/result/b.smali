@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract registerForActivityResult(Ld/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+.method public abstract registerForActivityResult(Lh/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<I:",
@@ -12,7 +12,7 @@
             "O:",
             "Ljava/lang/Object;",
             ">(",
-            "Ld/a<",
+            "Lh/a<",
             "TI;TO;>;",
             "Landroidx/activity/result/a<",
             "TO;>;)",

@@ -16,14 +16,13 @@
 
 
 # instance fields
-.field d:Z
+.field public d:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState$a;
 
     invoke-direct {v0}, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState$a;-><init>()V
@@ -33,11 +32,13 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
-    .locals 0
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .locals 1
+
+    const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+    invoke-direct {p0, p1, v0}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -61,11 +62,13 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
     iget-boolean p2, p0, Landroidx/slidingpanelayout/widget/SlidingPaneLayout$SavedState;->d:Z

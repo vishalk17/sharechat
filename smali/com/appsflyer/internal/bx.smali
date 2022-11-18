@@ -491,8 +491,7 @@
 
     if-gez v2, :cond_0
 
-    .line 1
-    invoke-virtual {p0}, Ljava/io/InputStream;->read()I
+    invoke-virtual {p0}, Lcom/appsflyer/internal/bx;->read()I
 
     move-result v2
 

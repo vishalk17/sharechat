@@ -1,38 +1,50 @@
 .class public abstract Landroidx/lifecycle/a;
-.super Landroidx/lifecycle/w0$c;
+.super Landroidx/lifecycle/e1$d;
 .source "SourceFile"
+
+# interfaces
+.implements Landroidx/lifecycle/e1$b;
 
 
 # instance fields
-.field private final a:Landroidx/savedstate/b;
+.field public a:Lk6/a;
 
-.field private final b:Landroidx/lifecycle/q;
+.field public b:Landroidx/lifecycle/t;
 
-.field private final c:Landroid/os/Bundle;
+.field public c:Landroid/os/Bundle;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/savedstate/d;Landroid/os/Bundle;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/w0$c;-><init>()V
+    invoke-direct {p0}, Landroidx/lifecycle/e1$d;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk6/c;Landroid/os/Bundle;)V
+    .locals 1
 
     .line 2
-    invoke-interface {p1}, Landroidx/savedstate/d;->getSavedStateRegistry()Landroidx/savedstate/b;
+    invoke-direct {p0}, Landroidx/lifecycle/e1$d;-><init>()V
+
+    .line 3
+    invoke-interface {p1}, Lk6/c;->getSavedStateRegistry()Lk6/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/lifecycle/a;->a:Landroidx/savedstate/b;
+    iput-object v0, p0, Landroidx/lifecycle/a;->a:Lk6/a;
 
-    .line 3
-    invoke-interface {p1}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/q;
+    .line 4
+    invoke-interface {p1}, Landroidx/lifecycle/b0;->getLifecycle()Landroidx/lifecycle/t;
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/q;
+    iput-object p1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/t;
 
-    .line 4
+    .line 5
     iput-object p2, p0, Landroidx/lifecycle/a;->c:Landroid/os/Bundle;
 
     return-void
@@ -40,34 +52,122 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Landroidx/lifecycle/t0;
-    .locals 1
+.method public final a(Landroidx/lifecycle/b1;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/lifecycle/a;->a:Lk6/a;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/t;
+
+    invoke-static {p1, v0, v1}, Landroidx/lifecycle/LegacySavedStateHandleController;->a(Landroidx/lifecycle/b1;Lk6/a;Landroidx/lifecycle/t;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final b(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/b1;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Landroidx/lifecycle/t0;",
+            "Landroidx/lifecycle/b1;",
             ">(",
+            "Ljava/lang/String;",
             "Ljava/lang/Class<",
             "TT;>;)TT;"
         }
     .end annotation
 
     .line 1
+    iget-object v0, p0, Landroidx/lifecycle/a;->a:Lk6/a;
+
+    iget-object v1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/t;
+
+    iget-object v2, p0, Landroidx/lifecycle/a;->c:Landroid/os/Bundle;
+
+    .line 2
+    invoke-static {v0, v1, p1, v2}, Landroidx/lifecycle/LegacySavedStateHandleController;->b(Lk6/a;Landroidx/lifecycle/t;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/lifecycle/SavedStateHandleController;
+
+    move-result-object v0
+
+    .line 3
+    iget-object v1, v0, Landroidx/lifecycle/SavedStateHandleController;->d:Landroidx/lifecycle/t0;
+
+    .line 4
+    invoke-virtual {p0, p1, p2, v1}, Landroidx/lifecycle/a;->c(Ljava/lang/String;Ljava/lang/Class;Landroidx/lifecycle/t0;)Landroidx/lifecycle/b1;
+
+    move-result-object p1
+
+    const-string p2, "androidx.lifecycle.savedstate.vm.tag"
+
+    .line 5
+    invoke-virtual {p1, p2, v0}, Landroidx/lifecycle/b1;->setTagIfAbsent(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method public abstract c(Ljava/lang/String;Ljava/lang/Class;Landroidx/lifecycle/t0;)Landroidx/lifecycle/b1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Landroidx/lifecycle/b1;",
+            ">(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Class<",
+            "TT;>;",
+            "Landroidx/lifecycle/t0;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
+.method public final create(Ljava/lang/Class;)Landroidx/lifecycle/b1;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Landroidx/lifecycle/b1;",
+            ">(",
+            "Ljava/lang/Class<",
+            "TT;>;)TT;"
+        }
+    .end annotation
+
+    .line 6
     invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 2
-    invoke-virtual {p0, v0, p1}, Landroidx/lifecycle/a;->c(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/t0;
+    .line 7
+    iget-object v1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/t;
+
+    if-eqz v1, :cond_0
+
+    .line 8
+    invoke-virtual {p0, v0, p1}, Landroidx/lifecycle/a;->b(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/b1;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
+    .line 9
     :cond_0
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "AbstractSavedStateViewModelFactory constructed with empty constructor supports only calls to create(modelClass: Class<T>, extras: CreationExtras)."
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 10
+    :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "Local and anonymous classes can not be ViewModels"
@@ -77,71 +177,62 @@
     throw p1
 .end method
 
-.method b(Landroidx/lifecycle/t0;)V
+.method public final create(Ljava/lang/Class;Lt5/a;)Landroidx/lifecycle/b1;
     .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/a;->a:Landroidx/savedstate/b;
-
-    iget-object v1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/q;
-
-    invoke-static {p1, v0, v1}, Landroidx/lifecycle/SavedStateHandleController;->a(Landroidx/lifecycle/t0;Landroidx/savedstate/b;Landroidx/lifecycle/q;)V
-
-    return-void
-.end method
-
-.method public final c(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/t0;
-    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
-            "Landroidx/lifecycle/t0;",
+            "Landroidx/lifecycle/b1;",
             ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/a;->a:Landroidx/savedstate/b;
-
-    iget-object v1, p0, Landroidx/lifecycle/a;->b:Landroidx/lifecycle/q;
-
-    iget-object v2, p0, Landroidx/lifecycle/a;->c:Landroid/os/Bundle;
-
-    invoke-static {v0, v1, p1, v2}, Landroidx/lifecycle/SavedStateHandleController;->f(Landroidx/savedstate/b;Landroidx/lifecycle/q;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/lifecycle/SavedStateHandleController;
-
-    move-result-object v0
-
-    .line 2
-    invoke-virtual {v0}, Landroidx/lifecycle/SavedStateHandleController;->g()Landroidx/lifecycle/o0;
-
-    move-result-object v1
-
-    invoke-virtual {p0, p1, p2, v1}, Landroidx/lifecycle/a;->d(Ljava/lang/String;Ljava/lang/Class;Landroidx/lifecycle/o0;)Landroidx/lifecycle/t0;
-
-    move-result-object p1
-
-    const-string p2, "androidx.lifecycle.savedstate.vm.tag"
-
-    .line 3
-    invoke-virtual {p1, p2, v0}, Landroidx/lifecycle/t0;->m(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object p1
-.end method
-
-.method protected abstract d(Ljava/lang/String;Ljava/lang/Class;Landroidx/lifecycle/o0;)Landroidx/lifecycle/t0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Landroidx/lifecycle/t0;",
-            ">(",
-            "Ljava/lang/String;",
             "Ljava/lang/Class<",
             "TT;>;",
-            "Landroidx/lifecycle/o0;",
+            "Lt5/a;",
             ")TT;"
         }
     .end annotation
+
+    .line 1
+    sget-object v0, Landroidx/lifecycle/e1$c;->c:Landroidx/lifecycle/e1$c$a$a;
+
+    invoke-virtual {p2, v0}, Lt5/a;->a(Lt5/a$b;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    iget-object v1, p0, Landroidx/lifecycle/a;->a:Lk6/a;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-virtual {p0, v0, p1}, Landroidx/lifecycle/a;->b(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/b1;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 4
+    :cond_0
+    invoke-static {p2}, Landroidx/lifecycle/u0;->a(Lt5/a;)Landroidx/lifecycle/t0;
+
+    move-result-object p2
+
+    invoke-virtual {p0, v0, p1, p2}, Landroidx/lifecycle/a;->c(Ljava/lang/String;Ljava/lang/Class;Landroidx/lifecycle/t0;)Landroidx/lifecycle/b1;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 5
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string p2, "VIEW_MODEL_KEY must always be provided by ViewModelProvider"
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

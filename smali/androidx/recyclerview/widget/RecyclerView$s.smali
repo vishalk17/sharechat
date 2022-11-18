@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,5 +25,14 @@
 
 
 # virtual methods
-.method public abstract a(II)Z
+.method public onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
+    .locals 0
+
+    return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Landroidx/appcompat/widget/ActionMenuView$c;
+.class public final Landroidx/appcompat/widget/ActionMenuView$c;
 .super Landroidx/appcompat/widget/LinearLayoutCompat$a;
 .source "SourceFile"
 
@@ -40,20 +40,22 @@
     .end annotation
 .end field
 
-.field f:Z
+.field public f:Z
 
 
 # direct methods
-.method public constructor <init>(II)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, -0x2
 
     .line 5
-    invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/LinearLayoutCompat$a;-><init>(II)V
+    invoke-direct {p0, v0, v0}, Landroidx/appcompat/widget/LinearLayoutCompat$a;-><init>(II)V
 
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
     .line 6
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ActionMenuView$c;->a:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuView$c;->a:Z
 
     return-void
 .end method

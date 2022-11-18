@@ -14,12 +14,11 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
     const-string v0, "E3F9E1E0CF99D0E56A055BA65E241B3399F7CEA524326B0CDD6EC1327ED0FDC1"
 
-    .line 1
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v0
@@ -187,7 +186,6 @@
 .method public final synthetic AFKeystoreWrapper()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/appsflyer/internal/ah;->valueOf()Ljava/lang/String;
 
     move-result-object v0

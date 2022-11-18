@@ -1,52 +1,45 @@
-.class final Landroidx/compose/ui/platform/n0;
+.class public final Landroidx/compose/ui/platform/n0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/compose/ui/platform/t1;
 
-
-# instance fields
-.field private final a:Landroidx/compose/ui/text/input/d0;
+# static fields
+.field public static final a:Landroidx/compose/ui/platform/n0;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/compose/ui/text/input/d0;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "textInputService"
+    new-instance v0, Landroidx/compose/ui/platform/n0;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Landroidx/compose/ui/platform/n0;-><init>()V
 
-    .line 1
+    sput-object v0, Landroidx/compose/ui/platform/n0;->a:Landroidx/compose/ui/platform/n0;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Landroidx/compose/ui/platform/n0;->a:Landroidx/compose/ui/text/input/d0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()V
+.method public final a(Landroid/view/accessibility/AccessibilityManager;II)I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/n0;->a:Landroidx/compose/ui/text/input/d0;
+    const-string v0, "accessibilityManager"
 
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/d0;->b()V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-void
-.end method
+    invoke-virtual {p1, p2, p3}, Landroid/view/accessibility/AccessibilityManager;->getRecommendedTimeoutMillis(II)I
 
-.method public show()V
-    .locals 1
+    move-result p1
 
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/n0;->a:Landroidx/compose/ui/text/input/d0;
-
-    invoke-virtual {v0}, Landroidx/compose/ui/text/input/d0;->c()V
-
-    return-void
+    return p1
 .end method

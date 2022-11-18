@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/secondary_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tabIndicatorColor="@color/link" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

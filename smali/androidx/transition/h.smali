@@ -1,204 +1,277 @@
-.class Landroidx/transition/h;
-.super Landroid/util/Property;
+.class public final Landroidx/transition/h;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Landroid/util/Property<",
-        "TT;",
-        "Ljava/lang/Float;",
-        ">;"
+        Landroidx/transition/h$a;
     }
 .end annotation
 
 
-# instance fields
-.field private final a:Landroid/util/Property;
+# static fields
+.field public static a:Lp6/a;
+
+.field public static b:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroid/util/Property<",
-            "TT;",
-            "Landroid/graphics/PointF;",
+            "Ljava/lang/ThreadLocal<",
+            "Ljava/lang/ref/WeakReference<",
+            "Lp0/a<",
+            "Landroid/view/ViewGroup;",
+            "Ljava/util/ArrayList<",
+            "Landroidx/transition/f;",
+            ">;>;>;>;"
+        }
+    .end annotation
+.end field
+
+.field public static c:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Landroid/view/ViewGroup;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final b:Landroid/graphics/PathMeasure;
-
-.field private final c:F
-
-.field private final d:[F
-
-.field private final e:Landroid/graphics/PointF;
-
-.field private f:F
-
 
 # direct methods
-.method constructor <init>(Landroid/util/Property;Landroid/graphics/Path;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/util/Property<",
-            "TT;",
-            "Landroid/graphics/PointF;",
-            ">;",
-            "Landroid/graphics/Path;",
-            ")V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    const-class v0, Ljava/lang/Float;
+    new-instance v0, Lp6/a;
 
-    invoke-virtual {p1}, Landroid/util/Property;->getName()Ljava/lang/String;
+    invoke-direct {v0}, Lp6/a;-><init>()V
 
-    move-result-object v1
-
-    invoke-direct {p0, v0, v1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [F
+    sput-object v0, Landroidx/transition/h;->a:Lp6/a;
 
     .line 2
-    iput-object v0, p0, Landroidx/transition/h;->d:[F
+    new-instance v0, Ljava/lang/ThreadLocal;
+
+    invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
+
+    sput-object v0, Landroidx/transition/h;->b:Ljava/lang/ThreadLocal;
 
     .line 3
-    new-instance v0, Landroid/graphics/PointF;
+    new-instance v0, Ljava/util/ArrayList;
 
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/transition/h;->e:Landroid/graphics/PointF;
-
-    .line 4
-    iput-object p1, p0, Landroidx/transition/h;->a:Landroid/util/Property;
-
-    .line 5
-    new-instance p1, Landroid/graphics/PathMeasure;
-
-    const/4 v0, 0x0
-
-    invoke-direct {p1, p2, v0}, Landroid/graphics/PathMeasure;-><init>(Landroid/graphics/Path;Z)V
-
-    iput-object p1, p0, Landroidx/transition/h;->b:Landroid/graphics/PathMeasure;
-
-    .line 6
-    invoke-virtual {p1}, Landroid/graphics/PathMeasure;->getLength()F
-
-    move-result p1
-
-    iput p1, p0, Landroidx/transition/h;->c:F
+    sput-object v0, Landroidx/transition/h;->c:Ljava/util/ArrayList;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a(Ljava/lang/Object;)Ljava/lang/Float;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)",
-            "Ljava/lang/Float;"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iget p1, p0, Landroidx/transition/h;->f:F
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    .line 2
+    new-instance v0, Lp0/a;
 
-    move-result-object p1
+    invoke-direct {v0}, Lp0/a;-><init>()V
 
-    return-object p1
+    .line 3
+    new-instance v0, Lp0/a;
+
+    invoke-direct {v0}, Lp0/a;-><init>()V
+
+    return-void
 .end method
 
-.method public b(Ljava/lang/Object;Ljava/lang/Float;)V
+.method public static a(Landroid/view/ViewGroup;Landroidx/transition/f;)V
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Ljava/lang/Float;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
+    sget-object v0, Landroidx/transition/h;->c:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
-    iput v0, p0, Landroidx/transition/h;->f:F
+    if-nez v0, :cond_4
+
+    sget-object v0, Lv4/d0;->a:Ljava/util/WeakHashMap;
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/h;->b:Landroid/graphics/PathMeasure;
+    invoke-static {p0}, Lv4/d0$g;->c(Landroid/view/View;)Z
 
-    iget v1, p0, Landroidx/transition/h;->c:F
+    move-result v0
 
-    invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
-
-    move-result p2
-
-    mul-float v1, v1, p2
-
-    iget-object p2, p0, Landroidx/transition/h;->d:[F
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p2, v2}, Landroid/graphics/PathMeasure;->getPosTan(F[F[F)Z
+    if-eqz v0, :cond_4
 
     .line 3
-    iget-object p2, p0, Landroidx/transition/h;->e:Landroid/graphics/PointF;
+    sget-object v0, Landroidx/transition/h;->c:Ljava/util/ArrayList;
 
-    iget-object v0, p0, Landroidx/transition/h;->d:[F
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    const/4 v1, 0x0
-
-    aget v1, v0, v1
-
-    iput v1, p2, Landroid/graphics/PointF;->x:F
-
-    const/4 v1, 0x1
+    if-nez p1, :cond_0
 
     .line 4
-    aget v0, v0, v1
-
-    iput v0, p2, Landroid/graphics/PointF;->y:F
+    sget-object p1, Landroidx/transition/h;->a:Lp6/a;
 
     .line 5
-    iget-object v0, p0, Landroidx/transition/h;->a:Landroid/util/Property;
-
-    invoke-virtual {v0, p1, p2}, Landroid/util/Property;->set(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/transition/h;->a(Ljava/lang/Object;)Ljava/lang/Float;
+    :cond_0
+    invoke-virtual {p1}, Landroidx/transition/f;->j()Landroidx/transition/f;
 
     move-result-object p1
 
-    return-object p1
+    .line 6
+    invoke-static {}, Landroidx/transition/h;->b()Lp0/a;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-virtual {v0, p0, v1}, Lp0/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 8
+    check-cast v0, Ljava/util/ArrayList;
+
+    if-eqz v0, :cond_1
+
+    .line 9
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    if-lez v2, :cond_1
+
+    .line 10
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/transition/f;
+
+    .line 11
+    invoke-virtual {v2, p0}, Landroidx/transition/f;->u(Landroid/view/View;)V
+
+    goto :goto_0
+
+    :cond_1
+    if-eqz p1, :cond_2
+
+    const/4 v0, 0x1
+
+    .line 12
+    invoke-virtual {p1, p0, v0}, Landroidx/transition/f;->h(Landroid/view/ViewGroup;Z)V
+
+    .line 13
+    :cond_2
+    sget v0, Landroidx/transition/R$id;->transition_current_scene:I
+
+    invoke-virtual {p0, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroidx/transition/e;
+
+    if-nez v2, :cond_3
+
+    .line 14
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    if-eqz p1, :cond_4
+
+    .line 15
+    new-instance v0, Landroidx/transition/h$a;
+
+    invoke-direct {v0, p1, p0}, Landroidx/transition/h$a;-><init>(Landroidx/transition/f;Landroid/view/ViewGroup;)V
+
+    .line 16
+    invoke-virtual {p0, v0}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
+
+    .line 17
+    invoke-virtual {p0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p0
+
+    invoke-virtual {p0, v0}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    goto :goto_1
+
+    .line 18
+    :cond_3
+    throw v1
+
+    :cond_4
+    :goto_1
+    return-void
 .end method
 
-.method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public static b()Lp0/a;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lp0/a<",
+            "Landroid/view/ViewGroup;",
+            "Ljava/util/ArrayList<",
+            "Landroidx/transition/f;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p2, Ljava/lang/Float;
+    sget-object v0, Landroidx/transition/h;->b:Ljava/lang/ThreadLocal;
 
-    invoke-virtual {p0, p1, p2}, Landroidx/transition/h;->b(Ljava/lang/Object;Ljava/lang/Float;)V
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
 
-    return-void
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/ref/WeakReference;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lp0/a;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    .line 4
+    :cond_0
+    new-instance v0, Lp0/a;
+
+    invoke-direct {v0}, Lp0/a;-><init>()V
+
+    .line 5
+    new-instance v1, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    .line 6
+    sget-object v2, Landroidx/transition/h;->b:Ljava/lang/ThreadLocal;
+
+    invoke-virtual {v2, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
+
+    return-object v0
 .end method

@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final metricsDelegator:I = 0x7f0a0b35
+.field public static final metricsDelegator:I = 0x7f0a0bd6
 
-.field public static final metricsStateHolder:I = 0x7f0a0b36
+.field public static final metricsStateHolder:I = 0x7f0a0bd7
 
 
 # direct methods

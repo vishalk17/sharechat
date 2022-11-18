@@ -19,9 +19,9 @@
 
 .field public static final androidx_core_secondary_text_default_material_light:I = 0x7f060022
 
-.field public static final notification_action_color_filter:I = 0x7f06028a
+.field public static final notification_action_color_filter:I = 0x7f060430
 
-.field public static final notification_icon_bg_color:I = 0x7f06028d
+.field public static final notification_icon_bg_color:I = 0x7f060433
 
 
 # direct methods

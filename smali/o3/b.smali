@@ -1,79 +1,63 @@
-.class public Lo3/b;
+.class public final Lo3/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ll1/c0;
+
 
 # instance fields
-.field private a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lo3/s;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:Landroidx/fragment/app/Fragment;
+
+.field public final synthetic b:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroidx/fragment/app/Fragment;Landroidx/fragment/app/FragmentManager;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Lo3/b;->a:Landroidx/fragment/app/Fragment;
+
+    iput-object p2, p0, Lo3/b;->b:Landroidx/fragment/app/FragmentManager;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lo3/b;->a:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method a(Lo3/s;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lo3/b;->a:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    return-void
-.end method
-
-.method public b(Landroid/graphics/Path;)V
+.method public final dispose()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lo3/b;->a:Ljava/util/List;
+    iget-object v0, p0, Lo3/b;->a:Landroidx/fragment/app/Fragment;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lo3/b;->b:Landroidx/fragment/app/FragmentManager;
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->U()Z
 
     move-result v0
 
-    add-int/lit8 v0, v0, -0x1
-
-    :goto_0
-    if-ltz v0, :cond_0
+    if-nez v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lo3/b;->a:Ljava/util/List;
+    iget-object v0, p0, Lo3/b;->b:Landroidx/fragment/app/FragmentManager;
 
-    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 3
+    new-instance v1, Landroidx/fragment/app/a;
 
-    move-result-object v1
+    invoke-direct {v1, v0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
-    check-cast v1, Lo3/s;
+    .line 4
+    iget-object v0, p0, Lo3/b;->a:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1, v1}, Lcom/airbnb/lottie/utils/h;->b(Landroid/graphics/Path;Lo3/s;)V
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/a;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/a0;
 
-    add-int/lit8 v0, v0, -0x1
-
-    goto :goto_0
+    .line 5
+    invoke-virtual {v1}, Landroidx/fragment/app/a;->f()I
 
     :cond_0
     return-void

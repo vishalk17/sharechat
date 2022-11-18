@@ -13,66 +13,49 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 2
+    .locals 3
 
-    .line 8
+    .line 1
     sget v0, Landroidx/preference/R$attr;->dialogPreferenceStyle:I
 
     const v1, 0x1010091
 
-    invoke-static {p1, v0, v1}, Lm1/j;->a(Landroid/content/Context;II)I
+    invoke-static {p1, v0, v1}, Li4/l;->a(Landroid/content/Context;II)I
 
     move-result v0
 
-    invoke-direct {p0, p1, p2, v0}, Landroidx/preference/MultiSelectListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/MultiSelectListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
-
     .line 2
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+    invoke-direct {p0, p1, p2, v0}, Landroidx/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    sget-object v0, Landroidx/preference/R$styleable;->MultiSelectListPreference:[I
+    new-instance v1, Ljava/util/HashSet;
 
-    invoke-virtual {p1, p2, v0, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
+
+    .line 4
+    sget-object v1, Landroidx/preference/R$styleable;->MultiSelectListPreference:[I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p1, p2, v1, v0, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 4
+    .line 5
     sget p2, Landroidx/preference/R$styleable;->MultiSelectListPreference_entries:I
 
-    sget p3, Landroidx/preference/R$styleable;->MultiSelectListPreference_android_entries:I
+    sget v0, Landroidx/preference/R$styleable;->MultiSelectListPreference_android_entries:I
 
-    invoke-static {p1, p2, p3}, Lm1/j;->q(Landroid/content/res/TypedArray;II)[Ljava/lang/CharSequence;
-
-    .line 5
-    sget p2, Landroidx/preference/R$styleable;->MultiSelectListPreference_entryValues:I
-
-    sget p3, Landroidx/preference/R$styleable;->MultiSelectListPreference_android_entryValues:I
-
-    invoke-static {p1, p2, p3}, Lm1/j;->q(Landroid/content/res/TypedArray;II)[Ljava/lang/CharSequence;
+    invoke-static {p1, p2, v0}, Li4/l;->k(Landroid/content/res/TypedArray;II)[Ljava/lang/CharSequence;
 
     .line 6
+    sget p2, Landroidx/preference/R$styleable;->MultiSelectListPreference_entryValues:I
+
+    sget v0, Landroidx/preference/R$styleable;->MultiSelectListPreference_android_entryValues:I
+
+    invoke-static {p1, p2, v0}, Li4/l;->k(Landroid/content/res/TypedArray;II)[Ljava/lang/CharSequence;
+
+    .line 7
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -80,7 +63,7 @@
 
 
 # virtual methods
-.method protected x(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
+.method public final h(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 3
 
     .line 1
@@ -108,7 +91,7 @@
 
     move-result-object v2
 
-    invoke-interface {p2, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p2, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
 

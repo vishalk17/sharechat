@@ -1,187 +1,167 @@
-.class public abstract Landroidx/recyclerview/widget/x;
+.class public final Landroidx/recyclerview/widget/x;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field protected final a:Landroidx/recyclerview/widget/RecyclerView$p;
-
-.field private b:I
-
-.field final c:Landroid/graphics/Rect;
+# static fields
+.field public static final a:Landroidx/recyclerview/widget/x;
 
 
 # direct methods
-.method private constructor <init>(Landroidx/recyclerview/widget/RecyclerView$p;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/recyclerview/widget/x;
 
-    const/high16 v0, -0x80000000
+    invoke-direct {v0}, Landroidx/recyclerview/widget/x;-><init>()V
 
-    .line 3
-    iput v0, p0, Landroidx/recyclerview/widget/x;->b:I
-
-    .line 4
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    iput-object v0, p0, Landroidx/recyclerview/widget/x;->c:Landroid/graphics/Rect;
-
-    .line 5
-    iput-object p1, p0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/RecyclerView$p;
+    sput-object v0, Landroidx/recyclerview/widget/x;->a:Landroidx/recyclerview/widget/x;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroidx/recyclerview/widget/RecyclerView$p;Landroidx/recyclerview/widget/x$a;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/x;-><init>(Landroidx/recyclerview/widget/RecyclerView$p;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public static a(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/recyclerview/widget/x$a;
-
-    invoke-direct {v0, p0}, Landroidx/recyclerview/widget/x$a;-><init>(Landroidx/recyclerview/widget/RecyclerView$p;)V
-
-    return-object v0
-.end method
-
-.method public static b(Landroidx/recyclerview/widget/RecyclerView$p;I)Landroidx/recyclerview/widget/x;
-    .locals 1
-
-    if-eqz p1, :cond_1
-
-    const/4 v0, 0x1
-
-    if-ne p1, v0, :cond_0
-
-    .line 1
-    invoke-static {p0}, Landroidx/recyclerview/widget/x;->c(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    const-string p1, "invalid orientation"
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 3
-    :cond_1
-    invoke-static {p0}, Landroidx/recyclerview/widget/x;->a(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static c(Landroidx/recyclerview/widget/RecyclerView$p;)Landroidx/recyclerview/widget/x;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/recyclerview/widget/x$b;
-
-    invoke-direct {v0, p0}, Landroidx/recyclerview/widget/x$b;-><init>(Landroidx/recyclerview/widget/RecyclerView$p;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public abstract d(Landroid/view/View;)I
-.end method
-
-.method public abstract e(Landroid/view/View;)I
-.end method
-
-.method public abstract f(Landroid/view/View;)I
-.end method
-
-.method public abstract g(Landroid/view/View;)I
-.end method
-
-.method public abstract h()I
-.end method
-
-.method public abstract i()I
-.end method
-
-.method public abstract j()I
-.end method
-
-.method public abstract k()I
-.end method
-
-.method public abstract l()I
-.end method
-
-.method public abstract m()I
-.end method
-
-.method public abstract n()I
-.end method
-
-.method public o()I
-    .locals 2
+.method public final a(Landroid/view/View;)V
+    .locals 3
 
     .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/x;->b:I
+    sget v0, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
 
-    const/high16 v1, -0x80000000
+    invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
-    if-ne v1, v0, :cond_0
+    move-result-object v1
+
+    .line 2
+    instance-of v2, v1, Ljava/lang/Float;
+
+    if-eqz v2, :cond_0
+
+    .line 3
+    check-cast v1, Ljava/lang/Float;
+
+    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+
+    move-result v1
+
+    sget-object v2, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 4
+    invoke-static {p1, v1}, Lv4/d0$i;->s(Landroid/view/View;F)V
+
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 5
+    invoke-virtual {p1, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     const/4 v0, 0x0
 
-    goto :goto_0
+    .line 6
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    :cond_0
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/x;->n()I
+    .line 7
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationY(F)V
 
-    move-result v0
-
-    iget v1, p0, Landroidx/recyclerview/widget/x;->b:I
-
-    sub-int/2addr v0, v1
-
-    :goto_0
-    return v0
+    return-void
 .end method
 
-.method public abstract p(Landroid/view/View;)I
-.end method
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;FFZ)V
+    .locals 6
 
-.method public abstract q(Landroid/view/View;)I
-.end method
-
-.method public abstract r(I)V
-.end method
-
-.method public s()V
-    .locals 1
+    if-eqz p5, :cond_3
 
     .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/x;->n()I
+    sget p5, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
 
-    move-result v0
+    invoke-virtual {p2, p5}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
-    iput v0, p0, Landroidx/recyclerview/widget/x;->b:I
+    move-result-object p5
+
+    if-nez p5, :cond_3
+
+    .line 2
+    sget-object p5, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 3
+    invoke-static {p2}, Lv4/d0$i;->i(Landroid/view/View;)F
+
+    move-result p5
+
+    .line 4
+    invoke-static {p5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object p5
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 5
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_2
+
+    .line 6
+    invoke-virtual {p1, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    if-ne v4, p2, :cond_0
+
+    goto :goto_1
+
+    .line 7
+    :cond_0
+    sget-object v5, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 8
+    invoke-static {v4}, Lv4/d0$i;->i(Landroid/view/View;)F
+
+    move-result v4
+
+    cmpl-float v5, v4, v2
+
+    if-lez v5, :cond_1
+
+    move v2, v4
+
+    :cond_1
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    add-float/2addr v2, v0
+
+    .line 9
+    invoke-static {p2, v2}, Lv4/d0$i;->s(Landroid/view/View;F)V
+
+    .line 10
+    sget p1, Landroidx/recyclerview/R$id;->item_touch_helper_previous_elevation:I
+
+    invoke-virtual {p2, p1, p5}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
+
+    .line 11
+    :cond_3
+    invoke-virtual {p2, p3}, Landroid/view/View;->setTranslationX(F)V
+
+    .line 12
+    invoke-virtual {p2, p4}, Landroid/view/View;->setTranslationY(F)V
 
     return-void
 .end method

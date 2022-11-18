@@ -1,5 +1,5 @@
-.class Landroidx/appcompat/widget/e0$b;
-.super Landroid/widget/BaseAdapter;
+.class public final Landroidx/appcompat/widget/e0$b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
@@ -9,109 +9,32 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x9
     name = "b"
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Landroidx/appcompat/widget/e0;
-
-
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/e0;)V
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/e0$b;->b:Landroidx/appcompat/widget/e0;
-
-    invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public getCount()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/e0$b;->b:Landroidx/appcompat/widget/e0;
-
-    iget-object v0, v0, Landroidx/appcompat/widget/e0;->d:Landroidx/appcompat/widget/LinearLayoutCompat;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public getItem(I)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/e0$b;->b:Landroidx/appcompat/widget/e0;
-
-    iget-object v0, v0, Landroidx/appcompat/widget/e0;->d:Landroidx/appcompat/widget/LinearLayoutCompat;
-
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroidx/appcompat/widget/e0$d;
-
-    invoke-virtual {p1}, Landroidx/appcompat/widget/e0$d;->b()Landroidx/appcompat/app/a$c;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getItemId(I)J
-    .locals 2
-
-    int-to-long v0, p1
-
-    return-wide v0
-.end method
-
-.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+.method public static a(Landroid/widget/PopupWindow;Landroid/graphics/Rect;)V
     .locals 0
 
-    if-nez p2, :cond_0
+    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setEpicenterBounds(Landroid/graphics/Rect;)V
 
-    .line 1
-    iget-object p2, p0, Landroidx/appcompat/widget/e0$b;->b:Landroidx/appcompat/widget/e0;
+    return-void
+.end method
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/e0$b;->getItem(I)Ljava/lang/Object;
+.method public static b(Landroid/widget/PopupWindow;Z)V
+    .locals 0
 
-    move-result-object p1
+    invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setIsClippedToScreen(Z)V
 
-    check-cast p1, Landroidx/appcompat/app/a$c;
-
-    const/4 p3, 0x1
-
-    invoke-virtual {p2, p1, p3}, Landroidx/appcompat/widget/e0;->c(Landroidx/appcompat/app/a$c;Z)Landroidx/appcompat/widget/e0$d;
-
-    move-result-object p2
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    move-object p3, p2
-
-    check-cast p3, Landroidx/appcompat/widget/e0$d;
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/e0$b;->getItem(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroidx/appcompat/app/a$c;
-
-    invoke-virtual {p3, p1}, Landroidx/appcompat/widget/e0$d;->a(Landroidx/appcompat/app/a$c;)V
-
-    :goto_0
-    return-object p2
+    return-void
 .end method

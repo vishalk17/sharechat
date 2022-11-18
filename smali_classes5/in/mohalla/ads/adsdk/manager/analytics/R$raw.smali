@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final moj_like:I = 0x7f11002f
+.field public static final moj_like:I = 0x7f110030
 
-.field public static final no_internet:I = 0x7f110034
+.field public static final no_internet:I = 0x7f11003c
 
 
 # direct methods

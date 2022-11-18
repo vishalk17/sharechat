@@ -1,242 +1,280 @@
-.class public Lz1/e;
+.class public final Lz1/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lz1/d;
+
+
+# instance fields
+.field public final b:Lz1/b;
+
+.field public final c:Ldp0/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/l<",
+            "Lz1/b;",
+            "Lz1/h;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lz1/b;Ldp0/l;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lz1/b;",
+            "Ldp0/l<",
+            "-",
+            "Lz1/b;",
+            "Lz1/h;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "cacheDrawScope"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "onBuildDrawCache"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-.method private static a(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-    .locals 6
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    if-nez p0, :cond_0
-
-    const/4 v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
-    if-nez p1, :cond_1
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v3, 0x0
-
-    :goto_1
-    if-eq v2, v3, :cond_2
-
-    return v1
-
-    :cond_2
-    if-nez p0, :cond_3
-
-    return v0
-
-    .line 1
-    :cond_3
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v2
-
     .line 2
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result v3
-
-    if-eq v2, v3, :cond_4
-
-    return v1
-
-    :cond_4
-    const/4 v3, 0x0
-
-    :goto_2
-    if-ge v3, v2, :cond_6
+    iput-object p1, p0, Lz1/e;->b:Lz1/b;
 
     .line 3
-    invoke-interface {p0, v3}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v4
-
-    invoke-interface {p1, v3}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v5
-
-    if-eq v4, v5, :cond_5
-
-    return v1
-
-    :cond_5
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_2
-
-    :cond_6
-    return v0
-.end method
-
-.method public static b(Landroid/widget/TextView;Landroid/graphics/drawable/Drawable;)V
-    .locals 4
-
-    .line 1
-    invoke-static {p1}, Lz1/e;->d(Landroid/graphics/drawable/Drawable;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    .line 3
-    aget-object v1, v0, v1
-
-    const/4 v2, 0x2
-
-    aget-object v2, v0, v2
-
-    const/4 v3, 0x3
-
-    aget-object v0, v0, v3
-
-    invoke-virtual {p0, p1, v1, v2, v0}, Landroid/widget/TextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+    iput-object p2, p0, Lz1/e;->c:Ldp0/l;
 
     return-void
 .end method
 
-.method public static c(Landroid/widget/TextView;Landroid/graphics/drawable/Drawable;)V
-    .locals 4
+
+# virtual methods
+.method public final B(Ljava/lang/Object;Ldp0/p;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-interface {p2, p0, p1}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic D0(Ldp0/l;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Lx1/i;->a(Lx1/h$b;Ldp0/l;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final b(Le2/c;)V
+    .locals 1
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x11
-
-    if-ge v0, v1, :cond_0
+    iget-object v0, p0, Lz1/e;->b:Lz1/b;
 
     .line 2
-    invoke-static {p0, p1}, Lz1/e;->b(Landroid/widget/TextView;Landroid/graphics/drawable/Drawable;)V
-
-    goto :goto_0
+    iget-object v0, v0, Lz1/b;->c:Lz1/h;
 
     .line 3
-    :cond_0
-    invoke-static {p1}, Lz1/e;->d(Landroid/graphics/drawable/Drawable;)V
+    invoke-static {v0}, Lep0/s;->e(Ljava/lang/Object;)V
 
     .line 4
-    invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
+    iget-object v0, v0, Lz1/h;->a:Ldp0/l;
 
     .line 5
-    aget-object v1, v0, v1
+    invoke-interface {v0, p1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    const/4 v2, 0x2
-
-    aget-object v2, v0, v2
-
-    const/4 v3, 0x3
-
-    aget-object v0, v0, v3
-
-    invoke-virtual {p0, p1, v1, v2, v0}, Landroid/widget/TextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    :goto_0
     return-void
 .end method
 
-.method private static d(Landroid/graphics/drawable/Drawable;)V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    if-eqz p0, :cond_0
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
 
     .line 1
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+    :cond_0
+    instance-of v1, p1, Lz1/e;
 
-    move-result v0
+    const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
+    if-nez v1, :cond_1
+
+    return v2
+
+    .line 2
+    :cond_1
+    iget-object v1, p0, Lz1/e;->b:Lz1/b;
+
+    check-cast p1, Lz1/e;
+
+    iget-object v3, p1, Lz1/e;->b:Lz1/b;
+
+    invoke-static {v1, v3}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
-    const/4 v2, 0x0
+    if-nez v1, :cond_2
 
-    invoke-virtual {p0, v2, v2, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+    return v2
 
-    :cond_0
-    return-void
+    .line 3
+    :cond_2
+    iget-object v1, p0, Lz1/e;->c:Ldp0/l;
+
+    iget-object p1, p1, Lz1/e;->c:Ldp0/l;
+
+    invoke-static {v1, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    return v2
+
+    :cond_3
+    return v0
 .end method
 
-.method public static e(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    iget-object v0, p0, Lz1/e;->b:Lz1/b;
 
-    move-result-object v0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    if-eq p1, v0, :cond_3
+    move-result v0
 
-    if-nez p1, :cond_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+    iget-object v1, p0, Lz1/e;->c:Ldp0/l;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
 
-    if-nez v1, :cond_0
+    add-int/2addr v1, v0
 
-    goto :goto_0
+    return v1
+.end method
+
+.method public final s(Ljava/lang/Object;Ldp0/p;)Ljava/lang/Object;
+    .locals 1
+
+    const-string v0, "operation"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p2, p1, p0}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "DrawContentCacheModifier(cacheDrawScope="
+
+    .line 1
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lz1/e;->b:Lz1/b;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", onBuildDrawCache="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lz1/e;->c:Ldp0/l;
+
+    const/16 v2, 0x29
 
     .line 3
-    :cond_0
-    instance-of v1, p1, Landroid/text/Spanned;
+    invoke-static {v0, v1, v2}, La2/h;->c(Ljava/lang/StringBuilder;Ldp0/l;C)Ljava/lang/String;
 
-    if-eqz v1, :cond_1
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final synthetic v(Lx1/h;)Lx1/h;
+    .locals 0
+
+    invoke-static {p0, p1}, Lf9/d;->b(Lx1/h;Lx1/h;)Lx1/h;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final z(Lz1/a;)V
+    .locals 1
+
+    const-string v0, "params"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lz1/e;->b:Lz1/b;
+
+    .line 2
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    iput-object p1, v0, Lz1/b;->b:Lz1/a;
+
+    const/4 p1, 0x0
 
     .line 4
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    return-void
+    iput-object p1, v0, Lz1/b;->c:Lz1/h;
 
     .line 5
-    :cond_1
-    invoke-static {p1, v0}, Lz1/e;->a(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    iget-object p1, p0, Lz1/e;->c:Ldp0/l;
 
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    return-void
+    invoke-interface {p1, v0}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    :cond_2
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget-object p1, v0, Lz1/b;->c:Lz1/h;
 
-    :cond_3
-    :goto_0
+    if-eqz p1, :cond_0
+
     return-void
+
+    .line 7
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "DrawResult not defined, did you forget to call onDraw?"
+
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

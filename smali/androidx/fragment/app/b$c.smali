@@ -1,84 +1,96 @@
-.class Landroidx/fragment/app/b$c;
-.super Landroid/animation/AnimatorListenerAdapter;
+.class public final Landroidx/fragment/app/b$c;
+.super Landroidx/fragment/app/b$d;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/b;->w(Ljava/util/List;Ljava/util/List;ZLjava/util/Map;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/fragment/app/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x9
+    name = "c"
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroid/view/ViewGroup;
+.field public c:Z
 
-.field final synthetic c:Landroid/view/View;
+.field public d:Z
 
-.field final synthetic d:Z
-
-.field final synthetic e:Landroidx/fragment/app/y$e;
-
-.field final synthetic f:Landroidx/fragment/app/b$k;
+.field public e:Landroidx/fragment/app/k$a;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/b;Landroid/view/ViewGroup;Landroid/view/View;ZLandroidx/fragment/app/y$e;Landroidx/fragment/app/b$k;)V
+.method public constructor <init>(Landroidx/fragment/app/i0$e;Lp4/d;Z)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Landroidx/fragment/app/b$c;->b:Landroid/view/ViewGroup;
+    invoke-direct {p0, p1, p2}, Landroidx/fragment/app/b$d;-><init>(Landroidx/fragment/app/i0$e;Lp4/d;)V
 
-    iput-object p3, p0, Landroidx/fragment/app/b$c;->c:Landroid/view/View;
+    const/4 p1, 0x0
 
-    iput-boolean p4, p0, Landroidx/fragment/app/b$c;->d:Z
+    .line 2
+    iput-boolean p1, p0, Landroidx/fragment/app/b$c;->d:Z
 
-    iput-object p5, p0, Landroidx/fragment/app/b$c;->e:Landroidx/fragment/app/y$e;
-
-    iput-object p6, p0, Landroidx/fragment/app/b$c;->f:Landroidx/fragment/app/b$k;
-
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    .line 3
+    iput-boolean p3, p0, Landroidx/fragment/app/b$c;->c:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 1
+.method public final c(Landroid/content/Context;)Landroidx/fragment/app/k$a;
+    .locals 4
 
     .line 1
-    iget-object p1, p0, Landroidx/fragment/app/b$c;->b:Landroid/view/ViewGroup;
+    iget-boolean v0, p0, Landroidx/fragment/app/b$c;->d:Z
 
-    iget-object v0, p0, Landroidx/fragment/app/b$c;->c:Landroid/view/View;
-
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->endViewTransition(Landroid/view/View;)V
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean p1, p0, Landroidx/fragment/app/b$c;->d:Z
+    iget-object p1, p0, Landroidx/fragment/app/b$c;->e:Landroidx/fragment/app/k$a;
 
-    if-eqz p1, :cond_0
+    return-object p1
 
     .line 3
-    iget-object p1, p0, Landroidx/fragment/app/b$c;->e:Landroidx/fragment/app/y$e;
+    :cond_0
+    iget-object v0, p0, Landroidx/fragment/app/b$d;->a:Landroidx/fragment/app/i0$e;
 
-    invoke-virtual {p1}, Landroidx/fragment/app/y$e;->e()Landroidx/fragment/app/y$e$c;
+    .line 4
+    iget-object v1, v0, Landroidx/fragment/app/i0$e;->c:Landroidx/fragment/app/Fragment;
+
+    .line 5
+    iget-object v0, v0, Landroidx/fragment/app/i0$e;->a:Landroidx/fragment/app/i0$e$c;
+
+    .line 6
+    sget-object v2, Landroidx/fragment/app/i0$e$c;->VISIBLE:Landroidx/fragment/app/i0$e$c;
+
+    const/4 v3, 0x1
+
+    if-ne v0, v2, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    iget-boolean v2, p0, Landroidx/fragment/app/b$c;->c:Z
+
+    .line 7
+    invoke-static {p1, v1, v0, v2}, Landroidx/fragment/app/k;->a(Landroid/content/Context;Landroidx/fragment/app/Fragment;ZZ)Landroidx/fragment/app/k$a;
 
     move-result-object p1
 
-    iget-object v0, p0, Landroidx/fragment/app/b$c;->c:Landroid/view/View;
+    iput-object p1, p0, Landroidx/fragment/app/b$c;->e:Landroidx/fragment/app/k$a;
 
-    invoke-virtual {p1, v0}, Landroidx/fragment/app/y$e$c;->applyState(Landroid/view/View;)V
+    .line 8
+    iput-boolean v3, p0, Landroidx/fragment/app/b$c;->d:Z
 
-    .line 4
-    :cond_0
-    iget-object p1, p0, Landroidx/fragment/app/b$c;->f:Landroidx/fragment/app/b$k;
-
-    invoke-virtual {p1}, Landroidx/fragment/app/b$l;->a()V
-
-    return-void
+    return-object p1
 .end method

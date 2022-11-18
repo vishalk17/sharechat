@@ -1,75 +1,84 @@
-.class final Landroidx/compose/ui/platform/u1$a;
-.super Lkotlin/jvm/internal/r;
+.class public final Landroidx/compose/ui/platform/u1$a;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/l;
+.implements Ldp0/p;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/platform/u1;->a(Landroidx/compose/ui/h;Ljava/lang/String;)Landroidx/compose/ui/h;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/platform/u1;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/l<",
-        "Landroidx/compose/ui/semantics/y;",
-        "Li00/a0;",
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Landroidx/compose/ui/platform/v0;",
+        "Landroid/graphics/Matrix;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Ljava/lang/String;
+# static fields
+.field public static final b:Landroidx/compose/ui/platform/u1$a;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Landroidx/compose/ui/platform/u1$a;->b:Ljava/lang/String;
+    new-instance v0, Landroidx/compose/ui/platform/u1$a;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Landroidx/compose/ui/platform/u1$a;-><init>()V
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    sput-object v0, Landroidx/compose/ui/platform/u1$a;->b:Landroidx/compose/ui/platform/u1$a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/semantics/y;)V
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    const-string v0, "$this$semantics"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/u1$a;->b:Ljava/lang/String;
+    check-cast p1, Landroidx/compose/ui/platform/v0;
 
-    invoke-static {p1, v0}, Landroidx/compose/ui/semantics/w;->S(Landroidx/compose/ui/semantics/y;Ljava/lang/String;)V
+    check-cast p2, Landroid/graphics/Matrix;
 
-    return-void
-.end method
+    const-string v0, "rn"
 
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    check-cast p1, Landroidx/compose/ui/semantics/y;
+    const-string v0, "matrix"
 
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/u1$a;->a(Landroidx/compose/ui/semantics/y;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Li00/a0;->a:Li00/a0;
+    .line 3
+    invoke-interface {p1, p2}, Landroidx/compose/ui/platform/v0;->y(Landroid/graphics/Matrix;)V
+
+    .line 4
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

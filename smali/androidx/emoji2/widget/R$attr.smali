@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final emojiReplaceStrategy:I = 0x7f040219
+.field public static final emojiReplaceStrategy:I = 0x7f040255
 
-.field public static final maxEmojiCount:I = 0x7f0403ad
+.field public static final maxEmojiCount:I = 0x7f04040c
 
 
 # direct methods

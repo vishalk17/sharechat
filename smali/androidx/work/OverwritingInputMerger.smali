@@ -1,5 +1,5 @@
 .class public final Landroidx/work/OverwritingInputMerger;
-.super Landroidx/work/j;
+.super Lu6/i;
 .source "SourceFile"
 
 
@@ -7,30 +7,29 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/work/j;-><init>()V
+    invoke-direct {p0}, Lu6/i;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b(Ljava/util/List;)Landroidx/work/e;
+.method public final a(Ljava/util/List;)Landroidx/work/b;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Landroidx/work/e;",
+            "Landroidx/work/b;",
             ">;)",
-            "Landroidx/work/e;"
+            "Landroidx/work/b;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/work/e$a;
+    new-instance v0, Landroidx/work/b$a;
 
-    invoke-direct {v0}, Landroidx/work/e$a;-><init>()V
+    invoke-direct {v0}, Landroidx/work/b$a;-><init>()V
 
     .line 2
     new-instance v1, Ljava/util/HashMap;
@@ -38,7 +37,9 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 3
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    check-cast p1, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
@@ -53,23 +54,26 @@
 
     move-result-object v2
 
-    check-cast v2, Landroidx/work/e;
+    check-cast v2, Landroidx/work/b;
 
     .line 4
-    invoke-virtual {v2}, Landroidx/work/e;->j()Ljava/util/Map;
+    iget-object v2, v2, Landroidx/work/b;->a:Ljava/util/HashMap;
+
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v2
 
-    invoke-interface {v1, v2}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+    .line 5
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
     goto :goto_0
 
-    .line 5
-    :cond_0
-    invoke-virtual {v0, v1}, Landroidx/work/e$a;->d(Ljava/util/Map;)Landroidx/work/e$a;
-
     .line 6
-    invoke-virtual {v0}, Landroidx/work/e$a;->a()Landroidx/work/e;
+    :cond_0
+    invoke-virtual {v0, v1}, Landroidx/work/b$a;->c(Ljava/util/Map;)Landroidx/work/b$a;
+
+    .line 7
+    invoke-virtual {v0}, Landroidx/work/b$a;->a()Landroidx/work/b;
 
     move-result-object p1
 

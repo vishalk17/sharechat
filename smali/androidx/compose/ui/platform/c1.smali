@@ -3,98 +3,151 @@
 .source "SourceFile"
 
 
+# instance fields
+.field public a:Landroid/os/Parcel;
+
+
 # direct methods
-.method public static final a(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    const-string v0, "obj"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-nez p1, :cond_1
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Class;->isAnonymousClass()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    const-string v1, "obtain()"
 
-    move-result-object p1
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Landroidx/compose/ui/platform/c1;->a:Landroid/os/Parcel;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(B)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/c1;->a:Landroid/os/Parcel;
+
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeByte(B)V
+
+    return-void
+.end method
+
+.method public final b(F)V
+    .locals 1
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/c1;->a:Landroid/os/Parcel;
+
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeFloat(F)V
+
+    return-void
+.end method
+
+.method public final c(J)V
+    .locals 9
+
+    .line 1
+    invoke-static {p1, p2}, Ln3/k;->c(J)J
+
+    move-result-wide v0
+
+    .line 2
+    sget-object v2, Ln3/l;->b:Ln3/l$a;
+
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    sget-object v3, Ln3/l;->b:Ln3/l$a;
+
+    const-wide/16 v3, 0x0
+
+    .line 4
+    invoke-static {v0, v1, v3, v4}, Ln3/l;->a(JJ)Z
+
+    move-result v5
+
+    const/4 v6, 0x0
+
+    if-eqz v5, :cond_0
 
     goto :goto_0
 
-    .line 3
+    .line 5
     :cond_0
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object p1
+    .line 6
+    sget-wide v7, Ln3/l;->c:J
 
-    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    .line 7
+    invoke-static {v0, v1, v7, v8}, Ln3/l;->a(JJ)Z
 
-    move-result-object p1
+    move-result v5
 
-    .line 4
+    if-eqz v5, :cond_1
+
+    const/4 v6, 0x1
+
+    goto :goto_0
+
+    .line 8
     :cond_1
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    sget-wide v7, Ln3/l;->d:J
+
+    .line 10
+    invoke-static {v0, v1, v7, v8}, Ln3/l;->a(JJ)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 v6, 0x2
+
+    .line 11
+    :cond_2
     :goto_0
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-virtual {p0, v6}, Landroidx/compose/ui/platform/c1;->a(B)V
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 12
+    invoke-static {p1, p2}, Ln3/k;->c(J)J
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-wide v0
 
-    const/16 p1, 0x40
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1, v3, v4}, Ln3/l;->a(JJ)Z
 
-    sget-object p1, Lkotlin/jvm/internal/o0;->a:Lkotlin/jvm/internal/o0;
+    move-result v0
 
-    const/4 p1, 0x1
+    if-nez v0, :cond_3
 
-    new-array v1, p1, [Ljava/lang/Object;
+    .line 13
+    invoke-static {p1, p2}, Ln3/k;->d(J)F
 
-    const/4 v2, 0x0
+    move-result p1
 
-    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/c1;->b(F)V
 
-    move-result p0
+    :cond_3
+    return-void
+.end method
 
-    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+.method public final d(J)V
+    .locals 1
 
-    move-result-object p0
+    iget-object v0, p0, Landroidx/compose/ui/platform/c1;->a:Landroid/os/Parcel;
 
-    aput-object p0, v1, v2
+    invoke-virtual {v0, p1, p2}, Landroid/os/Parcel;->writeLong(J)V
 
-    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object p0
-
-    const-string p1, "%07x"
-
-    invoke-static {p1, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "format(format, *args)"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

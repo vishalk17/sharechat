@@ -1,50 +1,53 @@
-.class public Lk4/b;
-.super Lk4/f;
+.class public final Lk4/b;
+.super Lk4/c;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lk4/f<",
-        "Landroid/graphics/Bitmap;",
-        ">;"
-    }
-.end annotation
-
-
 # direct methods
-.method public constructor <init>(Landroid/widget/ImageView;)V
+.method public constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Lk4/f;-><init>(Landroid/widget/ImageView;)V
+    invoke-direct {p0, p1, p2}, Lk4/c;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected bridge synthetic h(Ljava/lang/Object;)V
-    .locals 0
+.method public final a(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
+    .locals 6
 
-    .line 1
-    check-cast p1, Landroid/graphics/Bitmap;
+    const/4 v5, 0x0
 
-    invoke-virtual {p0, p1}, Lk4/b;->j(Landroid/graphics/Bitmap;)V
+    move v0, p1
+
+    move v1, p2
+
+    move v2, p3
+
+    move-object v3, p4
+
+    move-object v4, p5
+
+    invoke-static/range {v0 .. v5}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
 
     return-void
 .end method
 
-.method protected j(Landroid/graphics/Bitmap;)V
-    .locals 1
+.method public final getOutline(Landroid/graphics/Outline;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lk4/k;->b:Landroid/view/View;
+    invoke-virtual {p0}, Lk4/c;->e()V
 
-    check-cast v0, Landroid/widget/ImageView;
+    .line 2
+    iget-object v0, p0, Lk4/c;->h:Landroid/graphics/Rect;
 
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    .line 3
+    iget v1, p0, Lk4/c;->g:F
+
+    .line 4
+    invoke-virtual {p1, v0, v1}, Landroid/graphics/Outline;->setRoundRect(Landroid/graphics/Rect;F)V
 
     return-void
 .end method

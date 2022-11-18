@@ -1,141 +1,127 @@
 .class public final Landroidx/compose/ui/platform/w0;
-.super Landroidx/compose/ui/platform/a1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/compose/ui/h$c;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/compose/ui/platform/w0$a;
-    }
-.end annotation
+.implements Lu1/i;
 
 
 # instance fields
-.field private final c:Landroidx/compose/ui/platform/w0$a;
+.field public final a:Ldp0/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic b:Lu1/i;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lu1/i;Ldp0/a;)V
     .locals 0
-
-    return-void
-.end method
-
-.method public constructor <init>(Lr00/l;)V
-    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lr00/l<",
-            "-",
-            "Landroidx/compose/ui/platform/z0;",
-            "Li00/a0;",
+            "Lu1/i;",
+            "Ldp0/a<",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
-    const-string v0, "inspectorInfo"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    invoke-direct {p0, p1}, Landroidx/compose/ui/platform/a1;-><init>(Lr00/l;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance p1, Landroidx/compose/ui/platform/w0$a;
+    iput-object p2, p0, Landroidx/compose/ui/platform/w0;->a:Ldp0/a;
 
-    invoke-direct {p1, p0}, Landroidx/compose/ui/platform/w0$a;-><init>(Landroidx/compose/ui/platform/w0;)V
-
-    iput-object p1, p0, Landroidx/compose/ui/platform/w0;->c:Landroidx/compose/ui/platform/w0$a;
+    .line 3
+    iput-object p1, p0, Landroidx/compose/ui/platform/w0;->b:Lu1/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public D(Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/ui/h$c$a;->d(Landroidx/compose/ui/h$c;Landroidx/compose/ui/h;)Landroidx/compose/ui/h;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public b(Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(TR;",
-            "Lr00/p<",
-            "-",
-            "Landroidx/compose/ui/h$c;",
-            "-TR;+TR;>;)TR;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p0, p1, p2}, Landroidx/compose/ui/h$c$a;->c(Landroidx/compose/ui/h$c;Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final c()Landroidx/compose/ui/platform/w0$a;
+.method public final a(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/w0;->c:Landroidx/compose/ui/platform/w0$a;
+    const-string v0, "value"
 
-    return-object v0
-.end method
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public w(Lr00/l;)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lr00/l<",
-            "-",
-            "Landroidx/compose/ui/h$c;",
-            "Ljava/lang/Boolean;",
-            ">;)Z"
-        }
-    .end annotation
+    iget-object v0, p0, Landroidx/compose/ui/platform/w0;->b:Lu1/i;
 
-    .line 1
-    invoke-static {p0, p1}, Landroidx/compose/ui/h$c$a;->a(Landroidx/compose/ui/h$c;Lr00/l;)Z
+    invoke-interface {v0, p1}, Lu1/i;->a(Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public x0(Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
-    .locals 0
+.method public final b(Ljava/lang/String;Ldp0/a;)Lu1/i$a;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<R:",
+            "(",
+            "Ljava/lang/String;",
+            "Ldp0/a<",
+            "+",
             "Ljava/lang/Object;",
-            ">(TR;",
-            "Lr00/p<",
-            "-TR;-",
-            "Landroidx/compose/ui/h$c;",
-            "+TR;>;)TR;"
+            ">;)",
+            "Lu1/i$a;"
         }
     .end annotation
 
-    .line 1
-    invoke-static {p0, p1, p2}, Landroidx/compose/ui/h$c$a;->b(Landroidx/compose/ui/h$c;Ljava/lang/Object;Lr00/p;)Ljava/lang/Object;
+    const-string v0, "key"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/w0;->b:Lu1/i;
+
+    invoke-interface {v0, p1, p2}, Lu1/i;->b(Ljava/lang/String;Ldp0/a;)Lu1/i$a;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final c()Ljava/util/Map;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/Object;",
+            ">;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/w0;->b:Lu1/i;
+
+    invoke-interface {v0}, Lu1/i;->c()Ljava/util/Map;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 1
+
+    const-string v0, "key"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/w0;->b:Lu1/i;
+
+    invoke-interface {v0, p1}, Lu1/i;->d(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -2,73 +2,47 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/compose/ui/platform/f2;
 
-# static fields
-.field public static final a:Landroidx/compose/ui/platform/k0;
 
-.field public static b:Lr00/p;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lr00/p<",
-            "Landroidx/compose/runtime/i;",
-            "Ljava/lang/Integer;",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
-.end field
+# instance fields
+.field public final a:Landroid/content/Context;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Landroidx/compose/ui/platform/k0;
-
-    invoke-direct {v0}, Landroidx/compose/ui/platform/k0;-><init>()V
-
-    sput-object v0, Landroidx/compose/ui/platform/k0;->a:Landroidx/compose/ui/platform/k0;
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/k0$a;->b:Landroidx/compose/ui/platform/k0$a;
-
-    const v1, -0x68ded66e
-
-    const/4 v2, 0x0
-
-    invoke-static {v1, v2, v0}, La0/c;->c(IZLjava/lang/Object;)La0/a;
-
-    move-result-object v0
-
-    sput-object v0, Landroidx/compose/ui/platform/k0;->b:Lr00/p;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/ui/platform/k0;->a:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lr00/p;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lr00/p<",
-            "Landroidx/compose/runtime/i;",
-            "Ljava/lang/Integer;",
-            "Li00/a0;",
-            ">;"
-        }
-    .end annotation
+.method public final a(Ljava/lang/String;)V
+    .locals 3
 
-    sget-object v0, Landroidx/compose/ui/platform/k0;->b:Lr00/p;
+    const-string v0, "uri"
 
-    return-object v0
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Landroidx/compose/ui/platform/k0;->a:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    const-string v2, "android.intent.action.VIEW"
+
+    invoke-direct {v1, v2, p1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
 .end method

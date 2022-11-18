@@ -14,40 +14,40 @@
 # static fields
 .field public static final e:Landroidx/compose/ui/platform/e$a;
 
-.field private static f:Landroidx/compose/ui/platform/e;
+.field public static f:Landroidx/compose/ui/platform/e;
 
-.field private static final g:Lz0/e;
+.field public static final g:Lk3/d;
 
-.field private static final h:Lz0/e;
+.field public static final h:Lk3/d;
 
 
 # instance fields
-.field private c:Landroidx/compose/ui/text/b0;
+.field public c:Ly2/v;
 
-.field private d:Landroidx/compose/ui/semantics/q;
+.field public d:Lw2/s;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Landroidx/compose/ui/platform/e$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/compose/ui/platform/e$a;-><init>(Lkotlin/jvm/internal/h;)V
+    invoke-direct {v0, v1}, Landroidx/compose/ui/platform/e$a;-><init>(Lep0/k;)V
 
     sput-object v0, Landroidx/compose/ui/platform/e;->e:Landroidx/compose/ui/platform/e$a;
 
     .line 1
-    sget-object v0, Lz0/e;->Rtl:Lz0/e;
+    sget-object v0, Lk3/d;->Rtl:Lk3/d;
 
-    sput-object v0, Landroidx/compose/ui/platform/e;->g:Lz0/e;
+    sput-object v0, Landroidx/compose/ui/platform/e;->g:Lk3/d;
 
     .line 2
-    sget-object v0, Lz0/e;->Ltr:Lz0/e;
+    sget-object v0, Lk3/d;->Ltr:Lk3/d;
 
-    sput-object v0, Landroidx/compose/ui/platform/e;->h:Lz0/e;
+    sput-object v0, Landroidx/compose/ui/platform/e;->h:Lk3/d;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Landroidx/compose/ui/platform/e;-><init>()V
@@ -74,108 +74,9 @@
     return-void
 .end method
 
-.method public static final synthetic g()Landroidx/compose/ui/platform/e;
-    .locals 1
-
-    .line 1
-    sget-object v0, Landroidx/compose/ui/platform/e;->f:Landroidx/compose/ui/platform/e;
-
-    return-object v0
-.end method
-
-.method public static final synthetic h(Landroidx/compose/ui/platform/e;)V
-    .locals 0
-
-    .line 1
-    sput-object p0, Landroidx/compose/ui/platform/e;->f:Landroidx/compose/ui/platform/e;
-
-    return-void
-.end method
-
-.method private final i(ILz0/e;)I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    const-string v1, "layoutResult"
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_0
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_0
-    invoke-virtual {v0, p1}, Landroidx/compose/ui/text/b0;->t(I)I
-
-    move-result v0
-
-    .line 2
-    iget-object v3, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    if-nez v3, :cond_1
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
-
-    :cond_1
-    invoke-virtual {v3, v0}, Landroidx/compose/ui/text/b0;->x(I)Lz0/e;
-
-    move-result-object v0
-
-    if-eq p2, v0, :cond_3
-
-    .line 3
-    iget-object p2, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    if-nez p2, :cond_2
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_2
-    move-object v2, p2
-
-    :goto_0
-    invoke-virtual {v2, p1}, Landroidx/compose/ui/text/b0;->t(I)I
-
-    move-result p1
-
-    goto :goto_1
-
-    .line 4
-    :cond_3
-    iget-object p2, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    if-nez p2, :cond_4
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_4
-    const/4 v0, 0x0
-
-    const/4 v1, 0x2
-
-    invoke-static {p2, p1, v0, v1, v2}, Landroidx/compose/ui/text/b0;->o(Landroidx/compose/ui/text/b0;IZILjava/lang/Object;)I
-
-    move-result p1
-
-    add-int/lit8 p1, p1, -0x1
-
-    :goto_1
-    return p1
-.end method
-
 
 # virtual methods
-.method public a(I)[I
+.method public final a(I)[I
     .locals 5
 
     .line 1
@@ -210,65 +111,53 @@
     .line 3
     :cond_1
     :try_start_0
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->d:Landroidx/compose/ui/semantics/q;
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->d:Lw2/s;
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_9
 
-    const-string v0, "node"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_2
-    invoke-virtual {v0}, Landroidx/compose/ui/semantics/q;->f()Le0/h;
+    invoke-virtual {v0}, Lw2/s;->d()Lb2/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le0/h;->h()F
+    .line 4
+    iget v2, v0, Lb2/d;->d:F
 
-    move-result v0
+    iget v0, v0, Lb2/d;->b:F
 
-    invoke-static {v0}, Lt00/a;->c(F)I
+    sub-float/2addr v2, v0
+
+    .line 5
+    invoke-static {v2}, Lgp0/c;->c(F)I
 
     move-result v0
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    const/4 v2, 0x0
+    if-lez p1, :cond_2
 
-    .line 4
-    invoke-static {v2, p1}, Lw00/j;->d(II)I
+    goto :goto_0
 
-    move-result p1
+    :cond_2
+    const/4 p1, 0x0
 
-    .line 5
-    iget-object v2, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 6
+    :goto_0
+    iget-object v2, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
     const-string v3, "layoutResult"
 
-    if-nez v2, :cond_3
+    if-eqz v2, :cond_8
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v1
-
-    :cond_3
-    invoke-virtual {v2, p1}, Landroidx/compose/ui/text/b0;->p(I)I
+    invoke-virtual {v2, p1}, Ly2/v;->h(I)I
 
     move-result v2
 
-    .line 6
-    iget-object v4, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 7
+    iget-object v4, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    if-nez v4, :cond_4
+    if-eqz v4, :cond_7
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v4, v1
-
-    :cond_4
-    invoke-virtual {v4, v2}, Landroidx/compose/ui/text/b0;->u(I)F
+    invoke-virtual {v4, v2}, Ly2/v;->m(I)F
 
     move-result v2
 
@@ -276,100 +165,115 @@
 
     add-float/2addr v2, v0
 
-    .line 7
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 8
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    if-nez v0, :cond_5
+    if-eqz v0, :cond_6
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 9
+    iget-object v4, v0, Ly2/v;->b:Ly2/d;
 
-    move-object v0, v1
-
-    :cond_5
-    iget-object v4, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    if-nez v4, :cond_6
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v4, v1
-
-    :cond_6
-    invoke-virtual {v4}, Landroidx/compose/ui/text/b0;->m()I
-
-    move-result v4
+    .line 10
+    iget v4, v4, Ly2/d;->f:I
 
     add-int/lit8 v4, v4, -0x1
 
-    invoke-virtual {v0, v4}, Landroidx/compose/ui/text/b0;->u(I)F
+    .line 11
+    invoke-virtual {v0, v4}, Ly2/v;->m(I)F
 
     move-result v0
 
     cmpg-float v0, v2, v0
 
-    if-gez v0, :cond_8
+    if-gez v0, :cond_4
 
-    .line 8
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 12
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    if-nez v0, :cond_7
+    if-eqz v0, :cond_3
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_7
-    move-object v1, v0
-
-    :goto_0
-    invoke-virtual {v1, v2}, Landroidx/compose/ui/text/b0;->q(F)I
+    invoke-virtual {v0, v2}, Ly2/v;->i(F)I
 
     move-result v0
-
-    goto :goto_2
-
-    .line 9
-    :cond_8
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
-
-    if-nez v0, :cond_9
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
 
     goto :goto_1
 
-    :cond_9
-    move-object v1, v0
+    :cond_3
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 13
+    :cond_4
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
+
+    if-eqz v0, :cond_5
+
+    .line 14
+    iget-object v0, v0, Ly2/v;->b:Ly2/d;
+
+    .line 15
+    iget v0, v0, Ly2/d;->f:I
 
     :goto_1
-    invoke-virtual {v1}, Landroidx/compose/ui/text/b0;->m()I
-
-    move-result v0
-
-    :goto_2
     add-int/lit8 v0, v0, -0x1
 
-    .line 10
-    sget-object v1, Landroidx/compose/ui/platform/e;->h:Lz0/e;
+    .line 16
+    sget-object v1, Landroidx/compose/ui/platform/e;->h:Lk3/d;
 
-    invoke-direct {p0, v0, v1}, Landroidx/compose/ui/platform/e;->i(ILz0/e;)I
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/platform/e;->f(ILk3/d;)I
 
     move-result v0
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 11
+    .line 17
     invoke-virtual {p0, p1, v0}, Landroidx/compose/ui/platform/b;->c(II)[I
 
     move-result-object p1
 
     return-object p1
 
+    .line 18
+    :cond_5
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 19
+    :cond_6
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 20
+    :cond_7
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 21
+    :cond_8
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_9
+    :try_start_1
+    const-string p1, "node"
+
+    .line 22
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+
     :catch_0
     return-object v1
 .end method
 
-.method public b(I)[I
+.method public final b(I)[I
     .locals 5
 
     .line 1
@@ -395,32 +299,29 @@
     .line 2
     :cond_1
     :try_start_0
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->d:Landroidx/compose/ui/semantics/q;
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->d:Lw2/s;
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_8
 
-    const-string v0, "node"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_2
-    invoke-virtual {v0}, Landroidx/compose/ui/semantics/q;->f()Le0/h;
+    invoke-virtual {v0}, Lw2/s;->d()Lb2/d;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Le0/h;->h()F
+    .line 3
+    iget v2, v0, Lb2/d;->d:F
 
-    move-result v0
+    iget v0, v0, Lb2/d;->b:F
 
-    invoke-static {v0}, Lt00/a;->c(F)I
+    sub-float/2addr v2, v0
+
+    .line 4
+    invoke-static {v2}, Lgp0/c;->c(F)I
 
     move-result v0
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
+    .line 5
     invoke-virtual {p0}, Landroidx/compose/ui/platform/b;->d()Ljava/lang/String;
 
     move-result-object v2
@@ -429,37 +330,31 @@
 
     move-result v2
 
-    invoke-static {v2, p1}, Lw00/j;->i(II)I
+    if-le v2, p1, :cond_2
 
-    move-result p1
+    goto :goto_0
 
-    .line 4
-    iget-object v2, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    :cond_2
+    move p1, v2
+
+    .line 6
+    :goto_0
+    iget-object v2, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
     const-string v3, "layoutResult"
 
-    if-nez v2, :cond_3
+    if-eqz v2, :cond_7
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v1
-
-    :cond_3
-    invoke-virtual {v2, p1}, Landroidx/compose/ui/text/b0;->p(I)I
+    invoke-virtual {v2, p1}, Ly2/v;->h(I)I
 
     move-result v2
 
-    .line 5
-    iget-object v4, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 7
+    iget-object v4, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    if-nez v4, :cond_4
+    if-eqz v4, :cond_6
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v4, v1
-
-    :cond_4
-    invoke-virtual {v4, v2}, Landroidx/compose/ui/text/b0;->u(I)F
+    invoke-virtual {v4, v2}, Ly2/v;->m(I)F
 
     move-result v4
 
@@ -471,31 +366,28 @@
 
     cmpl-float v0, v4, v0
 
-    if-lez v0, :cond_6
+    if-lez v0, :cond_4
 
-    .line 6
-    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    .line 8
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    if-nez v0, :cond_5
+    if-eqz v0, :cond_3
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_5
-    move-object v1, v0
-
-    :goto_0
-    invoke-virtual {v1, v4}, Landroidx/compose/ui/text/b0;->q(F)I
+    invoke-virtual {v0, v4}, Ly2/v;->i(F)I
 
     move-result v0
 
     goto :goto_1
 
-    :cond_6
+    :cond_3
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_4
     const/4 v0, 0x0
 
-    .line 7
+    .line 9
     :goto_1
     invoke-virtual {p0}, Landroidx/compose/ui/platform/b;->d()Ljava/lang/String;
 
@@ -505,54 +397,130 @@
 
     move-result v1
 
-    if-ne p1, v1, :cond_7
+    if-ne p1, v1, :cond_5
 
-    if-ge v0, v2, :cond_7
+    if-ge v0, v2, :cond_5
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 8
-    :cond_7
-    sget-object v1, Landroidx/compose/ui/platform/e;->g:Lz0/e;
+    .line 10
+    :cond_5
+    sget-object v1, Landroidx/compose/ui/platform/e;->g:Lk3/d;
 
-    invoke-direct {p0, v0, v1}, Landroidx/compose/ui/platform/e;->i(ILz0/e;)I
+    invoke-virtual {p0, v0, v1}, Landroidx/compose/ui/platform/e;->f(ILk3/d;)I
 
     move-result v0
 
-    .line 9
+    .line 11
     invoke-virtual {p0, v0, p1}, Landroidx/compose/ui/platform/b;->c(II)[I
 
     move-result-object p1
 
     return-object p1
 
+    .line 12
+    :cond_6
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 13
+    :cond_7
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_8
+    :try_start_1
+    const-string p1, "node"
+
+    .line 14
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+    :try_end_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+
     :catch_0
     return-object v1
 .end method
 
-.method public final j(Ljava/lang/String;Landroidx/compose/ui/text/b0;Landroidx/compose/ui/semantics/q;)V
-    .locals 1
-
-    const-string v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "layoutResult"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "node"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final f(ILk3/d;)I
+    .locals 4
 
     .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/b;->f(Ljava/lang/String;)V
+    iget-object v0, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
+
+    const/4 v1, 0x0
+
+    const-string v2, "layoutResult"
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0, p1}, Ly2/v;->l(I)I
+
+    move-result v0
 
     .line 2
-    iput-object p2, p0, Landroidx/compose/ui/platform/e;->c:Landroidx/compose/ui/text/b0;
+    iget-object v3, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
+
+    if-eqz v3, :cond_3
+
+    invoke-virtual {v3, v0}, Ly2/v;->o(I)Lk3/d;
+
+    move-result-object v0
+
+    if-eq p2, v0, :cond_1
 
     .line 3
-    iput-object p3, p0, Landroidx/compose/ui/platform/e;->d:Landroidx/compose/ui/semantics/q;
+    iget-object p2, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
 
-    return-void
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p2, p1}, Ly2/v;->l(I)I
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 4
+    :cond_1
+    iget-object p2, p0, Landroidx/compose/ui/platform/e;->c:Ly2/v;
+
+    if-eqz p2, :cond_2
+
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-virtual {p2, p1, v0}, Ly2/v;->g(IZ)I
+
+    move-result p1
+
+    add-int/lit8 p1, p1, -0x1
+
+    :goto_0
+    return p1
+
+    .line 6
+    :cond_2
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 7
+    :cond_3
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 8
+    :cond_4
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
 .end method

@@ -2,71 +2,121 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lu0/r0;
+
 
 # static fields
-.field public static final a:[I
-
-.field public static final b:[Ljava/lang/Object;
+.field public static final a:Lu0/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 1
 
-    const/4 v0, 0x0
+    new-instance v0, Lu0/a;
 
-    new-array v1, v0, [I
+    invoke-direct {v0}, Lu0/a;-><init>()V
 
-    .line 1
-    sput-object v1, Lu0/a;->a:[I
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 2
-    sput-object v0, Lu0/a;->b:[Ljava/lang/Object;
+    sput-object v0, Lu0/a;->a:Lu0/a;
 
     return-void
 .end method
 
-.method public static final a([III)I
-    .locals 3
+.method private constructor <init>()V
+    .locals 0
 
-    const-string v0, "<this>"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    return-void
+.end method
 
-    add-int/lit8 p1, p1, -0x1
 
-    const/4 v0, 0x0
+# virtual methods
+.method public final a(Ln3/b;Ln2/k;)J
+    .locals 6
 
-    :goto_0
-    if-gt v0, p1, :cond_2
+    const-string v0, "$this$calculateMouseWheelScroll"
 
-    add-int v1, v0, p1
-
-    ushr-int/lit8 v1, v1, 0x1
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    aget v2, p0, v1
+    iget-object p2, p2, Ln2/k;->a:Ljava/util/List;
 
-    if-ge v2, p2, :cond_0
+    .line 2
+    sget-object v0, Lb2/c;->b:Lb2/c$a;
 
-    add-int/lit8 v0, v1, 0x1
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    sget-wide v0, Lb2/c;->c:J
+
+    .line 4
+    new-instance v2, Lb2/c;
+
+    invoke-direct {v2, v0, v1}, Lb2/c;-><init>(J)V
+
+    .line 5
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_0
+
+    .line 6
+    invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 7
+    check-cast v3, Ln2/r;
+
+    .line 8
+    iget-wide v4, v2, Lb2/c;->a:J
+
+    .line 9
+    iget-wide v2, v3, Ln2/r;->i:J
+
+    .line 10
+    invoke-static {v4, v5, v2, v3}, Lb2/c;->g(JJ)J
+
+    move-result-wide v2
+
+    .line 11
+    new-instance v4, Lb2/c;
+
+    invoke-direct {v4, v2, v3}, Lb2/c;-><init>(J)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    move-object v2, v4
 
     goto :goto_0
 
+    .line 12
     :cond_0
-    if-le v2, p2, :cond_1
+    iget-wide v0, v2, Lb2/c;->a:J
 
-    add-int/lit8 p1, v1, -0x1
+    const/16 p2, 0x40
 
-    goto :goto_0
+    int-to-float p2, p2
 
-    :cond_1
-    return v1
+    .line 13
+    sget-object v2, Ln3/d;->c:Ln3/d$a;
 
-    :cond_2
-    not-int p0, v0
+    .line 14
+    invoke-interface {p1, p2}, Ln3/b;->B0(F)F
 
-    return p0
+    move-result p1
+
+    neg-float p1, p1
+
+    invoke-static {v0, v1, p1}, Lb2/c;->h(JF)J
+
+    move-result-wide p1
+
+    return-wide p1
 .end method

@@ -1,4 +1,4 @@
-.class public final Lqp/a$a;
+.class public final synthetic Lqp/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,107 +9,138 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
-    name = "a"
+    accessFlags = 0x1009
+    name = null
 .end annotation
 
 
+# static fields
+.field public static final synthetic a:[I
+
+
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lhq/y$f;->values()[Lhq/y$f;
 
+    move-result-object v0
+
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lqp/a$a;->a:[I
+
+    :try_start_0
+    sget-object v1, Lhq/y$f;->NEW_MUTABLE_INSTANCE:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->NEW_BUILDER:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->BUILD_MESSAGE_INFO:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->GET_DEFAULT_INSTANCE:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->GET_PARSER:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->GET_MEMOIZED_IS_INITIALIZED:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v0, Lqp/a$a;->a:[I
+
+    sget-object v1, Lhq/y$f;->SET_MEMOIZED_IS_INITIALIZED:Lhq/y$f;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
     return-void
-.end method
-
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
-    .locals 0
-
-    invoke-direct {p0}, Lqp/a$a;-><init>()V
-
-    return-void
-.end method
-
-.method private final a(Lqp/a$b;Lr00/l;)Lqp/a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<STATE:",
-            "Ljava/lang/Object;",
-            "EVENT:",
-            "Ljava/lang/Object;",
-            "SIDE_EFFECT:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lqp/a$b<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;",
-            "Lr00/l<",
-            "-",
-            "Lqp/a$c<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;",
-            "Li00/a0;",
-            ">;)",
-            "Lqp/a<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lqp/a;
-
-    new-instance v1, Lqp/a$c;
-
-    invoke-direct {v1, p1}, Lqp/a$c;-><init>(Lqp/a$b;)V
-
-    invoke-interface {p2, v1}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    invoke-virtual {v1}, Lqp/a$c;->a()Lqp/a$b;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    invoke-direct {v0, p1, p2}, Lqp/a;-><init>(Lqp/a$b;Lkotlin/jvm/internal/h;)V
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final b(Lr00/l;)Lqp/a;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<STATE:",
-            "Ljava/lang/Object;",
-            "EVENT:",
-            "Ljava/lang/Object;",
-            "SIDE_EFFECT:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lr00/l<",
-            "-",
-            "Lqp/a$c<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;",
-            "Li00/a0;",
-            ">;)",
-            "Lqp/a<",
-            "TSTATE;TEVENT;TSIDE_EFFECT;>;"
-        }
-    .end annotation
-
-    const-string v0, "init"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0, p1}, Lqp/a$a;->a(Lqp/a$b;Lr00/l;)Lqp/a;
-
-    move-result-object p1
-
-    return-object p1
 .end method

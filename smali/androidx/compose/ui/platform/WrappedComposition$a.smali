@@ -1,42 +1,42 @@
-.class final Landroidx/compose/ui/platform/WrappedComposition$a;
-.super Lkotlin/jvm/internal/r;
+.class public final Landroidx/compose/ui/platform/WrappedComposition$a;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/l;
+.implements Ldp0/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/compose/ui/platform/WrappedComposition;->e(Lr00/p;)V
+    value = Landroidx/compose/ui/platform/WrappedComposition;->r(Ldp0/p;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/l<",
+        "Lep0/u;",
+        "Ldp0/l<",
         "Landroidx/compose/ui/platform/AndroidComposeView$b;",
-        "Li00/a0;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/compose/ui/platform/WrappedComposition;
+.field public final synthetic b:Landroidx/compose/ui/platform/WrappedComposition;
 
-.field final synthetic c:Lr00/p;
+.field public final synthetic c:Ldp0/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lr00/p<",
-            "Landroidx/compose/runtime/i;",
+            "Ldp0/p<",
+            "Ll1/g;",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;"
         }
     .end annotation
@@ -44,145 +44,128 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/compose/ui/platform/WrappedComposition;Lr00/p;)V
+.method public constructor <init>(Landroidx/compose/ui/platform/WrappedComposition;Ldp0/p;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/compose/ui/platform/WrappedComposition;",
-            "Lr00/p<",
+            "Ldp0/p<",
             "-",
-            "Landroidx/compose/runtime/i;",
+            "Ll1/g;",
             "-",
             "Ljava/lang/Integer;",
-            "Li00/a0;",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
     iput-object p1, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
 
-    iput-object p2, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Lr00/p;
+    iput-object p2, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Ldp0/p;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/platform/AndroidComposeView$b;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
+
+    .line 1
+    check-cast p1, Landroidx/compose/ui/platform/AndroidComposeView$b;
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
+    .line 3
     iget-object v0, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
 
-    invoke-static {v0}, Landroidx/compose/ui/platform/WrappedComposition;->z(Landroidx/compose/ui/platform/WrappedComposition;)Z
-
-    move-result v0
+    .line 4
+    iget-boolean v0, v0, Landroidx/compose/ui/platform/WrappedComposition;->d:Z
 
     if-nez v0, :cond_1
 
-    .line 2
-    invoke-virtual {p1}, Landroidx/compose/ui/platform/AndroidComposeView$b;->a()Landroidx/lifecycle/x;
+    .line 5
+    iget-object p1, p1, Landroidx/compose/ui/platform/AndroidComposeView$b;->a:Landroidx/lifecycle/b0;
 
-    move-result-object p1
-
-    invoke-interface {p1}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/q;
+    .line 6
+    invoke-interface {p1}, Landroidx/lifecycle/b0;->getLifecycle()Landroidx/lifecycle/t;
 
     move-result-object p1
 
     const-string v0, "it.lifecycleOwner.lifecycle"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
+    .line 7
     iget-object v0, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
 
-    iget-object v1, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Lr00/p;
+    iget-object v1, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Ldp0/p;
 
-    invoke-static {v0, v1}, Landroidx/compose/ui/platform/WrappedComposition;->B(Landroidx/compose/ui/platform/WrappedComposition;Lr00/p;)V
+    .line 8
+    iput-object v1, v0, Landroidx/compose/ui/platform/WrappedComposition;->f:Ldp0/p;
 
-    .line 4
-    iget-object v0, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
+    .line 9
+    iget-object v1, v0, Landroidx/compose/ui/platform/WrappedComposition;->e:Landroidx/lifecycle/t;
 
-    invoke-static {v0}, Landroidx/compose/ui/platform/WrappedComposition;->y(Landroidx/compose/ui/platform/WrappedComposition;)Landroidx/lifecycle/q;
+    if-nez v1, :cond_0
 
-    move-result-object v0
+    .line 10
+    iput-object p1, v0, Landroidx/compose/ui/platform/WrappedComposition;->e:Landroidx/lifecycle/t;
 
-    if-nez v0, :cond_0
-
-    .line 5
-    iget-object v0, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
-
-    invoke-static {v0, p1}, Landroidx/compose/ui/platform/WrappedComposition;->A(Landroidx/compose/ui/platform/WrappedComposition;Landroidx/lifecycle/q;)V
-
-    .line 6
-    iget-object v0, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
-
-    invoke-virtual {p1, v0}, Landroidx/lifecycle/q;->a(Landroidx/lifecycle/w;)V
+    .line 11
+    invoke-virtual {p1, v0}, Landroidx/lifecycle/t;->a(Landroidx/lifecycle/a0;)V
 
     goto :goto_0
 
-    .line 7
+    .line 12
     :cond_0
-    invoke-virtual {p1}, Landroidx/lifecycle/q;->b()Landroidx/lifecycle/q$c;
+    invoke-virtual {p1}, Landroidx/lifecycle/t;->b()Landroidx/lifecycle/t$c;
 
     move-result-object p1
 
-    sget-object v0, Landroidx/lifecycle/q$c;->CREATED:Landroidx/lifecycle/q$c;
+    sget-object v0, Landroidx/lifecycle/t$c;->CREATED:Landroidx/lifecycle/t$c;
 
-    invoke-virtual {p1, v0}, Landroidx/lifecycle/q$c;->isAtLeast(Landroidx/lifecycle/q$c;)Z
+    invoke-virtual {p1, v0}, Landroidx/lifecycle/t$c;->isAtLeast(Landroidx/lifecycle/t$c;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 8
+    .line 13
     iget-object p1, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
 
-    invoke-virtual {p1}, Landroidx/compose/ui/platform/WrappedComposition;->C()Landroidx/compose/runtime/l;
+    .line 14
+    iget-object v0, p1, Landroidx/compose/ui/platform/WrappedComposition;->c:Ll1/p;
+
+    const v1, -0x773f589e
+
+    const/4 v2, 0x1
+
+    .line 15
+    new-instance v3, Landroidx/compose/ui/platform/g3;
+
+    iget-object v4, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Ldp0/p;
+
+    invoke-direct {v3, p1, v4}, Landroidx/compose/ui/platform/g3;-><init>(Landroidx/compose/ui/platform/WrappedComposition;Ldp0/p;)V
+
+    invoke-static {v1, v2, v3}, Lsk/yc;->p(IZLjava/lang/Object;)Ls1/a;
 
     move-result-object p1
 
-    const v0, -0x773f589e
+    invoke-interface {v0, p1}, Ll1/p;->r(Ldp0/p;)V
 
-    const/4 v1, 0x1
-
-    new-instance v2, Landroidx/compose/ui/platform/WrappedComposition$a$a;
-
-    iget-object v3, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->b:Landroidx/compose/ui/platform/WrappedComposition;
-
-    iget-object v4, p0, Landroidx/compose/ui/platform/WrappedComposition$a;->c:Lr00/p;
-
-    invoke-direct {v2, v3, v4}, Landroidx/compose/ui/platform/WrappedComposition$a$a;-><init>(Landroidx/compose/ui/platform/WrappedComposition;Lr00/p;)V
-
-    invoke-static {v0, v1, v2}, La0/c;->c(IZLjava/lang/Object;)La0/a;
-
-    move-result-object v0
-
-    invoke-interface {p1, v0}, Landroidx/compose/runtime/l;->e(Lr00/p;)V
-
+    .line 16
     :cond_1
     :goto_0
-    return-void
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroidx/compose/ui/platform/AndroidComposeView$b;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/WrappedComposition$a;->a(Landroidx/compose/ui/platform/AndroidComposeView$b;)V
-
-    sget-object p1, Li00/a0;->a:Li00/a0;
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

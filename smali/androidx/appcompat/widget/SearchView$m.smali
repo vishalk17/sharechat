@@ -15,8 +15,8 @@
 
 
 # virtual methods
-.method public abstract a(I)Z
+.method public abstract d9(Ljava/lang/String;)Z
 .end method
 
-.method public abstract b(I)Z
+.method public abstract m(Ljava/lang/String;)Z
 .end method

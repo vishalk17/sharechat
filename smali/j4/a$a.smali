@@ -1,4 +1,4 @@
-.class final Lj4/a$a;
+.class public final Lj4/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,83 +9,28 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
-.field final b:Lcom/bumptech/glide/load/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/bumptech/glide/load/d<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method constructor <init>(Ljava/lang/Class;Lcom/bumptech/glide/load/d;)V
+.method private constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "TT;>;",
-            "Lcom/bumptech/glide/load/d<",
-            "TT;>;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lj4/a$a;->a:Ljava/lang/Class;
-
-    .line 3
-    iput-object p2, p0, Lj4/a$a;->b:Lcom/bumptech/glide/load/d;
 
     return-void
 .end method
 
-
-# virtual methods
-.method a(Ljava/lang/Class;)Z
+.method public static a(ILjava/lang/Object;)Landroid/graphics/ColorFilter;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
-        }
-    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lj4/a$a;->a:Ljava/lang/Class;
+    new-instance v0, Landroid/graphics/BlendModeColorFilter;
 
-    invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+    check-cast p1, Landroid/graphics/BlendMode;
 
-    move-result p1
+    invoke-direct {v0, p0, p1}, Landroid/graphics/BlendModeColorFilter;-><init>(ILandroid/graphics/BlendMode;)V
 
-    return p1
+    return-object v0
 .end method

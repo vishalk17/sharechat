@@ -7,13 +7,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static AFInAppEventParameterName(Lcom/appsflyer/deeplink/DeepLinkResult;)V
+.method public static AFInAppEventParameterName(Lcom/appsflyer/deeplink/DeepLinkResult;)V
     .locals 2
 
     .line 10
@@ -32,7 +31,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/appsflyer/deeplink/DeepLinkResult;->toString()Ljava/lang/String;
 
     move-result-object v1
 

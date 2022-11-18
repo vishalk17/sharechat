@@ -1,25 +1,9 @@
-.class final Lr0/m;
+.class public abstract Lr0/m;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lr0/m;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lr0/m;
-
-    invoke-direct {v0}, Lr0/m;-><init>()V
-
-    sput-object v0, Lr0/m;->a:Lr0/m;
-
-    return-void
-.end method
-
 .method private constructor <init>()V
     .locals 0
 
@@ -29,17 +13,27 @@
     return-void
 .end method
 
+.method public synthetic constructor <init>(Lep0/k;)V
+    .locals 0
 
-# virtual methods
-.method public final a(Landroid/text/StaticLayout$Builder;Z)V
-    .locals 1
-
-    const-string v0, "builder"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1, p2}, Landroid/text/StaticLayout$Builder;->setUseLineSpacingFromFallbacks(Z)Landroid/text/StaticLayout$Builder;
+    invoke-direct {p0}, Lr0/m;-><init>()V
 
     return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(I)F
+.end method
+
+.method public abstract b()I
+.end method
+
+.method public abstract c()Lr0/m;
+.end method
+
+.method public abstract d()V
+.end method
+
+.method public abstract e(IF)V
 .end method

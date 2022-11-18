@@ -1,4 +1,4 @@
-.class Landroidx/activity/result/ActivityResultRegistry$c;
+.class public final Landroidx/activity/result/ActivityResultRegistry$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "c"
 .end annotation
 
@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field final a:Landroidx/activity/result/a;
+.field public final a:Landroidx/activity/result/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/activity/result/a<",
@@ -33,10 +33,10 @@
     .end annotation
 .end field
 
-.field final b:Ld/a;
+.field public final b:Lh/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ld/a<",
+            "Lh/a<",
             "*TO;>;"
         }
     .end annotation
@@ -44,14 +44,14 @@
 
 
 # direct methods
-.method constructor <init>(Landroidx/activity/result/a;Ld/a;)V
+.method public constructor <init>(Landroidx/activity/result/a;Lh/a;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/activity/result/a<",
             "TO;>;",
-            "Ld/a<",
+            "Lh/a<",
             "*TO;>;)V"
         }
     .end annotation
@@ -63,7 +63,7 @@
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$c;->a:Landroidx/activity/result/a;
 
     .line 3
-    iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$c;->b:Ld/a;
+    iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$c;->b:Lh/a;
 
     return-void
 .end method

@@ -1,102 +1,41 @@
-.class public Ld4/b;
+.class public final Ld4/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/bumptech/glide/load/engine/v;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/load/engine/v<",
-        "TT;>;"
-    }
-.end annotation
-
 
 # instance fields
-.field protected final b:Ljava/lang/Object;
+.field public a:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "TT;"
+            "Ljava/util/HashMap<",
+            "Ljava/lang/Integer;",
+            "Ljava/util/HashSet<",
+            "Ljava/lang/ref/WeakReference<",
+            "Ljava/lang/Object;",
+            ">;>;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p1}, Lcom/bumptech/glide/util/j;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v0, Landroid/util/SparseIntArray;
 
-    move-result-object p1
+    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
-    iput-object p1, p0, Ld4/b;->b:Ljava/lang/Object;
+    .line 3
+    new-instance v0, Ljava/util/HashMap;
 
-    return-void
-.end method
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-
-# virtual methods
-.method public a()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Ld4/b;->b:Ljava/lang/Object;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final get()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Ld4/b;->b:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public recycle()V
-    .locals 0
+    iput-object v0, p0, Ld4/b;->a:Ljava/util/HashMap;
 
     return-void
 .end method

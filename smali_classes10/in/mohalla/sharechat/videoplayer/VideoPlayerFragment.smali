@@ -3,113 +3,181 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lin/mohalla/sharechat/videoplayer/q;
-.implements Ldz/e;
+.implements Lom0/o;
+.implements Lqm0/d;
 .implements Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$b;
-.implements Lin/mohalla/sharechat/common/a;
-.implements Lz90/b;
-.implements Lsharechat/feature/chatroom/m2;
-.implements Lin/mohalla/sharechat/videoplayer/r;
+.implements Lu60/a;
+.implements Ly61/b;
+.implements Lv60/l;
 .implements Lin/mohalla/sharechat/videoplayer/elaniccontent/ElanicContentBottomSheet$b;
-.implements Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w;
-.implements Lin/mohalla/sharechat/common/sharehandler/q2;
-.implements Lhl0/c;
+.implements Lfo1/a;
+.implements Lst1/c;
+.implements Lsharechat/library/cvo/interfaces/ViewPagerHandler;
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
         Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;,
-        Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
+        Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;,
+        Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c;
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lin/mohalla/sharechat/common/base/BaseViewStubFragment<",
-        "Lin/mohalla/sharechat/videoplayer/q;",
-        ">;",
-        "Lin/mohalla/sharechat/videoplayer/q;",
-        "Ldz/e;",
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0007\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u0006\n\u0002\u0018\u0002\n\u0002\u0008\u000b\u0008\u0007\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u00072\u00020\u00082\u00020\t2\u00020\u00082\u00020\n2\u00020\u00082\u00020\u000b2\u00020\u000c:\u0002EFB\u0007\u00a2\u0006\u0004\u0008C\u0010DR\"\u0010\u0014\u001a\u00020\r8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u000e\u0010\u000f\u001a\u0004\u0008\u0010\u0010\u0011\"\u0004\u0008\u0012\u0010\u0013R\"\u0010\u001c\u001a\u00020\u00158\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u0016\u0010\u0017\u001a\u0004\u0008\u0018\u0010\u0019\"\u0004\u0008\u001a\u0010\u001bR(\u0010%\u001a\u0008\u0012\u0004\u0012\u00020\u001e0\u001d8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\u001f\u0010 \u001a\u0004\u0008!\u0010\"\"\u0004\u0008#\u0010$R\"\u0010-\u001a\u00020&8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008\'\u0010(\u001a\u0004\u0008)\u0010*\"\u0004\u0008+\u0010,R\"\u0010/\u001a\u00020.8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008/\u00100\u001a\u0004\u00081\u00102\"\u0004\u00083\u00104R\"\u00106\u001a\u0002058\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u00086\u00107\u001a\u0004\u00088\u00109\"\u0004\u0008:\u0010;R\"\u0010=\u001a\u00020<8\u0004@\u0004X\u0085.\u00a2\u0006\u0012\n\u0004\u0008=\u0010>\u001a\u0004\u0008?\u0010@\"\u0004\u0008A\u0010B\u00a8\u0006G"
+    }
+    d2 = {
+        "Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;",
+        "Lin/mohalla/sharechat/appx/basesharechat/BaseViewStubFragment;",
+        "Lom0/o;",
+        "Lqm0/d;",
         "Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$b;",
-        "Lin/mohalla/sharechat/common/a;",
-        "Lz90/b;",
-        "Lsharechat/feature/chatroom/m2;",
-        "Lin/mohalla/sharechat/videoplayer/r;",
+        "Lu60/a;",
+        "Ly61/b;",
+        "Lv60/l;",
+        "",
         "Lin/mohalla/sharechat/videoplayer/elaniccontent/ElanicContentBottomSheet$b;",
-        "Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w;",
-        "Lin/mohalla/sharechat/common/sharehandler/q2;",
-        "Lhl0/c;"
+        "Lfo1/a;",
+        "Lst1/c;",
+        "Lsharechat/library/cvo/interfaces/ViewPagerHandler;",
+        "Lcom/google/gson/Gson;",
+        "G",
+        "Lcom/google/gson/Gson;",
+        "getMGson",
+        "()Lcom/google/gson/Gson;",
+        "setMGson",
+        "(Lcom/google/gson/Gson;)V",
+        "mGson",
+        "Lcom/google/firebase/analytics/FirebaseAnalytics;",
+        "J",
+        "Lcom/google/firebase/analytics/FirebaseAnalytics;",
+        "getFirebaseAnalytics",
+        "()Lcom/google/firebase/analytics/FirebaseAnalytics;",
+        "setFirebaseAnalytics",
+        "(Lcom/google/firebase/analytics/FirebaseAnalytics;)V",
+        "firebaseAnalytics",
+        "Ldagger/Lazy;",
+        "Ldt1/a;",
+        "L",
+        "Ldagger/Lazy;",
+        "getBandwidthUtilLazy",
+        "()Ldagger/Lazy;",
+        "setBandwidthUtilLazy",
+        "(Ldagger/Lazy;)V",
+        "bandwidthUtilLazy",
+        "Lsharechat/library/utilities/systemservices/SensorManagerUtil;",
+        "O",
+        "Lsharechat/library/utilities/systemservices/SensorManagerUtil;",
+        "getSensorManagerUtil",
+        "()Lsharechat/library/utilities/systemservices/SensorManagerUtil;",
+        "setSensorManagerUtil",
+        "(Lsharechat/library/utilities/systemservices/SensorManagerUtil;)V",
+        "sensorManagerUtil",
+        "Lom0/n;",
+        "mPresenter",
+        "Lom0/n;",
+        "Nz",
+        "()Lom0/n;",
+        "setMPresenter",
+        "(Lom0/n;)V",
+        "Lea0/e;",
+        "mVideoPlayerUtil",
+        "Lea0/e;",
+        "Oz",
+        "()Lea0/e;",
+        "setMVideoPlayerUtil",
+        "(Lea0/e;)V",
+        "Ln12/e;",
+        "postPrefs",
+        "Ln12/e;",
+        "Qz",
+        "()Ln12/e;",
+        "setPostPrefs",
+        "(Ln12/e;)V",
+        "<init>",
+        "()V",
+        "a",
+        "b",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
     }
 .end annotation
 
 
 # static fields
-.field public static final W0:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
+.field public static final g1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
+
+.field public static h1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
 
 
 # instance fields
-.field private final A:F
+.field public A:Z
 
-.field private B:Z
+.field public final B:F
 
-.field protected C:Lin/mohalla/sharechat/videoplayer/p;
+.field public C:Z
+
+.field public D:Lom0/n;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected D:Los/s0;
+.field public E:Lea0/e;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field protected E:Lwx/e;
+.field public F:Lck0/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private E0:I
-
-.field protected F:Lcom/google/gson/Gson;
+.field public G:Lcom/google/gson/Gson;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private F0:Ljava/lang/String;
-
-.field protected G:Lin/mohalla/sharechat/data/local/prefs/GlobalPrefs;
+.field public H:Ln12/e;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private G0:Z
+.field public H0:I
 
-.field protected H:Lin/mohalla/sharechat/common/utils/hash/b;
+.field public I:Lcc0/b;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private H0:Ljava/lang/String;
+.field public I0:I
 
-.field protected I:Lcom/google/firebase/analytics/FirebaseAnalytics;
+.field public J:Lcom/google/firebase/analytics/FirebaseAnalytics;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private I0:Lin/mohalla/sharechat/common/a;
+.field public J0:Ljava/lang/String;
 
-.field protected J:Lsharechat/manager/videoplayer/cache/d;
+.field public K:Lfv1/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private J0:Ljava/lang/String;
+.field public K0:Z
 
-.field protected K:Ldagger/Lazy;
+.field public L:Ldagger/Lazy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ldagger/Lazy<",
-            "Lsharechat/library/utilities/c;",
+            "Ldt1/a;",
             ">;"
         }
     .end annotation
@@ -118,57 +186,61 @@
     .end annotation
 .end field
 
-.field private K0:Lin/mohalla/sharechat/videoplayer/j;
+.field public L0:Ljava/lang/String;
 
-.field protected L:Lsharechat/feature/post/report/b;
+.field public M:Lcm1/b;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private L0:Lsharechat/library/cvo/LikeIconConfig;
+.field public M0:Lu60/a;
 
-.field protected M:Lin/mohalla/ads/sharechat/repo/implementations/a;
+.field public N:Li30/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private M0:Ljava/lang/Long;
+.field public N0:Ljava/lang/String;
 
-.field protected N:Lsharechat/library/utilities/systemservices/SensorManagerUtil;
+.field public O:Lsharechat/library/utilities/systemservices/SensorManagerUtil;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private N0:Z
+.field public O0:Lom0/i;
 
-.field protected O:Lsharechat/library/utilities/uservideotracker/a;
+.field public P:Lls1/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private O0:Z
+.field public P0:Lsharechat/library/cvo/LikeIconConfig;
 
-.field protected P:Ler0/a;
+.field public Q:Ly12/a;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private P0:Lsharechat/manager/abtest/enums/r;
+.field public Q0:Ljava/lang/Long;
 
-.field protected Q:Lsharechat/ads/manager/ima/feature/imaextension/d;
+.field public R:Lh00/b;
     .annotation runtime Ljavax/inject/Inject;
     .end annotation
 .end field
 
-.field private Q0:Z
+.field public R0:Los1/z;
 
-.field private R:I
+.field public S:I
 
-.field private R0:Ljava/lang/String;
+.field public S0:Z
 
-.field private S:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public T:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field private S0:Ljava/util/Map;
+.field public T0:Ljava/lang/String;
+
+.field public U:Ljava/lang/String;
+
+.field public U0:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -179,44 +251,76 @@
     .end annotation
 .end field
 
-.field private T:Ljava/lang/String;
+.field public V:Lom0/l;
 
-.field private T0:Lru/q2;
+.field public V0:Lre0/c5;
 
-.field private U:Lin/mohalla/sharechat/videoplayer/m;
+.field public W:Ljava/lang/String;
 
-.field private final U0:Li00/i;
+.field public W0:Lre0/j2;
 
-.field private V:Ljava/lang/String;
+.field public X:Lpm0/b;
 
-.field private V0:Lsharechat/manager/abtest/enums/s;
+.field public final X0:Lro0/p;
 
-.field private W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+.field public Y:Lom0/d0;
 
-.field private X:Landroidx/recyclerview/widget/RecyclerView$u;
+.field public Y0:Los1/a0;
 
-.field private Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+.field public Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
-.field private Z:I
+.field public Z0:Z
+
+.field public final a1:Lro0/p;
+
+.field public final b1:Landroidx/activity/result/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/c<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c1:Landroidx/activity/result/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/activity/result/c<",
+            "Landroid/content/Intent;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public d1:Lom0/y2;
+
+.field public final e1:Landroidx/recyclerview/widget/u;
+
+.field public f1:Lin/mohalla/sharechat/videoplayer/VideoPostCommentSectionFragment;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;-><init>(Lkotlin/jvm/internal/h;)V
+    invoke-direct {v0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;-><init>(Lep0/k;)V
 
-    sput-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
+    sput-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->g1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
+
+    sget-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;->IDLE:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
+
+    sput-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->h1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
 
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 2
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;-><init>()V
@@ -224,517 +328,2590 @@
     const/high16 v0, 0x439b0000    # 310.0f
 
     .line 2
-    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->A:F
+    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:F
 
     const/4 v0, -0x1
 
     .line 3
-    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
+    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:I
 
     .line 4
     new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    iput-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/util/concurrent/atomic/AtomicInteger;
 
     const-string v1, "click"
 
     .line 5
-    iput-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/lang/String;
+    iput-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Ljava/lang/String;
 
     .line 6
-    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
+    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
     const/4 v0, 0x1
 
     .line 7
-    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G0:Z
+    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Z
 
     .line 8
-    sget-object v0, Lsharechat/manager/abtest/enums/r;->CONTROL:Lsharechat/manager/abtest/enums/r;
+    sget-object v0, Los1/z;->CONTROL:Los1/z;
 
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P0:Lsharechat/manager/abtest/enums/r;
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Los1/z;
 
     const-string v0, ""
 
     .line 9
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Ljava/lang/String;
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Ljava/lang/String;
 
     .line 10
-    invoke-static {}, Lkotlin/collections/o0;->i()Ljava/util/Map;
+    invoke-static {}, Lso0/r0;->d()Ljava/util/Map;
 
     move-result-object v0
 
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S0:Ljava/util/Map;
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U0:Ljava/util/Map;
 
     .line 11
-    sget-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$w;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$w;
+    sget-object v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$z;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$z;
 
-    invoke-static {v0}, Li00/j;->b(Lr00/a;)Li00/i;
+    invoke-static {v0}, Lro0/i;->a(Ldp0/a;)Lro0/h;
 
     move-result-object v0
 
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U0:Li00/i;
+    check-cast v0, Lro0/p;
+
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X0:Lro0/p;
 
     .line 12
-    sget-object v0, Lsharechat/manager/abtest/enums/s;->CONTROL:Lsharechat/manager/abtest/enums/s;
+    sget-object v0, Los1/a0;->CONTROL:Los1/a0;
 
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    .line 13
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$m;
+
+    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$m;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-static {v0}, Lro0/i;->a(Ldp0/a;)Lro0/h;
+
+    move-result-object v0
+
+    check-cast v0, Lro0/p;
+
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->a1:Lro0/p;
+
+    .line 14
+    new-instance v0, Lh/d;
+
+    invoke-direct {v0}, Lh/d;-><init>()V
+
+    new-instance v1, Lkg/s;
+
+    const/16 v2, 0xe
+
+    invoke-direct {v1, p0, v2}, Lkg/s;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {p0, v0, v1}, Landroidx/fragment/app/Fragment;->registerForActivityResult(Lh/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+
+    move-result-object v0
+
+    const-string v1, "registerForActivityResul\u2026)\n            }\n        }"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->b1:Landroidx/activity/result/c;
+
+    .line 15
+    new-instance v0, Lh/d;
+
+    invoke-direct {v0}, Lh/d;-><init>()V
+
+    new-instance v2, Lkg/l;
+
+    const/16 v3, 0x9
+
+    invoke-direct {v2, p0, v3}, Lkg/l;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {p0, v0, v2}, Landroidx/fragment/app/Fragment;->registerForActivityResult(Lh/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+
+    move-result-object v0
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->c1:Landroidx/activity/result/c;
+
+    .line 16
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$l;
+
+    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$l;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    .line 17
+    new-instance v1, Landroidx/recyclerview/widget/u;
+
+    invoke-direct {v1, v0}, Landroidx/recyclerview/widget/u;-><init>(Landroidx/recyclerview/widget/u$d;)V
+
+    iput-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->e1:Landroidx/recyclerview/widget/u;
 
     return-void
 .end method
 
-.method private final Ez()V
-    .locals 6
+.method public static final Iz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    .locals 4
 
     .line 1
-    new-instance v0, Landroid/view/animation/TranslateAnimation;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->n:Landroid/widget/RelativeLayout;
+
+    const-string v2, "binding.rlDoubleTapTutorial"
+
+    invoke-static {v0, v2}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
 
     .line 2
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 3
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v2
+
+    new-instance v3, Lom0/v;
+
+    invoke-direct {v3, v1, p0}, Lom0/v;-><init>(Lvo0/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    const/4 p0, 0x2
+
+    invoke-static {v0, v2, v1, v3, p0}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+
+    :cond_0
+    const-string p0, "binding"
+
+    .line 4
+    invoke-static {p0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public static final Jz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const-string v1, "binding"
 
     const/4 v2, 0x0
 
-    const-string v3, "binding"
+    if-eqz v0, :cond_2
 
-    if-nez v1, :cond_0
+    iget-object v0, v0, Lre0/j2;->g:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    const-string v3, "binding.doubleTapAnimation"
 
-    move-object v1, v2
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    :cond_0
-    iget-object v1, v1, Lru/q2;->g:Landroid/widget/FrameLayout;
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
 
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getHeight()I
+    .line 2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    move-result v1
+    if-eqz v0, :cond_1
 
-    int-to-float v1, v1
+    iget-object v0, v0, Lre0/j2;->q:Landroid/widget/TextView;
 
-    const/4 v4, 0x0
+    const-string v3, "binding.tvDoubleTapTutorialText"
+
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
 
     .line 3
-    invoke-direct {v0, v4, v4, v4, v1}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
+    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    const-wide/16 v4, 0x1f4
+    if-eqz p0, :cond_0
+
+    iget-object p0, p0, Lre0/j2;->n:Landroid/widget/RelativeLayout;
+
+    const-string v0, "binding.rlDoubleTapTutorial"
+
+    invoke-static {p0, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p0}, Lv40/d;->j(Landroid/view/View;)V
+
+    return-void
+
+    :cond_0
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
 
     .line 4
-    invoke-virtual {v0, v4, v5}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
+    :cond_1
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    const/4 v1, 0x1
+    throw v2
 
     .line 5
-    invoke-virtual {v0, v1}, Landroid/view/animation/TranslateAnimation;->setFillAfter(Z)V
+    :cond_2
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    .line 6
-    new-instance v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e;
+    throw v2
+.end method
 
-    invoke-direct {v1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+.method public static final Kz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    .locals 1
 
-    invoke-virtual {v0, v1}, Landroid/view/animation/TranslateAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    .line 7
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    if-eqz p0, :cond_0
 
-    if-nez v1, :cond_1
+    iget-object p0, p0, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    const-string v0, "binding.muteAnimation"
+
+    invoke-static {p0, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p0}, Lv40/d;->j(Landroid/view/View;)V
+
+    return-void
+
+    :cond_0
+    const-string p0, "binding"
+
+    invoke-static {p0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final A0(Z)V
+    .locals 8
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 2
+    sget-object v1, Las1/p;->a:Las1/p;
+
+    invoke-virtual {v1, v0}, Las1/p;->c(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz p1, :cond_0
+
+    .line 3
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x5
+
+    const/4 v7, 0x0
+
+    move v4, v0
+
+    invoke-static/range {v2 .. v7}, Lom0/n$a;->c(Lom0/n;Lin/mohalla/sharechat/data/repository/post/PostModel;ZZILjava/lang/Object;)V
+
+    :cond_0
+    if-eqz v0, :cond_1
+
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, v0, v2, v1, v2}, Lom0/n$a;->b(Lom0/n;ZLib0/v0;ILjava/lang/Object;)V
 
     goto :goto_0
 
     :cond_1
-    move-object v2, v1
+    const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
 
+    .line 5
+    filled-new-array {p1}, [Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    .line 6
+    invoke-virtual {p0, p1, v0}, Landroidx/fragment/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
+
+    :cond_2
     :goto_0
-    iget-object v1, v2, Lru/q2;->g:Landroid/widget/FrameLayout;
+    return-void
+.end method
 
-    invoke-virtual {v1, v0}, Landroid/widget/FrameLayout;->startAnimation(Landroid/view/animation/Animation;)V
+.method public final Ab()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
 
     return-void
 .end method
 
-.method private final Fz()V
-    .locals 101
+.method public final Bf(I)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->onAdPostShown()V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final Bg(Ljava/lang/String;)V
+    .locals 5
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0, p1}, Lpm0/b;->u(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v4}, Lsharechat/library/cvo/PostEntity;->isPinned()Z
+
+    move-result v4
+
+    if-ne v4, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    if-eqz v2, :cond_2
+
+    .line 3
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v2
+
+    invoke-interface {v2, p1}, Lom0/n;->x0(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_1
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "UnpinPost"
+
+    .line 6
+    invoke-interface {p1, v0, v1}, Lom0/n;->X0(Ljava/lang/String;Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 7
+    :cond_2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v2
+
+    invoke-interface {v2, p1}, Lom0/n;->d0(Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object p1
+
+    if-eqz v0, :cond_3
+
+    .line 9
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_3
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "PinPost"
+
+    .line 10
+    invoke-interface {p1, v0, v1}, Lom0/n;->X0(Ljava/lang/String;Ljava/lang/String;)V
+
+    :goto_1
+    return-void
+
+    :cond_4
+    const-string p1, "mAdapter"
+
+    .line 11
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final Bp()V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    .line 1
+    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
+
+    const/4 v1, 0x1
+
+    .line 2
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 4
+    invoke-virtual {v1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Bx(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
+
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$q;
+
+    invoke-direct {v0, p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$q;-><init>(Lin/mohalla/sharechat/data/repository/post/PostModel;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    return-void
+.end method
+
+.method public final C5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->h1(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    return-void
+.end method
+
+.method public final Ch(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "type"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Cq(Ljava/lang/String;)V
+    .locals 0
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final D()V
+    .locals 1
+
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;
+
+    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    return-void
+.end method
+
+.method public final E4(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 25
+
+    move-object/from16 v1, p0
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v2
+
+    if-nez v2, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getLinkAction()Lsharechat/library/cvo/LinkAction;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_19
+
+    .line 3
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
+
+    move-result-object v0
+
+    sget-object v4, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c;->a:[I
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v0
+
+    aget v0, v4, v0
+
+    const/4 v4, 0x1
+
+    const-string v5, "mAnalyticsEventsUtil"
+
+    const-string v6, ""
+
+    const/4 v7, 0x0
+
+    if-eq v0, v4, :cond_f
+
+    const/4 v4, 0x2
+
+    if-eq v0, v4, :cond_b
+
+    const/4 v4, 0x3
+
+    if-eq v0, v4, :cond_6
+
+    const/4 v4, 0x4
+
+    if-eq v0, v4, :cond_2
+
+    const/4 v2, 0x5
+
+    if-ne v0, v2, :cond_1
+
+    goto/16 :goto_5
+
+    .line 4
+    :cond_1
+    new-instance v0, Lro0/k;
+
+    invoke-direct {v0}, Lro0/k;-><init>()V
+
+    throw v0
+
+    .line 5
+    :cond_2
+    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    move-object v6, v0
+
+    .line 6
+    :cond_4
+    :goto_0
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, v6}, Lom0/n;->Et(Ljava/lang/String;)V
+
+    .line 7
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->vz()Lss1/a;
+
+    move-result-object v8
+
+    invoke-static {v8, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 9
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 10
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    .line 11
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v7
+
+    :cond_5
+    move-object v14, v7
+
+    const/16 v15, 0x18
+
+    const/16 v16, 0x0
+
+    .line 12
+    invoke-static/range {v8 .. v16}, Lss1/a$a;->A(Lss1/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+
+    goto/16 :goto_5
+
+    .line 13
+    :cond_6
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getChildPostId()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_7
+
+    goto :goto_1
+
+    :cond_7
+    move-object v6, v0
+
+    .line 14
+    :goto_1
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_9
+
+    .line 15
+    sget-object v4, Lck0/a;->q:Lck0/a$a;
+
+    iget-object v8, v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
+
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    sget-object v4, Lin/mohalla/sharechat/post/youtubepost/activity/YoutubePostActivity;->K:Lin/mohalla/sharechat/post/youtubepost/activity/YoutubePostActivity$a;
+
+    invoke-static {v4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    new-instance v4, Landroid/content/Intent;
+
+    const-class v9, Lin/mohalla/sharechat/post/youtubepost/activity/YoutubePostActivity;
+
+    invoke-direct {v4, v0, v9}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    const-string v9, "POST_ID"
+
+    .line 18
+    invoke-virtual {v4, v9, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    const-string v6, "REFERRER"
+
+    const-string v9, "video_action"
+
+    .line 19
+    invoke-virtual {v4, v6, v9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    if-eqz v8, :cond_8
+
+    const-string v6, "KEY_GROUP_TAG_ID"
+
+    .line 20
+    invoke-virtual {v4, v6, v8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 21
+    :cond_8
+    invoke-virtual {v0, v4}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 22
+    :cond_9
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->vz()Lss1/a;
+
+    move-result-object v9
+
+    invoke-static {v9, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 23
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 24
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v11
+
+    .line 25
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v12
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    .line 26
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_a
+
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v7
+
+    :cond_a
+    move-object v15, v7
+
+    const/16 v16, 0x18
+
+    const/16 v17, 0x0
+
+    .line 27
+    invoke-static/range {v9 .. v17}, Lss1/a$a;->A(Lss1/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+
+    goto/16 :goto_5
+
+    .line 28
+    :cond_b
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getLink()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_c
+
+    move-object v11, v6
+
+    goto :goto_2
+
+    :cond_c
+    move-object v11, v0
+
+    .line 29
+    :goto_2
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v9
+
+    if-eqz v9, :cond_d
+
+    .line 30
+    sget-object v8, Lck0/a;->q:Lck0/a$a;
+
+    const/4 v10, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/16 v15, 0x78
+
+    invoke-static/range {v8 .. v15}, Lck0/a$a;->a(Lck0/a$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZI)V
+
+    .line 31
+    :cond_d
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->vz()Lss1/a;
+
+    move-result-object v0
+
+    invoke-static {v0, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 32
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
+
+    move-result-object v17
+
+    .line 33
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v18
+
+    .line 34
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v19
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    .line 35
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_e
+
+    invoke-virtual {v2}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v7
+
+    :cond_e
+    move-object/from16 v22, v7
+
+    const/16 v23, 0x18
+
+    const/16 v24, 0x0
+
+    move-object/from16 v16, v0
+
+    .line 36
+    invoke-static/range {v16 .. v24}, Lss1/a$a;->A(Lss1/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+
+    goto/16 :goto_5
+
+    .line 37
+    :cond_f
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getPhone()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v8
+
+    if-eqz v8, :cond_10
+
+    invoke-virtual {v8}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v8
+
+    if-nez v8, :cond_11
+
+    :cond_10
+    move-object v8, v6
+
+    :cond_11
+    if-eqz v0, :cond_17
+
+    .line 38
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v9
+
+    if-eqz v9, :cond_17
+
+    .line 39
+    sget-object v10, Lck0/a;->q:Lck0/a$a;
+
+    .line 40
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    const v12, 0x7f120c23
+
+    invoke-virtual {v1, v12}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const/16 v12, 0xa
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 41
+    iget-object v12, v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->I:Lcc0/b;
+
+    if-eqz v12, :cond_16
+
+    .line 42
+    invoke-static {v8}, Ltr0/r;->j(Ljava/lang/String;)Ljava/lang/Long;
+
+    move-result-object v13
+
+    if-eqz v13, :cond_12
+
+    .line 43
+    invoke-static {v8}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v13
+
+    invoke-virtual {v12, v13, v14}, Lcc0/b;->b(J)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v8, "https://sharechat.com/post/"
+
+    .line 44
+    invoke-static {v8, v6}, Le1/a;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 45
+    :cond_12
+    invoke-virtual {v11, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 46
+    invoke-static {v10}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v8, "context.getString(sharec\u2026no_pic_chooser_available)"
+
+    const-string v11, "text"
+
+    .line 47
+    invoke-static {v6, v11}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v11
+
+    const/4 v12, 0x0
+
+    if-nez v11, :cond_13
+
+    goto :goto_3
+
+    :cond_13
+    const/4 v4, 0x0
+
+    :goto_3
+    if-eqz v4, :cond_14
+
+    goto :goto_4
+
+    :cond_14
+    const v4, 0x7f120750
+
+    const/4 v11, 0x6
+
+    .line 49
+    :try_start_0
+    new-instance v13, Landroid/content/Intent;
+
+    const-string v14, "android.intent.action.VIEW"
+
+    invoke-direct {v13, v14}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v15, "https://wa.me/"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "?text="
+
+    invoke-virtual {v14, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v6, "com.whatsapp"
+
+    .line 51
+    invoke-virtual {v13, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 52
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    invoke-virtual {v13, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 53
+    invoke-virtual {v9}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v13, v0}, Landroid/content/Intent;->resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_15
+
+    .line 54
+    invoke-virtual {v9, v13}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_4
+
+    .line 55
+    :cond_15
+    invoke-virtual {v9, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v8}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, v9, v12, v7, v11}, Lfs1/a;->g(Ljava/lang/String;Landroid/content/Context;ILjava/lang/Integer;I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_4
+
+    :catch_0
+    move-exception v0
+
+    .line 56
+    invoke-static {v10, v0, v12, v11}, Las0/k;->G(Ljava/lang/Object;Ljava/lang/Throwable;ZI)V
+
+    .line 57
+    invoke-virtual {v9, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0, v8}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, v9, v12, v7, v11}, Lfs1/a;->g(Ljava/lang/String;Landroid/content/Context;ILjava/lang/Integer;I)V
+
+    goto :goto_4
+
+    :cond_16
+    const-string v0, "hashingUtil"
+
+    .line 58
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v7
+
+    .line 59
+    :cond_17
+    :goto_4
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->vz()Lss1/a;
+
+    move-result-object v8
+
+    invoke-static {v8, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 60
+    invoke-virtual {v3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 61
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 62
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v11
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    .line 63
+    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_18
+
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v7
+
+    :cond_18
+    move-object v14, v7
+
+    const/16 v15, 0x18
+
+    const/16 v16, 0x0
+
+    .line 64
+    invoke-static/range {v8 .. v16}, Lss1/a$a;->A(Lss1/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+
+    :cond_19
+    :goto_5
+    return-void
+.end method
+
+.method public final Ez()I
+    .locals 1
+
+    const v0, 0x7f0d01bb
+
+    return v0
+.end method
+
+.method public final F2(Lsharechat/library/cvo/PostEntity;Ljava/lang/String;)V
+    .locals 8
+
+    const-string v0, "post"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_6
+
+    .line 2
+    iget-object v2, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    .line 3
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    const/4 v6, -0x1
+
+    if-eqz v5, :cond_4
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 4
+    check-cast v5, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    .line 5
+    invoke-virtual {v5}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v7
+
+    if-eqz v7, :cond_0
+
+    invoke-virtual {v7}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v7
+
+    goto :goto_1
+
+    :cond_0
+    move-object v7, v1
+
+    :goto_1
+    if-eqz v7, :cond_2
+
+    invoke-virtual {v5}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_1
+
+    invoke-virtual {v5}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v5
+
+    goto :goto_2
+
+    :cond_1
+    move-object v5, v1
+
+    :goto_2
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v5, v7}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    const/4 v5, 0x1
+
+    goto :goto_3
+
+    :cond_2
+    const/4 v5, 0x0
+
+    :goto_3
+    if-eqz v5, :cond_3
+
+    goto :goto_4
+
+    :cond_3
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    const/4 v4, -0x1
+
+    :goto_4
+    if-eq v4, v6, :cond_5
+
+    .line 6
+    iget-object v1, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    invoke-virtual {v1, p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setPost(Lsharechat/library/cvo/PostEntity;)V
+
+    .line 7
+    invoke-virtual {v0, v4, p2}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemChanged(ILjava/lang/Object;)V
+
+    :cond_5
+    return-void
+
+    :cond_6
+    const-string p1, "mAdapter"
+
+    .line 8
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final F4(FLjava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "variantShown"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3}, Lom0/n;->F4(FLjava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Ff(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ldp0/l;Ldp0/a;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            "Ljava/lang/String;",
+            "Ldp0/l<",
+            "-",
+            "Lin/mohalla/sharechat/data/emoji/Emoji;",
+            "Lro0/x;",
+            ">;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string p2, "post"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v4
+
+    if-nez v4, :cond_0
+
+    return-void
+
+    .line 2
+    :cond_0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v1
+
+    const-string p1, "childFragmentManager"
+
+    invoke-static {v1, p1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lom0/n;->M2()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v5, 0x1
+
+    const-string v3, "longPress/Sheet"
+
+    move-object v6, p3
+
+    move-object v7, p4
+
+    .line 5
+    invoke-interface/range {v0 .. v7}, Lnm0/a;->e1(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Lsharechat/library/cvo/PostEntity;ZLdp0/l;Ldp0/a;)V
+
+    return-void
+.end method
+
+.method public final Fg(Ljava/lang/String;JLin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
+
+    const-string v0, "playMode"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p4, p2, p3, p1}, Lom0/n;->H6(Lin/mohalla/sharechat/data/repository/post/PostModel;JLjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Fl()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lom0/t;->b:Lom0/t;
+
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    .line 2
+    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 3
+    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
+
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final G5(Ljava/lang/String;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->G5(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Gg()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final Gk(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;ZLjava/lang/String;)V
+    .locals 6
+
+    const-string v0, "postModel"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "source"
+
+    invoke-static {p4, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0, p1, p3, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->mp(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+
+    .line 2
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p3
+
+    const/4 p4, 0x0
+
+    if-eqz p3, :cond_0
+
+    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getAdObject()Lsharechat/library/cvo/SharechatAd;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_0
+
+    invoke-virtual {p3}, Lsharechat/library/cvo/SharechatAd;->getLaunchAction()Lsharechat/library/cvo/WebCardObject;
+
+    move-result-object p3
+
+    move-object v1, p3
+
+    goto :goto_0
+
+    :cond_0
+    move-object v1, p4
+
+    .line 3
+    :goto_0
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_1
+
+    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_1
+
+    invoke-virtual {p3}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object p3
+
+    if-nez p3, :cond_2
+
+    :cond_1
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Ld10/x;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_3
+
+    invoke-virtual {p3}, Ld10/x;->a()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_3
+
+    invoke-virtual {p3}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object p3
+
+    :cond_2
+    move-object v5, p3
+
+    goto :goto_1
+
+    :cond_3
+    move-object v5, p4
+
+    :goto_1
+    if-eqz v1, :cond_8
+
+    .line 4
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_7
+
+    .line 5
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p3
+
+    if-eqz p3, :cond_4
+
+    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object p3
+
+    goto :goto_2
+
+    :cond_4
+    move-object p3, p4
+
+    :goto_2
+    invoke-virtual {p0, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-virtual {p1, p3}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getJsonForReact(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p3
+
+    .line 6
+    invoke-virtual {v1, p3}, Lsharechat/library/cvo/WebCardObject;->setModifiedExtras(Ljava/lang/String;)V
+
+    .line 7
+    invoke-virtual {v1}, Lsharechat/library/cvo/WebCardObject;->getType()Ljava/lang/String;
+
+    move-result-object p3
+
+    const-string v0, "card.type"
+
+    invoke-static {p3, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAdObject()Lsharechat/library/cvo/SharechatAd;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_5
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/SharechatAd;->getMuteAudioOnBtmSheet()Ljava/lang/Boolean;
+
+    move-result-object p4
+
+    :cond_5
+    const-string p1, "webViewBottomSheet"
+
+    .line 8
+    invoke-static {p3, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    .line 9
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {p4, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_6
+
+    const/4 p1, 0x1
+
+    .line 10
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Yz(Z)V
+
+    .line 11
+    :cond_6
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 12
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 13
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getMeta()Ljava/lang/String;
+
+    move-result-object v4
+
+    move-object v0, p0
+
+    .line 14
+    invoke-virtual/range {v0 .. v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->z(Lsharechat/library/cvo/WebCardObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_7
+    return-void
+
+    .line 15
+    :cond_8
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_9
+
+    sget-object p3, Lck0/a;->q:Lck0/a$a;
+
+    invoke-virtual {p3, p1, p2, v5}, Lck0/a$a;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_9
+    return-void
+.end method
+
+.method public final Gz(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 95
 
     move-object/from16 v0, p0
 
+    move-object/from16 v1, p1
+
+    const-string v2, "inflatedView"
+
+    invoke-static {v1, v2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const v2, 0x7f0a00cb
+
     .line 1
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v6, v3
+
+    check-cast v6, Lcom/google/android/material/appbar/AppBarLayout;
+
+    if-eqz v6, :cond_1c
+
+    const v2, 0x7f0a0190
+
+    .line 2
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v7, v3
+
+    check-cast v7, Landroid/widget/FrameLayout;
+
+    if-eqz v7, :cond_1c
+
+    const v2, 0x7f0a01ff
+
+    .line 3
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v8, v3
+
+    check-cast v8, Landroid/view/ViewStub;
+
+    if-eqz v8, :cond_1c
+
+    const v2, 0x7f0a0352
+
+    .line 4
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v9, v3
+
+    check-cast v9, Landroid/widget/FrameLayout;
+
+    if-eqz v9, :cond_1c
+
+    const v2, 0x7f0a0351
+
+    .line 5
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/material/appbar/CollapsingToolbarLayout;
+
+    if-eqz v3, :cond_1c
+
+    const v2, 0x7f0a04af
+
+    .line 6
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v10, v3
+
+    check-cast v10, Lcom/airbnb/lottie/LottieAnimationView;
+
+    if-eqz v10, :cond_1c
+
+    const v2, 0x7f0a04f2
+
+    .line 7
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Lin/mohalla/sharechat/common/errorHandling/ErrorViewContainer;
+
+    if-eqz v3, :cond_1c
+
+    const v2, 0x7f0a05ee
+
+    .line 8
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v11, v3
+
+    check-cast v11, Landroid/widget/FrameLayout;
+
+    if-eqz v11, :cond_1c
+
+    const v2, 0x7f0a0611
+
+    .line 9
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v12, v3
+
+    check-cast v12, Landroid/widget/FrameLayout;
+
+    if-eqz v12, :cond_1c
+
+    const v2, 0x7f0a064d
+
+    .line 10
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v13, v3
+
+    check-cast v13, Landroid/widget/FrameLayout;
+
+    if-eqz v13, :cond_1c
+
+    const v2, 0x7f0a09ee
+
+    .line 11
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v14, v3
+
+    check-cast v14, Landroid/widget/ImageView;
+
+    if-eqz v14, :cond_1c
+
+    const v2, 0x7f0a0c16
+
+    .line 12
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object v15, v3
+
+    check-cast v15, Lcom/airbnb/lottie/LottieAnimationView;
+
+    if-eqz v15, :cond_1c
+
+    const v2, 0x7f0a0dd8
+
+    .line 13
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object/from16 v16, v3
+
+    check-cast v16, Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    if-eqz v16, :cond_1c
+
+    const v2, 0x7f0a0e23
+
+    .line 14
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object/from16 v17, v3
+
+    check-cast v17, Landroid/widget/RelativeLayout;
+
+    if-eqz v17, :cond_1c
+
+    const v2, 0x7f0a0ffc
+
+    .line 15
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object/from16 v18, v3
+
+    check-cast v18, Landroid/widget/FrameLayout;
+
+    if-eqz v18, :cond_1c
+
+    const v2, 0x7f0a109a
+
+    .line 16
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object/from16 v19, v3
+
+    check-cast v19, Landroidx/appcompat/widget/Toolbar;
+
+    if-eqz v19, :cond_1c
+
+    const v2, 0x7f0a11b6
+
+    .line 17
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    move-object/from16 v20, v3
+
+    check-cast v20, Landroid/widget/TextView;
+
+    if-eqz v20, :cond_1c
+
+    const v2, 0x7f0a1269
+
+    .line 18
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Lin/mohalla/sharechat/common/views/customText/CustomTextView;
+
+    if-eqz v3, :cond_1c
+
+    const v2, 0x7f0a1455
+
+    .line 19
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_1c
+
+    .line 20
+    invoke-static {v3}, Lre0/v4;->a(Landroid/view/View;)Lre0/v4;
+
+    move-result-object v21
+
+    .line 21
+    move-object v5, v1
+
+    check-cast v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
+
+    const v2, 0x7f0a14aa
+
+    .line 22
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v22
+
+    if-eqz v22, :cond_1c
+
+    const v2, 0x7f0a14b2
+
+    .line 23
+    invoke-static {v1, v2}, Ls6/b;->a(Landroid/view/View;I)Landroid/view/View;
+
+    move-result-object v23
+
+    if-eqz v23, :cond_1c
+
+    .line 24
+    new-instance v1, Lre0/j2;
+
+    move-object v4, v1
+
+    invoke-direct/range {v4 .. v23}, Lre0/j2;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Landroid/widget/FrameLayout;Landroid/view/ViewStub;Landroid/widget/FrameLayout;Lcom/airbnb/lottie/LottieAnimationView;Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;Landroid/widget/ImageView;Lcom/airbnb/lottie/LottieAnimationView;Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;Landroid/widget/RelativeLayout;Landroid/widget/FrameLayout;Landroidx/appcompat/widget/Toolbar;Landroid/widget/TextView;Lre0/v4;Landroid/view/View;Landroid/view/View;)V
+
+    .line 25
+    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    .line 26
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    invoke-interface {v1, v0}, Lq60/m;->O3(Lq60/n;)V
+
+    .line 27
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getLifecycle()Landroidx/lifecycle/t;
+
+    move-result-object v1
+
+    .line 28
+    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O:Lsharechat/library/utilities/systemservices/SensorManagerUtil;
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_1b
+
+    .line 29
+    invoke-virtual {v1, v2}, Landroidx/lifecycle/t;->a(Landroidx/lifecycle/a0;)V
+
+    .line 30
     invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
-    if-eqz v1, :cond_d
+    const-string v2, "binding"
 
-    const-string v3, "isVideoPlayerAction"
+    if-eqz v1, :cond_15
 
-    const/4 v4, 0x1
+    const-string v4, "isVideoPlayerAction"
 
-    .line 2
-    invoke-virtual {v1, v3, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    const/4 v5, 0x1
 
-    move-result v3
+    .line 31
+    invoke-virtual {v1, v4, v5}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
-    iput-boolean v3, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G0:Z
+    move-result v4
 
-    const-string v3, "AUTHOR_ID"
+    iput-boolean v4, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Z
 
-    .line 3
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    const-string v4, "AUTHOR_ID"
 
-    move-result-object v3
+    .line 32
+    invoke-virtual {v1, v4}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    iput-object v3, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
+    move-result-object v4
 
-    const-string v3, "START_POST_ID"
+    iput-object v4, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
 
-    .line 4
-    invoke-virtual {v1, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    const-string v4, "START_POST_ID"
 
-    move-result-object v3
+    .line 33
+    invoke-virtual {v1, v4}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    if-nez v3, :cond_0
+    move-result-object v4
 
-    const-string v3, ""
+    if-nez v4, :cond_0
+
+    const-string v4, ""
 
     :cond_0
-    const-string v5, "it.getString(VideoPlayer\u2026vity.START_POST_ID) ?: \"\""
+    const-string v6, "START_DURATION"
 
-    invoke-static {v3, v5}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 34
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
 
-    const-string v5, "START_DURATION"
+    move-result-wide v6
 
-    .line 5
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
-
-    move-result-wide v5
-
-    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v5
-
-    iput-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M0:Ljava/lang/Long;
-
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v5
-
-    const/4 v15, 0x0
-
-    if-eqz v5, :cond_1
-
-    const-string v6, "IS_IMMERSIVE_SCREEN"
-
-    invoke-virtual {v5, v6, v15}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v5
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v5, 0x0
-
-    :goto_0
-    iput-boolean v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    const-string v5, "VIDEO_TYPE"
-
-    .line 7
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
-
-    move-result-object v5
-
-    const-string v6, "null cannot be cast to non-null type in.mohalla.sharechat.videoplayer.VideoType"
-
-    invoke-static {v5, v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    move-object v14, v5
-
-    check-cast v14, Lin/mohalla/sharechat/videoplayer/g3;
-
-    const-string v5, "GENRE_ID"
-
-    .line 8
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-
-    const-string v5, "IS_GROUP_TAG_FEED"
-
-    .line 9
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v11
-
-    const-string v5, "POST_SOURCE"
-
-    .line 10
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    if-nez v5, :cond_2
-
-    const-string v5, "click"
-
-    goto :goto_1
-
-    :cond_2
-    const-string v6, "it.getString(VideoPlayer\u2026ostConstants.SOURCE_CLICK"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    :goto_1
-    iput-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/lang/String;
-
-    const-string v5, "HIDE_USER_ACTIONS"
-
-    .line 11
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v19
-
-    const-string v5, "AUTO_CLICK_BUY_NOW"
-
-    .line 12
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v13
-
-    const-string v5, "KEY_SEARCHED_TEXT"
-
-    .line 13
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v16
-
-    const-string v5, "TAG_ID"
-
-    .line 14
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v17
-
-    const-string v5, "MEDIATION_ADS"
-
-    .line 15
-    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v5
-
-    const-string v6, "KEY_OFFSET"
-
-    .line 16
-    invoke-virtual {v1, v6}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v18
-
-    if-eqz v5, :cond_3
-
-    .line 17
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->tz()Lcom/google/gson/Gson;
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v6
 
-    .line 18
-    new-instance v7, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f;
+    iput-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Q0:Ljava/lang/Long;
 
-    invoke-direct {v7}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f;-><init>()V
+    const-string v6, "VIDEO_TYPE"
 
-    invoke-virtual {v7}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
+    .line 35
+    invoke-virtual {v1, v6}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
+
+    move-result-object v6
+
+    const-string v7, "null cannot be cast to non-null type in.mohalla.sharechat.videoplayer.VideoType"
+
+    invoke-static {v6, v7}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-object v15, v6
+
+    check-cast v15, Lom0/x2;
+
+    const-string v6, "GENRE_ID"
+
+    .line 36
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
+
+    const-string v6, "IS_GROUP_TAG_FEED"
+
+    .line 37
+    invoke-virtual {v1, v6}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v11
+
+    const-string v6, "POST_SOURCE"
+
+    .line 38
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    if-nez v6, :cond_1
+
+    const-string v6, "click"
+
+    :cond_1
+    iput-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Ljava/lang/String;
+
+    const-string v6, "HIDE_USER_ACTIONS"
+
+    .line 39
+    invoke-virtual {v1, v6}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v23
+
+    const-string v6, "AUTO_CLICK_BUY_NOW"
+
+    .line 40
+    invoke-virtual {v1, v6}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v13
+
+    const-string v6, "KEY_SEARCHED_TEXT"
+
+    .line 41
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v16
+
+    const-string v6, "TAG_ID"
+
+    .line 42
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v14
+
+    const-string v6, "MEDIATION_ADS"
+
+    .line 43
+    invoke-virtual {v1, v6}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v7, "KEY_OFFSET"
+
+    .line 44
+    invoke-virtual {v1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v17
+
+    const-wide/16 v7, -0x1
+
+    const-string v10, "audio_id"
+
+    .line 45
+    invoke-virtual {v1, v10, v7, v8}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v7
+
+    const-wide/16 v18, 0x0
+
+    cmp-long v10, v7, v18
+
+    if-lez v10, :cond_2
+
+    .line 46
+    invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
-    .line 19
-    invoke-virtual {v6, v5, v7}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+    move-object/from16 v18, v7
 
-    move-result-object v5
+    goto :goto_0
 
-    check-cast v5, Ljava/util/List;
+    :cond_2
+    move-object/from16 v18, v3
+
+    :goto_0
+    const-string v7, "ARG_BUCKET_ID"
+
+    .line 47
+    invoke-virtual {v1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v19
+
+    const-string v7, "ARG_SUB_GENRE_ID"
+
+    .line 48
+    invoke-virtual {v1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v20
+
+    const-string v7, "ARG_WIDGET_ID"
+
+    .line 49
+    invoke-virtual {v1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v21
+
+    const-string v7, "KEY_PERSISTENT_OFFSET"
+
+    .line 50
+    invoke-virtual {v1, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v22
+
+    if-eqz v6, :cond_4
+
+    .line 51
+    iget-object v7, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G:Lcom/google/gson/Gson;
+
+    if-eqz v7, :cond_3
+
+    .line 52
+    new-instance v8, Lom0/r;
+
+    invoke-direct {v8}, Lom0/r;-><init>()V
+
+    invoke-virtual {v8}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
+
+    move-result-object v8
+
+    .line 53
+    invoke-virtual {v7, v6, v8}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/util/List;
+
+    goto :goto_1
+
+    :cond_3
+    const-string v1, "mGson"
+
+    .line 54
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_4
+    move-object v6, v3
+
+    :goto_1
+    if-nez v6, :cond_5
+
+    .line 55
+    new-instance v6, Ljava/util/ArrayList;
+
+    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+
+    :cond_5
+    move-object/from16 v24, v6
+
+    if-eqz v11, :cond_6
+
+    move-object v6, v14
 
     goto :goto_2
 
-    :cond_3
-    const/4 v5, 0x0
+    :cond_6
+    move-object v6, v3
 
+    .line 56
     :goto_2
-    if-nez v5, :cond_4
+    iput-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
 
-    .line 20
-    new-instance v5, Ljava/util/ArrayList;
+    .line 57
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    move-result-object v6
 
-    :cond_4
-    move-object/from16 v20, v5
+    if-eqz v6, :cond_7
 
-    if-eqz v11, :cond_5
+    const-string v7, "REFERRER"
 
-    move-object/from16 v5, v17
+    invoke-virtual {v6, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
 
     goto :goto_3
 
-    :cond_5
-    const/4 v5, 0x0
+    :cond_7
+    move-object v6, v3
 
-    .line 21
     :goto_3
-    iput-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+    if-nez v6, :cond_8
 
-    .line 22
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+    const-string v6, "unknown"
 
-    move-result-object v5
+    :cond_8
+    iput-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Ljava/lang/String;
 
-    if-eqz v5, :cond_6
+    .line 58
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    const-string v6, "REFERRER"
+    move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 59
+    iget-object v8, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Ljava/lang/String;
 
-    move-result-object v5
+    if-eqz v8, :cond_14
+
+    const-string v7, "VIDEO_POST_NUMBER"
+
+    const/4 v12, 0x0
+
+    .line 60
+    invoke-virtual {v1, v7, v12}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;I)I
+
+    move-object v7, v4
+
+    move-object v10, v15
+
+    const/16 v25, 0x0
+
+    move/from16 v12, v23
+
+    move-object v5, v15
+
+    move-object/from16 v15, v24
+
+    .line 61
+    invoke-interface/range {v6 .. v22}, Lom0/n;->uw(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lom0/x2;ZZZLjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 62
+    sget-object v6, Lom0/x2;->USER_VIDEO_FEED:Lom0/x2;
+
+    if-eq v5, v6, :cond_a
+
+    sget-object v6, Lom0/x2;->FESTIVAL_FEED:Lom0/x2;
+
+    if-ne v5, v6, :cond_9
 
     goto :goto_4
 
-    :cond_6
+    :cond_9
     const/4 v5, 0x0
-
-    :goto_4
-    if-nez v5, :cond_7
-
-    const-string v5, "unknown"
-
-    :cond_7
-    iput-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Ljava/lang/String;
-
-    .line 23
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v5
-
-    .line 24
-    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Ljava/lang/String;
-
-    if-nez v6, :cond_8
-
-    const-string v6, "mLastScreenName"
-
-    invoke-static {v6}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v7, 0x0
 
     goto :goto_5
 
-    :cond_8
-    move-object v7, v6
+    :cond_a
+    :goto_4
+    const/4 v5, 0x1
 
+    .line 63
     :goto_5
-    const-string v6, "VIDEO_POST_NUMBER"
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
-    .line 25
-    invoke-virtual {v1, v6, v15}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+    move-result-object v6
 
-    move-result v10
+    if-eqz v6, :cond_11
 
-    .line 26
-    iget-boolean v12, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
+    .line 64
+    new-instance v7, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;
 
-    move-object v6, v3
+    invoke-direct {v7, v6}, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;-><init>(Landroid/content/Context;)V
 
-    move-object v9, v14
+    .line 65
+    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    move/from16 v21, v12
+    if-eqz v6, :cond_10
 
-    move/from16 v12, v19
+    iget-object v6, v6, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
 
-    move-object v2, v14
+    invoke-virtual {v6, v7}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$n;)V
 
-    move-object/from16 v14, v17
+    .line 66
+    new-instance v6, Landroidx/recyclerview/widget/i0;
 
-    const/16 v22, 0x0
+    invoke-direct {v6}, Landroidx/recyclerview/widget/i0;-><init>()V
 
-    move-object/from16 v15, v20
+    .line 67
+    iget-object v8, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    move-object/from16 v17, v18
+    if-eqz v8, :cond_f
 
-    move/from16 v18, v21
+    iget-object v8, v8, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
 
-    .line 27
-    invoke-interface/range {v5 .. v18}, Lin/mohalla/sharechat/videoplayer/p;->bc(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/g3;IZZZLjava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-virtual {v6, v8}, Landroidx/recyclerview/widget/o0;->b(Landroidx/recyclerview/widget/RecyclerView;)V
 
-    .line 28
-    sget-object v5, Lin/mohalla/sharechat/videoplayer/g3;->USER_VIDEO_FEED:Lin/mohalla/sharechat/videoplayer/g3;
+    .line 68
+    new-instance v6, Lom0/d0;
 
-    if-eq v2, v5, :cond_a
+    invoke-direct {v6, v0}, Lom0/d0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
 
-    sget-object v5, Lin/mohalla/sharechat/videoplayer/g3;->VIDEO_WITH_SAME_AUDIO:Lin/mohalla/sharechat/videoplayer/g3;
+    iput-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lom0/d0;
 
-    if-ne v2, v5, :cond_9
+    if-eqz v5, :cond_b
+
+    .line 69
+    new-instance v5, Lom0/e0;
+
+    invoke-direct {v5, v7, v0}, Lom0/e0;-><init>(Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
 
     goto :goto_6
 
-    :cond_9
-    const/4 v15, 0x0
+    .line 70
+    :cond_b
+    new-instance v5, Lom0/f0;
+
+    invoke-direct {v5, v7, v0, v4}, Lom0/f0;-><init>(Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
+
+    .line 71
+    :goto_6
+    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v6, :cond_e
+
+    iget-object v6, v6, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    iget-object v7, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lom0/d0;
+
+    if-eqz v7, :cond_d
+
+    invoke-virtual {v6, v7}, Landroidx/recyclerview/widget/RecyclerView;->j(Landroidx/recyclerview/widget/RecyclerView$s;)V
+
+    .line 72
+    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v6, :cond_c
+
+    iget-object v6, v6, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v6, v5}, Landroidx/recyclerview/widget/RecyclerView;->j(Landroidx/recyclerview/widget/RecyclerView$s;)V
+
+    .line 73
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Lom0/n;->S0()V
 
     goto :goto_7
 
-    :cond_a
-    :goto_6
-    const/4 v15, 0x1
+    .line 74
+    :cond_c
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
 
-    .line 29
+    throw v3
+
+    :cond_d
+    const-string v1, "mScrollListener"
+
+    .line 75
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_e
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 76
+    :cond_f
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 77
+    :cond_10
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 78
+    :cond_11
     :goto_7
-    invoke-direct {v0, v15, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->fA(ZLjava/lang/String;)V
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    .line 30
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    move-result-object v5
 
-    move-result-object v2
+    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Ljava/lang/String;
 
-    iget-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/lang/String;
+    invoke-interface {v5, v6}, Lom0/n;->l0(Ljava/lang/String;)V
 
-    invoke-interface {v2, v5}, Lin/mohalla/sharechat/videoplayer/p;->l0(Ljava/lang/String;)V
+    if-nez v23, :cond_12
 
-    if-nez v19, :cond_b
+    .line 79
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    .line 31
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-interface {v5}, Lom0/n;->f3()V
 
-    invoke-interface {v2}, Lin/mohalla/sharechat/videoplayer/p;->j3()V
+    :cond_12
+    const-string v5, "KEY_AFTER_VERIFICATION"
 
-    :cond_b
-    const-string v2, "KEY_AFTER_VERIFICATION"
+    .line 80
+    invoke-virtual {v1, v5}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
-    .line 32
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    move-result v5
 
-    move-result v2
+    if-eqz v5, :cond_13
 
-    if-eqz v2, :cond_c
+    .line 81
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    .line 33
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    move-result-object v6
 
-    move-result-object v2
-
-    .line 34
+    .line 82
     new-instance v5, Lsharechat/library/cvo/PostEntity;
 
-    move-object/from16 v23, v5
+    move-object v8, v5
 
     invoke-direct {v5}, Lsharechat/library/cvo/PostEntity;-><init>()V
 
-    .line 35
-    invoke-virtual {v5, v3}, Lsharechat/library/cvo/PostEntity;->setPostId(Ljava/lang/String;)V
+    .line 83
+    invoke-virtual {v5, v4}, Lsharechat/library/cvo/PostEntity;->setPostId(Ljava/lang/String;)V
 
-    .line 36
-    sget-object v3, Li00/a0;->a:Li00/a0;
+    .line 84
+    sget-object v4, Lro0/x;->a:Lro0/x;
 
-    const/16 v24, 0x0
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const-wide/16 v23, 0x0
 
     const/16 v25, 0x0
 
@@ -744,9 +2921,7 @@
 
     const/16 v28, 0x0
 
-    const/16 v29, 0x0
-
-    const/16 v30, 0x0
+    const-wide/16 v29, 0x0
 
     const/16 v31, 0x0
 
@@ -760,7 +2935,9 @@
 
     const/16 v36, 0x0
 
-    const-wide/16 v37, 0x0
+    const/16 v37, 0x0
+
+    const/16 v38, 0x0
 
     const/16 v39, 0x0
 
@@ -768,7 +2945,9 @@
 
     const/16 v41, 0x0
 
-    const-wide/16 v42, 0x0
+    const/16 v42, 0x0
+
+    const/16 v43, 0x0
 
     const/16 v44, 0x0
 
@@ -864,144 +3043,1482 @@
 
     const/16 v90, 0x0
 
-    const/16 v91, 0x0
+    const/16 v91, -0x2
 
-    const/16 v92, 0x0
+    const/16 v92, -0x1
 
-    const/16 v93, 0x0
+    const v93, 0x1ffff
 
     const/16 v94, 0x0
 
-    const/16 v95, 0x0
+    .line 85
+    new-instance v5, Lin/mohalla/sharechat/data/repository/post/PostModel;
 
-    const/16 v96, 0x0
+    move-object v7, v5
 
-    const/16 v97, -0x2
+    const/4 v11, 0x0
 
-    const/16 v98, -0x1
+    invoke-direct/range {v7 .. v94}, Lin/mohalla/sharechat/data/repository/post/PostModel;-><init>(Lsharechat/library/cvo/PostEntity;Lsharechat/library/cvo/UserEntity;Ld10/x;Lin/mohalla/sharechat/data/repository/post/PostModelType;Lin/mohalla/sharechat/data/repository/post/ProfileProgressActions;Ljava/lang/Object;Lpw0/k;Lin/mohalla/sharechat/data/remote/model/InterestSuggestionResponse;Lkw0/l;Lsharechat/library/cvo/SurveyMeta;Lkw0/v;Lin/mohalla/sharechat/data/remote/model/AgeLimiting;Lsharechat/library/cvo/PostLocalEntity;ZZJZIZLin/mohalla/sharechat/data/repository/post/ReactionsOnboardingType;JZZZLsharechat/library/cvo/TagEntity;ZZLjava/lang/Object;ZZZZZZZZZLjava/util/List;Ljava/util/List;Lin/mohalla/sharechat/data/remote/model/tags/SuggestedTrendingTagEntity;Lin/mohalla/sharechat/data/remote/model/TrendingTagModel;Ljava/util/List;ZZZLeg0/a;IZLjava/util/List;ZIILjava/lang/String;Ljava/lang/String;ZZLjava/lang/Double;IZLjava/util/List;Ljava/lang/String;ZZLjava/lang/String;Lin/mohalla/sharechat/data/repository/post/AdClickRoute;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;ZZZZLjava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/util/List;ZIZIIILep0/k;)V
 
-    const/16 v99, 0xff
+    const/4 v8, 0x1
 
-    const/16 v100, 0x0
+    const/4 v9, 0x1
 
-    .line 37
-    new-instance v3, Lin/mohalla/sharechat/data/repository/post/PostModel;
+    const/4 v10, 0x0
 
-    move-object/from16 v22, v3
+    move-object v11, v4
 
-    invoke-direct/range {v22 .. v100}, Lin/mohalla/sharechat/data/repository/post/PostModel;-><init>(Lsharechat/library/cvo/PostEntity;Lsharechat/library/cvo/UserEntity;Lin/mohalla/sharechat/common/ad/e;Lin/mohalla/sharechat/data/repository/post/PostModelType;Lin/mohalla/sharechat/data/repository/post/ProfileProgressActions;Ljava/lang/Object;Lw40/k;Lin/mohalla/sharechat/data/remote/model/InterestSuggestionResponse;Lw40/m;Lw40/w;Lin/mohalla/sharechat/data/remote/model/AgeLimiting;Lsharechat/library/cvo/PostLocalEntity;ZZJZIZJZZZLsharechat/library/cvo/TagEntity;ZZLjava/lang/Object;ZZZZZZZZZLjava/util/List;Ljava/util/List;Lin/mohalla/sharechat/data/remote/model/tags/SuggestedTrendingTagEntity;Ljava/util/List;ZZZLmv/a;IZLjava/util/List;ZIILjava/lang/String;Ljava/lang/String;ZZLjava/lang/Double;ILin/mohalla/sharechat/data/repository/post/MojReelMeta;ZLjava/util/List;Ljava/lang/String;ZZLjava/lang/String;Lin/mohalla/sharechat/data/repository/post/AdClickRoute;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/util/List;IIILkotlin/jvm/internal/h;)V
+    .line 86
+    invoke-interface/range {v6 .. v11}, Lom0/n;->T3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZZZLdp0/a;)V
 
-    .line 38
-    invoke-interface {v2, v3, v4, v4}, Lin/mohalla/sharechat/videoplayer/p;->e2(Lin/mohalla/sharechat/data/repository/post/PostModel;ZZ)V
+    :cond_13
+    const-string v4, "override_experiment"
 
-    :cond_c
-    const-string v2, "override_experiment"
-
-    .line 39
-    invoke-virtual {v1, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    .line 87
+    invoke-virtual {v1, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v1
 
-    iput-boolean v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Q0:Z
+    iput-boolean v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S0:Z
 
-    .line 40
-    sget-object v1, Li00/a0;->a:Li00/a0;
-
-    .line 41
-    :cond_d
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const-string v2, "binding"
-
-    if-nez v1, :cond_e
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    :cond_e
-    iget-object v1, v1, Lru/q2;->n:Landroid/view/View;
-
-    new-instance v3, Lin/mohalla/sharechat/videoplayer/s;
-
-    invoke-direct {v3, v0}, Lin/mohalla/sharechat/videoplayer/s;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 42
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v1, :cond_f
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v2, 0x0
+    .line 88
+    sget-object v1, Lro0/x;->a:Lro0/x;
 
     goto :goto_8
 
-    :cond_f
-    move-object v2, v1
+    :cond_14
+    const-string v1, "mLastScreenName"
 
+    .line 89
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 90
+    :cond_15
     :goto_8
-    iget-object v1, v2, Lru/q2;->g:Landroid/widget/FrameLayout;
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g;
+    if-eqz v1, :cond_1a
 
-    invoke-direct {v2, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    iget-object v1, v1, Lre0/j2;->t:Landroid/view/View;
 
-    invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+    new-instance v4, Lmk0/c;
 
-    .line 43
+    const/16 v5, 0xa
+
+    invoke-direct {v4, v0, v5}, Lmk0/c;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 91
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_19
+
+    iget-object v1, v1, Lre0/j2;->j:Landroid/widget/FrameLayout;
+
+    new-instance v4, Lom0/s;
+
+    invoke-direct {v4, v0}, Lom0/s;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-virtual {v1, v4}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    .line 92
     invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_17
 
     invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_17
+
+    .line 93
+    iget-object v4, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
+
+    if-nez v4, :cond_16
+
+    .line 94
+    new-instance v4, Lom0/i;
+
+    invoke-direct {v4, v1}, Lom0/i;-><init>(Landroid/view/Window;)V
+
+    iput-object v4, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
+
+    .line 95
+    :cond_16
+    sget-object v1, Lro0/x;->a:Lro0/x;
+
+    .line 96
+    :cond_17
+    sget-object v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;->IDLE:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
+
+    sput-object v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->h1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;
+
+    .line 97
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_18
+
+    iget-object v1, v1, Lre0/j2;->s:Landroid/view/View;
+
+    new-instance v2, Lo10/k;
+
+    const/16 v3, 0x1c
+
+    invoke-direct {v2, v0, v3}, Lo10/k;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+
+    :cond_18
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 98
+    :cond_19
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 99
+    :cond_1a
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_1b
+    const-string v1, "sensorManagerUtil"
+
+    .line 100
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 101
+    :cond_1c
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 102
+    new-instance v2, Ljava/lang/NullPointerException;
+
+    const-string v3, "Missing required view with ID: "
+
+    invoke-virtual {v3, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v2, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+.end method
+
+.method public final Hl(Ljava/lang/String;Los1/z;)V
+    .locals 11
+
+    const-string v0, "mPostId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "videoPlayerFollowVariant"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    const-string v2, "binding"
+
+    if-eqz v0, :cond_1d
+
+    iget-object v0, v0, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    const-string v3, "binding.flPostCommentFooter"
+
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    const v4, 0x7f0600ef
+
+    const v5, 0x7f1201f6
+
+    const-string v6, "binding.videoDesign2.llContainerSticker"
+
+    const/4 v7, 0x0
+
+    const v8, 0x7f060038
+
+    if-eqz v0, :cond_f
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
+
+    move-result v0
+
+    if-nez v0, :cond_f
+
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_e
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    .line 4
+    iget-object v0, v0, Lre0/v4;->b:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    const-string v9, "binding.videoDesign2.root"
+
+    .line 5
+    invoke-static {v0, v9}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 6
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_d
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->d:Landroid/widget/ImageButton;
+
+    const-string v10, "binding.videoDesign2.ibGalleryUnselected"
+
+    invoke-static {v0, v10}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 7
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_c
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->f:Landroid/widget/ImageButton;
+
+    const-string v10, "binding.videoDesign2.ibStickerUnselected"
+
+    invoke-static {v0, v10}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 8
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_b
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->e:Landroid/widget/ImageButton;
+
+    const-string v10, "binding.videoDesign2.ibGifUnselected"
+
+    invoke-static {v0, v10}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 9
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_a
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    invoke-static {v0, v6}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 10
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_9
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->h:Landroid/widget/TextView;
+
+    const v10, 0x7f080110
+
+    invoke-virtual {v0, v10}, Landroid/view/View;->setBackgroundResource(I)V
+
+    .line 11
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_8
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    .line 12
+    iget-object v0, v0, Lre0/v4;->b:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 13
+    invoke-virtual {v0, v7}, Landroid/view/View;->setBackgroundColor(I)V
+
+    .line 14
+    sget-object v0, Ltm0/c;->a:Ltm0/c;
+
+    iget-object v10, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    invoke-virtual {v0, v10}, Ltm0/c;->a(Los1/a0;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    .line 15
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    iget-object v10, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v10, :cond_0
+
+    invoke-virtual {v10, p1}, Lpm0/b;->u(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v10
+
+    invoke-interface {v0, v10}, Lom0/n;->s2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 16
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    .line 17
+    iget-object v0, v0, Lre0/v4;->b:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 18
+    invoke-static {v0, v9}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v9, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d0;
+
+    invoke-direct {v9, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
+
+    invoke-static {v0, v9}, Lbb0/a;->a(Landroid/view/View;Ldp0/l;)V
+
+    .line 19
+    sget-object p1, Los1/z;->BOTTOM_WITH_DIFF_COMMENT:Los1/z;
+
+    if-ne p2, p1, :cond_f
+
+    .line 20
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_6
+
+    iget-object p1, p1, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p1, p1, Lre0/v4;->h:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v8}, Landroid/view/View;->setBackgroundResource(I)V
+
+    .line 21
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_5
+
+    iget-object p1, p1, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p1, p1, Lre0/v4;->h:Landroid/widget/TextView;
+
+    .line 22
+    invoke-virtual {p0, v5}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 23
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 24
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    .line 25
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p2, :cond_2
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p2, p2, Lre0/v4;->h:Landroid/widget/TextView;
+
+    .line 26
+    invoke-static {p1, v4}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result p1
+
+    .line 27
+    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_1
+
+    :cond_2
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 28
+    :cond_3
+    :goto_1
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_4
+
+    iget-object p1, p1, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p1, p1, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p1, v8}, Landroid/view/View;->setBackgroundResource(I)V
+
+    goto :goto_2
+
+    :cond_4
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 29
+    :cond_5
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 30
+    :cond_6
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 31
+    :cond_7
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 32
+    :cond_8
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 33
+    :cond_9
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 34
+    :cond_a
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 35
+    :cond_b
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 36
+    :cond_c
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 37
+    :cond_d
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 38
+    :cond_e
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 39
+    :cond_f
+    :goto_2
+    sget-object p1, Ltm0/c;->a:Ltm0/c;
+
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    invoke-virtual {p1, p2}, Ltm0/c;->a(Los1/a0;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_11
+
+    .line 40
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p2, :cond_10
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p2, p2, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    invoke-static {p2, v6}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p2}, Lv40/d;->l(Landroid/view/View;)V
+
+    goto :goto_3
+
+    :cond_10
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 41
+    :cond_11
+    :goto_3
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    const-string v0, "variant"
+
+    .line 42
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 43
+    sget-object v0, Ltm0/c$a;->a:[I
+
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result p2
+
+    aget p2, v0, p2
+
+    const/4 v0, 0x4
+
+    if-eq p2, v0, :cond_12
+
+    const/4 v0, 0x6
+
+    if-eq p2, v0, :cond_12
+
+    const/16 v0, 0xb
+
+    if-eq p2, v0, :cond_12
+
+    const/16 v0, 0xc
+
+    if-eq p2, v0, :cond_12
+
+    goto :goto_4
+
+    :cond_12
+    const/4 v7, 0x1
+
+    :goto_4
+    if-eqz v7, :cond_19
 
     .line 44
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v2, :cond_10
+    if-eqz p2, :cond_18
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
 
     .line 45
-    new-instance v2, Lin/mohalla/sharechat/videoplayer/j;
-
-    invoke-direct {v2, v1}, Lin/mohalla/sharechat/videoplayer/j;-><init>(Landroid/view/Window;)V
-
-    iput-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
+    iget-object p2, p2, Lre0/v4;->b:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 46
-    :cond_10
-    sget-object v1, Li00/a0;->a:Li00/a0;
+    invoke-virtual {p2, v8}, Landroid/view/View;->setBackgroundResource(I)V
 
-    :cond_11
+    .line 47
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p2, :cond_17
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p2, p2, Lre0/v4;->h:Landroid/widget/TextView;
+
+    invoke-virtual {p2, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 48
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object p2
+
+    .line 49
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v0
+
+    new-instance v6, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c0;
+
+    invoke-direct {v6, v1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c0;-><init>(Lvo0/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    const/4 v7, 0x2
+
+    invoke-static {p2, v0, v1, v6, v7}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    .line 50
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p2, :cond_16
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p2, p2, Lre0/v4;->h:Landroid/widget/TextView;
+
+    .line 51
+    invoke-virtual {p0, v5}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 52
+    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 53
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_14
+
+    .line 54
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_13
+
+    iget-object v0, v0, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v0, v0, Lre0/v4;->h:Landroid/widget/TextView;
+
+    .line 55
+    invoke-static {p2, v4}, Lg4/a;->b(Landroid/content/Context;I)I
+
+    move-result p2
+
+    .line 56
+    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setTextColor(I)V
+
+    goto :goto_5
+
+    :cond_13
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 57
+    :cond_14
+    :goto_5
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p2, :cond_15
+
+    iget-object p2, p2, Lre0/j2;->r:Lre0/v4;
+
+    iget-object p2, p2, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    invoke-virtual {p2, v8}, Landroid/view/View;->setBackgroundResource(I)V
+
+    goto :goto_6
+
+    :cond_15
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 58
+    :cond_16
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 59
+    :cond_17
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 60
+    :cond_18
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 61
+    :cond_19
+    :goto_6
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    invoke-virtual {p1, p2}, Ltm0/c;->e(Los1/a0;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1b
+
+    .line 62
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_1a
+
+    iget-object p1, p1, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    invoke-static {p1, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p1}, Lv40/d;->l(Landroid/view/View;)V
+
+    goto :goto_7
+
+    :cond_1a
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 63
+    :cond_1b
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_1c
+
+    iget-object p1, p1, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    invoke-static {p1, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {p1}, Lv40/d;->p(Landroid/view/View;)V
+
+    :goto_7
     return-void
+
+    :cond_1c
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 64
+    :cond_1d
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
 .end method
 
-.method private static final Gz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Landroid/view/View;)V
+.method public final Hp(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 0
 
-    const-string p1, "this$0"
+    if-eqz p1, :cond_1
 
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p2, 0x0
+
+    :goto_0
+    invoke-virtual {p0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, p2, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->fA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final I(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    .locals 7
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "report"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "message"
+
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->lx()V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move v5, p4
+
+    move v6, p5
+
+    invoke-interface/range {v1 .. v6}, Lom0/n;->a1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    move-result-object p2
+
+    const p3, 0x7f120933
+
+    invoke-static {p2, p3}, Lq60/h;->i(Landroid/view/View;I)V
+
+    .line 3
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Tz(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private final Jz()Z
-    .locals 2
+.method public final I6(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final Iy(Lsharechat/library/cvo/UrlMeta;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 8
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_0
 
     .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getClickable()Z
+
+    move-result v2
+
+    if-ne v2, v1, :cond_0
+
+    const/4 v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_0
+    if-eqz v2, :cond_5
+
+    .line 2
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getLinkAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    .line 3
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getLinkAction()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_5
+
+    .line 5
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v2
+
+    .line 6
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v3
+
+    new-instance v4, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$v;
+
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v5, v1, p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$v;-><init>(Lvo0/d;Landroidx/fragment/app/FragmentActivity;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lorg/json/JSONObject;)V
+
+    const/4 v0, 0x2
+
+    invoke-static {v2, v3, v5, v4, v0}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    goto :goto_1
+
+    .line 7
+    :cond_1
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getUrl()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
+
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    :cond_2
+    const/4 v0, 0x1
+
+    :cond_3
+    if-nez v0, :cond_5
+
+    if-eqz p2, :cond_5
+
+    .line 8
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_5
+
+    .line 9
+    sget-object v1, Lck0/a;->q:Lck0/a$a;
+
+    .line 10
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getUrl()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_4
+
+    .line 11
+    sget-object v0, Lin/mohalla/sharechat/data/local/Constant;->INSTANCE:Lin/mohalla/sharechat/data/local/Constant;
+
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/local/Constant;->getSHARECHAT_URL()Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_4
+    move-object v4, v0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/16 v7, 0x38
+
+    move-object v3, p2
+
+    .line 12
+    invoke-static/range {v1 .. v7}, Lck0/a$a;->g(Lck0/a$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;I)V
+
+    :cond_5
+    :goto_1
+    if-eqz p2, :cond_8
+
+    if-eqz p3, :cond_8
+
+    .line 13
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    if-eqz p1, :cond_6
+
+    .line 14
+    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getOriginalUrl()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-nez p1, :cond_7
+
+    :cond_6
+    const-string p1, ""
+
+    .line 15
+    :cond_7
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lom0/n;->M2()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 16
+    invoke-interface {v0, p2, p3, p1, v1}, Lom0/n;->C(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_8
+    return-void
+.end method
+
+.method public final J0(Ljava/util/List;I)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            ">;I)V"
+        }
+    .end annotation
+
+    const-string v0, "postModelList"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    xor-int/2addr v0, v1
+
+    if-eqz v0, :cond_c
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->tx(Ljava/util/List;)V
+
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const-string v2, "mAdapter"
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_b
+
+    invoke-virtual {v0}, Lpm0/b;->getItemCount()I
+
+    move-result v0
+
+    const/4 v4, 0x0
+
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    invoke-interface {v0, v5}, Lom0/l;->A8(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    .line 5
+    :cond_0
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_a
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v5, -0x1
+
+    if-eq p2, v5, :cond_1
+
+    .line 6
+    iput p2, v0, Lpm0/b;->G:I
+
+    .line 7
+    :cond_1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_9
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    iget-object v6, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
+
+    move-result v6
+
+    .line 9
+    iget-object v7, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v7, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
+
+    .line 10
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v7
+
+    invoke-virtual {v0, v6, v7}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRangeInserted(II)V
+
+    .line 11
+    iget-object v0, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    sput v0, Lpm0/b;->P:I
+
+    if-eq p2, v5, :cond_3
+
+    .line 12
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {v0, p2}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isMediationAdPost()Z
+
+    move-result v4
+
+    goto :goto_0
+
+    .line 14
+    :cond_2
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_3
+    :goto_0
+    if-eq p2, v5, :cond_7
+
+    .line 15
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_6
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    if-eqz v4, :cond_4
+
+    add-int/lit8 v2, p2, 0x1
+
+    goto :goto_1
+
+    :cond_4
+    move v2, p2
+
+    :goto_1
+    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView$n;->R0(I)V
+
+    .line 16
+    :cond_5
+    invoke-virtual {p0, p2, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->bA(IZ)V
+
+    goto :goto_2
+
+    :cond_6
+    const-string p1, "binding"
+
+    .line 17
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_7
+    :goto_2
+    if-eq p2, v5, :cond_c
+
+    .line 18
+    invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    .line 19
+    iput p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    .line 20
+    iput p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->I0:I
+
+    .line 21
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_c
+
+    .line 22
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getCommentDisabled()Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    .line 23
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getAdObject()Lsharechat/library/cvo/SharechatAd;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_8
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isMediationAdPost()Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    .line 24
+    :cond_8
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getHideUserActions()Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isFeedSurvey()Z
+
+    move-result v0
+
+    if-nez v0, :cond_c
+
+    .line 25
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p2, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->cA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    goto :goto_3
+
+    .line 26
+    :cond_9
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 27
+    :cond_a
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 28
+    :cond_b
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_c
+    :goto_3
+    return-void
+.end method
+
+.method public final Jf(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "userId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public final Jg(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Z)V
+    .locals 6
+
+    .line 1
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 4
+    invoke-static {p1}, Lkw0/f0;->h(Lsharechat/library/cvo/PostEntity;)Ljava/lang/String;
+
+    move-result-object v4
+
+    move-object v2, p3
+
+    move-object v3, p2
+
+    move v5, p4
+
+    .line 5
+    invoke-interface/range {v0 .. v5}, Lom0/n;->Cg(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Jr(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "adNetwork"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    invoke-virtual {p1, v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setPosition(I)V
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2}, Lom0/n;->Qt(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final K(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1, p2}, Lpm0/b;->y(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final Lz()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    const-string v2, "binding"
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, v0, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    const-string v3, "binding.flPostCommentFooter"
+
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Las0/k;->z(Landroid/app/Activity;)V
+
+    :cond_0
+    return-void
+
+    .line 4
+    :cond_1
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 5
+    :cond_2
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final M4()V
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
@@ -1009,775 +4526,583 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
-    invoke-static {v0}, Landroidx/core/view/c0;->L(Landroid/view/View;)Landroidx/core/view/p0;
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
-    move-result-object v0
+    move-result v0
 
-    if-eqz v0, :cond_0
+    xor-int/2addr v0, v1
 
-    .line 3
-    invoke-static {}, Landroidx/core/view/p0$m;->c()I
+    if-ne v0, v1, :cond_0
 
-    move-result v1
-
-    invoke-virtual {v0, v1}, Landroidx/core/view/p0;->q(I)Z
-
-    move-result v1
+    goto :goto_0
 
     :cond_0
-    return v1
-.end method
+    const/4 v1, 0x0
 
-.method private final Mz()V
-    .locals 9
+    :goto_0
+    if-eqz v1, :cond_1
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
-    const-string v1, "binding"
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_0
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    move-result v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
+    .line 2
+    sget-object v0, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;->x:Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;
+
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v1
+
+    const v2, 0x7f120c20
+
+    .line 4
+    invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "childFragmentManager"
+
+    .line 5
+    invoke-static {v1, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v3, "VideoPlayer_new"
+
+    const-string v4, "like"
+
+    .line 6
+    invoke-virtual {v0, v1, v3, v4, v2}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;->a(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public final M6(Ljava/util/Map;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "stringsMap"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U0:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method public final M9(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+    .locals 2
+
+    const-string v0, "postModel"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
+
+    .line 2
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 3
+    invoke-interface {v0, p1, p2, v1}, Lom0/n;->F3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Mi(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->gA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+
+    return-void
+.end method
+
+.method public final Mk(Ljava/lang/String;JLin/mohalla/sharechat/data/repository/post/PostModel;J)V
+    .locals 8
+
+    const-string v0, "playMode"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    move-object v2, p4
+
+    move-wide v3, p2
+
+    move-object v5, p1
+
+    move-wide v6, p5
+
+    invoke-interface/range {v1 .. v7}, Lom0/n;->Xk(Lin/mohalla/sharechat/data/repository/post/PostModel;JLjava/lang/String;J)V
+
+    return-void
+.end method
+
+.method public final Mn(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 0
+
+    const-string p2, "adId"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final Mr()V
+    .locals 0
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->onBackPressed()V
+
+    return-void
+.end method
+
+.method public final Mz()Lin/mohalla/sharechat/videoplayer/VideoPostCommentSectionFragment;
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->f1:Lin/mohalla/sharechat/videoplayer/VideoPostCommentSectionFragment;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "fragment"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final N2()V
+    .locals 2
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->o:Landroid/widget/FrameLayout;
+
+    const-string v1, "binding.swipeTutorialWrapper"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    return-void
+
+    :cond_0
+    const-string v0, "binding"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final Nz()Lom0/n;
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->D:Lom0/n;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "mPresenter"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final O7(ILandroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object p1
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    .line 3
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getAdsUuid()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 4
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNativeAdCreativeUrl()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 5
+    invoke-interface {v0, p2, v1, p1}, Lom0/n;->D0(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    .line 6
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final Og(Ljava/lang/String;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, p1, v0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->fA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Oi(Ljava/lang/String;Ljava/util/List;)V
+    .locals 22
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/data/remote/model/StickerModel;",
+            ">;)V"
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    const-string v1, "stickerModelList"
+
+    move-object/from16 v2, p2
+
+    invoke-static {v2, v1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v3, 0x0
+
+    const-string v4, "binding"
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, v1, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v1, v1, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->removeAllViews()V
+
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    const/high16 v5, 0x42200000    # 40.0f
+
+    .line 3
+    invoke-static {v1, v5}, Lc2/a;->b(Landroid/content/Context;F)F
+
+    move-result v5
+
+    float-to-int v5, v5
+
+    const/4 v6, 0x0
+
+    .line 4
+    invoke-interface/range {p2 .. p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    add-int/lit8 v8, v6, 0x1
+
+    if-ltz v6, :cond_1
+
+    check-cast v7, Lin/mohalla/sharechat/data/remote/model/StickerModel;
+
+    .line 5
+    new-instance v6, Lsharechat/library/ui/customImage/CustomImageView;
+
+    invoke-direct {v6, v1}, Lsharechat/library/ui/customImage/CustomImageView;-><init>(Landroid/content/Context;)V
+
+    .line 6
+    invoke-virtual {v7}, Lin/mohalla/sharechat/data/remote/model/StickerModel;->getTinyUrl()Ljava/lang/String;
+
+    move-result-object v10
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    .line 7
+    sget-object v9, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+
+    const/4 v15, 0x0
+
+    .line 8
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v16
+
+    .line 9
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v17
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x7cde
+
+    move-object v9, v6
+
+    .line 10
+    invoke-static/range {v9 .. v21}, Lkr1/b;->a(Landroid/widget/ImageView;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZLlr1/a;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;Lyr0/e0;ZI)V
+
+    .line 11
+    new-instance v9, Llz/j;
+
+    const/4 v10, 0x5
+
+    move-object/from16 v11, p1
+
+    invoke-direct {v9, v0, v11, v7, v10}, Llz/j;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    invoke-virtual {v6, v9}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 12
+    iget-object v7, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v7, :cond_0
+
+    iget-object v7, v7, Lre0/j2;->r:Lre0/v4;
+
+    iget-object v7, v7, Lre0/v4;->g:Landroid/widget/LinearLayout;
+
+    .line 13
+    new-instance v9, Landroid/widget/LinearLayout$LayoutParams;
+
+    invoke-direct {v9, v5, v5}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    const/high16 v10, 0x41800000    # 16.0f
+
+    .line 14
+    invoke-static {v1, v10}, Lc2/a;->b(Landroid/content/Context;F)F
+
+    move-result v10
+
+    float-to-int v10, v10
+
+    iput v10, v9, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
+
+    .line 15
+    sget-object v10, Lro0/x;->a:Lro0/x;
+
+    .line 16
+    invoke-virtual {v7, v6, v9}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    move v6, v8
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 17
+    :cond_1
+    invoke-static {}, Lso0/u;->n()V
+
+    throw v3
+
+    :cond_2
+    return-void
+
+    .line 18
+    :cond_3
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+.end method
+
+.method public final Oz()Lea0/e;
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->E:Lea0/e;
+
+    if-eqz v0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v0, "mVideoPlayerUtil"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final Pg(ILjava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final Pz()Ljava/lang/Integer;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    return-object v1
+
+    :cond_0
+    if-eqz v0, :cond_3
+
+    .line 2
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
+
+    move-result-object v0
+
+    instance-of v2, v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+
+    if-eqz v2, :cond_1
+
+    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     goto :goto_0
 
     :cond_1
-    move-object v0, v2
+    move-object v0, v1
 
     :goto_0
-    instance-of v3, v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+    if-eqz v0, :cond_2
 
-    if-eqz v3, :cond_2
-
-    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    goto :goto_1
-
-    :cond_2
-    move-object v0, v2
-
-    :goto_1
-    if-eqz v0, :cond_3
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->h2()I
+    .line 3
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->o1()I
 
     move-result v0
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v1
 
-    goto :goto_2
+    :cond_2
+    return-object v1
 
     :cond_3
-    move-object v0, v2
-
-    :goto_2
-    if-eqz v0, :cond_5
-
-    .line 2
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v3, :cond_4
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
-
-    :cond_4
-    iget-object v1, v3, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v1, :cond_5
-
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->Z(I)Landroidx/recyclerview/widget/RecyclerView$d0;
-
-    move-result-object v0
-
-    goto :goto_3
-
-    :cond_5
-    move-object v0, v2
-
-    .line 3
-    :goto_3
-    instance-of v1, v0, Lin/mohalla/sharechat/videoplayer/y;
-
-    if-eqz v1, :cond_6
-
-    .line 4
-    iget-boolean v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Z
-
-    if-nez v1, :cond_7
-
-    .line 5
-    check-cast v0, Lin/mohalla/sharechat/videoplayer/y;
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/y;->x0()V
-
-    goto :goto_4
-
-    .line 6
-    :cond_6
-    instance-of v1, v0, Lbp/a;
-
-    if-eqz v1, :cond_7
-
-    .line 7
-    check-cast v0, Lbp/a;
-
-    invoke-interface {v0}, Lbp/a;->onPause()V
-
-    :cond_7
-    :goto_4
-    const/4 v0, 0x0
-
-    .line 8
-    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Z
-
-    .line 9
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
-
-    move-result-object v3
-
-    .line 10
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
-
-    move-result-object v0
-
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->a()Lin/mohalla/core/extensions/coroutines/f;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Lin/mohalla/core/extensions/coroutines/f;->f()Lkotlinx/coroutines/l0;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lkotlin/coroutines/g;->plus(Lkotlin/coroutines/g;)Lkotlin/coroutines/g;
-
-    move-result-object v4
-
-    const/4 v5, 0x0
-
-    new-instance v6, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;
-
-    invoke-direct {v6, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;-><init>(Lkotlin/coroutines/d;)V
-
-    const/4 v7, 0x2
-
-    const/4 v8, 0x0
-
-    invoke-static/range {v3 .. v8}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    return-void
-.end method
-
-.method private static final Nz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_0
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/m;->c8()Z
-
-    move-result p0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
-
-    move-result-object p0
-
-    instance-of p0, p0, Lin/mohalla/sharechat/home/dashboard/DashboardFragment;
-
-    if-eqz p0, :cond_1
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method private final Oz(I)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
     const-string v0, "binding"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->Z(I)Landroidx/recyclerview/widget/RecyclerView$d0;
-
-    move-result-object p1
-
-    instance-of v0, p1, Lbp/c;
-
-    if-eqz v0, :cond_1
-
-    move-object v1, p1
-
-    check-cast v1, Lbp/c;
-
-    :cond_1
-    if-eqz v1, :cond_2
-
-    invoke-interface {v1}, Lbp/c;->onResume()V
-
-    :cond_2
-    return-void
-.end method
-
-.method public static synthetic Py(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->lA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;)V
-
-    return-void
-.end method
-
-.method public static synthetic Qy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->bA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final Qz(Lin/mohalla/sharechat/data/repository/post/PostModel;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lsharechat/library/cvo/PostEntity;Lsharechat/library/cvo/LinkAction;)V
-    .locals 15
-
-    move-object/from16 v0, p1
-
-    .line 1
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
-
-    move-result-object v1
-
-    sget-object v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b;->a:[I
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aget v1, v2, v1
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    const-string v4, "mAnalyticsEventsUtil"
-
-    const-string v5, ""
-
-    if-eq v1, v2, :cond_b
-
-    const/4 v2, 0x2
-
-    if-eq v1, v2, :cond_8
-
-    const/4 v2, 0x3
-
-    if-eq v1, v2, :cond_5
-
-    const/4 v2, 0x4
-
-    if-eq v1, v2, :cond_1
-
-    const/4 v0, 0x5
-
-    if-ne v1, v0, :cond_0
-
-    goto/16 :goto_4
-
-    .line 2
-    :cond_0
-    new-instance v0, Li00/m;
-
-    invoke-direct {v0}, Li00/m;-><init>()V
-
-    throw v0
-
-    .line 3
-    :cond_1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v1}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-nez v1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    move-object v5, v1
-
-    :cond_3
-    :goto_0
-    invoke-static {v0, v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Rz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
     .line 4
-    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
 
-    move-result-object v6
-
-    invoke-static {v6, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 5
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 6
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 7
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    .line 8
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v3
-
-    :cond_4
-    move-object v12, v3
-
-    const/16 v13, 0x18
-
-    const/4 v14, 0x0
-
-    .line 9
-    invoke-static/range {v6 .. v14}, Lqk0/a$a;->E(Lqk0/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    goto/16 :goto_4
-
-    .line 10
-    :cond_5
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getChildPostId()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-nez v1, :cond_6
-
-    goto :goto_1
-
-    :cond_6
-    move-object v5, v1
-
-    :goto_1
-    invoke-static {v0, v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Uz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    .line 11
-    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
-
-    move-result-object v6
-
-    invoke-static {v6, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 13
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 14
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    .line 15
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_7
-
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v3
-
-    :cond_7
-    move-object v12, v3
-
-    const/16 v13, 0x18
-
-    const/4 v14, 0x0
-
-    .line 16
-    invoke-static/range {v6 .. v14}, Lqk0/a$a;->E(Lqk0/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    goto/16 :goto_4
-
-    .line 17
-    :cond_8
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getLink()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-nez v1, :cond_9
-
-    goto :goto_2
-
-    :cond_9
-    move-object v5, v1
-
-    :goto_2
-    invoke-static {v0, v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Sz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    .line 18
-    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
-
-    move-result-object v6
-
-    invoke-static {v6, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 19
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 20
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 21
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    .line 22
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_a
-
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v3
-
-    :cond_a
-    move-object v12, v3
-
-    const/16 v13, 0x18
-
-    const/4 v14, 0x0
-
-    .line 23
-    invoke-static/range {v6 .. v14}, Lqk0/a$a;->E(Lqk0/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    goto :goto_4
-
-    .line 24
-    :cond_b
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getPhone()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_d
-
-    invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v2
-
-    if-nez v2, :cond_c
-
-    goto :goto_3
-
-    :cond_c
-    move-object v5, v2
-
-    :cond_d
-    :goto_3
-    invoke-static {v0, v1, v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Tz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 25
-    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
-
-    move-result-object v6
-
-    invoke-static {v6, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 26
-    invoke-virtual/range {p3 .. p3}, Lsharechat/library/cvo/LinkAction;->getType()Lsharechat/library/cvo/LinkActionType;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/LinkActionType;->getTypeValue()Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 27
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 28
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    .line 29
-    invoke-virtual/range {p2 .. p2}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_e
-
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v3
-
-    :cond_e
-    move-object v12, v3
-
-    const/16 v13, 0x18
-
-    const/4 v14, 0x0
-
-    .line 30
-    invoke-static/range {v6 .. v14}, Lqk0/a$a;->E(Lqk0/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    :goto_4
-    return-void
+    throw v1
 .end method
 
-.method public static synthetic Ry(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Landroid/view/View;)V
-    .locals 0
+.method public final Q1(Ljava/lang/String;Ljava/lang/String;ZZ)V
+    .locals 1
 
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Gz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Landroid/view/View;)V
+    const-string v0, "originalPostId"
 
-    return-void
-.end method
-
-.method private static final Rz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-    .locals 0
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    move-result-object p0
+    move-result-object p2
 
-    invoke-interface {p0, p1}, Lin/mohalla/sharechat/videoplayer/p;->Cs(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public static synthetic Sy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;Landroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->dA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method private static final Sz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-    .locals 10
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
+    invoke-interface {p2}, Lom0/n;->E2()V
 
     .line 2
-    sget-object v0, Lwx/e;->k:Lwx/e$a;
+    new-instance p2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$w;
 
-    const/4 v2, 0x0
+    invoke-direct {p2, p0, p1, p3, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$w;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;ZZ)V
 
-    const/4 v4, 0x0
+    invoke-static {p0, p2}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
 
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/16 v8, 0x78
-
-    const/4 v9, 0x0
-
-    move-object v3, p1
-
-    invoke-static/range {v0 .. v9}, Lwx/e$a;->b(Lwx/e$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;ZILjava/lang/Object;)V
-
-    :cond_0
     return-void
 .end method
 
-.method public static final synthetic Ty(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;I)Z
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->jz(I)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method private static final Tz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    sget-object v1, Lwx/e;->k:Lwx/e$a;
-
-    const-string v2, "context"
-
-    .line 3
-    invoke-static {v0, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const v3, 0x7f120a90
-
-    invoke-virtual {p0, v3}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 v3, 0xa
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 5
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->qz()Lin/mohalla/sharechat/common/utils/hash/b;
-
-    move-result-object p0
-
-    .line 6
-    invoke-static {p2, p0}, Lsq/a;->d(Ljava/lang/String;Lin/mohalla/sharechat/common/utils/hash/b;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 7
-    invoke-virtual {v1, v0, p1, p0}, Lwx/e$a;->j(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public static final synthetic Uy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lru/q2;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    return-object p0
-.end method
-
-.method private static final Uz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
+.method public final Qp(Ljava/lang/String;)V
     .locals 3
 
     .line 1
@@ -1788,180 +5113,317 @@
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object v1, Lwx/e;->k:Lwx/e$a;
-
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+    sget-object v1, Lck0/a;->q:Lck0/a$a;
 
     const-string v2, "video_action"
 
-    invoke-virtual {v1, v0, p1, v2, p0}, Lwx/e$a;->k(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, p1, v2}, Lck0/a$a;->v(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void
 .end method
 
-.method public static final synthetic Vy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lsharechat/library/cvo/LikeIconConfig;
-    .locals 0
+.method public final Qz()Ln12/e;
+    .locals 1
 
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L0:Lsharechat/library/cvo/LikeIconConfig;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H:Ln12/e;
 
-    return-object p0
-.end method
+    if-eqz v0, :cond_0
 
-.method private final Vz()V
-    .locals 8
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
+    return-object v0
 
     :cond_0
-    iget-object v0, v0, Lru/q2;->j:Landroid/widget/RelativeLayout;
+    const-string v0, "postPrefs"
 
-    if-eqz v0, :cond_1
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkp/e;->F(Landroid/view/View;)V
+    const/4 v0, 0x0
 
-    .line 2
-    :cond_1
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    throw v0
+.end method
 
-    move-result-object v2
+.method public final Rn(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
-    .line 3
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
+    const-string v0, "eventName"
 
-    move-result-object v3
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v4, 0x0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    new-instance v5, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$x;
+    move-result-object v0
 
-    invoke-direct {v5, v1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$x;-><init>(Lkotlin/coroutines/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    const/4 v6, 0x2
-
-    const/4 v7, 0x0
-
-    invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
+    invoke-interface {v0, p1, p2, p3}, Lom0/n;->Mx(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public static final synthetic Wy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lin/mohalla/sharechat/videoplayer/adapter/a;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    return-object p0
-.end method
-
-.method private static final Wz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+.method public final Rz()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
-    const/4 v1, 0x0
+    move-result-object v0
 
-    const-string v2, "binding"
+    .line 2
+    new-instance v1, Landroidx/fragment/app/a;
 
-    if-nez v0, :cond_0
+    invoke-direct {v1, v0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
-    move-object v0, v1
+    if-eqz v0, :cond_0
 
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/a;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/a0;
+
+    .line 4
     :cond_0
-    iget-object v0, v0, Lru/q2;->c:Lcom/airbnb/lottie/LottieAnimationView;
+    invoke-virtual {v1}, Landroidx/fragment/app/a;->g()I
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+
+    const/4 v0, 0x0
+
+    .line 6
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+
+    .line 7
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
 
     if-eqz v0, :cond_1
 
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
+    const v1, 0x7f0a0e48
 
-    .line 2
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/RelativeLayout;
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
+
+    const/4 v2, -0x1
+
+    invoke-direct {v1, v2, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 9
     :cond_1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
 
-    if-nez v0, :cond_2
+    if-eqz v0, :cond_2
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    move-object v0, v1
+    .line 10
+    iput-boolean v1, v0, Lom0/i;->h:Z
 
     :cond_2
-    iget-object v0, v0, Lru/q2;->l:Landroid/widget/TextView;
-
-    if-eqz v0, :cond_3
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 3
-    :cond_3
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p0, :cond_4
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_4
-    move-object v1, p0
-
-    :goto_0
-    iget-object p0, v1, Lru/q2;->j:Landroid/widget/RelativeLayout;
-
-    if-eqz p0, :cond_5
-
-    invoke-static {p0}, Lkp/e;->t(Landroid/view/View;)V
-
-    :cond_5
     return-void
 .end method
 
-.method public static final synthetic Xy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lqk0/a;
-    .locals 0
+.method public final S3()Z
+    .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
 
-    move-result-object p0
+    if-eqz v0, :cond_0
 
-    return-object p0
+    invoke-interface {v0}, Lom0/l;->za()Z
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
 .end method
 
-.method private final Xz(I)V
+.method public final Sf(Z)V
+    .locals 2
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    const-string v1, "binding.flPostCommentFooter"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0, p1}, Lv40/d;->o(Landroid/view/View;Z)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "binding"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final So()V
+    .locals 5
+
+    .line 1
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    const/4 v1, -0x1
+
+    if-eq v0, v1, :cond_2
+
+    .line 2
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v3, 0x0
+
+    const-string v4, "mAdapter"
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2, v0}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    .line 3
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v3, "postId"
+
+    .line 4
+    invoke-static {v0, v3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    invoke-virtual {v2, v0}, Lpm0/b;->s(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eq v0, v1, :cond_2
+
+    .line 6
+    iget-object v1, v2, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v3}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setShowVideoControls(Z)V
+
+    .line 7
+    iget-object v1, v2, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "mPostModelList[position]"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    const-string v1, "PAYLOAD_VIDEO_CONTROLS_CHANGE"
+
+    invoke-virtual {v2, v0, v1}, Lpm0/b;->y(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 9
+    :cond_1
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public final St(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "adId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Sw(I)V
+    .locals 0
+
+    add-int/lit8 p1, p1, -0x1
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Sz(I)V
+
+    return-void
+.end method
+
+.method public final Sy(Ln00/k;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->Z5(Ln00/k;)V
+
+    return-void
+.end method
+
+.method public final Sz(I)V
     .locals 2
 
     if-ltz p1, :cond_2
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_1
 
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->getItemCount()I
+    invoke-virtual {v0}, Lpm0/b;->getItemCount()I
 
     move-result v0
 
@@ -1969,122 +5431,451 @@
 
     if-ge p1, v0, :cond_2
 
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:I
 
     if-eq p1, v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v0, :cond_1
+    if-eqz v0, :cond_0
 
-    const-string v0, "binding"
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->w0(I)V
 
     goto :goto_0
 
+    :cond_0
+    const-string p1, "binding"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
     :cond_1
-    move-object v1, v0
+    const-string p1, "mAdapter"
 
-    :goto_0
-    iget-object v0, v1, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    .line 3
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->x1(I)V
+    throw v1
 
     :cond_2
+    :goto_0
     return-void
 .end method
 
-.method public static final synthetic Yy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lin/mohalla/sharechat/videoplayer/m;
-    .locals 0
+.method public final T8(Ln00/l;)V
+    .locals 1
 
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    return-object p0
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->Ko(Ln00/l;)V
+
+    return-void
 .end method
 
-.method private final Yz(Ljava/lang/String;)V
-    .locals 10
+.method public final Tz(Ljava/lang/String;)V
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    const-string v1, "mAdapter"
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const-string v2, "mAdapter"
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_6
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->h0(Ljava/lang/String;)I
+    invoke-virtual {v0, p1}, Lpm0/b;->s(Ljava/lang/String;)I
 
     move-result v0
 
     const/4 v3, -0x1
 
-    if-eq v0, v3, :cond_2
+    if-eq v0, v3, :cond_5
 
-    const/4 v3, 0x0
+    const/4 v4, 0x0
 
     .line 2
-    invoke-direct {p0, v0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->hA(IZ)V
+    invoke-virtual {p0, v0, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->bA(IZ)V
 
     .line 3
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v3, :cond_1
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
-
-    :cond_1
-    invoke-virtual {v3, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->p0(Ljava/lang/String;)V
+    if-eqz v5, :cond_4
 
     .line 4
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    iget-object v2, v5, Lpm0/b;->E:Ljava/util/ArrayList;
 
-    move-result-object v4
+    .line 5
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    invoke-static {}, Lkotlinx/coroutines/j1;->c()Lkotlinx/coroutines/s2;
+    move-result-object v2
 
-    move-result-object v5
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
-    const/4 v6, 0x0
+    move-result v6
 
-    new-instance v7, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c0;
+    if-eqz v6, :cond_2
 
-    invoke-direct {v7, p0, v0, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;ILkotlin/coroutines/d;)V
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    const/4 v8, 0x2
+    move-result-object v6
 
-    const/4 v9, 0x0
+    .line 6
+    check-cast v6, Lin/mohalla/sharechat/data/repository/post/PostModel;
 
-    invoke-static/range {v4 .. v9}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
+    .line 7
+    invoke-virtual {v6}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_0
+
+    invoke-virtual {v6}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_1
+
+    :cond_0
+    move-object v6, v1
+
+    :goto_1
+    invoke-static {v6, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
 
     :cond_2
+    const/4 v4, -0x1
+
+    :goto_2
+    if-eq v4, v3, :cond_3
+
+    .line 8
+    iget-object p1, v5, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {p1, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 9
+    invoke-virtual {v5, v4}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRemoved(I)V
+
+    .line 10
+    :cond_3
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object p1
+
+    sget-object v2, Lyr0/s0;->a:Lyr0/s0;
+
+    .line 11
+    sget-object v2, Lds0/q;->a:Lyr0/t1;
+
+    .line 12
+    new-instance v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b0;
+
+    invoke-direct {v3, p0, v0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;ILvo0/d;)V
+
+    const/4 v0, 0x2
+
+    invoke-static {p1, v2, v1, v3, v0}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    goto :goto_3
+
+    .line 13
+    :cond_4
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_5
+    :goto_3
+    return-void
+
+    .line 14
+    :cond_6
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final Ud(I)V
+    .locals 0
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->onBackPressed()V
+
     return-void
 .end method
 
-.method public static final synthetic Zy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Ljava/lang/String;
-    .locals 0
+.method public final Uz()V
+    .locals 5
+
+    const/4 v0, 0x0
 
     .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    .line 2
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1, v0}, Lom0/l;->s(Z)V
+
+    .line 3
+    :cond_0
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v2, 0x0
+
+    const-string v3, "binding"
+
+    if-eqz v1, :cond_3
+
+    iget-object v1, v1, Lre0/j2;->s:Landroid/view/View;
+
+    const-string v4, "binding.viewLayer"
+
+    invoke-static {v1, v4}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v1}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 4
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, v1, Lre0/j2;->c:Lcom/google/android/material/appbar/AppBarLayout;
+
+    invoke-virtual {v1, v0}, Lcom/google/android/material/appbar/AppBarLayout;->setExpanded(Z)V
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lre0/j2;->p:Landroidx/appcompat/widget/Toolbar;
+
+    const-string v1, "binding.toolbar"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
+
+    return-void
+
+    :cond_1
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 6
+    :cond_2
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 7
+    :cond_3
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+.end method
+
+.method public final V7()Lsharechat/library/cvo/interfaces/ViewPagerHandler;
+    .locals 0
 
     return-object p0
 .end method
 
-.method private final Zz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-    .locals 3
+.method public final Vq(Lin/mohalla/sharechat/data/repository/post/PostModel;Lkv1/q;)V
+    .locals 1
+
+    const-string v0, "post"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "packageName"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->A2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    .line 2
+    invoke-static {p1}, Ln12/i;->x(Lin/mohalla/sharechat/data/repository/post/PostModel;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 3
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2}, Lom0/n;->A4(Lin/mohalla/sharechat/data/repository/post/PostModel;Lkv1/q;)V
+
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lom0/n;->t()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final Vw(IZLjava/lang/String;)V
+    .locals 0
+
+    const-string p1, "clickSource"
+
+    invoke-static {p3, p1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final Vz()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_5
+
+    const/4 v0, 0x1
+
+    .line 2
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    .line 3
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v1, :cond_0
+
+    invoke-interface {v1, v0}, Lom0/l;->s(Z)V
+
+    .line 4
+    :cond_0
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v2, 0x0
+
+    const-string v3, "binding"
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, v1, Lre0/j2;->c:Lcom/google/android/material/appbar/AppBarLayout;
+
+    invoke-virtual {v1, v0}, Lcom/google/android/material/appbar/AppBarLayout;->setExpanded(Z)V
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_3
+
+    iget-object v0, v0, Lre0/j2;->s:Landroid/view/View;
+
+    const-string v1, "binding.viewLayer"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 6
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, v0, Lre0/j2;->p:Landroidx/appcompat/widget/Toolbar;
+
+    const-string v1, "binding.toolbar"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 7
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-static {v0}, Las0/k;->z(Landroid/app/Activity;)V
+
+    .line 8
+    :cond_1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->f1:Lin/mohalla/sharechat/videoplayer/VideoPostCommentSectionFragment;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    .line 9
+    new-instance v1, Landroidx/fragment/app/a;
+
+    invoke-direct {v1, v0}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/FragmentManager;)V
+
+    .line 10
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Mz()Lin/mohalla/sharechat/videoplayer/VideoPostCommentSectionFragment;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/a;->m(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/a0;
+
+    .line 11
+    invoke-virtual {v1}, Landroidx/fragment/app/a0;->g()I
+
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 13
+    :cond_3
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 14
+    :cond_4
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    :cond_5
+    :goto_0
+    return-void
+.end method
+
+.method public final Wz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+    .locals 2
 
     .line 1
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
@@ -2092,8 +5883,6 @@
     move-result-object v0
 
     const/4 v1, 0x1
-
-    const/4 v2, 0x0
 
     if-eqz v0, :cond_0
 
@@ -2109,13 +5898,11 @@
     const/4 v1, 0x0
 
     :goto_0
-    if-nez v1, :cond_4
+    if-nez v1, :cond_3
 
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
     move-result-object v0
-
-    const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
@@ -2125,25 +5912,25 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Lsharechat/library/cvo/SharechatAd;->getCtaMeta()Lrm/h;
+    invoke-virtual {v0}, Lsharechat/library/cvo/SharechatAd;->getCtaMeta()Lin/mohalla/ads/adsdk/models/networkmodels/CTAMeta;
 
     move-result-object v0
 
     goto :goto_1
 
     :cond_1
-    move-object v0, v1
+    const/4 v0, 0x0
 
     :goto_1
-    if-nez v0, :cond_4
+    if-nez v0, :cond_3
 
-    if-nez p2, :cond_4
+    if-nez p2, :cond_3
 
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getHideUserActions()Z
 
     move-result p2
 
-    if-nez p2, :cond_4
+    if-nez p2, :cond_3
 
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isNetworkAdPost()Z
 
@@ -2151,289 +5938,52 @@
 
     if-eqz p2, :cond_2
 
-    goto :goto_3
+    goto :goto_2
 
     .line 2
     :cond_2
-    sget-object p2, Lin/mohalla/sharechat/videoplayer/helper/b;->a:Lin/mohalla/sharechat/videoplayer/helper/b;
+    sget-object p2, Ltm0/c;->a:Ltm0/c;
 
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
 
-    invoke-virtual {p2, v0}, Lin/mohalla/sharechat/videoplayer/helper/b;->g(Lsharechat/manager/abtest/enums/s;)Z
+    invoke-virtual {p2, v0}, Ltm0/c;->e(Los1/a0;)Z
 
     move-result p2
 
-    if-nez p2, :cond_5
+    if-nez p2, :cond_4
+
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isFeedSurvey()Z
+
+    move-result p2
+
+    if-nez p2, :cond_4
 
     .line 3
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_3
-
-    const-string p2, "binding"
-
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :cond_3
-    move-object v1, p2
-
-    :goto_2
-    iget-object p2, v1, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    const-string v0, "binding.flPostCommentFooter"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p2}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 4
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
     move-result-object p2
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_4
 
     invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-direct {p0, p2, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->iA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-virtual {p0, p2, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->cA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
-    goto :goto_4
+    goto :goto_3
 
-    .line 5
+    .line 4
+    :cond_3
+    :goto_2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Lz()V
+
     :cond_4
     :goto_3
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->lz()V
-
-    :cond_5
-    :goto_4
     return-void
 .end method
 
-.method private static final aA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-    .locals 1
-
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p0, :cond_0
-
-    const-string p0, "binding"
-
-    invoke-static {p0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 p0, 0x0
-
-    :cond_0
-    iget-object p0, p0, Lru/q2;->m:Lru/h5;
-
-    iget-object p0, p0, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    const-string v0, "binding.videoDesign2.llContainerSticker"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p0}, Lkp/e;->x(Landroid/view/View;)V
-
-    return-void
-.end method
-
-.method public static final synthetic az(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)I
-    .locals 0
-
-    .line 1
-    iget p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->E0:I
-
-    return p0
-.end method
-
-.method private static final bA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Landroid/view/View;)V
-    .locals 1
-
-    const-string p2, "this$0"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p2, "$mPostId"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p2, 0x0
-
-    const/4 v0, 0x2
-
-    .line 1
-    invoke-static {p0, p1, p2, v0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->kA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public static final synthetic bz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)I
-    .locals 0
-
-    .line 1
-    iget p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    return p0
-.end method
-
-.method private final cA(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
-
-    .line 2
-    iput p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    return-void
-.end method
-
-.method public static final synthetic cz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-
-    return-object p0
-.end method
-
-.method private static final dA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;Landroid/view/View;)V
-    .locals 0
-
-    const-string p3, "this$0"
-
-    invoke-static {p0, p3}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p3, "$postId"
-
-    invoke-static {p1, p3}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p3, "$stickerModel"
-
-    invoke-static {p2, p3}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->jA(Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;)V
-
-    return-void
-.end method
-
-.method public static final synthetic dz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Ez()V
-
-    return-void
-.end method
-
-.method private final eA(Z)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_1
-    move-object v0, v1
-
-    :goto_0
-    instance-of v2, v0, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;
-
-    if-eqz v2, :cond_2
-
-    move-object v1, v0
-
-    check-cast v1, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;
-
-    :cond_2
-    if-eqz v1, :cond_3
-
-    invoke-virtual {v1, p1}, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;->b3(Z)V
-
-    .line 2
-    :cond_3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
-
-    if-eqz v0, :cond_5
-
-    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    goto :goto_1
-
-    :cond_4
-    const/4 v0, 0x0
-
-    goto :goto_2
-
-    :cond_5
-    :goto_1
-    const/4 v0, 0x1
-
-    :goto_2
-    if-nez v0, :cond_6
-
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
-
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_6
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_6
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
-
-    :cond_6
-    return-void
-.end method
-
-.method public static final synthetic ez(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Z
-    .locals 0
-
-    .line 1
-    iget-boolean p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G0:Z
-
-    return p0
-.end method
-
-.method private final fA(ZLjava/lang/String;)V
+.method public final X(Lsharechat/library/cvo/WebCardObject;)V
     .locals 5
 
     .line 1
@@ -2441,198 +5991,541 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_0
 
     .line 2
-    new-instance v1, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;
-
-    invoke-direct {v1, v0}, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;-><init>(Landroid/content/Context;)V
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const-string v2, "binding"
-
-    const/4 v3, 0x0
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v3
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$p;)V
-
-    .line 4
-    new-instance v0, Landroidx/recyclerview/widget/y;
-
-    invoke-direct {v0}, Landroidx/recyclerview/widget/y;-><init>()V
-
-    .line 5
-    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v4, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v4, v3
-
-    :cond_1
-    iget-object v4, v4, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    invoke-virtual {v0, v4}, Landroidx/recyclerview/widget/c0;->b(Landroidx/recyclerview/widget/RecyclerView;)V
-
-    .line 6
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d0;
-
-    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Landroidx/recyclerview/widget/RecyclerView$u;
-
-    if-eqz p1, :cond_2
-
-    .line 7
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e0;
-
-    invoke-direct {p1, v1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e0;-><init>(Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    goto :goto_0
-
-    .line 8
-    :cond_2
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f0;
-
-    invoke-direct {p1, v1, p0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f0;-><init>(Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    .line 9
-    :goto_0
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_3
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v3
-
-    :cond_3
-    iget-object p2, p2, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz p2, :cond_5
-
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Landroidx/recyclerview/widget/RecyclerView$u;
-
-    if-nez v0, :cond_4
-
-    const-string v0, "mScrollListener"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v3
-
-    :cond_4
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->l(Landroidx/recyclerview/widget/RecyclerView$u;)V
-
-    .line 10
-    :cond_5
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_6
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_6
-    move-object v3, p2
-
-    :goto_1
-    iget-object p2, v3, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz p2, :cond_7
-
-    invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/RecyclerView;->l(Landroidx/recyclerview/widget/RecyclerView$u;)V
-
-    .line 11
-    :cond_7
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->M0()V
-
-    :cond_8
-    return-void
-.end method
-
-.method public static final synthetic fz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Vz()V
-
-    return-void
-.end method
-
-.method private final gA(Ljava/lang/String;)V
-    .locals 14
-
-    .line 1
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:Ljava/lang/String;
-
-    .line 2
-    sget-object v0, Lin/mohalla/sharechat/home/profileV2/ProfileFragmentV2;->U0:Lin/mohalla/sharechat/home/profileV2/ProfileFragmentV2$a;
-
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lin/mohalla/sharechat/videoplayer/p;->Y2()Ljava/lang/String;
+    .line 3
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
 
-    move-result-object v3
+    move-result-object v2
 
-    const/4 v1, 0x1
+    new-instance v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i;
 
     const/4 v4, 0x0
 
-    const/4 v5, 0x0
+    invoke-direct {v3, v4, v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i;-><init>(Lvo0/d;Landroid/content/Context;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lsharechat/library/cvo/WebCardObject;)V
+
+    const/4 p1, 0x2
+
+    invoke-static {v1, v2, v4, v3, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    :cond_0
+    return-void
+.end method
+
+.method public final X3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+    .locals 8
+
+    const-string v0, "likeType"
+
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Ljava/lang/String;
 
     const/4 v6, 0x0
 
     const/4 v7, 0x0
 
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    const/16 v12, 0x6f8
-
-    const/4 v13, 0x0
-
     move-object v2, p1
 
+    move v3, p2
+
+    move-object v5, p3
+
+    .line 2
+    invoke-interface/range {v1 .. v7}, Lom0/n;->E0(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 3
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object p1
+
     .line 4
-    invoke-static/range {v0 .. v13}, Lin/mohalla/sharechat/home/profileV2/ProfileFragmentV2$a;->b(Lin/mohalla/sharechat/home/profileV2/ProfileFragmentV2$a;ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/String;ZILjava/lang/Object;)Landroid/os/Bundle;
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object p2
+
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$p;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1, p0, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$p;-><init>(Lvo0/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
+
+    const/4 p3, 0x2
+
+    invoke-static {p1, p2, v1, v0, p3}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+.end method
+
+.method public final Xq(Ljava/lang/String;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_3
+
+    .line 2
+    iget-object v1, v0, Lpm0/b;->g:Ljava/lang/String;
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    if-nez v1, :cond_0
+
+    const/4 v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    :goto_0
+    if-eqz v1, :cond_2
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-lez v1, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 3
+    iput-object p1, v0, Lpm0/b;->g:Ljava/lang/String;
+
+    :cond_2
+    return-void
+
+    :cond_3
+    const-string p1, "mAdapter"
+
+    .line 4
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final Xv()V
+    .locals 5
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
 
     move-result-object v0
 
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v3, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d;-><init>(Lvo0/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    const/4 v4, 0x2
+
+    invoke-static {v0, v1, v3, v2, v4}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+.end method
+
+.method public final Xz(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
+
+    .line 2
+    iput p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:I
+
+    return-void
+.end method
+
+.method public final Yi(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 3
+
+    const-string v0, "postModel"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    .line 2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_2
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p1, v1}, Lpm0/b;->x(Ljava/lang/String;Z)V
+
+    .line 3
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_0
+
+    sget-object v2, Las1/p;->a:Las1/p;
+
+    invoke-virtual {v2, p1}, Las1/p;->c(Landroid/content/Context;)Z
+
+    move-result p1
+
+    if-ne p1, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    :cond_0
+    xor-int/lit8 p1, v0, 0x1
+
+    if-eqz p1, :cond_1
+
+    const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
+
+    .line 4
+    filled-new-array {p1}, [Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v0, 0x4
+
     .line 5
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    invoke-virtual {p0, p1, v0}, Landroidx/fragment/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h0;
+
+    invoke-direct {p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-static {p0, p1}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    goto :goto_0
+
+    :cond_2
+    const-string p1, "mAdapter"
+
+    .line 7
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final Yz(Z)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Pz()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    move-result v0
+
+    .line 2
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, v1, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/RecyclerView$b0;
+
+    move-result-object v0
+
+    instance-of v1, v0, Lvm0/p1;
 
     if-eqz v1, :cond_0
 
-    invoke-interface {v1, p1, v0}, Lin/mohalla/sharechat/videoplayer/m;->x(Ljava/lang/String;Landroid/os/Bundle;)V
+    move-object v2, v0
+
+    check-cast v2, Lvm0/p1;
+
+    :cond_0
+    if-eqz v2, :cond_3
+
+    .line 3
+    iget-object v0, v2, Lvm0/p1;->v1:Lre0/c6;
+
+    iget-object v0, v0, Lre0/c6;->i:Lcom/google/android/exoplayer2/ui/PlayerView;
+
+    invoke-virtual {v0}, Lcom/google/android/exoplayer2/ui/PlayerView;->getPlayer()Lpg/c1;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    if-eqz p1, :cond_1
+
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-interface {v0, p1}, Lpg/c1;->setVolume(F)V
+
+    goto :goto_0
+
+    :cond_1
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 5
+    invoke-interface {v0, p1}, Lpg/c1;->setVolume(F)V
+
+    goto :goto_0
+
+    :cond_2
+    const-string p1, "binding"
 
     .line 6
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final Z(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final Zz(Z)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
+
+    move-result-object v0
+
+    instance-of v2, v0, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;
+
+    if-eqz v2, :cond_0
+
+    move-object v1, v0
+
+    check-cast v1, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;
+
     :cond_0
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
+    if-eqz v1, :cond_1
+
+    .line 2
+    iput-boolean p1, v1, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;->J:Z
+
+    .line 3
+    :cond_1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    if-nez v0, :cond_4
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L0:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_4
+
+    .line 4
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_4
+
+    invoke-interface {v0, p1}, Lom0/l;->s(Z)V
+
+    :cond_4
+    return-void
+
+    :cond_5
+    const-string p1, "binding"
+
+    .line 5
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final a3(Lsharechat/library/cvo/UserEntity;)V
+    .locals 3
+
+    const-string v0, "user"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    const/4 v1, 0x0
+
+    const/4 v2, -0x1
+
+    if-eq v0, v2, :cond_1
+
+    .line 2
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v2, :cond_0
+
+    invoke-virtual {v2, v0}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 3
+    :cond_1
+    :goto_0
+    invoke-virtual {p1}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final a4(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->x2(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final aA(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L0:Ljava/lang/String;
+
+    .line 2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p1}, Lom0/l;->n0(Ljava/lang/String;)V
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2658,135 +6551,324 @@
     :goto_1
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    .line 7
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    .line 4
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
 
     if-eqz p1, :cond_3
 
-    invoke-interface {p1, v1}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
+    invoke-interface {p1, v1}, Lom0/l;->s(Z)V
 
     :cond_3
     return-void
 .end method
 
-.method public static final synthetic gz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-    .locals 0
+.method public final ab(I)V
+    .locals 2
+
+    const/4 v0, -0x1
+
+    if-le p1, v0, :cond_2
 
     .line 1
-    invoke-static {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Wz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0, p1}, Lpm0/b;->w(I)V
+
+    const/4 v0, 0x1
+
+    if-gt p1, v0, :cond_2
+
+    .line 2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->q0(I)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string p1, "binding"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_1
+    const-string p1, "mAdapter"
+
+    .line 3
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public final ag(I)V
+    .locals 0
+
+    add-int/lit8 p1, p1, 0x1
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Sz(I)V
 
     return-void
 .end method
 
-.method private final hA(IZ)V
-    .locals 7
+.method public final am(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final b5(Ljava/util/List;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            ">;)V"
+        }
+    .end annotation
+
+    const-string v0, "postModelList"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
-    const/4 v1, 0x0
+    move-result v0
 
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    xor-int/lit8 v0, v0, 0x1
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->Z(I)Landroidx/recyclerview/widget/RecyclerView$d0;
+    .line 2
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
-    move-result-object v0
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    iput v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    iget-object v1, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2, p1}, Ljava/util/ArrayList;->addAll(ILjava/util/Collection;)Z
+
+    .line 5
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    invoke-virtual {v0, v2, v1}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRangeInserted(II)V
+
+    .line 6
+    iget-object v0, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    sput v0, Lpm0/b;->P:I
+
+    .line 7
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:I
+
+    if-gtz v0, :cond_1
+
+    .line 8
+    invoke-interface {p1}, Ljava/util/List;->size()I
+
+    move-result p1
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xz(I)V
 
     goto :goto_0
 
+    :cond_0
+    const-string p1, "mAdapter"
+
+    .line 9
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+
     :cond_1
-    move-object v0, v1
+    :goto_0
+    return-void
+.end method
+
+.method public final bA(IZ)V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_12
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/RecyclerView$b0;
+
+    move-result-object v0
 
     .line 2
-    :goto_0
-    instance-of v2, v0, Lbp/d;
+    instance-of v2, v0, Lp40/d;
 
     const-string v3, "mAdapter"
 
-    if-eqz v2, :cond_d
+    if-eqz v2, :cond_e
 
     .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->lz()V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Lz()V
 
-    if-eqz p2, :cond_c
+    if-eqz p2, :cond_d
 
     .line 4
     move-object p2, v0
 
-    check-cast p2, Lbp/d;
+    check-cast p2, Lp40/d;
 
-    invoke-interface {p2}, Lbp/d;->k()V
+    invoke-interface {p2}, Lp40/d;->k()V
 
     .line 5
-    iput p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
+    iput p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
     .line 6
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez p2, :cond_2
+    if-eqz p2, :cond_c
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v1
-
-    :cond_2
-    invoke-virtual {p2, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {p2, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p2
 
     .line 7
-    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
 
     const/4 v4, 0x1
 
+    const/4 v5, 0x0
+
     if-eqz v2, :cond_3
 
-    instance-of v5, v0, Lpn/g;
-
-    xor-int/2addr v5, v4
-
-    invoke-interface {v2, v5}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
-
     .line 8
+    instance-of v6, v0, Lp20/f;
+
+    if-nez v6, :cond_2
+
+    .line 9
+    instance-of v6, v0, Lvm0/p1;
+
+    if-eqz v6, :cond_0
+
+    move-object v6, v0
+
+    check-cast v6, Lvm0/p1;
+
+    goto :goto_0
+
+    :cond_0
+    move-object v6, v1
+
+    :goto_0
+    if-eqz v6, :cond_1
+
+    .line 10
+    invoke-virtual {v6}, Lvm0/p1;->R8()Ltm0/d;
+
+    move-result-object v6
+
+    invoke-interface {v6}, Ltm0/d;->c()Z
+
+    move-result v6
+
+    if-nez v6, :cond_1
+
+    const/4 v6, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v6, 0x0
+
+    :goto_1
+    if-eqz v6, :cond_2
+
+    .line 11
+    instance-of v6, v0, Lal1/b;
+
+    if-nez v6, :cond_2
+
+    const/4 v6, 0x1
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v6, 0x0
+
+    .line 12
+    :goto_2
+    invoke-interface {v2, v6}, Lom0/l;->s(Z)V
+
+    .line 13
     :cond_3
-    instance-of v2, v0, Lha0/d;
+    instance-of v2, v0, Ll71/e;
 
     if-eqz v2, :cond_4
 
     move-object v2, v0
 
-    check-cast v2, Lha0/d;
+    check-cast v2, Ll71/e;
 
-    goto :goto_1
+    goto :goto_3
 
     :cond_4
     move-object v2, v1
 
-    :goto_1
-    const/4 v5, 0x0
-
+    :goto_3
     if-eqz v2, :cond_5
 
-    invoke-interface {v2}, Lha0/d;->H1()Z
+    invoke-interface {v2}, Ll71/e;->P1()Z
 
     move-result v2
 
@@ -2794,22 +6876,22 @@
 
     const/4 v2, 0x1
 
-    goto :goto_2
+    goto :goto_4
 
     :cond_5
     const/4 v2, 0x0
 
-    :goto_2
+    :goto_4
     if-eqz v2, :cond_6
 
-    .line 9
-    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    .line 14
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
 
     if-eqz v2, :cond_6
 
-    invoke-interface {v2, v5}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
+    invoke-interface {v2, v5}, Lom0/l;->s(Z)V
 
-    .line 10
+    .line 15
     :cond_6
     invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
@@ -2817,52 +6899,40 @@
 
     if-eqz v2, :cond_7
 
-    .line 11
+    .line 16
     invoke-virtual {v2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->gA(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->aA(Ljava/lang/String;)V
 
-    .line 12
+    .line 17
     :cond_7
-    iget-boolean v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    if-nez v2, :cond_b
-
-    sget-object v2, Los/c0;->a:Los/c0;
-
-    invoke-virtual {v2}, Los/c0;->c()Z
-
-    move-result v2
-
-    if-nez v2, :cond_b
-
-    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Lin/mohalla/sharechat/common/ad/e;
+    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Ld10/x;
 
     move-result-object v2
 
     if-eqz v2, :cond_8
 
-    invoke-virtual {v2}, Lin/mohalla/sharechat/common/ad/e;->b()Ljava/lang/String;
+    invoke-virtual {v2}, Ld10/x;->b()Ljava/lang/String;
 
     move-result-object v2
 
-    goto :goto_3
+    goto :goto_5
 
     :cond_8
     move-object v2, v1
 
-    :goto_3
+    :goto_5
     const-string v6, "FRONTEND"
 
-    invoke-static {v2, v6}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v6}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_b
 
-    .line 13
+    .line 18
     invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
     move-result-object v2
@@ -2879,90 +6949,89 @@
 
     move-result-object v2
 
-    goto :goto_4
+    goto :goto_6
 
     :cond_9
     move-object v2, v1
 
-    :goto_4
+    :goto_6
     if-nez v2, :cond_b
 
-    iget-boolean v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
+    iget-boolean v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
+
+    if-nez v2, :cond_b
+
+    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isFeedSurvey()Z
+
+    move-result v2
 
     if-eqz v2, :cond_a
 
-    goto :goto_5
+    goto :goto_7
 
     :cond_a
     const/4 v4, 0x0
 
-    .line 14
+    .line 19
     :cond_b
-    :goto_5
-    invoke-direct {p0, p2, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+    :goto_7
+    invoke-virtual {p0, p2, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Wz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
 
-    .line 15
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Fi()V
+    .line 20
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->pj()V
 
-    .line 16
-    instance-of v0, v0, Lin/mohalla/sharechat/videoplayer/viewholders/n2;
+    .line 21
+    instance-of v0, v0, Lvm0/c2;
 
-    if-eqz v0, :cond_d
+    if-eqz v0, :cond_e
 
-    .line 17
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 22
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    invoke-interface {v0, p2}, Lin/mohalla/sharechat/videoplayer/p;->ib(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-interface {v0, p2}, Lom0/n;->Bb(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
-    goto :goto_6
+    goto :goto_8
 
-    .line 18
+    .line 23
     :cond_c
-    check-cast v0, Lbp/d;
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
 
-    invoke-interface {v0}, Lbp/d;->deactivate()V
+    throw v1
 
-    .line 19
+    .line 24
     :cond_d
-    :goto_6
-    iget p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
+    check-cast v0, Lp40/d;
+
+    invoke-interface {v0}, Lp40/d;->j()V
+
+    .line 25
+    :cond_e
+    :goto_8
+    iget p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
     const/4 v0, -0x1
 
-    if-ne p2, v0, :cond_10
+    if-ne p2, v0, :cond_11
 
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez p2, :cond_e
+    if-eqz p2, :cond_10
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v1
-
-    :cond_e
-    invoke-virtual {p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->getItemCount()I
+    invoke-virtual {p2}, Lpm0/b;->getItemCount()I
 
     move-result p2
 
-    if-le p2, p1, :cond_10
+    if-le p2, p1, :cond_11
 
-    .line 20
+    .line 26
     :try_start_0
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez p2, :cond_f
+    if-eqz p2, :cond_f
 
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_7
-
-    :cond_f
-    move-object v1, p2
-
-    :goto_7
-    invoke-virtual {v1, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {p2, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p1
 
@@ -2970,102 +7039,344 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_10
+    if-eqz p1, :cond_11
 
-    .line 21
+    .line 27
     invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->gA(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->aA(Ljava/lang/String;)V
+
+    goto :goto_9
+
+    .line 28
+    :cond_f
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_8
 
     :catch_0
     move-exception p1
 
-    .line 22
-    invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
+    .line 29
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
+    goto :goto_9
+
+    .line 30
     :cond_10
-    :goto_8
+    invoke-static {v3}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_11
+    :goto_9
+    return-void
+
+    :cond_12
+    const-string p1, "binding"
+
+    .line 31
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final be(Ljava/lang/String;FJLin/mohalla/sharechat/data/repository/post/PostModel;IJJLjava/lang/String;Ljava/lang/String;ILjava/util/List;JJIZLkw0/a1;)V
+    .locals 22
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "FJ",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            "IJJ",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "I",
+            "Ljava/util/List<",
+            "Lin/mohalla/sharechat/common/events/modals/AbrTrack;",
+            ">;JJIZ",
+            "Lkw0/a1;",
+            ")V"
+        }
+    .end annotation
+
+    move-object/from16 v5, p1
+
+    move/from16 v2, p2
+
+    move-wide/from16 v3, p3
+
+    move-object/from16 v1, p5
+
+    move/from16 v6, p6
+
+    move-wide/from16 v7, p7
+
+    move-wide/from16 v9, p9
+
+    move-object/from16 v12, p11
+
+    move-object/from16 v13, p12
+
+    move/from16 v14, p13
+
+    move-object/from16 v15, p14
+
+    move-wide/from16 v16, p15
+
+    move-wide/from16 v18, p17
+
+    move/from16 v20, p19
+
+    move/from16 v11, p20
+
+    move-object/from16 v21, p21
+
+    const-string v0, "playMode"
+
+    move-object/from16 p2, v1
+
+    move-object/from16 v1, p1
+
+    invoke-static {v1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "trackChangeDetails"
+
+    move-object/from16 v1, p14
+
+    invoke-static {v1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    move-object/from16 v1, p2
+
+    invoke-interface/range {v0 .. v21}, Lom0/n;->Ek(Lin/mohalla/sharechat/data/repository/post/PostModel;FJLjava/lang/String;IJJZLjava/lang/String;Ljava/lang/String;ILjava/util/List;JJILkw0/a1;)V
+
     return-void
 .end method
 
-.method public static final synthetic hz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;I)V
-    .locals 0
+.method public final c(I)V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->cA(I)V
+    invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string v0, "getString(stringRes)"
+
+    invoke-static {p1, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->d(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private final iA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+.method public final c7(Lq60/b;)V
+    .locals 1
+
+    const-string v0, "exitScreen"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final cA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->U1(Ljava/lang/String;)V
+    invoke-interface {v0, p1}, Lom0/n;->T1(Ljava/lang/String;)V
 
     .line 3
     :cond_0
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
     if-eqz p1, :cond_1
 
     .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    invoke-interface {p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->w2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-interface {p1, p2}, Lom0/n;->s2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     :cond_1
     return-void
 .end method
 
-.method public static final synthetic iz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;IZ)V
-    .locals 0
+.method public final ch(IJZ)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->hA(IZ)V
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    add-int/lit8 v1, p1, 0x1
+
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->w0(I)V
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3, p4}, Lom0/n;->Im(IJZ)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "binding"
+
+    .line 3
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final cp(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    const-string p2, "postId"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method private final jA(Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;)V
-    .locals 17
+.method public final cr(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLdp0/l;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            "Z",
+            "Ldp0/l<",
+            "-",
+            "Lin/mohalla/sharechat/data/emoji/Emoji;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v8, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$t;
+
+    const/4 v3, 0x0
+
+    move-object v2, v8
+
+    move v4, p2
+
+    move-object v5, p0
+
+    move-object v6, p1
+
+    move-object v7, p3
+
+    invoke-direct/range {v2 .. v7}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$t;-><init>(Lvo0/d;ZLin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/data/repository/post/PostModel;Ldp0/l;)V
+
+    const/4 p1, 0x0
+
+    const/4 p2, 0x2
+
+    invoke-static {v0, v1, p1, v8, p2}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+.end method
+
+.method public final d(Ljava/lang/String;)V
+    .locals 4
+
+    const-string v0, "string"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x6
+
+    .line 2
+    invoke-static {p1, v0, v1, v2, v3}, Lfs1/a;->g(Ljava/lang/String;Landroid/content/Context;ILjava/lang/Integer;I)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final d4()V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lom0/l;->C9()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final dA(Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;)V
+    .locals 16
 
     move-object/from16 v0, p0
 
     .line 1
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
-    if-nez v1, :cond_b
+    if-nez v1, :cond_6
 
     .line 2
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1, v2}, Lin/mohalla/sharechat/videoplayer/j;->g(Z)V
-
     .line 3
+    iput-boolean v2, v1, Lom0/i;->h:Z
+
+    .line 4
     :cond_0
-    sget-object v3, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->W:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;
+    sget-object v3, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->Q:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;
 
     const/4 v5, 0x0
 
@@ -3073,8 +7384,8 @@
 
     const/4 v7, 0x0
 
-    .line 4
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->py()Lcom/google/gson/Gson;
+    .line 5
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gu()Lcom/google/gson/Gson;
 
     move-result-object v1
 
@@ -3084,12 +7395,12 @@
 
     move-result-object v8
 
-    .line 5
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 6
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v1
 
-    invoke-interface {v1}, Lin/mohalla/sharechat/videoplayer/p;->Y2()Ljava/lang/String;
+    invoke-interface {v1}, Lom0/n;->M2()Ljava/lang/String;
 
     move-result-object v9
 
@@ -3099,58 +7410,56 @@
 
     const/4 v12, 0x1
 
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M3()Z
+    .line 7
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S3()Z
 
     move-result v1
 
     xor-int/lit8 v13, v1, 0x1
 
-    .line 7
-    iget-object v14, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+    .line 8
+    iget-object v14, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
 
     const/16 v15, 0xca
 
-    const/16 v16, 0x0
-
     move-object/from16 v4, p1
 
-    .line 8
-    invoke-static/range {v3 .. v16}, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;->c(Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZZLjava/lang/String;ILjava/lang/Object;)Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
+    .line 9
+    invoke-static/range {v3 .. v15}, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;->a(Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment$a;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZZLjava/lang/String;I)Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
     move-result-object v1
 
-    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-
-    if-eqz v1, :cond_b
-
-    .line 9
-    new-instance v3, Lin/mohalla/sharechat/videoplayer/v;
-
-    invoke-direct {v3, v0, v1}, Lin/mohalla/sharechat/videoplayer/v;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;)V
-
-    invoke-virtual {v1, v3}, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->Xz(Ljava/lang/Runnable;)V
+    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
 
     .line 10
+    new-instance v3, Landroidx/activity/g;
+
+    const/16 v4, 0xe
+
+    invoke-direct {v3, v0, v4}, Landroidx/activity/g;-><init>(Ljava/lang/Object;I)V
+
+    .line 11
+    iput-object v3, v1, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->I:Ljava/lang/Runnable;
+
+    .line 12
     invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroidx/fragment/app/FragmentManager;->m()Landroidx/fragment/app/r;
-
-    move-result-object v3
-
-    const v4, 0x7f0a056f
-
-    .line 11
-    invoke-virtual {v3, v4, v1}, Landroidx/fragment/app/r;->s(ILandroidx/fragment/app/Fragment;)Landroidx/fragment/app/r;
-
-    move-result-object v1
-
-    .line 12
-    invoke-virtual {v1}, Landroidx/fragment/app/r;->j()I
-
     .line 13
+    new-instance v4, Landroidx/fragment/app/a;
+
+    invoke-direct {v4, v3}, Landroidx/fragment/app/a;-><init>(Landroidx/fragment/app/FragmentManager;)V
+
+    const v3, 0x7f0a05ee
+
+    .line 14
+    invoke-virtual {v4, v3, v1, v5}, Landroidx/fragment/app/a0;->n(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/a0;
+
+    .line 15
+    invoke-virtual {v4}, Landroidx/fragment/app/a;->g()I
+
+    .line 16
     invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -3159,814 +7468,639 @@
 
     return-void
 
+    .line 17
     :cond_1
-    const-string v3, "context ?: return"
-
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 14
     new-instance v3, Lcom/google/android/material/bottomsheet/ViewPagerBottomSheetBehavior;
 
-    const/4 v4, 0x0
-
-    invoke-direct {v3, v1, v4}, Lcom/google/android/material/bottomsheet/ViewPagerBottomSheetBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v3, v1, v5}, Lcom/google/android/material/bottomsheet/ViewPagerBottomSheetBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v1, 0x4
 
-    .line 15
-    invoke-virtual {v3, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z0(I)V
+    .line 18
+    invoke-virtual {v3, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->H(I)V
 
     const/4 v1, 0x0
 
-    .line 16
-    invoke-virtual {v3, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->t0(Z)V
-
-    .line 17
-    invoke-virtual {v3, v2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->q0(Z)V
-
-    .line 18
-    iget-boolean v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    const-string v5, "binding"
-
-    if-eqz v2, :cond_6
-
     .line 19
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v2, :cond_2
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v4
-
-    :cond_2
-    iget-object v2, v2, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v6, :cond_3
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v6, v4
-
-    :cond_3
-    invoke-virtual {v6}, Lru/q2;->c()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v6
-
-    const-string v7, "binding.root.context"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/high16 v8, 0x41c00000    # 24.0f
-
-    invoke-static {v6, v8}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v6
-
-    float-to-int v6, v6
-
-    invoke-virtual {v2, v1, v1, v1, v6}, Landroid/widget/FrameLayout;->setPadding(IIII)V
+    invoke-virtual {v3, v1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->F(Z)V
 
     .line 20
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v2, :cond_4
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v4
-
-    :cond_4
-    iget-object v2, v2, Lru/q2;->m:Lru/h5;
-
-    invoke-virtual {v2}, Lru/h5;->c()Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    move-result-object v2
-
-    iget-object v6, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v6, :cond_5
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v6, v4
-
-    :cond_5
-    invoke-virtual {v6}, Lru/q2;->c()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v6
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v6, v8}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v6
-
-    float-to-int v6, v6
-
-    invoke-virtual {v2, v1, v1, v1, v6}, Landroid/view/ViewGroup;->setPadding(IIII)V
+    invoke-virtual {v3, v2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->D(Z)V
 
     .line 21
-    :cond_6
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v2, :cond_7
+    const-string v4, "binding"
 
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    if-eqz v2, :cond_5
 
-    move-object v2, v4
+    iget-object v2, v2, Lre0/j2;->h:Landroid/widget/FrameLayout;
 
-    :cond_7
-    iget-object v2, v2, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v2}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
     instance-of v6, v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
-    if-eqz v6, :cond_8
+    if-eqz v6, :cond_2
 
     check-cast v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     goto :goto_0
 
-    :cond_8
-    move-object v2, v4
+    :cond_2
+    move-object v2, v5
 
     :goto_0
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_3
 
     .line 22
-    invoke-virtual {v2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->o(Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;)V
+    invoke-virtual {v2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->b(Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;)V
 
     .line 23
     iput v1, v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->c:I
 
     .line 24
-    :cond_9
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    :cond_3
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v1, :cond_a
+    if-eqz v1, :cond_4
 
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object v1, v1, Lre0/j2;->h:Landroid/widget/FrameLayout;
+
+    invoke-virtual {v1}, Landroid/view/View;->requestLayout()V
 
     goto :goto_1
-
-    :cond_a
-    move-object v4, v1
-
-    :goto_1
-    iget-object v1, v4, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->requestLayout()V
-
-    :cond_b
-    return-void
-.end method
-
-.method private final jz(I)Z
-    .locals 3
-
-    const/4 v0, -0x1
-
-    const/4 v1, 0x1
-
-    if-nez p1, :cond_0
-
-    .line 1
-    iget v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    if-eq v2, v0, :cond_1
-
-    .line 2
-    :cond_0
-    iget v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    sub-int v2, p1, v2
-
-    invoke-static {v2}, Ljava/lang/Math;->abs(I)I
-
-    move-result v2
-
-    if-eq v2, v1, :cond_3
-
-    :cond_1
-    if-ne p1, v1, :cond_2
-
-    .line 3
-    iget p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    if-ne p1, v0, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v1, 0x0
-
-    :cond_3
-    :goto_0
-    return v1
-.end method
-
-.method static synthetic kA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;ILjava/lang/Object;)V
-    .locals 0
-
-    and-int/lit8 p3, p3, 0x2
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x0
-
-    .line 1
-    :cond_0
-    invoke-direct {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->jA(Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;)V
-
-    return-void
-.end method
-
-.method private final kz()V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->wz()Los/s0;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Los/s0;->v(Z)V
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const-string v1, "binding"
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_0
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_1
-    move-object v0, v2
-
-    :goto_0
-    instance-of v3, v0, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    if-eqz v3, :cond_2
-
-    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    goto :goto_1
-
-    :cond_2
-    move-object v0, v2
-
-    :goto_1
-    if-eqz v0, :cond_6
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->p0()I
-
-    move-result v0
-
-    if-lez v0, :cond_5
-
-    .line 4
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->c1()Z
-
-    .line 5
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_3
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_3
-    iget-object v0, v0, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    const-string v3, "binding.fragmentContainerReplace"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 6
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_4
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_2
 
     :cond_4
-    move-object v2, v0
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
 
-    :goto_2
-    iget-object v0, v2, Lru/q2;->n:Landroid/view/View;
+    throw v5
 
-    const-string v1, "binding.viewOutside"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    goto :goto_3
-
-    .line 7
+    .line 25
     :cond_5
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
 
-    move-result-object v0
-
-    if-eqz v0, :cond_6
-
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    throw v5
 
     :cond_6
-    :goto_3
+    :goto_1
     return-void
 .end method
 
-.method private static final lA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;)V
-    .locals 2
+.method public final da(Ljava/lang/String;Lom0/j;)V
+    .locals 39
 
-    const-string v0, "this$0"
+    move-object/from16 v15, p0
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object/from16 v13, p2
 
-    const-string v0, "$fragment"
+    const-string v0, "videoAdapterContainer"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->m()Landroidx/fragment/app/r;
-
-    move-result-object v0
-
-    const-string v1, "childFragmentManager.beginTransaction()"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2
-    invoke-virtual {v0, p1}, Landroidx/fragment/app/r;->r(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/r;
-
-    .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/r;->j()I
-
-    .line 4
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->rz()Lcom/skydoves/balloon/Balloon;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lcom/skydoves/balloon/Balloon;->G()V
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 5
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-
-    .line 6
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    const v0, 0x7f0a0d7f
-
-    invoke-virtual {p1, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/RelativeLayout;
-
-    if-eqz p1, :cond_1
-
-    .line 7
-    new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
-
-    const/4 v1, -0x1
-
-    invoke-direct {v0, v1, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
-
-    invoke-virtual {p1, v0}, Landroid/widget/RelativeLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 8
-    :cond_1
-    iget-object p0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
-
-    if-eqz p0, :cond_2
-
-    const/4 p1, 0x0
-
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/j;->g(Z)V
-
-    :cond_2
-    return-void
-.end method
-
-.method private final lz()V
-    .locals 4
+    invoke-static {v13, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    const-string v2, "binding"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    const-string v3, "binding.flPostCommentFooter"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v0
-
-    :goto_0
-    iget-object v0, v1, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v0}, Landroid/widget/FrameLayout;->requestFocus()Z
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    invoke-static {v0}, Ldq/a;->e(Landroid/app/Activity;)V
-
-    :cond_2
-    return-void
-.end method
-
-.method private final mA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 10
-
-    .line 1
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
+    iget-boolean v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S0:Z
 
     if-eqz v0, :cond_0
 
+    sget-object v0, Los1/a0;->CONTROL:Los1/a0;
+
+    goto :goto_0
+
     .line 2
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    :cond_0
+    iget-object v0, v13, Lom0/j;->i:Los1/a0;
+
+    .line 3
+    :goto_0
+    iput-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
+
+    .line 4
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->e1:Landroidx/recyclerview/widget/u;
+
+    iget-object v1, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const-string v31, "binding"
+
+    const/16 v32, 0x0
+
+    if-eqz v1, :cond_14
+
+    iget-object v1, v1, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/u;->f(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 5
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    const/4 v14, 0x1
+
+    if-eqz v0, :cond_1
+
+    invoke-interface {v0, v14}, Lom0/l;->s(Z)V
+
+    .line 6
+    :cond_1
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_e
+
+    .line 7
+    sget-object v0, Lfc0/k;->s:Lfc0/k$a;
+
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v1
 
-    .line 3
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
+    invoke-virtual {v0, v1}, Lfc0/k$a;->a(Landroidx/fragment/app/FragmentActivity;)Lfc0/k;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_2
+
+    .line 8
+    invoke-static {v5}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 9
+    :cond_2
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_e
+
+    .line 10
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->uz()Lyr0/e0;
 
     move-result-object v2
 
-    const/4 v3, 0x0
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Oz()Lea0/e;
 
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h0;
+    move-result-object v3
 
-    const/4 v5, 0x0
+    .line 11
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lom0/n;->h()Lmn0/t;
+
+    move-result-object v6
+
+    .line 12
+    iget-object v9, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 13
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
+
+    move-result-object v10
+
+    .line 14
+    iget-object v11, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
+
+    .line 15
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Qz()Ln12/e;
+
+    move-result-object v12
+
+    .line 16
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Q0:Ljava/lang/Long;
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    goto :goto_1
+
+    :cond_3
+    const-wide/16 v0, 0x0
+
+    :goto_1
+    move-wide/from16 v16, v0
+
+    .line 17
+    iget-object v8, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J:Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+    if-eqz v8, :cond_d
+
+    .line 18
+    iget-object v7, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K:Lfv1/a;
+
+    if-eqz v7, :cond_c
+
+    .line 19
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L:Ldagger/Lazy;
+
+    if-eqz v0, :cond_b
+
+    .line 20
+    invoke-interface {v0}, Ldagger/Lazy;->get()Ljava/lang/Object;
+
+    move-result-object v0
 
     move-object v4, v0
 
-    move-object v6, p0
+    check-cast v4, Ldt1/a;
 
-    move-object v7, p1
+    .line 21
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N:Li30/a;
 
-    move-object v8, p2
+    if-eqz v0, :cond_a
 
-    move-object v9, p3
+    .line 22
+    iget-object v1, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P:Lls1/a;
 
-    invoke-direct/range {v4 .. v9}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h0;-><init>(Lkotlin/coroutines/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    if-eqz v1, :cond_9
 
-    const/4 v5, 0x2
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    return-void
-
-    .line 4
-    :cond_0
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
-
-    if-eqz p1, :cond_2
-
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result p1
-
-    if-nez p1, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, 0x0
-
-    goto :goto_1
-
-    :cond_2
-    :goto_0
-    const/4 p1, 0x1
-
-    :goto_1
-    if-nez p1, :cond_3
-
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F0:Ljava/lang/String;
-
-    iget-object p3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:Ljava/lang/String;
-
-    invoke-static {p1, p3}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    .line 5
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->onBackPressed()V
-
-    goto :goto_2
-
-    .line 6
-    :cond_3
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz p1, :cond_4
-
-    invoke-interface {p1, p2}, Lin/mohalla/sharechat/videoplayer/m;->s(Ljava/lang/String;)V
-
-    :cond_4
-    :goto_2
-    return-void
-.end method
-
-.method private final mz()V
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_0
-
-    return-void
-
-    :cond_0
-    const-string v1, "binding"
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_1
-
-    .line 2
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_1
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
+    .line 23
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    goto :goto_0
+    invoke-interface {v0}, Lom0/n;->Ol()Ljava/lang/String;
 
-    :cond_2
-    move-object v0, v2
+    move-result-object v19
 
-    :goto_0
-    instance-of v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+    .line 24
+    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O:Lsharechat/library/utilities/systemservices/SensorManagerUtil;
 
     if-eqz v0, :cond_8
 
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    .line 25
+    iget-object v14, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:Lh00/b;
 
-    if-nez v0, :cond_3
+    const-string v20, "gamAdDfmEntryProvider"
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    if-eqz v14, :cond_7
 
-    move-object v0, v2
+    .line 26
+    invoke-interface {v14}, Lh00/b;->a()Lt00/h;
 
-    :cond_3
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    move-result-object v21
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
+    .line 27
+    iget-object v14, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X0:Lro0/p;
 
-    move-result-object v0
+    invoke-virtual {v14}, Lro0/p;->getValue()Ljava/lang/Object;
 
-    const-string v3, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager"
+    move-result-object v14
 
-    invoke-static {v0, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    move-object/from16 v22, v14
 
-    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+    check-cast v22, Landroid/os/HandlerThread;
 
-    .line 4
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->l2()I
+    .line 28
+    iget-object v14, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Los1/z;
 
-    move-result v3
+    .line 29
+    iget-object v13, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y0:Los1/a0;
 
-    .line 5
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->o2()I
+    move-object/from16 v23, v13
 
-    move-result v0
+    .line 30
+    iget-object v13, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Ljava/lang/String;
 
-    const/4 v4, -0x1
+    move-object/from16 v24, v13
 
-    if-eq v3, v4, :cond_6
+    .line 31
+    iget-object v13, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U0:Ljava/util/Map;
 
-    if-eq v0, v4, :cond_6
+    move-object/from16 v25, v13
 
-    if-gt v3, v0, :cond_8
+    .line 32
+    iget-object v13, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:Lh00/b;
 
-    .line 6
-    :goto_1
-    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    if-eqz v13, :cond_6
 
-    if-nez v4, :cond_4
+    move-object/from16 v26, v13
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 33
+    new-instance v13, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;
 
-    move-object v4, v2
+    invoke-direct {v13, v15}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;-><init>(Ljava/lang/Object;)V
 
-    :cond_4
-    iget-object v4, v4, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    .line 34
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    invoke-virtual {v4, v3}, Landroidx/recyclerview/widget/RecyclerView;->b0(I)Landroidx/recyclerview/widget/RecyclerView$d0;
+    move-result-object v29
 
-    move-result-object v4
+    move-object/from16 v20, v13
 
-    .line 7
-    instance-of v5, v4, Lbp/d;
+    .line 35
+    iget-object v13, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Ljava/lang/String;
 
-    if-eqz v5, :cond_5
+    if-eqz v13, :cond_5
 
-    .line 8
-    check-cast v4, Lbp/d;
+    .line 36
+    new-instance v15, Lpm0/b;
 
-    invoke-interface {v4}, Lbp/d;->deactivate()V
+    move-object/from16 v27, v0
 
-    :cond_5
-    if-eq v3, v0, :cond_8
+    move-object v0, v15
 
-    add-int/lit8 v3, v3, 0x1
+    move-object/from16 v28, v1
 
-    goto :goto_1
+    const-string v1, "get()"
 
-    :cond_6
-    if-eq v3, v4, :cond_8
+    .line 37
+    invoke-static {v4, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 9
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    move-object/from16 v1, p0
 
-    if-nez v0, :cond_7
+    move-object/from16 v30, v4
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    move-object/from16 v4, p0
 
-    move-object v0, v2
+    move-object/from16 v33, v7
 
-    :cond_7
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    move-object/from16 v7, p1
 
-    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->b0(I)Landroidx/recyclerview/widget/RecyclerView$d0;
+    move-object/from16 v34, v8
 
-    move-result-object v0
+    move-object/from16 v8, p2
 
-    .line 10
-    instance-of v3, v0, Lbp/d;
+    move-object/from16 v37, v13
 
-    if-eqz v3, :cond_8
+    move-object/from16 v36, v20
 
-    .line 11
-    check-cast v0, Lbp/d;
+    move-object/from16 v35, v26
 
-    invoke-interface {v0}, Lbp/d;->deactivate()V
+    move-object/from16 v26, v25
 
-    .line 12
-    :cond_8
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    move-object/from16 v25, v24
 
-    if-nez v0, :cond_9
+    move-object/from16 v24, v23
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    move-object/from16 v23, v14
 
-    move-object v0, v2
+    move-wide/from16 v13, v16
 
-    :cond_9
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    move-object/from16 v38, v15
 
-    if-nez v0, :cond_a
+    move-object/from16 v15, v33
+
+    move-object/from16 v16, v34
+
+    move-object/from16 v17, v30
+
+    move-object/from16 v18, v28
+
+    move-object/from16 v20, v27
+
+    move-object/from16 v27, v35
+
+    move-object/from16 v28, v36
+
+    move-object/from16 v30, v37
+
+    .line 38
+    invoke-direct/range {v0 .. v30}, Lpm0/b;-><init>(Landroidx/fragment/app/Fragment;Lyr0/e0;Lea0/e;Lqm0/d;Lfc0/k;Lmn0/t;Ljava/lang/String;Lom0/j;Ljava/util/concurrent/atomic/AtomicInteger;Lnm0/a;Ljava/lang/String;Ln12/e;JLfv1/a;Lcom/google/firebase/analytics/FirebaseAnalytics;Ldt1/a;Lls1/a;Ljava/lang/String;Lsharechat/library/utilities/systemservices/SensorManagerUtil;Lt00/h;Landroid/os/HandlerThread;Los1/z;Los1/a0;Ljava/lang/String;Ljava/util/Map;Lh00/b;Ldp0/l;Lom0/n;Ljava/lang/String;)V
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, v38
+
+    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    .line 39
+    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v2, :cond_4
+
+    iget-object v2, v2, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v2, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$f;)V
 
     goto :goto_2
 
+    :cond_4
+    invoke-static/range {v31 .. v31}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_5
+    move-object v0, v15
+
+    const-string v1, "mLastScreenName"
+
+    .line 40
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_6
+    move-object v0, v15
+
+    .line 41
+    invoke-static/range {v20 .. v20}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_7
+    move-object v0, v15
+
+    .line 42
+    invoke-static/range {v20 .. v20}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_8
+    move-object v0, v15
+
+    const-string v1, "sensorManagerUtil"
+
+    .line 43
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_9
+    move-object v0, v15
+
+    const-string v1, "userVideoTracker"
+
+    .line 44
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
     :cond_a
-    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$h;)V
+    move-object v0, v15
+
+    const-string v1, "adUtil"
+
+    .line 45
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_b
+    move-object v0, v15
+
+    const-string v1, "bandwidthUtilLazy"
+
+    .line 46
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_c
+    move-object v0, v15
+
+    const-string v1, "videoCacheUtil"
+
+    .line 47
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_d
+    move-object v0, v15
+
+    const-string v1, "firebaseAnalytics"
+
+    .line 48
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_e
+    move-object v0, v15
 
     :goto_2
+    move-object/from16 v1, p2
+
+    .line 49
+    iget-object v2, v1, Lom0/j;->b:Lpa0/a;
+
+    if-eqz v2, :cond_f
+
+    .line 50
+    invoke-virtual {v2}, Lpa0/a;->Q()Lsharechat/library/cvo/LikeIconConfig;
+
+    move-result-object v2
+
+    goto :goto_3
+
+    :cond_f
+    move-object/from16 v2, v32
+
+    :goto_3
+    iput-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P0:Lsharechat/library/cvo/LikeIconConfig;
+
+    .line 51
+    iget-boolean v1, v1, Lom0/j;->l:Z
+
+    if-eqz v1, :cond_12
+
+    .line 52
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_11
+
+    iget-object v1, v1, Lre0/j2;->c:Lcom/google/android/material/appbar/AppBarLayout;
+
+    new-instance v2, Lom0/p;
+
+    invoke-direct {v2, v0}, Lom0/p;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-virtual {v1, v2}, Lcom/google/android/material/appbar/AppBarLayout;->a(Lcom/google/android/material/appbar/AppBarLayout$f;)V
+
+    .line 53
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_10
+
+    iget-object v1, v1, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;->setCommentingExperienceEnabled(Z)V
+
+    .line 54
+    iput-boolean v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z0:Z
+
+    goto :goto_4
+
+    .line 55
+    :cond_10
+    invoke-static/range {v31 .. v31}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    .line 56
+    :cond_11
+    invoke-static/range {v31 .. v31}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    .line 57
+    :cond_12
+    :goto_4
+    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_13
+
+    iget-object v1, v1, Lre0/j2;->c:Lcom/google/android/material/appbar/AppBarLayout;
+
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v1
+
+    const-string v2, "null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams"
+
+    invoke-static {v1, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+
+    .line 58
+    iget-object v1, v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout$c;
+
+    const-string v2, "null cannot be cast to non-null type in.mohalla.sharechat.videoplayer.BlockableAppBarLayoutBehavior"
+
+    .line 59
+    invoke-static {v1, v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast v1, Lin/mohalla/sharechat/videoplayer/BlockableAppBarLayoutBehavior;
+
+    .line 60
+    new-instance v2, Lom0/c0;
+
+    invoke-direct {v2, v0}, Lom0/c0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    .line 61
+    iput-object v2, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->o:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$b;
+
+    return-void
+
+    .line 62
+    :cond_13
+    invoke-static/range {v31 .. v31}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+
+    :cond_14
+    move-object v0, v15
+
+    .line 63
+    invoke-static/range {v31 .. v31}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v32
+.end method
+
+.method public final du(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 0
+
     return-void
 .end method
 
-.method static synthetic nA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-    .locals 1
-
-    and-int/lit8 p5, p4, 0x2
-
-    const/4 v0, 0x0
-
-    if-eqz p5, :cond_0
-
-    move-object p2, v0
-
-    :cond_0
-    and-int/lit8 p4, p4, 0x4
-
-    if-eqz p4, :cond_1
-
-    move-object p3, v0
-
-    .line 1
-    :cond_1
-    invoke-direct {p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->mA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method private final oA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 27
+.method public final e(Lsharechat/data/user/FollowData;)V
+    .locals 21
 
     .line 1
     invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
@@ -3976,15 +8110,459 @@
     if-eqz v1, :cond_0
 
     .line 2
-    sget-object v0, Lwx/e;->k:Lwx/e$a;
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
 
-    const/4 v2, 0x1
+    move-result-object v0
 
     const/4 v3, 0x0
 
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const v19, 0x3fefc
+
+    const/16 v20, 0x0
+
+    const-string v2, "VideoPlayerUnverifiedUserFollow"
+
+    move-object/from16 v9, p1
+
+    invoke-static/range {v0 .. v20}, Lnm0/a$a;->B(Lnm0/a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZZZILsharechat/data/user/FollowData;ZLjava/lang/String;ZLjava/lang/String;ZLkv1/k;ZLandroidx/activity/result/c;Lvv0/f1;ILjava/lang/Object;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final e0()V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Oz()Lea0/e;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lea0/e;->B()V
+
+    return-void
+.end method
+
+.method public final e3(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lpm0/b;->getItemCount()I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-le v0, v1, :cond_0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Tz(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    :goto_0
+    return-void
+
+    :cond_1
+    const-string p1, "mAdapter"
+
+    .line 4
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final eA(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    if-nez v0, :cond_2
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L0:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    goto :goto_2
+
+    .line 3
+    :cond_2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_3
+
+    invoke-interface {v0, p1}, Lom0/l;->t(Ljava/lang/String;)V
+
+    :cond_3
+    :goto_2
+    return-void
+.end method
+
+.method public final f1(Ljava/lang/String;)V
+    .locals 9
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    iget-object v2, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    .line 3
+    new-instance v3, Ljava/util/ArrayList;
+
+    const/16 v4, 0xa
+
+    invoke-static {v2, v4}, Lso0/v;->o(Ljava/lang/Iterable;I)I
+
+    move-result v5
+
+    invoke-direct {v3, v5}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 4
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    const/4 v5, 0x0
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v6
+
+    add-int/lit8 v7, v5, 0x1
+
+    if-ltz v5, :cond_1
+
+    .line 5
+    check-cast v6, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    .line 6
+    new-instance v8, Lro0/m;
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    invoke-virtual {v6}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_0
+
+    invoke-virtual {v6}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v6
+
+    goto :goto_1
+
+    :cond_0
+    move-object v6, v1
+
+    :goto_1
+    invoke-direct {v8, v5, v6}, Lro0/m;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    invoke-virtual {v3, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    move v5, v7
+
+    goto :goto_0
+
+    .line 7
+    :cond_1
+    invoke-static {}, Lso0/u;->n()V
+
+    throw v1
+
+    .line 8
+    :cond_2
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 9
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :cond_3
+    :goto_2
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_4
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    move-object v6, v5
+
+    check-cast v6, Lro0/m;
+
+    .line 10
+    iget-object v6, v6, Lro0/m;->c:Ljava/lang/Object;
+
+    .line 11
+    invoke-static {v6, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_3
+
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_2
+
+    .line 12
+    :cond_4
+    new-instance p1, Ljava/util/ArrayList;
+
+    invoke-static {v2, v4}, Lso0/v;->o(Ljava/lang/Iterable;I)I
+
+    move-result v3
+
+    invoke-direct {p1, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 13
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_3
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_5
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 14
+    check-cast v3, Lro0/m;
+
+    .line 15
+    iget-object v3, v3, Lro0/m;->b:Ljava/lang/Object;
+
+    .line 16
+    check-cast v3, Ljava/lang/Number;
+
+    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_3
+
+    .line 17
+    :cond_5
+    invoke-static {p1}, Lso0/d0;->h0(Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 18
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    move-result v2
+
+    .line 19
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_4
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_6
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/Number;
+
+    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+
+    move-result v3
+
+    .line 20
+    iget-object v4, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 21
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView$f;->notifyItemRemoved(I)V
+
+    goto :goto_4
+
+    .line 22
+    :cond_6
+    iget p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    sub-int/2addr p1, v2
+
+    add-int/lit8 p1, p1, 0x1
+
+    .line 23
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    sget-object v2, Lyr0/s0;->a:Lyr0/s0;
+
+    .line 24
+    sget-object v2, Lds0/q;->a:Lyr0/t1;
+
+    .line 25
+    new-instance v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a0;
+
+    invoke-direct {v3, p1, p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a0;-><init>(ILin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lvo0/d;)V
+
+    const/4 p1, 0x2
+
+    invoke-static {v0, v2, v1, v3, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+
+    :cond_7
+    const-string p1, "mAdapter"
+
+    .line 26
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final f8(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final fA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 28
+
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 2
+    sget-object v0, Lck0/a;->q:Lck0/a$a;
+
+    const/4 v2, 0x0
+
     move-object/from16 v14, p0
 
-    invoke-static {v14, v3, v2, v3}, Lin/mohalla/sharechat/videoplayer/q$a;->c(Lin/mohalla/sharechat/videoplayer/q;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    .line 3
+    invoke-virtual {v14, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -4028,29 +8606,32 @@
 
     const/16 v24, 0x0
 
-    const v25, 0xffdff8
+    const/16 v25, 0x0
 
     const/16 v26, 0x0
+
+    const v27, 0x3ffdff8
 
     move-object/from16 v2, p1
 
     move-object/from16 v14, p3
 
-    invoke-static/range {v0 .. v26}, Lwx/e$a;->E1(Lwx/e$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/feed/tag/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZZZZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;ILjava/lang/Object;)V
+    .line 4
+    invoke-static/range {v0 .. v27}, Lck0/a$a;->j0(Lck0/a$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lqf0/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZZZZLjava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/String;I)V
 
     :cond_0
     return-void
 .end method
 
-.method private final pA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+.method public final gA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
     .locals 3
 
     .line 1
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:I
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     if-eq v0, p1, :cond_1
 
@@ -4071,25 +8652,20 @@
 
     .line 2
     :goto_1
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    if-nez v0, :cond_3
-
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 4
+    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    .line 5
+    .line 4
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -4102,245 +8678,81 @@
 
     if-nez v0, :cond_2
 
-    goto :goto_2
+    const/4 v1, 0x1
 
     :cond_2
-    const/4 v1, 0x0
-
-    :goto_2
     if-eqz v1, :cond_3
 
     if-eqz p1, :cond_3
 
-    .line 6
-    invoke-direct {p0, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+    .line 5
+    invoke-virtual {p0, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Wz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
 
     :cond_3
     return-void
 .end method
 
-.method private final xz()Landroid/os/HandlerThread;
+.method public final ga(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U0:Li00/i;
+    const-string v0, "postId"
 
-    invoke-interface {v0}, Li00/i;->getValue()Ljava/lang/Object;
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    sget-object v0, Lkv1/q;->OTHERS:Lkv1/q;
 
-    check-cast v0, Landroid/os/HandlerThread;
+    invoke-virtual {p0, p1, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r7(Ljava/lang/String;Lkv1/q;)V
 
-    return-object v0
+    return-void
 .end method
 
+.method public final gz(Ljava/lang/String;Z)V
+    .locals 0
 
-# virtual methods
-.method public A(Lsharechat/library/cvo/WebCardObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 18
+    const-string p2, "postId"
 
-    move-object/from16 v0, p0
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object/from16 v1, p1
+    return-void
+.end method
 
-    move-object/from16 v3, p2
+.method public final h2(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    .locals 10
 
-    const-string v2, "webCardObject"
+    const-string v0, "shareBottomSheetExperimentVariant"
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "postId"
-
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "authorId"
-
-    move-object/from16 v4, p3
-
-    invoke-static {v4, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_1
-
-    .line 2
-    new-instance v2, Lft/m;
-
-    const/4 v5, 0x1
-
-    const/4 v11, 0x0
-
-    invoke-static {v0, v11, v5, v11}, Lin/mohalla/sharechat/videoplayer/q$a;->c(Lin/mohalla/sharechat/videoplayer/q;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x4
-
-    const/4 v10, 0x0
-
-    move-object v5, v2
-
-    invoke-direct/range {v5 .. v10}, Lft/m;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/h;)V
-
-    .line 3
-    iget-object v5, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v5, :cond_0
-
-    const-string v5, "binding"
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v5, v11
-
-    :cond_0
-    iget-object v5, v5, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    const-string v6, "binding.fragmentContainerReplace"
-
-    invoke-static {v5, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v5}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 4
-    invoke-static/range {p0 .. p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
-
-    move-result-object v12
-
-    .line 5
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
-
-    move-result-object v13
-
-    const/4 v14, 0x0
-
-    new-instance v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d;
-
-    invoke-direct {v15, v11, v2, v1, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$d;-><init>(Lkotlin/coroutines/d;Lft/m;Lsharechat/library/cvo/WebCardObject;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    const/16 v16, 0x2
-
-    const/16 v17, 0x0
-
-    invoke-static/range {v12 .. v17}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->qy()Lqk0/a;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v1
 
-    .line 7
-    invoke-virtual {v0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v2, "thirdPartyLink-react"
-
-    move-object/from16 v3, p2
-
-    move-object/from16 v4, p3
-
-    move-object/from16 v5, p4
-
-    move-object/from16 v7, p5
-
-    .line 8
-    invoke-interface/range {v1 .. v7}, Lqk0/a;->s5(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public A4(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 2
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    if-nez v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getLinkAction()Lsharechat/library/cvo/LinkAction;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_1
-
-    invoke-static {p1, p0, v0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Qz(Lin/mohalla/sharechat/data/repository/post/PostModel;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lsharechat/library/cvo/PostEntity;Lsharechat/library/cvo/LinkAction;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method protected final Az()Lsharechat/library/utilities/uservideotracker/a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O:Lsharechat/library/utilities/uservideotracker/a;
+    const/4 v2, 0x1
 
     if-eqz v0, :cond_0
 
-    return-object v0
+    invoke-static {v0}, Las0/k;->c(Landroid/content/Context;)Z
 
-    :cond_0
-    const-string v0, "userVideoTracker"
+    move-result v0
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public B4(FLjava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "variantShown"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/p;->B4(FLjava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Bu(Lin/mohalla/sharechat/data/repository/post/PostModel;Lsharechat/library/cvo/Product;)V
-    .locals 7
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "product"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
+    if-ne v0, v2, :cond_0
 
     const/4 v3, 0x1
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
     const/4 v4, 0x0
 
     const/4 v5, 0x4
@@ -4349,3981 +8761,715 @@
 
     move-object v2, p1
 
-    invoke-static/range {v1 .. v6}, Lin/mohalla/sharechat/videoplayer/p$a;->e(Lin/mohalla/sharechat/videoplayer/p;Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;ILjava/lang/Object;)V
-
-    .line 2
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    :cond_0
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Lin/mohalla/sharechat/common/ad/e;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lin/mohalla/sharechat/common/ad/e;->a()Lrm/a;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
     .line 3
-    :cond_2
-    :goto_0
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$p;
-
-    invoke-direct {p1, p2, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$p;-><init>(Lsharechat/library/cvo/Product;Ljava/lang/String;)V
-
-    invoke-static {p0, p1}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method protected final Bz()Lsharechat/manager/videoplayer/cache/d;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J:Lsharechat/manager/videoplayer/cache/d;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "videoCacheUtil"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public C0(Ljava/util/List;I)V
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
-            ">;I)V"
-        }
-    .end annotation
-
-    const-string v0, "postModelList"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    xor-int/2addr v0, v1
-
-    if-eqz v0, :cond_a
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K4()I
-
-    move-result v0
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    invoke-interface {v0, v3}, Lin/mohalla/sharechat/videoplayer/m;->K7(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-static/range {v1 .. v6}, Lom0/n$a;->c(Lom0/n;Lin/mohalla/sharechat/data/repository/post/PostModel;ZZILjava/lang/Object;)V
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    const-string v3, "mAdapter"
+    move-result-object v0
 
-    const/4 v4, 0x0
-
-    if-nez v0, :cond_1
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v4
-
-    :cond_1
-    invoke-virtual {v0, p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->q0(I)V
+    invoke-interface {v0, p1}, Lom0/n;->n0(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     .line 5
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_2
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v4
-
-    :cond_2
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->W(Ljava/util/List;)V
-
-    const/4 v0, -0x1
-
-    if-eq p2, v0, :cond_4
-
-    .line 6
-    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v2, :cond_3
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v4
-
-    :cond_3
-    invoke-virtual {v2, p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v2
 
+    if-eqz v2, :cond_8
+
+    .line 6
+    sget-object v1, Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment;->u:Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;
+
     .line 7
-    invoke-virtual {v2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isMediationAdPost()Z
-
-    move-result v2
-
-    :cond_4
-    if-eq p2, v0, :cond_8
-
-    .line 8
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v3, :cond_5
-
-    const-string v3, "binding"
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_5
-    move-object v4, v3
-
-    :goto_0
-    iget-object v3, v4, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v3, :cond_7
-
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_7
-
-    if-eqz v2, :cond_6
-
-    add-int/lit8 v2, p2, 0x1
-
-    goto :goto_1
-
-    :cond_6
-    move v2, p2
-
-    :goto_1
-    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView$p;->H1(I)V
-
-    .line 9
-    :cond_7
-    invoke-direct {p0, p2, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->hA(IZ)V
-
-    .line 10
-    :cond_8
-    iget-boolean v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    if-nez v1, :cond_a
-
-    if-eq p2, v0, :cond_a
-
-    .line 11
-    invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    .line 12
-    iput p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    .line 13
-    iput p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->E0:I
-
-    .line 14
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
-    move-result-object p2
-
-    if-eqz p2, :cond_a
-
-    .line 15
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getCommentDisabled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_a
-
-    .line 16
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getAdObject()Lsharechat/library/cvo/SharechatAd;
-
     move-result-object v0
 
-    if-eqz v0, :cond_9
+    const-string v3, ""
 
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->isMediationAdPost()Z
+    if-eqz v0, :cond_1
 
-    move-result v0
-
-    if-nez v0, :cond_a
-
-    .line 17
-    :cond_9
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getHideUserActions()Z
-
-    move-result v0
-
-    if-nez v0, :cond_a
-
-    .line 18
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p0, p2, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->iA(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    :cond_a
-    return-void
-.end method
-
-.method public C5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->e1(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    return-void
-.end method
-
-.method protected final Cz()Ler0/a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P:Ler0/a;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "videoFeedUtil"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public Do()V
-    .locals 2
-
-    const/4 v0, 0x0
-
-    .line 1
-    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
-
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-direct {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 4
-    invoke-virtual {v1, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Dr(Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment$b;)V
-    .locals 1
-
-    const-string v0, "whatsAppShareType"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->s1(Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment$b;)V
-
-    return-void
-.end method
-
-.method public Dw(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$n;
-
-    invoke-direct {v0, p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$n;-><init>(Lin/mohalla/sharechat/data/repository/post/PostModel;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    invoke-static {p0, v0}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public final Dz(Z)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_2
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    const/4 v1, 0x0
-
-    const-string v2, "mAdapter"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {v0, v3}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    .line 3
-    invoke-direct {p0, v0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-
-    .line 4
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 5
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v3, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v3
-
-    :goto_0
     invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->l0(Ljava/lang/String;Z)V
-
-    :cond_2
-    return-void
-.end method
-
-.method public Ep(Ljava/lang/String;)V
-    .locals 6
-
-    if-eqz p1, :cond_0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x6
-
-    const/4 v5, 0x0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    .line 1
-    invoke-static/range {v0 .. v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->nA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Fi()V
-    .locals 4
-
-    .line 1
-    invoke-static {p0}, Lsharechat/feature/chatroom/m2$a;->a(Lsharechat/feature/chatroom/m2;)V
-
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_2
-
-    if-eq v0, v1, :cond_2
-
-    .line 3
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Jz()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 4
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    const/4 v1, 0x0
-
-    const-string v2, "mAdapter"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {v0, v3}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 5
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v3, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v3
-
-    :goto_0
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->s0(Ljava/lang/String;)V
-
-    :cond_2
-    return-void
-.end method
-
-.method public Fl(Lnm/y;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "eventType"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    sget-object v0, Lnm/y;->SHARE_WEB_CARD:Lnm/y;
-
-    if-ne p1, v0, :cond_0
-
-    if-eqz p2, :cond_0
-
-    sget-object v0, Lgm0/q;->WHATSAPP:Lgm0/q;
-
-    invoke-virtual {p0, p2, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xo(Lin/mohalla/sharechat/data/repository/post/PostModel;Lgm0/q;)V
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/p;->k8(Lnm/y;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Fx(Lsharechat/library/cvo/UrlMeta;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 10
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getClickable()Z
-
-    move-result v2
-
-    if-ne v2, v0, :cond_0
-
-    const/4 v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
-    if-eqz v2, :cond_5
-
-    .line 2
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getLinkAction()Ljava/lang/String;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    .line 3
-    new-instance v0, Lorg/json/JSONObject;
-
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getLinkAction()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_5
-
-    .line 5
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
-
-    move-result-object v2
-
-    .line 6
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    new-instance v5, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$s;
-
-    const/4 v6, 0x0
-
-    invoke-direct {v5, v6, v1, p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$s;-><init>(Lkotlin/coroutines/d;Landroidx/fragment/app/FragmentActivity;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lorg/json/JSONObject;)V
-
-    const/4 v6, 0x2
-
-    const/4 v7, 0x0
-
-    invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    goto :goto_2
-
-    .line 7
-    :cond_1
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getUrl()Ljava/lang/String;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
-
-    move-result v2
-
-    if-nez v2, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :cond_3
-    :goto_1
-    if-nez v0, :cond_5
-
-    if-eqz p2, :cond_5
-
-    .line 8
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_5
-
-    .line 9
-    sget-object v1, Lwx/e;->k:Lwx/e$a;
-
-    .line 10
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getUrl()Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_4
-
-    .line 11
-    sget-object v0, Lin/mohalla/sharechat/data/local/Constant;->INSTANCE:Lin/mohalla/sharechat/data/local/Constant;
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/local/Constant;->getSHARECHAT_URL()Ljava/lang/String;
-
-    move-result-object v0
-
-    :cond_4
-    move-object v4, v0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/16 v8, 0x38
-
-    const/4 v9, 0x0
-
-    move-object v3, p2
-
-    .line 12
-    invoke-static/range {v1 .. v9}, Lwx/e$a;->s(Lwx/e$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ZILjava/lang/Object;)V
-
-    :cond_5
-    :goto_2
-    if-eqz p2, :cond_8
-
-    if-eqz p3, :cond_8
-
-    .line 13
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    if-eqz p1, :cond_6
-
-    .line 14
-    invoke-virtual {p1}, Lsharechat/library/cvo/UrlMeta;->getOriginalUrl()Ljava/lang/String;
-
-    move-result-object p1
-
-    if-nez p1, :cond_7
-
-    :cond_6
-    const-string p1, ""
-
-    .line 15
-    :cond_7
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Lin/mohalla/sharechat/videoplayer/p;->Y2()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 16
-    invoke-interface {v0, p2, p3, p1, v1}, Lin/mohalla/sharechat/videoplayer/p;->F(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_8
-    return-void
-.end method
-
-.method public G()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;
-
-    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    invoke-static {p0, v0}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public G3(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 7
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_5
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    invoke-interface {v1, p1}, Lin/mohalla/sharechat/videoplayer/p;->P8(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    .line 3
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_5
-
-    .line 4
-    invoke-virtual {v1}, Lsharechat/library/cvo/PostEntity;->getAudioMeta()Lsharechat/library/cvo/AudioEntity;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_5
-
-    .line 5
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->z2()V
-
-    .line 6
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const-string v4, "binding"
-
-    const/4 v5, 0x0
-
-    if-nez v3, :cond_0
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v5
-
-    :cond_0
-    iget-object v3, v3, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    const-string v6, "binding.fragmentContainerReplace"
-
-    invoke-static {v3, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v3}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 7
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v3, :cond_1
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v5
-
-    :cond_1
-    iget-object v3, v3, Lru/q2;->n:Landroid/view/View;
-
-    const-string v6, "binding.viewOutside"
-
-    invoke-static {v3, v6}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v3}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 8
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v3, :cond_2
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v5
-
-    :cond_2
-    iget-object v3, v3, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v3}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v3
-
-    const-string v6, "null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams"
-
-    invoke-static {v3, v6}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    check-cast v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
-
-    const/high16 v6, 0x42f00000    # 120.0f
-
-    .line 9
-    invoke-static {v0, v6}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    iput v0, v3, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
-
-    .line 10
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_3
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v5
-
-    :cond_3
-    iget-object v0, v0, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 11
-    sget-object v0, Lin/mohalla/sharechat/videoplayer/converttoaudio/VideoPostConvertToAudioFragment;->K:Lin/mohalla/sharechat/videoplayer/converttoaudio/VideoPostConvertToAudioFragment$a;
-
-    .line 12
-    invoke-virtual {v1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 13
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->tz()Lcom/google/gson/Gson;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "mGson.toJson(it)"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 14
-    new-instance v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;
-
-    invoke-direct {v3, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    invoke-virtual {v0, v1, v2, v3}, Lin/mohalla/sharechat/videoplayer/converttoaudio/VideoPostConvertToAudioFragment$a;->a(Ljava/lang/String;Ljava/lang/String;Lr00/a;)Lin/mohalla/sharechat/videoplayer/converttoaudio/VideoPostConvertToAudioFragment;
-
-    move-result-object p1
-
-    .line 15
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v0
-
-    if-nez v0, :cond_4
-
-    const/4 v1, 0x1
-
-    :cond_4
-    if-eqz v1, :cond_5
-
-    .line 16
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->m()Landroidx/fragment/app/r;
-
-    move-result-object v0
-
-    const v1, 0x7f0a05d0
-
-    const-string v2, "KEY_AUDIO_CONVERT_FRAGMENT"
-
-    .line 17
-    invoke-virtual {v0, v1, p1, v2}, Landroidx/fragment/app/r;->t(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/r;
-
-    move-result-object p1
-
-    const v0, 0x7f010066
-
-    const v1, 0x7f010055
-
-    .line 18
-    invoke-virtual {p1, v0, v1}, Landroidx/fragment/app/r;->u(II)Landroidx/fragment/app/r;
-
-    move-result-object p1
-
-    .line 19
-    invoke-virtual {p1, v5}, Landroidx/fragment/app/r;->g(Ljava/lang/String;)Landroidx/fragment/app/r;
-
-    move-result-object p1
-
-    .line 20
-    invoke-virtual {p1}, Landroidx/fragment/app/r;->i()I
-
-    :cond_5
-    return-void
-.end method
-
-.method public Gi(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setPosition(I)V
-
-    return-void
-.end method
-
-.method public final Hz()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
-
-    return v0
-.end method
-
-.method protected Iy()I
-    .locals 1
-
-    const v0, 0x7f0d01a7
-
-    return v0
-.end method
-
-.method public final Iz()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {v0}, Lin/mohalla/sharechat/post/comment/sendMessage/SendMessageBottomFragment;->Qq()V
-
-    return-void
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q2()V
-
-    return-void
-.end method
-
-.method public J6(Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/k;)V
-    .locals 36
-
-    move-object/from16 v15, p0
-
-    const-string v0, "mStartPostId"
-
-    move-object/from16 v7, p1
-
-    invoke-static {v7, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "videoAdapterContainer"
-
-    move-object/from16 v13, p2
-
-    invoke-static {v13, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-boolean v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Q0:Z
-
-    if-eqz v0, :cond_0
-
-    sget-object v0, Lsharechat/manager/abtest/enums/s;->CONTROL:Lsharechat/manager/abtest/enums/s;
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual/range {p2 .. p2}, Lin/mohalla/sharechat/videoplayer/k;->n()Lsharechat/manager/abtest/enums/s;
-
-    move-result-object v0
-
-    :goto_0
-    iput-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    .line 2
-    iget-boolean v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    const-string v30, "binding"
-
-    const/16 v31, 0x0
-
     if-nez v0, :cond_2
 
-    .line 3
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;
-
-    invoke-direct {v0, v15}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    .line 4
-    new-instance v1, Landroidx/recyclerview/widget/n;
-
-    invoke-direct {v1, v0}, Landroidx/recyclerview/widget/n;-><init>(Landroidx/recyclerview/widget/n$f;)V
-
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    invoke-static/range {v30 .. v30}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object/from16 v0, v31
-
     :cond_1
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/n;->g(Landroidx/recyclerview/widget/RecyclerView;)V
-
-    .line 5
-    :cond_2
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_3
-
-    const/4 v1, 0x1
-
-    invoke-interface {v0, v1}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
-
-    .line 6
-    :cond_3
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_9
-
-    .line 7
-    sget-object v0, Lws/g;->s:Lws/g$a;
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lws/g$a;->a(Landroidx/fragment/app/FragmentActivity;)Lws/g;
-
-    move-result-object v5
-
-    if-eqz v5, :cond_4
-
-    .line 8
-    invoke-static {v5}, Lkp/e;->t(Landroid/view/View;)V
-
-    :cond_4
-    const/16 v29, 0x0
-
-    .line 9
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_9
-
-    .line 10
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->oy()Lkotlinx/coroutines/s0;
-
-    move-result-object v2
-
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->wz()Los/s0;
-
-    move-result-object v3
-
-    .line 11
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/p;->j()Lnz/t;
-
-    move-result-object v6
-
-    .line 12
-    iget-object v9, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 13
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->Jo()Lbz/a;
-
-    move-result-object v10
-
-    .line 14
-    iget-object v11, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
-
-    .line 15
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->sz()Lin/mohalla/sharechat/data/local/prefs/GlobalPrefs;
-
-    move-result-object v12
-
-    .line 16
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M0:Ljava/lang/Long;
-
-    if-eqz v0, :cond_5
-
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    goto :goto_1
-
-    :cond_5
-    const-wide/16 v0, 0x0
-
-    :goto_1
-    move-wide/from16 v16, v0
-
-    .line 17
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->pz()Lcom/google/firebase/analytics/FirebaseAnalytics;
-
-    move-result-object v18
-
-    .line 18
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Bz()Lsharechat/manager/videoplayer/cache/d;
-
-    move-result-object v19
-
-    .line 19
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->oz()Ldagger/Lazy;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ldagger/Lazy;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v14, v0
-
-    check-cast v14, Lsharechat/library/utilities/c;
-
-    .line 20
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->nz()Lin/mohalla/ads/sharechat/repo/implementations/a;
-
-    move-result-object v20
-
-    .line 21
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Az()Lsharechat/library/utilities/uservideotracker/a;
-
-    move-result-object v21
-
-    .line 22
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/p;->Tk()Ljava/lang/String;
-
-    move-result-object v22
-
-    .line 23
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->zz()Lsharechat/library/utilities/systemservices/SensorManagerUtil;
-
-    move-result-object v23
-
-    .line 24
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->rz()Lsharechat/ads/manager/ima/feature/imaextension/d;
-
-    move-result-object v24
-
-    .line 25
-    invoke-direct/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->xz()Landroid/os/HandlerThread;
-
-    move-result-object v26
-
-    .line 26
-    iget-object v8, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P0:Lsharechat/manager/abtest/enums/r;
-
-    .line 27
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_6
-
-    const-string v4, "IS_IMMERSIVE_SCREEN"
-
-    invoke-virtual {v0, v4, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    move/from16 v32, v0
-
-    goto :goto_2
-
-    :cond_6
-    const/16 v32, 0x0
-
-    .line 28
-    :goto_2
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    move-object/from16 v25, v0
-
-    .line 29
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Ljava/lang/String;
-
-    move-object/from16 v27, v0
-
-    .line 30
-    iget-object v0, v15, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S0:Ljava/util/Map;
-
-    move-object/from16 v28, v0
-
-    .line 31
-    new-instance v4, Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    move-object v0, v4
-
-    const-string v1, "get()"
-
-    .line 32
-    invoke-static {v14, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object/from16 v1, p0
-
-    move-object/from16 v33, v4
-
-    move-object/from16 v4, p0
-
-    move-object/from16 v7, p1
-
-    move-object/from16 v34, v8
-
-    move-object/from16 v8, p2
-
-    move-object/from16 v35, v14
-
-    move-wide/from16 v13, v16
-
-    move-object/from16 v15, v19
-
-    move-object/from16 v16, v18
-
-    move-object/from16 v17, v35
-
-    move-object/from16 v18, v20
-
-    move-object/from16 v19, v21
-
-    move-object/from16 v20, v22
-
-    move-object/from16 v21, v23
-
-    move-object/from16 v22, v24
-
-    move-object/from16 v23, v26
-
-    move-object/from16 v24, v34
-
-    move/from16 v26, v32
-
-    .line 33
-    invoke-direct/range {v0 .. v29}, Lin/mohalla/sharechat/videoplayer/adapter/a;-><init>(Landroidx/fragment/app/Fragment;Lkotlinx/coroutines/s0;Los/s0;Ldz/e;Lws/g;Lnz/t;Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/k;Ljava/util/concurrent/atomic/AtomicInteger;Lbz/a;Ljava/lang/String;Lin/mohalla/sharechat/data/local/prefs/GlobalPrefs;JLsharechat/manager/videoplayer/cache/d;Lcom/google/firebase/analytics/FirebaseAnalytics;Lsharechat/library/utilities/c;Lin/mohalla/ads/sharechat/repo/implementations/a;Lsharechat/library/utilities/uservideotracker/a;Ljava/lang/String;Lsharechat/library/utilities/systemservices/SensorManagerUtil;Lsharechat/ads/manager/ima/feature/imaextension/d;Landroid/os/HandlerThread;Lsharechat/manager/abtest/enums/r;Lsharechat/manager/abtest/enums/s;ZLjava/lang/String;Ljava/util/Map;Lsharechat/manager/videoplayer/debugView/o;)V
-
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, v33
-
-    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    .line 34
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v1, :cond_7
-
-    invoke-static/range {v30 .. v30}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object/from16 v1, v31
-
-    :cond_7
-    iget-object v1, v1, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v2, :cond_8
-
-    const-string v2, "mAdapter"
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object/from16 v2, v31
-
-    :cond_8
-    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$h;)V
-
-    goto :goto_3
-
-    :cond_9
-    move-object v0, v15
-
-    .line 35
-    :goto_3
-    invoke-virtual/range {p2 .. p2}, Lin/mohalla/sharechat/videoplayer/k;->e()Lin/mohalla/sharechat/common/abtest/a;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_a
-
-    invoke-virtual {v1}, Lin/mohalla/sharechat/common/abtest/a;->N()Lsharechat/library/cvo/LikeIconConfig;
-
-    move-result-object v31
-
-    :cond_a
-    move-object/from16 v1, v31
-
-    iput-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L0:Lsharechat/library/cvo/LikeIconConfig;
-
-    .line 36
-    invoke-virtual/range {p2 .. p2}, Lin/mohalla/sharechat/videoplayer/k;->e()Lin/mohalla/sharechat/common/abtest/a;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_b
-
-    invoke-virtual {v1}, Lin/mohalla/sharechat/common/abtest/a;->X()Ll40/l0;
-
-    :cond_b
-    return-void
-.end method
-
-.method public J9(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    const v1, 0x7f120665
-
-    invoke-static {v0, v1}, Lvp/d;->r(Landroid/view/View;I)V
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->j0(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    invoke-interface {v1, v0}, Lin/mohalla/sharechat/videoplayer/p;->C1(Lsharechat/library/cvo/PostEntity;)V
-
-    .line 3
-    :cond_1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Yz(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Ja(I)V
-    .locals 2
-
-    const/4 v0, -0x1
-
-    if-le p1, v0, :cond_2
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->o0(I)V
-
-    const/4 v0, 0x1
-
-    if-gt p1, v0, :cond_2
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v0
-
-    :goto_0
-    iget-object v0, v1, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView;->p1(I)V
-
-    :cond_2
-    return-void
-.end method
-
-.method public Ji(Lnm/l;)V
-    .locals 1
-
-    const-string v0, "carouselCardViewed"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->we(Lnm/l;)V
-
-    return-void
-.end method
-
-.method public Jv(Lin/mohalla/sharechat/data/repository/post/PostModel;J)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$r;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$r;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lsharechat/library/cvo/PostEntity;J)V
-
-    invoke-static {p0, v0}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public K(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
-    .locals 7
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "report"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move v5, p4
-
-    move v6, p5
-
-    invoke-interface/range {v1 .. v6}, Lin/mohalla/sharechat/videoplayer/p;->S0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
-
-    move-result-object p2
-
-    const p3, 0x7f120804
-
-    invoke-static {p2, p3}, Lvp/d;->r(Landroid/view/View;I)V
-
-    .line 3
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Yz(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public K4()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->getItemCount()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public K6(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Ldz/e$a;->g(Ldz/e;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Kj(Lin/mohalla/sharechat/home/main/a;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/common/a$a;->a(Lin/mohalla/sharechat/common/a;Lin/mohalla/sharechat/home/main/a;)V
-
-    return-void
-.end method
-
-.method public Kn(F)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-nez v0, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;->setSlopThreshold(F)V
-
-    :goto_0
-    return-void
-.end method
-
-.method public Ko(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
-    .locals 0
-
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_0
-
-    .line 1
-    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
-
-    move-result-object p2
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    invoke-virtual {p0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p0, p1, p2, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->oA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method protected Ky(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 0
-
-    const-string p2, "inflatedView"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-static {p1}, Lru/q2;->a(Landroid/view/View;)Lru/q2;
-
-    move-result-object p1
-
-    const-string p2, "bind(inflatedView)"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p1
-
-    invoke-interface {p1, p0}, Lin/mohalla/sharechat/common/base/j;->mk(Lin/mohalla/sharechat/common/base/l;)V
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getLifecycle()Landroidx/lifecycle/q;
-
-    move-result-object p1
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->zz()Lsharechat/library/utilities/systemservices/SensorManagerUtil;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Landroidx/lifecycle/q;->a(Landroidx/lifecycle/w;)V
-
-    .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Fz()V
-
-    return-void
-.end method
-
-.method public Kz(Z)V
-    .locals 5
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    .line 2
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v2, 0x0
-
-    const-string v3, "binding"
-
-    if-nez v1, :cond_0
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v1, v2
-
-    :cond_0
-    iget-object v1, v1, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-virtual {v1}, Landroid/widget/FrameLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    .line 3
-    invoke-static {v0}, Lip/a;->r(Landroid/content/Context;)I
-
-    move-result p1
-
-    goto :goto_0
-
-    .line 4
-    :cond_2
-    invoke-static {v0}, Lip/a;->r(Landroid/content/Context;)I
-
-    move-result p1
-
-    iget v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->A:F
-
-    invoke-static {v0, v4}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v0
-
-    float-to-int v0, v0
-
-    sub-int/2addr p1, v0
-
-    .line 5
-    :goto_0
-    iput p1, v1, Landroid/view/ViewGroup$LayoutParams;->width:I
-
-    .line 6
-    :goto_1
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_3
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_2
-
-    :cond_3
-    move-object v2, p1
-
-    :goto_2
-    iget-object p1, v2, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V
-
-    :cond_4
-    return-void
-.end method
-
-.method public L(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "payload"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->u0(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Lg(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Ldz/e$a;->d(Ldz/e;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Lp(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    .line 2
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostLiked()Z
-
-    move-result v0
-
-    xor-int/lit8 v0, v0, 0x1
-
-    invoke-virtual {p1, v0}, Lsharechat/library/cvo/PostEntity;->setPostLiked(Z)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public final Lz()V
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-eqz v0, :cond_4
-
-    .line 2
-    iget v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    const/4 v2, -0x1
-
-    const/4 v3, 0x0
-
-    const-string v4, "mAdapter"
-
-    if-eq v1, v2, :cond_1
-
-    if-nez v0, :cond_0
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
     move-object v0, v3
 
-    :cond_0
-    iget v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {v0, v1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->x0(I)V
-
-    goto :goto_1
-
-    :cond_1
-    if-nez v0, :cond_2
-
-    .line 3
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v3
-
-    :cond_2
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->getItemCount()I
-
-    move-result v0
-
-    if-lez v0, :cond_4
-
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_3
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_3
-    move-object v3, v0
-
-    :goto_0
-    const/4 v0, 0x0
-
-    invoke-virtual {v3, v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->x0(I)V
-
-    .line 4
-    :cond_4
-    :goto_1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M3()Z
-
-    move-result v0
-
-    .line 5
-    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Kz(Z)V
-
-    return-void
-.end method
-
-.method public M3()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/m;->d9()Z
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :goto_0
-    return v0
-.end method
-
-.method public Md(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Ldz/e$a;->f(Ldz/e;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Mt(Lx40/a;Z)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Ldz/e$a;->b(Ldz/e;Lx40/a;Z)V
-
-    return-void
-.end method
-
-.method public Mv(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    const/4 v0, 0x1
-
-    invoke-virtual {p1, v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setCtaAnimationDone(Z)V
-
-    return-void
-.end method
-
-.method public Nq(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "adNetwork"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->Ms(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Oj(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;ZLjava/lang/String;)V
-    .locals 6
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "ctaRedirectUrl"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0, p1, p3, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->ro(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-
-    .line 2
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p3
-
-    const/4 p4, 0x0
-
-    if-eqz p3, :cond_0
-
-    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getAdObject()Lsharechat/library/cvo/SharechatAd;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_0
-
-    invoke-virtual {p3}, Lsharechat/library/cvo/SharechatAd;->getLaunchAction()Lsharechat/library/cvo/WebCardObject;
-
-    move-result-object p3
-
-    move-object v1, p3
-
-    goto :goto_0
-
-    :cond_0
-    move-object v1, p4
-
-    .line 3
-    :goto_0
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_2
-
-    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_2
-
-    invoke-virtual {p3}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object p3
-
-    if-nez p3, :cond_1
-
-    goto :goto_2
-
-    :cond_1
-    :goto_1
-    move-object v5, p3
-
-    goto :goto_3
-
-    :cond_2
-    :goto_2
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Lin/mohalla/sharechat/common/ad/e;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_3
-
-    invoke-virtual {p3}, Lin/mohalla/sharechat/common/ad/e;->a()Lrm/a;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_3
-
-    invoke-virtual {p3}, Lrm/a;->k()Ljava/lang/String;
-
-    move-result-object p3
-
-    goto :goto_1
-
-    :cond_3
-    move-object v5, p4
-
-    :goto_3
-    if-eqz v1, :cond_6
-
-    .line 4
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_5
-
-    .line 5
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p3
-
-    if-eqz p3, :cond_4
-
-    invoke-virtual {p3}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object p4
-
-    :cond_4
-    invoke-virtual {p0, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p1, p3}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getJsonForReact(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 6
-    invoke-virtual {v1, p1}, Lsharechat/library/cvo/WebCardObject;->setModifiedExtras(Ljava/lang/String;)V
-
-    .line 7
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v2
-
     .line 8
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getAuthorId()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 9
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getMeta()Ljava/lang/String;
+    :cond_2
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
 
     move-result-object v4
 
-    move-object v0, p0
+    if-eqz v4, :cond_3
 
-    .line 10
-    invoke-virtual/range {v0 .. v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->A(Lsharechat/library/cvo/WebCardObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    move-result-object v4
+
+    if-nez v4, :cond_4
+
+    :cond_3
+    move-object v4, v3
+
+    .line 9
+    :cond_4
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v3
+
+    const/4 v5, 0x0
+
+    if-eqz v3, :cond_5
+
+    invoke-virtual {v3}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_1
 
     :cond_5
-    return-void
+    move-object v3, v5
+
+    :goto_1
+    invoke-virtual {p0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v3, "variant-4"
+
+    const-string v7, "variant-5"
+
+    .line 10
+    filled-new-array {v3, v7}, [Ljava/lang/String;
+
+    move-result-object v3
 
     .line 11
+    invoke-static {v3}, Lso0/w0;->e([Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object v3
+
+    invoke-interface {v3, p2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    .line 12
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_6
+
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getTags()Ljava/util/List;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_6
+
+    invoke-static {p2}, Lso0/d0;->N(Ljava/util/List;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lsharechat/library/cvo/PostTag;
+
+    if-eqz p2, :cond_6
+
+    invoke-virtual {p2}, Lsharechat/library/cvo/PostTag;->getTagId()Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_2
+
     :cond_6
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+    move-object p2, v5
+
+    :goto_2
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 13
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
     move-result-object p1
 
     if-eqz p1, :cond_7
 
-    sget-object p3, Lwx/e;->k:Lwx/e$a;
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getBranchIOLink()Ljava/lang/String;
 
-    invoke-virtual {p3, p1, p2, v5}, Lwx/e$a;->c(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object p1
+
+    move-object v9, p1
+
+    goto :goto_3
 
     :cond_7
+    move-object v9, v5
+
+    :goto_3
+    move-object v3, v0
+
+    move-object v5, v6
+
+    move-object v6, p0
+
+    .line 14
+    invoke-static/range {v1 .. v9}, Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;->b(Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lfo1/a;ZLjava/lang/String;Ljava/lang/String;)V
+
+    :cond_8
     return-void
 .end method
 
-.method public Os(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Ldz/e$a;->e(Ldz/e;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public P2(Lsharechat/library/cvo/PostEntity;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "payload"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->v0(Lsharechat/library/cvo/PostEntity;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public P6(Ljava/util/Map;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    const-string v0, "stringsMap"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S0:Ljava/util/Map;
-
-    return-void
-.end method
-
-.method public Pz(IJZ)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3, p4}, Lin/mohalla/sharechat/videoplayer/p;->Ql(IJZ)V
-
-    return-void
-.end method
-
-.method public Q3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-    .locals 8
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "likeType"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T:Ljava/lang/String;
-
-    invoke-interface {v0, p1, p2, v1, p3}, Lin/mohalla/sharechat/videoplayer/p;->r1(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;Ljava/lang/String;)V
-
-    .line 2
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
-
-    move-result-object v2
-
-    .line 3
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
-
-    move-result-object v3
-
-    new-instance v5, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$m;
-
-    const/4 p1, 0x0
-
-    invoke-direct {v5, p1, p0, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$m;-><init>(Lkotlin/coroutines/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    const/4 v4, 0x0
-
-    const/4 v6, 0x2
-
-    const/4 v7, 0x0
-
-    invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    return-void
-.end method
-
-.method public Q8(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 12
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    .line 2
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAudioMeta()Lsharechat/library/cvo/AudioEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->uz()Lwx/e;
-
-    move-result-object v1
-
-    const/4 v3, 0x0
-
-    .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->tz()Lcom/google/gson/Gson;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/16 v10, 0xf8
-
-    const/4 v11, 0x0
-
-    .line 5
-    invoke-static/range {v1 .. v11}, Lbz/a$a;->b(Lbz/a;Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZILjava/lang/Object;)Landroid/content/Intent;
-
-    move-result-object p1
-
-    const/16 v0, 0x1e2f
-
-    .line 6
-    invoke-virtual {p0, p1, v0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->startActivityForResult(Landroid/content/Intent;I)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Qf(Ljava/lang/String;FJLin/mohalla/sharechat/data/repository/post/PostModel;IJJLjava/lang/String;Ljava/lang/String;ILjava/util/List;JJIZLw40/y0;)V
+.method public final h4(Lin/mohalla/sharechat/data/repository/post/PostModel;ZZZLdp0/a;)V
     .locals 22
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/lang/String;",
-            "FJ",
+            "(Z",
             "Lin/mohalla/sharechat/data/repository/post/PostModel;",
-            "IJJ",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "I",
-            "Ljava/util/List<",
-            "Lin/mohalla/sharechat/common/events/modals/AbrTrack;",
-            ">;JJIZ",
-            "Lw40/y0;",
-            ")V"
-        }
-    .end annotation
-
-    move-object/from16 v5, p1
-
-    move/from16 v2, p2
-
-    move-wide/from16 v3, p3
-
-    move-object/from16 v1, p5
-
-    move/from16 v6, p6
-
-    move-wide/from16 v7, p7
-
-    move-wide/from16 v9, p9
-
-    move-object/from16 v12, p11
-
-    move-object/from16 v13, p12
-
-    move/from16 v14, p13
-
-    move-object/from16 v15, p14
-
-    move-wide/from16 v16, p15
-
-    move-wide/from16 v18, p17
-
-    move/from16 v20, p19
-
-    move/from16 v11, p20
-
-    move-object/from16 v21, p21
-
-    const-string v0, "playMode"
-
-    move-object/from16 p2, v1
-
-    move-object/from16 v1, p1
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "postModel"
-
-    move-object/from16 v1, p5
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "trackChangeDetails"
-
-    move-object/from16 v1, p14
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    move-object/from16 v1, p2
-
-    invoke-interface/range {v0 .. v21}, Lin/mohalla/sharechat/videoplayer/p;->Li(Lin/mohalla/sharechat/data/repository/post/PostModel;FJLjava/lang/String;IJJZLjava/lang/String;Ljava/lang/String;ILjava/util/List;JJILw40/y0;)V
-
-    return-void
-.end method
-
-.method public Qh(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-    .locals 1
-
-    const-string p3, "postModel"
-
-    invoke-static {p1, p3}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p3
-
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {p3, p1, p2, v0}, Lin/mohalla/sharechat/videoplayer/p;->D3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Qq()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->onBackPressed()V
-
-    return-void
-.end method
-
-.method public Rv(I)V
-    .locals 0
-
-    add-int/lit8 p1, p1, -0x1
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xz(I)V
-
-    return-void
-.end method
-
-.method public Sg(Ljava/lang/String;I)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Ldz/e$a;->c(Ldz/e;Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method public So(Ljava/lang/String;)V
-    .locals 3
-
-    const-string v0, "profileId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    sget-object v1, Lwx/e;->k:Lwx/e$a;
-
-    const-string v2, "video_action"
-
-    invoke-virtual {v1, v0, p1, v2}, Lwx/e$a;->T(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Ss(Ljava/util/List;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            "ZZZ",
+            "Ldp0/a<",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
-    const-string v0, "postModelList"
+    move-object/from16 v6, p0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "post"
+
+    move-object/from16 v7, p1
+
+    invoke-static {v7, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
 
-    xor-int/lit8 v0, v0, 0x1
+    xor-int/2addr v0, v1
 
-    if-eqz v0, :cond_1
+    if-ne v0, v1, :cond_0
 
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    iput v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->X(Ljava/util/List;)V
-
-    .line 4
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R:I
-
-    if-gtz v0, :cond_1
-
-    .line 5
-    invoke-interface {p1}, Ljava/util/List;->size()I
-
-    move-result p1
-
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->cA(I)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public T7(ILandroid/view/View;)V
-    .locals 2
-
-    const-string v0, "adCreative"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    .line 3
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getAdsUuid()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 4
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNativeAdCreativeUrl()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 5
-    invoke-interface {v0, p2, v1, p1}, Lin/mohalla/sharechat/videoplayer/p;->z0(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Tf(Ljava/lang/String;)V
-    .locals 5
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->j0(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_1
-
-    invoke-virtual {v4}, Lsharechat/library/cvo/PostEntity;->isPinned()Z
-
-    move-result v4
-
-    if-ne v4, v2, :cond_1
+    const/4 v0, 0x1
 
     goto :goto_0
 
-    :cond_1
-    const/4 v2, 0x0
+    :cond_0
+    const/4 v0, 0x0
 
     :goto_0
-    if-eqz v2, :cond_3
+    if-eqz v0, :cond_5
+
+    .line 2
+    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_4
 
     .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    iget-boolean v0, v6, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z0:Z
 
-    move-result-object v2
-
-    invoke-interface {v2, p1}, Lin/mohalla/sharechat/videoplayer/p;->u0(Ljava/lang/String;)V
+    if-eqz v0, :cond_1
 
     .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Uz()V
 
-    move-result-object p1
+    const-wide/16 v8, 0x64
 
     .line 5
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
+    new-instance v11, Lom0/h0;
+
+    move-object v0, v11
+
+    move-object/from16 v1, p0
+
+    move-object v2, v10
+
+    move/from16 v3, p3
+
+    move/from16 v4, p2
+
+    move-object/from16 v5, p5
+
+    invoke-direct/range {v0 .. v5}, Lom0/h0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;ZZLdp0/a;)V
+
+    invoke-static {v6, v8, v9, v11}, Lis1/a;->b(Ljava/lang/Object;JLdp0/a;)Lyr0/l1;
+
+    goto :goto_3
+
+    .line 6
+    :cond_1
+    sget-object v8, Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet;->z:Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$a;
+
+    .line 7
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v9
+
+    const-string v0, "childFragmentManager"
+
+    invoke-static {v9, v0}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v6, v10}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v11
+
+    .line 8
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lom0/n;->p()Z
+
+    move-result v12
+
+    .line 9
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+    const-string v3, "KEY_AFTER_VERIFICATION"
 
-    move-result-object v1
-
-    :cond_2
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "UnpinPost"
-
-    .line 6
-    invoke-interface {p1, v0, v1}, Lin/mohalla/sharechat/videoplayer/p;->R0(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_1
-
-    .line 7
-    :cond_3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v2
-
-    invoke-interface {v2, p1}, Lin/mohalla/sharechat/videoplayer/p;->d0(Ljava/lang/String;)V
-
-    .line 8
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p1
-
-    if-eqz v0, :cond_4
-
-    .line 9
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    invoke-virtual {v0}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
-
-    move-result-object v1
-
-    :cond_4
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "PinPost"
-
-    .line 10
-    invoke-interface {p1, v0, v1}, Lin/mohalla/sharechat/videoplayer/p;->R0(Ljava/lang/String;Ljava/lang/String;)V
-
-    :goto_1
-    return-void
-.end method
-
-.method public Tj(Lsharechat/manager/abtest/enums/r;)V
-    .locals 1
-
-    const-string v0, "videoPlayerFollowVariant"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->P0:Lsharechat/manager/abtest/enums/r;
-
-    return-void
-.end method
-
-.method public U8(IZ)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    invoke-direct {p0, p1, v0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->pA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-
-    return-void
-.end method
-
-.method public U9(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    sget-object v0, Lgm0/q;->OTHERS:Lgm0/q;
-
-    invoke-virtual {p0, p1, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->ug(Ljava/lang/String;Lgm0/q;)V
-
-    return-void
-.end method
-
-.method public Vd(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Ldz/e$a;->h(Ldz/e;Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-
-    return-void
-.end method
-
-.method public We(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->onAdPostShown()V
-
-    return-void
-.end method
-
-.method public X3(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->C2(Ljava/lang/String;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Xg(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lz90/b$a;->d(Lz90/b;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Xj(Ljava/lang/String;JLin/mohalla/sharechat/data/repository/post/PostModel;J)V
-    .locals 8
-
-    const-string v0, "playMode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "postModel"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    move-object v2, p4
-
-    move-wide v3, p2
-
-    move-object v5, p1
-
-    move-wide v6, p5
-
-    invoke-interface/range {v1 .. v7}, Lin/mohalla/sharechat/videoplayer/p;->ek(Lin/mohalla/sharechat/data/repository/post/PostModel;JLjava/lang/String;J)V
-
-    return-void
-.end method
-
-.method public Xm(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Ldz/e$a;->m(Ldz/e;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public Xo(Lin/mohalla/sharechat/data/repository/post/PostModel;Lgm0/q;)V
-    .locals 1
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "packageName"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->H2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    .line 2
-    invoke-static {p1}, Ltq0/e;->G(Lin/mohalla/sharechat/data/repository/post/PostModel;)Z
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v0
 
-    if-nez v0, :cond_0
+    move v15, v0
 
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    goto :goto_1
 
-    move-result-object v0
+    :cond_2
+    const/4 v15, 0x0
 
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->C4(Lin/mohalla/sharechat/data/repository/post/PostModel;Lgm0/q;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public Y(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public Yf(Ljava/lang/String;JLin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "playMode"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "postModel"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 10
+    :goto_1
+    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    invoke-interface {v0, p4, p2, p3, p1}, Lin/mohalla/sharechat/videoplayer/p;->I6(Lin/mohalla/sharechat/data/repository/post/PostModel;JLjava/lang/String;)V
+    if-eqz v0, :cond_3
 
-    return-void
-.end method
+    const-string v3, "OPEN_REPLY_FRGAMENT"
 
-.method public Yx(Ljava/lang/String;Z)V
-    .locals 0
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
-    .line 1
-    invoke-static {p0, p1, p2}, Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w$a;->f(Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w;Ljava/lang/String;Z)V
+    move-result v2
 
-    return-void
-.end method
+    move/from16 v16, v2
 
-.method public Z0(Ljava/lang/String;)V
-    .locals 8
+    goto :goto_2
 
-    const-string v0, "postId"
+    :cond_3
+    const/16 v16, 0x0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 11
+    :goto_2
+    iget-object v0, v6, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->S3()Z
 
-    const/4 v1, 0x0
+    move-result v2
 
-    if-nez v0, :cond_0
+    xor-int/lit8 v18, v2, 0x1
 
-    const-string v0, "mAdapter"
+    const/16 v21, 0x1
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    const/4 v14, 0x1
 
-    move-object v0, v1
+    move/from16 v13, p3
 
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->n0(Ljava/lang/String;)I
+    move-object/from16 v17, v0
 
-    move-result p1
+    move/from16 v19, p2
 
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
+    move-object/from16 v20, p5
 
-    sub-int/2addr v0, p1
+    .line 12
+    invoke-virtual/range {v8 .. v21}, Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$a;->a(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;ZZZZZLjava/lang/String;ZZLdp0/a;Z)V
 
-    add-int/lit8 v0, v0, 0x1
+    :cond_4
+    :goto_3
+    if-nez p4, :cond_5
 
-    .line 3
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    .line 13
+    invoke-virtual/range {p1 .. p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    .line 14
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {}, Lkotlinx/coroutines/j1;->c()Lkotlinx/coroutines/s2;
+    invoke-virtual {v6, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v2
 
-    const/4 v4, 0x0
+    invoke-interface {v1, v2, v0}, Lom0/n;->H(Ljava/lang/String;Lsharechat/library/cvo/PostEntity;)V
 
-    new-instance v5, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b0;
+    :cond_5
+    return-void
+.end method
 
-    invoke-direct {v5, v0, p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$b0;-><init>(ILin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lkotlin/coroutines/d;)V
+.method public final hm()V
+    .locals 5
 
-    const/4 v6, 0x2
+    .line 1
+    :try_start_0
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
 
-    const/4 v7, 0x0
+    move-result-object v0
 
-    invoke-static/range {v2 .. v7}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
+    sget-object v1, Lyr0/s0;->a:Lyr0/s0;
+
+    .line 2
+    sget-object v1, Lds0/q;->a:Lyr0/t1;
+
+    .line 3
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e0;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, p0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$e0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lvo0/d;)V
+
+    const/4 v4, 0x2
+
+    invoke-static {v0, v1, v3, v2, v4}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x4
+
+    .line 4
+    invoke-static {p0, v0, v1, v2}, Las0/k;->G(Ljava/lang/Object;Ljava/lang/Throwable;ZI)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final hp(Ln00/y;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "eventType"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object v0, Ln00/y;->SHARE_WEB_CARD:Ln00/y;
+
+    if-ne p1, v0, :cond_0
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    sget-object v0, Lkv1/q;->WHATSAPP:Lkv1/q;
+
+    .line 3
+    invoke-virtual {p0, p2, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Vq(Lin/mohalla/sharechat/data/repository/post/PostModel;Lkv1/q;)V
+
+    .line 4
+    :cond_0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3}, Lom0/n;->a8(Ln00/y;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public Z1(Lsharechat/library/cvo/WebCardObject;)V
-    .locals 7
+.method public final hr(Lin/mohalla/sharechat/common/events/modals/ProductDataEventV2;)V
+    .locals 1
 
-    const-string v0, "webCardObject"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    invoke-interface {v0, p1}, Lqm0/b;->hr(Lin/mohalla/sharechat/common/events/modals/ProductDataEventV2;)V
+
+    return-void
+.end method
+
+.method public final i3(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
 
     .line 2
-    invoke-static {p0}, Landroidx/lifecycle/y;->a(Landroidx/lifecycle/x;)Landroidx/lifecycle/r;
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 3
-    invoke-static {}, Lin/mohalla/core/extensions/coroutines/e;->b()Lkotlinx/coroutines/m0;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    new-instance v4, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c;
-
-    const/4 v5, 0x0
-
-    invoke-direct {v4, v5, v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$c;-><init>(Lkotlin/coroutines/d;Landroid/content/Context;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lsharechat/library/cvo/WebCardObject;)V
-
-    const/4 v5, 0x2
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Lkotlinx/coroutines/j;->d(Lkotlinx/coroutines/s0;Lkotlin/coroutines/g;Lkotlinx/coroutines/u0;Lr00/p;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    :cond_0
-    return-void
-.end method
-
-.method public Z2()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->k:Landroid/widget/FrameLayout;
-
-    const-string v1, "binding.swipeTutorialWrapper"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
+    invoke-interface {v0, p1, v1, p2, p3}, Lom0/n;->F(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public Z3()V
-    .locals 1
+.method public final ie(Ljava/lang/String;)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/m;->E8()V
-
-    :cond_0
     return-void
 .end method
 
-.method public Z6(Lin/mohalla/sharechat/data/repository/post/PostModel;F)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x1
+.method public final j5(Landroid/view/animation/Animation;)V
+    .locals 4
 
     .line 1
-    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Z
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const/4 v1, 0x0
+
+    const-string v2, "binding"
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lre0/j2;->o:Landroid/widget/FrameLayout;
+
+    const-string v3, "binding.swipeTutorialWrapper"
+
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
 
     .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
     if-eqz v0, :cond_0
 
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/m;->e2()V
+    iget-object v0, v0, Lre0/j2;->k:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+
+    return-void
+
+    :cond_0
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
 
     .line 3
-    :cond_0
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+    :cond_1
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
 
-    move-result-object p1
+    throw v1
+.end method
 
-    if-eqz p1, :cond_1
+.method public final j6(I)V
+    .locals 2
 
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    move-result-object p1
+    if-eqz v0, :cond_0
 
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object v0
 
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->Qb(Ljava/lang/String;F)V
+    const/4 v1, 0x1
 
-    :cond_1
+    invoke-virtual {p0, p1, v0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->gA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final lg(Ldp0/l;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ldp0/l<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v3, p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f;-><init>(Lvo0/d;Ldp0/l;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    const/4 p1, 0x2
+
+    invoke-static {v0, v1, v3, v2, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
     return-void
 .end method
 
-.method public Zf()Z
-    .locals 1
+.method public final lr(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
+    .locals 0
 
-    const/4 v0, 0x1
-
-    return v0
+    return-void
 .end method
 
-.method public ao(Ljava/lang/String;Lsharechat/manager/abtest/enums/r;)V
-    .locals 10
-
-    const-string v0, "mPostId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "videoPlayerFollowVariant"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final ly()V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->I()I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->Z()Z
+
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
     const-string v1, "binding"
 
     const/4 v2, 0x0
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_1
 
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    iget-object v0, v0, Lre0/j2;->j:Landroid/widget/FrameLayout;
 
-    move-object v0, v2
+    const-string v3, "binding.fragmentContainerReplace"
 
-    :cond_0
-    iget-object v0, v0, Lru/q2;->e:Landroid/widget/FrameLayout;
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v3, "binding.flPostCommentFooter"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    const v4, 0x7f0600ea
-
-    const v5, 0x7f1201c8
-
-    const v6, 0x7f060037
-
-    if-eqz v0, :cond_13
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v0
-
-    if-nez v0, :cond_13
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_1
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    invoke-virtual {v0}, Lru/h5;->c()Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    move-result-object v0
-
-    const-string v7, "binding.videoDesign2.root"
-
-    invoke-static {v0, v7}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->F(Landroid/view/View;)V
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
 
     .line 4
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    const/4 v7, 0x0
+    if-eqz v0, :cond_0
 
-    if-eqz v0, :cond_4
+    iget-object v0, v0, Lre0/j2;->t:Landroid/view/View;
+
+    const-string v1, "binding.viewOutside"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
 
     .line 5
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    :cond_1
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    if-nez v0, :cond_2
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
+    throw v2
 
     :cond_2
-    iget-object v0, v0, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    iget-object v8, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v8, :cond_3
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v8, v2
-
-    :cond_3
-    invoke-virtual {v8}, Lru/q2;->c()Landroidx/coordinatorlayout/widget/CoordinatorLayout;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v8
-
-    const-string v9, "binding.root.context"
-
-    invoke-static {v8, v9}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/high16 v9, 0x42600000    # 56.0f
-
-    invoke-static {v8, v9}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v8
-
-    float-to-int v8, v8
-
-    invoke-virtual {v0, v7, v7, v7, v8}, Landroid/widget/FrameLayout;->setPadding(IIII)V
-
-    .line 6
-    :cond_4
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_5
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_5
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->d:Landroid/widget/ImageButton;
-
-    const-string v8, "binding.videoDesign2.ibGalleryUnselected"
-
-    invoke-static {v0, v8}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 7
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_6
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_6
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->f:Landroid/widget/ImageButton;
-
-    const-string v8, "binding.videoDesign2.ibStickerUnselected"
-
-    invoke-static {v0, v8}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 8
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_7
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_7
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->e:Landroid/widget/ImageButton;
-
-    const-string v8, "binding.videoDesign2.ibGifUnselected"
-
-    invoke-static {v0, v8}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 9
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_8
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_8
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    const-string v8, "binding.videoDesign2.llContainerSticker"
-
-    invoke-static {v0, v8}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 10
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_9
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_9
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->h:Landroid/widget/TextView;
-
-    const v8, 0x7f0800de
-
-    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setBackgroundResource(I)V
-
-    .line 11
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_a
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_a
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    invoke-virtual {v0}, Lru/h5;->c()Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v7}, Landroid/view/ViewGroup;->setBackgroundColor(I)V
-
-    .line 12
-    sget-object v0, Lin/mohalla/sharechat/videoplayer/helper/b;->a:Lin/mohalla/sharechat/videoplayer/helper/b;
-
-    iget-object v7, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    invoke-virtual {v0, v7}, Lin/mohalla/sharechat/videoplayer/helper/b;->a(Lsharechat/manager/abtest/enums/s;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_c
-
-    .line 13
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    iget-object v7, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v7, :cond_b
-
-    const-string v7, "mAdapter"
-
-    invoke-static {v7}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v7, v2
-
-    :cond_b
-    invoke-virtual {v7, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->j0(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v7
-
-    invoke-interface {v0, v7}, Lin/mohalla/sharechat/videoplayer/p;->w2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    .line 14
-    :cond_c
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_d
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_d
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    invoke-virtual {v0}, Lru/h5;->c()Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    move-result-object v0
-
-    new-instance v7, Lin/mohalla/sharechat/videoplayer/t;
-
-    invoke-direct {v7, p0, p1}, Lin/mohalla/sharechat/videoplayer/t;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v7}, Landroid/view/ViewGroup;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 15
-    sget-object p1, Lsharechat/manager/abtest/enums/r;->BOTTOM_WITH_DIFF_COMMENT:Lsharechat/manager/abtest/enums/r;
-
-    if-ne p2, p1, :cond_13
-
-    .line 16
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_e
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p1, v2
-
-    :cond_e
-    iget-object p1, p1, Lru/q2;->m:Lru/h5;
-
-    iget-object p1, p1, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-virtual {p1, v6}, Landroid/widget/TextView;->setBackgroundResource(I)V
-
-    .line 17
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_f
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p1, v2
-
-    :cond_f
-    iget-object p1, p1, Lru/q2;->m:Lru/h5;
-
-    iget-object p1, p1, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-virtual {p0, v5}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 18
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_11
-
-    .line 19
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_10
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_10
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    iget-object p2, p2, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-static {p1, v4}, Lip/a;->k(Landroid/content/Context;I)I
-
-    move-result p1
-
-    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 20
-    :cond_11
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_12
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p1, v2
-
-    :cond_12
-    iget-object p1, p1, Lru/q2;->m:Lru/h5;
-
-    iget-object p1, p1, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    invoke-virtual {p1, v6}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
-
-    .line 21
-    :cond_13
-    sget-object p1, Lin/mohalla/sharechat/videoplayer/helper/b;->a:Lin/mohalla/sharechat/videoplayer/helper/b;
-
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/videoplayer/helper/b;->a(Lsharechat/manager/abtest/enums/s;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_14
-
-    .line 22
-    invoke-static {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->aA(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    .line 23
-    :cond_14
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/videoplayer/helper/b;->f(Lsharechat/manager/abtest/enums/s;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_1c
-
-    .line 24
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_15
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_15
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    invoke-virtual {p2}, Lru/h5;->c()Landroidx/constraintlayout/widget/ConstraintLayout;
-
-    move-result-object p2
-
-    invoke-virtual {p2, v6}, Landroid/view/ViewGroup;->setBackgroundResource(I)V
-
-    .line 25
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_16
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_16
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    iget-object p2, p2, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-virtual {p2, v2}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
-
-    .line 26
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_17
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_17
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    iget-object p2, p2, Lru/h5;->c:Landroid/view/View;
-
-    const-string v0, "binding.videoDesign2.commentSeparator"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p2}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 27
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_18
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_18
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    iget-object p2, p2, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-virtual {p0, v5}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 28
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_1a
-
-    .line 29
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_19
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_19
-    iget-object v0, v0, Lru/q2;->m:Lru/h5;
-
-    iget-object v0, v0, Lru/h5;->h:Landroid/widget/TextView;
-
-    invoke-static {p2, v4}, Lip/a;->k(Landroid/content/Context;I)I
-
-    move-result p2
-
-    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setTextColor(I)V
-
-    .line 30
-    :cond_1a
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p2, :cond_1b
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v2
-
-    :cond_1b
-    iget-object p2, p2, Lru/q2;->m:Lru/h5;
-
-    iget-object p2, p2, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    invoke-virtual {p2, v6}, Landroid/widget/LinearLayout;->setBackgroundResource(I)V
-
-    .line 31
-    :cond_1c
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lsharechat/manager/abtest/enums/s;
-
-    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/videoplayer/helper/b;->g(Lsharechat/manager/abtest/enums/s;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1e
-
-    .line 32
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_1d
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1d
-    move-object v2, p1
-
     :goto_0
-    iget-object p1, v2, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-static {p1, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p1}, Lkp/e;->x(Landroid/view/View;)V
-
-    goto :goto_2
-
-    .line 33
-    :cond_1e
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_1f
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_1f
-    move-object v2, p1
-
-    :goto_1
-    iget-object p1, v2, Lru/q2;->e:Landroid/widget/FrameLayout;
-
-    invoke-static {p1, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p1}, Lkp/e;->F(Landroid/view/View;)V
-
-    :goto_2
     return-void
 .end method
 
-.method public at(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public b(I)V
+.method public final m2()V
     .locals 1
 
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M0:Lu60/a;
 
-    move-result-object p1
+    if-eqz v0, :cond_0
 
-    const-string v0, "getString(stringRes)"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->g(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public bo()V
-    .locals 4
-
-    .line 1
-    invoke-static {p0}, Lsharechat/feature/chatroom/m2$a;->b(Lsharechat/feature/chatroom/m2;)V
-
-    .line 2
-    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    const/4 v1, -0x1
-
-    if-eq v0, v1, :cond_2
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    const/4 v1, 0x0
-
-    const-string v2, "mAdapter"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
+    invoke-interface {v0}, Lu60/a;->Mr()V
 
     :cond_0
-    iget v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {v0, v3}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 4
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v3, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v3
-
-    :goto_0
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v1, v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->m0(Ljava/lang/String;)V
-
-    :cond_2
     return-void
 .end method
 
-.method public c1()V
-    .locals 3
-
-    .line 1
-    sget-object v0, Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment;->w:Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment$a;
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment$a;->a()Lin/mohalla/sharechat/common/sharehandler/WhatsAppShareBottomSheetFragment;
-
-    move-result-object v0
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v1
-
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getTag()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Landroidx/fragment/app/DialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public cg(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 6
+.method public final mp(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+    .locals 1
 
     const-string v0, "postModel"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "source"
+
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3}, Lom0/n;->P2(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final mq(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
 
     .line 1
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
@@ -8332,610 +9478,55 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
     invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
 
-    move-result-object v1
-
-    .line 3
-    invoke-static {p1}, Lw40/g0;->g(Lsharechat/library/cvo/PostEntity;)Ljava/lang/String;
-
-    move-result-object v4
-
-    move-object v2, p3
-
-    move-object v3, p2
-
-    move v5, p4
-
-    .line 4
-    invoke-interface/range {v0 .. v5}, Lin/mohalla/sharechat/videoplayer/p;->Vf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public d5(Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 1
-
-    const-string v0, "templateId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "originalPostId"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p2
-
-    const-string v0, "useMvTemplate"
-
-    invoke-interface {p2, v0}, Lin/mohalla/sharechat/videoplayer/p;->s5(Ljava/lang/String;)V
-
-    .line 2
-    new-instance p2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$t;
-
-    invoke-direct {p2, p0, p1, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$t;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Z)V
-
-    invoke-static {p0, p2}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public db(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->s0(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public ef(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "userId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public f3(I)V
-    .locals 0
-
-    add-int/lit8 p1, p1, 0x1
-
-    .line 1
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xz(I)V
-
-    return-void
-.end method
-
-.method public fl(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w$a;->c(Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public fy(Lnm/k;)V
-    .locals 1
-
-    const-string v0, "carouselCardClickEvent"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->n8(Lnm/k;)V
-
-    return-void
-.end method
-
-.method public g(Ljava/lang/String;)V
-    .locals 4
-
-    const-string v0, "string"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x2
-
-    const/4 v3, 0x0
-
-    .line 2
-    invoke-static {p1, v0, v1, v2, v3}, Lgk0/a;->m(Ljava/lang/String;Landroid/content/Context;IILjava/lang/Object;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public g5(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-    .locals 7
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v1
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x4
-
-    const/4 v6, 0x0
-
-    move-object v2, p1
-
-    move v3, p2
-
-    invoke-static/range {v1 .. v6}, Lin/mohalla/sharechat/videoplayer/p$a;->c(Lin/mohalla/sharechat/videoplayer/p;Lin/mohalla/sharechat/data/repository/post/PostModel;ZZILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public h(Lsharechat/data/user/FollowData;)V
-    .locals 18
-
-    const-string v0, "followData"
-
-    move-object/from16 v10, p1
-
-    invoke-static {v10, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
-    .line 2
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->Jo()Lbz/a;
-
-    move-result-object v1
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v11, 0x0
-
-    const/4 v12, 0x0
-
-    const/4 v13, 0x0
-
-    const/4 v14, 0x0
-
-    const/4 v15, 0x0
-
-    const/16 v16, 0x3efc
-
-    const/16 v17, 0x0
-
-    const-string v3, "VideoPlayerUnverifiedUserFollow"
-
-    move-object/from16 v10, p1
-
-    invoke-static/range {v1 .. v17}, Lbz/a$a;->L(Lbz/a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZZZILsharechat/data/user/FollowData;ZLjava/lang/String;ZLjava/lang/String;ZILjava/lang/Object;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public h5(Ljava/lang/String;)V
-    .locals 4
-
-    const-string v0, "referrer"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v0
-
-    xor-int/2addr v0, v2
-
-    if-ne v0, v2, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    if-eqz v1, :cond_1
-
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->isAdded()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    sget-object v0, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet;->y:Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v1
-
-    const v2, 0x7f120a8e
-
-    .line 4
-    invoke-virtual {p0, v2}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "childFragmentManager"
-
-    .line 5
-    invoke-static {v1, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "like"
-
-    .line 6
-    invoke-virtual {v0, v1, p1, v3, v2}, Lin/mohalla/sharechat/settings/getuserdetails/GetUserDetailsBottomSheet$a;->b(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public hb()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    invoke-direct {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
-
-    return-void
-.end method
-
-.method public hi(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-    .locals 1
-
-    const-string v0, "mPostModel"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->pA(ILin/mohalla/sharechat/data/repository/post/PostModel;Z)V
-
-    return-void
-.end method
-
-.method public hy(JLin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/p;->vv(JLin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    return-void
-.end method
-
-.method public i3(Ljava/lang/String;)V
-    .locals 2
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->getItemCount()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-le v0, v1, :cond_1
-
-    .line 2
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Yz(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
-
     move-result-object p1
 
-    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+    if-eqz p1, :cond_0
 
-    :goto_0
+    .line 2
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;
+
+    invoke-direct {v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
+
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    :cond_0
     return-void
 .end method
 
-.method public ia()Ljava/util/Map;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    const-string v1, "TAG_ID"
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-ne v0, v2, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 2
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireArguments()Landroid/os/Bundle;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_4
-
-    const-string v2, "groupOrTagName"
-
-    .line 4
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_2
-
-    .line 5
-    :cond_1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
-
-    move-result-object v0
-
-    const-string v1, "REFERRER"
-
-    if-eqz v0, :cond_2
-
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-ne v0, v2, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_1
-    if-eqz v2, :cond_3
-
-    .line 6
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 7
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireArguments()Landroid/os/Bundle;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_4
-
-    const-string v2, "it"
-
-    .line 8
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v2, "referrer"
-
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_2
-
-    :cond_3
-    const/4 v0, 0x0
-
-    :cond_4
-    :goto_2
-    return-object v0
-.end method
-
-.method public j5(Lsharechat/library/cvo/UserEntity;Ljava/lang/String;)V
-    .locals 2
-
-    const-string p2, "user"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    const/4 v0, 0x0
-
-    const/4 v1, -0x1
-
-    if-eq p2, v1, :cond_1
-
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez p2, :cond_0
-
-    const-string p2, "mAdapter"
-
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v0
-
-    :cond_0
-    iget v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {p2, v1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p2
-
-    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_1
-
-    invoke-virtual {p2}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2
-    :cond_1
-    invoke-virtual {p1}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-direct {p0, p1, p2, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->mA(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public final mu()V
+    .locals 0
 
     return-void
 .end method
 
-.method public jq(Lin/mohalla/sharechat/common/events/modals/ProductDataEventV2;)V
+.method public final nh(Ljava/lang/String;)V
     .locals 1
 
-    const-string v0, "productDataEventV2"
+    const-string v0, "adId"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Ldz/c;->jq(Lin/mohalla/sharechat/common/events/modals/ProductDataEventV2;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public ks(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+.method public final nt(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
     .locals 2
 
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getAdBiddingInfo()Lrm/a;
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getAdBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v1
 
-    invoke-interface {v1, v0}, Lin/mohalla/sharechat/videoplayer/p;->K5(Lrm/a;)V
+    invoke-interface {v1, v0}, Lom0/n;->j4(Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;)V
 
     .line 3
     :cond_0
@@ -8948,451 +9539,185 @@
     if-eq v0, v1, :cond_1
 
     .line 4
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i;
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$n;
 
-    invoke-direct {v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-direct {v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$n;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
-    const/4 v1, 0x0
-
-    invoke-static {v1, v0, p1, v1}, Ljk0/a;->f(Lin/mohalla/androidcommon/async/coroutine/a;Lr00/a;ILjava/lang/Object;)Lkotlinx/coroutines/g2;
-
-    :cond_1
-    return-void
-.end method
-
-.method public l5(Landroid/view/animation/Animation;)V
-    .locals 4
-
-    const-string v0, "animation"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    const-string v2, "binding"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->k:Landroid/widget/FrameLayout;
-
-    const-string v3, "binding.swipeTutorialWrapper"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
+    .line 5
+    invoke-static {p1, v0}, Lis1/a;->d(Lm30/a;Ldp0/a;)Lyr0/l1;
 
     :cond_1
-    move-object v1, v0
-
-    :goto_0
-    iget-object v0, v1, Lru/q2;->h:Landroid/widget/ImageView;
-
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
-
     return-void
 .end method
 
-.method public l8(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w$a;->d(Lin/mohalla/sharechat/common/views/sharingBottomSheet/post/w;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public lq(Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
-    .locals 0
-
-    .line 1
-    invoke-static/range {p0 .. p5}, Ldz/e$a;->a(Ldz/e;Ljava/lang/String;Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)V
-
-    return-void
-.end method
-
-.method public lx()V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->p0()I
-
-    move-result v0
-
-    if-lez v0, :cond_2
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->c1()Z
-
-    .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const/4 v1, 0x0
-
-    const-string v2, "binding"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    const-string v3, "binding.fragmentContainerReplace"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    .line 4
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v0
-
-    :goto_0
-    iget-object v0, v1, Lru/q2;->n:Landroid/view/View;
-
-    const-string v1, "binding.viewOutside"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    :cond_2
-    return-void
-.end method
-
-.method public no(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Ldz/e$a;->i(Ldz/e;Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method protected final nz()Lin/mohalla/ads/sharechat/repo/implementations/a;
+.method public final o2(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
 
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$o;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    return-void
+.end method
+
+.method public final ob(ILjava/lang/String;ZLjava/lang/String;)V
+    .locals 1
+
+    const-string v0, "clickSource"
+
+    invoke-static {p4, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M:Lin/mohalla/ads/sharechat/repo/implementations/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
     if-eqz v0, :cond_0
 
-    return-object v0
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object p1
+
+    .line 2
+    invoke-virtual {p0, p1, p2, p3, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Gk(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;ZLjava/lang/String;)V
+
+    return-void
 
     :cond_0
-    const-string v0, "adUtil"
+    const-string p1, "mAdapter"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 3
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
-    return-object v0
+    throw p1
 .end method
 
-.method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 7
+.method public final onActivityResult(IILandroid/content/Intent;)V
+    .locals 4
 
     .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    const/16 p2, 0x1e2f
-
-    const/4 v0, 0x0
-
-    if-eq p1, p2, :cond_6
-
     const/16 p2, 0x3e33
 
-    if-eq p1, p2, :cond_0
-
-    goto/16 :goto_0
+    if-ne p1, p2, :cond_5
 
     .line 2
-    :cond_0
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
     const-string p2, "mAdapter"
 
-    if-nez p1, :cond_1
+    const/4 v0, 0x0
 
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    if-eqz p1, :cond_4
 
-    move-object p1, v0
-
-    :cond_1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->k0()Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {p1}, Lpm0/b;->v()Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p1
 
-    if-eqz p1, :cond_8
+    if-eqz p1, :cond_5
 
     .line 3
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
 
     move-result-object v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v2, :cond_2
+    if-eqz v2, :cond_0
 
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v0
-
-    :cond_2
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v1, v3}, Lin/mohalla/sharechat/videoplayer/adapter/a;->r0(Ljava/lang/String;Z)V
+    invoke-virtual {v2, v1, v3}, Lpm0/b;->x(Ljava/lang/String;Z)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v0
 
     .line 4
-    :cond_3
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    :cond_1
+    :goto_0
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v1, :cond_4
+    if-eqz v1, :cond_3
 
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v1, v0
-
-    :cond_4
-    if-eqz p3, :cond_5
+    if-eqz p3, :cond_2
 
     .line 5
     invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object p2
 
-    if-eqz p2, :cond_5
+    if-eqz p2, :cond_2
 
-    invoke-static {p2}, Lkotlin/collections/t;->e(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p2}, Lso0/t;->b(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    :cond_5
+    :cond_2
     invoke-virtual {p1, v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setWebCardUploadUriArray(Ljava/util/List;)V
 
     const-string p2, "PAYLOAD_WEB_CARD_FILE_UPLOAD"
 
     .line 6
-    invoke-virtual {v1, p1, p2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->u0(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, p2}, Lpm0/b;->y(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
 
-    goto/16 :goto_0
+    goto :goto_1
 
-    :cond_6
-    if-eqz p3, :cond_8
+    :cond_3
+    invoke-static {p2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v0
 
     .line 7
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->tz()Lcom/google/gson/Gson;
+    :cond_4
+    invoke-static {p2}, Lep0/s;->p(Ljava/lang/String;)V
 
-    move-result-object p1
+    throw v0
 
-    const-string p2, "BASE_CAMERA_ENTITY_CONTAINER"
-
-    .line 8
-    invoke-virtual {p3, p2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    const-class v1, Lin/mohalla/sharechat/data/remote/model/camera/CameraEntityContainer;
-
-    .line 9
-    invoke-virtual {p1, p2, v1}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lin/mohalla/sharechat/data/remote/model/camera/CameraEntityContainer;
-
-    const-string p2, "KEY_CAMERA_META_DATA"
-
-    .line 10
-    invoke-virtual {p3, p2}, Landroid/content/Intent;->hasExtra(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_7
-
-    invoke-virtual {p3, p2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_7
-
-    .line 11
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->tz()Lcom/google/gson/Gson;
-
-    move-result-object v0
-
-    .line 12
-    invoke-virtual {p3, p2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    const-class v1, Lin/mohalla/sharechat/data/remote/model/camera/CameraEventData;
-
-    .line 13
-    invoke-virtual {v0, p2, v1}, Lcom/google/gson/Gson;->fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 14
-    :cond_7
-    invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_8
-
-    .line 15
-    new-instance p2, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;
-
-    invoke-direct {p2}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;-><init>()V
-
-    .line 16
-    invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
-
-    move-result-object p3
-
-    invoke-virtual {p2, p3}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setMediaUri(Landroid/net/Uri;)V
-
-    const/4 p3, 0x1
-
-    .line 17
-    invoke-virtual {p2, p3}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setCameraPost(Z)V
-
-    .line 18
-    sget-object p3, Lin/mohalla/sharechat/data/local/Constant;->INSTANCE:Lin/mohalla/sharechat/data/local/Constant;
-
-    invoke-virtual {p3}, Lin/mohalla/sharechat/data/local/Constant;->getTYPE_VIDEO()Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p2, p3}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setMediaType(Ljava/lang/String;)V
-
-    const-string p3, "Camera"
-
-    .line 19
-    invoke-virtual {p2, p3}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setContentCreateSource(Ljava/lang/String;)V
-
-    .line 20
-    invoke-virtual {p2, p1}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setCameraEntityContainer(Lin/mohalla/sharechat/data/remote/model/camera/CameraEntityContainer;)V
-
-    .line 21
-    check-cast v0, Lin/mohalla/sharechat/data/remote/model/camera/CameraEventData;
-
-    invoke-virtual {p2, v0}, Lin/mohalla/sharechat/data/remote/model/compose/ComposeDraft;->setCameraMetaData(Lin/mohalla/sharechat/data/remote/model/camera/CameraEventData;)V
-
-    .line 22
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_8
-
-    .line 23
-    sget-object v1, Lwx/e;->k:Lwx/e$a;
-
-    const-string p1, "context"
-
-    invoke-static {v2, p1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->py()Lcom/google/gson/Gson;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p2}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x4
-
-    const/4 v6, 0x0
-
-    invoke-static/range {v1 .. v6}, Lwx/e$a;->W(Lwx/e$a;Landroid/content/Context;Ljava/lang/String;ZILjava/lang/Object;)V
-
-    .line 24
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_8
-
-    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
-
-    :cond_8
-    :goto_0
+    :cond_5
+    :goto_1
     return-void
 .end method
 
-.method public onAttach(Landroid/content/Context;)V
+.method public final onAttach(Landroid/content/Context;)V
     .locals 1
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->onAttach(Landroid/content/Context;)V
 
     .line 2
-    instance-of v0, p1, Lin/mohalla/sharechat/videoplayer/m;
+    instance-of v0, p1, Lom0/l;
 
     if-eqz v0, :cond_0
 
     .line 3
     move-object v0, p1
 
-    check-cast v0, Lin/mohalla/sharechat/videoplayer/m;
+    check-cast v0, Lom0/l;
 
-    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
+    iput-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
 
     .line 4
     :cond_0
-    instance-of v0, p1, Lin/mohalla/sharechat/common/a;
+    instance-of v0, p1, Lu60/a;
 
     if-eqz v0, :cond_1
 
-    check-cast p1, Lin/mohalla/sharechat/common/a;
+    check-cast p1, Lu60/a;
 
     goto :goto_0
 
@@ -9400,203 +9725,563 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->I0:Lin/mohalla/sharechat/common/a;
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M0:Lu60/a;
 
     return-void
 .end method
 
-.method public onBackPressed()V
-    .locals 0
+.method public final onBackPressed()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->kz()V
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Oz()Lea0/e;
 
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lea0/e;->v(Z)V
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Pz()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->I()I
+
+    move-result v0
+
+    if-lez v0, :cond_2
+
+    .line 4
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->Z()Z
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const-string v1, "binding"
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lre0/j2;->j:Landroid/widget/FrameLayout;
+
+    const-string v3, "binding.fragmentContainerReplace"
+
+    invoke-static {v0, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    .line 6
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->t:Landroid/view/View;
+
+    const-string v1, "binding.viewOutside"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->j(Landroid/view/View;)V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 7
+    :cond_1
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 8
+    :cond_2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->onBackPressed()V
+
+    :cond_3
+    :goto_0
     return-void
 .end method
 
-.method public onDestroy()V
+.method public final onDestroy()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
+    .line 2
+    iput-boolean v1, v0, Lpm0/b;->H:Z
+
+    .line 3
+    iget-object v1, v0, Lpm0/b;->F:Lon0/a;
+
+    invoke-virtual {v1}, Lon0/a;->e()V
+
+    .line 4
+    iget-object v0, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    sget-object v1, Lpm0/d;->b:Lpm0/d;
+
+    invoke-static {v0, v1}, Lso0/a0;->w(Ljava/util/List;Ldp0/l;)Z
+
+    .line 5
+    :cond_0
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
+
     if-eqz v0, :cond_1
 
-    if-nez v0, :cond_0
+    invoke-virtual {v0}, Lom0/i;->a()V
 
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/adapter/a;->e0()V
-
-    .line 2
+    .line 6
     :cond_1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X0:Lro0/p;
+
+    invoke-virtual {v0}, Lro0/p;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/os/HandlerThread;
+
+    .line 7
+    invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
+
+    .line 8
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K:Lfv1/a;
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/j;->c()V
+    .line 9
+    iput-object v1, v0, Lfv1/a;->g:Lgv1/h;
 
-    .line 3
+    .line 10
+    invoke-super {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->onDestroy()V
+
+    return-void
+
     :cond_2
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->xz()Landroid/os/HandlerThread;
+    const-string v0, "videoCacheUtil"
+
+    .line 11
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final onDestroyView()V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-nez v0, :cond_0
+
+    goto/16 :goto_2
+
+    :cond_0
+    const-string v1, "binding"
+
+    .line 2
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/os/HandlerThread;->quitSafely()Z
+    instance-of v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager;
 
-    .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Bz()Lsharechat/manager/videoplayer/cache/d;
+    const/4 v2, 0x0
 
-    move-result-object v0
-
-    invoke-virtual {v0, v1}, Lsharechat/manager/videoplayer/cache/d;->l0(Lsharechat/manager/videoplayer/debugView/o;)V
-
-    .line 5
-    invoke-super {p0}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->onDestroy()V
-
-    return-void
-.end method
-
-.method public onDestroyView()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->mz()V
-
-    .line 2
-    invoke-super {p0}, Lin/mohalla/sharechat/common/base/BaseViewStubFragment;->onDestroyView()V
-
-    return-void
-.end method
-
-.method public onPause()V
-    .locals 3
-
-    .line 1
-    invoke-super {p0}, Lin/mohalla/sharechat/common/base/BaseViewStubFragment;->onPause()V
-
-    .line 2
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_6
 
     .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v3, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager"
+
+    invoke-static {v0, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 4
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->r1()I
+
+    move-result v3
+
+    .line 5
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->t1()I
+
+    move-result v0
+
+    const/4 v4, 0x0
+
+    const/4 v5, -0x1
+
+    if-eq v3, v5, :cond_3
+
+    if-eq v0, v5, :cond_3
+
+    if-gt v3, v0, :cond_6
+
+    .line 6
+    :goto_0
+    iget-object v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, v5, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    .line 7
+    invoke-virtual {v5, v3, v4}, Landroidx/recyclerview/widget/RecyclerView;->J(IZ)Landroidx/recyclerview/widget/RecyclerView$b0;
+
+    move-result-object v5
+
+    .line 8
+    instance-of v6, v5, Lp40/d;
+
+    if-eqz v6, :cond_1
+
+    .line 9
+    check-cast v5, Lp40/d;
+
+    invoke-interface {v5}, Lp40/d;->j()V
+
+    :cond_1
+    if-eq v3, v0, :cond_6
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    .line 10
+    :cond_2
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    :cond_3
+    if-eq v3, v5, :cond_6
+
+    .line 11
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_4
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    .line 12
+    invoke-virtual {v0, v3, v4}, Landroidx/recyclerview/widget/RecyclerView;->J(IZ)Landroidx/recyclerview/widget/RecyclerView$b0;
 
     move-result-object v0
 
-    const/16 v1, 0x30
+    .line 13
+    instance-of v3, v0, Lp40/d;
 
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
+    if-eqz v3, :cond_6
 
-    .line 5
-    :cond_0
+    .line 14
+    check-cast v0, Lp40/d;
+
+    invoke-interface {v0}, Lp40/d;->j()V
+
+    goto :goto_1
+
+    .line 15
+    :cond_4
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 16
+    :cond_5
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+
+    .line 17
+    :cond_6
+    :goto_1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$f;)V
+
+    .line 18
+    :goto_2
+    invoke-super {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseViewStubFragment;->onDestroyView()V
+
+    return-void
+
+    .line 19
+    :cond_7
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
+.end method
+
+.method public final onPause()V
+    .locals 6
+
+    .line 1
+    invoke-super {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseViewStubFragment;->onPause()V
+
+    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    const/16 v1, 0x1a
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
-    if-lt v0, v1, :cond_2
+    const/16 v3, 0x1a
+
+    if-lt v0, v3, :cond_1
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/app/Activity;->isInPictureInPictureMode()Z
 
     move-result v0
 
-    if-ne v0, v2, :cond_1
+    if-ne v0, v1, :cond_0
 
-    const/4 v1, 0x1
+    const/4 v0, 0x1
 
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-nez v0, :cond_2
+
+    .line 3
     :cond_1
-    if-nez v1, :cond_3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->E:Lea0/e;
 
-    .line 6
-    :cond_2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->D:Los/s0;
+    if-eqz v0, :cond_2
 
-    if-eqz v0, :cond_3
-
-    .line 7
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->wz()Los/s0;
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Oz()Lea0/e;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Los/s0;->v(Z)V
+    invoke-virtual {v0, v1}, Lea0/e;->v(Z)V
+
+    .line 5
+    sget-object v0, Lhv1/a;->a:Lhv1/a;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    sget-object v0, Lhv1/a;->c:Ljava/util/ArrayList;
+
+    .line 7
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lpg/l1;
 
     .line 8
-    sget-object v0, Lsharechat/manager/videoplayer/playermanager/a;->a:Lsharechat/manager/videoplayer/playermanager/a;
+    invoke-virtual {v3, v2}, Lpg/l1;->F(Z)V
 
-    invoke-virtual {v0}, Lsharechat/manager/videoplayer/playermanager/a;->f()V
+    goto :goto_1
 
     .line 9
-    :cond_3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    :cond_2
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_3
 
     return-void
 
     .line 10
-    :cond_4
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Mz()V
+    :cond_3
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Pz()Ljava/lang/Integer;
 
-    .line 11
-    invoke-direct {p0, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
+    move-result-object v0
 
-    .line 12
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
+    const/4 v2, 0x0
 
     if-eqz v0, :cond_5
 
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/j;->d()V
+    .line 11
+    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v3, :cond_4
+
+    iget-object v3, v3, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    .line 13
+    invoke-virtual {v3, v0}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/RecyclerView$b0;
+
+    move-result-object v0
+
+    goto :goto_2
+
+    :cond_4
+    const-string v0, "binding"
+
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v2
 
     :cond_5
+    move-object v0, v2
+
+    .line 14
+    :goto_2
+    instance-of v3, v0, Lom0/j0;
+
+    if-eqz v3, :cond_6
+
+    .line 15
+    check-cast v0, Lom0/j0;
+
+    invoke-interface {v0}, Lom0/j0;->w0()V
+
+    goto :goto_3
+
+    .line 16
+    :cond_6
+    instance-of v3, v0, Lp40/a;
+
+    if-eqz v3, :cond_7
+
+    .line 17
+    check-cast v0, Lp40/a;
+
+    invoke-interface {v0}, Lp40/a;->onPause()V
+
+    .line 18
+    :cond_7
+    :goto_3
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 19
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v3
+
+    invoke-static {}, Lm30/d;->a()Lm30/a;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Lm30/a;->m()Lyr0/b0;
+
+    move-result-object v4
+
+    invoke-interface {v3, v4}, Lvo0/f;->plus(Lvo0/f;)Lvo0/f;
+
+    move-result-object v3
+
+    new-instance v4, Lom0/u;
+
+    invoke-direct {v4, v2}, Lom0/u;-><init>(Lvo0/d;)V
+
+    const/4 v5, 0x2
+
+    invoke-static {v0, v3, v2, v4, v5}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    .line 20
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    .line 21
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
+
+    if-eqz v0, :cond_8
+
+    invoke-virtual {v0}, Lom0/i;->b()V
+
+    :cond_8
     return-void
 .end method
 
-.method public onRequestPermissionsResult(I[Ljava/lang/String;[I)V
-    .locals 1
+.method public final onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+    .locals 3
 
     const-string v0, "permissions"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "grantResults"
 
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Lin/mohalla/sharechat/common/base/BaseMvpFragment;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
+    invoke-super {p0, p1, p2, p3}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 
-    const/4 p2, 0x1
+    const/4 p2, 0x0
 
-    if-eq p1, p2, :cond_5
+    const/4 v0, 0x1
 
-    const/4 p2, 0x2
+    const/4 v1, 0x0
 
-    if-eq p1, p2, :cond_3
+    if-eq p1, v0, :cond_5
+
+    const/4 v2, 0x2
+
+    if-eq p1, v2, :cond_3
 
     const/4 p2, 0x4
 
@@ -9606,7 +10291,7 @@
 
     .line 2
     :cond_0
-    invoke-static {p3}, Lkotlin/collections/l;->L([I)Ljava/lang/Integer;
+    invoke-static {p3}, Lso0/p;->u([I)Ljava/lang/Integer;
 
     move-result-object p1
 
@@ -9622,31 +10307,32 @@
     if-nez p1, :cond_7
 
     .line 3
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez p1, :cond_2
+    if-eqz p1, :cond_2
 
-    const-string p1, "mAdapter"
-
-    invoke-static {p1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
-
-    :cond_2
-    invoke-virtual {p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->k0()Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {p1}, Lpm0/b;->v()Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p1
 
     if-eqz p1, :cond_7
 
     .line 4
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->ri(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Yi(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     goto :goto_0
 
+    :cond_2
+    const-string p1, "mAdapter"
+
     .line 5
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 6
     :cond_3
-    invoke-static {p3}, Lkotlin/collections/l;->L([I)Ljava/lang/Integer;
+    invoke-static {p3}, Lso0/p;->u([I)Ljava/lang/Integer;
 
     move-result-object p1
 
@@ -9661,18 +10347,18 @@
 
     if-nez p1, :cond_7
 
-    .line 6
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 7
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->a0()V
+    invoke-static {p1, p2, v0, v1}, Lom0/n$a;->a(Lom0/n;ZILjava/lang/Object;)V
 
     goto :goto_0
 
-    .line 7
+    .line 8
     :cond_5
-    invoke-static {p3}, Lkotlin/collections/l;->L([I)Ljava/lang/Integer;
+    invoke-static {p3}, Lso0/p;->u([I)Ljava/lang/Integer;
 
     move-result-object p1
 
@@ -9687,26 +10373,28 @@
 
     if-nez p1, :cond_7
 
-    .line 8
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 9
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->c5()V
+    const/4 p3, 0x3
+
+    invoke-static {p1, p2, v1, p3, v1}, Lom0/n$a;->b(Lom0/n;ZLib0/v0;ILjava/lang/Object;)V
 
     :cond_7
     :goto_0
     return-void
 .end method
 
-.method public onResume()V
-    .locals 6
+.method public final onResume()V
+    .locals 7
 
     .line 1
-    invoke-super {p0}, Lin/mohalla/sharechat/common/base/BaseViewStubFragment;->onResume()V
+    invoke-super {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseViewStubFragment;->onResume()V
 
     .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
     if-nez v0, :cond_0
 
@@ -9714,146 +10402,168 @@
 
     .line 3
     :cond_0
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Pz()Ljava/lang/Integer;
+
+    move-result-object v0
+
+    const/4 v1, -0x1
 
     if-eqz v0, :cond_1
 
-    .line 4
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    const/16 v1, 0x20
-
-    invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
-
-    .line 6
-    :cond_1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    const-string v1, "binding"
-
-    const/4 v2, 0x0
-
-    if-nez v0, :cond_2
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v2
-
-    :cond_2
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object v0
-
-    const-string v3, "null cannot be cast to non-null type androidx.recyclerview.widget.LinearLayoutManager"
-
-    invoke-static {v0, v3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->h2()I
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    .line 7
-    iget-boolean v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
+    goto :goto_0
 
-    const/4 v4, 0x0
+    :cond_1
+    const/4 v0, -0x1
 
-    const/4 v5, -0x1
-
-    if-eqz v3, :cond_3
-
-    if-eq v0, v5, :cond_3
-
-    .line 8
-    invoke-direct {p0, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
+    .line 4
+    :goto_0
+    iget-boolean v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
 
     const/4 v3, 0x1
 
-    .line 9
-    invoke-direct {p0, v0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->hA(IZ)V
+    const/4 v4, 0x0
 
-    .line 10
-    :cond_3
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Landroidx/recyclerview/widget/RecyclerView$u;
+    if-eqz v2, :cond_2
 
-    if-eqz v3, :cond_6
+    if-eq v0, v1, :cond_2
 
-    iget-boolean v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
+    .line 5
+    invoke-virtual {p0, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
 
-    if-nez v3, :cond_6
+    .line 6
+    invoke-virtual {p0, v0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->bA(IZ)V
 
-    invoke-static {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Z
+    .line 7
+    :cond_2
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lom0/d0;
+
+    const-string v5, "binding"
+
+    const/4 v6, 0x0
+
+    if-eqz v2, :cond_7
+
+    iget-boolean v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Z
+
+    if-nez v2, :cond_7
+
+    .line 8
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v2, :cond_3
+
+    invoke-interface {v2}, Lom0/l;->Y8()Z
 
     move-result v3
 
-    if-eqz v3, :cond_6
+    goto :goto_1
+
+    .line 9
+    :cond_3
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
+
+    move-result-object v2
+
+    instance-of v2, v2, Lin/mohalla/sharechat/home/dashboard/DashboardFragment;
+
+    if-eqz v2, :cond_4
+
+    goto :goto_1
+
+    :cond_4
+    const/4 v3, 0x0
+
+    :goto_1
+    if-eqz v3, :cond_7
+
+    .line 10
+    invoke-virtual {p0, v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xz(I)V
 
     .line 11
-    invoke-direct {p0, v5}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->cA(I)V
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Y:Lom0/d0;
+
+    if-eqz v1, :cond_6
 
     .line 12
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Landroidx/recyclerview/widget/RecyclerView$u;
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    if-nez v3, :cond_4
+    if-eqz v2, :cond_5
 
-    const-string v3, "mScrollListener"
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v2
+    iget-object v2, v2, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
 
     .line 13
-    :cond_4
-    iget-object v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-virtual {v1, v2, v4}, Lom0/d0;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
 
-    if-nez v5, :cond_5
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_5
-    move-object v2, v5
-
-    :goto_0
-    iget-object v1, v2, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+    goto :goto_2
 
     .line 14
-    invoke-virtual {v3, v1, v4}, Landroidx/recyclerview/widget/RecyclerView$u;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
+    :cond_5
+    invoke-static {v5}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v6
+
+    :cond_6
+    const-string v0, "mScrollListener"
 
     .line 15
-    :cond_6
-    invoke-direct {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Oz(I)V
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v6
 
     .line 16
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K0:Lin/mohalla/sharechat/videoplayer/j;
-
-    if-eqz v0, :cond_7
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/j;->e()V
-
     :cond_7
+    :goto_2
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v1, :cond_b
+
+    iget-object v1, v1, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->I(I)Landroidx/recyclerview/widget/RecyclerView$b0;
+
+    move-result-object v0
+
+    instance-of v1, v0, Lp40/c;
+
+    if-eqz v1, :cond_8
+
+    move-object v6, v0
+
+    check-cast v6, Lp40/c;
+
+    :cond_8
+    if-eqz v6, :cond_9
+
+    invoke-interface {v6}, Lp40/c;->onResume()V
+
+    .line 17
+    :cond_9
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->O0:Lom0/i;
+
+    if-eqz v0, :cond_a
+
+    invoke-virtual {v0}, Lom0/i;->c()V
+
+    :cond_a
     return-void
+
+    .line 18
+    :cond_b
+    invoke-static {v5}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v6
 .end method
 
-.method public openElanicBottomSheet(Lsharechat/library/cvo/PostEntity;)V
+.method public final openElanicBottomSheet(Lsharechat/library/cvo/PostEntity;)V
     .locals 10
 
     const-string v0, "post"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getElanicPostData()Lsharechat/library/cvo/ElanicPostData;
@@ -9862,7 +10572,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lrm/c;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdObject;->getId()Ljava/lang/String;
 
     move-result-object v0
 
@@ -9896,13 +10606,13 @@
     move-result-object v8
 
     .line 5
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p1}, Lrm/a;->k()Ljava/lang/String;
+    invoke-virtual {p1}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
 
     move-result-object p1
 
@@ -9915,25 +10625,25 @@
     move-object v9, p1
 
     .line 6
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;
+    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$x;
 
     move-object v2, p1
 
     move-object v3, p0
 
-    invoke-direct/range {v2 .. v9}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v9}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$x;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {p0, p1}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
+    invoke-static {p0, p1}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
 
     return-void
 .end method
 
-.method public openElanicWebUrl(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+.method public final openElanicWebUrl(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
     .locals 9
 
     const-string v0, "postModel"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
@@ -10015,13 +10725,13 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lrm/a;
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {v0}, Lrm/a;->k()Ljava/lang/String;
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
 
     move-result-object v1
 
@@ -10054,290 +10764,200 @@
 
     .line 6
     :goto_5
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$v;
+    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$y;
 
     move-object v2, p1
 
     move-object v5, p0
 
-    invoke-direct/range {v2 .. v8}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$v;-><init>(Ljava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v8}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$y;-><init>(Ljava/lang/String;Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {p0, p1}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public ot()V
-    .locals 0
+    invoke-static {p0, p1}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
 
     return-void
 .end method
 
-.method protected final oz()Ldagger/Lazy;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ldagger/Lazy<",
-            "Lsharechat/library/utilities/c;",
-            ">;"
-        }
-    .end annotation
+.method public final ow(Lin/mohalla/sharechat/data/repository/post/PostModel;Los1/a;)V
+    .locals 9
+
+    const-string v0, "post"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "audioClipVariant"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->K:Ldagger/Lazy;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
-    if-eqz v0, :cond_0
+    move-result-object v2
 
-    return-object v0
-
-    :cond_0
-    const-string v0, "bandwidthUtilLazy"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic p()Landroid/app/Activity;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected final pz()Lcom/google/firebase/analytics/FirebaseAnalytics;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->I:Lcom/google/firebase/analytics/FirebaseAnalytics;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "firebaseAnalytics"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public q0(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
-
-    const/4 v0, 0x0
-
-    const-string v1, "mLastScreenName"
-
-    const/16 v2, 0x5f
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v3
-
-    invoke-interface {v3, p1}, Lin/mohalla/sharechat/videoplayer/p;->t4(Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
+    if-eqz v2, :cond_3
 
     .line 2
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Ljava/lang/String;
-
-    if-nez v3, :cond_0
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_0
-    move-object v0, v3
-
-    :goto_0
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/p;->Y2()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/p;->U2()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    goto :goto_2
+    invoke-interface {v0, p1}, Lom0/n;->O8(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     .line 3
-    :cond_1
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Ljava/lang/String;
-
-    if-nez v3, :cond_2
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_2
-    move-object v0, v3
-
-    :goto_1
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/videoplayer/p;->Y2()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    :goto_2
-    return-object p1
-.end method
-
-.method public q2()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->I0:Lin/mohalla/sharechat/common/a;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0}, Lin/mohalla/sharechat/common/a;->Qq()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public q9(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "adsUuid"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "source"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->k6(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
-.end method
-
-.method public qp(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_3
+
+    .line 4
+    invoke-virtual {p2}, Los1/a;->isAudioPlayAllowed()Z
+
+    move-result v0
+
+    invoke-static {p1, v0}, Lkw0/f0;->f(Lsharechat/library/cvo/PostEntity;Z)Lsharechat/library/cvo/AudioEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    .line 5
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->e0()V
+
+    .line 6
+    invoke-virtual {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Los1/a;->isAudioPlayAllowed()Z
+
+    move-result v3
+
+    invoke-virtual {v0, v3}, Lsharechat/library/cvo/AudioEntity;->getId(Z)J
+
+    move-result-wide v3
+
+    .line 7
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v5
 
     invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 8
+    invoke-virtual {p2}, Los1/a;->isAudioPlayAllowed()Z
+
+    move-result v7
+
+    .line 9
+    invoke-virtual {p2}, Los1/a;->isClipPlayOnMusicFeed()Z
+
+    move-result p2
+
+    const/4 v0, 0x0
+
+    if-eqz p2, :cond_0
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAudioMeta()Lsharechat/library/cvo/AudioEntity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 2
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->s9(Ljava/lang/String;)V
+    invoke-virtual {p1}, Lsharechat/library/cvo/AudioEntity;->getResourceUrl()Ljava/lang/String;
+
+    move-result-object p1
+
+    move-object v8, p1
+
+    goto :goto_0
 
     :cond_0
-    return-void
-.end method
+    move-object v8, v0
 
-.method protected final qz()Lin/mohalla/sharechat/common/utils/hash/b;
-    .locals 1
+    .line 10
+    :goto_0
+    invoke-interface/range {v1 .. v8}, Lnm0/a;->o1(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H:Lin/mohalla/sharechat/common/utils/hash/b;
+    goto :goto_2
 
-    if-eqz v0, :cond_0
+    .line 11
+    :cond_1
+    invoke-virtual {p2}, Los1/a;->isAudioPlayAllowed()Z
 
-    return-object v0
+    move-result v0
 
-    :cond_0
-    const-string v0, "hashingUtil"
+    if-eqz v0, :cond_2
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public r5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 2
-
-    const-string v0, "post"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 12
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getAudioId()Ljava/lang/Long;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->H2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    goto :goto_1
+
+    :cond_2
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getClipId()Ljava/lang/Long;
+
+    move-result-object v0
+
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v3
+
+    .line 14
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->e0()V
+
+    .line 15
+    invoke-virtual {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
+
+    move-result-object v1
+
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 16
+    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {p2}, Los1/a;->isAudioPlayAllowed()Z
+
+    move-result v7
+
+    const/4 v8, 0x0
+
+    .line 17
+    invoke-interface/range {v1 .. v8}, Lnm0/a;->o1(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
+
+    :cond_3
+    :goto_2
+    return-void
+.end method
+
+.method public final p5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Lom0/n;->A2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     .line 2
     invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostLocalProperty()Lsharechat/library/cvo/PostLocalEntity;
@@ -10345,8 +10965,6 @@
     move-result-object p1
 
     const/4 v0, 0x1
-
-    const/4 v1, 0x0
 
     if-eqz p1, :cond_0
 
@@ -10356,19 +10974,21 @@
 
     if-ne p1, v0, :cond_0
 
+    const/4 p1, 0x1
+
     goto :goto_0
 
     :cond_0
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
     :goto_0
-    if-nez v0, :cond_2
+    if-nez p1, :cond_2
 
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->x()Z
+    invoke-interface {p1}, Lom0/n;->v()Z
 
     move-result p1
 
@@ -10382,428 +11002,322 @@
     if-eqz p1, :cond_3
 
     .line 4
-    sget-object v0, Lsharechat/library/utilities/n;->a:Lsharechat/library/utilities/n;
+    sget-object v1, Las1/p;->a:Las1/p;
 
-    invoke-virtual {v0, p1}, Lsharechat/library/utilities/n;->m(Landroid/content/Context;)Z
+    invoke-virtual {v1, p1}, Las1/p;->c(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 5
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->a0()V
+    .line 6
+    invoke-interface {p1, v0}, Lom0/n;->S(Z)V
 
     goto :goto_1
 
     :cond_1
     const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
 
-    .line 6
+    .line 7
     filled-new-array {p1}, [Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v0, 0x2
 
-    .line 7
+    .line 8
     invoke-virtual {p0, p1, v0}, Landroidx/fragment/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
 
     goto :goto_1
 
-    .line 8
+    .line 9
     :cond_2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object p1
 
     sget-object v0, Lin/mohalla/sharechat/common/auth/PostDownloadState;->ONLY_GALLERY:Lin/mohalla/sharechat/common/auth/PostDownloadState;
 
-    invoke-interface {p1, v0}, Lin/mohalla/sharechat/videoplayer/p;->Oe(Lin/mohalla/sharechat/common/auth/PostDownloadState;)V
+    invoke-interface {p1, v0}, Lom0/n;->tf(Lin/mohalla/sharechat/common/auth/PostDownloadState;)V
 
     :cond_3
     :goto_1
     return-void
 .end method
 
-.method public ra(ILjava/lang/String;)V
-    .locals 2
+.method public final p9(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    const-string v0, "source"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v1, :cond_0
-
-    const-string v1, "mAdapter"
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    :cond_0
-    invoke-virtual {v1, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    if-nez p2, :cond_1
-
-    const-string p2, ""
-
-    :cond_1
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->Ms(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2}, Lom0/n;->n6(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public ri(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 4
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPostId()Ljava/lang/String;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_3
-
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, p1, v1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->r0(Ljava/lang/String;Z)V
-
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    sget-object v2, Lsharechat/library/utilities/n;->a:Lsharechat/library/utilities/n;
-
-    const-string v3, "it"
-
-    invoke-static {p1, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {v2, p1}, Lsharechat/library/utilities/n;->m(Landroid/content/Context;)Z
-
-    move-result p1
-
-    if-ne p1, v1, :cond_1
-
-    const/4 v0, 0x1
-
-    :cond_1
-    xor-int/lit8 p1, v0, 0x1
-
-    if-eqz p1, :cond_2
-
-    const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
-
-    .line 4
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 v0, 0x4
-
-    .line 5
-    invoke-virtual {p0, p1, v0}, Landroidx/fragment/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
-
-    goto :goto_0
-
-    .line 6
-    :cond_2
-    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i0;
-
-    invoke-direct {p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$i0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-
-    invoke-static {p0, p1}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    :cond_3
-    :goto_0
-    return-void
-.end method
-
-.method public ro(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/p;->fe(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
-
-    return-void
-.end method
-
-.method protected final rz()Lsharechat/ads/manager/ima/feature/imaextension/d;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Q:Lsharechat/ads/manager/ima/feature/imaextension/d;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "imaExoManager"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public s2(Ljava/lang/String;Ljava/lang/String;Z)V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$l;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$l;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    invoke-static {p0, v0}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public s9(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$q;
-
-    invoke-direct {v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$q;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
-
-    invoke-static {p0, v0}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    return-void
-.end method
-
-.method public sx(Ljava/lang/String;JZ)V
-    .locals 0
-
-    const-string p2, "postId"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez p2, :cond_0
-
-    const-string p2, "mAdapter"
-
-    invoke-static {p2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 p2, 0x0
-
-    :cond_0
-    invoke-virtual {p2, p1, p4}, Lin/mohalla/sharechat/videoplayer/adapter/a;->t0(Ljava/lang/String;Z)V
-
-    .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p2
-
-    invoke-interface {p2, p1, p4}, Lin/mohalla/sharechat/videoplayer/p;->as(Ljava/lang/String;Z)V
-
-    return-void
-.end method
-
-.method protected final sz()Lin/mohalla/sharechat/data/local/prefs/GlobalPrefs;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G:Lin/mohalla/sharechat/data/local/prefs/GlobalPrefs;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mGlobalPref"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public ty()Lin/mohalla/sharechat/common/base/j;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lin/mohalla/sharechat/common/base/j<",
-            "Lin/mohalla/sharechat/videoplayer/q;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method protected final tz()Lcom/google/gson/Gson;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->F:Lcom/google/gson/Gson;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mGson"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public u3(Ljava/lang/String;Ljava/util/List;)V
-    .locals 28
+.method public final pb(Lin/mohalla/sharechat/data/repository/post/PostModel;ZZLdp0/a;)V
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Lin/mohalla/sharechat/data/remote/model/StickerModel;",
+            "Lin/mohalla/sharechat/data/repository/post/PostModel;",
+            "ZZ",
+            "Ldp0/a<",
+            "Lro0/x;",
             ">;)V"
         }
     .end annotation
 
-    move-object/from16 v0, p0
+    const-string v0, "post"
 
-    move-object/from16 v1, p1
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v2, "postId"
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v1
 
-    const-string v2, "stickerModelList"
+    const/4 v5, 0x0
 
-    move-object/from16 v3, p2
+    move-object v2, p1
 
-    invoke-static {v3, v2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move v3, p2
+
+    move v4, p3
+
+    move-object v6, p4
+
+    invoke-interface/range {v1 .. v6}, Lom0/n;->T3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZZZLdp0/a;)V
+
+    return-void
+.end method
+
+.method public final pj()V
+    .locals 6
 
     .line 1
-    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
-    const/4 v4, 0x0
+    const/4 v1, -0x1
 
-    const-string v5, "binding"
+    if-eq v0, v1, :cond_3
 
-    if-nez v2, :cond_0
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v2, v4
-
-    :cond_0
-    iget-object v2, v2, Lru/q2;->m:Lru/h5;
-
-    iget-object v2, v2, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    invoke-virtual {v2}, Landroid/widget/LinearLayout;->removeAllViews()V
+    if-eq v0, v1, :cond_3
 
     .line 2
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-static {v0}, Lv4/d0;->m(Landroid/view/View;)Lv4/s0;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const/16 v3, 0x8
+
+    .line 4
+    invoke-virtual {v0, v3}, Lv4/s0;->l(I)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    if-eqz v0, :cond_3
+
+    .line 5
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v3, 0x0
+
+    const-string v4, "mAdapter"
+
+    if-eqz v0, :cond_2
+
+    iget v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
+
+    invoke-virtual {v0, v5}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_3
+
+    .line 6
+    iget-object v5, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v5, :cond_1
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v5}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v3, "postId"
+
+    .line 7
+    invoke-static {v0, v3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v5, v0}, Lpm0/b;->s(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-eq v0, v1, :cond_3
+
+    .line 9
+    iget-object v1, v5, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    invoke-virtual {v1, v2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setShowVideoControls(Z)V
+
+    .line 10
+    iget-object v1, v5, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "mPostModelList[position]"
+
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast v0, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    const-string v1, "PAYLOAD_VIDEO_CONTROLS_CHANGE"
+
+    invoke-virtual {v5, v0, v1}, Lpm0/b;->y(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    goto :goto_1
+
+    .line 11
+    :cond_1
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 12
+    :cond_2
+    invoke-static {v4}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 13
+    :cond_3
+    :goto_1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Rz()V
+
+    return-void
+.end method
+
+.method public final pz(JLin/mohalla/sharechat/data/repository/post/PostModel;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2, p3}, Lom0/n;->sw(JLin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    return-void
+.end method
+
+.method public final qj(I)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setPosition(I)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final r(Z)V
+    .locals 23
+
+    move-object/from16 v0, p0
+
+    .line 1
     invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     if-eqz v2, :cond_3
 
-    const/high16 v6, 0x42200000    # 40.0f
+    .line 2
+    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->Gp()Lnm0/a;
 
-    .line 3
-    invoke-static {v2, v6}, Lip/a;->b(Landroid/content/Context;F)F
+    move-result-object v1
 
-    move-result v6
+    if-eqz p1, :cond_0
 
-    float-to-int v6, v6
+    const-string v3, "popup_shown_at_share"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v3, "popup_shown_at_download"
+
+    :goto_0
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
 
     const/4 v7, 0x0
 
-    .line 4
-    invoke-interface/range {p2 .. p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    const/4 v8, 0x0
 
-    move-result-object v3
+    const/4 v9, 0x0
 
-    :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v10, 0x0
 
-    move-result v8
-
-    if-eqz v8, :cond_3
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v8
-
-    add-int/lit8 v9, v7, 0x1
-
-    if-gez v7, :cond_1
-
-    invoke-static {}, Lkotlin/collections/t;->w()V
-
-    :cond_1
-    check-cast v8, Lin/mohalla/sharechat/data/remote/model/StickerModel;
-
-    .line 5
-    new-instance v7, Lsharechat/library/ui/customImage/CustomImageView;
-
-    move-object v10, v7
-
-    invoke-direct {v7, v2}, Lsharechat/library/ui/customImage/CustomImageView;-><init>(Landroid/content/Context;)V
-
-    .line 6
-    invoke-virtual {v8}, Lin/mohalla/sharechat/data/remote/model/StickerModel;->getTinyUrl()Ljava/lang/String;
-
-    move-result-object v11
+    const/4 v11, 0x0
 
     const/4 v12, 0x0
 
@@ -10811,242 +11325,241 @@
 
     const/4 v14, 0x0
 
-    const/4 v15, 0x0
-
-    .line 7
-    sget-object v16, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
+    const/16 v16, 0x0
 
     const/16 v17, 0x0
 
-    const/16 v18, 0x0
+    if-eqz p1, :cond_1
 
-    .line 8
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 3
+    iget-object v15, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->b1:Landroidx/activity/result/c;
 
-    move-result-object v19
+    goto :goto_1
 
-    .line 9
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_1
+    iget-object v15, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->c1:Landroidx/activity/result/c;
 
-    move-result-object v20
+    :goto_1
+    move-object/from16 v19, v15
+
+    if-eqz p1, :cond_2
+
+    .line 4
+    sget-object v15, Lvv0/f1;->Share:Lvv0/f1;
+
+    goto :goto_2
+
+    :cond_2
+    sget-object v15, Lvv0/f1;->Download:Lvv0/f1;
+
+    :goto_2
+    move-object/from16 v22, v15
+
+    const v20, 0xfffc
 
     const/16 v21, 0x0
 
-    const/16 v22, 0x0
+    const/4 v15, 0x0
 
-    const/16 v23, 0x0
+    move-object/from16 v18, v19
 
-    const/16 v24, 0x0
+    move-object/from16 v19, v22
 
-    const/16 v25, 0x0
-
-    const/16 v26, 0x7cde
-
-    const/16 v27, 0x0
-
-    .line 10
-    invoke-static/range {v10 .. v27}, Ltj0/b;->g(Landroid/widget/ImageView;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZLandroid/widget/ImageView$ScaleType;Landroidx/fragment/app/Fragment;Luj0/a;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/util/List;ZZLkotlinx/coroutines/s0;ZILjava/lang/Object;)V
-
-    .line 11
-    new-instance v10, Lin/mohalla/sharechat/videoplayer/u;
-
-    invoke-direct {v10, v0, v1, v8}, Lin/mohalla/sharechat/videoplayer/u;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;Lin/mohalla/sharechat/data/remote/model/StickerModel;)V
-
-    invoke-virtual {v7, v10}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 12
-    iget-object v8, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v8, :cond_2
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v8, v4
-
-    :cond_2
-    iget-object v8, v8, Lru/q2;->m:Lru/h5;
-
-    iget-object v8, v8, Lru/h5;->g:Landroid/widget/LinearLayout;
-
-    .line 13
-    new-instance v10, Landroid/widget/LinearLayout$LayoutParams;
-
-    invoke-direct {v10, v6, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
-
-    const/high16 v11, 0x41800000    # 16.0f
-
-    .line 14
-    invoke-static {v2, v11}, Lip/a;->b(Landroid/content/Context;F)F
-
-    move-result v11
-
-    float-to-int v11, v11
-
-    iput v11, v10, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
-
-    .line 15
-    sget-object v11, Li00/a0;->a:Li00/a0;
-
-    .line 16
-    invoke-virtual {v8, v7, v10}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    move v7, v9
-
-    goto :goto_0
+    .line 5
+    invoke-static/range {v1 .. v21}, Lnm0/a$a;->B(Lnm0/a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZZZILsharechat/data/user/FollowData;ZLjava/lang/String;ZLjava/lang/String;ZLkv1/k;ZLandroidx/activity/result/c;Lvv0/f1;ILjava/lang/Object;)V
 
     :cond_3
     return-void
 .end method
 
-.method public ug(Ljava/lang/String;Lgm0/q;)V
+.method public final r0(Ljava/lang/String;)Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    const/16 v1, 0x5f
+
+    if-eqz v0, :cond_0
+
+    const-string v2, "VIDEO_FEED_REDIRECT_REFERRER"
+
+    invoke-virtual {v0, v2}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_1
+
+    :cond_0
+    const-string v0, ""
+
+    :cond_1
+    const-string v2, "mLastScreenName"
+
+    const/4 v3, 0x0
+
+    if-eqz p1, :cond_3
+
+    .line 2
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v4
+
+    invoke-interface {v4, p1}, Lom0/n;->z4(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    .line 3
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Ljava/lang/String;
+
+    if-eqz v4, :cond_2
+
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lom0/n;->M2()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lom0/n;->J2()V
+
+    const-string v1, "suggested"
+
+    .line 4
+    invoke-static {p1, v1, v0}, Ljr0/c;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 5
+    :cond_2
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 6
+    :cond_3
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Ljava/lang/String;
+
+    if-eqz v4, :cond_4
+
+    invoke-virtual {p1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lom0/n;->M2()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    :goto_0
+    return-object p1
+
+    :cond_4
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+.end method
+
+.method public final r7(Ljava/lang/String;Lkv1/q;)V
     .locals 1
 
     const-string v0, "postId"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "packageInfo"
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_1
 
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->j0(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {v0, p1}, Lpm0/b;->u(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Xo(Lin/mohalla/sharechat/data/repository/post/PostModel;Lgm0/q;)V
+    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Vq(Lin/mohalla/sharechat/data/repository/post/PostModel;Lkv1/q;)V
 
-    :cond_1
+    :cond_0
     return-void
-.end method
-
-.method protected final uz()Lwx/e;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->E:Lwx/e;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mNavigationUtils"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public v1(ZLyj0/a;)V
-    .locals 3
-
-    const-string v0, "binding.errorContainer"
-
-    const/4 v1, 0x0
-
-    const-string v2, "binding"
-
-    if-eqz p1, :cond_2
-
-    if-eqz p2, :cond_4
-
-    .line 1
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p1, v1
-
-    :cond_0
-    iget-object p1, p1, Lru/q2;->d:Lin/mohalla/sharechat/common/errorHandling/ErrorViewContainer;
-
-    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/common/errorHandling/ErrorViewContainer;->b(Lyj0/a;)V
-
-    .line 2
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez p1, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
 
     :cond_1
-    move-object v1, p1
-
-    :goto_0
-    iget-object p1, v1, Lru/q2;->d:Lin/mohalla/sharechat/common/errorHandling/ErrorViewContainer;
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p1}, Lkp/e;->F(Landroid/view/View;)V
-
-    goto :goto_2
+    const-string p1, "mAdapter"
 
     .line 3
-    :cond_2
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    if-nez p1, :cond_3
+    const/4 p1, 0x0
 
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_1
-
-    :cond_3
-    move-object v1, p1
-
-    :goto_1
-    iget-object p1, v1, Lru/q2;->d:Lin/mohalla/sharechat/common/errorHandling/ErrorViewContainer;
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {p1}, Lkp/e;->t(Landroid/view/View;)V
-
-    :cond_4
-    :goto_2
-    return-void
+    throw p1
 .end method
 
-.method public v8(ILjava/lang/String;)V
+.method public final r8(ILjava/lang/String;)V
     .locals 1
 
-    const-string v0, "adNetwork"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_1
 
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object p1
 
@@ -11055,17 +11568,17 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     return-void
 
     .line 3
-    :cond_1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    :cond_0
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    invoke-interface {v0, p1, p2}, Lin/mohalla/sharechat/videoplayer/p;->N4(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2}, Lom0/n;->R4(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
 
     const/4 p2, 0x1
 
@@ -11073,192 +11586,696 @@
     invoke-virtual {p1, p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setViewed(Z)V
 
     return-void
+
+    :cond_1
+    const-string p1, "mAdapter"
+
+    .line 5
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
-.method public vx(ILjava/lang/String;Z)V
+.method public final re(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
     .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2, p3}, Ldz/e$a;->j(Ldz/e;ILjava/lang/String;Z)V
 
     return-void
 .end method
 
-.method protected vy()Ljava/lang/String;
-    .locals 2
+.method public final s8(Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    .line 2
+    invoke-virtual {v0, p1}, Lpm0/b;->u(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
-    move-result v1
+    move-result-object p1
 
-    if-nez v1, :cond_0
+    if-eqz p1, :cond_1
 
-    const-string v1, "Tag"
+    .line 3
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->p5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
 
     goto :goto_0
 
     :cond_0
-    const-string v1, ""
+    const-string p1, "mAdapter"
 
+    .line 4
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+
+    :cond_1
     :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "VideoPlayerFragment"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method
 
-.method protected final vz()Lin/mohalla/sharechat/videoplayer/p;
+.method public final s9(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->C:Lin/mohalla/sharechat/videoplayer/p;
+    const-string v0, "postId"
 
-    if-eqz v0, :cond_0
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object v0
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;
 
-    :cond_0
-    const-string v0, "mPresenter"
+    invoke-direct {v0, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$u;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public w5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 9
-
-    if-nez p1, :cond_0
+    invoke-static {p0, v0}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
 
     return-void
+.end method
+
+.method public final setPaging(Z)V
+    .locals 0
+
+    xor-int/lit8 p1, p1, 0x1
+
+    iput-boolean p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->A:Z
+
+    return-void
+.end method
+
+.method public final ta()Ljava/util/Map;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    :cond_0
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
-
-    move-result-object v1
+    const-string v1, "TAG_ID"
 
     const/4 v2, 0x1
 
     const/4 v3, 0x0
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_0
 
-    invoke-static {v1}, Ldq/a;->a(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result v1
+    move-result v0
 
-    if-ne v1, v2, :cond_1
+    if-ne v0, v2, :cond_0
+
+    const/4 v0, 0x1
 
     goto :goto_0
 
-    :cond_1
-    const/4 v2, 0x0
+    :cond_0
+    const/4 v0, 0x0
 
     :goto_0
-    const/4 v3, 0x0
-
-    const/4 v4, 0x4
-
-    const/4 v5, 0x0
-
-    move-object v1, p1
-
-    invoke-static/range {v0 .. v5}, Lin/mohalla/sharechat/videoplayer/p$a;->d(Lin/mohalla/sharechat/videoplayer/p;Lin/mohalla/sharechat/data/repository/post/PostModel;ZZILjava/lang/Object;)V
+    if-eqz v0, :cond_1
 
     .line 2
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    new-instance v0, Ljava/util/LinkedHashMap;
 
-    move-result-object v0
-
-    const-string v1, "WhatsAppShareNewBottomSheet"
-
-    invoke-interface {v0, p1, v1}, Lin/mohalla/sharechat/videoplayer/p;->Q(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 3
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getFragmentManager()Landroidx/fragment/app/FragmentManager;
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireArguments()Landroid/os/Bundle;
 
-    move-result-object v3
+    move-result-object v2
 
-    if-eqz v3, :cond_5
+    invoke-virtual {v2, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    const-string v2, "groupOrTagName"
 
     .line 4
-    sget-object v2, Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment;->p:Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_2
 
     .line 5
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+    :cond_1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
+
+    const-string v1, "REFERRER"
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->containsKey(Ljava/lang/String;)Z
 
-    move-result-object v0
+    move-result v0
 
-    if-nez v0, :cond_3
-
-    :cond_2
-    const-string v0, ""
-
-    :cond_3
-    move-object v4, v0
-
-    .line 6
-    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_4
-
-    invoke-virtual {p1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object p1
+    if-ne v0, v2, :cond_2
 
     goto :goto_1
 
-    :cond_4
-    const/4 p1, 0x0
+    :cond_2
+    const/4 v2, 0x0
 
     :goto_1
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
+    if-eqz v2, :cond_3
 
-    move-result-object v5
+    .line 6
+    new-instance v0, Ljava/util/LinkedHashMap;
 
-    const/4 v6, 0x0
-
-    const/16 v7, 0x8
-
-    const/4 v8, 0x0
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 7
-    invoke-static/range {v2 .. v8}, Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;->b(Lsharechat/feature/sharebottomsheet/ShareNewBottomSheetFragment$a;Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;Lr00/a;ILjava/lang/Object;)V
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->requireArguments()Landroid/os/Bundle;
 
-    :cond_5
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    const-string v2, "referrer"
+
+    .line 8
+    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v0, 0x0
+
+    :cond_4
+    :goto_2
+    return-object v0
+.end method
+
+.method public final tv(Lin/mohalla/sharechat/data/repository/post/PostModel;Lsharechat/library/cvo/Product;)V
+    .locals 3
+
+    const-string v0, "postModel"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "product"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    .line 2
+    invoke-interface {v0, p1, v1, v2}, Lom0/n;->P2(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+
+    .line 3
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lsharechat/library/cvo/PostEntity;->getAdsBiddingInfo()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v0}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object v2, v0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    invoke-virtual {p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getNetworkAdModel()Ld10/x;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p1}, Ld10/x;->a()Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_2
+
+    invoke-virtual {p1}, Lin/mohalla/ads/adsdk/models/networkmodels/AdBiddingInfo;->getMeta()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4
+    :cond_2
+    :goto_1
+    new-instance p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$s;
+
+    invoke-direct {p1, p2, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$s;-><init>(Lsharechat/library/cvo/Product;Ljava/lang/String;)V
+
+    invoke-static {p0, p1}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
     return-void
 .end method
 
-.method public w6(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
+.method public final tz(Ljava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V0:Lre0/c5;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/c5;->c:Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final u1(Lsharechat/library/cvo/UserEntity;)V
+    .locals 6
+
+    const-string v0, "userEntity"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_3
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    iget-object v2, v0, Lpm0/b;->E:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    .line 3
+    invoke-virtual {v3}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_1
+
+    invoke-virtual {v4}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_1
+
+    :cond_1
+    move-object v4, v1
+
+    :goto_1
+    invoke-virtual {p1}, Lsharechat/library/cvo/UserEntity;->getUserId()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    .line 4
+    invoke-virtual {v3, p1}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setUser(Lsharechat/library/cvo/UserEntity;)V
+
+    const-string v4, "PAYLOAD_FOLLOW_CHANGE"
+
+    .line 5
+    invoke-virtual {v0, v3, v4}, Lpm0/b;->y(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_2
+    return-void
+
+    :cond_3
+    const-string p1, "mAdapter"
+
+    .line 6
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final ui(Ljava/lang/String;Lsharechat/library/cvo/UserEntity;)V
+    .locals 0
+
+    const-string p2, "postId"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final un(Ldp0/l;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ldp0/l<",
+            "-",
+            "Ljava/lang/Boolean;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v3, p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;-><init>(Lvo0/d;Ldp0/l;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    const/4 p1, 0x2
+
+    invoke-static {v0, v1, v3, v2, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+.end method
+
+.method public final uo(Z)V
+    .locals 5
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$r;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v3, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$r;-><init>(Lvo0/d;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Z)V
+
+    const/4 v4, 0x2
+
+    invoke-static {v0, v1, v3, v2, v4}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    .line 3
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const-string v1, "binding"
+
+    if-eqz v0, :cond_6
+
+    iget-object v0, v0, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
+
+    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->h()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
+
+    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->d()V
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 5
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_5
+
+    iget-object v0, v0, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
+
+    const-string v2, "binding.muteAnimation"
+
+    invoke-static {v0, v2}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
+
+    .line 6
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_4
+
+    iget-object v0, v0, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
+
+    invoke-static {v0, v2}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p1, :cond_2
+
+    const p1, 0x7f110004
+
+    goto :goto_1
+
+    :cond_2
+    const p1, 0x7f110008
+
+    :goto_1
+    const-string v2, "lottie_images/"
+
+    .line 7
+    invoke-virtual {v0, v2}, Lcom/airbnb/lottie/LottieAnimationView;->setImageAssetsFolder(Ljava/lang/String;)V
+
+    .line 8
+    invoke-virtual {v0, p1}, Lcom/airbnb/lottie/LottieAnimationView;->setAnimation(I)V
+
+    .line 9
+    invoke-virtual {v0}, Lcom/airbnb/lottie/LottieAnimationView;->j()V
+
+    .line 10
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz p1, :cond_3
+
+    iget-object p1, p1, Lre0/j2;->l:Lcom/airbnb/lottie/LottieAnimationView;
+
+    .line 11
+    new-instance v0, Lv60/c;
+
+    .line 12
+    new-instance v1, Lom0/z;
+
+    invoke-direct {v1, p0}, Lom0/z;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    new-instance v2, Lom0/a0;
+
+    invoke-direct {v2, p0}, Lom0/a0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    new-instance v4, Lom0/b0;
+
+    invoke-direct {v4, p0}, Lom0/b0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    .line 13
+    invoke-direct {v0, v3, v1, v2, v4}, Lv60/c;-><init>(Ldp0/a;Ldp0/a;Ldp0/a;Ldp0/a;)V
+
+    .line 14
+    invoke-virtual {p1, v0}, Lcom/airbnb/lottie/LottieAnimationView;->c(Landroid/animation/Animator$AnimatorListener;)V
+
+    return-void
+
+    :cond_3
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 15
+    :cond_4
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 16
+    :cond_5
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 17
+    :cond_6
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+.end method
+
+.method public final v3(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;)V
+    .locals 8
+
+    const-string v0, "post"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v1
+
+    .line 2
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Ljava/lang/String;
+
+    .line 3
+    sget-object v0, Lin/mohalla/sharechat/data/local/Constant;->INSTANCE:Lin/mohalla/sharechat/data/local/Constant;
+
+    invoke-virtual {v0}, Lin/mohalla/sharechat/data/local/Constant;->getTYPE_CLICKED()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->yz()Ljava/lang/String;
+
+    move-result-object v6
+
+    move-object v2, p1
+
+    move v3, p2
+
+    move-object v7, p3
+
+    .line 5
+    invoke-interface/range {v1 .. v7}, Lom0/n;->E0(Lin/mohalla/sharechat/data/repository/post/PostModel;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final vb(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    const-string v0, "postId"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1, p2}, Lom0/n;->w0(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final vh(Ljava/lang/String;I)V
+    .locals 0
+
+    const-string p2, "adId"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final vp(ILjava/lang/String;)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object p1
+
+    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->setAudioFileUrl(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final vs(Z)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->V:Lom0/l;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0, p1}, Lom0/l;->s(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final w6(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -11281,58 +12298,38 @@
 
     move-object v0, p0
 
-    const-string v1, "text"
+    const-string v2, "text"
 
-    move-object v4, p1
+    const-string v4, "encodedText"
 
-    invoke-static {p1, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v6, "users"
 
-    const-string v1, "encodedText"
+    const-string v8, "commentSource"
 
-    move-object v5, p2
+    move-object v1, p1
 
-    invoke-static {p2, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v3, p2
 
-    const-string v1, "users"
+    move-object v5, p3
 
-    move-object v6, p3
-
-    invoke-static {p3, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "commentSource"
-
-    move-object v10, p4
-
-    invoke-static {p4, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "commentType"
-
-    move-object/from16 v7, p5
-
-    invoke-static {v7, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-object v7, p4
 
     .line 1
-    iget v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
+    invoke-static/range {v1 .. v8}, Lc2/q;->c(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    iget v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->H0:I
 
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_1
 
-    .line 2
-    iget-object v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
+    .line 3
+    iget-object v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
 
-    if-nez v1, :cond_0
+    if-eqz v2, :cond_0
 
-    const-string v1, "mAdapter"
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v1, 0x0
-
-    :cond_0
-    iget v2, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Z:I
-
-    invoke-virtual {v1, v2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+    invoke-virtual {v2, v1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
 
     move-result-object v1
 
@@ -11342,8 +12339,8 @@
 
     if-eqz v3, :cond_1
 
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    .line 4
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v2
 
@@ -11361,587 +12358,411 @@
 
     move-object v10, p4
 
-    invoke-interface/range {v2 .. v10}, Lin/mohalla/sharechat/videoplayer/p;->H1(Lsharechat/library/cvo/PostEntity;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)V
+    invoke-interface/range {v2 .. v10}, Lom0/n;->A1(Lsharechat/library/cvo/PostEntity;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "mAdapter"
+
+    .line 5
+    invoke-static {v1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 v1, 0x0
+
+    throw v1
 
     :cond_1
+    :goto_0
     return-void
 .end method
 
-.method public w8(Ljava/lang/String;)V
+.method public final wz()Lq60/m;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lq60/m<",
+            "Lom0/o;",
+            ">;"
+        }
+    .end annotation
 
-    const-string v0, "postId"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-eqz v0, :cond_1
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    .line 2
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->j0(Ljava/lang/String;)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    .line 3
-    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r5(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method protected final wz()Los/s0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->D:Los/s0;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mVideoPlayerUtil"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public x0(Z)V
-    .locals 9
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
 
     move-result-object v0
 
-    const/4 v1, 0x1
+    return-object v0
+.end method
 
-    invoke-interface {v0, v1}, Lin/mohalla/sharechat/videoplayer/p;->l4(Z)V
+.method public final xa(ILjava/lang/String;)V
+    .locals 2
+
+    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Nz()Lom0/n;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->X:Lpm0/b;
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v1, p1}, Lpm0/b;->t(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object p1
+
+    invoke-interface {v0, p1, p2}, Lom0/n;->Qt(Lin/mohalla/sharechat/data/repository/post/PostModel;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "mAdapter"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final xo(F)V
+    .locals 1
+
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;->setSlopThreshold(F)V
+
+    return-void
+
+    :cond_0
+    const-string p1, "binding"
+
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    throw p1
+.end method
+
+.method public final y(Lru1/a$a;)V
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->isResumed()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
 
     .line 2
+    sget-object v0, Lru1/a;->a:Lru1/a;
+
+    .line 3
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    const-string v2, "binding"
+
+    const/4 v3, 0x0
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v1, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    const-string v4, "binding.recyclerViewVideo"
+
+    invoke-static {v1, v4}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    iget-object v4, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
+
+    if-eqz v4, :cond_0
+
+    iget-object v2, v4, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string v3, "binding.recyclerViewVideo.context"
+
+    invoke-static {v2, v3}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 5
+    new-instance v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f0;
+
+    invoke-direct {v3, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$f0;-><init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    invoke-virtual {v0, v1, v2, p1, v3}, Lru1/a;->b(Landroid/view/View;Landroid/content/Context;Lru1/a$a;Ldp0/l;)V
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 7
+    :cond_1
+    invoke-static {v2}, Lep0/s;->p(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public final yj(I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final yq(Los1/z;)V
+    .locals 1
+
+    const-string v0, "videoPlayerFollowVariant"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->R0:Los1/z;
+
+    return-void
+.end method
+
+.method public final yz()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Ljava/lang/String;
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "Tag"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, ""
+
+    :goto_0
+    const-string v2, "VideoPlayerFragment"
+
+    .line 2
+    invoke-static {v0, v1, v2}, Ljr0/c;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final z(Lsharechat/library/cvo/WebCardObject;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 7
+
+    const-string v0, "postId"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "authorId"
+
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
     invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/Hilt_VideoPlayerFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    if-eqz v0, :cond_2
-
-    .line 3
-    sget-object v2, Lsharechat/library/utilities/n;->a:Lsharechat/library/utilities/n;
-
-    invoke-virtual {v2, v0}, Lsharechat/library/utilities/n;->m(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-eqz p1, :cond_0
-
-    .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v3
-
-    const/4 v4, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x5
-
-    const/4 v8, 0x0
-
-    move v5, v0
-
-    invoke-static/range {v3 .. v8}, Lin/mohalla/sharechat/videoplayer/p$a;->d(Lin/mohalla/sharechat/videoplayer/p;Lin/mohalla/sharechat/data/repository/post/PostModel;ZZILjava/lang/Object;)V
-
-    :cond_0
     if-eqz v0, :cond_1
 
-    .line 5
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lin/mohalla/sharechat/videoplayer/p;->c5()V
-
-    goto :goto_0
-
-    :cond_1
-    const-string p1, "android.permission.WRITE_EXTERNAL_STORAGE"
-
-    .line 6
-    filled-new-array {p1}, [Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 7
-    invoke-virtual {p0, p1, v1}, Landroidx/fragment/app/Fragment;->requestPermissions([Ljava/lang/String;I)V
-
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method public x1(ZLin/mohalla/sharechat/data/repository/post/PostModel;ZZ)V
-    .locals 16
-
-    move-object/from16 v0, p0
-
-    const-string v1, "post"
-
-    move-object/from16 v2, p2
-
-    invoke-static {v2, v1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v1
-
-    const/4 v3, 0x1
+    .line 2
+    new-instance v1, Loc0/j;
 
     const/4 v4, 0x0
 
-    if-eqz v1, :cond_0
-
-    invoke-virtual {v1}, Landroid/app/Activity;->isFinishing()Z
-
-    move-result v1
-
-    xor-int/2addr v1, v3
-
-    if-ne v1, v3, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_6
-
-    .line 2
-    iget-boolean v1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N0:Z
-
-    if-eqz v1, :cond_2
-
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object v1
-
-    const/16 v5, 0x20
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_1
-
-    iget v1, v1, Landroid/view/WindowManager$LayoutParams;->softInputMode:I
-
-    if-ne v1, v5, :cond_1
-
-    const/4 v1, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :goto_1
-    if-nez v1, :cond_2
-
     .line 3
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    invoke-virtual {p0, v4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
-
-    if-eqz v1, :cond_2
+    move-result-object v5
 
     .line 4
-    invoke-virtual {v1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v5}, Landroid/view/Window;->setSoftInputMode(I)V
+    invoke-direct {v1, v0, v5, v4}, Loc0/j;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    :cond_2
-    invoke-virtual/range {p2 .. p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
-    move-result-object v1
+    if-eqz v0, :cond_0
 
-    if-eqz v1, :cond_5
+    iget-object v0, v0, Lre0/j2;->j:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
+    const-string v5, "binding.fragmentContainerReplace"
 
-    move-result-object v7
+    invoke-static {v0, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v7, :cond_5
+    invoke-static {v0}, Lv40/d;->p(Landroid/view/View;)V
 
     .line 6
-    sget-object v5, Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet;->x:Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$a;
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
 
     .line 7
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
 
-    move-result-object v6
+    move-result-object v5
 
-    const-string v1, "childFragmentManager"
+    new-instance v6, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$j;
 
-    invoke-static {v6, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v6, v4, v1, p1, p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$j;-><init>(Lvo0/d;Loc0/j;Lsharechat/library/cvo/WebCardObject;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
 
-    invoke-virtual {v0, v7}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
+    const/4 v1, 0x2
 
-    move-result-object v8
+    invoke-static {v0, v5, v4, v6, v1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
 
     .line 8
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    invoke-virtual {p0}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpFragment;->vz()Lss1/a;
 
-    move-result-object v1
-
-    invoke-interface {v1}, Lin/mohalla/sharechat/videoplayer/p;->s()Z
-
-    move-result v9
+    move-result-object v0
 
     .line 9
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->r0(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v5
 
-    if-eqz v1, :cond_3
+    const-string v1, "thirdPartyLink-react"
 
-    const-string v10, "KEY_AFTER_VERIFICATION"
+    move-object v2, p2
 
-    invoke-virtual {v1, v10, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    move-object v3, p3
 
-    move-result v1
+    move-object v4, p4
 
-    move v12, v1
-
-    goto :goto_2
-
-    :cond_3
-    const/4 v12, 0x0
+    move-object v6, p5
 
     .line 10
-    :goto_2
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-interface/range {v0 .. v6}, Lss1/a;->T8(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v1
-
-    if-eqz v1, :cond_4
-
-    const-string v10, "OPEN_REPLY_FRGAMENT"
-
-    invoke-virtual {v1, v10, v4}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v4
-
-    move v13, v4
-
-    goto :goto_3
-
-    :cond_4
-    const/4 v13, 0x0
-
-    .line 11
-    :goto_3
-    iget-object v14, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J0:Ljava/lang/String;
-
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->M3()Z
-
-    move-result v1
-
-    xor-int/lit8 v15, v1, 0x1
-
-    move/from16 v10, p3
-
-    move/from16 v11, p1
-
-    .line 12
-    invoke-virtual/range {v5 .. v15}, Lin/mohalla/sharechat/post/bottomsheet/VideoPostBottomSheet$a;->b(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;Ljava/lang/String;ZZZZZLjava/lang/String;Z)V
-
-    :cond_5
-    if-nez p4, :cond_6
-
-    .line 13
-    invoke-virtual/range {p2 .. p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getPost()Lsharechat/library/cvo/PostEntity;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_6
-
-    .line 14
-    invoke-virtual/range {p0 .. p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v2
-
-    invoke-virtual {v1}, Lsharechat/library/cvo/PostEntity;->getPostId()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v0, v3}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->q0(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-interface {v2, v3, v1}, Lin/mohalla/sharechat/videoplayer/p;->J(Ljava/lang/String;Lsharechat/library/cvo/PostEntity;)V
-
-    :cond_6
-    return-void
-.end method
-
-.method public x2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 1
-
-    const-string v0, "postModel"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/p;->x2(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-
-    return-void
-.end method
-
-.method public xr(Z)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->U:Lin/mohalla/sharechat/videoplayer/m;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0, p1}, Lin/mohalla/sharechat/videoplayer/m;->o(Z)V
+    goto :goto_0
 
     :cond_0
-    return-void
-.end method
-
-.method protected final yz()Lsharechat/feature/post/report/b;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->L:Lsharechat/feature/post/report/b;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "postReportManager"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public z1(Lsharechat/library/cvo/UserEntity;)V
-    .locals 1
-
-    const-string v0, "userEntity"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W:Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    if-nez v0, :cond_0
-
-    const-string v0, "mAdapter"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Lin/mohalla/sharechat/videoplayer/adapter/a;->w0(Lsharechat/library/cvo/UserEntity;)V
-
-    return-void
-.end method
-
-.method public z2()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->wz()Los/s0;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Los/s0;->T()V
-
-    return-void
-.end method
-
-.method public zd(I)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->onBackPressed()V
-
-    return-void
-.end method
-
-.method public zg(IJZ)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
-
-    if-nez v0, :cond_0
-
     const-string v0, "binding"
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    .line 11
+    invoke-static {v0}, Lep0/s;->p(Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    throw v4
 
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
-    if-eqz v0, :cond_1
-
-    add-int/lit8 v1, p1, 0x1
-
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->x1(I)V
-
-    .line 2
     :cond_1
-    invoke-virtual {p0, p1, p2, p3, p4}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Pz(IJZ)V
-
+    :goto_0
     return-void
 .end method
 
-.method public zm(ILjava/lang/String;J)V
+.method public final ze(Lin/mohalla/sharechat/data/repository/post/PostModel;Z)V
     .locals 0
 
-    const-string p1, "type"
+    const-string p2, "post"
 
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    sget-object p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$j;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$j;
-
-    invoke-static {p0, p1}, Lip/a;->a(Landroidx/fragment/app/Fragment;Lr00/p;)V
-
-    .line 2
-    iget-boolean p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x1
-
-    .line 3
-    iput-boolean p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->B:Z
-
-    const/4 p1, 0x0
-
-    .line 4
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
-
-    :cond_0
     return-void
 .end method
 
-.method public zo(I)V
+.method public final zo(ILdp0/l;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ldp0/l<",
+            "-",
+            "Lin/mohalla/sharechat/data/emoji/Emoji;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p0}, Lc1/d1;->d(Landroidx/lifecycle/b0;)Landroidx/lifecycle/w;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {}, Lm30/d;->b()Lyr0/c0;
+
+    move-result-object v1
+
+    new-instance v2, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g;
+
+    const/4 v3, 0x0
+
+    invoke-direct {v2, v3, p2, p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$g;-><init>(Lvo0/d;Ldp0/l;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;I)V
+
+    const/4 p1, 0x2
+
+    invoke-static {v0, v1, v3, v2, p1}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    return-void
+.end method
+
+.method public final zp(I)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->T0:Lru/q2;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->W0:Lre0/j2;
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
-
-    const-string v0, "binding"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->i:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
-
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
+    iget-object v0, v0, Lre0/j2;->m:Lin/mohalla/sharechat/videoplayer/VideoPlayerRecyclerView;
+
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
 
     move-result-object v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     .line 2
-    instance-of v2, v0, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;
+    instance-of v2, v0, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_0
 
     move-object v1, v0
 
-    check-cast v1, Lin/mohalla/base/recyclerView/managers/CustomScrollLinearLayoutManager;
+    check-cast v1, Lin/mohalla/sharechat/appx/recyclerView/managers/CustomScrollLinearLayoutManager;
 
-    :cond_1
-    if-eqz v1, :cond_2
+    :cond_0
+    if-eqz v1, :cond_1
 
     .line 3
-    invoke-virtual {v1}, Landroidx/recyclerview/widget/LinearLayoutManager;->m2()I
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/LinearLayoutManager;->s1()I
 
     move-result v0
 
-    if-ne v0, p1, :cond_2
+    if-ne v0, p1, :cond_1
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->eA(Z)V
+    invoke-virtual {p0, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Zz(Z)V
+
+    :cond_1
+    return-void
 
     :cond_2
-    return-void
-.end method
+    const-string p1, "binding"
 
-.method protected final zz()Lsharechat/library/utilities/systemservices/SensorManagerUtil;
-    .locals 1
+    .line 4
+    invoke-static {p1}, Lep0/s;->p(Ljava/lang/String;)V
 
-    .line 1
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->N:Lsharechat/library/utilities/systemservices/SensorManagerUtil;
-
-    if-eqz v0, :cond_0
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "sensorManagerUtil"
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    return-object v0
+    throw v1
 .end method

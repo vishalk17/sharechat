@@ -3,7 +3,31 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/i;
+.implements Landroidx/lifecycle/j;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u00080\u0018\u00002\u00020\u0001B\t\u0008\u0004\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u0082\u0001\u0002\u0004\u0005\u00a8\u0006\u0006"
+    }
+    d2 = {
+        "Lcoil/request/RequestDelegate;",
+        "Landroidx/lifecycle/j;",
+        "<init>",
+        "()V",
+        "Lcoil/request/BaseRequestDelegate;",
+        "Lcoil/request/ViewTargetRequestDelegate;",
+        "coil-base_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
 
 
 # direct methods
@@ -16,7 +40,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Lcoil/request/RequestDelegate;-><init>()V
@@ -32,62 +56,50 @@
     return-void
 .end method
 
-.method public synthetic b(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->d(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public synthetic c(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->e(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public synthetic d(Landroidx/lifecycle/x;)V
-    .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->a(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
-
-    return-void
-.end method
-
-.method public e()V
+.method public final synthetic b(Landroidx/lifecycle/b0;)V
     .locals 0
 
     return-void
 .end method
 
-.method public f()V
+.method public c()V
     .locals 0
 
     return-void
 .end method
 
-.method public synthetic k(Landroidx/lifecycle/x;)V
+.method public d()V
     .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->c(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
 
     return-void
 .end method
 
-.method public synthetic m(Landroidx/lifecycle/x;)V
+.method public synthetic onDestroy(Landroidx/lifecycle/b0;)V
     .locals 0
-
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->b(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
 
     return-void
 .end method
 
-.method public synthetic u(Landroidx/lifecycle/x;)V
+.method public final synthetic onPause(Landroidx/lifecycle/b0;)V
     .locals 0
 
-    invoke-static {p0, p1}, Landroidx/lifecycle/h;->f(Landroidx/lifecycle/i;Landroidx/lifecycle/x;)V
+    return-void
+.end method
+
+.method public final synthetic onResume(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onStart(Landroidx/lifecycle/b0;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final synthetic onStop(Landroidx/lifecycle/b0;)V
+    .locals 0
 
     return-void
 .end method

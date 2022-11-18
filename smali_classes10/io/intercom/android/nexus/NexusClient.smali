@@ -79,7 +79,7 @@
     return-void
 .end method
 
-.method constructor <init>(Lcom/intercom/twig/Twig;Lokhttp3/OkHttpClient;Lio/intercom/android/nexus/NexusEventPropagator;)V
+.method public constructor <init>(Lcom/intercom/twig/Twig;Lokhttp3/OkHttpClient;Lio/intercom/android/nexus/NexusEventPropagator;)V
     .locals 1
 
     .line 3
@@ -111,10 +111,9 @@
     return-void
 .end method
 
-.method static synthetic access$100(Lio/intercom/android/nexus/NexusClient;)V
+.method public static synthetic access$100(Lio/intercom/android/nexus/NexusClient;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/intercom/android/nexus/NexusClient;->schedulePresence()V
 
     return-void
@@ -248,7 +247,6 @@
 .method public addEventListener(Lio/intercom/android/nexus/NexusListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusClient;->eventPropagator:Lio/intercom/android/nexus/NexusEventPropagator;
 
     invoke-virtual {v0, p1}, Lio/intercom/android/nexus/NexusEventPropagator;->addListener(Lio/intercom/android/nexus/NexusListener;)V
@@ -278,7 +276,7 @@
     .line 2
     iget-object p1, p0, Lio/intercom/android/nexus/NexusClient;->topics:Ljava/util/List;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     .line 3
     invoke-direct {p0, v0}, Lio/intercom/android/nexus/NexusClient;->subscribeToTopics(Ljava/util/List;)V
@@ -553,7 +551,7 @@
     const/4 v1, 0x1
 
     .line 8
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledFuture;->cancel(Z)Z
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -648,7 +646,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/intercom/android/nexus/NexusClient;->topics:Ljava/util/List;
     :try_end_0
@@ -753,7 +750,6 @@
 .method public removeEventListener(Lio/intercom/android/nexus/NexusListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusClient;->eventPropagator:Lio/intercom/android/nexus/NexusEventPropagator;
 
     invoke-virtual {v0, p1}, Lio/intercom/android/nexus/NexusEventPropagator;->removeListener(Lio/intercom/android/nexus/NexusListener;)V
@@ -809,7 +805,7 @@
     if-eqz v2, :cond_0
 
     .line 4
-    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
@@ -859,7 +855,7 @@
     .line 2
     iget-object v1, p0, Lio/intercom/android/nexus/NexusClient;->topics:Ljava/util/List;
 
-    invoke-interface {v0, v1}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     .line 3
     new-instance v1, Ljava/util/ArrayList;
@@ -869,7 +865,7 @@
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 4
-    invoke-interface {v1, p1}, Ljava/util/List;->removeAll(Ljava/util/Collection;)Z
+    invoke-virtual {v1, p1}, Ljava/util/ArrayList;->removeAll(Ljava/util/Collection;)Z
 
     .line 5
     invoke-direct {p0, v0}, Lio/intercom/android/nexus/NexusClient;->subscribeToTopics(Ljava/util/List;)V

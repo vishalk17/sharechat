@@ -1,36 +1,72 @@
-.class public final synthetic Ls50/d;
-.super Ljava/lang/Object;
+.class public final Ls50/d;
+.super Lxo0/c;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/lifecycle/i0;
+
+# annotations
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.livestream.data.mediator.ViewerListMediator"
+    f = "ViewerListMediator.kt"
+    l = {
+        0x29
+    }
+    m = "load"
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;
+.field public b:Ls50/c;
+
+.field public synthetic c:Ljava/lang/Object;
+
+.field public final synthetic d:Ls50/c;
+
+.field public e:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;)V
+.method public constructor <init>(Ls50/c;Lvo0/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ls50/c;",
+            "Lvo0/d<",
+            "-",
+            "Ls50/d;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ls50/d;->d:Ls50/c;
 
-    iput-object p1, p0, Ls50/d;->a:Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;
+    invoke-direct {p0, p2}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Ls50/d;->a:Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;
+    iput-object p1, p0, Ls50/d;->c:Ljava/lang/Object;
 
-    check-cast p1, Ljava/lang/Boolean;
+    iget p1, p0, Ls50/d;->e:I
 
-    invoke-static {v0, p1}, Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;->Ay(Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;Ljava/lang/Boolean;)V
+    const/high16 v0, -0x80000000
 
-    return-void
+    or-int/2addr p1, v0
+
+    iput p1, p0, Ls50/d;->e:I
+
+    iget-object p1, p0, Ls50/d;->d:Ls50/c;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Ls50/c;->a(Lc6/m0;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

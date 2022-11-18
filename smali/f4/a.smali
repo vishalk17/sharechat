@@ -1,165 +1,159 @@
 .class public final Lf4/a;
-.super Ljava/lang/Object;
+.super Lg4/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lf4/a$d;,
+        Lf4/a$c;,
+        Lf4/a$b;,
+        Lf4/a$g;,
+        Lf4/a$f;,
+        Lf4/a$e;
+    }
+.end annotation
+
+
 # static fields
-.field private static volatile a:Z = true
+.field public static final synthetic c:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 0
+
+    invoke-direct {p0}, Lg4/a;-><init>()V
 
     return-void
 .end method
 
-.method private constructor <init>()V
-    .locals 0
+.method public static f(Landroid/app/Activity;[Ljava/lang/String;I)V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    array-length v0, p1
 
-    return-void
-.end method
+    const/4 v1, 0x0
 
-.method public static a(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-    .locals 0
+    :goto_0
+    if-ge v1, v0, :cond_1
 
-    .line 1
-    invoke-static {p0, p0, p1, p2}, Lf4/a;->c(Landroid/content/Context;Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static b(Landroid/content/Context;Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 1
-    invoke-static {p0, p1, p2, v0}, Lf4/a;->c(Landroid/content/Context;Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static c(Landroid/content/Context;Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-    .locals 1
-
-    .line 1
-    :try_start_0
-    sget-boolean v0, Lf4/a;->a:Z
-
-    if-eqz v0, :cond_1
+    aget-object v2, p1, v1
 
     .line 2
-    invoke-static {p1, p2, p3}, Lf4/a;->e(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/NoClassDefFoundError; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result v2
 
-    return-object p0
+    if-nez v2, :cond_0
 
-    :catch_0
-    nop
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    :catch_1
-    move-exception p3
-
     .line 3
-    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    move-result-object p0
-
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_0
+    const-string p2, "Permission request for permissions "
 
     .line 4
-    invoke-static {p1, p2}, Landroidx/core/content/a;->f(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p2}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p0
-
-    return-object p0
+    move-result-object p2
 
     .line 5
-    :cond_0
-    throw p3
+    invoke-static {p1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
 
-    :catch_2
-    const/4 p0, 0x0
+    move-result-object p1
+
+    const-string v0, " must not contain null or empty values"
 
     .line 6
-    sput-boolean p0, Lf4/a;->a:Z
+    invoke-static {p2, p1, v0}, Ljr0/c;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    move-result-object p1
+
+    .line 7
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 8
     :cond_1
-    :goto_0
-    if-eqz p3, :cond_2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x17
+
+    if-lt v0, v1, :cond_3
+
+    .line 9
+    instance-of v0, p0, Lf4/a$f;
+
+    if-eqz v0, :cond_2
+
+    .line 10
+    move-object v0, p0
+
+    check-cast v0, Lf4/a$f;
+
+    .line 11
+    invoke-interface {v0, p2}, Lf4/a$f;->validateRequestPermissionsRequestCode(I)V
+
+    .line 12
+    :cond_2
+    invoke-static {p0, p1, p2}, Lf4/a$d;->b(Landroid/app/Activity;[Ljava/lang/String;I)V
 
     goto :goto_1
 
-    .line 7
-    :cond_2
-    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+    .line 13
+    :cond_3
+    instance-of v0, p0, Lf4/a$e;
 
-    move-result-object p3
+    if-eqz v0, :cond_4
 
+    .line 14
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 15
+    new-instance v1, Lf4/a$a;
+
+    invoke-direct {v1, p1, p0, p2}, Lf4/a$a;-><init>([Ljava/lang/String;Landroid/app/Activity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+
+    :cond_4
     :goto_1
-    invoke-static {p1, p2, p3}, Lf4/a;->d(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method
 
-.method private static d(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-    .locals 0
+.method public static g(Landroid/app/Activity;Ljava/lang/String;)Z
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    move-result-object p0
+    const/16 v1, 0x17
 
-    .line 2
-    invoke-static {p0, p1, p2}, Lm1/h;->f(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method private static e(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
-    .locals 1
-
-    if-eqz p2, :cond_0
-
-    .line 1
-    new-instance v0, Lj/d;
-
-    invoke-direct {v0, p0, p2}, Lj/d;-><init>(Landroid/content/Context;Landroid/content/res/Resources$Theme;)V
-
-    move-object p0, v0
+    if-lt v0, v1, :cond_0
 
     .line 2
+    invoke-static {p0, p1}, Lf4/a$d;->c(Landroid/app/Activity;Ljava/lang/String;)Z
+
+    move-result p0
+
+    return p0
+
     :cond_0
-    invoke-static {p0, p1}, Lg/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    const/4 p0, 0x0
 
-    move-result-object p0
-
-    return-object p0
+    return p0
 .end method

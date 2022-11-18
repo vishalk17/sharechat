@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/preference/Preference$BaseSavedState$a;
 
     invoke-direct {v0}, Landroidx/preference/Preference$BaseSavedState$a;-><init>()V
@@ -43,7 +42,6 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/AbsSavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void

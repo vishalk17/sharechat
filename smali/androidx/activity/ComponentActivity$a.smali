@@ -1,4 +1,4 @@
-.class Landroidx/activity/ComponentActivity$a;
+.class public final Landroidx/activity/ComponentActivity$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/activity/ComponentActivity;
+.field public final synthetic b:Landroidx/activity/ComponentActivity;
 
 
 # direct methods
-.method constructor <init>(Landroidx/activity/ComponentActivity;)V
+.method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$a;->b:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 3
 
     .line 1
@@ -52,7 +51,7 @@
     move-exception v0
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/IllegalStateException;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 

@@ -9,19 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic AFInAppEventType:[I
+.field public static final synthetic AFInAppEventType:[I
 
-.field static final synthetic valueOf:[I
+.field public static final synthetic valueOf:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 4
 
     .line 1

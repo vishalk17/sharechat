@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field private final a:Ljava/lang/Runnable;
+.field public final a:Ljava/lang/Runnable;
 
-.field final b:Ljava/util/ArrayDeque;
+.field public final b:Ljava/util/ArrayDeque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayDeque<",
-            "Landroidx/activity/e;",
+            "Landroidx/activity/i;",
             ">;"
         }
     .end annotation
@@ -59,20 +59,20 @@
 
 
 # virtual methods
-.method public a(Landroidx/lifecycle/x;Landroidx/activity/e;)V
+.method public final a(Landroidx/lifecycle/b0;Landroidx/activity/i;)V
     .locals 2
 
     .line 1
-    invoke-interface {p1}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/q;
+    invoke-interface {p1}, Landroidx/lifecycle/b0;->getLifecycle()Landroidx/lifecycle/t;
 
     move-result-object p1
 
     .line 2
-    invoke-virtual {p1}, Landroidx/lifecycle/q;->b()Landroidx/lifecycle/q$c;
+    invoke-virtual {p1}, Landroidx/lifecycle/t;->b()Landroidx/lifecycle/t$c;
 
     move-result-object v0
 
-    sget-object v1, Landroidx/lifecycle/q$c;->DESTROYED:Landroidx/lifecycle/q$c;
+    sget-object v1, Landroidx/lifecycle/t$c;->DESTROYED:Landroidx/lifecycle/t$c;
 
     if-ne v0, v1, :cond_0
 
@@ -82,33 +82,17 @@
     :cond_0
     new-instance v0, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;
 
-    invoke-direct {v0, p0, p1, p2}, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;-><init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/q;Landroidx/activity/e;)V
+    invoke-direct {v0, p0, p1, p2}, Landroidx/activity/OnBackPressedDispatcher$LifecycleOnBackPressedCancellable;-><init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/lifecycle/t;Landroidx/activity/i;)V
 
-    invoke-virtual {p2, v0}, Landroidx/activity/e;->a(Landroidx/activity/a;)V
+    .line 4
+    iget-object p1, p2, Landroidx/activity/i;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
-.method b(Landroidx/activity/e;)Landroidx/activity/a;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/activity/OnBackPressedDispatcher;->b:Ljava/util/ArrayDeque;
-
-    invoke-virtual {v0, p1}, Ljava/util/ArrayDeque;->add(Ljava/lang/Object;)Z
-
-    .line 2
-    new-instance v0, Landroidx/activity/OnBackPressedDispatcher$a;
-
-    invoke-direct {v0, p0, p1}, Landroidx/activity/OnBackPressedDispatcher$a;-><init>(Landroidx/activity/OnBackPressedDispatcher;Landroidx/activity/e;)V
-
-    .line 3
-    invoke-virtual {p1, v0}, Landroidx/activity/e;->a(Landroidx/activity/a;)V
-
-    return-object v0
-.end method
-
-.method public c()V
+.method public final b()V
     .locals 3
 
     .line 1
@@ -132,17 +116,15 @@
 
     move-result-object v1
 
-    check-cast v1, Landroidx/activity/e;
+    check-cast v1, Landroidx/activity/i;
 
     .line 5
-    invoke-virtual {v1}, Landroidx/activity/e;->c()Z
-
-    move-result v2
+    iget-boolean v2, v1, Landroidx/activity/i;->a:Z
 
     if-eqz v2, :cond_0
 
     .line 6
-    invoke-virtual {v1}, Landroidx/activity/e;->b()V
+    invoke-virtual {v1}, Landroidx/activity/i;->a()V
 
     return-void
 

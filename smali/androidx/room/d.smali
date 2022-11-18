@@ -1,44 +1,23 @@
-.class public final synthetic Landroidx/room/d;
+.class public final Landroidx/room/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ll/a;
-
 
 # instance fields
-.field public final synthetic a:Ljava/lang/String;
+.field public final a:Landroid/content/Context;
 
-.field public final synthetic b:[Ljava/lang/Object;
+.field public b:I
 
+.field public final c:Landroidx/room/c;
 
-# direct methods
-.method public synthetic constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
-    .locals 0
+.field public final d:Landroidx/room/e;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.field public e:Landroidx/room/b;
 
-    iput-object p1, p0, Landroidx/room/d;->a:Ljava/lang/String;
+.field public final f:Ljava/util/concurrent/Executor;
 
-    iput-object p2, p0, Landroidx/room/d;->b:[Ljava/lang/Object;
+.field public final g:Landroidx/room/d$a;
 
-    return-void
-.end method
+.field public final h:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    iget-object v0, p0, Landroidx/room/d;->a:Ljava/lang/String;
-
-    iget-object v1, p0, Landroidx/room/d;->b:[Ljava/lang/Object;
-
-    check-cast p1, Landroidx/sqlite/db/a;
-
-    invoke-static {v0, v1, p1}, Landroidx/room/j$a;->b(Ljava/lang/String;[Ljava/lang/Object;Landroidx/sqlite/db/a;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
-.end method
+.field public final i:Landroidx/room/d$b;

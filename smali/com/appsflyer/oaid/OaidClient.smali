@@ -67,10 +67,9 @@
     return-void
 .end method
 
-.method static synthetic access$000(Lcom/appsflyer/oaid/OaidClient;)Landroid/content/Context;
+.method public static synthetic access$000(Lcom/appsflyer/oaid/OaidClient;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/appsflyer/oaid/OaidClient;->context:Landroid/content/Context;
 
     return-object p0
@@ -190,7 +189,6 @@
 .method private static isMsaAvailableAtRuntime()Z
     .locals 1
 
-    .line 1
     :try_start_0
     const-class v0, Lcom/bun/miitmdid/interfaces/IIdentifierListener;
     :try_end_0
@@ -211,47 +209,37 @@
 .method public fetch()Lcom/appsflyer/oaid/OaidClient$Info;
     .locals 8
 
+    const/4 v0, 0x0
+
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x15
-
-    if-ge v0, v2, :cond_0
-
-    return-object v1
-
-    .line 2
-    :cond_0
     :try_start_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    move-result-wide v2
+    move-result-wide v1
 
-    .line 3
+    .line 2
     invoke-static {}, Lcom/appsflyer/oaid/OaidClient;->isHuawei()Z
 
-    move-result v0
+    move-result v3
 
-    if-eqz v0, :cond_1
+    if-eqz v3, :cond_0
 
     invoke-direct {p0}, Lcom/appsflyer/oaid/OaidClient;->fetchHuawei()Lcom/appsflyer/oaid/OaidClient$Info;
 
-    move-result-object v0
+    move-result-object v3
 
     goto :goto_0
 
-    .line 4
-    :cond_1
+    .line 3
+    :cond_0
     invoke-static {}, Lcom/appsflyer/oaid/OaidClient;->isMsaAvailableAtRuntime()Z
 
-    move-result v0
+    move-result v3
 
-    if-eqz v0, :cond_2
+    if-eqz v3, :cond_1
 
-    .line 5
-    iget-object v0, p0, Lcom/appsflyer/oaid/OaidClient;->context:Landroid/content/Context;
+    .line 4
+    iget-object v3, p0, Lcom/appsflyer/oaid/OaidClient;->context:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/appsflyer/oaid/OaidClient;->logger:Ljava/util/logging/Logger;
 
@@ -259,16 +247,16 @@
 
     iget-object v7, p0, Lcom/appsflyer/oaid/OaidClient;->unit:Ljava/util/concurrent/TimeUnit;
 
-    invoke-static {v0, v4, v5, v6, v7}, Lcom/appsflyer/oaid/OaidMsaClient;->fetchMsa(Landroid/content/Context;Ljava/util/logging/Logger;JLjava/util/concurrent/TimeUnit;)Lcom/appsflyer/oaid/OaidClient$Info;
+    invoke-static {v3, v4, v5, v6, v7}, Lcom/appsflyer/oaid/OaidMsaClient;->fetchMsa(Landroid/content/Context;Ljava/util/logging/Logger;JLjava/util/concurrent/TimeUnit;)Lcom/appsflyer/oaid/OaidClient$Info;
 
-    move-result-object v0
+    move-result-object v3
 
     goto :goto_0
 
-    :cond_2
-    move-object v0, v1
+    :cond_1
+    move-object v3, v0
 
-    .line 6
+    .line 5
     :goto_0
     iget-object v4, p0, Lcom/appsflyer/oaid/OaidClient;->logger:Ljava/util/logging/Logger;
 
@@ -284,43 +272,42 @@
 
     move-result-wide v6
 
-    sub-long/2addr v6, v2
+    sub-long/2addr v6, v1
 
     invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    const-string v2, " ms"
+    const-string v1, " ms"
 
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v4, v2}, Ljava/util/logging/Logger;->info(Ljava/lang/String;)V
+    invoke-virtual {v4, v1}, Ljava/util/logging/Logger;->info(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-object v0
+    return-object v3
 
     :catchall_0
-    move-exception v0
+    move-exception v1
 
-    .line 7
+    .line 6
     iget-object v2, p0, Lcom/appsflyer/oaid/OaidClient;->logger:Ljava/util/logging/Logger;
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v1
 
-    invoke-virtual {v2, v0}, Ljava/util/logging/Logger;->info(Ljava/lang/String;)V
+    invoke-virtual {v2, v1}, Ljava/util/logging/Logger;->info(Ljava/lang/String;)V
 
-    return-object v1
+    return-object v0
 .end method
 
 .method public setLogging(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/oaid/OaidClient;->logger:Ljava/util/logging/Logger;
 
     if-eqz p1, :cond_0

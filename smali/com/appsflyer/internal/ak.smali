@@ -7,7 +7,7 @@
 
 
 # static fields
-.field protected static AFInAppEventParameterName:Ljava/lang/String; = null
+.field public static AFInAppEventParameterName:Ljava/lang/String; = null
 
 .field private static AFLogger$LogLevel:I = 0x0
 
@@ -50,7 +50,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     invoke-static {}, Lcom/appsflyer/internal/ak;->values()V
@@ -158,12 +158,12 @@
 .method private static valueOf(BISII)Ljava/lang/String;
     .locals 6
 
-    .line 15
+    .line 17
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 16
+    .line 18
     sget v1, Lcom/appsflyer/internal/ak;->AFLogger$LogLevel:I
 
     add-int/2addr p4, v1
@@ -198,7 +198,7 @@
     :goto_1
     if-eqz v2, :cond_4
 
-    .line 17
+    .line 19
     sget-object p4, Lcom/appsflyer/internal/ak;->onInstallConversionFailureNative:[B
 
     if-eqz p4, :cond_2
@@ -213,7 +213,7 @@
     :goto_2
     if-eqz v3, :cond_3
 
-    .line 18
+    .line 20
     sget v3, Lcom/appsflyer/internal/ak;->AFVersionDeclaration:I
 
     add-int/2addr v3, p3
@@ -226,7 +226,7 @@
 
     goto :goto_3
 
-    .line 19
+    .line 21
     :cond_3
     sget-object p4, Lcom/appsflyer/internal/ak;->onAttributionFailureNative:[S
 
@@ -248,7 +248,7 @@
 
     add-int/lit8 p3, p3, -0x2
 
-    .line 20
+    .line 22
     sget v1, Lcom/appsflyer/internal/ak;->AFVersionDeclaration:I
 
     add-int/2addr p3, v1
@@ -260,20 +260,20 @@
     :cond_5
     add-int/2addr p3, v4
 
-    .line 21
+    .line 23
     sget v1, Lcom/appsflyer/internal/ak;->onDeepLinkingNative:I
 
     add-int/2addr p1, v1
 
     int-to-char p1, p1
 
-    .line 22
+    .line 24
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     :goto_4
     if-ge v5, p4, :cond_9
 
-    .line 23
+    .line 25
     sget v1, Lcom/appsflyer/internal/ak;->onAppOpenAttributionNative:I
 
     add-int/lit8 v2, v1, 0x2d
@@ -284,7 +284,7 @@
 
     rem-int/lit8 v2, v2, 0x2
 
-    .line 24
+    .line 26
     sget-object v2, Lcom/appsflyer/internal/ak;->onInstallConversionFailureNative:[B
 
     const/16 v3, 0x13
@@ -301,7 +301,7 @@
     :goto_5
     if-eq v4, v3, :cond_7
 
-    .line 25
+    .line 27
     sget-object v2, Lcom/appsflyer/internal/ak;->onAttributionFailureNative:[S
 
     add-int/lit8 v3, p3, -0x1
@@ -320,7 +320,7 @@
 
     add-int/lit8 v1, v1, 0xb
 
-    .line 26
+    .line 28
     rem-int/lit16 p3, v1, 0x80
 
     sput p3, Lcom/appsflyer/internal/ak;->onInstallConversionDataLoadedNative:I
@@ -334,7 +334,7 @@
     :cond_7
     add-int/lit8 v1, v1, 0x11
 
-    .line 27
+    .line 29
     rem-int/lit16 v3, v1, 0x80
 
     sput v3, Lcom/appsflyer/internal/ak;->onInstallConversionDataLoadedNative:I
@@ -345,7 +345,7 @@
 
     add-int/lit8 v1, p3, 0x77
 
-    .line 28
+    .line 30
     aget-byte p3, v2, p3
 
     ushr-int/2addr p3, p2
@@ -376,7 +376,7 @@
 
     move p3, v1
 
-    .line 29
+    .line 31
     :goto_7
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -384,7 +384,7 @@
 
     goto :goto_4
 
-    .line 30
+    .line 32
     :cond_9
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -415,19 +415,16 @@
         }
     .end annotation
 
+    const-string v0, "build_number"
+
+    const-string v1, "6.3.2"
+
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-static {v0, v1}, Lcom/appsflyer/internal/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    const-string v1, "build_number"
-
-    const-string v2, "6.3.2"
+    move-result-object v0
 
     .line 2
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
     iget-object v1, p0, Lcom/appsflyer/internal/ak;->init:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/appsflyer/internal/ae;->values(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -438,35 +435,35 @@
 
     const/4 v3, 0x0
 
-    .line 4
+    .line 3
     invoke-static {v1, v2, v3}, Lcom/appsflyer/internal/ae;->valueOf(Landroid/content/SharedPreferences;Ljava/lang/String;Z)I
 
     move-result v1
 
-    .line 5
+    .line 4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
     const-string v2, "counter"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
+    .line 5
     sget-object v1, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     const-string v2, "model"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
+    .line 6
     sget-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     const-string v2, "brand"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
+    .line 7
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -475,12 +472,12 @@
 
     const-string v2, "sdk"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :try_start_0
     const-string v1, "app_version_name"
 
-    .line 9
+    .line 8
     iget-object v2, p0, Lcom/appsflyer/internal/ak;->init:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -489,7 +486,7 @@
 
     iget-object v4, p0, Lcom/appsflyer/internal/ak;->init:Landroid/content/Context;
 
-    .line 10
+    .line 9
     invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v4
@@ -500,12 +497,12 @@
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
-    .line 11
-    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 10
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12
+    .line 11
     sget v1, Lcom/appsflyer/internal/ak;->onAppOpenAttributionNative:I
 
     add-int/lit8 v1, v1, 0x65
@@ -516,7 +513,7 @@
 
     rem-int/lit8 v1, v1, 0x2
 
-    .line 13
+    .line 12
     :catch_0
     iget-object v1, p0, Lcom/appsflyer/internal/ak;->init:Landroid/content/Context;
 
@@ -526,9 +523,9 @@
 
     const-string v2, "app_id"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
+    .line 13
     new-instance v1, Lcom/appsflyer/internal/al;
 
     invoke-direct {v1}, Lcom/appsflyer/internal/al;-><init>()V
@@ -539,12 +536,12 @@
 
     const-string v2, "platformextension"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
 .end method
 
-.method static values()V
+.method public static values()V
     .locals 1
 
     const/16 v0, 0x5b
@@ -588,10 +585,10 @@
 
 
 # virtual methods
-.method protected abstract AFInAppEventParameterName()Ljava/lang/String;
+.method public abstract AFInAppEventParameterName()Ljava/lang/String;
 .end method
 
-.method protected abstract AFInAppEventParameterName(Ljavax/net/ssl/HttpsURLConnection;)V
+.method public abstract AFInAppEventParameterName(Ljavax/net/ssl/HttpsURLConnection;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;,
@@ -600,10 +597,10 @@
     .end annotation
 .end method
 
-.method protected abstract AFInAppEventType()V
+.method public abstract AFInAppEventType()V
 .end method
 
-.method protected abstract AFKeystoreWrapper(Ljava/lang/String;)V
+.method public abstract AFKeystoreWrapper(Ljava/lang/String;)V
 .end method
 
 .method public run()V
@@ -857,7 +854,7 @@
     return-void
 .end method
 
-.method protected final varargs values(Ljavax/net/ssl/HttpsURLConnection;[Ljava/lang/String;)V
+.method public final varargs values(Ljavax/net/ssl/HttpsURLConnection;[Ljava/lang/String;)V
     .locals 6
 
     .line 1
@@ -874,10 +871,10 @@
     .line 2
     sget-object v1, Lcom/appsflyer/internal/ak;->valueOf:Ljava/lang/String;
 
-    invoke-interface {v0, p2, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
+    invoke-virtual {v0, p2, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->toArray()[Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->toArray()[Ljava/lang/Object;
 
     move-result-object p2
 

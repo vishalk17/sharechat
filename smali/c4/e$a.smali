@@ -1,9 +1,6 @@
-.class abstract Lc4/e$a;
+.class public final Lc4/e$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lcom/bumptech/glide/load/model/o;
 
 
 # annotations
@@ -12,101 +9,193 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x40a
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<DataT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/load/model/o<",
-        "Landroid/net/Uri;",
-        "TDataT;>;"
-    }
-.end annotation
 
-
-# instance fields
-.field private final a:Landroid/content/Context;
-
-.field private final b:Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/Class<",
-            "TDataT;>;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static a:Landroid/util/SparseIntArray;
 
 
 # direct methods
-.method constructor <init>(Landroid/content/Context;Ljava/lang/Class;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Ljava/lang/Class<",
-            "TDataT;>;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroid/util/SparseIntArray;
+
+    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
+
+    sput-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
 
     .line 2
-    iput-object p1, p0, Lc4/e$a;->a:Landroid/content/Context;
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_alpha:I
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
     .line 3
-    iput-object p2, p0, Lc4/e$a;->b:Ljava/lang/Class;
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_elevation:I
+
+    const/4 v2, 0x2
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 4
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_rotation:I
+
+    const/4 v2, 0x4
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 5
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_rotationX:I
+
+    const/4 v2, 0x5
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 6
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_rotationY:I
+
+    const/4 v2, 0x6
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 7
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_transformPivotX:I
+
+    const/16 v2, 0x13
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 8
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_transformPivotY:I
+
+    const/16 v2, 0x14
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 9
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_scaleX:I
+
+    const/4 v2, 0x7
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 10
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_transitionPathRotate:I
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 11
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_transitionEasing:I
+
+    const/16 v2, 0x9
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 12
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_motionTarget:I
+
+    const/16 v2, 0xa
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 13
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_framePosition:I
+
+    const/16 v2, 0xc
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 14
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_curveFit:I
+
+    const/16 v2, 0xd
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 15
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_scaleY:I
+
+    const/16 v2, 0xe
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 16
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_translationX:I
+
+    const/16 v2, 0xf
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 17
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_translationY:I
+
+    const/16 v2, 0x10
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 18
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_android_translationZ:I
+
+    const/16 v2, 0x11
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
+
+    .line 19
+    sget-object v0, Lc4/e$a;->a:Landroid/util/SparseIntArray;
+
+    sget v1, Landroidx/constraintlayout/widget/R$styleable;->KeyAttribute_motionProgress:I
+
+    const/16 v2, 0x12
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseIntArray;->append(II)V
 
     return-void
 .end method
 
+.method private constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public final b(Lcom/bumptech/glide/load/model/r;)Lcom/bumptech/glide/load/model/n;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/bumptech/glide/load/model/r;",
-            ")",
-            "Lcom/bumptech/glide/load/model/n<",
-            "Landroid/net/Uri;",
-            "TDataT;>;"
-        }
-    .end annotation
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1
-    new-instance v0, Lc4/e;
-
-    iget-object v1, p0, Lc4/e$a;->a:Landroid/content/Context;
-
-    const-class v2, Ljava/io/File;
-
-    iget-object v3, p0, Lc4/e$a;->b:Ljava/lang/Class;
-
-    .line 2
-    invoke-virtual {p1, v2, v3}, Lcom/bumptech/glide/load/model/r;->d(Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/model/n;
-
-    move-result-object v2
-
-    const-class v3, Landroid/net/Uri;
-
-    iget-object v4, p0, Lc4/e$a;->b:Ljava/lang/Class;
-
-    .line 3
-    invoke-virtual {p1, v3, v4}, Lcom/bumptech/glide/load/model/r;->d(Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/model/n;
-
-    move-result-object p1
-
-    iget-object v3, p0, Lc4/e$a;->b:Ljava/lang/Class;
-
-    invoke-direct {v0, v1, v2, p1, v3}, Lc4/e;-><init>(Landroid/content/Context;Lcom/bumptech/glide/load/model/n;Lcom/bumptech/glide/load/model/n;Ljava/lang/Class;)V
-
-    return-object v0
+    return-void
 .end method

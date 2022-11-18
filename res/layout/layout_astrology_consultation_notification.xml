@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/notification_body" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="64.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/caller_pic" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/profile_placeholder_notification" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/caller_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chetan" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="#ff74747b" android:ellipsize="end" android:id="@id/new_request_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New session request..." android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/logo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/logo" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/sc_logo_icon" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff577efb" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/audio_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sharechat Audio..." android:singleLine="true" android:layout_marginStart="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/reject_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/reject_icon" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/accept_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/accept_icon" android:layout_marginStart="16.0dip" />
+</LinearLayout>

@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -24,10 +24,9 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/bb;Lcom/appsflyer/internal/ae;)V
+.method public constructor <init>(Lcom/appsflyer/internal/bb;Lcom/appsflyer/internal/ae;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/bb$4;->AFInAppEventParameterName:Lcom/appsflyer/internal/bb;
 
     iput-object p2, p0, Lcom/appsflyer/internal/bb$4;->AFInAppEventType:Lcom/appsflyer/internal/ae;
@@ -51,7 +50,7 @@
     iget-object v2, p0, Lcom/appsflyer/internal/bb$4;->AFInAppEventType:Lcom/appsflyer/internal/ae;
 
     .line 2
-    invoke-virtual {v2}, Lcom/appsflyer/AppsFlyerLib;->isStopped()Z
+    invoke-virtual {v2}, Lcom/appsflyer/internal/ae;->isStopped()Z
 
     move-result v2
 

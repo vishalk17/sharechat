@@ -2,28 +2,15 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroidx/lifecycle/b0;
+
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
+.annotation runtime Ljava/lang/Deprecated;
 .end annotation
 
 
 # virtual methods
-.method public abstract emit(Ljava/lang/Object;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lkotlin/coroutines/d<",
-            "-",
-            "Li00/a0;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+.method public abstract getLifecycle()Landroidx/lifecycle/c0;
 .end method

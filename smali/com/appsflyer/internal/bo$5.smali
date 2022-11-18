@@ -12,24 +12,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lcom/appsflyer/internal/bo;
+.field public final synthetic this$0:Lcom/appsflyer/internal/bo;
 
-.field final synthetic val$context:Landroid/content/Context;
+.field public final synthetic val$context:Landroid/content/Context;
 
-.field final synthetic val$referrerClient:Lcom/android/installreferrer/api/InstallReferrerClient;
+.field public final synthetic val$referrerClient:Lcom/android/installreferrer/api/InstallReferrerClient;
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/bo;Landroid/content/Context;Lcom/android/installreferrer/api/InstallReferrerClient;)V
+.method public constructor <init>(Lcom/appsflyer/internal/bo;Landroid/content/Context;Lcom/android/installreferrer/api/InstallReferrerClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/bo$5;->this$0:Lcom/appsflyer/internal/bo;
 
     iput-object p2, p0, Lcom/appsflyer/internal/bo$5;->val$context:Landroid/content/Context;
@@ -48,7 +47,6 @@
 
     const-string v0, "Install Referrer service disconnected"
 
-    .line 1
     invoke-static {v0}, Lcom/appsflyer/AFLogger;->values(Ljava/lang/String;)V
 
     return-void
@@ -421,15 +419,14 @@
     :catchall_0
     move-exception p1
 
+    const-string v0, "Failed to get install referrer: "
+
     .line 34
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "Failed to get install referrer: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 35
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v1
@@ -442,7 +439,7 @@
 
     invoke-static {v0}, Lcom/appsflyer/AFLogger;->init(Ljava/lang/String;)V
 
-    .line 35
+    .line 36
     iget-object v0, p0, Lcom/appsflyer/internal/bo$5;->this$0:Lcom/appsflyer/internal/bo;
 
     iget-object v0, v0, Lcom/appsflyer/internal/bo;->AFInAppEventType:Ljava/util/Map;
@@ -458,10 +455,10 @@
     :cond_6
     const-string p1, "InstallReferrer SERVICE_DISCONNECTED"
 
-    .line 36
+    .line 37
     invoke-static {p1}, Lcom/appsflyer/AFLogger;->init(Ljava/lang/String;)V
 
-    .line 37
+    .line 38
     iget-object p1, p0, Lcom/appsflyer/internal/bo$5;->this$0:Lcom/appsflyer/internal/bo;
 
     iget-object p1, p1, Lcom/appsflyer/internal/bt;->AFKeystoreWrapper:Ljava/util/Map;
@@ -474,15 +471,15 @@
     :goto_0
     const-string p1, "Install Referrer collected locally"
 
-    .line 38
+    .line 39
     invoke-static {p1}, Lcom/appsflyer/AFLogger;->values(Ljava/lang/String;)V
 
-    .line 39
+    .line 40
     iget-object p1, p0, Lcom/appsflyer/internal/bo$5;->this$0:Lcom/appsflyer/internal/bo;
 
     invoke-virtual {p1}, Lcom/appsflyer/internal/bt;->AFKeystoreWrapper()V
 
-    .line 40
+    .line 41
     iget-object p1, p0, Lcom/appsflyer/internal/bo$5;->val$referrerClient:Lcom/android/installreferrer/api/InstallReferrerClient;
 
     invoke-virtual {p1}, Lcom/android/installreferrer/api/InstallReferrerClient;->endConnection()V

@@ -1,88 +1,65 @@
-.class Lp2/a$a;
-.super Ljava/lang/Object;
+.class public final Lp2/a$a;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ldp0/a;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lp2/a;->a(Landroidx/work/impl/model/p;)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lp2/a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x19
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lk2/b<",
+        "Lp2/c;",
+        ">;>;"
+    }
+.end annotation
 
-# instance fields
-.field final synthetic b:Landroidx/work/impl/model/p;
 
-.field final synthetic c:Lp2/a;
+# static fields
+.field public static final b:Lp2/a$a;
 
 
 # direct methods
-.method constructor <init>(Lp2/a;Landroidx/work/impl/model/p;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    iput-object p1, p0, Lp2/a$a;->c:Lp2/a;
+    new-instance v0, Lp2/a$a;
 
-    iput-object p2, p0, Lp2/a$a;->b:Landroidx/work/impl/model/p;
+    invoke-direct {v0}, Lp2/a$a;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput-object v0, Lp2/a$a;->b:Lp2/a$a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 6
+.method public final bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
 
-    .line 1
-    invoke-static {}, Landroidx/work/l;->c()Landroidx/work/l;
+    const/4 v0, 0x0
 
-    move-result-object v0
-
-    sget-object v1, Lp2/a;->d:Ljava/lang/String;
-
-    const/4 v2, 0x1
-
-    new-array v3, v2, [Ljava/lang/Object;
-
-    iget-object v4, p0, Lp2/a$a;->b:Landroidx/work/impl/model/p;
-
-    iget-object v4, v4, Landroidx/work/impl/model/p;->a:Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object v4, v3, v5
-
-    const-string v4, "Scheduling work %s"
-
-    invoke-static {v4, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v3
-
-    new-array v4, v5, [Ljava/lang/Throwable;
-
-    invoke-virtual {v0, v1, v3, v4}, Landroidx/work/l;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
-
-    .line 2
-    iget-object v0, p0, Lp2/a$a;->c:Lp2/a;
-
-    iget-object v0, v0, Lp2/a;->a:Lp2/b;
-
-    new-array v1, v2, [Landroidx/work/impl/model/p;
-
-    iget-object v2, p0, Lp2/a$a;->b:Landroidx/work/impl/model/p;
-
-    aput-object v2, v1, v5
-
-    invoke-virtual {v0, v1}, Lp2/b;->e([Landroidx/work/impl/model/p;)V
-
-    return-void
+    return-object v0
 .end method

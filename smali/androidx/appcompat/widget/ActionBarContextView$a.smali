@@ -1,4 +1,4 @@
-.class Landroidx/appcompat/widget/ActionBarContextView$a;
+.class public final Landroidx/appcompat/widget/ActionBarContextView$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -8,25 +8,24 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/ActionBarContextView;->h(Lj/b;)V
+    value = Landroidx/appcompat/widget/ActionBarContextView;->f(Lp/a;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Lj/b;
+.field public final synthetic b:Lp/a;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/ActionBarContextView;Lj/b;)V
+.method public constructor <init>(Lp/a;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->b:Lj/b;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->b:Lp/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +34,12 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
+.method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->b:Lj/b;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->b:Lp/a;
 
-    invoke-virtual {p1}, Lj/b;->c()V
+    invoke-virtual {p1}, Lp/a;->c()V
 
     return-void
 .end method

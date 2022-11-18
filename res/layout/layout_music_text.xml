@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_music_text" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="24.0dip" android:maxWidth="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_margin="4.0dip" android:rotation="90.0" app:srcCompat="@drawable/ic_more_dots" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_music_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/manrope_font_500" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_music_name_dummy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="@font/manrope_font_500" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+.class public final Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet;
+.super Lsharechat/feature/chatroom/consultation/bottomsheets/Hilt_AstroConnectionWaitingSheet;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$a;
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0004\u0008\u0007\u0018\u00002\u00020\u0001:\u0001\u0004B\u0007\u00a2\u0006\u0004\u0008\u0002\u0010\u0003\u00a8\u0006\u0005"
+    }
+    d2 = {
+        "Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet;",
+        "Lcom/google/android/material/bottomsheet/BottomSheetDialogFragment;",
+        "<init>",
+        "()V",
+        "a",
+        "chatroom_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
+
+# static fields
+.field public static final f:Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$a;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$a;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$a;-><init>(Lep0/k;)V
+
+    sput-object v0, Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet;->f:Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$a;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lsharechat/feature/chatroom/consultation/bottomsheets/Hilt_AstroConnectionWaitingSheet;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final setupDialog(Landroid/app/Dialog;I)V
+    .locals 0
+
+    const-string p2, "dialog"
+
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p2, Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$b;
+
+    invoke-direct {p2, p1, p0}, Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet$b;-><init>(Landroid/app/Dialog;Lsharechat/feature/chatroom/consultation/bottomsheets/AstroConnectionWaitingSheet;)V
+
+    invoke-static {p0, p2}, Lc2/a;->a(Landroidx/fragment/app/Fragment;Ldp0/p;)V
+
+    return-void
+.end method

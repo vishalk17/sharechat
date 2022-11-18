@@ -52,7 +52,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/oaid/OaidClient$Info;->id:Ljava/lang/String;
 
     return-object v0
@@ -61,7 +60,6 @@
 .method public getLat()Ljava/lang/Boolean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/oaid/OaidClient$Info;->lat:Ljava/lang/Boolean;
 
     return-object v0

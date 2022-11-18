@@ -1,496 +1,125 @@
-.class public Lp3/m;
-.super Lp3/a;
+.class public final Lp3/m;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp3/a<",
-        "Landroid/graphics/PointF;",
-        "Landroid/graphics/PointF;",
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Ll1/g;",
+        "Ljava/lang/Integer;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field private final i:Landroid/graphics/PointF;
-
-.field private final j:Landroid/graphics/PointF;
-
-.field private final k:Lp3/a;
+.field public final synthetic b:Ll1/l2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lp3/a<",
-            "Ljava/lang/Float;",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final l:Lp3/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lp3/a<",
-            "Ljava/lang/Float;",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field protected m:Lv3/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lv3/c<",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field protected n:Lv3/c;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lv3/c<",
-            "Ljava/lang/Float;",
-            ">;"
+            "Ll1/l2<",
+            "Ldp0/p<",
+            "Ll1/g;",
+            "Ljava/lang/Integer;",
+            "Lro0/x;",
+            ">;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lp3/a;Lp3/a;)V
-    .locals 1
+.method public constructor <init>(Ll1/l2;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lp3/a<",
-            "Ljava/lang/Float;",
-            "Ljava/lang/Float;",
-            ">;",
-            "Lp3/a<",
-            "Ljava/lang/Float;",
-            "Ljava/lang/Float;",
-            ">;)V"
+            "Ll1/l2<",
+            "+",
+            "Ldp0/p<",
+            "-",
+            "Ll1/g;",
+            "-",
+            "Ljava/lang/Integer;",
+            "Lro0/x;",
+            ">;>;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    iput-object p1, p0, Lp3/m;->b:Ll1/l2;
 
-    move-result-object v0
+    const/4 p1, 0x2
 
-    invoke-direct {p0, v0}, Lp3/a;-><init>(Ljava/util/List;)V
-
-    .line 2
-    new-instance v0, Landroid/graphics/PointF;
-
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
-
-    iput-object v0, p0, Lp3/m;->i:Landroid/graphics/PointF;
-
-    .line 3
-    new-instance v0, Landroid/graphics/PointF;
-
-    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
-
-    iput-object v0, p0, Lp3/m;->j:Landroid/graphics/PointF;
-
-    .line 4
-    iput-object p1, p0, Lp3/m;->k:Lp3/a;
-
-    .line 5
-    iput-object p2, p0, Lp3/m;->l:Lp3/a;
-
-    .line 6
-    invoke-virtual {p0}, Lp3/a;->f()F
-
-    move-result p1
-
-    invoke-virtual {p0, p1}, Lp3/m;->m(F)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic h()Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lp3/m;->p()Landroid/graphics/PointF;
+    check-cast p1, Ll1/g;
 
-    move-result-object v0
+    check-cast p2, Ljava/lang/Number;
 
-    return-object v0
-.end method
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-.method bridge synthetic i(Lv3/a;F)Ljava/lang/Object;
-    .locals 0
+    move-result p2
 
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lp3/m;->q(Lv3/a;F)Landroid/graphics/PointF;
+    and-int/lit8 p2, p2, 0xb
 
-    move-result-object p1
+    const/4 v0, 0x2
 
-    return-object p1
-.end method
-
-.method public m(F)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lp3/m;->k:Lp3/a;
-
-    invoke-virtual {v0, p1}, Lp3/a;->m(F)V
+    if-ne p2, v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lp3/m;->l:Lp3/a;
+    invoke-interface {p1}, Ll1/g;->b()Z
 
-    invoke-virtual {v0, p1}, Lp3/a;->m(F)V
+    move-result p2
 
-    .line 3
-    iget-object p1, p0, Lp3/m;->i:Landroid/graphics/PointF;
-
-    iget-object v0, p0, Lp3/m;->k:Lp3/a;
-
-    invoke-virtual {v0}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Float;
-
-    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
-
-    move-result v0
-
-    iget-object v1, p0, Lp3/m;->l:Lp3/a;
-
-    invoke-virtual {v1}, Lp3/a;->h()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Float;
-
-    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
-
-    move-result v1
-
-    invoke-virtual {p1, v0, v1}, Landroid/graphics/PointF;->set(FF)V
-
-    const/4 p1, 0x0
-
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lp3/a;->a:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    if-ge p1, v0, :cond_0
-
-    .line 5
-    iget-object v0, p0, Lp3/a;->a:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lp3/a$b;
-
-    invoke-interface {v0}, Lp3/a$b;->d()V
-
-    add-int/lit8 p1, p1, 0x1
+    if-nez p2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    return-void
-.end method
-
-.method public p()Landroid/graphics/PointF;
-    .locals 2
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    .line 1
-    invoke-virtual {p0, v0, v1}, Lp3/m;->q(Lv3/a;F)Landroid/graphics/PointF;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method q(Lv3/a;F)Landroid/graphics/PointF;
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/a<",
-            "Landroid/graphics/PointF;",
-            ">;F)",
-            "Landroid/graphics/PointF;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object p1, p0, Lp3/m;->m:Lv3/c;
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    .line 2
-    iget-object p1, p0, Lp3/m;->k:Lp3/a;
-
-    invoke-virtual {p1}, Lp3/a;->b()Lv3/a;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    .line 3
-    iget-object v1, p0, Lp3/m;->k:Lp3/a;
-
-    invoke-virtual {v1}, Lp3/a;->d()F
-
-    move-result v9
-
-    .line 4
-    iget-object v1, p1, Lv3/a;->h:Ljava/lang/Float;
-
-    .line 5
-    iget-object v2, p0, Lp3/m;->m:Lv3/c;
-
-    iget v3, p1, Lv3/a;->g:F
-
-    if-nez v1, :cond_0
-
-    move v4, v3
-
-    goto :goto_0
-
-    .line 6
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
-
-    move-result v1
-
-    move v4, v1
-
-    :goto_0
-    iget-object v5, p1, Lv3/a;->b:Ljava/lang/Object;
-
-    iget-object v6, p1, Lv3/a;->c:Ljava/lang/Object;
-
-    move v7, p2
-
-    move v8, p2
-
-    invoke-virtual/range {v2 .. v9}, Lv3/c;->b(FFLjava/lang/Object;Ljava/lang/Object;FFF)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Float;
+    invoke-interface {p1}, Ll1/g;->j()V
 
     goto :goto_1
 
     :cond_1
-    move-object p1, v0
+    :goto_0
+    iget-object p2, p0, Lp3/m;->b:Ll1/l2;
 
-    .line 7
-    :goto_1
-    iget-object v1, p0, Lp3/m;->n:Lv3/c;
+    sget-object v0, Lp3/h;->a:Ll1/e0;
 
-    if-eqz v1, :cond_3
-
-    .line 8
-    iget-object v1, p0, Lp3/m;->l:Lp3/a;
-
-    invoke-virtual {v1}, Lp3/a;->b()Lv3/a;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_3
-
-    .line 9
-    iget-object v0, p0, Lp3/m;->l:Lp3/a;
-
-    invoke-virtual {v0}, Lp3/a;->d()F
-
-    move-result v9
-
-    .line 10
-    iget-object v0, v1, Lv3/a;->h:Ljava/lang/Float;
-
-    .line 11
-    iget-object v2, p0, Lp3/m;->n:Lv3/c;
-
-    iget v3, v1, Lv3/a;->g:F
-
-    if-nez v0, :cond_2
-
-    move v4, v3
-
-    goto :goto_2
-
-    .line 12
-    :cond_2
-    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
-
-    move-result v0
-
-    move v4, v0
-
-    :goto_2
-    iget-object v5, v1, Lv3/a;->b:Ljava/lang/Object;
-
-    iget-object v6, v1, Lv3/a;->c:Ljava/lang/Object;
-
-    move v7, p2
-
-    move v8, p2
-
-    invoke-virtual/range {v2 .. v9}, Lv3/c;->b(FFLjava/lang/Object;Ljava/lang/Object;FFF)Ljava/lang/Object;
+    .line 3
+    invoke-interface {p2}, Ll1/l2;->getValue()Ljava/lang/Object;
 
     move-result-object p2
 
-    move-object v0, p2
+    check-cast p2, Ldp0/p;
 
-    check-cast v0, Ljava/lang/Float;
+    const/4 v0, 0x0
 
-    :cond_3
-    const/4 p2, 0x0
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-nez p1, :cond_4
+    move-result-object v0
 
-    .line 13
-    iget-object p1, p0, Lp3/m;->j:Landroid/graphics/PointF;
+    invoke-interface {p2, p1, v0}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    iget-object v1, p0, Lp3/m;->i:Landroid/graphics/PointF;
-
-    iget v1, v1, Landroid/graphics/PointF;->x:F
-
-    invoke-virtual {p1, v1, p2}, Landroid/graphics/PointF;->set(FF)V
-
-    goto :goto_3
-
-    .line 14
-    :cond_4
-    iget-object v1, p0, Lp3/m;->j:Landroid/graphics/PointF;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result p1
-
-    invoke-virtual {v1, p1, p2}, Landroid/graphics/PointF;->set(FF)V
-
-    :goto_3
-    if-nez v0, :cond_5
-
-    .line 15
-    iget-object p1, p0, Lp3/m;->j:Landroid/graphics/PointF;
-
-    iget p2, p1, Landroid/graphics/PointF;->x:F
-
-    iget-object v0, p0, Lp3/m;->i:Landroid/graphics/PointF;
-
-    iget v0, v0, Landroid/graphics/PointF;->y:F
-
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/PointF;->set(FF)V
-
-    goto :goto_4
-
-    .line 16
-    :cond_5
-    iget-object p1, p0, Lp3/m;->j:Landroid/graphics/PointF;
-
-    iget p2, p1, Landroid/graphics/PointF;->x:F
-
-    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
-
-    move-result v0
-
-    invoke-virtual {p1, p2, v0}, Landroid/graphics/PointF;->set(FF)V
-
-    .line 17
-    :goto_4
-    iget-object p1, p0, Lp3/m;->j:Landroid/graphics/PointF;
+    .line 5
+    :goto_1
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
-.end method
-
-.method public r(Lv3/c;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/c<",
-            "Ljava/lang/Float;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lp3/m;->m:Lv3/c;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-virtual {v0, v1}, Lv3/c;->c(Lp3/a;)V
-
-    .line 3
-    :cond_0
-    iput-object p1, p0, Lp3/m;->m:Lv3/c;
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-virtual {p1, p0}, Lv3/c;->c(Lp3/a;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public s(Lv3/c;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/c<",
-            "Ljava/lang/Float;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lp3/m;->n:Lv3/c;
-
-    if-eqz v0, :cond_0
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-virtual {v0, v1}, Lv3/c;->c(Lp3/a;)V
-
-    .line 3
-    :cond_0
-    iput-object p1, p0, Lp3/m;->n:Lv3/c;
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-virtual {p1, p0}, Lv3/c;->c(Lp3/a;)V
-
-    :cond_1
-    return-void
 .end method

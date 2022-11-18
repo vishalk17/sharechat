@@ -1,5 +1,5 @@
-.class synthetic Landroidx/recyclerview/widget/RecyclerView$g;
-.super Ljava/lang/Object;
+.class public final Landroidx/recyclerview/widget/RecyclerView$g;
+.super Landroid/database/Observable;
 .source "SourceFile"
 
 
@@ -9,59 +9,244 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
-    name = null
+    accessFlags = 0x9
+    name = "g"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/database/Observable<",
+        "Landroidx/recyclerview/widget/RecyclerView$h;",
+        ">;"
+    }
 .end annotation
 
 
-# static fields
-.field static final synthetic a:[I
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroid/database/Observable;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    return v0
+.end method
+
+.method public final b()V
+    .locals 2
 
     .line 1
-    invoke-static {}, Landroidx/recyclerview/widget/RecyclerView$h$a;->values()[Landroidx/recyclerview/widget/RecyclerView$h$a;
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
-    move-result-object v0
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    array-length v0, v0
+    move-result v0
 
-    new-array v0, v0, [I
+    add-int/lit8 v0, v0, -0x1
 
-    sput-object v0, Landroidx/recyclerview/widget/RecyclerView$g;->a:[I
+    :goto_0
+    if-ltz v0, :cond_0
 
-    :try_start_0
-    sget-object v1, Landroidx/recyclerview/widget/RecyclerView$h$a;->PREVENT:Landroidx/recyclerview/widget/RecyclerView$h$a;
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result v1
+    move-result-object v1
 
-    const/4 v2, 0x1
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
 
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$h;->a()V
 
-    :catch_0
-    :try_start_1
-    sget-object v0, Landroidx/recyclerview/widget/RecyclerView$g;->a:[I
+    add-int/lit8 v0, v0, -0x1
 
-    sget-object v1, Landroidx/recyclerview/widget/RecyclerView$h$a;->PREVENT_WHEN_EMPTY:Landroidx/recyclerview/widget/RecyclerView$h$a;
+    goto :goto_0
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_0
+    return-void
+.end method
 
-    move-result v1
+.method public final c(II)V
+    .locals 2
 
-    const/4 v2, 0x2
+    .line 1
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    :catch_1
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v1, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->e(II)V
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final d(IILjava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v1, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$h;->c(IILjava/lang/Object;)V
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final e(II)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v1, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->d(II)V
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final f(II)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v1, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$h;->f(II)V
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_0
+    return-void
+.end method
+
+.method public final g()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    :goto_0
+    if-ltz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/recyclerview/widget/RecyclerView$h;
+
+    invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$h;->g()V
+
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_0
+
+    :cond_0
     return-void
 .end method

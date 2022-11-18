@@ -20,10 +20,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,16 +31,16 @@
 .method public constructor <init>(Ljava/lang/String;JZ)V
     .locals 0
 
-    .line 2
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
+    .line 2
     iput-object p1, p0, Lcom/appsflyer/internal/l;->values:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iput-wide p2, p0, Lcom/appsflyer/internal/l;->valueOf:J
 
-    .line 5
+    .line 4
     iput-boolean p4, p0, Lcom/appsflyer/internal/l;->AFInAppEventParameterName:Z
 
     return-void
@@ -52,7 +51,6 @@
 .method public final AFInAppEventParameterName()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/l;->AFInAppEventParameterName:Z
 
     return v0

@@ -1,76 +1,111 @@
-.class final Lo3/a$b;
-.super Ljava/lang/Object;
+.class public final Lo3/a$b;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lo3/a;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lo3/a;->a(Ldp0/q;Lx1/h;Ldp0/l;Ll1/g;II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
-    name = "b"
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Landroid/view/View;",
+        "Lro0/x;",
+        ">;"
+    }
 .end annotation
 
 
 # instance fields
-.field private final a:Ljava/util/List;
+.field public final synthetic b:Ls2/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List<",
-            "Lo3/m;",
+            "Ls2/f0<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final synthetic c:Ldp0/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/l<",
+            "TT;",
+            "Lro0/x;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final b:Lo3/s;
-
 
 # direct methods
-.method private constructor <init>(Lo3/s;)V
+.method public constructor <init>(Ls2/f0;Ldp0/l;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ls2/f0<",
+            "TT;>;",
+            "Ldp0/l<",
+            "-TT;",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lo3/a$b;->b:Ls2/f0;
+
+    iput-object p2, p0, Lo3/a$b;->c:Ldp0/l;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
+    .line 1
+    check-cast p1, Landroid/view/View;
+
+    const-string v0, "it"
+
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v0, p0, Lo3/a$b;->a:Ljava/util/List;
+    iget-object p1, p0, Lo3/a$b;->b:Ls2/f0;
 
     .line 4
-    iput-object p1, p0, Lo3/a$b;->b:Lo3/s;
+    iget-object p1, p1, Ls2/f0;->a:Ljava/lang/Object;
 
-    return-void
-.end method
+    .line 5
+    check-cast p1, Ls6/a;
 
-.method synthetic constructor <init>(Lo3/s;Lo3/a$a;)V
-    .locals 0
+    if-eqz p1, :cond_0
 
-    .line 1
-    invoke-direct {p0, p1}, Lo3/a$b;-><init>(Lo3/s;)V
+    iget-object v0, p0, Lo3/a$b;->c:Ldp0/l;
 
-    return-void
-.end method
+    invoke-interface {v0, p1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method static synthetic a(Lo3/a$b;)Ljava/util/List;
-    .locals 0
+    .line 6
+    :cond_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
-    .line 1
-    iget-object p0, p0, Lo3/a$b;->a:Ljava/util/List;
-
-    return-object p0
-.end method
-
-.method static synthetic b(Lo3/a$b;)Lo3/s;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lo3/a$b;->b:Lo3/s;
-
-    return-object p0
+    return-object p1
 .end method

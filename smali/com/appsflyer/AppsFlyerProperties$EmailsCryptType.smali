@@ -35,7 +35,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 6
 
     .line 1
@@ -96,7 +96,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -111,7 +110,6 @@
 .method public static values()[Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->AFInAppEventParameterName:[Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;
 
     invoke-virtual {v0}, [Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->clone()Ljava/lang/Object;
@@ -128,7 +126,6 @@
 .method public final getValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/appsflyer/AppsFlyerProperties$EmailsCryptType;->AFKeystoreWrapper:I
 
     return v0

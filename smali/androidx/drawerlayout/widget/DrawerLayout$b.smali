@@ -1,5 +1,5 @@
-.class Landroidx/drawerlayout/widget/DrawerLayout$b;
-.super Landroidx/core/view/a;
+.class public final Landroidx/drawerlayout/widget/DrawerLayout$b;
+.super Lv4/a;
 .source "SourceFile"
 
 
@@ -9,181 +9,39 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "b"
 .end annotation
 
 
 # instance fields
-.field private final d:Landroid/graphics/Rect;
+.field public final a:Landroid/graphics/Rect;
 
-.field final synthetic e:Landroidx/drawerlayout/widget/DrawerLayout;
+.field public final synthetic b:Landroidx/drawerlayout/widget/DrawerLayout;
 
 
 # direct methods
-.method constructor <init>(Landroidx/drawerlayout/widget/DrawerLayout;)V
+.method public constructor <init>(Landroidx/drawerlayout/widget/DrawerLayout;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->e:Landroidx/drawerlayout/widget/DrawerLayout;
+    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->b:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
+    invoke-direct {p0}, Lv4/a;-><init>()V
 
     .line 2
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->d:Landroid/graphics/Rect;
-
-    return-void
-.end method
-
-.method private n(Lu1/c;Landroid/view/ViewGroup;)V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p2}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, v0, :cond_1
-
-    .line 2
-    invoke-virtual {p2, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    .line 3
-    invoke-static {v2}, Landroidx/drawerlayout/widget/DrawerLayout;->A(Landroid/view/View;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 4
-    invoke-virtual {p1, v2}, Lu1/c;->c(Landroid/view/View;)V
-
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    return-void
-.end method
-
-.method private o(Lu1/c;Lu1/c;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->d:Landroid/graphics/Rect;
-
-    .line 2
-    invoke-virtual {p2, v0}, Lu1/c;->m(Landroid/graphics/Rect;)V
-
-    .line 3
-    invoke-virtual {p1, v0}, Lu1/c;->Y(Landroid/graphics/Rect;)V
-
-    .line 4
-    invoke-virtual {p2, v0}, Lu1/c;->n(Landroid/graphics/Rect;)V
-
-    .line 5
-    invoke-virtual {p1, v0}, Lu1/c;->Z(Landroid/graphics/Rect;)V
-
-    .line 6
-    invoke-virtual {p2}, Lu1/c;->O()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->M0(Z)V
-
-    .line 7
-    invoke-virtual {p2}, Lu1/c;->v()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->u0(Ljava/lang/CharSequence;)V
-
-    .line 8
-    invoke-virtual {p2}, Lu1/c;->p()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->c0(Ljava/lang/CharSequence;)V
-
-    .line 9
-    invoke-virtual {p2}, Lu1/c;->r()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->g0(Ljava/lang/CharSequence;)V
-
-    .line 10
-    invoke-virtual {p2}, Lu1/c;->G()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->k0(Z)V
-
-    .line 11
-    invoke-virtual {p2}, Lu1/c;->F()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->d0(Z)V
-
-    .line 12
-    invoke-virtual {p2}, Lu1/c;->H()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->m0(Z)V
-
-    .line 13
-    invoke-virtual {p2}, Lu1/c;->I()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->n0(Z)V
-
-    .line 14
-    invoke-virtual {p2}, Lu1/c;->C()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->W(Z)V
-
-    .line 15
-    invoke-virtual {p2}, Lu1/c;->M()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->D0(Z)V
-
-    .line 16
-    invoke-virtual {p2}, Lu1/c;->J()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v0}, Lu1/c;->r0(Z)V
-
-    .line 17
-    invoke-virtual {p2}, Lu1/c;->k()I
-
-    move-result p2
-
-    invoke-virtual {p1, p2}, Lu1/c;->a(I)V
+    iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->a:Landroid/graphics/Rect;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+.method public final dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
 
     .line 1
@@ -196,162 +54,277 @@
     if-ne v0, v1, :cond_1
 
     .line 2
-    invoke-virtual {p2}, Landroid/view/accessibility/AccessibilityEvent;->getText()Ljava/util/List;
+    invoke-virtual {p2}, Landroid/view/accessibility/AccessibilityRecord;->getText()Ljava/util/List;
+
+    .line 3
+    iget-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->b:Landroidx/drawerlayout/widget/DrawerLayout;
+
+    invoke-virtual {p1}, Landroidx/drawerlayout/widget/DrawerLayout;->f()Landroid/view/View;
 
     move-result-object p1
 
-    .line 3
-    iget-object p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->e:Landroidx/drawerlayout/widget/DrawerLayout;
-
-    invoke-virtual {p2}, Landroidx/drawerlayout/widget/DrawerLayout;->p()Landroid/view/View;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_0
 
     .line 4
-    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->e:Landroidx/drawerlayout/widget/DrawerLayout;
+    iget-object p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->b:Landroidx/drawerlayout/widget/DrawerLayout;
 
-    invoke-virtual {v0, p2}, Landroidx/drawerlayout/widget/DrawerLayout;->t(Landroid/view/View;)I
+    invoke-virtual {p2, p1}, Landroidx/drawerlayout/widget/DrawerLayout;->h(Landroid/view/View;)I
+
+    move-result p1
+
+    .line 5
+    iget-object p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->b:Landroidx/drawerlayout/widget/DrawerLayout;
+
+    invoke-static {p2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    sget-object v0, Lv4/d0;->a:Ljava/util/WeakHashMap;
+
+    .line 7
+    invoke-static {p2}, Lv4/d0$e;->d(Landroid/view/View;)I
 
     move-result p2
 
-    .line 5
-    iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->e:Landroidx/drawerlayout/widget/DrawerLayout;
-
-    invoke-virtual {v0, p2}, Landroidx/drawerlayout/widget/DrawerLayout;->s(I)Ljava/lang/CharSequence;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
-
-    .line 6
-    invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 8
+    invoke-static {p1, p2}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
     :cond_0
     const/4 p1, 0x1
 
     return p1
 
-    .line 7
+    .line 9
     :cond_1
-    invoke-super {p0, p1, p2}, Landroidx/core/view/a;->a(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1, p2}, Lv4/a;->dispatchPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/core/view/a;->f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lv4/a;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+
+    const-string p1, "androidx.drawerlayout.widget.DrawerLayout"
 
     .line 2
-    const-class p1, Landroidx/drawerlayout/widget/DrawerLayout;
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setClassName(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
 
-.method public g(Landroid/view/View;Lu1/c;)V
-    .locals 3
+.method public final onInitializeAccessibilityNodeInfo(Landroid/view/View;Lw4/f;)V
+    .locals 5
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->N:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->G:Z
+
+    const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-super {p0, p1, p2}, Landroidx/core/view/a;->g(Landroid/view/View;Lu1/c;)V
+    invoke-super {p0, p1, p2}, Lv4/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Lw4/f;)V
 
-    goto :goto_0
+    goto/16 :goto_1
 
     .line 3
     :cond_0
-    invoke-static {p2}, Lu1/c;->R(Lu1/c;)Lu1/c;
+    iget-object v0, p2, Lw4/f;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    invoke-static {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-result-object v0
 
     .line 4
-    invoke-super {p0, p1, v0}, Landroidx/core/view/a;->g(Landroid/view/View;Lu1/c;)V
+    new-instance v2, Lw4/f;
+
+    invoke-direct {v2, v0}, Lw4/f;-><init>(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
     .line 5
-    invoke-virtual {p2, p1}, Lu1/c;->F0(Landroid/view/View;)V
+    invoke-super {p0, p1, v2}, Lv4/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Lw4/f;)V
+
+    const/4 v3, -0x1
 
     .line 6
-    invoke-static {p1}, Landroidx/core/view/c0;->K(Landroid/view/View;)Landroid/view/ViewParent;
-
-    move-result-object v1
+    iput v3, p2, Lw4/f;->c:I
 
     .line 7
-    instance-of v2, v1, Landroid/view/View;
+    iget-object v3, p2, Lw4/f;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
 
-    if-eqz v2, :cond_1
+    invoke-virtual {v3, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setSource(Landroid/view/View;)V
 
     .line 8
-    check-cast v1, Landroid/view/View;
-
-    invoke-virtual {p2, v1}, Lu1/c;->w0(Landroid/view/View;)V
+    sget-object v3, Lv4/d0;->a:Ljava/util/WeakHashMap;
 
     .line 9
-    :cond_1
-    invoke-direct {p0, p2, v0}, Landroidx/drawerlayout/widget/DrawerLayout$b;->o(Lu1/c;Lu1/c;)V
+    invoke-static {p1}, Lv4/d0$d;->f(Landroid/view/View;)Landroid/view/ViewParent;
+
+    move-result-object v3
 
     .line 10
-    invoke-virtual {v0}, Lu1/c;->T()V
+    instance-of v4, v3, Landroid/view/View;
+
+    if-eqz v4, :cond_1
 
     .line 11
-    check-cast p1, Landroid/view/ViewGroup;
+    check-cast v3, Landroid/view/View;
 
-    invoke-direct {p0, p2, p1}, Landroidx/drawerlayout/widget/DrawerLayout$b;->n(Lu1/c;Landroid/view/ViewGroup;)V
+    invoke-virtual {p2, v3}, Lw4/f;->Q(Landroid/view/View;)V
 
     .line 12
-    :goto_0
-    const-class p1, Landroidx/drawerlayout/widget/DrawerLayout;
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p2, p1}, Lu1/c;->c0(Ljava/lang/CharSequence;)V
-
-    const/4 p1, 0x0
+    :cond_1
+    iget-object v3, p0, Landroidx/drawerlayout/widget/DrawerLayout$b;->a:Landroid/graphics/Rect;
 
     .line 13
-    invoke-virtual {p2, p1}, Lu1/c;->m0(Z)V
+    invoke-virtual {v2, v3}, Lw4/f;->g(Landroid/graphics/Rect;)V
 
     .line 14
-    invoke-virtual {p2, p1}, Lu1/c;->n0(Z)V
+    invoke-virtual {p2, v3}, Lw4/f;->y(Landroid/graphics/Rect;)V
 
     .line 15
-    sget-object p1, Lu1/c$a;->e:Lu1/c$a;
+    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
 
-    invoke-virtual {p2, p1}, Lu1/c;->U(Lu1/c$a;)Z
+    move-result v3
 
     .line 16
-    sget-object p1, Lu1/c$a;->f:Lu1/c$a;
+    invoke-virtual {p2, v3}, Lw4/f;->b0(Z)V
 
-    invoke-virtual {p2, p1}, Lu1/c;->U(Lu1/c$a;)Z
+    .line 17
+    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getPackageName()Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    .line 18
+    invoke-virtual {p2, v3}, Lw4/f;->O(Ljava/lang/CharSequence;)V
+
+    .line 19
+    invoke-virtual {v2}, Lw4/f;->h()Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    invoke-virtual {p2, v3}, Lw4/f;->B(Ljava/lang/CharSequence;)V
+
+    .line 20
+    invoke-virtual {v2}, Lw4/f;->j()Ljava/lang/CharSequence;
+
+    move-result-object v3
+
+    invoke-virtual {p2, v3}, Lw4/f;->F(Ljava/lang/CharSequence;)V
+
+    .line 21
+    invoke-virtual {v2}, Lw4/f;->o()Z
+
+    move-result v3
+
+    invoke-virtual {p2, v3}, Lw4/f;->H(Z)V
+
+    .line 22
+    invoke-virtual {v2}, Lw4/f;->q()Z
+
+    move-result v3
+
+    invoke-virtual {p2, v3}, Lw4/f;->J(Z)V
+
+    .line 23
+    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isAccessibilityFocused()Z
+
+    move-result v3
+
+    .line 24
+    invoke-virtual {p2, v3}, Lw4/f;->v(Z)V
+
+    .line 25
+    invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isSelected()Z
+
+    move-result v0
+
+    .line 26
+    invoke-virtual {p2, v0}, Lw4/f;->W(Z)V
+
+    .line 27
+    invoke-virtual {v2}, Lw4/f;->e()I
+
+    move-result v0
+
+    invoke-virtual {p2, v0}, Lw4/f;->a(I)V
+
+    .line 28
+    invoke-virtual {v2}, Lw4/f;->t()V
+
+    .line 29
+    check-cast p1, Landroid/view/ViewGroup;
+
+    .line 30
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_3
+
+    .line 31
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v3
+
+    .line 32
+    invoke-static {v3}, Landroidx/drawerlayout/widget/DrawerLayout;->j(Landroid/view/View;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    .line 33
+    iget-object v4, p2, Lw4/f;->a:Landroid/view/accessibility/AccessibilityNodeInfo;
+
+    invoke-virtual {v4, v3}, Landroid/view/accessibility/AccessibilityNodeInfo;->addChild(Landroid/view/View;)V
+
+    :cond_2
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    :goto_1
+    const-string p1, "androidx.drawerlayout.widget.DrawerLayout"
+
+    .line 34
+    invoke-virtual {p2, p1}, Lw4/f;->B(Ljava/lang/CharSequence;)V
+
+    .line 35
+    invoke-virtual {p2, v1}, Lw4/f;->I(Z)V
+
+    .line 36
+    invoke-virtual {p2, v1}, Lw4/f;->J(Z)V
+
+    .line 37
+    sget-object p1, Lw4/f$a;->e:Lw4/f$a;
+
+    invoke-virtual {p2, p1}, Lw4/f;->u(Lw4/f$a;)Z
+
+    .line 38
+    sget-object p1, Lw4/f$a;->f:Lw4/f$a;
+
+    invoke-virtual {p2, p1}, Lw4/f;->u(Lw4/f$a;)Z
 
     return-void
 .end method
 
-.method public i(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+.method public final onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->N:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->G:Z
 
     if-nez v0, :cond_1
 
-    invoke-static {p2}, Landroidx/drawerlayout/widget/DrawerLayout;->A(Landroid/view/View;)Z
+    invoke-static {p2}, Landroidx/drawerlayout/widget/DrawerLayout;->j(Landroid/view/View;)Z
 
     move-result v0
 
@@ -367,7 +340,7 @@
     .line 2
     :cond_1
     :goto_0
-    invoke-super {p0, p1, p2, p3}, Landroidx/core/view/a;->i(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1, p2, p3}, Lv4/a;->onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result p1
 

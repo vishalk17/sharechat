@@ -1,173 +1,78 @@
-.class public Lp3/k;
-.super Lp3/f;
+.class public final Lp3/k;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp3/f<",
-        "Lv3/d;",
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Lw2/b0;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field private final i:Lv3/d;
+# static fields
+.field public static final b:Lp3/k;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lv3/a<",
-            "Lv3/d;",
-            ">;>;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0, p1}, Lp3/f;-><init>(Ljava/util/List;)V
+    new-instance v0, Lp3/k;
 
-    .line 2
-    new-instance p1, Lv3/d;
+    invoke-direct {v0}, Lp3/k;-><init>()V
 
-    invoke-direct {p1}, Lv3/d;-><init>()V
+    sput-object v0, Lp3/k;->b:Lp3/k;
 
-    iput-object p1, p0, Lp3/k;->i:Lv3/d;
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic i(Lv3/a;F)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lp3/k;->p(Lv3/a;F)Lv3/d;
+    check-cast p1, Lw2/b0;
 
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public p(Lv3/a;F)Lv3/d;
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/a<",
-            "Lv3/d;",
-            ">;F)",
-            "Lv3/d;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p1, Lv3/a;->b:Ljava/lang/Object;
-
-    if-eqz v0, :cond_1
-
-    iget-object v1, p1, Lv3/a;->c:Ljava/lang/Object;
-
-    if-eqz v1, :cond_1
+    const-string v0, "$this$semantics"
 
     .line 2
-    check-cast v0, Lv3/d;
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    check-cast v1, Lv3/d;
+    sget-object v0, Lw2/x;->a:[Llp0/l;
 
     .line 4
-    iget-object v2, p0, Lp3/a;->e:Lv3/c;
+    sget-object v0, Lw2/u;->a:Lw2/u;
 
-    if-eqz v2, :cond_0
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    iget v3, p1, Lv3/a;->g:F
-
-    iget-object p1, p1, Lv3/a;->h:Ljava/lang/Float;
-
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
-
-    move-result v4
+    sget-object v0, Lw2/u;->p:Lw2/a0;
 
     .line 6
-    invoke-virtual {p0}, Lp3/a;->e()F
+    sget-object v1, Lro0/x;->a:Lro0/x;
 
-    move-result v8
+    invoke-interface {p1, v0, v1}, Lw2/b0;->a(Lw2/a0;Ljava/lang/Object;)V
 
-    invoke-virtual {p0}, Lp3/a;->f()F
-
-    move-result v9
-
-    move-object v5, v0
-
-    move-object v6, v1
-
-    move v7, p2
-
-    .line 7
-    invoke-virtual/range {v2 .. v9}, Lv3/c;->b(FFLjava/lang/Object;Ljava/lang/Object;FFF)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lv3/d;
-
-    if-eqz p1, :cond_0
-
-    return-object p1
-
-    .line 8
-    :cond_0
-    iget-object p1, p0, Lp3/k;->i:Lv3/d;
-
-    .line 9
-    invoke-virtual {v0}, Lv3/d;->b()F
-
-    move-result v2
-
-    invoke-virtual {v1}, Lv3/d;->b()F
-
-    move-result v3
-
-    invoke-static {v2, v3, p2}, Lcom/airbnb/lottie/utils/g;->k(FFF)F
-
-    move-result v2
-
-    .line 10
-    invoke-virtual {v0}, Lv3/d;->c()F
-
-    move-result v0
-
-    invoke-virtual {v1}, Lv3/d;->c()F
-
-    move-result v1
-
-    invoke-static {v0, v1, p2}, Lcom/airbnb/lottie/utils/g;->k(FFF)F
-
-    move-result p2
-
-    .line 11
-    invoke-virtual {p1, v2, p2}, Lv3/d;->d(FF)V
-
-    .line 12
-    iget-object p1, p0, Lp3/k;->i:Lv3/d;
-
-    return-object p1
-
-    .line 13
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string p2, "Missing values for keyframe."
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object v1
 .end method

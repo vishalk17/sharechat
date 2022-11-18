@@ -17,6 +17,7 @@
         Lio/intercom/android/R$integer;,
         Lio/intercom/android/R$interpolator;,
         Lio/intercom/android/R$layout;,
+        Lio/intercom/android/R$menu;,
         Lio/intercom/android/R$plurals;,
         Lio/intercom/android/R$raw;,
         Lio/intercom/android/R$string;,

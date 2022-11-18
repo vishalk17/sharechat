@@ -1,0 +1,269 @@
+{
+  "flags" : [
+    {
+      "name" : "PLATFORM",
+      "value": "ANDROID",
+      "type" : "String",
+      "range" : ["ANDROID","IOS","MAC","TEST"],
+      "description" : "Indicates the target Platform."
+    },
+    {
+      "name" : "GRAPHICS_API",
+      "value": "OPENGL_ES",
+      "type" : "String",
+      "range": ["METAL","OPENGL_ES","GLFW","TEST"],
+      "description" : "Indicates the target Graphics API"
+    },
+    {
+      "name" : "SHUTTER_GL_VERSION",
+      "value": "2",
+      "type" : "String",
+      "range": ["2","3"],
+      "description" : "Indicates the Specific Opengl Version that Target will be using. Possible values - 2,3"
+    },
+    {
+      "name" : "ENABLE_LOGGING",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enables and Disables Logging"
+    },
+    {
+      "name" : "ENABLE_EVENTS",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enables and Disables events reporting for clients"
+    },
+    {
+      "name" : "ENABLE_ASSERTS",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enables and Disables failed assertion reporting"
+    },
+    {
+      "name" : "GENERATE_DOXYGEN",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"]
+    },
+    {
+      "name" : "MODEL_LOADING",
+      "value": "ON",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enables/Disables model loading and rendering feature"
+    },
+    {
+      "name" : "SHUTTER_AI_CAMERA",
+      "value": "ON",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Indicates the whether AI module should be enabled/disabled"
+    },
+    {
+      "name" : "MATERIALS_POC_IOS",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Testing 3D mesh with material rendering on iOS"
+    },
+    {
+      "name" : "ENABLE_NORMALS",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "CRT-3019: Enables/Disables vertex 'normals' support for Mesh"
+    },
+    {
+      "name" : "VE_IV_TEMPLATE",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "CRT-3025 : Image Video Mix for VideoEditor"
+    },
+    {
+      "name" : "ENABLE_DEPTH16",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enable/Disable Depth16 image format support"
+    },
+    {
+      "name" : "ENABLE_DEPTH32_STENCIL8",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enable/Disable Depth32, Stensil8 image format support"
+     },
+    {
+      "name" : "TEXTURE_CUBEMAP",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Enable creation of texture cubemap"
+    },
+    {
+      "name" : "MAC_UI_ARCHITECTURE",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Retained mode UI Architecture(For ImGUI) setup for Design Studio applications"
+    },
+    {
+      "name" : "DS_BLACKFRAME_EXPORT_ISSUE",
+      "value": "ON",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Bug - Image and video sometimes getting exported completely black"
+    },
+    {
+      "name" : "DS_ICONS_MANAGER",
+      "value": "OFF",
+      "type" : "String",
+      "range": ["ON","OFF"],
+      "description" : "Configuring assets for MV and Lens studio applications separately"
+    },
+    {
+      "name": "C_SCRIPTING",
+      "value": "ON",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Experimenting with scripting in Shutter"
+    },
+    {
+      "name": "MATERIAL_DEPTH_FLAG",
+      "value": "ON",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding Material Depth Flag in Shutter Material"
+    },
+    {
+      "name": "TEXTURE_CONVERTOR_FLAG",
+      "value": "ON",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding Texture Convertor for Android OPENGL_OES_TEXTURE to TEXTURE2D Conversion"
+    },
+    {
+      "name": "COLOR_FILTER_TOOL",
+      "value": "OFF",
+      "type": "String",
+      "range": ["ON", "OFF"],
+      "description": "its color filter application"
+    },
+    {
+      "name": "CAMERA_PREVIEW_ENHANCEMENT_FLAG",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding enhacement filter preprocessing to input Texture from camera"
+    },
+    {
+      "name": "CAMERA_EXPORT_CALLBACKS",
+      "value": "OFF",
+      "type": "String",
+      "range": ["ON", "OFF"],
+      "description": "Toggles the export callbacks in camera encoder"
+    },
+    {
+      "name": "DS_TEXT_IMPLEMENTATION",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding Text Widget"
+    },
+    {
+      "name": "DS_SLIDER_IMPLEMENTATION",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding slider in DS"
+    },
+    {
+      "name": "FILTER_CONFIG",
+      "value": "ON",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Enable Filter Config for new structure"
+    },
+    {
+      "name": "DS_INPUT_WIDGET_IMPLEMENTATION",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding onput widget"
+    },
+    {
+      "name": "CAMERA_SECONDARY_INPUT",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding secondary input support in camera. Use case - Duet"
+    },
+    {
+      "name": "DS_COLOR_WIDGET_IMPLEMENTATION",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Adding color widget DS"
+    },
+    {
+      "name": "DS_ICONS_USING_ATEXTURE",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Loading Design Studio icons using ATexture, instead of Renderer support"
+    },
+    {
+      "name": "AI_LIB_IOS_INTEGRATION",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Flag for iOS x AI-Lib integration"
+    },
+    {
+      "name": "LOG_TO_FILE",
+       "value": "OFF",
+       "type": "String",
+       "range": [ "ON", "OFF" ],
+       "description": "Flag indicating should log to file"
+    },
+    {
+       "name": "DELETE_LOG_FILE",
+       "value": "OFF",
+       "type": "String",
+       "range": [ "ON", "OFF" ],
+       "description": "Flag for deleting existing log file from production apps"
+    },
+    {
+      "name": "LENS_STUDIO",
+      "value": "OFF",
+      "type": "String",
+      "range": ["ON", "OFF"],
+      "description": "Lens studio app. Requires DS_ICONS_MANAGER, DS_ICONS_USING_ATEXTURE and MAC_UI_ARCHITECTURE turned on"
+    },
+    {
+      "name": "FFMPEG_HWACCEL",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Flag for enabling Hardware acceleration in ffmpeg based decoders HIGHLY_EXPERIMENTAL"
+    },
+    {
+      "name": "COLOR_FILTER_VIDEO_PLAY_PAUSE",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Play pause activity for color filter video"
+    },
+    {
+      "name": "COLOR_FILTER_SCRIPT",
+      "value": "OFF",
+      "type": "String",
+      "range": [ "ON", "OFF" ],
+      "description": "Applies color filter through scripting if set to ON"
+    }
+  ]
+}

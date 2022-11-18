@@ -15,17 +15,16 @@
 
 
 # static fields
-.field private static final a:Ljava/lang/String;
+.field public static final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const-string v0, "ForceStopRunnable$Rcvr"
 
-    .line 1
-    invoke-static {v0}, Landroidx/work/l;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lu6/n;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -37,7 +36,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -45,10 +43,10 @@
 
 
 # virtual methods
-.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 2
 
-    if-eqz p2, :cond_0
+    if-eqz p2, :cond_1
 
     .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -62,26 +60,33 @@
 
     move-result p2
 
-    if-eqz p2, :cond_0
+    if-eqz p2, :cond_1
 
     .line 3
-    invoke-static {}, Landroidx/work/l;->c()Landroidx/work/l;
+    invoke-static {}, Lu6/n;->c()Lu6/n;
 
     move-result-object p2
 
     sget-object v0, Landroidx/work/impl/utils/ForceStopRunnable$BroadcastReceiver;->a:Ljava/lang/String;
 
-    const/4 v1, 0x0
-
-    new-array v1, v1, [Ljava/lang/Throwable;
-
-    const-string v2, "Rescheduling alarm that keeps track of force-stops."
-
-    invoke-virtual {p2, v0, v2, v1}, Landroidx/work/l;->g(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    check-cast p2, Lu6/n$a;
 
     .line 4
-    invoke-static {p1}, Landroidx/work/impl/utils/ForceStopRunnable;->e(Landroid/content/Context;)V
+    iget p2, p2, Lu6/n$a;->b:I
 
+    const/4 v1, 0x2
+
+    if-gt p2, v1, :cond_0
+
+    const-string p2, "Rescheduling alarm that keeps track of force-stops."
+
+    .line 5
+    invoke-static {v0, p2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 6
     :cond_0
+    invoke-static {p1}, Landroidx/work/impl/utils/ForceStopRunnable;->d(Landroid/content/Context;)V
+
+    :cond_1
     return-void
 .end method

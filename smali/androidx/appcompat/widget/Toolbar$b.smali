@@ -1,4 +1,4 @@
-.class Landroidx/appcompat/widget/Toolbar$b;
+.class public final Landroidx/appcompat/widget/Toolbar$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/appcompat/widget/Toolbar;
+.field public final synthetic b:Landroidx/appcompat/widget/Toolbar;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
+.method public constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$b;->b:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,10 +34,9 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$b;->b:Landroidx/appcompat/widget/Toolbar;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->showOverflowMenu()Z

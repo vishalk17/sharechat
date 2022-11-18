@@ -1,189 +1,79 @@
-.class public final Ld;
-.super Landroidx/recyclerview/widget/RecyclerView$h;
+.class public final synthetic Ld;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Ld$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroidx/recyclerview/widget/RecyclerView$h<",
-        "Ld$a;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Luf0/d;
-
-
 # direct methods
-.method static constructor <clinit>()V
+.method public static a(ZLl1/g;)Ll1/w0;
     .locals 0
 
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/List;Luf0/d;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;",
-            "Luf0/d;",
-            ")V"
-        }
-    .end annotation
-
-    const-string v0, "suggestions"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "onItemClickListener"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$h;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Ld;->a:Ljava/util/List;
-
-    .line 3
-    iput-object p2, p0, Ld;->b:Luf0/d;
-
-    return-void
-.end method
-
-.method private static final A(Ld;ILandroid/view/View;)V
-    .locals 0
-
-    const-string p2, "this$0"
-
-    invoke-static {p0, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object p2, p0, Ld;->b:Luf0/d;
-
-    iget-object p0, p0, Ld;->a:Ljava/util/List;
-
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-static {p0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p0
 
-    check-cast p0, Ljava/lang/String;
+    .line 2
+    invoke-static {p0}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
 
-    invoke-interface {p2, p0, p1}, Luf0/d;->Wa(Ljava/lang/String;I)V
+    move-result-object p0
 
-    return-void
+    .line 3
+    invoke-interface {p1, p0}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    return-object p0
 .end method
 
-.method public static synthetic y(Ld;ILandroid/view/View;)V
-    .locals 0
-
-    invoke-static {p0, p1, p2}, Ld;->A(Ld;ILandroid/view/View;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public B(Landroid/view/ViewGroup;I)Ld$a;
-    .locals 0
-
-    const-string p2, "viewGroup"
-
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    sget-object p2, Ld$a;->b:Ld$a$a;
-
-    invoke-virtual {p2, p1}, Ld$a$a;->a(Landroid/view/ViewGroup;)Ld$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public getItemCount()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ld;->a:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
+.method public static b(Ll1/g;ILx1/b;ZLl1/g;I)Lq2/c0;
     .locals 0
 
     .line 1
-    check-cast p1, Ld$a;
-
-    invoke-virtual {p0, p1, p2}, Ld;->z(Ld$a;I)V
-
-    return-void
-.end method
-
-.method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$d0;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Ld;->B(Landroid/view/ViewGroup;I)Ld$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public z(Ld$a;I)V
-    .locals 1
-
-    const-string v0, "viewHolder"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iget-object v0, p0, Ld;->a:Ljava/util/List;
-
-    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Ld$a;->J6(Ljava/lang/String;)V
+    invoke-interface {p0, p1}, Ll1/g;->E(I)V
 
     .line 2
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$d0;->itemView:Landroid/view/View;
+    invoke-static {p2, p3, p4}, Lw0/k;->d(Lx1/a;ZLl1/g;)Lq2/c0;
 
-    new-instance v0, Lc;
+    move-result-object p1
 
-    invoke-direct {v0, p0, p2}, Lc;-><init>(Ld;I)V
+    .line 3
+    invoke-interface {p0, p5}, Ll1/g;->E(I)V
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    return-object p1
+.end method
+
+.method public static c(ILjava/util/HashMap;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;ILjava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    .line 2
+    invoke-virtual {p1, p2, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 3
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    .line 4
+    invoke-virtual {p1, p4, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    invoke-static {p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    .line 6
+    invoke-virtual {p1, p6, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 7
+    invoke-static {p7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    .line 8
+    invoke-virtual {p1, p8, p0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method

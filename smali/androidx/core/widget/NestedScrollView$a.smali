@@ -1,5 +1,5 @@
-.class Landroidx/core/widget/NestedScrollView$a;
-.super Landroidx/core/view/a;
+.class public final Landroidx/core/widget/NestedScrollView$a;
+.super Lv4/a;
 .source "SourceFile"
 
 
@@ -9,28 +9,27 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
+    invoke-direct {p0}, Lv4/a;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+.method public final onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/core/view/a;->f(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
+    invoke-super {p0, p1, p2}, Lv4/a;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
     .line 2
     check-cast p1, Landroidx/core/widget/NestedScrollView;
@@ -42,7 +41,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setClassName(Ljava/lang/CharSequence;)V
 
     .line 4
     invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
@@ -60,44 +59,46 @@
 
     .line 5
     :goto_0
-    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityEvent;->setScrollable(Z)V
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollable(Z)V
 
     .line 6
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollX()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
     move-result v0
 
-    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityEvent;->setScrollX(I)V
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollX(I)V
 
     .line 7
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result v0
 
-    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityEvent;->setScrollY(I)V
+    invoke-virtual {p2, v0}, Landroid/view/accessibility/AccessibilityRecord;->setScrollY(I)V
 
     .line 8
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollX()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
     move-result v0
 
-    invoke-static {p2, v0}, Lu1/e;->a(Landroid/view/accessibility/AccessibilityRecord;I)V
-
     .line 9
+    invoke-static {p2, v0}, Lw4/h;->c(Landroid/view/accessibility/AccessibilityRecord;I)V
+
+    .line 10
     invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
 
     move-result p1
 
-    invoke-static {p2, p1}, Lu1/e;->b(Landroid/view/accessibility/AccessibilityRecord;I)V
+    .line 11
+    invoke-static {p2, p1}, Lw4/h;->d(Landroid/view/accessibility/AccessibilityRecord;I)V
 
     return-void
 .end method
 
-.method public g(Landroid/view/View;Lu1/c;)V
+.method public final onInitializeAccessibilityNodeInfo(Landroid/view/View;Lw4/f;)V
     .locals 2
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/core/view/a;->g(Landroid/view/View;Lu1/c;)V
+    invoke-super {p0, p1, p2}, Lv4/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Lw4/f;)V
 
     .line 2
     check-cast p1, Landroidx/core/widget/NestedScrollView;
@@ -109,10 +110,10 @@
 
     move-result-object v0
 
-    invoke-virtual {p2, v0}, Lu1/c;->c0(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v0}, Lw4/f;->B(Ljava/lang/CharSequence;)V
 
     .line 4
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->isEnabled()Z
+    invoke-virtual {p1}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
 
@@ -128,52 +129,52 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p2, v1}, Lu1/c;->C0(Z)V
+    invoke-virtual {p2, v1}, Lw4/f;->V(Z)V
 
     .line 7
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
     .line 8
-    sget-object v1, Lu1/c$a;->l:Lu1/c$a;
+    sget-object v1, Lw4/f$a;->l:Lw4/f$a;
 
-    invoke-virtual {p2, v1}, Lu1/c;->b(Lu1/c$a;)V
+    invoke-virtual {p2, v1}, Lw4/f;->b(Lw4/f$a;)V
 
     .line 9
-    sget-object v1, Lu1/c$a;->p:Lu1/c$a;
+    sget-object v1, Lw4/f$a;->p:Lw4/f$a;
 
-    invoke-virtual {p2, v1}, Lu1/c;->b(Lu1/c$a;)V
+    invoke-virtual {p2, v1}, Lw4/f;->b(Lw4/f$a;)V
 
     .line 10
     :cond_0
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result p1
 
     if-ge p1, v0, :cond_1
 
     .line 11
-    sget-object p1, Lu1/c$a;->k:Lu1/c$a;
+    sget-object p1, Lw4/f$a;->k:Lw4/f$a;
 
-    invoke-virtual {p2, p1}, Lu1/c;->b(Lu1/c$a;)V
+    invoke-virtual {p2, p1}, Lw4/f;->b(Lw4/f$a;)V
 
     .line 12
-    sget-object p1, Lu1/c$a;->r:Lu1/c$a;
+    sget-object p1, Lw4/f$a;->r:Lw4/f$a;
 
-    invoke-virtual {p2, p1}, Lu1/c;->b(Lu1/c$a;)V
+    invoke-virtual {p2, p1}, Lw4/f;->b(Lw4/f$a;)V
 
     :cond_1
     return-void
 .end method
 
-.method public j(Landroid/view/View;ILandroid/os/Bundle;)Z
-    .locals 2
+.method public final performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
+    .locals 4
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/core/view/a;->j(Landroid/view/View;ILandroid/os/Bundle;)Z
+    invoke-super {p0, p1, p2, p3}, Lv4/a;->performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
 
     move-result p3
 
@@ -188,7 +189,7 @@
     check-cast p1, Landroidx/core/widget/NestedScrollView;
 
     .line 3
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->isEnabled()Z
+    invoke-virtual {p1}, Landroid/view/View;->isEnabled()Z
 
     move-result p3
 
@@ -198,118 +199,167 @@
 
     return v1
 
+    .line 4
     :cond_1
-    const/16 p3, 0x1000
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
-    if-eq p2, p3, :cond_4
+    move-result p3
 
-    const/16 p3, 0x2000
+    .line 5
+    new-instance v2, Landroid/graphics/Rect;
 
-    if-eq p2, p3, :cond_2
+    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    const p3, 0x1020038
+    .line 6
+    invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
-    if-eq p2, p3, :cond_2
+    move-result-object v3
 
-    const p3, 0x102003a
+    invoke-virtual {v3}, Landroid/graphics/Matrix;->isIdentity()Z
 
-    if-eq p2, p3, :cond_4
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    invoke-virtual {p1, v2}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 7
+    invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
+
+    move-result p3
+
+    :cond_2
+    const/16 v2, 0x1000
+
+    if-eq p2, v2, :cond_5
+
+    const/16 v2, 0x2000
+
+    if-eq p2, v2, :cond_3
+
+    const v2, 0x1020038
+
+    if-eq p2, v2, :cond_3
+
+    const v2, 0x102003a
+
+    if-eq p2, v2, :cond_5
 
     return v1
 
-    .line 4
-    :cond_2
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
+    .line 8
+    :cond_3
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
     move-result p2
-
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getPaddingBottom()I
-
-    move-result p3
-
-    sub-int/2addr p2, p3
-
-    .line 5
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getPaddingTop()I
-
-    move-result p3
-
-    sub-int/2addr p2, p3
-
-    .line 6
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result p3
 
     sub-int/2addr p3, p2
 
-    invoke-static {p3, v1}, Ljava/lang/Math;->max(II)I
-
-    move-result p2
-
-    .line 7
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result p3
-
-    if-eq p2, p3, :cond_3
-
-    .line 8
-    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->P(IIZ)V
-
-    return v0
-
-    :cond_3
-    return v1
-
     .line 9
-    :cond_4
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
 
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getPaddingBottom()I
-
-    move-result p3
-
-    sub-int/2addr p2, p3
+    sub-int/2addr p3, p2
 
     .line 10
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getPaddingTop()I
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    move-result p2
+
+    sub-int/2addr p2, p3
+
+    invoke-static {p2, v1}, Ljava/lang/Math;->max(II)I
+
+    move-result p2
+
+    .line 11
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    move-result p3
+
+    if-eq p2, p3, :cond_4
+
+    .line 12
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
+
+    move-result p3
+
+    sub-int/2addr v1, p3
+
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result p3
 
     sub-int/2addr p2, p3
 
-    .line 11
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result p3
-
-    add-int/2addr p3, p2
-
-    .line 12
-    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
-
-    move-result p2
-
-    .line 13
-    invoke-static {p3, p2}, Ljava/lang/Math;->min(II)I
-
-    move-result p2
-
-    .line 14
-    invoke-virtual {p1}, Landroid/widget/FrameLayout;->getScrollY()I
-
-    move-result p3
-
-    if-eq p2, p3, :cond_5
-
-    .line 15
-    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->P(IIZ)V
+    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->A(IIZ)V
 
     return v0
 
+    :cond_4
+    return v1
+
+    .line 13
     :cond_5
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
+
+    move-result p2
+
+    sub-int/2addr p3, p2
+
+    .line 14
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
+
+    move-result p2
+
+    sub-int/2addr p3, p2
+
+    .line 15
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    move-result p2
+
+    add-int/2addr p2, p3
+
+    .line 16
+    invoke-virtual {p1}, Landroidx/core/widget/NestedScrollView;->getScrollRange()I
+
+    move-result p3
+
+    .line 17
+    invoke-static {p2, p3}, Ljava/lang/Math;->min(II)I
+
+    move-result p2
+
+    .line 18
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    move-result p3
+
+    if-eq p2, p3, :cond_6
+
+    .line 19
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
+
+    move-result p3
+
+    sub-int/2addr v1, p3
+
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
+
+    move-result p3
+
+    sub-int/2addr p2, p3
+
+    invoke-virtual {p1, v1, p2, v0}, Landroidx/core/widget/NestedScrollView;->A(IIZ)V
+
+    return v0
+
+    :cond_6
     return v1
 .end method

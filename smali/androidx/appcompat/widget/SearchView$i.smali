@@ -1,4 +1,4 @@
-.class Landroidx/appcompat/widget/SearchView$i;
+.class public final Landroidx/appcompat/widget/SearchView$i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic b:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/SearchView;)V
+.method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->b:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.method public final onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -47,14 +46,9 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->b:Landroidx/appcompat/widget/SearchView;
 
-    const/4 p2, 0x0
-
-    const/4 p4, 0x0
-
-    invoke-virtual {p1, p3, p2, p4}, Landroidx/appcompat/widget/SearchView;->S(IILjava/lang/String;)Z
+    invoke-virtual {p1, p3}, Landroidx/appcompat/widget/SearchView;->p(I)Z
 
     return-void
 .end method

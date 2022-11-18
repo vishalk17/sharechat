@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field private final b:Landroid/os/Parcelable;
+.field public final b:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
 
     .line 7
@@ -84,7 +84,7 @@
     return-void
 .end method
 
-.method protected constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 1
 
     .line 4
@@ -118,7 +118,7 @@
     throw p1
 .end method
 
-.method synthetic constructor <init>(Landroidx/customview/view/AbsSavedState$1;)V
+.method public synthetic constructor <init>(Landroidx/customview/view/AbsSavedState$1;)V
     .locals 0
 
     .line 1
@@ -129,16 +129,7 @@
 
 
 # virtual methods
-.method public final a()Landroid/os/Parcelable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
-
-    return-object v0
-.end method
-
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -149,7 +140,6 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V

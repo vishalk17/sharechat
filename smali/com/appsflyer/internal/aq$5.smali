@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/d$e$d;)V
+.method public constructor <init>(Lcom/appsflyer/internal/d$e$d;)V
     .locals 1
 
     .line 1

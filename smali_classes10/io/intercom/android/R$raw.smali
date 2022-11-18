@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final intercom_area_codes:I = 0x7f110017
+.field public static final intercom_area_codes:I = 0x7f11001a
 
-.field public static final intercom_failed:I = 0x7f110018
+.field public static final intercom_failed:I = 0x7f11001b
 
-.field public static final intercom_operator:I = 0x7f110019
+.field public static final intercom_operator:I = 0x7f11001c
 
-.field public static final intercom_received:I = 0x7f11001a
+.field public static final intercom_received:I = 0x7f11001d
 
-.field public static final intercom_sent:I = 0x7f11001b
+.field public static final intercom_sent:I = 0x7f11001e
 
 
 # direct methods

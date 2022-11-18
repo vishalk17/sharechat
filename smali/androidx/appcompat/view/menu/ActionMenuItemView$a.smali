@@ -1,5 +1,5 @@
-.class Landroidx/appcompat/view/menu/ActionMenuItemView$a;
-.super Landroidx/appcompat/widget/x;
+.class public final Landroidx/appcompat/view/menu/ActionMenuItemView$a;
+.super Landroidx/appcompat/widget/c0;
 .source "SourceFile"
 
 
@@ -9,13 +9,13 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "a"
 .end annotation
 
 
 # instance fields
-.field final synthetic k:Landroidx/appcompat/view/menu/ActionMenuItemView;
+.field public final synthetic k:Landroidx/appcompat/view/menu/ActionMenuItemView;
 
 
 # direct methods
@@ -26,14 +26,14 @@
     iput-object p1, p0, Landroidx/appcompat/view/menu/ActionMenuItemView$a;->k:Landroidx/appcompat/view/menu/ActionMenuItemView;
 
     .line 2
-    invoke-direct {p0, p1}, Landroidx/appcompat/widget/x;-><init>(Landroid/view/View;)V
+    invoke-direct {p0, p1}, Landroidx/appcompat/widget/c0;-><init>(Landroid/view/View;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b()Landroidx/appcompat/view/menu/p;
+.method public final b()Lq/f;
     .locals 1
 
     .line 1
@@ -44,7 +44,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Landroidx/appcompat/view/menu/ActionMenuItemView$b;->a()Landroidx/appcompat/view/menu/p;
+    invoke-virtual {v0}, Landroidx/appcompat/view/menu/ActionMenuItemView$b;->a()Lq/f;
 
     move-result-object v0
 
@@ -56,35 +56,35 @@
     return-object v0
 .end method
 
-.method protected d()Z
+.method public final c()Z
     .locals 3
 
     .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/ActionMenuItemView$a;->k:Landroidx/appcompat/view/menu/ActionMenuItemView;
 
-    iget-object v1, v0, Landroidx/appcompat/view/menu/ActionMenuItemView;->e:Landroidx/appcompat/view/menu/g$b;
+    iget-object v1, v0, Landroidx/appcompat/view/menu/ActionMenuItemView;->e:Landroidx/appcompat/view/menu/e$b;
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_0
 
-    iget-object v0, v0, Landroidx/appcompat/view/menu/ActionMenuItemView;->b:Landroidx/appcompat/view/menu/i;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/ActionMenuItemView;->b:Landroidx/appcompat/view/menu/g;
 
-    invoke-interface {v1, v0}, Landroidx/appcompat/view/menu/g$b;->f(Landroidx/appcompat/view/menu/i;)Z
+    invoke-interface {v1, v0}, Landroidx/appcompat/view/menu/e$b;->e(Landroidx/appcompat/view/menu/g;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroidx/appcompat/view/menu/ActionMenuItemView$a;->b()Landroidx/appcompat/view/menu/p;
+    invoke-virtual {p0}, Landroidx/appcompat/view/menu/ActionMenuItemView$a;->b()Lq/f;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-interface {v0}, Landroidx/appcompat/view/menu/p;->a()Z
+    invoke-interface {v0}, Lq/f;->a()Z
 
     move-result v0
 

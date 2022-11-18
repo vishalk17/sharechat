@@ -1,4 +1,4 @@
-.class public Landroidx/work/WorkerParameters$a;
+.class public final Landroidx/work/WorkerParameters$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 

@@ -1,32 +1,31 @@
-.class public interface abstract Landroidx/compose/ui/platform/o2;
-.super Ljava/lang/Object;
+.class public final Landroidx/compose/ui/platform/o2;
+.super Landroidx/compose/ui/platform/b1;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/compose/ui/platform/o2$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final a:Landroidx/compose/ui/platform/o2$a;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
 
-    sget-object v0, Landroidx/compose/ui/platform/o2$a;->a:Landroidx/compose/ui/platform/o2$a;
-
-    sput-object v0, Landroidx/compose/ui/platform/o2;->a:Landroidx/compose/ui/platform/o2$a;
+    invoke-direct {p0, p1}, Landroidx/compose/ui/platform/b1;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Landroid/view/View;)Landroidx/compose/runtime/g1;
+.method public final dispatchDraw(Landroid/graphics/Canvas;)V
+    .locals 1
+
+    const-string v0, "canvas"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final dispatchGetDisplayList()V
+    .locals 0
+
+    return-void
 .end method

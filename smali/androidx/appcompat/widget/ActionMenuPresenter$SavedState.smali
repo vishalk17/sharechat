@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -34,10 +34,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$a;
 
     invoke-direct {v0}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$a;-><init>()V
@@ -47,7 +46,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -56,7 +55,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
     .line 2
@@ -74,7 +73,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -82,10 +81,9 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget p2, p0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->b:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

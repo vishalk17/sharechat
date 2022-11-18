@@ -7,7 +7,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/GridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -15,7 +14,7 @@
 
 
 # virtual methods
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 1
 
     const p2, 0x1fffffff

@@ -1,34 +1,69 @@
-.class public final synthetic Ln80/b;
-.super Ljava/lang/Object;
+.class public final Ln80/b;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ldp0/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lc6/s1<",
+        "Ljava/lang/Integer;",
+        "Lox1/p;",
+        ">;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Ld80/b1;
+.field public final synthetic b:Ln80/c;
+
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ld80/b1;)V
+.method public constructor <init>(Ln80/c;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ln80/b;->b:Ln80/c;
 
-    iput-object p1, p0, Ln80/b;->b:Ld80/b1;
+    iput-object p2, p0, Ln80/b;->c:Ljava/lang/String;
+
+    iput-object p3, p0, Ln80/b;->d:Ljava/lang/String;
+
+    iput p4, p0, Ln80/b;->e:I
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
-    iget-object v0, p0, Ln80/b;->b:Ld80/b1;
+    new-instance v0, Ln80/a;
 
-    invoke-static {v0, p1}, Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;->vy(Ld80/b1;Landroid/view/View;)V
+    iget-object v1, p0, Ln80/b;->b:Ln80/c;
 
-    return-void
+    iget-object v2, p0, Ln80/b;->c:Ljava/lang/String;
+
+    iget-object v3, p0, Ln80/b;->d:Ljava/lang/String;
+
+    iget v4, p0, Ln80/b;->e:I
+
+    invoke-direct {v0, v1, v2, v3, v4}, Ln80/a;-><init>(Ln80/c;Ljava/lang/String;Ljava/lang/String;I)V
+
+    return-object v0
 .end method

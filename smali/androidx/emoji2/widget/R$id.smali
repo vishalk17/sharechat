@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final all:I = 0x7f0a0094
+.field public static final all:I = 0x7f0a009f
 
-.field public static final defaultStrategy:I = 0x7f0a0407
+.field public static final defaultStrategy:I = 0x7f0a0467
 
-.field public static final inputExtractAccessories:I = 0x7f0a0707
+.field public static final inputExtractAccessories:I = 0x7f0a079b
 
-.field public static final inputExtractAction:I = 0x7f0a0708
+.field public static final inputExtractAction:I = 0x7f0a079c
 
-.field public static final nonExistent:I = 0x7f0a0b97
+.field public static final nonExistent:I = 0x7f0a0c4a
 
 
 # direct methods

@@ -1,195 +1,198 @@
-.class public final Lin/e;
+.class public final synthetic Lin/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lso/b;
+
 
 # instance fields
-.field private final a:J
-
-.field private final b:J
+.field public final synthetic a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public synthetic constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 7
-
-    const-wide/16 v1, 0x0
-
-    const-wide/16 v3, 0x0
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x0
-
-    move-object v0, p0
-
-    invoke-direct/range {v0 .. v6}, Lin/e;-><init>(JJILkotlin/jvm/internal/h;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(JJ)V
-    .locals 0
-
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-wide p1, p0, Lin/e;->a:J
-
-    .line 3
-    iput-wide p3, p0, Lin/e;->b:J
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(JJILkotlin/jvm/internal/h;)V
-    .locals 0
-
-    and-int/lit8 p6, p5, 0x1
-
-    if-eqz p6, :cond_0
-
-    const-wide/16 p1, 0xbb8
-
-    :cond_0
-    and-int/lit8 p5, p5, 0x2
-
-    if-eqz p5, :cond_1
-
-    const-wide/16 p3, 0x7d0
-
-    .line 4
-    :cond_1
-    invoke-direct {p0, p1, p2, p3, p4}, Lin/e;-><init>(JJ)V
+    iput-object p1, p0, Lin/e;->a:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
-    .locals 2
+.method public final get()Ljava/lang/Object;
+    .locals 9
+
+    iget-object v0, p0, Lin/e;->a:Ljava/lang/String;
+
+    const-string v1, "Could not instantiate %s"
+
+    const-string v2, "Could not instantiate %s."
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
 
     .line 1
-    iget-wide v0, p0, Lin/e;->b:J
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    return-wide v0
-.end method
+    move-result-object v5
 
-.method public final b()J
-    .locals 2
+    .line 2
+    const-class v6, Lin/h;
 
-    .line 1
-    iget-wide v0, p0, Lin/e;->a:J
+    invoke-virtual {v6, v5}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
 
-    return-wide v0
-.end method
+    move-result v6
 
-.method public equals(Ljava/lang/Object;)Z
-    .locals 7
+    if-eqz v6, :cond_0
 
-    const/4 v0, 0x1
+    new-array v6, v4, [Ljava/lang/Class;
 
-    if-ne p0, p1, :cond_0
+    .line 3
+    invoke-virtual {v5, v6}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
-    return v0
+    move-result-object v5
 
+    new-array v6, v4, [Ljava/lang/Object;
+
+    invoke-virtual {v5, v6}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lin/h;
+
+    goto :goto_0
+
+    .line 4
     :cond_0
-    instance-of v1, p1, Lin/e;
+    new-instance v5, Lin/q;
 
-    const/4 v2, 0x0
+    const-string v6, "Class %s is not an instance of %s"
 
-    if-nez v1, :cond_1
+    const/4 v7, 0x2
 
-    return v2
+    new-array v7, v7, [Ljava/lang/Object;
 
-    :cond_1
-    check-cast p1, Lin/e;
+    aput-object v0, v7, v4
 
-    iget-wide v3, p0, Lin/e;->a:J
+    const-string v8, "com.google.firebase.components.ComponentRegistrar"
 
-    iget-wide v5, p1, Lin/e;->a:J
+    aput-object v8, v7, v3
 
-    cmp-long v1, v3, v5
+    .line 5
+    invoke-static {v6, v7}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    if-eqz v1, :cond_2
+    move-result-object v6
 
-    return v2
+    invoke-direct {v5, v6}, Lin/q;-><init>(Ljava/lang/String;)V
 
-    :cond_2
-    iget-wide v3, p0, Lin/e;->b:J
+    throw v5
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_4
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
 
-    iget-wide v5, p1, Lin/e;->b:J
+    :catch_0
+    move-exception v2
 
-    cmp-long p1, v3, v5
+    .line 6
+    new-instance v5, Lin/q;
 
-    if-eqz p1, :cond_3
+    new-array v3, v3, [Ljava/lang/Object;
 
-    return v2
+    aput-object v0, v3, v4
 
-    :cond_3
-    return v0
-.end method
-
-.method public hashCode()I
-    .locals 3
-
-    iget-wide v0, p0, Lin/e;->a:J
-
-    invoke-static {v0, v1}, Landroidx/compose/animation/w;->a(J)I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-wide v1, p0, Lin/e;->b:J
-
-    invoke-static {v1, v2}, Landroidx/compose/animation/w;->a(J)I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 3
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "AnimationConfig(firstState="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v1, p0, Lin/e;->a:J
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const-string v1, ", animationGap="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-wide v1, p0, Lin/e;->b:J
-
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 7
+    invoke-static {v1, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
+    invoke-direct {v5, v0, v2}, Lin/q;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v5
+
+    :catch_1
+    move-exception v2
+
+    .line 8
+    new-instance v5, Lin/q;
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    aput-object v0, v3, v4
+
+    .line 9
+    invoke-static {v1, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v5, v0, v2}, Lin/q;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v5
+
+    :catch_2
+    move-exception v1
+
+    .line 10
+    new-instance v5, Lin/q;
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    aput-object v0, v3, v4
+
+    .line 11
+    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v5, v0, v1}, Lin/q;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v5
+
+    :catch_3
+    move-exception v1
+
+    .line 12
+    new-instance v5, Lin/q;
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    aput-object v0, v3, v4
+
+    .line 13
+    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v5, v0, v1}, Lin/q;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v5
+
+    :catch_4
+    new-array v1, v3, [Ljava/lang/Object;
+
+    aput-object v0, v1, v4
+
+    const-string v0, "Class %s is not an found."
+
+    .line 14
+    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "ComponentDiscovery"
+
+    invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 v5, 0x0
+
+    :goto_0
+    return-object v5
 .end method

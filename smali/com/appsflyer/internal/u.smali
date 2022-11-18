@@ -12,10 +12,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +57,7 @@
 
 
 # virtual methods
-.method final valueOf(Landroid/content/Context;)Landroid/location/Location;
+.method public final valueOf(Landroid/content/Context;)Landroid/location/Location;
     .locals 8
 
     const-string v0, "android.permission.ACCESS_FINE_LOCATION"

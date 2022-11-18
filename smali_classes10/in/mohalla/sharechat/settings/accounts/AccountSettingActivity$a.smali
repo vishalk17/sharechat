@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$a;-><init>()V
@@ -32,161 +32,122 @@
     return-void
 .end method
 
-.method public static synthetic b(Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ILjava/lang/Object;)Landroid/content/Intent;
-    .locals 12
+.method public static a(Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$a;Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;I)Landroid/content/Intent;
+    .locals 5
 
-    move/from16 v0, p9
+    and-int/lit8 v0, p7, 0x4
 
-    and-int/lit8 v1, v0, 0x4
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
+    if-eqz v0, :cond_0
 
-    if-eqz v1, :cond_0
-
-    const/4 v6, 0x0
+    const/4 v0, 0x0
 
     goto :goto_0
 
     :cond_0
-    move v6, p3
+    const/4 v0, 0x1
 
     :goto_0
-    and-int/lit8 v1, v0, 0x8
+    and-int/lit8 v2, p7, 0x8
 
-    if-eqz v1, :cond_1
+    const/4 v3, 0x0
 
-    const-string v1, ""
+    if-eqz v2, :cond_1
 
-    move-object v7, v1
+    const-string v2, ""
 
     goto :goto_1
 
     :cond_1
-    move-object/from16 v7, p4
+    move-object v2, v3
 
     :goto_1
-    and-int/lit8 v1, v0, 0x10
+    and-int/lit8 v4, p7, 0x10
 
-    if-eqz v1, :cond_2
+    if-eqz v4, :cond_2
 
-    const/4 v8, 0x0
-
-    goto :goto_2
+    const/4 p3, 0x0
 
     :cond_2
-    move/from16 v8, p5
+    and-int/lit8 v4, p7, 0x20
 
-    :goto_2
-    and-int/lit8 v1, v0, 0x20
+    if-eqz v4, :cond_3
 
-    const/4 v3, 0x0
-
-    if-eqz v1, :cond_3
-
-    move-object v9, v3
-
-    goto :goto_3
+    move-object p4, v3
 
     :cond_3
-    move-object/from16 v9, p6
+    and-int/lit8 v4, p7, 0x40
 
-    :goto_3
-    and-int/lit8 v1, v0, 0x40
+    if-eqz v4, :cond_4
 
-    if-eqz v1, :cond_4
-
-    const/4 v10, 0x0
-
-    goto :goto_4
+    const/4 p5, 0x0
 
     :cond_4
-    move/from16 v10, p7
+    and-int/lit16 p7, p7, 0x80
 
-    :goto_4
-    and-int/lit16 v0, v0, 0x80
+    if-eqz p7, :cond_5
 
-    if-eqz v0, :cond_5
+    move-object p6, v3
 
-    move-object v11, v3
-
-    goto :goto_5
-
+    .line 1
     :cond_5
-    move-object/from16 v11, p8
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    :goto_5
-    move-object v3, p0
+    const-string p0, "context"
 
-    move-object v4, p1
+    .line 2
+    invoke-static {p1, p0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-object v5, p2
+    const-string p0, "referrer"
 
-    .line 1
-    invoke-virtual/range {v3 .. v11}, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity$a;->a(Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
+    invoke-static {p2, p0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    move-result-object v0
+    const-string p0, "userId"
 
-    return-object v0
-.end method
+    invoke-static {v2, p0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 3
+    new-instance p0, Landroid/content/Intent;
 
-# virtual methods
-.method public final a(Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;ZLjava/lang/String;ZLjava/lang/String;)Landroid/content/Intent;
-    .locals 2
+    const-class p7, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;
 
-    const-string v0, "context"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "referrer"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "userId"
-
-    invoke-static {p4, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Landroid/content/Intent;
-
-    const-class v1, Lin/mohalla/sharechat/settings/accounts/AccountSettingActivity;
-
-    invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    invoke-direct {p0, p1, p7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     const-string p1, "AccountSettings"
 
-    .line 2
-    invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .line 4
+    invoke-virtual {p0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string p1, "is_self"
 
-    .line 3
-    invoke-virtual {v0, p1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    .line 5
+    invoke-virtual {p0, p1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const-string p1, "user_id"
 
-    .line 4
-    invoke-virtual {v0, p1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .line 6
+    invoke-virtual {p0, p1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string p1, "EDIT_PROFILE_PIC_DIRECTLY"
 
-    .line 5
-    invoke-virtual {v0, p1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    .line 7
+    invoke-virtual {p0, p1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const-string p1, "PROFILE_PIC"
 
-    .line 6
-    invoke-virtual {v0, p1, p6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .line 8
+    invoke-virtual {p0, p1, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string p1, "EDIT_COVER_PIC_DIRECTLY"
 
-    .line 7
-    invoke-virtual {v0, p1, p7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    .line 9
+    invoke-virtual {p0, p1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const-string p1, "COVER_PIC"
 
-    .line 8
-    invoke-virtual {v0, p1, p8}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    .line 10
+    invoke-virtual {p0, p1, p6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    return-object v0
+    return-object p0
 .end method

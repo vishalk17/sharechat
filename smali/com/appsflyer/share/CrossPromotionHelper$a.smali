@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Lcom/appsflyer/internal/bs;Landroid/content/Context;Z)V
+.method public constructor <init>(Ljava/lang/String;Lcom/appsflyer/internal/bs;Landroid/content/Context;Z)V
     .locals 0
 
     .line 1

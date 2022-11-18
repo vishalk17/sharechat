@@ -4,10 +4,10 @@
 
 
 # instance fields
-.field g:Landroidx/work/impl/utils/futures/c;
+.field public g:Lf7/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/work/impl/utils/futures/c<",
+            "Lf7/c<",
             "Landroidx/work/ListenableWorker$a;",
             ">;"
         }
@@ -21,7 +21,6 @@
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroidx/work/ListenableWorker;-><init>(Landroid/content/Context;Landroidx/work/WorkerParameters;)V
 
     return-void
@@ -32,23 +31,23 @@
 .method public abstract doWork()Landroidx/work/ListenableWorker$a;
 .end method
 
-.method public final startWork()Lcom/google/common/util/concurrent/c;
+.method public final startWork()Lxm/b;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/c<",
+            "Lxm/b<",
             "Landroidx/work/ListenableWorker$a;",
             ">;"
         }
     .end annotation
 
     .line 1
-    invoke-static {}, Landroidx/work/impl/utils/futures/c;->u()Landroidx/work/impl/utils/futures/c;
+    invoke-static {}, Lf7/c;->k()Lf7/c;
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/work/Worker;->g:Landroidx/work/impl/utils/futures/c;
+    iput-object v0, p0, Landroidx/work/Worker;->g:Lf7/c;
 
     .line 2
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getBackgroundExecutor()Ljava/util/concurrent/Executor;
@@ -62,7 +61,7 @@
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     .line 3
-    iget-object v0, p0, Landroidx/work/Worker;->g:Landroidx/work/impl/utils/futures/c;
+    iget-object v0, p0, Landroidx/work/Worker;->g:Lf7/c;
 
     return-object v0
 .end method

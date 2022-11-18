@@ -33,11 +33,11 @@
 
 
 # instance fields
-.field mID:I
+.field public mID:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 7
 
     .line 1
@@ -109,7 +109,6 @@
 .method public static valueOf(Ljava/lang/String;)Landroidx/renderscript/RenderScript$a;
     .locals 1
 
-    .line 1
     const-class v0, Landroidx/renderscript/RenderScript$a;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -124,7 +123,6 @@
 .method public static values()[Landroidx/renderscript/RenderScript$a;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/renderscript/RenderScript$a;->$VALUES:[Landroidx/renderscript/RenderScript$a;
 
     invoke-virtual {v0}, [Landroidx/renderscript/RenderScript$a;->clone()Ljava/lang/Object;

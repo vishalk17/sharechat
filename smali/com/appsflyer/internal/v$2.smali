@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
@@ -22,10 +22,9 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/v$d;)V
+.method public constructor <init>(Lcom/appsflyer/internal/v$d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/v$2;->AFInAppEventParameterName:Lcom/appsflyer/internal/v$d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

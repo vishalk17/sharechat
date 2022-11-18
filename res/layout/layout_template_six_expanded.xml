@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_collapsed_root" android:layout_width="fill_parent" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bgImage" android:background="@color/notif_purple" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="10.0dip">
+        <ImageView android:id="@id/iv_moj_icon" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="18.0dip" android:src="@drawable/notification_moj_full_logo_white" />
+        <LinearLayout android:id="@id/ll_moj_tt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_tt_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/notification_takatak_logo" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/notif_text_white" android:id="@id/tv_takatak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/takatak" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_sc_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_sc_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/notification_sc_logo" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/notif_text_white" android:id="@id/tv_sharechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharechat" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip">
+            <ImageView android:id="@id/iv_separator" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/ic_indicator_grey" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/notif_text_grey_3" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/iv_large" android:padding="1.0dip" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="14.0dip" android:scaleType="fitXY" android:layout_below="@id/ll_icon" android:layout_marginStart="10.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/iv_large" android:layout_marginStart="14.0dip" android:layout_marginEnd="8.0dip" android:layout_toEndOf="@id/iv_large">
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/notif_text_white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/notif_text_white" android:ellipsize="end" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_below="@id/tv_title" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cta_one" android:background="@color/black" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minWidth="64.0dip" android:includeFontPadding="false" android:maxLength="9" android:layout_below="@id/tv_message" android:textAllCaps="false" />
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cta_two" android:background="@color/black" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:minWidth="64.0dip" android:includeFontPadding="false" android:maxLength="9" android:layout_below="@id/tv_message" android:textAllCaps="false" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/tv_cta_one" />
+    </RelativeLayout>
+</RelativeLayout>

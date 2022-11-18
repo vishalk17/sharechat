@@ -1,10 +1,10 @@
-.class Landroidx/appcompat/widget/b;
+.class public final Landroidx/appcompat/widget/b;
 .super Landroid/graphics/drawable/Drawable;
 .source "SourceFile"
 
 
 # instance fields
-.field final a:Landroidx/appcompat/widget/ActionBarContainer;
+.field public final a:Landroidx/appcompat/widget/ActionBarContainer;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public draw(Landroid/graphics/Canvas;)V
+.method public final draw(Landroid/graphics/Canvas;)V
     .locals 2
 
     .line 1
@@ -71,7 +71,7 @@
     return-void
 .end method
 
-.method public getOpacity()I
+.method public final getOpacity()I
     .locals 1
 
     const/4 v0, 0x0
@@ -79,7 +79,7 @@
     return v0
 .end method
 
-.method public getOutline(Landroid/graphics/Outline;)V
+.method public final getOutline(Landroid/graphics/Outline;)V
     .locals 2
 
     .line 1
@@ -90,22 +90,25 @@
     if-eqz v1, :cond_0
 
     .line 2
-    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->h:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Landroidx/appcompat/widget/ActionBarContainer;->h:Landroid/graphics/drawable/Drawable;
 
-    if-eqz v0, :cond_1
+    if-eqz v1, :cond_1
 
     .line 3
+    iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->f:Landroid/graphics/drawable/Drawable;
+
+    .line 4
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
 
     goto :goto_0
 
-    .line 4
+    .line 5
     :cond_0
     iget-object v0, v0, Landroidx/appcompat/widget/ActionBarContainer;->f:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
-    .line 5
+    .line 6
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
 
     :cond_1
@@ -113,13 +116,13 @@
     return-void
 .end method
 
-.method public setAlpha(I)V
+.method public final setAlpha(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public setColorFilter(Landroid/graphics/ColorFilter;)V
+.method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
 
     return-void

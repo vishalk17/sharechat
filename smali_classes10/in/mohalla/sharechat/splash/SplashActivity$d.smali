@@ -1,139 +1,126 @@
-.class final Lin/mohalla/sharechat/splash/SplashActivity$d;
-.super Lkotlin/coroutines/jvm/internal/l;
+.class public final Lin/mohalla/sharechat/splash/SplashActivity$d;
+.super Lxo0/i;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/p;
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/splash/SplashActivity;->wd(Lcr/c;)V
+    value = Lin/mohalla/sharechat/splash/SplashActivity;->Ua(ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/coroutines/jvm/internal/l;",
-        "Lr00/p<",
-        "Lkotlinx/coroutines/s0;",
-        "Lkotlin/coroutines/d<",
+        "Lxo0/i;",
+        "Ldp0/p<",
+        "Lyr0/e0;",
+        "Lvo0/d<",
         "-",
-        "Li00/a0;",
+        "Lro0/x;",
         ">;",
         "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
-.annotation runtime Lkotlin/coroutines/jvm/internal/f;
-    c = "in.mohalla.sharechat.splash.SplashActivity$showInterstitialAd$1"
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.sharechat.splash.SplashActivity$startHomeActivityForNoSignUpFlow$1"
     f = "SplashActivity.kt"
-    l = {}
+    l = {
+        0xfe
+    }
     m = "invokeSuspend"
 .end annotation
 
 
 # instance fields
-.field b:I
+.field public b:I
 
-.field final synthetic c:Lcr/c;
+.field public final synthetic c:Lin/mohalla/sharechat/splash/SplashActivity;
 
-.field final synthetic d:Lin/mohalla/sharechat/splash/SplashActivity;
+.field public final synthetic d:Z
+
+.field public final synthetic e:Z
 
 
 # direct methods
-.method constructor <init>(Lcr/c;Lin/mohalla/sharechat/splash/SplashActivity;Lkotlin/coroutines/d;)V
+.method public constructor <init>(Lin/mohalla/sharechat/splash/SplashActivity;ZZLvo0/d;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcr/c;",
             "Lin/mohalla/sharechat/splash/SplashActivity;",
-            "Lkotlin/coroutines/d<",
+            "ZZ",
+            "Lvo0/d<",
             "-",
             "Lin/mohalla/sharechat/splash/SplashActivity$d;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lcr/c;
+    iput-object p1, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
 
-    iput-object p2, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Lin/mohalla/sharechat/splash/SplashActivity;
+    iput-boolean p2, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Z
+
+    iput-boolean p3, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->e:Z
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/l;-><init>(ILkotlin/coroutines/d;)V
+    invoke-direct {p0, p1, p4}, Lxo0/i;-><init>(ILvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
-    .locals 2
+.method public final create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
-            "Lkotlin/coroutines/d<",
+            "Lvo0/d<",
             "*>;)",
-            "Lkotlin/coroutines/d<",
-            "Li00/a0;",
+            "Lvo0/d<",
+            "Lro0/x;",
             ">;"
         }
     .end annotation
 
     new-instance p1, Lin/mohalla/sharechat/splash/SplashActivity$d;
 
-    iget-object v0, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lcr/c;
+    iget-object v0, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
 
-    iget-object v1, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Lin/mohalla/sharechat/splash/SplashActivity;
+    iget-boolean v1, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Z
 
-    invoke-direct {p1, v0, v1, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;-><init>(Lcr/c;Lin/mohalla/sharechat/splash/SplashActivity;Lkotlin/coroutines/d;)V
+    iget-boolean v2, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->e:Z
 
-    return-object p1
-.end method
-
-.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    check-cast p1, Lkotlinx/coroutines/s0;
-
-    check-cast p2, Lkotlin/coroutines/d;
-
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;->invoke(Lkotlinx/coroutines/s0;Lkotlin/coroutines/d;)Ljava/lang/Object;
-
-    move-result-object p1
+    invoke-direct {p1, v0, v1, v2, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;-><init>(Lin/mohalla/sharechat/splash/SplashActivity;ZZLvo0/d;)V
 
     return-object p1
 .end method
 
-.method public final invoke(Lkotlinx/coroutines/s0;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlinx/coroutines/s0;",
-            "Lkotlin/coroutines/d<",
-            "-",
-            "Li00/a0;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
 
-    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;->create(Ljava/lang/Object;Lkotlin/coroutines/d;)Lkotlin/coroutines/d;
+    check-cast p1, Lyr0/e0;
+
+    check-cast p2, Lvo0/d;
+
+    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;->create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
 
     move-result-object p1
 
     check-cast p1, Lin/mohalla/sharechat/splash/SplashActivity$d;
 
-    sget-object p2, Li00/a0;->a:Li00/a0;
+    sget-object p2, Lro0/x;->a:Lro0/x;
 
     invoke-virtual {p1, p2}, Lin/mohalla/sharechat/splash/SplashActivity$d;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -143,155 +130,188 @@
 .end method
 
 .method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+    .locals 29
 
-    invoke-static {}, Ll00/b;->d()Ljava/lang/Object;
+    move-object/from16 v0, p0
 
     .line 1
-    iget v0, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->b:I
-
-    if-nez v0, :cond_4
-
-    invoke-static {p1}, Li00/q;->b(Ljava/lang/Object;)V
+    sget-object v1, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
 
     .line 2
-    iget-object p1, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lcr/c;
+    iget v2, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->b:I
 
-    iget-object v0, p0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Lin/mohalla/sharechat/splash/SplashActivity;
+    const/4 v3, 0x1
 
-    .line 3
-    invoke-static {v0}, Lin/mohalla/sharechat/splash/SplashActivity;->Pg(Lin/mohalla/sharechat/splash/SplashActivity;)Lru/b0;
+    if-eqz v2, :cond_1
 
-    move-result-object v1
+    if-ne v2, v3, :cond_0
 
-    const/4 v2, 0x0
-
-    const-string v3, "binding"
-
-    if-nez v1, :cond_0
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v1, v2
-
-    :cond_0
-    iget-object v1, v1, Lru/b0;->e:Landroid/widget/FrameLayout;
-
-    const-string v4, "binding.interstitialAdContainer"
-
-    invoke-static {v1, v4}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkp/e;->F(Landroid/view/View;)V
-
-    .line 4
-    invoke-static {v0}, Lin/mohalla/sharechat/splash/SplashActivity;->Pg(Lin/mohalla/sharechat/splash/SplashActivity;)Lru/b0;
-
-    move-result-object v1
-
-    if-nez v1, :cond_1
-
-    invoke-static {v3}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
+    invoke-static/range {p1 .. p1}, Lc20/e;->a0(Ljava/lang/Object;)V
 
     goto :goto_0
 
+    .line 3
+    :cond_0
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 4
     :cond_1
-    move-object v2, v1
-
-    :goto_0
-    iget-object v1, v2, Lru/b0;->g:Landroid/widget/LinearLayout;
-
-    const-string v2, "binding.splashUiContainer"
-
-    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v1}, Lkp/e;->t(Landroid/view/View;)V
+    invoke-static/range {p1 .. p1}, Lc20/e;->a0(Ljava/lang/Object;)V
 
     .line 5
-    new-instance v1, Lsharechat/ads/feature/interstitial/InterstitialAdFragment;
+    sget-object v2, Lin/mohalla/sharechat/common/language/LocaleUtil;->Companion:Lin/mohalla/sharechat/common/language/LocaleUtil$Companion;
 
-    invoke-direct {v1}, Lsharechat/ads/feature/interstitial/InterstitialAdFragment;-><init>()V
+    invoke-virtual {v2}, Lin/mohalla/sharechat/common/language/LocaleUtil$Companion;->isLocaleChange()Z
 
-    invoke-static {v0, v1}, Lin/mohalla/sharechat/splash/SplashActivity;->Vg(Lin/mohalla/sharechat/splash/SplashActivity;Lsharechat/ads/feature/interstitial/InterstitialAdFragment;)V
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    const/4 v4, 0x0
 
     .line 6
-    invoke-static {v0}, Lin/mohalla/sharechat/splash/SplashActivity;->Lg(Lin/mohalla/sharechat/splash/SplashActivity;)Lsharechat/ads/feature/interstitial/InterstitialAdFragment;
+    invoke-virtual {v2, v4}, Lin/mohalla/sharechat/common/language/LocaleUtil$Companion;->setLocaleChange(Z)V
 
-    move-result-object v1
+    .line 7
+    iget-object v2, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
 
-    if-nez v1, :cond_2
+    invoke-virtual {v2}, Lin/mohalla/sharechat/appx/basesharechat/BaseMvpActivity;->Mg()Leu1/a;
+
+    move-result-object v2
+
+    iget-object v4, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
+
+    invoke-virtual {v4}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
+
+    move-result-object v4
+
+    const-string v5, "application"
+
+    invoke-static {v4, v5}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iput v3, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->b:I
+
+    invoke-interface {v2, v4, v0}, Leu1/a;->setAppLanguage(Landroid/app/Application;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-ne v2, v1, :cond_2
+
+    return-object v1
+
+    .line 8
+    :cond_2
+    :goto_0
+    sget-object v4, Lin/mohalla/sharechat/home/main/HomeActivity;->o1:Lin/mohalla/sharechat/home/main/HomeActivity$a;
+
+    .line 9
+    iget-object v5, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
+
+    .line 10
+    iget-boolean v1, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->d:Z
+
+    if-eqz v1, :cond_3
+
+    const-string v1, "home_chat"
 
     goto :goto_1
 
-    :cond_2
-    new-instance v2, Landroid/os/Bundle;
+    :cond_3
+    const-string v1, "home_feed"
 
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    .line 7
-    invoke-virtual {v0}, Lin/mohalla/sharechat/splash/SplashActivity;->wh()Lcom/google/gson/Gson;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p1}, Lcom/google/gson/Gson;->toJson(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v3, "interstitial_ad_info"
-
-    invoke-virtual {v2, v3, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 8
-    invoke-virtual {v1, v2}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
-
-    .line 9
     :goto_1
-    invoke-static {v0}, Lin/mohalla/sharechat/splash/SplashActivity;->Lg(Lin/mohalla/sharechat/splash/SplashActivity;)Lsharechat/ads/feature/interstitial/InterstitialAdFragment;
+    move-object v7, v1
 
-    move-result-object p1
+    const/4 v8, 0x0
 
-    if-eqz p1, :cond_3
+    const/4 v9, 0x0
 
-    .line 10
-    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
+    const/4 v10, 0x0
 
-    move-result v1
+    const/4 v11, 0x0
 
-    if-nez v1, :cond_3
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const/4 v15, 0x0
+
+    const/16 v16, 0x0
+
+    const/16 v17, 0x0
+
+    const/16 v18, 0x0
+
+    const/16 v19, 0x0
+
+    const/16 v20, 0x0
+
+    const/16 v21, 0x0
+
+    const/16 v22, 0x0
+
+    const/16 v23, 0x0
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x0
+
+    const/16 v26, 0x0
+
+    const/16 v27, 0x0
+
+    const v28, 0x7ffff8
+
+    const-string v6, "launcher-icon"
 
     .line 11
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
+    invoke-static/range {v4 .. v28}, Lin/mohalla/sharechat/home/main/HomeActivity$a;->a(Lin/mohalla/sharechat/home/main/HomeActivity$a;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Landroid/content/Intent;
 
-    move-result-object v0
+    move-result-object v1
 
     .line 12
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->m()Landroidx/fragment/app/r;
+    iget-boolean v2, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->e:Z
 
-    move-result-object v0
-
-    const v1, 0x7f0a076a
-
-    const-string v2, "interstitial_ad_fragment"
+    const/high16 v4, 0x10000000
 
     .line 13
-    invoke-virtual {v0, v1, p1, v2}, Landroidx/fragment/app/r;->c(ILandroidx/fragment/app/Fragment;Ljava/lang/String;)Landroidx/fragment/app/r;
+    invoke-virtual {v1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    move-result-object p1
+    const v4, 0x8000
 
     .line 14
-    invoke-virtual {p1}, Landroidx/fragment/app/r;->k()V
+    invoke-virtual {v1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    const-string v4, "first_home_open"
 
     .line 15
-    :cond_3
-    sget-object p1, Li00/a0;->a:Li00/a0;
+    invoke-virtual {v1, v4, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    return-object p1
+    const-string v3, "SHOW_NUMBER_VERIFY_ON_HOME_OPEN"
 
-    :cond_4
-    new-instance p1, Ljava/lang/IllegalStateException;
+    .line 16
+    invoke-virtual {v1, v3, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+    .line 17
+    iget-object v2, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    throw p1
+    .line 18
+    iget-object v1, v0, Lin/mohalla/sharechat/splash/SplashActivity$d;->c:Lin/mohalla/sharechat/splash/SplashActivity;
+
+    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+
+    .line 19
+    sget-object v1, Lro0/x;->a:Lro0/x;
+
+    return-object v1
 .end method

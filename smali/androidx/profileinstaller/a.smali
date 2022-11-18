@@ -1,46 +1,149 @@
-.class public final synthetic Landroidx/profileinstaller/a;
+.class public final Landroidx/profileinstaller/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field public final synthetic b:Landroidx/profileinstaller/b;
+.field public final a:Landroid/content/res/AssetManager;
 
-.field public final synthetic c:I
+.field public final b:Ljava/util/concurrent/Executor;
 
-.field public final synthetic d:Ljava/lang/Object;
+.field public final c:Landroidx/profileinstaller/b$c;
+
+.field public final d:[B
+
+.field public final e:Ljava/io/File;
+
+.field public f:Z
+
+.field public g:[Le6/b;
+
+.field public h:[B
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/profileinstaller/b;ILjava/lang/Object;)V
+.method public constructor <init>(Landroid/content/res/AssetManager;Ljava/util/concurrent/Executor;Landroidx/profileinstaller/b$c;Ljava/lang/String;Ljava/io/File;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/profileinstaller/a;->b:Landroidx/profileinstaller/b;
+    const/4 p4, 0x0
 
-    iput p2, p0, Landroidx/profileinstaller/a;->c:I
+    .line 2
+    iput-boolean p4, p0, Landroidx/profileinstaller/a;->f:Z
 
-    iput-object p3, p0, Landroidx/profileinstaller/a;->d:Ljava/lang/Object;
+    .line 3
+    iput-object p1, p0, Landroidx/profileinstaller/a;->a:Landroid/content/res/AssetManager;
+
+    .line 4
+    iput-object p2, p0, Landroidx/profileinstaller/a;->b:Ljava/util/concurrent/Executor;
+
+    .line 5
+    iput-object p3, p0, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
+
+    .line 6
+    iput-object p5, p0, Landroidx/profileinstaller/a;->e:Ljava/io/File;
+
+    .line 7
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 p2, 0x18
+
+    if-ge p1, p2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    packed-switch p1, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 8
+    :pswitch_0
+    sget-object p1, Le6/l;->a:[B
+
+    goto :goto_1
+
+    .line 9
+    :pswitch_1
+    sget-object p1, Le6/l;->b:[B
+
+    goto :goto_1
+
+    .line 10
+    :pswitch_2
+    sget-object p1, Le6/l;->c:[B
+
+    goto :goto_1
+
+    .line 11
+    :pswitch_3
+    sget-object p1, Le6/l;->d:[B
+
+    goto :goto_1
+
+    .line 12
+    :pswitch_4
+    sget-object p1, Le6/l;->e:[B
+
+    goto :goto_1
+
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 13
+    :goto_1
+    iput-object p1, p0, Landroidx/profileinstaller/a;->d:[B
 
     return-void
+
+    :pswitch_data_0
+    .packed-switch 0x18
+        :pswitch_4
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final a()V
+    .locals 2
 
-    iget-object v0, p0, Landroidx/profileinstaller/a;->b:Landroidx/profileinstaller/b;
+    .line 1
+    iget-boolean v0, p0, Landroidx/profileinstaller/a;->f:Z
 
-    iget v1, p0, Landroidx/profileinstaller/a;->c:I
+    if-eqz v0, :cond_0
 
-    iget-object v2, p0, Landroidx/profileinstaller/a;->d:Ljava/lang/Object;
+    return-void
 
-    invoke-static {v0, v1, v2}, Landroidx/profileinstaller/b;->a(Landroidx/profileinstaller/b;ILjava/lang/Object;)V
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "This device doesn\'t support aot. Did you call deviceSupportsAotProfile()?"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final b(ILjava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Landroidx/profileinstaller/a;->b:Ljava/util/concurrent/Executor;
+
+    new-instance v1, Le6/a;
+
+    invoke-direct {v1, p0, p1, p2}, Le6/a;-><init>(Landroidx/profileinstaller/a;ILjava/lang/Object;)V
+
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     return-void
 .end method

@@ -8,5 +8,6 @@
     <sharechat.feature.composeTools.imageedit.views.BrushDrawingView android:id="@id/drawing_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <FrameLayout android:id="@id/stickers_container_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <FrameLayout android:id="@id/text_container_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/vs_image_move" android:layout="@layout/layout_zoom_movement" android:layout_width="fill_parent" android:layout_height="fill_parent" />
     <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_delete" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="40.0dip" app:srcCompat="@drawable/ic_delete_sticker_white_24dp" />
 </FrameLayout>

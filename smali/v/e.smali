@@ -1,127 +1,36 @@
-.class public interface abstract Lv/e;
+.class public final Lv/e;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lv/c;
-.implements Lv/b;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lv/e$a;,
-        Lv/e$b;
-    }
-.end annotation
+# instance fields
+.field public final synthetic b:Lv/h$a;
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lv/c<",
-        "TE;>;"
-    }
-.end annotation
+
+# direct methods
+.method public constructor <init>(Lv/h$a;Landroid/os/Bundle;)V
+    .locals 0
+
+    iput-object p1, p0, Lv/e;->b:Lv/h$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract L1(Lr00/l;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lr00/l<",
-            "-TE;",
-            "Ljava/lang/Boolean;",
-            ">;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
+.method public final run()V
+    .locals 1
 
-.method public abstract Z0(I)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
+    iget-object v0, p0, Lv/e;->b:Lv/h$a;
 
-.method public abstract add(ILjava/lang/Object;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ITE;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
+    iget-object v0, v0, Lv/h$a;->c:Lv/a;
 
-.method public abstract add(Ljava/lang/Object;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public abstract addAll(Ljava/util/Collection;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Collection<",
-            "+TE;>;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract remove(Ljava/lang/Object;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract removeAll(Ljava/util/Collection;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Collection<",
-            "+TE;>;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract set(ILjava/lang/Object;)Lv/e;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ITE;)",
-            "Lv/e<",
-            "TE;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract v()Lv/e$a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lv/e$a<",
-            "TE;>;"
-        }
-    .end annotation
+    return-void
 .end method

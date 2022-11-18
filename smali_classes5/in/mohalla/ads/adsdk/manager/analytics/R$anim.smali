@@ -63,21 +63,29 @@
 
 .field public static final btn_radio_to_on_mtrl_ring_outer_path_animation:I = 0x7f01001d
 
-.field public static final design_bottom_sheet_slide_in:I = 0x7f010026
+.field public static final design_bottom_sheet_slide_in:I = 0x7f010020
 
-.field public static final design_bottom_sheet_slide_out:I = 0x7f010027
+.field public static final design_bottom_sheet_slide_out:I = 0x7f010021
 
-.field public static final design_snackbar_in:I = 0x7f010028
+.field public static final design_snackbar_in:I = 0x7f010022
 
-.field public static final design_snackbar_out:I = 0x7f010029
+.field public static final design_snackbar_out:I = 0x7f010023
 
-.field public static final fragment_fast_out_extra_slow_in:I = 0x7f010034
+.field public static final fragment_fast_out_extra_slow_in:I = 0x7f01002d
 
-.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f01004b
+.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010044
 
-.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f01004c
+.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010045
 
-.field public static final mtrl_card_lowers_interpolator:I = 0x7f01004d
+.field public static final mtrl_card_lowers_interpolator:I = 0x7f010046
+
+.field public static final no_animation_0:I = 0x7f01004c
+
+.field public static final slide_down_200:I = 0x7f010058
+
+.field public static final slide_down_400:I = 0x7f010059
+
+.field public static final slide_up_400:I = 0x7f010065
 
 
 # direct methods

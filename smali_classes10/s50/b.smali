@@ -1,34 +1,72 @@
-.class public final synthetic Ls50/b;
-.super Ljava/lang/Object;
+.class public final Ls50/b;
+.super Lxo0/c;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/widget/RadioGroup$OnCheckedChangeListener;
+
+# annotations
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.livestream.data.mediator.JoinRequestsMediator"
+    f = "JoinRequestsMediator.kt"
+    l = {
+        0x2a
+    }
+    m = "load"
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Lm50/i;
+.field public b:Ls50/a;
+
+.field public synthetic c:Ljava/lang/Object;
+
+.field public final synthetic d:Ls50/a;
+
+.field public e:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lm50/i;)V
+.method public constructor <init>(Ls50/a;Lvo0/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ls50/a;",
+            "Lvo0/d<",
+            "-",
+            "Ls50/b;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ls50/b;->d:Ls50/a;
 
-    iput-object p1, p0, Ls50/b;->b:Lm50/i;
+    invoke-direct {p0, p2}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onCheckedChanged(Landroid/widget/RadioGroup;I)V
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Ls50/b;->b:Lm50/i;
+    iput-object p1, p0, Ls50/b;->c:Ljava/lang/Object;
 
-    invoke-static {v0, p1, p2}, Lsharechat/feature/chat/reportuser/ReportUserDialogFragment;->By(Lm50/i;Landroid/widget/RadioGroup;I)V
+    iget p1, p0, Ls50/b;->e:I
 
-    return-void
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, Ls50/b;->e:I
+
+    iget-object p1, p0, Ls50/b;->d:Ls50/a;
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0, p0}, Ls50/a;->a(Lc6/m0;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

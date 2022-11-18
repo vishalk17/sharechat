@@ -9,21 +9,21 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "d"
 .end annotation
 
 
 # instance fields
-.field final AFInAppEventType:Ljava/lang/String;
+.field public final AFInAppEventType:Ljava/lang/String;
 
-.field final AFKeystoreWrapper:Ljava/lang/String;
+.field public final AFKeystoreWrapper:Ljava/lang/String;
 
-.field final valueOf:Ljava/lang/String;
+.field public final valueOf:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1

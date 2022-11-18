@@ -15,9 +15,9 @@
 
 
 # static fields
-.field public static final css:I = 0x7f0401b5
+.field public static final css:I = 0x7f0401d1
 
-.field public static final svg:I = 0x7f04056c
+.field public static final svg:I = 0x7f0405b8
 
 
 # direct methods

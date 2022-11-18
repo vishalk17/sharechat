@@ -2,24 +2,26 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/bumptech/glide/load/g;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lm4/a$a;
+    }
+.end annotation
 
 
 # static fields
-.field private static final b:Lm4/a;
+.field public static final synthetic a:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lm4/a;
+    new-instance v0, Ljava/util/WeakHashMap;
 
-    invoke-direct {v0}, Lm4/a;-><init>()V
-
-    sput-object v0, Lm4/a;->b:Lm4/a;
+    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
 
     return-void
 .end method
@@ -27,33 +29,7 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a()Lm4/a;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lm4/a;->b:Lm4/a;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "EmptySignature"
-
-    return-object v0
-.end method
-
-.method public updateDiskCacheKey(Ljava/security/MessageDigest;)V
-    .locals 0
 
     return-void
 .end method

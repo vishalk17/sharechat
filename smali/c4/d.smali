@@ -1,172 +1,133 @@
-.class public Lc4/d;
+.class public abstract Lc4/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/bumptech/glide/load/model/n;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lc4/d$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/load/model/n<",
-        "Landroid/net/Uri;",
-        "Ljava/io/InputStream;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field private final a:Landroid/content/Context;
+.field public a:I
+
+.field public b:I
+
+.field public c:Ljava/lang/String;
+
+.field public d:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Landroidx/constraintlayout/widget/a;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, -0x1
+
     .line 2
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    iput v0, p0, Lc4/d;->a:I
 
-    move-result-object p1
+    .line 3
+    iput v0, p0, Lc4/d;->b:I
 
-    iput-object p1, p0, Lc4/d;->a:Landroid/content/Context;
+    const/4 v0, 0x0
+
+    .line 4
+    iput-object v0, p0, Lc4/d;->c:Ljava/lang/String;
 
     return-void
 .end method
 
-.method private e(Lcom/bumptech/glide/load/i;)Z
-    .locals 4
-
-    .line 1
-    sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/b0;->d:Lcom/bumptech/glide/load/h;
-
-    invoke-virtual {p1, v0}, Lcom/bumptech/glide/load/i;->a(Lcom/bumptech/glide/load/h;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Long;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-wide/16 v2, -0x1
-
-    cmp-long p1, v0, v2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    return p1
-.end method
-
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/net/Uri;
-
-    invoke-virtual {p0, p1, p2, p3, p4}, Lc4/d;->c(Landroid/net/Uri;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-
-    move-result-object p1
-
-    return-object p1
+.method public abstract a(Ljava/util/HashMap;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lb4/d;",
+            ">;)V"
+        }
+    .end annotation
 .end method
 
-.method public bridge synthetic b(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/net/Uri;
-
-    invoke-virtual {p0, p1}, Lc4/d;->d(Landroid/net/Uri;)Z
-
-    move-result p1
-
-    return p1
+.method public abstract b()Lc4/d;
 .end method
 
-.method public c(Landroid/net/Uri;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
+.method public c(Lc4/d;)Lc4/d;
+    .locals 1
+
+    .line 1
+    iget v0, p1, Lc4/d;->a:I
+
+    iput v0, p0, Lc4/d;->a:I
+
+    .line 2
+    iget v0, p1, Lc4/d;->b:I
+
+    iput v0, p0, Lc4/d;->b:I
+
+    .line 3
+    iget-object v0, p1, Lc4/d;->c:Ljava/lang/String;
+
+    iput-object v0, p0, Lc4/d;->c:Ljava/lang/String;
+
+    .line 4
+    iget-object p1, p1, Lc4/d;->d:Ljava/util/HashMap;
+
+    iput-object p1, p0, Lc4/d;->d:Ljava/util/HashMap;
+
+    return-object p0
+.end method
+
+.method public bridge synthetic clone()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/CloneNotSupportedException;
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lc4/d;->b()Lc4/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public abstract d(Ljava/util/HashSet;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashSet<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract e(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.end method
+
+.method public f(Ljava/util/HashMap;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroid/net/Uri;",
-            "II",
-            "Lcom/bumptech/glide/load/i;",
-            ")",
-            "Lcom/bumptech/glide/load/model/n$a<",
-            "Ljava/io/InputStream;",
-            ">;"
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Integer;",
+            ">;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-static {p2, p3}, Lcom/bumptech/glide/load/data/mediastore/b;->d(II)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    invoke-direct {p0, p4}, Lc4/d;->e(Lcom/bumptech/glide/load/i;)Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    .line 2
-    new-instance p2, Lcom/bumptech/glide/load/model/n$a;
-
-    new-instance p3, Lm4/b;
-
-    invoke-direct {p3, p1}, Lm4/b;-><init>(Ljava/lang/Object;)V
-
-    iget-object p4, p0, Lc4/d;->a:Landroid/content/Context;
-
-    invoke-static {p4, p1}, Lcom/bumptech/glide/load/data/mediastore/c;->g(Landroid/content/Context;Landroid/net/Uri;)Lcom/bumptech/glide/load/data/mediastore/c;
-
-    move-result-object p1
-
-    invoke-direct {p2, p3, p1}, Lcom/bumptech/glide/load/model/n$a;-><init>(Lcom/bumptech/glide/load/g;Lcom/bumptech/glide/load/data/d;)V
-
-    return-object p2
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return-object p1
-.end method
-
-.method public d(Landroid/net/Uri;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, Lcom/bumptech/glide/load/data/mediastore/b;->c(Landroid/net/Uri;)Z
-
-    move-result p1
-
-    return p1
+    return-void
 .end method

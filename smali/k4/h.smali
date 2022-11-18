@@ -1,120 +1,109 @@
-.class public abstract Lk4/h;
-.super Lk4/a;
+.class public final Lk4/h;
+.super Landroid/graphics/drawable/Drawable$ConstantState;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<Z:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lk4/a<",
-        "TZ;>;"
-    }
-.end annotation
-
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
-
-
 # instance fields
-.field private final height:I
+.field public a:I
 
-.field private final width:I
+.field public b:Landroid/graphics/drawable/Drawable$ConstantState;
+
+.field public c:Landroid/content/res/ColorStateList;
+
+.field public d:Landroid/graphics/PorterDuff$Mode;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lk4/h;)V
     .locals 1
 
-    const/high16 v0, -0x80000000
-
     .line 1
-    invoke-direct {p0, v0, v0}, Lk4/h;-><init>(II)V
+    invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
-    return-void
-.end method
-
-.method public constructor <init>(II)V
-    .locals 0
+    const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0}, Lk4/a;-><init>()V
+    iput-object v0, p0, Lk4/h;->c:Landroid/content/res/ColorStateList;
 
     .line 3
-    iput p1, p0, Lk4/h;->width:I
+    sget-object v0, Lk4/f;->h:Landroid/graphics/PorterDuff$Mode;
+
+    iput-object v0, p0, Lk4/h;->d:Landroid/graphics/PorterDuff$Mode;
+
+    if-eqz p1, :cond_0
 
     .line 4
-    iput p2, p0, Lk4/h;->height:I
+    iget v0, p1, Lk4/h;->a:I
 
+    iput v0, p0, Lk4/h;->a:I
+
+    .line 5
+    iget-object v0, p1, Lk4/h;->b:Landroid/graphics/drawable/Drawable$ConstantState;
+
+    iput-object v0, p0, Lk4/h;->b:Landroid/graphics/drawable/Drawable$ConstantState;
+
+    .line 6
+    iget-object v0, p1, Lk4/h;->c:Landroid/content/res/ColorStateList;
+
+    iput-object v0, p0, Lk4/h;->c:Landroid/content/res/ColorStateList;
+
+    .line 7
+    iget-object p1, p1, Lk4/h;->d:Landroid/graphics/PorterDuff$Mode;
+
+    iput-object p1, p0, Lk4/h;->d:Landroid/graphics/PorterDuff$Mode;
+
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final getSize(Lk4/i;)V
+.method public final getChangingConfigurations()I
     .locals 2
 
     .line 1
-    iget v0, p0, Lk4/h;->width:I
-
-    iget v1, p0, Lk4/h;->height:I
-
-    invoke-static {v0, v1}, Lcom/bumptech/glide/util/k;->s(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
+    iget v0, p0, Lk4/h;->a:I
 
     .line 2
-    iget v0, p0, Lk4/h;->width:I
+    iget-object v1, p0, Lk4/h;->b:Landroid/graphics/drawable/Drawable$ConstantState;
 
-    iget v1, p0, Lk4/h;->height:I
+    if-eqz v1, :cond_0
 
-    invoke-interface {p1, v0, v1}, Lk4/i;->d(II)V
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable$ConstantState;->getChangingConfigurations()I
 
-    return-void
+    move-result v1
 
-    .line 3
+    goto :goto_0
+
     :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    const/4 v1, 0x0
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    :goto_0
+    or-int/2addr v0, v1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Width and height must both be > 0 or Target#SIZE_ORIGINAL, but given width: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lk4/h;->width:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, " and height: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lk4/h;->height:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", either provide dimensions in the constructor or call override()"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return v0
 .end method
 
-.method public removeCallback(Lk4/i;)V
-    .locals 0
+.method public final newDrawable()Landroid/graphics/drawable/Drawable;
+    .locals 2
 
-    return-void
+    .line 1
+    new-instance v0, Lk4/g;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lk4/g;-><init>(Lk4/h;Landroid/content/res/Resources;)V
+
+    return-object v0
+.end method
+
+.method public final newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    .line 2
+    new-instance v0, Lk4/g;
+
+    invoke-direct {v0, p0, p1}, Lk4/g;-><init>(Lk4/h;Landroid/content/res/Resources;)V
+
+    return-object v0
 .end method

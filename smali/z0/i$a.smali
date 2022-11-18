@@ -1,83 +1,138 @@
 .class public final Lz0/i$a;
-.super Ljava/lang/Object;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/q;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lz0/i;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lz0/i;->a(Lx1/h;Lz0/e;)Lx1/h;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "a"
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/q<",
+        "Lx1/h;",
+        "Ll1/g;",
+        "Ljava/lang/Integer;",
+        "Lx1/h;",
+        ">;"
+    }
 .end annotation
 
 
-# static fields
-.field static final synthetic a:Lz0/i$a;
+# instance fields
+.field public final synthetic b:Lz0/e;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lz0/i$a;
-
-    invoke-direct {v0}, Lz0/i$a;-><init>()V
-
-    sput-object v0, Lz0/i$a;->a:Lz0/i$a;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>(Lz0/e;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lz0/i$a;->b:Lz0/e;
+
+    const/4 p1, 0x3
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(J)Lz0/i;
-    .locals 3
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    sget-object v0, Landroidx/compose/ui/graphics/e0;->b:Landroidx/compose/ui/graphics/e0$a;
+    check-cast p1, Lx1/h;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/e0$a;->i()J
+    check-cast p2, Ll1/g;
 
-    move-result-wide v0
+    check-cast p3, Ljava/lang/Number;
 
-    cmp-long v2, p1, v0
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
 
-    if-eqz v2, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_1
+    const-string p3, "$this$composed"
 
     .line 2
-    new-instance v0, Lz0/c;
+    invoke-static {p1, p3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const/4 v1, 0x0
+    const p1, -0x3b2dbfe9
 
-    invoke-direct {v0, p1, p2, v1}, Lz0/c;-><init>(JLkotlin/jvm/internal/h;)V
+    invoke-interface {p2, p1}, Ll1/g;->E(I)V
 
-    goto :goto_1
+    .line 3
+    invoke-static {p2}, Lsk/yc;->F(Ll1/g;)Lz0/d;
 
+    move-result-object p1
+
+    const p3, 0x44faf204
+
+    .line 4
+    invoke-interface {p2, p3}, Ll1/g;->E(I)V
+
+    .line 5
+    invoke-interface {p2, p1}, Ll1/g;->n(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    .line 6
+    invoke-interface {p2}, Ll1/g;->F()Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-nez p3, :cond_0
+
+    .line 7
+    sget-object p3, Ll1/g;->a:Ll1/g$a;
+
+    invoke-static {p3}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    sget-object p3, Ll1/g$a;->b:Ll1/g$a$a;
+
+    if-ne v0, p3, :cond_1
+
+    .line 9
+    :cond_0
+    new-instance v0, Lz0/j;
+
+    invoke-direct {v0, p1}, Lz0/j;-><init>(Lz0/d;)V
+
+    .line 10
+    invoke-interface {p2, v0}, Ll1/g;->z(Ljava/lang/Object;)V
+
+    .line 11
     :cond_1
-    sget-object v0, Lz0/i$c;->b:Lz0/i$c;
+    invoke-interface {p2}, Ll1/g;->P()V
 
-    :goto_1
+    .line 12
+    check-cast v0, Lz0/j;
+
+    .line 13
+    iget-object p1, p0, Lz0/i$a;->b:Lz0/e;
+
+    instance-of p3, p1, Lz0/f;
+
+    if-eqz p3, :cond_2
+
+    .line 14
+    new-instance p3, Lz0/h;
+
+    invoke-direct {p3, p1, v0}, Lz0/h;-><init>(Lz0/e;Lz0/j;)V
+
+    invoke-static {p1, p3, p2}, Ll1/f0;->a(Ljava/lang/Object;Ldp0/l;Ll1/g;)V
+
+    :cond_2
+    invoke-interface {p2}, Ll1/g;->P()V
+
     return-object v0
 .end method

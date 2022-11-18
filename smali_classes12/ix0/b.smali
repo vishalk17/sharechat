@@ -1,0 +1,104 @@
+.class public final Lix0/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lix0/b;
+
+.field public static b:Lix0/c;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lix0/b;
+
+    invoke-direct {v0}, Lix0/b;-><init>()V
+
+    sput-object v0, Lix0/b;->a:Lix0/b;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/content/Context;)Lix0/a;
+    .locals 3
+
+    const-class v0, Lte0/c;
+
+    const-string v1, "appContext"
+
+    invoke-static {p1, v1}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    sget-object v1, Lix0/b;->b:Lix0/c;
+
+    if-nez v1, :cond_0
+
+    .line 2
+    new-instance v1, Lix0/c$b;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v2}, Lix0/c$b;-><init>(Lix0/c$a;)V
+
+    .line 3
+    iput-object p1, v1, Lix0/c$b;->a:Landroid/content/Context;
+
+    .line 4
+    invoke-static {p1, v0}, Lbz/b;->a(Landroid/content/Context;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    const-string v2, "fromApplication(\n       \u2026ava\n                    )"
+
+    invoke-static {p1, v2}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    check-cast p1, Lte0/c;
+
+    .line 5
+    iput-object p1, v1, Lix0/c$b;->b:Lte0/c;
+
+    .line 6
+    iget-object p1, v1, Lix0/c$b;->a:Landroid/content/Context;
+
+    const-class v2, Landroid/content/Context;
+
+    invoke-static {p1, v2}, Ljz/c;->a(Ljava/lang/Object;Ljava/lang/Class;)V
+
+    .line 7
+    iget-object p1, v1, Lix0/c$b;->b:Lte0/c;
+
+    invoke-static {p1, v0}, Ljz/c;->a(Ljava/lang/Object;Ljava/lang/Class;)V
+
+    .line 8
+    new-instance p1, Lix0/c;
+
+    iget-object v0, v1, Lix0/c$b;->b:Lte0/c;
+
+    iget-object v1, v1, Lix0/c$b;->a:Landroid/content/Context;
+
+    invoke-direct {p1, v0, v1}, Lix0/c;-><init>(Lte0/c;Landroid/content/Context;)V
+
+    .line 9
+    sput-object p1, Lix0/b;->b:Lix0/c;
+
+    .line 10
+    :cond_0
+    sget-object p1, Lix0/b;->b:Lix0/c;
+
+    invoke-static {p1}, Lep0/s;->e(Ljava/lang/Object;)V
+
+    return-object p1
+.end method

@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lio/intercom/android/nexus/NexusClient;
+.field public final synthetic this$0:Lio/intercom/android/nexus/NexusClient;
 
 
 # direct methods
-.method constructor <init>(Lio/intercom/android/nexus/NexusClient;)V
+.method public constructor <init>(Lio/intercom/android/nexus/NexusClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusClient$1;->this$0:Lio/intercom/android/nexus/NexusClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

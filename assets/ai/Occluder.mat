@@ -1,0 +1,59 @@
+#type vertex
+attribute vec3 a_Position;
+attribute vec2 a_TexCoord;
+varying vec2 v_TexCoord;
+uniform mat4 model_mat;
+uniform mat4 proj_mat;
+
+vec4 vertex(){
+    v_TexCoord = a_TexCoord;
+    return proj_mat * model_mat * vec4(a_Position, 1.0);
+}
+
+#type fragment
+precision mediump float;
+varying vec2 v_TexCoord;
+uniform vec4 u_TransparentColor;
+
+
+vec4 fragment(){
+    return u_TransparentColor;
+}
+
+#type shader_data
+{
+  "ShaderData" : [
+    {
+      "type" : "Vec4",
+      "value" : "[0.0,0.0,0.0,0.0]",
+      "name" : "u_TransparentColor",
+      "function" : "fragment"
+    }
+  ]
+}
+
+#type material_flags_data
+{
+  "MaterialFlagData" : [
+    {
+      "name" : "DEPTH_TEST",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "DEPTH_WRITE",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "BLEND",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "BLEND_MODE",
+      "type" : "INT",
+      "value" : "3"
+    }
+  ]
+}

@@ -17,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,12 +24,37 @@
 
 
 # virtual methods
-.method public A(Lj/b$a;)Lj/b;
+.method public a()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public b()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public c(Z)V
     .locals 0
 
-    const/4 p1, 0x0
+    return-void
+.end method
 
-    return-object p1
+.method public abstract d()I
+.end method
+
+.method public e()Landroid/content/Context;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method public f()Z
@@ -41,29 +65,32 @@
     return v0
 .end method
 
-.method public g()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public h(Z)V
+.method public g()V
     .locals 0
 
     return-void
 .end method
 
-.method public abstract i()I
+.method public h()V
+    .locals 0
+
+    return-void
 .end method
 
-.method public j()Landroid/content/Context;
-    .locals 1
+.method public i(ILandroid/view/KeyEvent;)Z
+    .locals 0
 
-    const/4 v0, 0x0
+    const/4 p1, 0x0
 
-    return-object v0
+    return p1
+.end method
+
+.method public j(Landroid/view/KeyEvent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
 .end method
 
 .method public k()Z
@@ -74,43 +101,25 @@
     return v0
 .end method
 
-.method public l(Landroid/content/res/Configuration;)V
+.method public abstract l(Landroid/view/View;)V
+.end method
+
+.method public m(Z)V
     .locals 0
 
     return-void
 .end method
 
-.method m()V
-    .locals 0
-
-    return-void
+.method public abstract n(Z)V
 .end method
 
-.method public n(ILandroid/view/KeyEvent;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
+.method public abstract o()V
 .end method
 
-.method public o(Landroid/view/KeyEvent;)Z
-    .locals 0
-
-    const/4 p1, 0x0
-
-    return p1
+.method public abstract p()V
 .end method
 
-.method public p()Z
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public abstract q(Landroid/view/View;)V
+.method public abstract q()V
 .end method
 
 .method public r(Z)V
@@ -119,32 +128,22 @@
     return-void
 .end method
 
-.method public abstract s(Z)V
+.method public abstract s(I)V
 .end method
 
-.method public abstract t(I)V
+.method public abstract t(Ljava/lang/CharSequence;)V
 .end method
 
-.method public abstract u(Z)V
-.end method
-
-.method public abstract v(Z)V
-.end method
-
-.method public w(Z)V
+.method public u(Ljava/lang/CharSequence;)V
     .locals 0
 
     return-void
 .end method
 
-.method public abstract x(I)V
-.end method
-
-.method public abstract y(Ljava/lang/CharSequence;)V
-.end method
-
-.method public z(Ljava/lang/CharSequence;)V
+.method public v(Lp/a$a;)Lp/a;
     .locals 0
 
-    return-void
+    const/4 p1, 0x0
+
+    return-object p1
 .end method

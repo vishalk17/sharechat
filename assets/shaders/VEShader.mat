@@ -1,0 +1,57 @@
+#type vertex
+attribute vec3 a_Position;
+attribute vec2 a_TexCoord;
+varying vec2 v_TexCoord;
+vec4 vertex(){
+    v_TexCoord = a_TexCoord;
+    return u_ViewProjection * u_Transform * vec4(a_Position, 1.0);
+}
+
+#type fragment
+#extension GL_OES_EGL_image_external : enable
+precision mediump float;
+uniform samplerExternalOES u_Texture;
+varying vec2 v_TexCoord;
+
+vec4 fragment(){
+    vec4 texRGBColor = texture2D(u_Texture,v_TexCoord);
+    return texRGBColor;
+}
+
+#type shader_data
+{
+  "ShaderData" : [
+    {
+      "type" : "Video2D",
+      "value" : "Platform",
+      "name" : "u_Texture",
+      "function" : "fragment"
+    }
+  ]
+}
+
+#type material_flags_data
+{
+  "MaterialFlagData" : [
+    {
+      "name" : "DEPTH_TEST",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "DEPTH_WRITE",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "BLEND",
+      "type" : "Boolean",
+      "value" : "true"
+    },
+    {
+      "name" : "BLEND_MODE",
+      "type" : "INT",
+      "value" : "0"
+    }
+  ]
+}

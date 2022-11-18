@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/preference/Preference$e;
+.implements Landroidx/preference/Preference$a;
 
 
 # annotations
@@ -19,7 +19,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Landroidx/preference/Preference$e<",
+        "Landroidx/preference/Preference$a<",
         "Landroidx/preference/ListPreference;",
         ">;"
     }
@@ -27,14 +27,13 @@
 
 
 # static fields
-.field private static a:Landroidx/preference/ListPreference$a;
+.field public static a:Landroidx/preference/ListPreference$a;
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -64,24 +63,14 @@
 
 
 # virtual methods
-.method public bridge synthetic a(Landroidx/preference/Preference;)Ljava/lang/CharSequence;
-    .locals 0
+.method public final a(Landroidx/preference/Preference;)Ljava/lang/CharSequence;
+    .locals 1
 
     .line 1
     check-cast p1, Landroidx/preference/ListPreference;
 
-    invoke-virtual {p0, p1}, Landroidx/preference/ListPreference$a;->c(Landroidx/preference/ListPreference;)Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public c(Landroidx/preference/ListPreference;)Ljava/lang/CharSequence;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Landroidx/preference/ListPreference;->N()Ljava/lang/CharSequence;
+    .line 2
+    invoke-virtual {p1}, Landroidx/preference/ListPreference;->j()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -91,24 +80,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
-    invoke-virtual {p1}, Landroidx/preference/Preference;->d()Landroid/content/Context;
+    .line 3
+    iget-object p1, p1, Landroidx/preference/Preference;->b:Landroid/content/Context;
 
-    move-result-object p1
-
+    .line 4
     sget v0, Landroidx/preference/R$string;->not_set:I
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    return-object p1
+    goto :goto_0
 
-    .line 3
+    .line 5
     :cond_0
-    invoke-virtual {p1}, Landroidx/preference/ListPreference;->N()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Landroidx/preference/ListPreference;->j()Ljava/lang/CharSequence;
 
     move-result-object p1
 
+    :goto_0
     return-object p1
 .end method

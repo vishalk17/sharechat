@@ -6,14 +6,6 @@
 .implements Landroid/os/Parcelable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/activity/result/IntentSenderRequest$b;
-    }
-.end annotation
-
-
 # static fields
 .field public static final CREATOR:Landroid/os/Parcelable$Creator;
     .annotation system Ldalvik/annotation/Signature;
@@ -27,20 +19,19 @@
 
 
 # instance fields
-.field private final b:Landroid/content/IntentSender;
+.field public final b:Landroid/content/IntentSender;
 
-.field private final c:Landroid/content/Intent;
+.field public final c:Landroid/content/Intent;
 
-.field private final d:I
+.field public final d:I
 
-.field private final e:I
+.field public final e:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/activity/result/IntentSenderRequest$a;
 
     invoke-direct {v0}, Landroidx/activity/result/IntentSenderRequest$a;-><init>()V
@@ -50,7 +41,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
+.method public constructor <init>(Landroid/content/IntentSender;Landroid/content/Intent;II)V
     .locals 0
 
     .line 1
@@ -71,7 +62,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
     .line 6
@@ -126,43 +117,7 @@
 
 
 # virtual methods
-.method public a()Landroid/content/Intent;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->c:Landroid/content/Intent;
-
-    return-object v0
-.end method
-
-.method public b()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->d:I
-
-    return v0
-.end method
-
-.method public c()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/activity/result/IntentSenderRequest;->e:I
-
-    return v0
-.end method
-
-.method public d()Landroid/content/IntentSender;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/activity/result/IntentSenderRequest;->b:Landroid/content/IntentSender;
-
-    return-object v0
-.end method
-
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -170,7 +125,7 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1

@@ -7,7 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/fragment/app/DialogFragment;-><init>()V
 
     return-void
@@ -18,8 +17,7 @@
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
 
-    .line 1
-    new-instance p1, Landroidx/appcompat/app/f;
+    new-instance p1, Landroidx/appcompat/app/s;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
@@ -29,7 +27,7 @@
 
     move-result v1
 
-    invoke-direct {p1, v0, v1}, Landroidx/appcompat/app/f;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p1, v0, v1}, Landroidx/appcompat/app/s;-><init>(Landroid/content/Context;I)V
 
     return-object p1
 .end method
@@ -38,14 +36,14 @@
     .locals 3
 
     .line 1
-    instance-of v0, p1, Landroidx/appcompat/app/f;
+    instance-of v0, p1, Landroidx/appcompat/app/s;
 
     if-eqz v0, :cond_2
 
     .line 2
     move-object v0, p1
 
-    check-cast v0, Landroidx/appcompat/app/f;
+    check-cast v0, Landroidx/appcompat/app/s;
 
     const/4 v1, 0x1
 
@@ -73,7 +71,7 @@
 
     .line 4
     :cond_1
-    invoke-virtual {v0, v1}, Landroidx/appcompat/app/f;->d(I)Z
+    invoke-virtual {v0, v1}, Landroidx/appcompat/app/s;->e(I)Z
 
     goto :goto_0
 

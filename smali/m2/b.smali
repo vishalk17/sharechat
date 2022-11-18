@@ -1,23 +1,37 @@
-.class public final Lm2/b;
-.super Ljava/lang/RuntimeException;
+.class public interface abstract Lm2/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    return-void
+# virtual methods
+.method public abstract a(JJI)J
 .end method
 
-.method public constructor <init>(Ljava/lang/Throwable;)V
-    .locals 0
+.method public abstract c(JJLvo0/d;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(JJ",
+            "Lvo0/d<",
+            "-",
+            "Ln3/m;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
 
-    .line 2
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+.method public abstract d(JI)J
+.end method
 
-    return-void
+.method public abstract e(JLvo0/d;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Lvo0/d<",
+            "-",
+            "Ln3/m;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 .end method

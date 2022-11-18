@@ -1,31 +1,14 @@
-.class public Lz1/a;
+.class public interface abstract Lz1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
+# virtual methods
+.method public abstract d()J
 .end method
 
-.method public static a(Landroid/widget/CompoundButton;Z)V
-    .locals 1
+.method public abstract getDensity()Ln3/b;
+.end method
 
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/CompoundButton;->isChecked()Z
-
-    move-result v0
-
-    if-eq v0, p1, :cond_0
-
-    .line 2
-    invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setChecked(Z)V
-
-    :cond_0
-    return-void
+.method public abstract getLayoutDirection()Ln3/j;
 .end method

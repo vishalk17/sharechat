@@ -1,68 +1,60 @@
 .class public final Landroidx/viewpager2/adapter/a;
-.super Landroidx/recyclerview/widget/RecyclerView$d0;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnLayoutChangeListener;
+
+
+# instance fields
+.field public final synthetic b:Landroid/widget/FrameLayout;
+
+.field public final synthetic c:Landroidx/viewpager2/adapter/f;
+
+.field public final synthetic d:Landroidx/viewpager2/adapter/FragmentStateAdapter;
 
 
 # direct methods
-.method private constructor <init>(Landroid/widget/FrameLayout;)V
+.method public constructor <init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroid/widget/FrameLayout;Landroidx/viewpager2/adapter/f;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$d0;-><init>(Landroid/view/View;)V
+    iput-object p1, p0, Landroidx/viewpager2/adapter/a;->d:Landroidx/viewpager2/adapter/FragmentStateAdapter;
+
+    iput-object p2, p0, Landroidx/viewpager2/adapter/a;->b:Landroid/widget/FrameLayout;
+
+    iput-object p3, p0, Landroidx/viewpager2/adapter/a;->c:Landroidx/viewpager2/adapter/f;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static J6(Landroid/view/ViewGroup;)Landroidx/viewpager2/adapter/a;
-    .locals 2
-
-    .line 1
-    new-instance v0, Landroid/widget/FrameLayout;
-
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    invoke-direct {v0, p0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
-
-    .line 2
-    new-instance p0, Landroid/view/ViewGroup$LayoutParams;
-
-    const/4 v1, -0x1
-
-    invoke-direct {p0, v1, v1}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
-
-    invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 3
-    invoke-static {}, Landroidx/core/view/c0;->m()I
-
-    move-result p0
-
-    invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setId(I)V
-
-    const/4 p0, 0x0
-
-    .line 4
-    invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setSaveEnabled(Z)V
-
-    .line 5
-    new-instance p0, Landroidx/viewpager2/adapter/a;
-
-    invoke-direct {p0, v0}, Landroidx/viewpager2/adapter/a;-><init>(Landroid/widget/FrameLayout;)V
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method K6()Landroid/widget/FrameLayout;
-    .locals 1
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$d0;->itemView:Landroid/view/View;
+    iget-object p1, p0, Landroidx/viewpager2/adapter/a;->b:Landroid/widget/FrameLayout;
 
-    check-cast v0, Landroid/widget/FrameLayout;
+    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
-    return-object v0
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Landroidx/viewpager2/adapter/a;->b:Landroid/widget/FrameLayout;
+
+    invoke-virtual {p1, p0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+
+    .line 3
+    iget-object p1, p0, Landroidx/viewpager2/adapter/a;->d:Landroidx/viewpager2/adapter/FragmentStateAdapter;
+
+    iget-object p2, p0, Landroidx/viewpager2/adapter/a;->c:Landroidx/viewpager2/adapter/f;
+
+    invoke-virtual {p1, p2}, Landroidx/viewpager2/adapter/FragmentStateAdapter;->w(Landroidx/viewpager2/adapter/f;)V
+
+    :cond_0
+    return-void
 .end method

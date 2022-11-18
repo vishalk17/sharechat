@@ -1,4 +1,4 @@
-.class Landroidx/activity/ComponentActivity$c;
+.class public final Landroidx/activity/ComponentActivity$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,26 +9,22 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x19
     name = "c"
 .end annotation
 
 
+# instance fields
+.field public a:Ljava/lang/Object;
+
+.field public b:Landroidx/lifecycle/f1;
+
+
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method static a(Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/View;->cancelPendingInputEvents()V
 
     return-void
 .end method

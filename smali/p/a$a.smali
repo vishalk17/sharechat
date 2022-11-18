@@ -1,4 +1,4 @@
-.class public final Lp/a$a;
+.class public interface abstract Lp/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,33 +9,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x609
     name = "a"
 .end annotation
 
 
-# static fields
-.field public static final a:Lp/a$a;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lp/a$a;
-
-    invoke-direct {v0}, Lp/a$a;-><init>()V
-
-    sput-object v0, Lp/a$a;->a:Lp/a$a;
-
-    return-void
+# virtual methods
+.method public abstract a(Lp/a;Landroid/view/Menu;)Z
 .end method
 
-.method private constructor <init>()V
-    .locals 0
+.method public abstract b(Lp/a;)V
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.method public abstract c(Lp/a;Landroid/view/Menu;)Z
+.end method
 
-    return-void
+.method public abstract d(Lp/a;Landroid/view/MenuItem;)Z
 .end method

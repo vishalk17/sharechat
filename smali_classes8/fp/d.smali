@@ -1,138 +1,91 @@
 .class public final Lfp/d;
-.super Ljava/lang/Object;
+.super Lfp/u;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lfp/u<",
+        "Ljava/lang/Float;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static a:Lfp/d;
+
+
 # direct methods
-.method public static final a(Landroid/view/View;Ljava/lang/CharSequence;)V
-    .locals 1
+.method private constructor <init>()V
+    .locals 0
 
-    const-string v0, "view"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    :goto_1
-    if-eqz p1, :cond_2
-
-    invoke-static {p0}, Lkp/e;->t(Landroid/view/View;)V
-
-    goto :goto_2
-
-    :cond_2
-    invoke-static {p0}, Lkp/e;->F(Landroid/view/View;)V
-
-    :goto_2
-    return-void
-.end method
-
-.method public static final b(Landroid/view/View;Z)V
-    .locals 1
-
-    const-string v0, "view"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p1, :cond_0
-
-    const/16 p1, 0x8
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 1
-    :goto_0
-    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
+    invoke-direct {p0}, Lfp/u;-><init>()V
 
     return-void
 .end method
 
-.method public static final c(Landroid/view/View;Ljava/lang/Object;)V
-    .locals 1
+.method public static declared-synchronized d()Lfp/d;
+    .locals 2
 
-    const-string v0, "view"
+    const-class v0, Lfp/d;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/16 p1, 0x8
+    monitor-enter v0
 
     .line 1
-    :goto_0
-    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
+    :try_start_0
+    sget-object v1, Lfp/d;->a:Lfp/d;
 
-    return-void
+    if-nez v1, :cond_0
+
+    .line 2
+    new-instance v1, Lfp/d;
+
+    invoke-direct {v1}, Lfp/d;-><init>()V
+
+    sput-object v1, Lfp/d;->a:Lfp/d;
+
+    .line 3
+    :cond_0
+    sget-object v1, Lfp/d;->a:Lfp/d;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
 .end method
 
-.method public static final d(Landroid/view/View;Z)V
+
+# virtual methods
+.method public final a()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "view"
+    const-string v0, "com.google.firebase.perf.FragmentSamplingRate"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x4
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 1
-    :goto_0
-    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
-
-    return-void
+    return-object v0
 .end method
 
-.method public static final e(Landroid/view/View;Z)V
+.method public final b()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "view"
+    const-string v0, "fragment_sampling_percentage"
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    return-object v0
+.end method
 
-    if-eqz p1, :cond_0
+.method public final c()Ljava/lang/String;
+    .locals 1
 
-    const/4 p1, 0x0
+    const-string v0, "fpr_vc_fragment_sampling_rate"
 
-    goto :goto_0
-
-    :cond_0
-    const/16 p1, 0x8
-
-    .line 1
-    :goto_0
-    invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
-
-    return-void
+    return-object v0
 .end method

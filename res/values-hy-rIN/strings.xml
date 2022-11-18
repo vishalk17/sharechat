@@ -13,8 +13,6 @@
     <string name="account_setting_description">Profile photu,Naam,Status,Jagah</string>
     <string name="account_settings">Account Setting</string>
     <string name="account_type">Account Type</string>
-    <string name="ad_adult_abusive">Vyasak/Apmanjank</string>
-    <string name="ad_fake_news">Fake news</string>
     <string name="ad_in_appropriate">Yo anuchit sae</string>
     <string name="ad_irrelevant">Yo prasangik sae</string>
     <string name="ad_opt_out_not_interested">Is vigyapan mae koi dilchspi nahi sae</string>
@@ -548,6 +546,7 @@
     <string name="suggested_profile">Suggested Profiles</string>
     <string name="suggestions_title">Sujhaav</string>
     <string name="tag_discuss">Log is vishya me charcha kre hai</string>
+    <string name="tap_here_to_select_emoji">"इमोजी सेलेक्ट करण खात्तर यहाँ टैप करो "</string>
     <string name="tap_here_to_start">Recording shuru karne ke liye click karein</string>
     <string name="tap_to_retry">Fer te kosish kar</string>
     <string name="tell_your_friends">Apne doston ti btao</string>

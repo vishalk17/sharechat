@@ -1,182 +1,239 @@
-.class public Lj4/d;
+.class public final Lj4/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final a:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lcom/bumptech/glide/util/i;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Ln/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ln/a<",
-            "Lcom/bumptech/glide/util/i;",
-            "Ljava/util/List<",
-            "Ljava/lang/Class<",
-            "*>;>;>;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>()V
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static a(Lj4/b;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lj4/c;->a:[I
+
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result p0
+
+    aget p0, v0, p0
+
+    packed-switch p0, :pswitch_data_0
+
+    const/4 p0, 0x0
+
+    return-object p0
 
     .line 2
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+    :pswitch_0
+    sget-object p0, Landroid/graphics/BlendMode;->LUMINOSITY:Landroid/graphics/BlendMode;
 
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lj4/d;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 3
-    new-instance v0, Ln/a;
-
-    invoke-direct {v0}, Ln/a;-><init>()V
-
-    iput-object v0, p0, Lj4/d;->b:Ln/a;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Ljava/util/List<",
-            "Ljava/lang/Class<",
-            "*>;>;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lj4/d;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/bumptech/glide/util/i;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    new-instance v0, Lcom/bumptech/glide/util/i;
-
-    invoke-direct {v0, p1, p2, p3}, Lcom/bumptech/glide/util/i;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
-
-    goto :goto_0
+    return-object p0
 
     .line 3
-    :cond_0
-    invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
+    :pswitch_1
+    sget-object p0, Landroid/graphics/BlendMode;->COLOR:Landroid/graphics/BlendMode;
+
+    return-object p0
 
     .line 4
-    :goto_0
-    iget-object p1, p0, Lj4/d;->b:Ln/a;
+    :pswitch_2
+    sget-object p0, Landroid/graphics/BlendMode;->SATURATION:Landroid/graphics/BlendMode;
 
-    monitor-enter p1
+    return-object p0
 
     .line 5
-    :try_start_0
-    iget-object p2, p0, Lj4/d;->b:Ln/a;
+    :pswitch_3
+    sget-object p0, Landroid/graphics/BlendMode;->HUE:Landroid/graphics/BlendMode;
 
-    invoke-virtual {p2, v0}, Ln/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/util/List;
+    return-object p0
 
     .line 6
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :pswitch_4
+    sget-object p0, Landroid/graphics/BlendMode;->MULTIPLY:Landroid/graphics/BlendMode;
+
+    return-object p0
 
     .line 7
-    iget-object p1, p0, Lj4/d;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    :pswitch_5
+    sget-object p0, Landroid/graphics/BlendMode;->EXCLUSION:Landroid/graphics/BlendMode;
 
-    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
-
-    return-object p2
-
-    :catchall_0
-    move-exception p2
+    return-object p0
 
     .line 8
-    :try_start_1
-    monitor-exit p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :pswitch_6
+    sget-object p0, Landroid/graphics/BlendMode;->DIFFERENCE:Landroid/graphics/BlendMode;
 
-    throw p2
-.end method
+    return-object p0
 
-.method public b(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/lang/Class<",
-            "*>;",
-            "Ljava/util/List<",
-            "Ljava/lang/Class<",
-            "*>;>;)V"
-        }
-    .end annotation
+    .line 9
+    :pswitch_7
+    sget-object p0, Landroid/graphics/BlendMode;->SOFT_LIGHT:Landroid/graphics/BlendMode;
 
-    .line 1
-    iget-object v0, p0, Lj4/d;->b:Ln/a;
+    return-object p0
 
-    monitor-enter v0
+    .line 10
+    :pswitch_8
+    sget-object p0, Landroid/graphics/BlendMode;->HARD_LIGHT:Landroid/graphics/BlendMode;
 
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lj4/d;->b:Ln/a;
+    return-object p0
 
-    new-instance v2, Lcom/bumptech/glide/util/i;
+    .line 11
+    :pswitch_9
+    sget-object p0, Landroid/graphics/BlendMode;->COLOR_BURN:Landroid/graphics/BlendMode;
 
-    invoke-direct {v2, p1, p2, p3}, Lcom/bumptech/glide/util/i;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)V
+    return-object p0
 
-    invoke-virtual {v1, v2, p4}, Ln/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 12
+    :pswitch_a
+    sget-object p0, Landroid/graphics/BlendMode;->COLOR_DODGE:Landroid/graphics/BlendMode;
 
-    .line 3
-    monitor-exit v0
+    return-object p0
 
-    return-void
+    .line 13
+    :pswitch_b
+    sget-object p0, Landroid/graphics/BlendMode;->LIGHTEN:Landroid/graphics/BlendMode;
 
-    :catchall_0
-    move-exception p1
+    return-object p0
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .line 14
+    :pswitch_c
+    sget-object p0, Landroid/graphics/BlendMode;->DARKEN:Landroid/graphics/BlendMode;
 
-    throw p1
+    return-object p0
+
+    .line 15
+    :pswitch_d
+    sget-object p0, Landroid/graphics/BlendMode;->OVERLAY:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 16
+    :pswitch_e
+    sget-object p0, Landroid/graphics/BlendMode;->SCREEN:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 17
+    :pswitch_f
+    sget-object p0, Landroid/graphics/BlendMode;->MODULATE:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 18
+    :pswitch_10
+    sget-object p0, Landroid/graphics/BlendMode;->PLUS:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 19
+    :pswitch_11
+    sget-object p0, Landroid/graphics/BlendMode;->XOR:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 20
+    :pswitch_12
+    sget-object p0, Landroid/graphics/BlendMode;->DST_ATOP:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 21
+    :pswitch_13
+    sget-object p0, Landroid/graphics/BlendMode;->SRC_ATOP:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 22
+    :pswitch_14
+    sget-object p0, Landroid/graphics/BlendMode;->DST_OUT:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 23
+    :pswitch_15
+    sget-object p0, Landroid/graphics/BlendMode;->SRC_OUT:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 24
+    :pswitch_16
+    sget-object p0, Landroid/graphics/BlendMode;->DST_IN:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 25
+    :pswitch_17
+    sget-object p0, Landroid/graphics/BlendMode;->SRC_IN:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 26
+    :pswitch_18
+    sget-object p0, Landroid/graphics/BlendMode;->DST_OVER:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 27
+    :pswitch_19
+    sget-object p0, Landroid/graphics/BlendMode;->SRC_OVER:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 28
+    :pswitch_1a
+    sget-object p0, Landroid/graphics/BlendMode;->DST:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 29
+    :pswitch_1b
+    sget-object p0, Landroid/graphics/BlendMode;->SRC:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    .line 30
+    :pswitch_1c
+    sget-object p0, Landroid/graphics/BlendMode;->CLEAR:Landroid/graphics/BlendMode;
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

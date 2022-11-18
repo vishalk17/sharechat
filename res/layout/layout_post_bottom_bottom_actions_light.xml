@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/cl_post_bottom_counters" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="4.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <include android:visibility="gone" layout="@layout/layout_follow_v2_video" />
-    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_audio_convert" android:layout_width="50.0dip" android:layout_height="wrap_content">
-        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ic_audio_convert_thumb" android:layout_width="40.0dip" android:layout_height="40.0dip" app:srcCompat="@drawable/ic_compose_audio" />
-        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_audio_convert_text" android:padding="2.0dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:maxLines="1" />
-    </LinearLayout>
+    <include android:id="@id/layout_follow" android:visibility="gone" layout="@layout/layout_follow_v2_video" />
+    <ImageView android:gravity="bottom|center" android:layout_gravity="bottom" android:id="@id/ic_audio_convert_thumb" android:layout_width="40.0dip" android:layout_height="40.0dip" app:srcCompat="@drawable/ic_compose_audio" />
     <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom" android:id="@id/tv_post_favourite" style="@style/VideoPlayerActionButtonStyleSmall" />
     <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom" android:id="@id/tv_post_like" style="@style/VideoPlayerActionButtonStyleSmall" />
     <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom|center" android:id="@id/tv_post_comment" style="@style/VideoPlayerActionButtonStyleSmall" />

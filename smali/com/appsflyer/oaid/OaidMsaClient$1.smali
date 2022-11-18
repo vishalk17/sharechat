@@ -12,19 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic val$logger:Ljava/util/logging/Logger;
+.field public final synthetic val$logger:Ljava/util/logging/Logger;
 
-.field final synthetic val$oaidHolder:Ljava/util/concurrent/BlockingQueue;
+.field public final synthetic val$oaidHolder:Ljava/util/concurrent/BlockingQueue;
 
 
 # direct methods
-.method constructor <init>(Ljava/util/concurrent/BlockingQueue;Ljava/util/logging/Logger;)V
+.method public constructor <init>(Ljava/util/concurrent/BlockingQueue;Ljava/util/logging/Logger;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -32,7 +32,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/oaid/OaidMsaClient$1;->val$oaidHolder:Ljava/util/concurrent/BlockingQueue;
 
     iput-object p2, p0, Lcom/appsflyer/oaid/OaidMsaClient$1;->val$logger:Ljava/util/logging/Logger;

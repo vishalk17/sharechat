@@ -1,25 +1,23 @@
-.class public final Leq/c;
+.class public interface abstract Leq/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljavax/inject/Provider;
 
+# virtual methods
+.method public abstract a()Ljava/lang/String;
+.end method
 
-# direct methods
-.method public static a(Leq/b;Landroid/app/Application;)Landroid/content/Context;
-    .locals 0
+.method public abstract b()Z
+.end method
 
-    .line 1
-    invoke-virtual {p0, p1}, Leq/b;->a(Landroid/app/Application;)Landroid/content/Context;
+.method public abstract c()V
+.end method
 
-    move-result-object p0
+.method public abstract d()Ljava/lang/String;
+.end method
 
-    invoke-static {p0}, Lul/d;->e(Ljava/lang/Object;)Ljava/lang/Object;
+.method public abstract e()I
+.end method
 
-    move-result-object p0
-
-    check-cast p0, Landroid/content/Context;
-
-    return-object p0
+.method public abstract f()Ljava/lang/String;
 .end method

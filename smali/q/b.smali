@@ -1,194 +1,161 @@
-.class public final Lq/b;
+.class public abstract Lq/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field private static a:Landroidx/compose/ui/graphics/vector/c;
+# instance fields
+.field public final a:Landroid/content/Context;
+
+.field public b:Lp0/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp0/g<",
+            "Ll4/b;",
+            "Landroid/view/MenuItem;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public c:Lp0/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp0/g<",
+            "Ll4/c;",
+            "Landroid/view/SubMenu;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lq/b;->a:Landroid/content/Context;
 
     return-void
 .end method
 
-.method public static final a(Lp/a$a;)Landroidx/compose/ui/graphics/vector/c;
-    .locals 29
 
-    const-string v0, "<this>"
-
-    move-object/from16 v1, p0
-
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+# virtual methods
+.method public final c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+    .locals 2
 
     .line 1
-    sget-object v0, Lq/b;->a:Landroidx/compose/ui/graphics/vector/c;
+    instance-of v0, p1, Ll4/b;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
     .line 2
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    return-object v0
+    check-cast p1, Ll4/b;
 
     .line 3
-    :cond_0
-    new-instance v1, Landroidx/compose/ui/graphics/vector/c$a;
+    iget-object v0, p0, Lq/b;->b:Lp0/g;
 
-    move-object v12, v1
-
-    const/high16 v0, 0x41c00000    # 24.0f
+    if-nez v0, :cond_0
 
     .line 4
-    invoke-static {v0}, Lb1/g;->k(F)F
+    new-instance v0, Lp0/g;
 
-    move-result v3
+    invoke-direct {v0}, Lp0/g;-><init>()V
 
-    invoke-static {v0}, Lb1/g;->k(F)F
-
-    move-result v4
-
-    const/high16 v5, 0x41c00000    # 24.0f
-
-    const/high16 v6, 0x41c00000    # 24.0f
-
-    const-wide/16 v7, 0x0
-
-    const/4 v9, 0x0
-
-    const/16 v10, 0x60
-
-    const/4 v11, 0x0
-
-    const-string v2, "Filled.ChevronRight"
+    iput-object v0, p0, Lq/b;->b:Lp0/g;
 
     .line 5
-    invoke-direct/range {v1 .. v11}, Landroidx/compose/ui/graphics/vector/c$a;-><init>(Ljava/lang/String;FFFFJIILkotlin/jvm/internal/h;)V
+    :cond_0
+    iget-object v0, p0, Lq/b;->b:Lp0/g;
 
-    const/high16 v17, 0x3f800000    # 1.0f
-
-    const/high16 v19, 0x3f800000    # 1.0f
+    const/4 v1, 0x0
 
     .line 6
-    invoke-static {}, Landroidx/compose/ui/graphics/vector/p;->b()I
+    invoke-virtual {v0, p1, v1}, Lp0/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v14
+    move-result-object v0
 
     .line 7
-    new-instance v0, Landroidx/compose/ui/graphics/m1;
+    check-cast v0, Landroid/view/MenuItem;
 
-    move-object/from16 v16, v0
-
-    sget-object v1, Landroidx/compose/ui/graphics/e0;->b:Landroidx/compose/ui/graphics/e0$a;
-
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/e0$a;->a()J
-
-    move-result-wide v1
-
-    const/4 v3, 0x0
-
-    invoke-direct {v0, v1, v2, v3}, Landroidx/compose/ui/graphics/m1;-><init>(JLkotlin/jvm/internal/h;)V
-
-    const/16 v18, 0x0
-
-    const/high16 v20, 0x3f800000    # 1.0f
+    if-nez v0, :cond_1
 
     .line 8
-    sget-object v0, Landroidx/compose/ui/graphics/n1;->b:Landroidx/compose/ui/graphics/n1$a;
+    new-instance v0, Lq/c;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/n1$a;->a()I
+    iget-object v1, p0, Lq/b;->a:Landroid/content/Context;
 
-    move-result v21
+    invoke-direct {v0, v1, p1}, Lq/c;-><init>(Landroid/content/Context;Ll4/b;)V
 
     .line 9
-    sget-object v0, Landroidx/compose/ui/graphics/o1;->b:Landroidx/compose/ui/graphics/o1$a;
+    iget-object v1, p0, Lq/b;->b:Lp0/g;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/o1$a;->a()I
+    invoke-virtual {v1, p1, v0}, Lp0/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result v22
-
-    const/high16 v23, 0x3f800000    # 1.0f
-
-    .line 10
-    new-instance v0, Landroidx/compose/ui/graphics/vector/d;
-
-    invoke-direct {v0}, Landroidx/compose/ui/graphics/vector/d;-><init>()V
-
-    const/high16 v1, 0x41200000    # 10.0f
-
-    const/high16 v2, 0x40c00000    # 6.0f
-
-    .line 11
-    invoke-virtual {v0, v1, v2}, Landroidx/compose/ui/graphics/vector/d;->j(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v3, 0x410970a4    # 8.59f
-
-    const v4, 0x40ed1eb8    # 7.41f
-
-    .line 12
-    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v3, 0x4152b852    # 13.17f
-
-    const/high16 v4, 0x41400000    # 12.0f
-
-    .line 13
-    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v3, -0x3f6d70a4    # -4.58f
-
-    const v4, 0x4092e148    # 4.59f
-
-    .line 14
-    invoke-virtual {v0, v3, v4}, Landroidx/compose/ui/graphics/vector/d;->i(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v3, 0x41900000    # 18.0f
-
-    .line 15
-    invoke-virtual {v0, v1, v3}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v1, -0x3f400000    # -6.0f
-
-    .line 16
-    invoke-virtual {v0, v2, v1}, Landroidx/compose/ui/graphics/vector/d;->i(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 17
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/d;->b()Landroidx/compose/ui/graphics/vector/d;
-
-    .line 18
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/d;->e()Ljava/util/List;
-
-    move-result-object v13
-
-    const/16 v24, 0x0
-
-    const/16 v25, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x3800
-
-    const/16 v28, 0x0
-
-    const-string v15, ""
-
-    .line 19
-    invoke-static/range {v12 .. v28}, Landroidx/compose/ui/graphics/vector/c$a;->d(Landroidx/compose/ui/graphics/vector/c$a;Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/w;FLandroidx/compose/ui/graphics/w;FFIIFFFFILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/c$a;
-
-    move-result-object v0
-
-    .line 20
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/c$a;->f()Landroidx/compose/ui/graphics/vector/c;
-
-    move-result-object v0
-
-    .line 21
-    sput-object v0, Lq/b;->a:Landroidx/compose/ui/graphics/vector/c;
-
-    .line 22
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
+    :cond_1
     return-object v0
+
+    :cond_2
+    return-object p1
+.end method
+
+.method public final d(Landroid/view/SubMenu;)Landroid/view/SubMenu;
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Ll4/c;
+
+    if-eqz v0, :cond_2
+
+    .line 2
+    check-cast p1, Ll4/c;
+
+    .line 3
+    iget-object v0, p0, Lq/b;->c:Lp0/g;
+
+    if-nez v0, :cond_0
+
+    .line 4
+    new-instance v0, Lp0/g;
+
+    invoke-direct {v0}, Lp0/g;-><init>()V
+
+    iput-object v0, p0, Lq/b;->c:Lp0/g;
+
+    .line 5
+    :cond_0
+    iget-object v0, p0, Lq/b;->c:Lp0/g;
+
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-virtual {v0, p1, v1}, Lp0/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroid/view/SubMenu;
+
+    if-nez v0, :cond_1
+
+    .line 8
+    new-instance v0, Lq/g;
+
+    iget-object v1, p0, Lq/b;->a:Landroid/content/Context;
+
+    invoke-direct {v0, v1, p1}, Lq/g;-><init>(Landroid/content/Context;Ll4/c;)V
+
+    .line 9
+    iget-object v1, p0, Lq/b;->c:Lp0/g;
+
+    invoke-virtual {v1, p1, v0}, Lp0/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_1
+    return-object v0
+
+    :cond_2
+    return-object p1
 .end method

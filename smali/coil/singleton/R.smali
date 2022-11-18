@@ -13,7 +13,6 @@
         Lcoil/singleton/R$id;,
         Lcoil/singleton/R$integer;,
         Lcoil/singleton/R$layout;,
-        Lcoil/singleton/R$menu;,
         Lcoil/singleton/R$string;,
         Lcoil/singleton/R$style;,
         Lcoil/singleton/R$styleable;

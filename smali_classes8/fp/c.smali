@@ -1,297 +1,83 @@
 .class public final Lfp/c;
-.super Ljava/lang/Object;
+.super Lfp/u;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lfp/u<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
 # static fields
-.field public static final a:Lfp/c;
+.field public static a:Lfp/c;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method private constructor <init>()V
+    .locals 0
 
-    new-instance v0, Lfp/c;
-
-    invoke-direct {v0}, Lfp/c;-><init>()V
-
-    sput-object v0, Lfp/c;->a:Lfp/c;
+    invoke-direct {p0}, Lfp/u;-><init>()V
 
     return-void
 .end method
 
-.method private constructor <init>()V
-    .locals 0
+.method public static declared-synchronized d()Lfp/c;
+    .locals 2
+
+    const-class v0, Lfp/c;
+
+    monitor-enter v0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    sget-object v1, Lfp/c;->a:Lfp/c;
 
-    return-void
+    if-nez v1, :cond_0
+
+    .line 2
+    new-instance v1, Lfp/c;
+
+    invoke-direct {v1}, Lfp/c;-><init>()V
+
+    sput-object v1, Lfp/c;->a:Lfp/c;
+
+    .line 3
+    :cond_0
+    sget-object v1, Lfp/c;->a:Lfp/c;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
+.method public final a()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "message"
+    const-string v0, "isEnabled"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-static {p1, v0}, Ltimber/log/a;->d(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
+    return-object v0
 .end method
 
-.method public final b(Ljava/lang/String;Ljava/lang/String;)V
+.method public final b()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "TAG"
+    const-string v0, "firebase_performance_collection_enabled"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ": "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/Object;
-
-    invoke-static {p1, p2}, Ltimber/log/a;->a(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "message"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-static {p1, v0}, Ltimber/log/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final d(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "TAG"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ": "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/Object;
-
-    invoke-static {p1, p2}, Ltimber/log/a;->b(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 2
-
-    const-string v0, "TAG"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "throwable"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    aput-object p2, v0, v1
-
-    .line 1
-    invoke-static {p3, p1, v0}, Ltimber/log/a;->c(Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final f(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "TAG"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ": "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/Object;
-
-    invoke-static {p1, p2}, Ltimber/log/a;->d(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final g(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "message"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 1
-    invoke-static {p1, v0}, Ltimber/log/a;->d(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final h(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "TAG"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ": "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/Object;
-
-    invoke-static {p1, p2}, Ltimber/log/a;->f(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public final i(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "TAG"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "message"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, ": "
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 p2, 0x0
-
-    new-array p2, p2, [Ljava/lang/Object;
-
-    invoke-static {p1, p2}, Ltimber/log/a;->g(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    return-void
+    return-object v0
 .end method

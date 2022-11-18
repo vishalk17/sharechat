@@ -18,18 +18,17 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
+.field public static final serialVersionUID:J = 0x1L
 
 
 # instance fields
-.field private c:D
+.field public c:D
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/databinding/ObservableDouble$a;
 
     invoke-direct {v0}, Landroidx/databinding/ObservableDouble$a;-><init>()V
@@ -62,7 +61,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -70,10 +69,9 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroidx/databinding/ObservableDouble;->c:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V

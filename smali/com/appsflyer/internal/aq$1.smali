@@ -9,20 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic valueOf:[I
+.field public static final synthetic valueOf:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/appsflyer/internal/bt$e;->values()[Lcom/appsflyer/internal/bt$e;
 
     move-result-object v0

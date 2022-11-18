@@ -1,180 +1,236 @@
-.class public Lc4/b;
+.class public final Lc4/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/bumptech/glide/load/model/n;
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lc4/b$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/load/model/n<",
-        "Landroid/net/Uri;",
-        "Ljava/io/InputStream;",
-        ">;"
-    }
-.end annotation
-
-
-# static fields
-.field private static final b:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field private final a:Lcom/bumptech/glide/load/model/n;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/bumptech/glide/load/model/n<",
-            "Lcom/bumptech/glide/load/model/g;",
-            "Ljava/io/InputStream;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public static constructor <clinit>()V
+    .locals 16
 
     .line 1
-    new-instance v0, Ljava/util/HashSet;
+    new-instance v0, Ljava/util/HashMap;
 
-    const-string v1, "http"
-
-    const-string v2, "https"
-
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    move-result-object v1
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    new-instance v1, Ljava/util/HashMap;
 
-    move-result-object v1
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+    const/4 v2, 0x4
 
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    .line 3
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v0
+    move-result-object v2
 
-    sput-object v0, Lc4/b;->b:Ljava/util/Set;
+    invoke-static {v2, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v3
+
+    const-string v4, "layout_constraintBottom_toBottomOf"
+
+    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v3, 0x3
+
+    .line 4
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v5
+
+    const-string v6, "layout_constraintBottom_toTopOf"
+
+    invoke-virtual {v0, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    invoke-static {v3, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v5, "layout_constraintTop_toBottomOf"
+
+    invoke-virtual {v0, v2, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    invoke-static {v3, v3}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v3, "layout_constraintTop_toTopOf"
+
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v2, 0x6
+
+    .line 7
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {v2, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v7
+
+    const-string v8, "layout_constraintStart_toStartOf"
+
+    invoke-virtual {v0, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v7, 0x7
+
+    .line 8
+    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v7
+
+    invoke-static {v2, v7}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v9
+
+    const-string v10, "layout_constraintStart_toEndOf"
+
+    invoke-virtual {v0, v9, v10}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    invoke-static {v7, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v9, "layout_constraintEnd_toStartOf"
+
+    invoke-virtual {v0, v2, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    invoke-static {v7, v7}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v7, "layout_constraintEnd_toEndOf"
+
+    invoke-virtual {v0, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v2, 0x1
+
+    .line 11
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {v2, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v11
+
+    const-string v12, "layout_constraintLeft_toLeftOf"
+
+    invoke-virtual {v0, v11, v12}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v11, 0x2
+
+    .line 12
+    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v11
+
+    invoke-static {v2, v11}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v13
+
+    const-string v14, "layout_constraintLeft_toRightOf"
+
+    invoke-virtual {v0, v13, v14}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    invoke-static {v11, v11}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v13
+
+    const-string v15, "layout_constraintRight_toRightOf"
+
+    invoke-virtual {v0, v13, v15}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    invoke-static {v11, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v11, "layout_constraintRight_toLeftOf"
+
+    invoke-virtual {v0, v2, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v2, 0x5
+
+    .line 15
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {v2, v2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
+
+    move-result-object v2
+
+    const-string v13, "layout_constraintBaseline_toBaselineOf"
+
+    invoke-virtual {v0, v2, v13}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginBottom"
+
+    .line 16
+    invoke-virtual {v1, v4, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    invoke-virtual {v1, v6, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginTop"
+
+    .line 18
+    invoke-virtual {v1, v5, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 19
+    invoke-virtual {v1, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginStart"
+
+    .line 20
+    invoke-virtual {v1, v8, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 21
+    invoke-virtual {v1, v10, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginEnd"
+
+    .line 22
+    invoke-virtual {v1, v9, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    invoke-virtual {v1, v7, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginLeft"
+
+    .line 24
+    invoke-virtual {v1, v12, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 25
+    invoke-virtual {v1, v14, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v0, "layout_marginRight"
+
+    .line 26
+    invoke-virtual {v1, v15, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 27
+    invoke-virtual {v1, v11, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/bumptech/glide/load/model/n;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/bumptech/glide/load/model/n<",
-            "Lcom/bumptech/glide/load/model/g;",
-            "Ljava/io/InputStream;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lc4/b;->a:Lcom/bumptech/glide/load/model/n;
-
     return-void
-.end method
-
-
-# virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/net/Uri;
-
-    invoke-virtual {p0, p1, p2, p3, p4}, Lc4/b;->c(Landroid/net/Uri;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic b(Ljava/lang/Object;)Z
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/net/Uri;
-
-    invoke-virtual {p0, p1}, Lc4/b;->d(Landroid/net/Uri;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public c(Landroid/net/Uri;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/net/Uri;",
-            "II",
-            "Lcom/bumptech/glide/load/i;",
-            ")",
-            "Lcom/bumptech/glide/load/model/n$a<",
-            "Ljava/io/InputStream;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lc4/b;->a:Lcom/bumptech/glide/load/model/n;
-
-    new-instance v1, Lcom/bumptech/glide/load/model/g;
-
-    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {v1, p1}, Lcom/bumptech/glide/load/model/g;-><init>(Ljava/lang/String;)V
-
-    invoke-interface {v0, v1, p2, p3, p4}, Lcom/bumptech/glide/load/model/n;->a(Ljava/lang/Object;IILcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/model/n$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public d(Landroid/net/Uri;)Z
-    .locals 1
-
-    .line 1
-    sget-object v0, Lc4/b;->b:Ljava/util/Set;
-
-    invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
 .end method

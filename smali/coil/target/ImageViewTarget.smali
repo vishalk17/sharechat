@@ -12,16 +12,34 @@
     }
 .end annotation
 
+.annotation runtime Lkotlin/Metadata;
+    bv = {}
+    d1 = {
+        "\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0008\u0016\u0018\u00002\u0008\u0012\u0004\u0012\u00020\u00020\u0001\u00a8\u0006\u0003"
+    }
+    d2 = {
+        "Lcoil/target/ImageViewTarget;",
+        "Lcoil/target/GenericViewTarget;",
+        "Landroid/widget/ImageView;",
+        "coil-base_release"
+    }
+    k = 0x1
+    mv = {
+        0x1,
+        0x6,
+        0x0
+    }
+.end annotation
+
 
 # instance fields
-.field private final c:Landroid/widget/ImageView;
+.field public final c:Landroid/widget/ImageView;
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcoil/target/GenericViewTarget;-><init>()V
 
     iput-object p1, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
@@ -31,14 +49,13 @@
 
 
 # virtual methods
-.method public a()Landroid/graphics/drawable/Drawable;
+.method public final a()Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
+    iget-object v0, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
 
-    move-result-object v0
-
+    .line 2
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -46,7 +63,19 @@
     return-object v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final c(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
+
+    .line 2
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+
+    return-void
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
     const/4 v0, 0x1
@@ -61,17 +90,17 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
+    .line 2
+    iget-object v1, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
 
-    move-result-object v1
-
+    .line 3
     check-cast p1, Lcoil/target/ImageViewTarget;
 
-    invoke-virtual {p1}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
+    .line 4
+    iget-object p1, p1, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
 
-    move-result-object p1
-
-    invoke-static {v1, p1}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 5
+    invoke-static {v1, p1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -86,50 +115,24 @@
     return v0
 .end method
 
-.method public bridge synthetic getView()Landroid/view/View;
+.method public final getView()Landroid/view/View;
     .locals 1
 
-    .line 1
-    invoke-virtual {p0}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
-
-    move-result-object v0
+    iget-object v0, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
 
     return-object v0
 .end method
 
-.method public hashCode()I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/ImageView;->hashCode()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public i(Landroid/graphics/drawable/Drawable;)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcoil/target/ImageViewTarget;->n()Landroid/widget/ImageView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public n()Landroid/widget/ImageView;
+.method public final hashCode()I
     .locals 1
 
     .line 1
     iget-object v0, p0, Lcoil/target/ImageViewTarget;->c:Landroid/widget/ImageView;
 
-    return-object v0
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    return v0
 .end method

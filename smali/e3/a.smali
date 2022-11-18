@@ -2,72 +2,56 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Le3/g;
 
-
-# instance fields
-.field private final a:Le3/h;
+# static fields
+.field public static final a:Le3/a;
 
 
 # direct methods
-.method public constructor <init>(Le3/h;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Le3/a;
+
+    invoke-direct {v0}, Le3/a;-><init>()V
+
+    sput-object v0, Le3/a;->a:Le3/a;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Le3/a;->a:Le3/h;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(I)V
-    .locals 0
+.method public final a(Landroid/content/Context;Lr4/g;ILandroid/os/Handler;Lr4/j$c;)V
+    .locals 8
 
-    return-void
-.end method
+    const-string v0, "handler"
 
-.method public b()V
-    .locals 0
+    invoke-static {p4, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-void
-.end method
+    const/4 v4, 0x0
 
-.method public c(Lcoil/memory/MemoryCache$Key;)Lcoil/memory/MemoryCache$b;
-    .locals 0
+    const/4 v5, 0x0
 
-    const/4 p1, 0x0
+    move-object v1, p1
 
-    return-object p1
-.end method
+    move-object v2, p2
 
-.method public d(Lcoil/memory/MemoryCache$Key;Landroid/graphics/Bitmap;Ljava/util/Map;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcoil/memory/MemoryCache$Key;",
-            "Landroid/graphics/Bitmap;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "+",
-            "Ljava/lang/Object;",
-            ">;)V"
-        }
-    .end annotation
+    move v3, p3
 
-    .line 1
-    iget-object v0, p0, Le3/a;->a:Le3/h;
+    move-object v6, p4
 
-    invoke-static {p2}, Lcoil/util/a;->a(Landroid/graphics/Bitmap;)I
+    move-object v7, p5
 
-    move-result v1
-
-    invoke-interface {v0, p1, p2, p3, v1}, Le3/h;->d(Lcoil/memory/MemoryCache$Key;Landroid/graphics/Bitmap;Ljava/util/Map;I)V
+    invoke-static/range {v1 .. v7}, Lr4/j;->a(Landroid/content/Context;Lr4/g;IZILandroid/os/Handler;Lr4/j$c;)Landroid/graphics/Typeface;
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class Landroidx/fragment/app/DialogFragment$b;
+.class public final Landroidx/fragment/app/DialogFragment$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/fragment/app/DialogFragment;
+.field public final synthetic b:Landroidx/fragment/app/DialogFragment;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/DialogFragment;)V
+.method public constructor <init>(Landroidx/fragment/app/DialogFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/DialogFragment$b;->b:Landroidx/fragment/app/DialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public onCancel(Landroid/content/DialogInterface;)V
+.method public final onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
     .line 1

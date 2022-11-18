@@ -19,10 +19,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lin/mohalla/sharechat/settings/getuserdetails/k;->values()[Lin/mohalla/sharechat/settings/getuserdetails/k;
+    invoke-static {}, Lxl0/g;->values()[Lxl0/g;
 
     move-result-object v0
 
@@ -30,7 +30,7 @@
 
     new-array v0, v0, [I
 
-    sget-object v1, Lin/mohalla/sharechat/settings/getuserdetails/k;->GET_NAME:Lin/mohalla/sharechat/settings/getuserdetails/k;
+    sget-object v1, Lxl0/g;->GET_NAME:Lxl0/g;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,7 +40,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Lin/mohalla/sharechat/settings/getuserdetails/k;->GET_GENDER:Lin/mohalla/sharechat/settings/getuserdetails/k;
+    sget-object v1, Lxl0/g;->GET_GENDER:Lxl0/g;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

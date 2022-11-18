@@ -13,7 +13,6 @@
         Lcoil/video/R$id;,
         Lcoil/video/R$integer;,
         Lcoil/video/R$layout;,
-        Lcoil/video/R$menu;,
         Lcoil/video/R$string;,
         Lcoil/video/R$style;,
         Lcoil/video/R$styleable;

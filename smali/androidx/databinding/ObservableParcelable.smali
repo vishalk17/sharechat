@@ -14,8 +14,7 @@
         ">",
         "Landroidx/databinding/i<",
         "TT;>;",
-        "Landroid/os/Parcelable;",
-        "Ljava/io/Serializable;"
+        "Landroid/os/Parcelable;"
     }
 .end annotation
 
@@ -31,14 +30,13 @@
     .end annotation
 .end field
 
-.field static final serialVersionUID:J = 0x1L
+.field public static final serialVersionUID:J = 0x1L
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/databinding/ObservableParcelable$a;
 
     invoke-direct {v0}, Landroidx/databinding/ObservableParcelable$a;-><init>()V
@@ -73,7 +71,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -81,14 +79,13 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/databinding/i;->f()Ljava/lang/Object;
+    iget-object p2, p0, Landroidx/databinding/i;->c:Ljava/lang/Object;
 
-    move-result-object p2
-
+    .line 2
     check-cast p2, Landroid/os/Parcelable;
 
     const/4 v0, 0x0

@@ -1,1356 +1,1878 @@
-.class public Landroidx/appcompat/widget/m0;
-.super Ljava/lang/Object;
+.class public final Landroidx/appcompat/widget/m0;
+.super Lz4/c;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/appcompat/widget/t;
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/appcompat/widget/m0$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final synthetic z:I
 
 
 # instance fields
-.field a:Landroidx/appcompat/widget/Toolbar;
+.field public final m:Landroidx/appcompat/widget/SearchView;
 
-.field private b:I
+.field public final n:Landroid/app/SearchableInfo;
 
-.field private c:Landroid/view/View;
+.field public final o:Landroid/content/Context;
 
-.field private d:Landroid/view/View;
+.field public final p:Ljava/util/WeakHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/WeakHashMap<",
+            "Ljava/lang/String;",
+            "Landroid/graphics/drawable/Drawable$ConstantState;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private e:Landroid/graphics/drawable/Drawable;
+.field public final q:I
 
-.field private f:Landroid/graphics/drawable/Drawable;
+.field public r:I
 
-.field private g:Landroid/graphics/drawable/Drawable;
+.field public s:Landroid/content/res/ColorStateList;
 
-.field private h:Z
+.field public t:I
 
-.field i:Ljava/lang/CharSequence;
+.field public u:I
 
-.field private j:Ljava/lang/CharSequence;
+.field public v:I
 
-.field private k:Ljava/lang/CharSequence;
+.field public w:I
 
-.field l:Landroid/view/Window$Callback;
+.field public x:I
 
-.field m:Z
-
-.field private n:Landroidx/appcompat/widget/ActionMenuPresenter;
-
-.field private o:I
-
-.field private p:I
-
-.field private q:Landroid/graphics/drawable/Drawable;
+.field public y:I
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/Toolbar;Z)V
-    .locals 2
+.method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/widget/SearchView;Landroid/app/SearchableInfo;Ljava/util/WeakHashMap;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Landroidx/appcompat/widget/SearchView;",
+            "Landroid/app/SearchableInfo;",
+            "Ljava/util/WeakHashMap<",
+            "Ljava/lang/String;",
+            "Landroid/graphics/drawable/Drawable$ConstantState;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    sget v0, Landroidx/appcompat/R$string;->abc_action_bar_up_description:I
+    invoke-virtual {p2}, Landroidx/appcompat/widget/SearchView;->getSuggestionRowLayout()I
 
-    sget v1, Landroidx/appcompat/R$drawable;->abc_ic_ab_back_material:I
+    move-result v0
 
-    invoke-direct {p0, p1, p2, v0, v1}, Landroidx/appcompat/widget/m0;-><init>(Landroidx/appcompat/widget/Toolbar;ZII)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroidx/appcompat/widget/Toolbar;ZII)V
-    .locals 3
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 p4, 0x0
-
-    .line 3
-    iput p4, p0, Landroidx/appcompat/widget/m0;->o:I
-
-    .line 4
-    iput p4, p0, Landroidx/appcompat/widget/m0;->p:I
-
-    .line 5
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    .line 6
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getTitle()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/widget/m0;->i:Ljava/lang/CharSequence;
-
-    .line 7
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getSubtitle()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/widget/m0;->j:Ljava/lang/CharSequence;
-
-    .line 8
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->i:Ljava/lang/CharSequence;
-
-    if-eqz v0, :cond_0
+    invoke-direct {p0, p1, v0}, Lz4/c;-><init>(Landroid/content/Context;I)V
 
     const/4 v0, 0x1
 
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    iput-boolean v0, p0, Landroidx/appcompat/widget/m0;->h:Z
-
-    .line 9
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/widget/m0;->g:Landroid/graphics/drawable/Drawable;
-
-    .line 10
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    sget-object v1, Landroidx/appcompat/R$styleable;->ActionBar:[I
-
-    sget v2, Landroidx/appcompat/R$attr;->actionBarStyle:I
-
-    invoke-static {p1, v0, v1, v2, p4}, Landroidx/appcompat/widget/l0;->v(Landroid/content/Context;Landroid/util/AttributeSet;[III)Landroidx/appcompat/widget/l0;
-
-    move-result-object p1
-
-    .line 11
-    sget v0, Landroidx/appcompat/R$styleable;->ActionBar_homeAsUpIndicator:I
-
-    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/l0;->g(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v0
-
-    iput-object v0, p0, Landroidx/appcompat/widget/m0;->q:Landroid/graphics/drawable/Drawable;
-
-    if-eqz p2, :cond_c
-
-    .line 12
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_title:I
-
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/l0;->p(I)Ljava/lang/CharSequence;
-
-    move-result-object p2
-
-    .line 13
-    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 14
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->setTitle(Ljava/lang/CharSequence;)V
-
-    .line 15
-    :cond_1
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_subtitle:I
-
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/l0;->p(I)Ljava/lang/CharSequence;
-
-    move-result-object p2
-
-    .line 16
-    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    .line 17
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->D(Ljava/lang/CharSequence;)V
-
-    .line 18
-    :cond_2
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_logo:I
-
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/l0;->g(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_3
-
-    .line 19
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->z(Landroid/graphics/drawable/Drawable;)V
-
-    .line 20
-    :cond_3
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_icon:I
-
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/l0;->g(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_4
-
-    .line 21
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->setIcon(Landroid/graphics/drawable/Drawable;)V
-
-    .line 22
-    :cond_4
-    iget-object p2, p0, Landroidx/appcompat/widget/m0;->g:Landroid/graphics/drawable/Drawable;
-
-    if-nez p2, :cond_5
-
-    iget-object p2, p0, Landroidx/appcompat/widget/m0;->q:Landroid/graphics/drawable/Drawable;
-
-    if-eqz p2, :cond_5
-
-    .line 23
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->C(Landroid/graphics/drawable/Drawable;)V
-
-    .line 24
-    :cond_5
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_displayOptions:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->k(II)I
-
-    move-result p2
-
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->i(I)V
-
-    .line 25
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_customNavigationLayout:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->n(II)I
-
-    move-result p2
-
-    if-eqz p2, :cond_6
-
-    .line 26
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p2, v1, p4}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p2
-
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->o(Landroid/view/View;)V
-
-    .line 27
-    iget p2, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    or-int/lit8 p2, p2, 0x10
-
-    invoke-virtual {p0, p2}, Landroidx/appcompat/widget/m0;->i(I)V
-
-    .line 28
-    :cond_6
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_height:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->m(II)I
-
-    move-result p2
-
-    if-lez p2, :cond_7
-
-    .line 29
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v0
-
-    .line 30
-    iput p2, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
-
-    .line 31
-    iget-object p2, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p2, v0}, Landroid/view/ViewGroup;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 32
-    :cond_7
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_contentInsetStart:I
+    .line 2
+    iput v0, p0, Landroidx/appcompat/widget/m0;->r:I
 
     const/4 v0, -0x1
 
-    invoke-virtual {p1, p2, v0}, Landroidx/appcompat/widget/l0;->e(II)I
-
-    move-result p2
-
-    .line 33
-    sget v1, Landroidx/appcompat/R$styleable;->ActionBar_contentInsetEnd:I
-
-    invoke-virtual {p1, v1, v0}, Landroidx/appcompat/widget/l0;->e(II)I
-
-    move-result v0
-
-    if-gez p2, :cond_8
-
-    if-ltz v0, :cond_9
-
-    .line 34
-    :cond_8
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-static {p2, p4}, Ljava/lang/Math;->max(II)I
-
-    move-result p2
-
-    .line 35
-    invoke-static {v0, p4}, Ljava/lang/Math;->max(II)I
-
-    move-result v0
-
-    .line 36
-    invoke-virtual {v1, p2, v0}, Landroidx/appcompat/widget/Toolbar;->setContentInsetsRelative(II)V
-
-    .line 37
-    :cond_9
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_titleTextStyle:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->n(II)I
-
-    move-result p2
-
-    if-eqz p2, :cond_a
-
-    .line 38
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, p2}, Landroidx/appcompat/widget/Toolbar;->setTitleTextAppearance(Landroid/content/Context;I)V
-
-    .line 39
-    :cond_a
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_subtitleTextStyle:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->n(II)I
-
-    move-result p2
-
-    if-eqz p2, :cond_b
-
-    .line 40
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, p2}, Landroidx/appcompat/widget/Toolbar;->setSubtitleTextAppearance(Landroid/content/Context;I)V
-
-    .line 41
-    :cond_b
-    sget p2, Landroidx/appcompat/R$styleable;->ActionBar_popupTheme:I
-
-    invoke-virtual {p1, p2, p4}, Landroidx/appcompat/widget/l0;->n(II)I
-
-    move-result p2
-
-    if-eqz p2, :cond_d
-
-    .line 42
-    iget-object p4, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p4, p2}, Landroidx/appcompat/widget/Toolbar;->setPopupTheme(I)V
-
-    goto :goto_1
-
-    .line 43
-    :cond_c
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->x()I
-
-    move-result p2
-
-    iput p2, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    .line 44
-    :cond_d
-    :goto_1
-    invoke-virtual {p1}, Landroidx/appcompat/widget/l0;->w()V
-
-    .line 45
-    invoke-virtual {p0, p3}, Landroidx/appcompat/widget/m0;->y(I)V
-
-    .line 46
-    iget-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationContentDescription()Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->k:Ljava/lang/CharSequence;
-
-    .line 47
-    iget-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    new-instance p2, Landroidx/appcompat/widget/m0$a;
-
-    invoke-direct {p2, p0}, Landroidx/appcompat/widget/m0$a;-><init>(Landroidx/appcompat/widget/m0;)V
-
-    invoke-virtual {p1, p2}, Landroidx/appcompat/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    return-void
-.end method
-
-.method private E(Ljava/lang/CharSequence;)V
-    .locals 1
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->i:Ljava/lang/CharSequence;
-
-    .line 2
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v0, v0, 0x8
-
-    if-eqz v0, :cond_0
-
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/Toolbar;->setTitle(Ljava/lang/CharSequence;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method private F()V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v0, v0, 0x4
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->k:Ljava/lang/CharSequence;
-
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    iget v1, p0, Landroidx/appcompat/widget/m0;->p:I
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationContentDescription(I)V
-
-    goto :goto_0
+    iput v0, p0, Landroidx/appcompat/widget/m0;->t:I
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    iput v0, p0, Landroidx/appcompat/widget/m0;->u:I
 
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->k:Ljava/lang/CharSequence;
+    .line 5
+    iput v0, p0, Landroidx/appcompat/widget/m0;->v:I
 
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationContentDescription(Ljava/lang/CharSequence;)V
+    .line 6
+    iput v0, p0, Landroidx/appcompat/widget/m0;->w:I
 
-    :cond_1
-    :goto_0
+    .line 7
+    iput v0, p0, Landroidx/appcompat/widget/m0;->x:I
+
+    .line 8
+    iput v0, p0, Landroidx/appcompat/widget/m0;->y:I
+
+    .line 9
+    iput-object p2, p0, Landroidx/appcompat/widget/m0;->m:Landroidx/appcompat/widget/SearchView;
+
+    .line 10
+    iput-object p3, p0, Landroidx/appcompat/widget/m0;->n:Landroid/app/SearchableInfo;
+
+    .line 11
+    invoke-virtual {p2}, Landroidx/appcompat/widget/SearchView;->getSuggestionCommitIconResId()I
+
+    move-result p2
+
+    iput p2, p0, Landroidx/appcompat/widget/m0;->q:I
+
+    .line 12
+    iput-object p1, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    .line 13
+    iput-object p4, p0, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
     return-void
 .end method
 
-.method private G()V
+.method public static i(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 2
 
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v0, v0, 0x4
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->g:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->q:Landroid/graphics/drawable/Drawable;
-
-    :goto_0
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationIcon(Landroid/graphics/drawable/Drawable;)V
-
-    goto :goto_1
-
-    .line 3
-    :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/widget/Toolbar;->setNavigationIcon(Landroid/graphics/drawable/Drawable;)V
-
-    :goto_1
-    return-void
-.end method
-
-.method private H()V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v1, v0, 0x2
-
-    if-eqz v1, :cond_2
-
-    and-int/lit8 v0, v0, 0x1
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->f:Landroid/graphics/drawable/Drawable;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->e:Landroid/graphics/drawable/Drawable;
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->e:Landroid/graphics/drawable/Drawable;
-
-    goto :goto_0
-
-    :cond_2
     const/4 v0, 0x0
 
-    .line 4
-    :goto_0
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    const/4 v1, -0x1
 
-    invoke-virtual {v1, v0}, Landroidx/appcompat/widget/Toolbar;->setLogo(Landroid/graphics/drawable/Drawable;)V
+    if-ne p1, v1, :cond_0
 
-    return-void
-.end method
-
-.method private x()I
-    .locals 2
+    return-object v0
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    :cond_0
+    :try_start_0
+    invoke-interface {p0, p1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v0
+    return-object p0
 
-    if-eqz v0, :cond_0
+    :catch_0
+    move-exception p0
 
-    const/16 v0, 0xf
+    const-string p1, "SuggestionsAdapter"
+
+    const-string v1, "unexpected error retrieving valid column from cursor, did the remote process die?"
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    invoke-static {p1, v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    invoke-virtual {v1}, Landroidx/appcompat/widget/Toolbar;->getNavigationIcon()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v1
-
-    iput-object v1, p0, Landroidx/appcompat/widget/m0;->q:Landroid/graphics/drawable/Drawable;
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v0, 0xb
-
-    :goto_0
-    return v0
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public A(I)V
-    .locals 1
+.method public final b(Landroid/view/View;Landroid/database/Cursor;)V
+    .locals 17
 
-    if-nez p1, :cond_0
+    move-object/from16 v1, p0
 
-    const/4 p1, 0x0
+    move-object/from16 v2, p2
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Landroidx/appcompat/widget/m0$a;
+
+    .line 2
+    iget v0, v1, Landroidx/appcompat/widget/m0;->y:I
+
+    const/4 v4, 0x0
+
+    const/4 v5, -0x1
+
+    if-eq v0, v5, :cond_0
+
+    .line 3
+    invoke-interface {v2, v0}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v0
+
+    move v5, v0
 
     goto :goto_0
 
-    .line 1
     :cond_0
-    invoke-virtual {p0}, Landroidx/appcompat/widget/m0;->getContext()Landroid/content/Context;
+    const/4 v0, 0x0
 
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    :goto_0
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/m0;->B(Ljava/lang/CharSequence;)V
-
-    return-void
-.end method
-
-.method public B(Ljava/lang/CharSequence;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->k:Ljava/lang/CharSequence;
-
-    .line 2
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->F()V
-
-    return-void
-.end method
-
-.method public C(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->g:Landroid/graphics/drawable/Drawable;
-
-    .line 2
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->G()V
-
-    return-void
-.end method
-
-.method public D(Ljava/lang/CharSequence;)V
-    .locals 1
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->j:Ljava/lang/CharSequence;
-
-    .line 2
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v0, v0, 0x8
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/Toolbar;->setSubtitle(Ljava/lang/CharSequence;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public a()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->canShowOverflowMenu()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public b()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->showOverflowMenu()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->isOverflowMenuShowing()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public collapseActionView()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->collapseActionView()V
-
-    return-void
-.end method
-
-.method public d()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->hideOverflowMenu()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public e(Landroid/view/Menu;Landroidx/appcompat/view/menu/m$a;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->n:Landroidx/appcompat/widget/ActionMenuPresenter;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter;
-
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroidx/appcompat/widget/ActionMenuPresenter;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Landroidx/appcompat/widget/m0;->n:Landroidx/appcompat/widget/ActionMenuPresenter;
-
-    .line 3
-    sget v1, Landroidx/appcompat/R$id;->action_menu_presenter:I
-
-    invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/b;->r(I)V
+    const/4 v5, 0x0
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->n:Landroidx/appcompat/widget/ActionMenuPresenter;
+    :goto_0
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p2}, Landroidx/appcompat/view/menu/b;->i(Landroidx/appcompat/view/menu/m$a;)V
+    const/16 v6, 0x8
+
+    if-eqz v0, :cond_2
 
     .line 5
-    iget-object p2, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    iget v0, v1, Landroidx/appcompat/widget/m0;->t:I
 
-    check-cast p1, Landroidx/appcompat/view/menu/g;
-
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->n:Landroidx/appcompat/widget/ActionMenuPresenter;
-
-    invoke-virtual {p2, p1, v0}, Landroidx/appcompat/widget/Toolbar;->setMenu(Landroidx/appcompat/view/menu/g;Landroidx/appcompat/widget/ActionMenuPresenter;)V
-
-    return-void
-.end method
-
-.method public f()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Landroidx/appcompat/widget/m0;->m:Z
-
-    return-void
-.end method
-
-.method public g()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->isOverflowMenuShowPending()Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public getContext()Landroid/content/Context;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-static {v2, v0}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    .line 6
+    iget-object v7, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
-.method public getTitle()Ljava/lang/CharSequence;
-    .locals 1
+    .line 7
+    invoke-virtual {v7, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getTitle()Ljava/lang/CharSequence;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public h()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->hasExpandedActionView()Z
+    .line 8
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    return v0
-.end method
+    if-eqz v0, :cond_1
 
-.method public i(I)V
-    .locals 3
+    .line 9
+    invoke-virtual {v7, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
+    goto :goto_1
 
-    xor-int/2addr v0, p1
+    .line 10
+    :cond_1
+    invoke-virtual {v7, v4}, Landroid/view/View;->setVisibility(I)V
 
-    .line 2
-    iput p1, p0, Landroidx/appcompat/widget/m0;->b:I
+    .line 11
+    :cond_2
+    :goto_1
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->b:Landroid/widget/TextView;
+
+    const/4 v7, 0x2
+
+    const/4 v8, 0x1
+
+    if-eqz v0, :cond_8
+
+    .line 12
+    iget v0, v1, Landroidx/appcompat/widget/m0;->v:I
+
+    invoke-static {v2, v0}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    .line 13
+    iget-object v9, v1, Landroidx/appcompat/widget/m0;->s:Landroid/content/res/ColorStateList;
+
+    if-nez v9, :cond_3
+
+    .line 14
+    new-instance v9, Landroid/util/TypedValue;
+
+    invoke-direct {v9}, Landroid/util/TypedValue;-><init>()V
+
+    .line 15
+    iget-object v10, v1, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v10}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    move-result-object v10
+
+    sget v11, Landroidx/appcompat/R$attr;->textColorSearchUrl:I
+
+    invoke-virtual {v10, v11, v9, v8}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
+
+    .line 16
+    iget-object v10, v1, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v10
+
+    iget v9, v9, Landroid/util/TypedValue;->resourceId:I
+
+    invoke-virtual {v10, v9}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v9
+
+    iput-object v9, v1, Landroidx/appcompat/widget/m0;->s:Landroid/content/res/ColorStateList;
+
+    .line 17
+    :cond_3
+    new-instance v9, Landroid/text/SpannableString;
+
+    invoke-direct {v9, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+
+    .line 18
+    new-instance v15, Landroid/text/style/TextAppearanceSpan;
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x0
+
+    iget-object v14, v1, Landroidx/appcompat/widget/m0;->s:Landroid/content/res/ColorStateList;
+
+    const/16 v16, 0x0
+
+    move-object v10, v15
+
+    move-object v6, v15
+
+    move-object/from16 v15, v16
+
+    invoke-direct/range {v10 .. v15}, Landroid/text/style/TextAppearanceSpan;-><init>(Ljava/lang/String;IILandroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
+
+    .line 19
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    const/16 v10, 0x21
+
+    .line 20
+    invoke-virtual {v9, v6, v4, v0, v10}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    goto :goto_2
+
+    .line 21
+    :cond_4
+    iget v0, v1, Landroidx/appcompat/widget/m0;->u:I
+
+    invoke-static {v2, v0}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 22
+    :goto_2
+    invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    .line 23
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
     if-eqz v0, :cond_6
 
-    and-int/lit8 v1, v0, 0x4
+    .line 24
+    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setSingleLine(Z)V
 
-    if-eqz v1, :cond_1
+    .line 25
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
-    and-int/lit8 v1, p1, 0x4
+    invoke-virtual {v0, v7}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    if-eqz v1, :cond_0
+    goto :goto_3
 
-    .line 3
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->F()V
+    .line 26
+    :cond_5
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
-    .line 4
-    :cond_0
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->G()V
+    if-eqz v0, :cond_6
 
-    :cond_1
-    and-int/lit8 v1, v0, 0x3
+    .line 27
+    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setSingleLine(Z)V
 
-    if-eqz v1, :cond_2
+    .line 28
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
 
-    .line 5
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->H()V
+    invoke-virtual {v0, v8}, Landroid/widget/TextView;->setMaxLines(I)V
 
-    :cond_2
-    and-int/lit8 v1, v0, 0x8
+    .line 29
+    :cond_6
+    :goto_3
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->b:Landroid/widget/TextView;
 
-    if-eqz v1, :cond_4
+    .line 30
+    invoke-virtual {v0, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    and-int/lit8 v1, p1, 0x8
+    .line 31
+    invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    if-eqz v1, :cond_3
+    move-result v6
 
-    .line 6
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    if-eqz v6, :cond_7
 
-    iget-object v2, p0, Landroidx/appcompat/widget/m0;->i:Ljava/lang/CharSequence;
+    const/16 v6, 0x8
 
-    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/Toolbar;->setTitle(Ljava/lang/CharSequence;)V
+    .line 32
+    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
 
-    .line 7
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    goto :goto_4
 
-    iget-object v2, p0, Landroidx/appcompat/widget/m0;->j:Ljava/lang/CharSequence;
+    .line 33
+    :cond_7
+    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/Toolbar;->setSubtitle(Ljava/lang/CharSequence;)V
+    .line 34
+    :cond_8
+    :goto_4
+    iget-object v6, v3, Landroidx/appcompat/widget/m0$a;->c:Landroid/widget/ImageView;
 
-    goto :goto_0
+    if-eqz v6, :cond_11
 
-    .line 8
-    :cond_3
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    .line 35
+    iget v0, v1, Landroidx/appcompat/widget/m0;->w:I
+
+    const/4 v9, -0x1
+
+    if-ne v0, v9, :cond_9
+
+    const/4 v0, 0x0
+
+    goto/16 :goto_8
+
+    .line 36
+    :cond_9
+    invoke-interface {v2, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 37
+    invoke-virtual {v1, v0}, Landroidx/appcompat/widget/m0;->g(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_a
+
+    goto/16 :goto_8
+
+    .line 38
+    :cond_a
+    iget-object v0, v1, Landroidx/appcompat/widget/m0;->n:Landroid/app/SearchableInfo;
+
+    invoke-virtual {v0}, Landroid/app/SearchableInfo;->getSearchActivity()Landroid/content/ComponentName;
+
+    move-result-object v0
+
+    .line 39
+    invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 40
+    iget-object v10, v1, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v10, v9}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_c
+
+    .line 41
+    iget-object v0, v1, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v0, v9}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/graphics/drawable/Drawable$ConstantState;
+
+    if-nez v0, :cond_b
+
+    const/4 v0, 0x0
+
+    goto :goto_7
+
+    .line 42
+    :cond_b
+    iget-object v9, v1, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    invoke-virtual {v0, v9}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    goto :goto_7
+
+    :cond_c
+    const-string v10, "SuggestionsAdapter"
+
+    .line 43
+    iget-object v11, v1, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v11}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v11
+
+    const/16 v12, 0x80
+
+    .line 44
+    :try_start_0
+    invoke-virtual {v11, v0, v12}, Landroid/content/pm/PackageManager;->getActivityInfo(Landroid/content/ComponentName;I)Landroid/content/pm/ActivityInfo;
+
+    move-result-object v12
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 45
+    invoke-virtual {v12}, Landroid/content/pm/ComponentInfo;->getIconResource()I
+
+    move-result v13
+
+    if-nez v13, :cond_d
+
+    goto :goto_5
+
+    .line 46
+    :cond_d
+    invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v14
+
+    .line 47
+    iget-object v12, v12, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    invoke-virtual {v11, v14, v13, v12}, Landroid/content/pm/PackageManager;->getDrawable(Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v11
+
+    if-nez v11, :cond_e
+
+    const-string v11, "Invalid icon resource "
+
+    const-string v12, " for "
+
+    .line 48
+    invoke-static {v11, v13, v12}, Landroidx/appcompat/widget/l0;->c(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    .line 49
+    invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 50
+    invoke-static {v10, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_5
+
+    :catch_0
+    move-exception v0
+
+    move-object v11, v0
+
+    .line 51
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v10, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_5
+    const/4 v11, 0x0
+
+    :cond_e
+    if-nez v11, :cond_f
+
+    const/4 v0, 0x0
+
+    goto :goto_6
+
+    .line 52
+    :cond_f
+    invoke-virtual {v11}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
+
+    move-result-object v0
+
+    .line 53
+    :goto_6
+    iget-object v10, v1, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v10, v9, v0}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-object v0, v11
+
+    :goto_7
+    if-eqz v0, :cond_10
+
+    goto :goto_8
+
+    .line 54
+    :cond_10
+    iget-object v0, v1, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/pm/PackageManager;->getDefaultActivityIcon()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    :goto_8
+    const/4 v9, 0x4
+
+    .line 55
+    invoke-virtual {v1, v6, v0, v9}, Landroidx/appcompat/widget/m0;->j(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
+
+    .line 56
+    :cond_11
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->d:Landroid/widget/ImageView;
+
+    if-eqz v0, :cond_13
+
+    .line 57
+    iget v6, v1, Landroidx/appcompat/widget/m0;->x:I
+
+    const/4 v9, -0x1
+
+    if-ne v6, v9, :cond_12
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/Toolbar;->setTitle(Ljava/lang/CharSequence;)V
+    goto :goto_9
+
+    .line 58
+    :cond_12
+    invoke-interface {v2, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 59
+    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/m0;->g(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    :goto_9
+    const/16 v6, 0x8
+
+    .line 60
+    invoke-virtual {v1, v0, v2, v6}, Landroidx/appcompat/widget/m0;->j(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
+
+    .line 61
+    :cond_13
+    iget v0, v1, Landroidx/appcompat/widget/m0;->r:I
+
+    if-eq v0, v7, :cond_15
+
+    if-ne v0, v8, :cond_14
+
+    and-int/lit8 v0, v5, 0x1
+
+    if-eqz v0, :cond_14
+
+    goto :goto_a
+
+    .line 62
+    :cond_14
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->e:Landroid/widget/ImageView;
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    goto :goto_b
+
+    .line 63
+    :cond_15
+    :goto_a
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->e:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 64
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->e:Landroid/widget/ImageView;
+
+    iget-object v2, v3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
+
+    invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 65
+    iget-object v0, v3, Landroidx/appcompat/widget/m0$a;->e:Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :goto_b
+    return-void
+.end method
+
+.method public final c(Landroid/database/Cursor;)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    invoke-super {p0, p1}, Lz4/a;->c(Landroid/database/Cursor;)V
+
+    if-eqz p1, :cond_0
+
+    const-string v0, "suggest_text_1"
+
+    .line 2
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/widget/m0;->t:I
+
+    const-string v0, "suggest_text_2"
+
+    .line 3
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/widget/m0;->u:I
+
+    const-string v0, "suggest_text_2_url"
+
+    .line 4
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/widget/m0;->v:I
+
+    const-string v0, "suggest_icon_1"
+
+    .line 5
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/widget/m0;->w:I
+
+    const-string v0, "suggest_icon_2"
+
+    .line 6
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    iput v0, p0, Landroidx/appcompat/widget/m0;->x:I
+
+    const-string v0, "suggest_flags"
+
+    .line 7
+    invoke-interface {p1, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result p1
+
+    iput p1, p0, Landroidx/appcompat/widget/m0;->y:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    const-string v0, "SuggestionsAdapter"
+
+    const-string v1, "error changing cursor and caching columns"
+
+    .line 8
+    invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public final d(Landroid/database/Cursor;)Ljava/lang/CharSequence;
+    .locals 2
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v1, "suggest_intent_query"
+
+    .line 1
+    invoke-interface {p1, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 2
+    invoke-static {p1, v1}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    return-object v1
+
+    .line 3
+    :cond_1
+    iget-object v1, p0, Landroidx/appcompat/widget/m0;->n:Landroid/app/SearchableInfo;
+
+    invoke-virtual {v1}, Landroid/app/SearchableInfo;->shouldRewriteQueryFromData()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const-string v1, "suggest_intent_data"
+
+    .line 4
+    invoke-interface {p1, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 5
+    invoke-static {p1, v1}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_2
+
+    return-object v1
+
+    .line 6
+    :cond_2
+    iget-object v1, p0, Landroidx/appcompat/widget/m0;->n:Landroid/app/SearchableInfo;
+
+    invoke-virtual {v1}, Landroid/app/SearchableInfo;->shouldRewriteQueryFromText()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const-string v1, "suggest_text_1"
+
+    .line 7
+    invoke-interface {p1, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    .line 8
+    invoke-static {p1, v1}, Landroidx/appcompat/widget/m0;->i(Landroid/database/Cursor;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_3
+
+    return-object p1
+
+    :cond_3
+    return-object v0
+.end method
+
+.method public final e(Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lz4/c;->l:Landroid/view/LayoutInflater;
+
+    iget v1, p0, Lz4/c;->j:I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    .line 2
+    new-instance v0, Landroidx/appcompat/widget/m0$a;
+
+    invoke-direct {v0, p1}, Landroidx/appcompat/widget/m0$a;-><init>(Landroid/view/View;)V
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 3
+    sget v0, Landroidx/appcompat/R$id;->edit_query:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    .line 4
+    iget v1, p0, Landroidx/appcompat/widget/m0;->q:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+
+    return-object p1
+.end method
+
+.method public final f(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/FileNotFoundException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 2
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    .line 3
+    :try_start_0
+    iget-object v1, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/content/pm/PackageManager;->getResourcesForApplication(Ljava/lang/String;)Landroid/content/res/Resources;
+
+    move-result-object v1
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 4
+    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    .line 5
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v3
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    if-ne v3, v5, :cond_0
+
+    .line 6
+    :try_start_1
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+    :try_end_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    .line 7
+    :catch_0
+    new-instance v0, Ljava/io/FileNotFoundException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "Single path segment is not a resource ID: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    const/4 v6, 0x2
+
+    if-ne v3, v6, :cond_2
+
+    .line 8
+    invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-interface {v2, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-virtual {v1, v3, v2, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    :goto_0
+    if-eqz v0, :cond_1
 
     .line 9
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {v1, v2}, Landroidx/appcompat/widget/Toolbar;->setSubtitle(Ljava/lang/CharSequence;)V
+    move-result-object p1
 
-    :cond_4
-    :goto_0
-    and-int/lit8 v0, v0, 0x10
-
-    if-eqz v0, :cond_6
+    return-object p1
 
     .line 10
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->d:Landroid/view/View;
+    :cond_1
+    new-instance v0, Ljava/io/FileNotFoundException;
 
-    if-eqz v0, :cond_6
+    new-instance v1, Ljava/lang/StringBuilder;
 
-    and-int/lit8 p1, p1, 0x10
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    if-eqz p1, :cond_5
+    const-string v2, "No resource found for: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 
     .line 11
-    iget-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    :cond_2
+    new-instance v0, Ljava/io/FileNotFoundException;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "More than two path segments: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 12
+    :cond_3
+    new-instance v0, Ljava/io/FileNotFoundException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "No path: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 13
+    :catch_1
+    new-instance v0, Ljava/io/FileNotFoundException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "No package found for authority: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 14
+    :cond_4
+    new-instance v0, Ljava/io/FileNotFoundException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "No authority: "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final g(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    .locals 7
+
+    const-string v0, "SuggestionsAdapter"
+
+    const/4 v1, 0x0
+
+    if-eqz p1, :cond_8
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v2
+
+    if-nez v2, :cond_8
+
+    const-string v2, "0"
+
+    invoke-virtual {v2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto/16 :goto_5
+
+    .line 2
+    :cond_0
+    :try_start_0
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v2
+
+    .line 3
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "android.resource://"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v4, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    .line 4
+    invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v4, "/"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 5
+    iget-object v4, p0, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v4, v3}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroid/graphics/drawable/Drawable$ConstantState;
+
+    if-nez v4, :cond_1
+
+    move-object v4, v1
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    invoke-virtual {v4}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
+    :goto_0
+    if-eqz v4, :cond_2
+
+    return-object v4
+
+    .line 7
+    :cond_2
+    iget-object v4, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    sget-object v5, Lg4/a;->a:Ljava/lang/Object;
+
+    .line 8
+    invoke-static {v4, v2}, Lg4/a$c;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_3
+
+    .line 9
+    iget-object v4, p0, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v3, v5}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :cond_3
+    return-object v2
+
+    .line 10
+    :catch_0
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Icon resource not found: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v1
+
+    .line 11
+    :catch_1
+    iget-object v2, p0, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v2, p1}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/graphics/drawable/Drawable$ConstantState;
+
+    if-nez v2, :cond_4
+
+    move-object v2, v1
 
     goto :goto_1
 
     .line 12
-    :cond_5
-    iget-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    :cond_4
+    invoke-virtual {v2}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    move-result-object v2
 
-    :cond_6
     :goto_1
-    return-void
+    if-eqz v2, :cond_5
+
+    return-object v2
+
+    .line 13
+    :cond_5
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    const-string v3, "Error closing icon stream for "
+
+    .line 14
+    :try_start_1
+    invoke-virtual {v2}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "android.resource"
+
+    .line 15
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+    :try_end_1
+    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_5
+
+    if-eqz v4, :cond_6
+
+    .line 16
+    :try_start_2
+    invoke-virtual {p0, v2}, Landroidx/appcompat/widget/m0;->f(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+    :try_end_2
+    .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_2
+    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_5
+
+    goto/16 :goto_4
+
+    .line 17
+    :catch_2
+    :try_start_3
+    new-instance v3, Ljava/io/FileNotFoundException;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Resource does not exist: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v3
+
+    .line 18
+    :cond_6
+    iget-object v4, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    move-result-object v4
+    :try_end_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_5
+
+    if-eqz v4, :cond_7
+
+    .line 19
+    :try_start_4
+    invoke-static {v4, v1}, Landroid/graphics/drawable/Drawable;->createFromStream(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v5
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    .line 20
+    :try_start_5
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+
+    goto :goto_2
+
+    :catch_3
+    move-exception v4
+
+    .line 21
+    :try_start_6
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v0, v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_5
+
+    :goto_2
+    move-object v1, v5
+
+    goto :goto_4
+
+    :catchall_0
+    move-exception v5
+
+    .line 22
+    :try_start_7
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_7
+    .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_4
+
+    goto :goto_3
+
+    :catch_4
+    move-exception v4
+
+    .line 23
+    :try_start_8
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v0, v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 24
+    :goto_3
+    throw v5
+
+    .line 25
+    :cond_7
+    new-instance v3, Ljava/io/FileNotFoundException;
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Failed to open "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+
+    throw v3
+    :try_end_8
+    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_5
+
+    :catch_5
+    move-exception v3
+
+    .line 26
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "Icon not found: "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, ", "
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    :goto_4
+    if-eqz v1, :cond_8
+
+    .line 27
+    iget-object v0, p0, Landroidx/appcompat/widget/m0;->p:Ljava/util/WeakHashMap;
+
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
+
+    move-result-object v2
+
+    invoke-virtual {v0, p1, v2}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_8
+    :goto_5
+    return-object v1
 .end method
 
-.method public j()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->o:I
-
-    return v0
-.end method
-
-.method public k()V
+.method public final getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
 
-    const-string v0, "ToolbarWidgetWrapper"
-
-    const-string v1, "Progress display unsupported"
-
     .line 1
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    :try_start_0
+    invoke-super {p0, p1, p2, p3}, Lz4/a;->getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
-    return-void
-.end method
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-.method public l(Z)V
-    .locals 1
+    return-object p1
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    :catch_0
+    move-exception p1
 
-    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/Toolbar;->setCollapsible(Z)V
+    const-string p2, "SuggestionsAdapter"
 
-    return-void
-.end method
-
-.method public m()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->dismissPopupMenus()V
-
-    return-void
-.end method
-
-.method public n()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    return v0
-.end method
-
-.method public o(Landroid/view/View;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->d:Landroid/view/View;
-
-    if-eqz v0, :cond_0
-
-    iget v1, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v1, v1, 0x10
-
-    if-eqz v1, :cond_0
+    const-string v0, "Search suggestions cursor threw exception."
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    invoke-static {p2, v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 3
-    :cond_0
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->d:Landroid/view/View;
+    iget-object p2, p0, Lz4/c;->l:Landroid/view/LayoutInflater;
 
-    if-eqz p1, :cond_1
+    iget v0, p0, Lz4/c;->k:I
 
-    .line 4
-    iget v0, p0, Landroidx/appcompat/widget/m0;->b:I
-
-    and-int/lit8 v0, v0, 0x10
-
-    if-eqz v0, :cond_1
-
-    .line 5
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public p()V
-    .locals 2
-
-    const-string v0, "ToolbarWidgetWrapper"
-
-    const-string v1, "Progress display unsupported"
-
-    .line 1
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    return-void
-.end method
-
-.method public q()Landroid/view/Menu;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->getMenu()Landroid/view/Menu;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public r(IJ)Landroidx/core/view/j0;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-static {v0}, Landroidx/core/view/c0;->e(Landroid/view/View;)Landroidx/core/view/j0;
-
-    move-result-object v0
-
-    if-nez p1, :cond_0
-
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    goto :goto_0
-
-    :cond_0
     const/4 v1, 0x0
 
-    .line 2
-    :goto_0
-    invoke-virtual {v0, v1}, Landroidx/core/view/j0;->a(F)Landroidx/core/view/j0;
-
-    move-result-object v0
-
-    .line 3
-    invoke-virtual {v0, p2, p3}, Landroidx/core/view/j0;->f(J)Landroidx/core/view/j0;
+    invoke-virtual {p2, v0, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p2
 
-    new-instance p3, Landroidx/appcompat/widget/m0$b;
-
-    invoke-direct {p3, p0, p1}, Landroidx/appcompat/widget/m0$b;-><init>(Landroidx/appcompat/widget/m0;I)V
+    if-eqz p2, :cond_0
 
     .line 4
-    invoke-virtual {p2, p3}, Landroidx/core/view/j0;->h(Landroidx/core/view/k0;)Landroidx/core/view/j0;
+    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Landroidx/appcompat/widget/m0$a;
+
+    .line 5
+    iget-object p3, p3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
+
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p3, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_0
+    return-object p2
+.end method
+
+.method public final getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    :try_start_0
+    invoke-super {p0, p1, p2, p3}, Lz4/a;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    :catch_0
+    move-exception p1
+
+    const-string p2, "SuggestionsAdapter"
+
+    const-string v0, "Search suggestions cursor threw exception."
+
+    .line 2
+    invoke-static {p2, v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    .line 3
+    invoke-virtual {p0, p3}, Landroidx/appcompat/widget/m0;->e(Landroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object p2
+
+    .line 4
+    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Landroidx/appcompat/widget/m0$a;
+
+    .line 5
+    iget-object p3, p3, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
+
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p3, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    return-object p2
+.end method
+
+.method public final h(Landroid/app/SearchableInfo;Ljava/lang/String;)Landroid/database/Cursor;
+    .locals 9
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    .line 1
+    :cond_0
+    invoke-virtual {p1}, Landroid/app/SearchableInfo;->getSuggestAuthority()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    return-object v0
+
+    .line 2
+    :cond_1
+    new-instance v2, Landroid/net/Uri$Builder;
+
+    invoke-direct {v2}, Landroid/net/Uri$Builder;-><init>()V
+
+    const-string v3, "content"
+
+    .line 3
+    invoke-virtual {v2, v3}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v2
+
+    .line 4
+    invoke-virtual {v2, v1}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v1
+
+    const-string v2, ""
+
+    .line 5
+    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->query(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v1
+
+    .line 6
+    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->fragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {p1}, Landroid/app/SearchableInfo;->getSuggestPath()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_2
+
+    .line 8
+    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->appendEncodedPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    :cond_2
+    const-string v2, "search_suggest_query"
+
+    .line 9
+    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    .line 10
+    invoke-virtual {p1}, Landroid/app/SearchableInfo;->getSuggestSelection()Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_3
+
+    const/4 p1, 0x1
+
+    new-array v0, p1, [Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    aput-object p2, v0, p1
+
+    goto :goto_0
+
+    .line 11
+    :cond_3
+    invoke-virtual {v1, p2}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    :goto_0
+    move-object v7, v0
+
+    const/16 p1, 0x32
+
+    .line 12
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string p2, "limit"
+
+    invoke-virtual {v1, p2, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    .line 13
+    invoke-virtual {v1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+
+    move-result-object v4
+
+    .line 14
+    iget-object p1, p0, Landroidx/appcompat/widget/m0;->o:Landroid/content/Context;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const/4 v5, 0x0
+
+    const/4 v8, 0x0
+
+    invoke-virtual/range {v3 .. v8}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public s()Landroid/view/ViewGroup;
+.method public final hasStableIds()Z
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
+    const/4 v0, 0x0
 
-    return-object v0
+    return v0
 .end method
 
-.method public setIcon(I)V
-    .locals 1
-
-    if-eqz p1, :cond_0
+.method public final j(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/m0;->getContext()Landroid/content/Context;
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    move-result-object v0
+    if-nez p2, :cond_0
 
-    invoke-static {v0, p1}, Lg/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p1
+    .line 2
+    invoke-virtual {p1, p3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
-
-    :goto_0
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/m0;->setIcon(Landroid/graphics/drawable/Drawable;)V
-
-    return-void
-.end method
-
-.method public setIcon(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
-
-    .line 2
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->e:Landroid/graphics/drawable/Drawable;
+    const/4 p3, 0x0
 
     .line 3
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->H()V
+    invoke-virtual {p1, p3}, Landroid/widget/ImageView;->setVisibility(I)V
 
+    .line 4
+    invoke-virtual {p2, p3, p3}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+
+    const/4 p1, 0x1
+
+    .line 5
+    invoke-virtual {p2, p1, p3}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+
+    :goto_0
     return-void
 .end method
 
-.method public setTitle(Ljava/lang/CharSequence;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Landroidx/appcompat/widget/m0;->h:Z
-
-    .line 2
-    invoke-direct {p0, p1}, Landroidx/appcompat/widget/m0;->E(Ljava/lang/CharSequence;)V
-
-    return-void
-.end method
-
-.method public setVisibility(I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    return-void
-.end method
-
-.method public setWindowCallback(Landroid/view/Window$Callback;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->l:Landroid/view/Window$Callback;
-
-    return-void
-.end method
-
-.method public setWindowTitle(Ljava/lang/CharSequence;)V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/m0;->h:Z
-
-    if-nez v0, :cond_0
-
-    .line 2
-    invoke-direct {p0, p1}, Landroidx/appcompat/widget/m0;->E(Ljava/lang/CharSequence;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public t(Z)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public u(Landroidx/appcompat/widget/e0;)V
+.method public final notifyDataSetChanged()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->c:Landroid/view/View;
+    invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+
+    .line 2
+    iget-object v0, p0, Lz4/a;->d:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v0
-
-    iget-object v1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    if-ne v0, v1, :cond_0
-
-    .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->c:Landroid/view/View;
-
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
-
     .line 3
-    :cond_0
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->c:Landroid/view/View;
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    iget v0, p0, Landroidx/appcompat/widget/m0;->o:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_1
-
-    .line 5
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, p1, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
-
-    .line 6
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->c:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-interface {v0}, Landroid/database/Cursor;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
-
-    check-cast v0, Landroidx/appcompat/widget/Toolbar$e;
-
-    const/4 v1, -0x2
-
-    .line 7
-    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
-    .line 8
-    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
-    const v1, 0x800053
-
-    .line 9
-    iput v1, v0, Landroidx/appcompat/app/a$a;->a:I
-
-    const/4 v0, 0x1
-
-    .line 10
-    invoke-virtual {p1, v0}, Landroidx/appcompat/widget/e0;->setAllowCollapse(Z)V
-
-    :cond_1
-    return-void
-.end method
-
-.method public v(I)V
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/appcompat/widget/m0;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0, p1}, Lg/a;->b(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object p1
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/m0;->z(Landroid/graphics/drawable/Drawable;)V
+    if-eqz v0, :cond_1
 
-    return-void
-.end method
-
-.method public w(Landroidx/appcompat/view/menu/m$a;Landroidx/appcompat/view/menu/g$a;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0, p1, p2}, Landroidx/appcompat/widget/Toolbar;->setMenuCallbacks(Landroidx/appcompat/view/menu/m$a;Landroidx/appcompat/view/menu/g$a;)V
-
-    return-void
-.end method
-
-.method public y(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/appcompat/widget/m0;->p:I
-
-    if-ne p1, v0, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iput p1, p0, Landroidx/appcompat/widget/m0;->p:I
-
-    .line 3
-    iget-object p1, p0, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {p1}, Landroidx/appcompat/widget/Toolbar;->getNavigationContentDescription()Ljava/lang/CharSequence;
-
-    move-result-object p1
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
+    const-string v1, "in_progress"
 
     .line 4
-    iget p1, p0, Landroidx/appcompat/widget/m0;->p:I
-
-    invoke-virtual {p0, p1}, Landroidx/appcompat/widget/m0;->A(I)V
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     :cond_1
     return-void
 .end method
 
-.method public z(Landroid/graphics/drawable/Drawable;)V
-    .locals 0
+.method public final notifyDataSetInvalidated()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0;->f:Landroid/graphics/drawable/Drawable;
+    invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 
     .line 2
-    invoke-direct {p0}, Landroidx/appcompat/widget/m0;->H()V
+    iget-object v0, p0, Lz4/a;->d:Landroid/database/Cursor;
 
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-interface {v0}, Landroid/database/Cursor;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    const-string v1, "in_progress"
+
+    .line 4
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    :cond_1
+    return-void
+.end method
+
+.method public final onClick(Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 2
+    instance-of v0, p1, Ljava/lang/CharSequence;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object v0, p0, Landroidx/appcompat/widget/m0;->m:Landroidx/appcompat/widget/SearchView;
+
+    check-cast p1, Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, p1}, Landroidx/appcompat/widget/SearchView;->r(Ljava/lang/CharSequence;)V
+
+    :cond_0
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public abstract Landroidx/recyclerview/widget/RecyclerView$j;
+.class public final Landroidx/recyclerview/widget/RecyclerView$j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x409
+    accessFlags = 0x9
     name = "j"
 .end annotation
 
@@ -18,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,47 +25,16 @@
 
 
 # virtual methods
-.method public a()V
-    .locals 0
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;)Landroid/widget/EdgeEffect;
+    .locals 1
 
-    return-void
-.end method
+    new-instance v0, Landroid/widget/EdgeEffect;
 
-.method public b(II)V
-    .locals 0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    return-void
-.end method
+    move-result-object p1
 
-.method public c(IILjava/lang/Object;)V
-    .locals 0
+    invoke-direct {v0, p1}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
 
-    .line 1
-    invoke-virtual {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$j;->b(II)V
-
-    return-void
-.end method
-
-.method public d(II)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public e(III)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public f(II)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public g()V
-    .locals 0
-
-    return-void
+    return-object v0
 .end method

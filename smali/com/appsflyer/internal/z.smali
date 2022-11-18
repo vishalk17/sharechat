@@ -12,15 +12,15 @@
 
 
 # instance fields
-.field final AFInAppEventParameterName:Ljava/lang/Object;
+.field public final AFInAppEventParameterName:Ljava/lang/Object;
 
-.field final AFInAppEventType:Ljava/lang/Runnable;
+.field public final AFInAppEventType:Ljava/lang/Runnable;
 
-.field final AFKeystoreWrapper:Ljava/lang/Runnable;
+.field public final AFKeystoreWrapper:Ljava/lang/Runnable;
 
-.field final AFLogger$LogLevel:Ljava/util/concurrent/Executor;
+.field public final AFLogger$LogLevel:Ljava/util/concurrent/Executor;
 
-.field final AFVersionDeclaration:Ljava/lang/Runnable;
+.field public final AFVersionDeclaration:Ljava/lang/Runnable;
 
 .field private onAppOpenAttribution:J
 
@@ -56,13 +56,13 @@
     .end annotation
 .end field
 
-.field final valueOf:Landroid/os/Handler;
+.field public final valueOf:Landroid/os/Handler;
 
-.field values:Z
+.field public values:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     .line 1
@@ -130,13 +130,13 @@
     iput-object v0, p0, Lcom/appsflyer/internal/z;->onInstallConversionFailureNative:Ljava/util/Map;
 
     .line 4
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v1}, Ljava/util/BitSet;->size()I
 
     move-result v1
 
-    invoke-direct {v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(I)V
+    invoke-direct {v0, v1}, Lj$/util/concurrent/ConcurrentHashMap;-><init>(I)V
 
     iput-object v0, p0, Lcom/appsflyer/internal/z;->onInstallConversionDataLoadedNative:Ljava/util/Map;
 
@@ -194,7 +194,7 @@
     return-void
 .end method
 
-.method static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/z;)I
+.method public static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/z;)I
     .locals 0
 
     .line 1
@@ -203,7 +203,7 @@
     return p0
 .end method
 
-.method static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/z;I)I
+.method public static synthetic AFInAppEventParameterName(Lcom/appsflyer/internal/z;I)I
     .locals 0
 
     .line 2
@@ -212,7 +212,7 @@
     return p1
 .end method
 
-.method static synthetic AFInAppEventType(Lcom/appsflyer/internal/z;)Ljava/util/concurrent/Executor;
+.method public static synthetic AFInAppEventType(Lcom/appsflyer/internal/z;)Ljava/util/concurrent/Executor;
     .locals 0
 
     .line 1
@@ -221,7 +221,7 @@
     return-object p0
 .end method
 
-.method static AFKeystoreWrapper(Landroid/content/Context;)Lcom/appsflyer/internal/z;
+.method public static AFKeystoreWrapper(Landroid/content/Context;)Lcom/appsflyer/internal/z;
     .locals 1
 
     .line 3
@@ -309,7 +309,7 @@
     return-object p0
 .end method
 
-.method static synthetic AFKeystoreWrapper(Lcom/appsflyer/internal/z;)Ljava/util/Map;
+.method public static synthetic AFKeystoreWrapper(Lcom/appsflyer/internal/z;)Ljava/util/Map;
     .locals 0
 
     .line 1
@@ -318,7 +318,7 @@
     return-object p0
 .end method
 
-.method static synthetic AFKeystoreWrapper(I)Z
+.method public static synthetic AFKeystoreWrapper(I)Z
     .locals 0
 
     .line 2
@@ -329,25 +329,23 @@
     return p0
 .end method
 
-.method static synthetic getLevel(Lcom/appsflyer/internal/z;)Ljava/util/Map;
+.method public static synthetic getLevel(Lcom/appsflyer/internal/z;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/appsflyer/internal/z;->onInstallConversionDataLoadedNative:Ljava/util/Map;
 
     return-object p0
 .end method
 
-.method static synthetic valueOf(Lcom/appsflyer/internal/z;)Ljava/lang/Runnable;
+.method public static synthetic valueOf(Lcom/appsflyer/internal/z;)Ljava/lang/Runnable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/appsflyer/internal/z;->onConversionDataSuccess:Ljava/lang/Runnable;
 
     return-object p0
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/z;)Landroid/hardware/SensorManager;
+.method public static synthetic values(Lcom/appsflyer/internal/z;)Landroid/hardware/SensorManager;
     .locals 0
 
     .line 1
@@ -380,7 +378,7 @@
     return p0
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/z;Z)Z
+.method public static synthetic values(Lcom/appsflyer/internal/z;Z)Z
     .locals 0
 
     .line 2
@@ -391,7 +389,7 @@
 
 
 # virtual methods
-.method final AFInAppEventParameterName()Ljava/util/List;
+.method public final AFInAppEventParameterName()Ljava/util/List;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -507,7 +505,7 @@
     throw v1
 .end method
 
-.method final AFInAppEventType()V
+.method public final AFInAppEventType()V
     .locals 7
 
     .line 2
@@ -578,7 +576,7 @@
     return-void
 .end method
 
-.method final values()Ljava/util/List;
+.method public final values()Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {

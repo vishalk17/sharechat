@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field final AFInAppEventParameterName:[J
+.field public final AFInAppEventParameterName:[J
 
-.field final AFInAppEventType:[[F
+.field public final AFInAppEventType:[[F
 
-.field AFKeystoreWrapper:D
+.field public AFKeystoreWrapper:D
 
 .field private final AFLogger$LogLevel:Ljava/lang/String;
 
@@ -21,13 +21,13 @@
 
 .field private final init:I
 
-.field valueOf:J
+.field public valueOf:J
 
 .field private final values:I
 
 
 # direct methods
-.method constructor <init>(Landroid/hardware/Sensor;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Landroid/hardware/Sensor;Ljava/util/concurrent/Executor;)V
     .locals 2
 
     .line 1
@@ -93,14 +93,14 @@
 
     move-result p1
 
-    add-int/2addr p2, p1
+    add-int/2addr p1, p2
 
-    mul-int/lit8 p2, p2, 0x1f
+    mul-int/lit8 p1, p1, 0x1f
 
     .line 9
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
-    move-result p1
+    move-result p2
 
     add-int/2addr p2, p1
 
@@ -110,7 +110,7 @@
     return-void
 .end method
 
-.method static synthetic AFInAppEventParameterName([F[F)D
+.method public static synthetic AFInAppEventParameterName([F[F)D
     .locals 8
 
     .line 4
@@ -198,7 +198,6 @@
 .method private AFInAppEventType()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/x;->AFInAppEventType:[[F
 
     const/4 v1, 0x0
@@ -228,11 +227,11 @@
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
 
     const/4 v1, 0x7
 
-    invoke-direct {v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(I)V
+    invoke-direct {v0, v1}, Lj$/util/concurrent/ConcurrentHashMap;-><init>(I)V
 
     .line 2
     iget v1, p0, Lcom/appsflyer/internal/x;->values:I
@@ -243,21 +242,21 @@
 
     const-string v2, "sT"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
     iget-object v1, p0, Lcom/appsflyer/internal/x;->getLevel:Ljava/lang/String;
 
     const-string v2, "sN"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     iget-object v1, p0, Lcom/appsflyer/internal/x;->AFLogger$LogLevel:Ljava/lang/String;
 
     const-string v2, "sV"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
     iget-object v1, p0, Lcom/appsflyer/internal/x;->AFInAppEventType:[[F
@@ -275,7 +274,7 @@
 
     const-string v2, "sVS"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
     :cond_0
@@ -294,7 +293,7 @@
 
     const-string v2, "sVE"
 
-    invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v1}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
     return-object v0
@@ -333,7 +332,7 @@
 
     move-result-object v3
 
-    invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
 
@@ -385,7 +384,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/appsflyer/internal/x;->init:I
 
     return v0
@@ -418,7 +416,7 @@
     return-void
 .end method
 
-.method final values(Ljava/util/Map;Z)V
+.method public final values(Ljava/util/Map;Z)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {

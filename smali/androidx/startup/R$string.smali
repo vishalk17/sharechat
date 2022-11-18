@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final androidx_startup:I = 0x7f120098
+.field public static final androidx_startup:I = 0x7f1200b3
 
 
 # direct methods

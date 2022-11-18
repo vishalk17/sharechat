@@ -13,7 +13,6 @@
         Lcoil/base/R$id;,
         Lcoil/base/R$integer;,
         Lcoil/base/R$layout;,
-        Lcoil/base/R$menu;,
         Lcoil/base/R$string;,
         Lcoil/base/R$style;,
         Lcoil/base/R$styleable;

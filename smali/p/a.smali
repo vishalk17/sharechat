@@ -1,4 +1,4 @@
-.class public final Lp/a;
+.class public abstract Lp/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -6,42 +6,21 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lp/a$a;,
-        Lp/a$b;,
-        Lp/a$c;,
-        Lp/a$d;
+        Lp/a$a;
     }
 .end annotation
 
 
-# static fields
-.field public static final a:Lp/a;
+# instance fields
+.field public b:Ljava/lang/Object;
 
-.field private static final b:Lp/a$a;
+.field public c:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lp/a;
-
-    invoke-direct {v0}, Lp/a;-><init>()V
-
-    sput-object v0, Lp/a;->a:Lp/a;
-
-    .line 1
-    sget-object v0, Lp/a$a;->a:Lp/a$a;
-
-    sput-object v0, Lp/a;->b:Lp/a$a;
-
-    return-void
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,11 +28,54 @@
 
 
 # virtual methods
-.method public final a()Lp/a$a;
+.method public abstract c()V
+.end method
+
+.method public abstract d()Landroid/view/View;
+.end method
+
+.method public abstract e()Landroid/view/Menu;
+.end method
+
+.method public abstract f()Landroid/view/MenuInflater;
+.end method
+
+.method public abstract g()Ljava/lang/CharSequence;
+.end method
+
+.method public abstract h()Ljava/lang/CharSequence;
+.end method
+
+.method public abstract i()V
+.end method
+
+.method public j()Z
     .locals 1
 
-    .line 1
-    sget-object v0, Lp/a;->b:Lp/a$a;
+    const/4 v0, 0x0
 
-    return-object v0
+    return v0
+.end method
+
+.method public abstract k(Landroid/view/View;)V
+.end method
+
+.method public abstract l(I)V
+.end method
+
+.method public abstract m(Ljava/lang/CharSequence;)V
+.end method
+
+.method public abstract n(I)V
+.end method
+
+.method public abstract o(Ljava/lang/CharSequence;)V
+.end method
+
+.method public p(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Lp/a;->c:Z
+
+    return-void
 .end method

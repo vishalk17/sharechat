@@ -1,319 +1,532 @@
-.class public final Lq/e;
-.super Ljava/lang/Object;
+.class public Lq/e;
+.super Lq/b;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/Menu;
 
-# static fields
-.field private static a:Landroidx/compose/ui/graphics/vector/c;
+
+# instance fields
+.field public final d:Ll4/a;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;Ll4/a;)V
     .locals 0
 
+    .line 1
+    invoke-direct {p0, p1}, Lq/b;-><init>(Landroid/content/Context;)V
+
+    if-eqz p2, :cond_0
+
+    .line 2
+    iput-object p2, p0, Lq/e;->d:Ll4/a;
+
     return-void
+
+    .line 3
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    const-string p2, "Wrapped Object can not be null."
+
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
-.method public static final a(Lp/a$a;)Landroidx/compose/ui/graphics/vector/c;
-    .locals 29
 
-    const-string v0, "<this>"
+# virtual methods
+.method public final add(I)Landroid/view/MenuItem;
+    .locals 1
 
-    move-object/from16 v1, p0
+    .line 2
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-interface {v0, p1}, Landroid/view/Menu;->add(I)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final add(IIII)Landroid/view/MenuItem;
+    .locals 1
+
+    .line 4
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2, p3, p4}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+    .locals 1
+
+    .line 3
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2, p3, p4}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+    .locals 1
 
     .line 1
-    sget-object v0, Lq/e;->a:Landroidx/compose/ui/graphics/vector/c;
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1}, Landroid/view/Menu;->add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
+    .locals 12
+
+    move-object v0, p0
+
+    move-object/from16 v1, p8
+
+    if-eqz v1, :cond_0
+
+    .line 1
+    array-length v2, v1
+
+    new-array v2, v2, [Landroid/view/MenuItem;
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    .line 2
+    :goto_0
+    iget-object v3, v0, Lq/e;->d:Ll4/a;
+
+    move v4, p1
+
+    move v5, p2
+
+    move v6, p3
+
+    move-object/from16 v7, p4
+
+    move-object/from16 v8, p5
+
+    move-object/from16 v9, p6
+
+    move/from16 v10, p7
+
+    move-object v11, v2
+
+    .line 3
+    invoke-interface/range {v3 .. v11}, Landroid/view/Menu;->addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
+
+    move-result v3
+
+    if-eqz v2, :cond_1
+
+    const/4 v4, 0x0
+
+    .line 4
+    array-length v5, v2
+
+    :goto_1
+    if-ge v4, v5, :cond_1
+
+    .line 5
+    aget-object v6, v2, v4
+
+    invoke-virtual {p0, v6}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object v6
+
+    aput-object v6, v1, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    return v3
+.end method
+
+.method public final addSubMenu(I)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1}, Landroid/view/Menu;->addSubMenu(I)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->d(Landroid/view/SubMenu;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final addSubMenu(IIII)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 4
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    .line 5
+    invoke-interface {v0, p1, p2, p3, p4}, Landroid/view/Menu;->addSubMenu(IIII)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    .line 6
+    invoke-virtual {p0, p1}, Lq/b;->d(Landroid/view/SubMenu;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 3
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2, p3, p4}, Landroid/view/Menu;->addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->d(Landroid/view/SubMenu;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1}, Landroid/view/Menu;->addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->d(Landroid/view/SubMenu;)Landroid/view/SubMenu;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lq/b;->b:Lp0/g;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    return-object v0
+    invoke-virtual {v0}, Lp0/g;->clear()V
 
     .line 3
     :cond_0
-    new-instance v1, Landroidx/compose/ui/graphics/vector/c$a;
+    iget-object v0, p0, Lq/b;->c:Lp0/g;
 
-    move-object v12, v1
-
-    const/high16 v0, 0x41c00000    # 24.0f
+    if-eqz v0, :cond_1
 
     .line 4
-    invoke-static {v0}, Lb1/g;->k(F)F
-
-    move-result v3
-
-    invoke-static {v0}, Lb1/g;->k(F)F
-
-    move-result v4
-
-    const/high16 v5, 0x41c00000    # 24.0f
-
-    const/high16 v6, 0x41c00000    # 24.0f
-
-    const-wide/16 v7, 0x0
-
-    const/4 v9, 0x0
-
-    const/16 v10, 0x60
-
-    const/4 v11, 0x0
-
-    const-string v2, "Filled.Collections"
+    invoke-virtual {v0}, Lp0/g;->clear()V
 
     .line 5
-    invoke-direct/range {v1 .. v11}, Landroidx/compose/ui/graphics/vector/c$a;-><init>(Ljava/lang/String;FFFFJIILkotlin/jvm/internal/h;)V
+    :cond_1
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    const/high16 v17, 0x3f800000    # 1.0f
+    invoke-interface {v0}, Landroid/view/Menu;->clear()V
 
-    const/high16 v19, 0x3f800000    # 1.0f
+    return-void
+.end method
+
+.method public final close()V
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0}, Landroid/view/Menu;->close()V
+
+    return-void
+.end method
+
+.method public final findItem(I)Landroid/view/MenuItem;
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final getItem(I)Landroid/view/MenuItem;
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1}, Landroid/view/Menu;->getItem(I)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lq/b;->c(Landroid/view/MenuItem;)Landroid/view/MenuItem;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final hasVisibleItems()Z
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0}, Landroid/view/Menu;->hasVisibleItems()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final isShortcutKey(ILandroid/view/KeyEvent;)Z
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Menu;->isShortcutKey(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final performIdentifierAction(II)Z
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2}, Landroid/view/Menu;->performIdentifierAction(II)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final performShortcut(ILandroid/view/KeyEvent;I)Z
+    .locals 1
+
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
+
+    invoke-interface {v0, p1, p2, p3}, Landroid/view/Menu;->performShortcut(ILandroid/view/KeyEvent;I)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final removeGroup(I)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lq/b;->b:Lp0/g;
+
+    if-nez v0, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 2
+    :goto_0
+    iget-object v1, p0, Lq/b;->b:Lp0/g;
+
+    .line 3
+    iget v2, v1, Lp0/g;->d:I
+
+    if-ge v0, v2, :cond_2
+
+    .line 4
+    invoke-virtual {v1, v0}, Lp0/g;->h(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ll4/b;
+
+    invoke-interface {v1}, Landroid/view/MenuItem;->getGroupId()I
+
+    move-result v1
+
+    if-ne v1, p1, :cond_1
+
+    .line 5
+    iget-object v1, p0, Lq/b;->b:Lp0/g;
+
+    invoke-virtual {v1, v0}, Lp0/g;->i(I)Ljava/lang/Object;
+
+    add-int/lit8 v0, v0, -0x1
+
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
 
     .line 6
-    invoke-static {}, Landroidx/compose/ui/graphics/vector/p;->b()I
+    :cond_2
+    :goto_1
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    move-result v14
+    invoke-interface {v0, p1}, Landroid/view/Menu;->removeGroup(I)V
 
-    .line 7
-    new-instance v0, Landroidx/compose/ui/graphics/m1;
+    return-void
+.end method
 
-    move-object/from16 v16, v0
+.method public final removeItem(I)V
+    .locals 3
 
-    sget-object v1, Landroidx/compose/ui/graphics/e0;->b:Landroidx/compose/ui/graphics/e0$a;
+    .line 1
+    iget-object v0, p0, Lq/b;->b:Lp0/g;
 
-    invoke-virtual {v1}, Landroidx/compose/ui/graphics/e0$a;->a()J
+    if-nez v0, :cond_0
 
-    move-result-wide v1
+    goto :goto_1
 
-    const/4 v3, 0x0
+    :cond_0
+    const/4 v0, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Landroidx/compose/ui/graphics/m1;-><init>(JLkotlin/jvm/internal/h;)V
+    .line 2
+    :goto_0
+    iget-object v1, p0, Lq/b;->b:Lp0/g;
 
-    const/16 v18, 0x0
+    .line 3
+    iget v2, v1, Lp0/g;->d:I
 
-    const/high16 v20, 0x3f800000    # 1.0f
+    if-ge v0, v2, :cond_2
 
-    .line 8
-    sget-object v0, Landroidx/compose/ui/graphics/n1;->b:Landroidx/compose/ui/graphics/n1$a;
+    .line 4
+    invoke-virtual {v1, v0}, Lp0/g;->h(I)Ljava/lang/Object;
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/n1$a;->a()I
+    move-result-object v1
 
-    move-result v21
+    check-cast v1, Ll4/b;
 
-    .line 9
-    sget-object v0, Landroidx/compose/ui/graphics/o1;->b:Landroidx/compose/ui/graphics/o1$a;
+    invoke-interface {v1}, Landroid/view/MenuItem;->getItemId()I
 
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/o1$a;->a()I
+    move-result v1
 
-    move-result v22
+    if-ne v1, p1, :cond_1
 
-    const/high16 v23, 0x3f800000    # 1.0f
+    .line 5
+    iget-object v1, p0, Lq/b;->b:Lp0/g;
 
-    .line 10
-    new-instance v7, Landroidx/compose/ui/graphics/vector/d;
+    invoke-virtual {v1, v0}, Lp0/g;->i(I)Ljava/lang/Object;
 
-    invoke-direct {v7}, Landroidx/compose/ui/graphics/vector/d;-><init>()V
+    goto :goto_1
 
-    const/high16 v0, 0x41b00000    # 22.0f
+    :cond_1
+    add-int/lit8 v0, v0, 0x1
 
-    const/high16 v8, 0x41800000    # 16.0f
+    goto :goto_0
 
-    .line 11
-    invoke-virtual {v7, v0, v8}, Landroidx/compose/ui/graphics/vector/d;->j(FF)Landroidx/compose/ui/graphics/vector/d;
+    .line 6
+    :cond_2
+    :goto_1
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    const/high16 v9, 0x40800000    # 4.0f
+    invoke-interface {v0, p1}, Landroid/view/Menu;->removeItem(I)V
 
-    .line 12
-    invoke-virtual {v7, v0, v9}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
+    return-void
+.end method
 
-    const/4 v1, 0x0
+.method public final setGroupCheckable(IZZ)V
+    .locals 1
 
-    const v2, -0x40733333    # -1.1f
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    const v3, -0x4099999a    # -0.9f
+    invoke-interface {v0, p1, p2, p3}, Landroid/view/Menu;->setGroupCheckable(IZZ)V
 
-    const/high16 v4, -0x40000000    # -2.0f
+    return-void
+.end method
 
-    const/high16 v5, -0x40000000    # -2.0f
+.method public final setGroupEnabled(IZ)V
+    .locals 1
 
-    const/high16 v6, -0x40000000    # -2.0f
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    move-object v0, v7
+    invoke-interface {v0, p1, p2}, Landroid/view/Menu;->setGroupEnabled(IZ)V
 
-    .line 13
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/d;->d(FFFFFF)Landroidx/compose/ui/graphics/vector/d;
+    return-void
+.end method
 
-    const/high16 v10, 0x41000000    # 8.0f
+.method public final setGroupVisible(IZ)V
+    .locals 1
 
-    const/high16 v11, 0x40000000    # 2.0f
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    .line 14
-    invoke-virtual {v7, v10, v11}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
+    invoke-interface {v0, p1, p2}, Landroid/view/Menu;->setGroupVisible(IZ)V
 
-    const v1, -0x40733333    # -1.1f
+    return-void
+.end method
 
-    const/4 v2, 0x0
+.method public final setQwertyMode(Z)V
+    .locals 1
 
-    const/high16 v3, -0x40000000    # -2.0f
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    const v4, 0x3f666666    # 0.9f
+    invoke-interface {v0, p1}, Landroid/view/Menu;->setQwertyMode(Z)V
 
-    const/high16 v6, 0x40000000    # 2.0f
+    return-void
+.end method
 
-    .line 15
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/d;->d(FFFFFF)Landroidx/compose/ui/graphics/vector/d;
+.method public final size()I
+    .locals 1
 
-    const/high16 v13, 0x41400000    # 12.0f
+    iget-object v0, p0, Lq/e;->d:Ll4/a;
 
-    .line 16
-    invoke-virtual {v7, v13}, Landroidx/compose/ui/graphics/vector/d;->n(F)Landroidx/compose/ui/graphics/vector/d;
+    invoke-interface {v0}, Landroid/view/Menu;->size()I
 
-    const/4 v1, 0x0
+    move-result v0
 
-    const v2, 0x3f8ccccd    # 1.1f
-
-    const v3, 0x3f666666    # 0.9f
-
-    const/high16 v4, 0x40000000    # 2.0f
-
-    const/high16 v5, 0x40000000    # 2.0f
-
-    .line 17
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/d;->d(FFFFFF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 18
-    invoke-virtual {v7, v13}, Landroidx/compose/ui/graphics/vector/d;->g(F)Landroidx/compose/ui/graphics/vector/d;
-
-    const v1, 0x3f8ccccd    # 1.1f
-
-    const/4 v2, 0x0
-
-    const/high16 v3, 0x40000000    # 2.0f
-
-    const v4, -0x4099999a    # -0.9f
-
-    const/high16 v6, -0x40000000    # -2.0f
-
-    .line 19
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/d;->d(FFFFFF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 20
-    invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/d;->b()Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v0, 0x41300000    # 11.0f
-
-    .line 21
-    invoke-virtual {v7, v0, v13}, Landroidx/compose/ui/graphics/vector/d;->j(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const v1, 0x4001eb85    # 2.03f
-
-    const v2, 0x402d70a4    # 2.71f
-
-    .line 22
-    invoke-virtual {v7, v1, v2}, Landroidx/compose/ui/graphics/vector/d;->i(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 23
-    invoke-virtual {v7, v8, v0}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v0, 0x40a00000    # 5.0f
-
-    .line 24
-    invoke-virtual {v7, v9, v0}, Landroidx/compose/ui/graphics/vector/d;->i(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 25
-    invoke-virtual {v7, v10, v8}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v0, 0x40400000    # 3.0f
-
-    const/high16 v1, -0x3f800000    # -4.0f
-
-    .line 26
-    invoke-virtual {v7, v0, v1}, Landroidx/compose/ui/graphics/vector/d;->i(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 27
-    invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/d;->b()Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v8, 0x40c00000    # 6.0f
-
-    .line 28
-    invoke-virtual {v7, v11, v8}, Landroidx/compose/ui/graphics/vector/d;->j(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v10, 0x41600000    # 14.0f
-
-    .line 29
-    invoke-virtual {v7, v10}, Landroidx/compose/ui/graphics/vector/d;->n(F)Landroidx/compose/ui/graphics/vector/d;
-
-    const/4 v1, 0x0
-
-    const v2, 0x3f8ccccd    # 1.1f
-
-    const v3, 0x3f666666    # 0.9f
-
-    const/high16 v4, 0x40000000    # 2.0f
-
-    const/high16 v6, 0x40000000    # 2.0f
-
-    move-object v0, v7
-
-    .line 30
-    invoke-virtual/range {v0 .. v6}, Landroidx/compose/ui/graphics/vector/d;->d(FFFFFF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 31
-    invoke-virtual {v7, v10}, Landroidx/compose/ui/graphics/vector/d;->g(F)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v0, -0x40000000    # -2.0f
-
-    .line 32
-    invoke-virtual {v7, v0}, Landroidx/compose/ui/graphics/vector/d;->n(F)Landroidx/compose/ui/graphics/vector/d;
-
-    const/high16 v0, 0x41a00000    # 20.0f
-
-    .line 33
-    invoke-virtual {v7, v9, v0}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 34
-    invoke-virtual {v7, v9, v8}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 35
-    invoke-virtual {v7, v11, v8}, Landroidx/compose/ui/graphics/vector/d;->h(FF)Landroidx/compose/ui/graphics/vector/d;
-
-    .line 36
-    invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/d;->b()Landroidx/compose/ui/graphics/vector/d;
-
-    .line 37
-    invoke-virtual {v7}, Landroidx/compose/ui/graphics/vector/d;->e()Ljava/util/List;
-
-    move-result-object v13
-
-    const/16 v24, 0x0
-
-    const/16 v25, 0x0
-
-    const/16 v26, 0x0
-
-    const/16 v27, 0x3800
-
-    const/16 v28, 0x0
-
-    const-string v15, ""
-
-    .line 38
-    invoke-static/range {v12 .. v28}, Landroidx/compose/ui/graphics/vector/c$a;->d(Landroidx/compose/ui/graphics/vector/c$a;Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/w;FLandroidx/compose/ui/graphics/w;FFIIFFFFILjava/lang/Object;)Landroidx/compose/ui/graphics/vector/c$a;
-
-    move-result-object v0
-
-    .line 39
-    invoke-virtual {v0}, Landroidx/compose/ui/graphics/vector/c$a;->f()Landroidx/compose/ui/graphics/vector/c;
-
-    move-result-object v0
-
-    .line 40
-    sput-object v0, Lq/e;->a:Landroidx/compose/ui/graphics/vector/c;
-
-    .line 41
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    return-object v0
+    return v0
 .end method

@@ -2,140 +2,289 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lorg/jetbrains/kotlin/compiler/plugin/CommandLineProcessor;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ls0/a$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final c:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final d:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final e:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final f:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final g:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final h:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final i:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+.field public static final j:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
 
 # instance fields
-.field private final a:Ls0/b;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lorg/jetbrains/kotlin/compiler/plugin/CliOption;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Locale;Ljava/lang/CharSequence;)V
-    .locals 3
+.method public static constructor <clinit>()V
+    .locals 14
 
-    const-string v0, "locale"
+    new-instance v0, Ls0/a$a;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    const-string v0, "text"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ls0/a$a;-><init>(Lep0/k;)V
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v3, "liveLiterals"
+
+    const-string v4, "<true|false>"
+
+    const-string v5, "Enable Live Literals code generation"
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v7}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->b:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
     .line 2
-    new-instance v0, Ls0/b;
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
+    const-string v9, "liveLiteralsEnabled"
 
-    move-result v1
+    const-string v10, "<true|false>"
 
-    const/4 v2, 0x0
+    const-string v11, "Enable Live Literals code generation (with per-file enabled flags)"
 
-    invoke-direct {v0, p2, v2, v1, p1}, Ls0/b;-><init>(Ljava/lang/CharSequence;IILjava/util/Locale;)V
+    const/4 v12, 0x0
 
-    iput-object v0, p0, Ls0/a;->a:Ls0/b;
+    const/4 v13, 0x0
+
+    move-object v8, v0
+
+    invoke-direct/range {v8 .. v13}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->c:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 3
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v2, "generateFunctionKeyMetaClasses"
+
+    const-string v3, "<true|false>"
+
+    const-string v4, "Generate function key meta classes with annotations indicating the functions and their group keys. Generally used for tooling."
+
+    const/4 v5, 0x0
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->d:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 4
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v8, "sourceInformation"
+
+    const-string v9, "<true|false>"
+
+    const-string v10, "Include source information in generated code"
+
+    const/4 v11, 0x0
+
+    move-object v7, v0
+
+    invoke-direct/range {v7 .. v12}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->e:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 5
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v2, "metricsDestination"
+
+    const-string v3, "<path>"
+
+    const-string v4, "Save compose build metrics to this folder"
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->f:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 6
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v8, "reportsDestination"
+
+    const-string v9, "<path>"
+
+    const-string v10, "Save compose build reports to this folder"
+
+    move-object v7, v0
+
+    invoke-direct/range {v7 .. v12}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->g:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 7
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v2, "intrinsicRemember"
+
+    const-string v3, "<true|false>"
+
+    const-string v4, "Include source information in generated code"
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->h:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 8
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v8, "suppressKotlinVersionCompatibilityCheck"
+
+    const-string v9, "<true|false>"
+
+    const-string v10, "Suppress Kotlin version compatibility check"
+
+    move-object v7, v0
+
+    invoke-direct/range {v7 .. v12}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->i:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    .line 9
+    new-instance v0, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const-string v2, "generateDecoys"
+
+    const-string v3, "<true|false>"
+
+    const-string v4, "Generate decoy methods in IR transform"
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v6}, Lorg/jetbrains/kotlin/compiler/plugin/CliOption;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    sput-object v0, Ls0/a;->j:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(I)I
-    .locals 2
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {v0, p1}, Ls0/b;->n(I)I
+    const/16 v0, 0x9
 
-    move-result v0
-
-    .line 2
-    iget-object v1, p0, Ls0/a;->a:Ls0/b;
-
-    invoke-virtual {v1, v0}, Ls0/b;->i(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
-
-    invoke-virtual {v0, p1}, Ls0/b;->g(I)I
-
-    move-result v0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
-
-    invoke-virtual {v0, p1}, Ls0/b;->d(I)I
-
-    move-result v0
-
-    :goto_0
-    const/4 v1, -0x1
-
-    if-ne v0, v1, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    move p1, v0
-
-    :goto_1
-    return p1
-.end method
-
-.method public final b(I)I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
-
-    invoke-virtual {v0, p1}, Ls0/b;->o(I)I
-
-    move-result v0
+    new-array v0, v0, [Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
     .line 2
-    iget-object v1, p0, Ls0/a;->a:Ls0/b;
+    sget-object v1, Ls0/a;->b:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    invoke-virtual {v1, v0}, Ls0/b;->k(I)Z
+    const/4 v2, 0x0
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    aput-object v1, v0, v2
 
     .line 3
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
+    sget-object v1, Ls0/a;->c:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    invoke-virtual {v0, p1}, Ls0/b;->f(I)I
+    const/4 v2, 0x1
 
-    move-result v0
-
-    goto :goto_0
+    aput-object v1, v0, v2
 
     .line 4
-    :cond_0
-    iget-object v0, p0, Ls0/a;->a:Ls0/b;
+    sget-object v1, Ls0/a;->d:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    invoke-virtual {v0, p1}, Ls0/b;->e(I)I
+    const/4 v2, 0x2
 
-    move-result v0
+    aput-object v1, v0, v2
 
-    :goto_0
-    const/4 v1, -0x1
+    .line 5
+    sget-object v1, Ls0/a;->e:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    if-ne v0, v1, :cond_1
+    const/4 v2, 0x3
 
-    goto :goto_1
+    aput-object v1, v0, v2
 
-    :cond_1
-    move p1, v0
+    .line 6
+    sget-object v1, Ls0/a;->f:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
 
-    :goto_1
-    return p1
+    const/4 v2, 0x4
+
+    aput-object v1, v0, v2
+
+    .line 7
+    sget-object v1, Ls0/a;->g:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const/4 v2, 0x5
+
+    aput-object v1, v0, v2
+
+    .line 8
+    sget-object v1, Ls0/a;->h:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const/4 v2, 0x6
+
+    aput-object v1, v0, v2
+
+    .line 9
+    sget-object v1, Ls0/a;->i:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const/4 v2, 0x7
+
+    aput-object v1, v0, v2
+
+    .line 10
+    sget-object v1, Ls0/a;->j:Lorg/jetbrains/kotlin/compiler/plugin/CliOption;
+
+    const/16 v2, 0x8
+
+    aput-object v1, v0, v2
+
+    .line 11
+    invoke-static {v0}, Lso0/u;->h([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Ls0/a;->a:Ljava/util/List;
+
+    return-void
 .end method

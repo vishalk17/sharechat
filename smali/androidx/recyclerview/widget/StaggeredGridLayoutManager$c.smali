@@ -1,5 +1,5 @@
-.class public Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
-.super Landroidx/recyclerview/widget/RecyclerView$q;
+.class public final Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;
+.super Landroidx/recyclerview/widget/RecyclerView$o;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager$d;
+.field public f:Landroidx/recyclerview/widget/StaggeredGridLayoutManager$d;
 
-.field g:Z
+.field public g:Z
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(II)V
+    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(II)V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .locals 0
 
     .line 4
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 .end method
@@ -52,27 +52,7 @@
     .locals 0
 
     .line 3
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public f()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g:Z
-
-    return v0
-.end method
-
-.method public g(Z)V
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$c;->g:Z
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     return-void
 .end method

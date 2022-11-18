@@ -29,15 +29,15 @@
 
 .field public static final cardViewStyle:I = 0x7f0400ee
 
-.field public static final contentPadding:I = 0x7f040176
+.field public static final contentPadding:I = 0x7f040192
 
-.field public static final contentPaddingBottom:I = 0x7f040177
+.field public static final contentPaddingBottom:I = 0x7f040193
 
-.field public static final contentPaddingLeft:I = 0x7f040179
+.field public static final contentPaddingLeft:I = 0x7f040195
 
-.field public static final contentPaddingRight:I = 0x7f04017a
+.field public static final contentPaddingRight:I = 0x7f040196
 
-.field public static final contentPaddingTop:I = 0x7f04017c
+.field public static final contentPaddingTop:I = 0x7f040198
 
 
 # direct methods

@@ -1,4 +1,4 @@
-.class public Landroid/support/v4/media/session/MediaSessionCompat;
+.class public final Landroid/support/v4/media/session/MediaSessionCompat;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -19,7 +19,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     const-class v0, Landroid/support/v4/media/session/MediaSessionCompat;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -47,7 +46,7 @@
 
     .line 2
     :try_start_0
-    invoke-virtual {p0}, Landroid/os/Bundle;->isEmpty()Z
+    invoke-virtual {p0}, Landroid/os/BaseBundle;->isEmpty()Z
     :try_end_0
     .catch Landroid/os/BadParcelableException; {:try_start_0 .. :try_end_0} :catch_0
 

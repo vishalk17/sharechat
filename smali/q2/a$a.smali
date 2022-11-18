@@ -1,4 +1,4 @@
-.class synthetic Lq2/a$a;
+.class public final Lq2/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,107 +9,25 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
-    name = null
+    accessFlags = 0x19
+    name = "a"
 .end annotation
 
 
-# static fields
-.field static final synthetic a:[I
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method private constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-static {}, Landroidx/work/m;->values()[Landroidx/work/m;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    return-void
+.end method
 
-    array-length v0, v0
+.method public synthetic constructor <init>(Lep0/k;)V
+    .locals 0
 
-    new-array v0, v0, [I
+    invoke-direct {p0}, Lq2/a$a;-><init>()V
 
-    sput-object v0, Lq2/a$a;->a:[I
-
-    :try_start_0
-    sget-object v1, Landroidx/work/m;->NOT_REQUIRED:Landroidx/work/m;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :try_start_1
-    sget-object v0, Lq2/a$a;->a:[I
-
-    sget-object v1, Landroidx/work/m;->CONNECTED:Landroidx/work/m;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x2
-
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v0, Lq2/a$a;->a:[I
-
-    sget-object v1, Landroidx/work/m;->UNMETERED:Landroidx/work/m;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x3
-
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v0, Lq2/a$a;->a:[I
-
-    sget-object v1, Landroidx/work/m;->NOT_ROAMING:Landroidx/work/m;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x4
-
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v0, Lq2/a$a;->a:[I
-
-    sget-object v1, Landroidx/work/m;->METERED:Landroidx/work/m;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    const/4 v2, 0x5
-
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
     return-void
 .end method

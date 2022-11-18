@@ -1,0 +1,94 @@
+.class public final Lha1/w;
+.super Lep0/u;
+.source "SourceFile"
+
+# interfaces
+.implements Ldp0/q;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/q<",
+        "Ljava/lang/String;",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/String;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;
+
+
+# direct methods
+.method public constructor <init>(Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;)V
+    .locals 0
+
+    iput-object p1, p0, Lha1/w;->b:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;
+
+    const/4 p1, 0x3
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    move-object v4, p1
+
+    check-cast v4, Ljava/lang/String;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p1
+
+    check-cast p3, Ljava/lang/String;
+
+    .line 2
+    iget-object p2, p0, Lha1/w;->b:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;
+
+    const/16 v0, 0x38
+
+    invoke-static {p2, v4, p1, p3, v0}, Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;->Gz(Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;Ljava/lang/String;ILjava/lang/String;I)V
+
+    .line 3
+    iget-object p1, p0, Lha1/w;->b:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;
+
+    invoke-virtual {p1}, Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;->Ez()Lsharechat/feature/creatorhub/home/CreatorHubHomeViewModel;
+
+    move-result-object v0
+
+    sget-object p1, Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment$e;->GETBADGE_BANNER:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment$e;
+
+    invoke-virtual {p1}, Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment$e;->getSource()Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object p1, p0, Lha1/w;->b:Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;
+
+    .line 4
+    iget-object v5, p1, Lsharechat/feature/creatorhub/home/CreatorHubHomeFragment;->r:Ljava/lang/String;
+
+    const-string v2, "CreatorHubHome"
+
+    const-string v3, "clicked"
+
+    .line 5
+    invoke-virtual/range {v0 .. v5}, Lsharechat/feature/creatorhub/home/CreatorHubHomeViewModel;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
+.end method

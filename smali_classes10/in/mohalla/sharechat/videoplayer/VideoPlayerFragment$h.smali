@@ -1,11 +1,14 @@
 .class public final Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;
-.super Landroidx/recyclerview/widget/n$i;
+.super Lxo0/i;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->J6(Ljava/lang/String;Lin/mohalla/sharechat/videoplayer/k;)V
+    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->un(Ldp0/l;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,214 +16,179 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lxo0/i;",
+        "Ldp0/p<",
+        "Lyr0/e0;",
+        "Lvo0/d<",
+        "-",
+        "Lro0/x;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.sharechat.videoplayer.VideoPlayerFragment$getMuteState$$inlined$launch$default$1"
+    f = "VideoPlayerFragment.kt"
+    l = {
+        0x62
+    }
+    m = "invokeSuspend"
+.end annotation
+
 
 # instance fields
-.field final synthetic f:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+.field public b:I
+
+.field public synthetic c:Ljava/lang/Object;
+
+.field public final synthetic d:Ldp0/l;
+
+.field public final synthetic e:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
 
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
-    .locals 1
+.method public constructor <init>(Lvo0/d;Ldp0/l;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+    .locals 0
 
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->f:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+    iput-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->d:Ldp0/l;
 
-    const/4 p1, 0x0
+    iput-object p3, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->e:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    const/16 v0, 0x8
+    const/4 p2, 0x2
 
-    .line 1
-    invoke-direct {p0, p1, v0}, Landroidx/recyclerview/widget/n$i;-><init>(II)V
+    invoke-direct {p0, p2, p1}, Lxo0/i;-><init>(ILvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public C(Landroidx/recyclerview/widget/RecyclerView$d0;I)V
-    .locals 4
+.method public final create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lvo0/d<",
+            "*>;)",
+            "Lvo0/d<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
 
-    const-string v0, "viewHolder"
+    new-instance v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->d:Ldp0/l;
 
-    const/4 v0, 0x4
+    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->e:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    if-ne v0, p2, :cond_2
+    invoke-direct {v0, p2, v1, v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;-><init>(Lvo0/d;Ldp0/l;Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)V
+
+    iput-object p1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->c:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lyr0/e0;
+
+    check-cast p2, Lvo0/d;
+
+    invoke-virtual {p0, p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->create(Ljava/lang/Object;Lvo0/d;)Lvo0/d;
+
+    move-result-object p1
+
+    check-cast p1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;
+
+    sget-object p2, Lro0/x;->a:Lro0/x;
+
+    invoke-virtual {p1, p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->f:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-    invoke-static {p2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Wy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lin/mohalla/sharechat/videoplayer/adapter/a;
-
-    move-result-object p2
-
-    const-string v0, "mAdapter"
-
-    const/4 v1, 0x0
-
-    if-nez p2, :cond_0
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object p2, v1
-
-    :cond_0
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$d0;->getAdapterPosition()I
-
-    move-result v2
-
-    invoke-virtual {p2, v2}, Lin/mohalla/sharechat/videoplayer/adapter/a;->i0(I)Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    move-result-object p2
+    sget-object v0, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
 
     .line 2
-    invoke-virtual {p2}, Lin/mohalla/sharechat/data/repository/post/PostModel;->getUser()Lsharechat/library/cvo/UserEntity;
+    iget v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->b:I
 
-    move-result-object p2
+    const/4 v2, 0x1
 
-    if-eqz p2, :cond_3
+    if-eqz v1, :cond_1
 
-    iget-object v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->f:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+    if-ne v1, v2, :cond_0
 
     .line 3
-    invoke-static {v2}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Wy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lin/mohalla/sharechat/videoplayer/adapter/a;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->c:Ljava/lang/Object;
 
-    move-result-object v3
+    check-cast v0, Ldp0/l;
 
-    if-nez v3, :cond_1
+    invoke-static {p1}, Lc20/e;->a0(Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v3, v1
-
-    :cond_1
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$d0;->getAdapterPosition()I
-
-    move-result p1
-
-    invoke-virtual {v3, p1}, Landroidx/recyclerview/widget/RecyclerView$h;->notifyItemChanged(I)V
-
-    const/4 p1, 0x1
+    goto :goto_0
 
     .line 4
-    invoke-static {v2, v1, p1, v1}, Lin/mohalla/sharechat/videoplayer/q$a;->c(Lin/mohalla/sharechat/videoplayer/q;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    move-result-object p1
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
 
-    invoke-virtual {v2, p2, p1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->j5(Lsharechat/library/cvo/UserEntity;Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_0
+    throw p1
 
     .line 5
-    :cond_2
-    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->f:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_3
-
-    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
-
-    :cond_3
-    :goto_0
-    return-void
-.end method
-
-.method public E(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$d0;)I
-    .locals 2
-
-    const-string v0, "recyclerView"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "viewHolder"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    instance-of v0, p2, Lha0/d;
-
-    if-eqz v0, :cond_0
-
-    move-object v0, p2
-
-    check-cast v0, Lha0/d;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_1
-
-    invoke-interface {v0}, Lha0/d;->H1()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    goto :goto_1
-
     :cond_1
-    const/4 v0, 0x0
+    invoke-static {p1}, Lc20/e;->a0(Ljava/lang/Object;)V
 
-    :goto_1
-    if-eqz v0, :cond_2
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->c:Ljava/lang/Object;
 
-    goto :goto_2
+    check-cast p1, Lyr0/e0;
 
-    .line 2
+    .line 6
+    iget-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->d:Ldp0/l;
+
+    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->e:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+
+    invoke-virtual {v1}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Qz()Ln12/e;
+
+    move-result-object v1
+
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->c:Ljava/lang/Object;
+
+    iput v2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$h;->b:I
+
+    invoke-virtual {v1, p0}, Ln12/e;->B(Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne v1, v0, :cond_2
+
+    return-object v0
+
     :cond_2
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/n$i;->E(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$d0;)I
+    move-object v0, p1
 
-    move-result v1
+    move-object p1, v1
 
-    :goto_2
-    return v1
-.end method
-
-.method public z(Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$d0;Landroidx/recyclerview/widget/RecyclerView$d0;)Z
-    .locals 1
-
-    const-string v0, "recyclerView"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "viewHolder"
-
-    invoke-static {p2, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "target"
-
-    invoke-static {p3, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    instance-of p1, p2, Lin/mohalla/sharechat/videoplayer/y;
-
-    if-nez p1, :cond_1
-
-    instance-of p1, p2, Lin/mohalla/sharechat/videoplayer/viewholders/r0;
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    goto :goto_1
-
-    :cond_1
     :goto_0
-    const/4 p1, 0x1
+    invoke-interface {v0, p1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    :goto_1
-    return p1
+    .line 7
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

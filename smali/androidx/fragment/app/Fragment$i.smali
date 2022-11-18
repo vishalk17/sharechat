@@ -1,4 +1,4 @@
-.class Landroidx/fragment/app/Fragment$i;
+.class public final Landroidx/fragment/app/Fragment$i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,29 +9,29 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "i"
 .end annotation
 
 
 # instance fields
-.field a:Landroid/view/View;
+.field public a:Landroid/view/View;
 
-.field b:Landroid/animation/Animator;
+.field public b:Landroid/animation/Animator;
 
-.field c:Z
+.field public c:Z
 
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:I
+.field public h:I
 
-.field i:Ljava/util/ArrayList;
+.field public i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -41,7 +41,7 @@
     .end annotation
 .end field
 
-.field j:Ljava/util/ArrayList;
+.field public j:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -51,39 +51,39 @@
     .end annotation
 .end field
 
-.field k:Ljava/lang/Object;
+.field public k:Ljava/lang/Object;
 
-.field l:Ljava/lang/Object;
+.field public l:Ljava/lang/Object;
 
-.field m:Ljava/lang/Object;
+.field public m:Ljava/lang/Object;
 
-.field n:Ljava/lang/Object;
+.field public n:Ljava/lang/Object;
 
-.field o:Ljava/lang/Object;
+.field public o:Ljava/lang/Object;
 
-.field p:Ljava/lang/Object;
+.field public p:Ljava/lang/Object;
 
-.field q:Ljava/lang/Boolean;
+.field public q:Ljava/lang/Boolean;
 
-.field r:Ljava/lang/Boolean;
+.field public r:Ljava/lang/Boolean;
 
-.field s:Landroidx/core/app/t;
+.field public s:Lf4/e0;
 
-.field t:Landroidx/core/app/t;
+.field public t:Lf4/e0;
 
-.field u:F
+.field public u:F
 
-.field v:Landroid/view/View;
+.field public v:Landroid/view/View;
 
-.field w:Z
+.field public w:Z
 
-.field x:Landroidx/fragment/app/Fragment$l;
+.field public x:Landroidx/fragment/app/Fragment$l;
 
-.field y:Z
+.field public y:Z
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 2
 
     .line 1
@@ -112,10 +112,10 @@
     iput-object v1, p0, Landroidx/fragment/app/Fragment$i;->p:Ljava/lang/Object;
 
     .line 8
-    iput-object v0, p0, Landroidx/fragment/app/Fragment$i;->s:Landroidx/core/app/t;
+    iput-object v0, p0, Landroidx/fragment/app/Fragment$i;->s:Lf4/e0;
 
     .line 9
-    iput-object v0, p0, Landroidx/fragment/app/Fragment$i;->t:Landroidx/core/app/t;
+    iput-object v0, p0, Landroidx/fragment/app/Fragment$i;->t:Lf4/e0;
 
     const/high16 v1, 0x3f800000    # 1.0f
 

@@ -15,15 +15,17 @@
 
 
 # static fields
-.field public static final standalone_badge:I = 0x7f150006
+.field public static final intercom_view_help_center_reaction_scene:I = 0x7f150003
 
-.field public static final standalone_badge_gravity_bottom_end:I = 0x7f150007
+.field public static final standalone_badge:I = 0x7f150007
 
-.field public static final standalone_badge_gravity_bottom_start:I = 0x7f150008
+.field public static final standalone_badge_gravity_bottom_end:I = 0x7f150008
 
-.field public static final standalone_badge_gravity_top_start:I = 0x7f150009
+.field public static final standalone_badge_gravity_bottom_start:I = 0x7f150009
 
-.field public static final standalone_badge_offset:I = 0x7f15000a
+.field public static final standalone_badge_gravity_top_start:I = 0x7f15000a
+
+.field public static final standalone_badge_offset:I = 0x7f15000b
 
 
 # direct methods

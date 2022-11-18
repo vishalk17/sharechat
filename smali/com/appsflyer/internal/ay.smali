@@ -23,7 +23,7 @@
 # instance fields
 .field private final AFInAppEventParameterName:Ljava/lang/String;
 
-.field final AFInAppEventType:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final AFInAppEventType:Ljava/util/concurrent/ScheduledExecutorService;
 
 .field private final AFKeystoreWrapper:Landroid/app/Application;
 
@@ -35,7 +35,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
     const-string v0, "googleplay"
@@ -44,7 +44,6 @@
 
     const-string v2, "googleplaystore"
 
-    .line 1
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +57,7 @@
     return-void
 .end method
 
-.method constructor <init>(Lcom/appsflyer/internal/ae;Landroid/app/Application;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/appsflyer/internal/ae;Landroid/app/Application;Ljava/lang/String;)V
     .locals 2
 
     .line 1
@@ -204,7 +203,7 @@
     return-void
 .end method
 
-.method static AFInAppEventType(Ljava/util/Map;)V
+.method public static AFInAppEventType(Ljava/util/Map;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -271,7 +270,7 @@
     :cond_0
     iget-object v3, v1, Lcom/appsflyer/internal/ay;->AFLogger$LogLevel:Lcom/appsflyer/internal/ae;
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->isStopped()Z
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->isStopped()Z
 
     move-result v3
 
@@ -414,7 +413,7 @@
 
     move-result-object v14
 
-    invoke-virtual {v14}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v14}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v14
 
@@ -1047,7 +1046,7 @@
     :goto_8
     iget-object v0, v1, Lcom/appsflyer/internal/ay;->AFInAppEventType:Ljava/util/concurrent/ScheduledExecutorService;
 
-    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     const-string v0, "[GCD-A03] Server retrieving attempt finished"
 

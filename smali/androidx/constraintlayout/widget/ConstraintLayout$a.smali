@@ -1,4 +1,4 @@
-.class synthetic Landroidx/constraintlayout/widget/ConstraintLayout$a;
+.class public final synthetic Landroidx/constraintlayout/widget/ConstraintLayout$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,21 +9,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
-    invoke-static {}, Lj1/e$b;->values()[Lj1/e$b;
+    invoke-static {}, Lz3/e$b;->values()[Lz3/e$b;
 
     move-result-object v0
 
@@ -34,7 +33,7 @@
     sput-object v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a:[I
 
     :try_start_0
-    sget-object v1, Lj1/e$b;->FIXED:Lj1/e$b;
+    sget-object v1, Lz3/e$b;->FIXED:Lz3/e$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -50,7 +49,7 @@
     :try_start_1
     sget-object v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a:[I
 
-    sget-object v1, Lj1/e$b;->WRAP_CONTENT:Lj1/e$b;
+    sget-object v1, Lz3/e$b;->WRAP_CONTENT:Lz3/e$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -66,7 +65,7 @@
     :try_start_2
     sget-object v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a:[I
 
-    sget-object v1, Lj1/e$b;->MATCH_PARENT:Lj1/e$b;
+    sget-object v1, Lz3/e$b;->MATCH_PARENT:Lz3/e$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -82,7 +81,7 @@
     :try_start_3
     sget-object v0, Landroidx/constraintlayout/widget/ConstraintLayout$a;->a:[I
 
-    sget-object v1, Lj1/e$b;->MATCH_CONSTRAINT:Lj1/e$b;
+    sget-object v1, Lz3/e$b;->MATCH_CONSTRAINT:Lz3/e$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

@@ -1,135 +1,84 @@
-.class public Landroidx/databinding/o;
-.super Ljava/lang/Object;
+.class public final Landroidx/databinding/o;
+.super Ljava/lang/ref/WeakReference;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/ref/WeakReference<",
+        "Landroidx/databinding/ViewDataBinding;",
+        ">;"
+    }
+.end annotation
+
+
 # instance fields
-.field private a:Landroid/view/ViewStub;
+.field public final a:Landroidx/databinding/j;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/databinding/j<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
-.field private b:Landroidx/databinding/ViewDataBinding;
+.field public final b:I
 
-.field private c:Landroid/view/View;
-
-.field private d:Landroid/view/ViewStub$OnInflateListener;
-
-.field private e:Landroidx/databinding/ViewDataBinding;
-
-.field private f:Landroid/view/ViewStub$OnInflateListener;
+.field public c:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewStub;)V
-    .locals 1
+.method public constructor <init>(Landroidx/databinding/ViewDataBinding;ILandroidx/databinding/j;Ljava/lang/ref/ReferenceQueue;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/databinding/ViewDataBinding;",
+            "I",
+            "Landroidx/databinding/j<",
+            "TT;>;",
+            "Ljava/lang/ref/ReferenceQueue<",
+            "Landroidx/databinding/ViewDataBinding;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p4}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
     .line 2
-    new-instance v0, Landroidx/databinding/o$a;
-
-    invoke-direct {v0, p0}, Landroidx/databinding/o$a;-><init>(Landroidx/databinding/o;)V
-
-    iput-object v0, p0, Landroidx/databinding/o;->f:Landroid/view/ViewStub$OnInflateListener;
+    iput p2, p0, Landroidx/databinding/o;->b:I
 
     .line 3
-    iput-object p1, p0, Landroidx/databinding/o;->a:Landroid/view/ViewStub;
-
-    .line 4
-    invoke-virtual {p1, v0}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
+    iput-object p3, p0, Landroidx/databinding/o;->a:Landroidx/databinding/j;
 
     return-void
 .end method
 
-.method static synthetic a(Landroidx/databinding/o;Landroid/view/View;)Landroid/view/View;
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/databinding/o;->c:Landroid/view/View;
-
-    return-object p1
-.end method
-
-.method static synthetic b(Landroidx/databinding/o;Landroidx/databinding/ViewDataBinding;)Landroidx/databinding/ViewDataBinding;
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/databinding/o;->b:Landroidx/databinding/ViewDataBinding;
-
-    return-object p1
-.end method
-
-.method static synthetic c(Landroidx/databinding/o;)Landroidx/databinding/ViewDataBinding;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroidx/databinding/o;->e:Landroidx/databinding/ViewDataBinding;
-
-    return-object p0
-.end method
-
-.method static synthetic d(Landroidx/databinding/o;Landroid/view/ViewStub;)Landroid/view/ViewStub;
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/databinding/o;->a:Landroid/view/ViewStub;
-
-    return-object p1
-.end method
-
-.method static synthetic e(Landroidx/databinding/o;)Landroid/view/ViewStub$OnInflateListener;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Landroidx/databinding/o;->d:Landroid/view/ViewStub$OnInflateListener;
-
-    return-object p0
-.end method
-
-.method static synthetic f(Landroidx/databinding/o;Landroid/view/ViewStub$OnInflateListener;)Landroid/view/ViewStub$OnInflateListener;
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/databinding/o;->d:Landroid/view/ViewStub$OnInflateListener;
-
-    return-object p1
-.end method
-
 
 # virtual methods
-.method public g()Landroidx/databinding/ViewDataBinding;
-    .locals 1
+.method public final a()Z
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/databinding/o;->b:Landroidx/databinding/ViewDataBinding;
-
-    return-object v0
-.end method
-
-.method public h()Landroid/view/View;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/databinding/o;->c:Landroid/view/View;
-
-    return-object v0
-.end method
-
-.method public i()Landroid/view/ViewStub;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/databinding/o;->a:Landroid/view/ViewStub;
-
-    return-object v0
-.end method
-
-.method public j()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/databinding/o;->c:Landroid/view/View;
+    iget-object v0, p0, Landroidx/databinding/o;->c:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v1, p0, Landroidx/databinding/o;->a:Landroidx/databinding/j;
+
+    invoke-interface {v1, v0}, Landroidx/databinding/j;->c(Ljava/lang/Object;)V
 
     const/4 v0, 0x1
 
@@ -139,29 +88,10 @@
     const/4 v0, 0x0
 
     :goto_0
+    const/4 v1, 0x0
+
+    .line 3
+    iput-object v1, p0, Landroidx/databinding/o;->c:Ljava/lang/Object;
+
     return v0
-.end method
-
-.method public k(Landroidx/databinding/ViewDataBinding;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/databinding/o;->e:Landroidx/databinding/ViewDataBinding;
-
-    return-void
-.end method
-
-.method public l(Landroid/view/ViewStub$OnInflateListener;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/databinding/o;->a:Landroid/view/ViewStub;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iput-object p1, p0, Landroidx/databinding/o;->d:Landroid/view/ViewStub$OnInflateListener;
-
-    :cond_0
-    return-void
 .end method

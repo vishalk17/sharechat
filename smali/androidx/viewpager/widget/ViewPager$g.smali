@@ -1,4 +1,4 @@
-.class public Landroidx/viewpager/widget/ViewPager$g;
+.class public final Landroidx/viewpager/widget/ViewPager$g;
 .super Landroid/view/ViewGroup$LayoutParams;
 .source "SourceFile"
 
@@ -19,13 +19,13 @@
 
 .field public b:I
 
-.field c:F
+.field public c:F
 
-.field d:Z
+.field public d:Z
 
-.field e:I
+.field public e:I
 
-.field f:I
+.field public f:I
 
 
 # direct methods

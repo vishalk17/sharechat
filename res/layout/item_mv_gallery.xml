@@ -5,7 +5,7 @@
         <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_media" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
     </androidx.cardview.widget.CardView>
     <FrameLayout android:id="@id/iv_sup_gallery" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="2.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
-        <in.mohalla.sharechat.common.views.RoundedCornerView android:background="@color/secondary" android:layout_width="fill_parent" android:layout_height="fill_parent" app:view_corner_radius="4.0dip" />
+        <in.mohalla.sharechat.appx.basesharechat.views.RoundedCornerView android:background="@color/secondary" android:layout_width="fill_parent" android:layout_height="fill_parent" app:view_corner_radius="4.0dip" />
         <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/iv_gallery" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_gallery_white" />
     </FrameLayout>
     <View android:id="@id/selector" android:background="@drawable/round_rect_border_blue_2dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />

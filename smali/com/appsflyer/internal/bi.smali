@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 7
 
-    .line 1
     sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     const/4 v1, 0x0
@@ -36,7 +35,6 @@
 .method public final AFLogger$LogLevel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/bi;->onDeepLinkingNative:Ljava/lang/String;
 
     return-object v0

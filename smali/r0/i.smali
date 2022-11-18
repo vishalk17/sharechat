@@ -2,214 +2,293 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ll1/l2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Lr0/m;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ll1/l2<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final b:Lr0/o1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr0/o1<",
+            "TT;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+.field public d:Lr0/m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TV;"
+        }
+    .end annotation
+.end field
+
+.field public e:J
+
+.field public f:J
+
+.field public g:Z
+
 
 # direct methods
-.method private static final a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
-    .locals 2
+.method public synthetic constructor <init>(Lr0/o1;Ljava/lang/Object;Lr0/m;I)V
+    .locals 9
 
-    .line 1
-    iget v0, p0, Landroid/graphics/Rect;->right:I
+    and-int/lit8 v0, p4, 0x4
 
-    invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
+    if-eqz v0, :cond_0
 
-    move-result v1
+    const/4 p3, 0x0
 
-    add-int/2addr v0, v1
+    :cond_0
+    move-object v3, p3
 
-    iput v0, p0, Landroid/graphics/Rect;->right:I
+    and-int/lit8 p3, p4, 0x8
 
-    .line 2
-    iget v0, p0, Landroid/graphics/Rect;->top:I
+    const-wide/high16 v0, -0x8000000000000000L
 
-    iget v1, p1, Landroid/graphics/Rect;->top:I
+    const-wide/16 v4, 0x0
 
-    invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
+    if-eqz p3, :cond_1
 
-    move-result v0
-
-    iput v0, p0, Landroid/graphics/Rect;->top:I
-
-    .line 3
-    iget v0, p0, Landroid/graphics/Rect;->bottom:I
-
-    iget p1, p1, Landroid/graphics/Rect;->bottom:I
-
-    invoke-static {v0, p1}, Ljava/lang/Math;->max(II)I
-
-    move-result p1
-
-    iput p1, p0, Landroid/graphics/Rect;->bottom:I
-
-    return-void
-.end method
-
-.method private static final b(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Rect;)V
-    .locals 2
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x1d
-
-    if-lt v0, v1, :cond_0
-
-    .line 2
-    invoke-static {p0, p1, p2, p3, p4}, Lr0/h;->a(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Rect;)V
+    move-wide v6, v0
 
     goto :goto_0
 
-    .line 3
-    :cond_0
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
-
-    :goto_0
-    return-void
-.end method
-
-.method public static final c(Landroid/text/TextPaint;Ljava/lang/CharSequence;II)Landroid/graphics/Rect;
-    .locals 12
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-class v0, Landroid/text/style/MetricAffectingSpan;
-
-    .line 1
-    instance-of v1, p1, Landroid/text/Spanned;
-
-    if-eqz v1, :cond_4
-
-    move-object v1, p1
-
-    check-cast v1, Landroid/text/Spanned;
-
-    invoke-static {v1, v0, p2, p3}, Lr0/j;->b(Landroid/text/Spanned;Ljava/lang/Class;II)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    goto :goto_2
-
-    .line 2
-    :cond_0
-    new-instance v2, Landroid/graphics/Rect;
-
-    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
-
-    .line 3
-    new-instance v3, Landroid/graphics/Rect;
-
-    invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
-
-    .line 4
-    new-instance v4, Landroid/text/TextPaint;
-
-    invoke-direct {v4}, Landroid/text/TextPaint;-><init>()V
-
-    :goto_0
-    if-ge p2, p3, :cond_3
-
-    .line 5
-    invoke-interface {v1, p2, p3, v0}, Landroid/text/Spanned;->nextSpanTransition(IILjava/lang/Class;)I
-
-    move-result v5
-
-    .line 6
-    invoke-interface {v1, p2, v5, v0}, Landroid/text/Spanned;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, [Landroid/text/style/MetricAffectingSpan;
-
-    .line 7
-    invoke-virtual {v4, p0}, Landroid/text/TextPaint;->set(Landroid/text/TextPaint;)V
-
-    const-string v7, "spans"
-
-    .line 8
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v7, 0x0
-
-    array-length v8, v6
-
-    :goto_1
-    if-ge v7, v8, :cond_2
-
-    aget-object v9, v6, v7
-
-    .line 9
-    invoke-interface {v1, v9}, Landroid/text/Spanned;->getSpanStart(Ljava/lang/Object;)I
-
-    move-result v10
-
-    .line 10
-    invoke-interface {v1, v9}, Landroid/text/Spanned;->getSpanEnd(Ljava/lang/Object;)I
-
-    move-result v11
-
-    if-eq v10, v11, :cond_1
-
-    .line 11
-    invoke-virtual {v9, v4}, Landroid/text/style/MetricAffectingSpan;->updateMeasureState(Landroid/text/TextPaint;)V
-
     :cond_1
-    add-int/lit8 v7, v7, 0x1
+    move-wide v6, v4
+
+    :goto_0
+    and-int/lit8 p3, p4, 0x10
+
+    if-eqz p3, :cond_2
+
+    move-wide p3, v0
 
     goto :goto_1
 
-    .line 12
     :cond_2
-    invoke-static {v4, p1, p2, v5, v3}, Lr0/i;->b(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Rect;)V
+    move-wide p3, v4
 
-    .line 13
-    invoke-static {v2, v3}, Lr0/i;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    :goto_1
+    const/4 v8, 0x0
 
-    move p2, v5
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-wide v4, v6
+
+    move-wide v6, p3
+
+    .line 1
+    invoke-direct/range {v0 .. v8}, Lr0/i;-><init>(Lr0/o1;Ljava/lang/Object;Lr0/m;JJZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lr0/o1;Ljava/lang/Object;Lr0/m;JJZ)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lr0/o1<",
+            "TT;TV;>;TT;TV;JJZ)V"
+        }
+    .end annotation
+
+    const-string v0, "typeConverter"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, Lr0/i;->b:Lr0/o1;
+
+    .line 4
+    invoke-static {p2}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    iput-object v0, p0, Lr0/i;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    if-eqz p3, :cond_0
+
+    .line 5
+    invoke-static {p3}, Lds0/r;->L(Lr0/m;)Lr0/m;
+
+    move-result-object p1
 
     goto :goto_0
 
-    :cond_3
-    return-object v2
+    :cond_0
+    invoke-static {p1, p2}, Lqk/f0;->x(Lr0/o1;Ljava/lang/Object;)Lr0/m;
 
-    .line 14
-    :cond_4
-    :goto_2
-    invoke-static {p0, p1, p2, p3}, Lr0/i;->d(Landroid/graphics/Paint;Ljava/lang/CharSequence;II)Landroid/graphics/Rect;
+    move-result-object p1
 
-    move-result-object p0
+    :goto_0
+    iput-object p1, p0, Lr0/i;->d:Lr0/m;
 
-    return-object p0
+    .line 6
+    iput-wide p4, p0, Lr0/i;->e:J
+
+    .line 7
+    iput-wide p6, p0, Lr0/i;->f:J
+
+    .line 8
+    iput-boolean p8, p0, Lr0/i;->g:Z
+
+    return-void
 .end method
 
-.method public static final d(Landroid/graphics/Paint;Ljava/lang/CharSequence;II)Landroid/graphics/Rect;
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lr0/i;->b:Lr0/o1;
+
+    invoke-interface {v0}, Lr0/o1;->b()Ldp0/l;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lr0/i;->d:Lr0/m;
+
+    invoke-interface {v0, v1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getValue()Ljava/lang/Object;
     .locals 1
-
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "text"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+    iget-object v0, p0, Lr0/i;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
     .line 2
-    invoke-static {p0, p1, p2, p3, v0}, Lr0/i;->b(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Rect;)V
+    invoke-virtual {v0}, Ll1/c2;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final h(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lr0/i;->c:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    invoke-virtual {v0, p1}, Ll1/c2;->setValue(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    const-string v0, "AnimationState(value="
+
+    .line 1
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    invoke-virtual {p0}, Lr0/i;->getValue()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", velocity="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-virtual {p0}, Lr0/i;->d()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", isRunning="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    iget-boolean v1, p0, Lr0/i;->g:Z
+
+    .line 7
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", lastFrameTimeNanos="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 8
+    iget-wide v1, p0, Lr0/i;->e:J
+
+    .line 9
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, ", finishedTimeNanos="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 10
+    iget-wide v1, p0, Lr0/i;->f:J
+
+    const/16 v3, 0x29
+
+    .line 11
+    invoke-static {v0, v1, v2, v3}, Le1/a;->c(Ljava/lang/StringBuilder;JC)Ljava/lang/String;
+
+    move-result-object v0
 
     return-object v0
 .end method

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_bottom_bar_proxy" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_navigation_card_height" android:layout_alignParentBottom="true"
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_bottom_bar_proxy" android:tag="layout/layout_proxy_bottom_bar_0" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_navigation_card_height" android:layout_alignParentBottom="true"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/first_index" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <View android:id="@id/second_index" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <View android:id="@id/third_index" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <View android:id="@id/forth_index" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
-    <View android:id="@id/fifth_index" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/first_index" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/second_index" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/third_index" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/forth_index" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <View android:id="@id/fifth_index" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
 </androidx.appcompat.widget.LinearLayoutCompat>

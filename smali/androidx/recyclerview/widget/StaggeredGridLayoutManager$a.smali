@@ -1,4 +1,4 @@
-.class Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;
+.class public final Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
+.field public final synthetic b:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
 
 # direct methods
-.method constructor <init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager;)V
+.method public constructor <init>(Landroidx/recyclerview/widget/StaggeredGridLayoutManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->b:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,13 +34,12 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$a;->b:Landroidx/recyclerview/widget/StaggeredGridLayoutManager;
 
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->e2()Z
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager;->h1()Z
 
     return-void
 .end method

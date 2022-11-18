@@ -1,59 +1,68 @@
 .class public final Lt0/j;
-.super Landroid/text/style/CharacterStyle;
+.super Lep0/u;
 .source "SourceFile"
 
+# interfaces
+.implements Ldp0/l;
 
-# instance fields
-.field private final a:I
 
-.field private final b:F
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Le2/c;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
-.field private final c:F
 
-.field private final d:F
+# static fields
+.field public static final b:Lt0/j;
 
 
 # direct methods
-.method public constructor <init>(IFFF)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
+    new-instance v0, Lt0/j;
 
-    .line 2
-    iput p1, p0, Lt0/j;->a:I
+    invoke-direct {v0}, Lt0/j;-><init>()V
 
-    .line 3
-    iput p2, p0, Lt0/j;->b:F
+    sput-object v0, Lt0/j;->b:Lt0/j;
 
-    .line 4
-    iput p3, p0, Lt0/j;->c:F
+    return-void
+.end method
 
-    .line 5
-    iput p4, p0, Lt0/j;->d:F
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 4
-
-    const-string v0, "tp"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget v0, p0, Lt0/j;->d:F
+    check-cast p1, Le2/c;
 
-    iget v1, p0, Lt0/j;->b:F
+    const-string v0, "$this$onDrawWithContent"
 
-    iget v2, p0, Lt0/j;->c:F
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget v3, p0, Lt0/j;->a:I
+    .line 3
+    invoke-interface {p1}, Le2/c;->T()V
 
-    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/text/TextPaint;->setShadowLayer(FFFI)V
+    .line 4
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
-    return-void
+    return-object p1
 .end method

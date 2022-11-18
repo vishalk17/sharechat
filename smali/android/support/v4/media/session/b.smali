@@ -15,7 +15,7 @@
 
 
 # virtual methods
-.method public abstract C()V
+.method public abstract A()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -23,7 +23,7 @@
     .end annotation
 .end method
 
-.method public abstract D()Landroid/support/v4/media/MediaMetadataCompat;
+.method public abstract B0()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -31,7 +31,7 @@
     .end annotation
 .end method
 
-.method public abstract E()Landroid/support/v4/media/session/PlaybackStateCompat;
+.method public abstract C0()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -39,7 +39,7 @@
     .end annotation
 .end method
 
-.method public abstract E1(Ljava/lang/String;Landroid/os/Bundle;Landroid/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper;)V
+.method public abstract E2()Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -47,7 +47,7 @@
     .end annotation
 .end method
 
-.method public abstract E4(J)V
+.method public abstract H2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -55,7 +55,7 @@
     .end annotation
 .end method
 
-.method public abstract F3()Landroid/os/Bundle;
+.method public abstract I()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -63,7 +63,7 @@
     .end annotation
 .end method
 
-.method public abstract H5(F)V
+.method public abstract M2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -71,7 +71,7 @@
     .end annotation
 .end method
 
-.method public abstract I3(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public abstract N3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -79,7 +79,7 @@
     .end annotation
 .end method
 
-.method public abstract J4(I)V
+.method public abstract O2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -87,7 +87,7 @@
     .end annotation
 .end method
 
-.method public abstract K3(Landroid/net/Uri;Landroid/os/Bundle;)V
+.method public abstract P0()Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -95,7 +95,7 @@
     .end annotation
 .end method
 
-.method public abstract L0(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public abstract P2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -103,7 +103,7 @@
     .end annotation
 .end method
 
-.method public abstract L1(Z)V
+.method public abstract Q()J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -111,7 +111,7 @@
     .end annotation
 .end method
 
-.method public abstract N()V
+.method public abstract Q2(Landroid/view/KeyEvent;)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -119,7 +119,7 @@
     .end annotation
 .end method
 
-.method public abstract P1()Ljava/lang/String;
+.method public abstract S()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -127,7 +127,7 @@
     .end annotation
 .end method
 
-.method public abstract Q0(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public abstract S1()Landroid/support/v4/media/session/ParcelableVolumeInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -135,7 +135,7 @@
     .end annotation
 .end method
 
-.method public abstract Q2(Z)V
+.method public abstract S3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -143,7 +143,7 @@
     .end annotation
 .end method
 
-.method public abstract R3(Landroid/view/KeyEvent;)Z
+.method public abstract T3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -151,7 +151,7 @@
     .end annotation
 .end method
 
-.method public abstract S()I
+.method public abstract U2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -159,7 +159,7 @@
     .end annotation
 .end method
 
-.method public abstract S5(IILjava/lang/String;)V
+.method public abstract X()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -167,7 +167,7 @@
     .end annotation
 .end method
 
-.method public abstract T4(Landroid/support/v4/media/RatingCompat;)V
+.method public abstract X2()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -175,7 +175,7 @@
     .end annotation
 .end method
 
-.method public abstract U4(IILjava/lang/String;)V
+.method public abstract Y0(Landroid/support/v4/media/session/a;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -183,7 +183,7 @@
     .end annotation
 .end method
 
-.method public abstract W4(Landroid/support/v4/media/MediaDescriptionCompat;)V
+.method public abstract a0()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -191,7 +191,7 @@
     .end annotation
 .end method
 
-.method public abstract X4(Landroid/support/v4/media/MediaDescriptionCompat;)V
+.method public abstract d3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -199,7 +199,7 @@
     .end annotation
 .end method
 
-.method public abstract Y3(Landroid/support/v4/media/MediaDescriptionCompat;I)V
+.method public abstract e0()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -207,7 +207,7 @@
     .end annotation
 .end method
 
-.method public abstract Z4(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public abstract e2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -215,7 +215,7 @@
     .end annotation
 .end method
 
-.method public abstract a2(Landroid/support/v4/media/session/a;)V
+.method public abstract f0()Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -223,7 +223,55 @@
     .end annotation
 .end method
 
-.method public abstract e6()Ljava/util/List;
+.method public abstract f1()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getTag()Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract i()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract i0()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract i3()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract k3()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract k4()Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -240,71 +288,7 @@
     .end annotation
 .end method
 
-.method public abstract f()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract f1(Landroid/support/v4/media/RatingCompat;Landroid/os/Bundle;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract getExtras()Landroid/os/Bundle;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract getTag()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract i3()Landroid/support/v4/media/session/ParcelableVolumeInfo;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract j0(I)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract j2()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract k0()J
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract k4()I
+.method public abstract m3()Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -320,7 +304,15 @@
     .end annotation
 .end method
 
-.method public abstract p(J)V
+.method public abstract o1()Ljava/lang/CharSequence;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract p4()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -344,7 +336,31 @@
     .end annotation
 .end method
 
-.method public abstract q0(Ljava/lang/String;Landroid/os/Bundle;)V
+.method public abstract q2()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract r0()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract r1()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract s2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -360,7 +376,7 @@
     .end annotation
 .end method
 
-.method public abstract t0()Z
+.method public abstract u()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -368,7 +384,7 @@
     .end annotation
 .end method
 
-.method public abstract u0(Landroid/net/Uri;Landroid/os/Bundle;)V
+.method public abstract w3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -376,7 +392,7 @@
     .end annotation
 .end method
 
-.method public abstract v1(I)V
+.method public abstract x3()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -384,7 +400,7 @@
     .end annotation
 .end method
 
-.method public abstract v2()Ljava/lang/CharSequence;
+.method public abstract y()Landroid/support/v4/media/MediaMetadataCompat;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -392,7 +408,7 @@
     .end annotation
 .end method
 
-.method public abstract w2(Landroid/support/v4/media/session/a;)V
+.method public abstract z()Landroid/support/v4/media/session/PlaybackStateCompat;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -400,7 +416,7 @@
     .end annotation
 .end method
 
-.method public abstract y0()Landroid/app/PendingIntent;
+.method public abstract z1()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -408,23 +424,7 @@
     .end annotation
 .end method
 
-.method public abstract y1()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract y3()I
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
-.end method
-
-.method public abstract y5()V
+.method public abstract z2()V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

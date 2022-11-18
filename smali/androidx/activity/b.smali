@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/savedstate/b$c;
+.implements Lg/b;
 
 
 # instance fields
@@ -23,14 +23,12 @@
 
 
 # virtual methods
-.method public final a()Landroid/os/Bundle;
+.method public final a(Landroid/content/Context;)V
     .locals 1
 
     iget-object v0, p0, Landroidx/activity/b;->a:Landroidx/activity/ComponentActivity;
 
-    invoke-static {v0}, Landroidx/activity/ComponentActivity;->me(Landroidx/activity/ComponentActivity;)Landroid/os/Bundle;
+    invoke-static {v0, p1}, Landroidx/activity/ComponentActivity;->mg(Landroidx/activity/ComponentActivity;Landroid/content/Context;)V
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

@@ -31,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +38,7 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;ILjava/lang/Object;)V
+.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;I)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TC;TT;ITA;)V"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/movable_image" android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="V,9:16" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black" android:scaleType="centerCrop" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_moveble_image" android:background="@drawable/dashed_border" android:padding="@dimen/size2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/iv_flip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_flip_mv" android:scaleType="centerCrop" android:translationX="@dimen/sizeneg10" android:translationY="@dimen/size10" app:layout_constraintBottom_toTopOf="@id/iv_moveble_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

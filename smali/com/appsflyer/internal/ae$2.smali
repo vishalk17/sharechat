@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic AFInAppEventType:Lcom/appsflyer/internal/ae;
+.field public final synthetic AFInAppEventType:Lcom/appsflyer/internal/ae;
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/ae;)V
+.method public constructor <init>(Lcom/appsflyer/internal/ae;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/ae$2;->AFInAppEventType:Lcom/appsflyer/internal/ae;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

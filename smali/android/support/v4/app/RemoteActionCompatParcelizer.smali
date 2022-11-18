@@ -7,28 +7,25 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;-><init>()V
 
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/b;)Landroidx/core/app/RemoteActionCompat;
+.method public static read(Lr6/b;)Landroidx/core/app/RemoteActionCompat;
     .locals 0
 
-    .line 1
-    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Landroidx/versionedparcelable/b;)Landroidx/core/app/RemoteActionCompat;
+    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(Lr6/b;)Landroidx/core/app/RemoteActionCompat;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static write(Landroidx/core/app/RemoteActionCompat;Landroidx/versionedparcelable/b;)V
+.method public static write(Landroidx/core/app/RemoteActionCompat;Lr6/b;)V
     .locals 0
 
-    .line 1
-    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroidx/core/app/RemoteActionCompat;Landroidx/versionedparcelable/b;)V
+    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroidx/core/app/RemoteActionCompat;Lr6/b;)V
 
     return-void
 .end method

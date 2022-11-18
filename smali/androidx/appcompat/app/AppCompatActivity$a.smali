@@ -1,9 +1,9 @@
-.class Landroidx/appcompat/app/AppCompatActivity$a;
+.class public final Landroidx/appcompat/app/AppCompatActivity$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/savedstate/b$c;
+.implements Lk6/a$c;
 
 
 # annotations
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/appcompat/app/AppCompatActivity;
+.field public final synthetic a:Landroidx/appcompat/app/AppCompatActivity;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/app/AppCompatActivity;)V
+.method public constructor <init>(Landroidx/appcompat/app/AppCompatActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatActivity$a;->a:Landroidx/appcompat/app/AppCompatActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a()Landroid/os/Bundle;
+.method public final a()Landroid/os/Bundle;
     .locals 2
 
     .line 1
@@ -46,11 +45,11 @@
     .line 2
     iget-object v1, p0, Landroidx/appcompat/app/AppCompatActivity$a;->a:Landroidx/appcompat/app/AppCompatActivity;
 
-    invoke-virtual {v1}, Landroidx/appcompat/app/AppCompatActivity;->getDelegate()Landroidx/appcompat/app/e;
+    invoke-virtual {v1}, Landroidx/appcompat/app/AppCompatActivity;->getDelegate()Landroidx/appcompat/app/m;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroidx/appcompat/app/e;->v(Landroid/os/Bundle;)V
+    invoke-virtual {v1}, Landroidx/appcompat/app/m;->q()V
 
     return-object v0
 .end method

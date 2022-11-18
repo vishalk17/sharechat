@@ -1,42 +1,75 @@
-.class public final synthetic Lq90/n;
-.super Ljava/lang/Object;
+.class public final Lq90/n;
+.super Lxo0/c;
 .source "SourceFile"
 
-# interfaces
-.implements Lrz/g;
+
+# annotations
+.annotation runtime Lxo0/e;
+    c = "in.mohalla.sharechat.appx.coresharechat.utils.PopupAndTooltipUtil"
+    f = "PopupAndTooltipUtil.kt"
+    l = {
+        0x41e,
+        0x3a6
+    }
+    m = "checkAndShowTooltip"
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Lq90/r;
+.field public b:Lq90/j;
 
-.field public final synthetic c:I
+.field public c:Lvv0/p2;
+
+.field public synthetic d:Ljava/lang/Object;
+
+.field public final synthetic e:Lq90/j;
+
+.field public f:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq90/r;I)V
+.method public constructor <init>(Lq90/j;Lvo0/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq90/j;",
+            "Lvo0/d<",
+            "-",
+            "Lq90/n;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq90/n;->e:Lq90/j;
 
-    iput-object p1, p0, Lq90/n;->b:Lq90/r;
-
-    iput p2, p0, Lq90/n;->c:I
+    invoke-direct {p0, p2}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 2
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    iget-object v0, p0, Lq90/n;->b:Lq90/r;
+    iput-object p1, p0, Lq90/n;->d:Ljava/lang/Object;
 
-    iget v1, p0, Lq90/n;->c:I
+    iget p1, p0, Lq90/n;->f:I
 
-    check-cast p1, Lsharechat/model/chatroom/remote/audiochat/b;
+    const/high16 v0, -0x80000000
 
-    invoke-static {v0, v1, p1}, Lq90/r;->wl(Lq90/r;ILsharechat/model/chatroom/remote/audiochat/b;)V
+    or-int/2addr p1, v0
 
-    return-void
+    iput p1, p0, Lq90/n;->f:I
+
+    iget-object p1, p0, Lq90/n;->e:Lq90/j;
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0, p0}, Lq90/j;->b(Lq90/j;Lvv0/p2;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

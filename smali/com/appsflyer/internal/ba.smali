@@ -7,13 +7,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static valueOf(Ljava/lang/String;)Ljava/util/Map;
+.method public static valueOf(Ljava/lang/String;)Ljava/util/Map;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -87,7 +86,7 @@
     move-result-object v4
 
     :goto_1
-    invoke-interface {v0, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -109,7 +108,7 @@
     return-object v1
 .end method
 
-.method static values(Landroid/content/Context;)Ljava/util/Map;
+.method public static values(Landroid/content/Context;)Ljava/util/Map;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

@@ -1,95 +1,76 @@
-.class public final Ld2/a;
+.class public abstract Ld2/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Ld2/a$b;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Ld2/a$b;
+
+.field public static final c:Ld2/a$a;
+
+
+# instance fields
+.field public final a:[F
+
+
 # direct methods
-.method public static final a(Landroid/content/Context;Landroidx/navigation/h;)Landroidx/lifecycle/w0$b;
+.method public static constructor <clinit>()V
     .locals 2
 
-    const-string v0, "context"
+    new-instance v0, Ld2/a$b;
 
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    const-string v0, "navBackStackEntry"
+    invoke-direct {v0, v1}, Ld2/a$b;-><init>(Lep0/k;)V
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    sput-object v0, Ld2/a;->b:Ld2/a$b;
+
+    const/16 v0, 0x9
+
+    new-array v0, v0, [F
 
     .line 1
-    :goto_0
-    instance-of v0, p0, Landroid/content/ContextWrapper;
-
-    if-eqz v0, :cond_1
+    fill-array-data v0, :array_0
 
     .line 2
-    instance-of v0, p0, Landroid/app/Activity;
+    new-instance v1, Ld2/a$a;
 
-    if-eqz v0, :cond_0
+    invoke-direct {v1, v0}, Ld2/a$a;-><init>([F)V
 
-    .line 3
-    check-cast p0, Landroid/app/Activity;
+    sput-object v1, Ld2/a;->c:Ld2/a$a;
 
-    .line 4
-    invoke-virtual {p1}, Landroidx/navigation/h;->c()Landroid/os/Bundle;
+    return-void
 
-    move-result-object v0
+    nop
 
-    .line 5
-    invoke-virtual {p1}, Landroidx/navigation/h;->getDefaultViewModelProviderFactory()Landroidx/lifecycle/w0$b;
+    :array_0
+    .array-data 4
+        0x3f652546    # 0.8951f
+        -0x40bff2e5    # -0.7502f
+        0x3d1f559b    # 0.0389f
+        0x3e886595    # 0.2664f
+        0x3fdb53f8    # 1.7135f
+        -0x4273b646    # -0.0685f
+        -0x41dab9f5    # -0.1614f
+        0x3d1652bd    # 0.0367f
+        0x3f83c9ef    # 1.0296f
+    .end array-data
+.end method
 
-    move-result-object v1
+.method public constructor <init>([F)V
+    .locals 0
 
-    .line 6
-    invoke-static {p0, p1, v0, v1}, Ldagger/hilt/android/internal/lifecycle/c;->b(Landroid/app/Activity;Landroidx/savedstate/d;Landroid/os/Bundle;Landroidx/lifecycle/w0$b;)Landroidx/lifecycle/w0$b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
+    iput-object p1, p0, Ld2/a;->a:[F
 
-    const-string p1, "HiltViewModelFactory.cre\u2026delProviderFactory,\n    )"
-
-    invoke-static {p0, p1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p0
-
-    .line 7
-    :cond_0
-    check-cast p0, Landroid/content/ContextWrapper;
-
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    const-string v0, "ctx.baseContext"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 8
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 9
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Expected an activity context for creating a HiltViewModelFactory for a "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "NavBackStackEntry but instead found: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 10
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 11
-    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-void
 .end method

@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "FullSpanItem"
 .end annotation
 
@@ -30,20 +30,19 @@
 
 
 # instance fields
-.field b:I
+.field public b:I
 
-.field c:I
+.field public c:I
 
-.field d:[I
+.field public d:[I
 
-.field e:Z
+.field public e:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem$a;
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem$a;-><init>()V
@@ -53,7 +52,7 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .line 8
@@ -62,7 +61,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
     .line 1
@@ -120,26 +119,7 @@
 
 
 # virtual methods
-.method a(I)I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->d:[I
-
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    aget p1, v0, p1
-
-    :goto_0
-    return p1
-.end method
-
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -147,18 +127,17 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
+    const-string v0, "FullSpanItem{mPosition="
+
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "FullSpanItem{mPosition="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 2
     iget v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -185,7 +164,7 @@
 
     iget-object v1, p0, Landroidx/recyclerview/widget/StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem;->d:[I
 
-    .line 2
+    .line 3
     invoke-static {v1}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
 
     move-result-object v1
@@ -203,7 +182,7 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1

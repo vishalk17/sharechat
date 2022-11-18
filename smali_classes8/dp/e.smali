@@ -2,81 +2,234 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljavax/inject/Provider;
 
-# direct methods
-.method public static final a(Lr00/a;)Ljava/lang/Object;
-    .locals 6
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljavax/inject/Provider;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljavax/inject/Provider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lr00/a<",
-            "+TT;>;)TT;"
+            "Ljavax/inject/Provider<",
+            "Lym/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lso/b<",
+            "Lsp/k;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lto/e;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lso/b<",
+            "Lag/g;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lcom/google/firebase/perf/config/RemoteConfigManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lfp/a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Ljavax/inject/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljavax/inject/Provider<",
+            "Lcom/google/firebase/perf/session/SessionManager;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;Ljavax/inject/Provider;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljavax/inject/Provider<",
+            "Lym/e;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lso/b<",
+            "Lsp/k;",
+            ">;>;",
+            "Ljavax/inject/Provider<",
+            "Lto/e;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lso/b<",
+            "Lag/g;",
+            ">;>;",
+            "Ljavax/inject/Provider<",
+            "Lcom/google/firebase/perf/config/RemoteConfigManager;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lfp/a;",
+            ">;",
+            "Ljavax/inject/Provider<",
+            "Lcom/google/firebase/perf/session/SessionManager;",
+            ">;)V"
         }
     .end annotation
 
-    const-string v0, "block"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    :try_start_0
-    sget-object v0, Li00/p;->b:Li00/p$a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-interface {p0}, Lr00/a;->invoke()Ljava/lang/Object;
-
-    move-result-object p0
+    iput-object p1, p0, Ldp/e;->a:Ljavax/inject/Provider;
 
     .line 3
-    invoke-static {p0}, Li00/p;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    sget-object v0, Li00/p;->b:Li00/p$a;
-
-    invoke-static {p0}, Li00/q;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    invoke-static {p0}, Li00/p;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p0
+    iput-object p2, p0, Ldp/e;->b:Ljavax/inject/Provider;
 
     .line 4
-    :goto_0
-    invoke-static {p0}, Li00/p;->b(Ljava/lang/Object;)Ljava/lang/Throwable;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
+    iput-object p3, p0, Ldp/e;->c:Ljavax/inject/Provider;
 
     .line 5
-    :cond_0
-    sget-object v0, Li00/a0;->a:Li00/a0;
+    iput-object p4, p0, Ldp/e;->d:Ljavax/inject/Provider;
 
-    const/4 v2, 0x1
+    .line 6
+    iput-object p5, p0, Ldp/e;->e:Ljavax/inject/Provider;
 
-    const/4 v3, 0x0
+    .line 7
+    iput-object p6, p0, Ldp/e;->f:Ljavax/inject/Provider;
 
-    const/4 v4, 0x4
+    .line 8
+    iput-object p7, p0, Ldp/e;->g:Ljavax/inject/Provider;
 
-    const/4 v5, 0x0
+    return-void
+.end method
 
-    invoke-static/range {v0 .. v5}, Lkq/a;->d(Ljava/lang/Object;Ljava/lang/Throwable;ZLandroid/content/Context;ILjava/lang/Object;)V
 
-    const/4 p0, 0x0
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 9
 
-    :goto_1
-    return-object p0
+    .line 1
+    iget-object v0, p0, Ldp/e;->a:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lym/e;
+
+    iget-object v0, p0, Ldp/e;->b:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Lso/b;
+
+    iget-object v0, p0, Ldp/e;->c:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Lto/e;
+
+    iget-object v0, p0, Ldp/e;->d:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lso/b;
+
+    iget-object v0, p0, Ldp/e;->e:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lcom/google/firebase/perf/config/RemoteConfigManager;
+
+    iget-object v0, p0, Ldp/e;->f:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lfp/a;
+
+    iget-object v0, p0, Ldp/e;->g:Ljavax/inject/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v8, v0
+
+    check-cast v8, Lcom/google/firebase/perf/session/SessionManager;
+
+    .line 2
+    new-instance v0, Ldp/c;
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v8}, Ldp/c;-><init>(Lym/e;Lso/b;Lto/e;Lso/b;Lcom/google/firebase/perf/config/RemoteConfigManager;Lfp/a;Lcom/google/firebase/perf/session/SessionManager;)V
+
+    return-object v0
 .end method

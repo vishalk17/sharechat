@@ -39,8 +39,6 @@
 
 .field public static final abc_tooltip_exit:I = 0x7f01000b
 
-.field public static final fragment_fast_out_extra_slow_in:I = 0x7f010034
-
 
 # direct methods
 .method private constructor <init>()V

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_post_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_post_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guide_line_top" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.0" app:layout_constraintTop_toTopOf="parent" />
     <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_pinned_post" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="guide_line_top" />

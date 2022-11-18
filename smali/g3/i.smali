@@ -1,30 +1,39 @@
-.class public abstract Lg3/i;
+.class public final Lg3/i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final a:Lg3/h;
+
+
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x18
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    new-instance v0, Lg3/c;
+
+    invoke-direct {v0}, Lg3/c;-><init>()V
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    new-instance v0, Lg3/b;
+
+    invoke-direct {v0}, Lg3/b;-><init>()V
+
+    .line 4
+    :goto_0
+    sput-object v0, Lg3/i;->a:Lg3/h;
 
     return-void
-.end method
-
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
-    .locals 0
-
-    invoke-direct {p0}, Lg3/i;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public abstract a()Landroid/graphics/drawable/Drawable;
-.end method
-
-.method public abstract b()Lg3/h;
 .end method

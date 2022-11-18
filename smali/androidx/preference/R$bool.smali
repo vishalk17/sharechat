@@ -19,7 +19,7 @@
 
 .field public static final abc_config_actionMenuItemAllCaps:I = 0x7f050001
 
-.field public static final config_materialPreferenceIconSpaceReserved:I = 0x7f050002
+.field public static final config_materialPreferenceIconSpaceReserved:I = 0x7f050003
 
 
 # direct methods

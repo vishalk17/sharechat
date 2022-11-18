@@ -1,26 +1,19 @@
-.class public interface abstract annotation Landroidx/lifecycle/j0;
+.class public final Landroidx/lifecycle/j0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/annotation/Annotation;
 
+# direct methods
+.method public constructor <init>()V
+    .locals 1
 
-# annotations
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.annotation runtime Ljava/lang/annotation/Retention;
-    value = .enum Ljava/lang/annotation/RetentionPolicy;->RUNTIME:Ljava/lang/annotation/RetentionPolicy;
-.end annotation
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
 
-.annotation runtime Ljava/lang/annotation/Target;
-    value = {
-        .enum Ljava/lang/annotation/ElementType;->METHOD:Ljava/lang/annotation/ElementType;
-    }
-.end annotation
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-
-# virtual methods
-.method public abstract value()Landroidx/lifecycle/q$b;
+    return-void
 .end method

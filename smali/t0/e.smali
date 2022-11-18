@@ -2,94 +2,107 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/text/style/LineHeightSpan;
 
-
-# instance fields
-.field private final b:F
+# static fields
+.field public static final a:Lt0/e;
 
 
 # direct methods
-.method public constructor <init>(F)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lt0/e;
+
+    invoke-direct {v0}, Lt0/e;-><init>()V
+
+    sput-object v0, Lt0/e;->a:Lt0/e;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput p1, p0, Lt0/e;->b:F
 
     return-void
 .end method
 
 
 # virtual methods
-.method public chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V
-    .locals 2
+.method public final a(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/widget/EdgeEffect;
+    .locals 1
 
-    const-string p2, "text"
+    const-string v0, "context"
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "fontMetricsInt"
-
-    invoke-static {p6, p1}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p6}, Lt0/g;->a(Landroid/graphics/Paint$FontMetricsInt;)I
+    :try_start_0
+    new-instance v0, Landroid/widget/EdgeEffect;
 
-    move-result p1
+    invoke-direct {v0, p1, p2}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    if-gtz p1, :cond_0
-
-    return-void
+    goto :goto_0
 
     .line 2
-    :cond_0
-    iget p2, p0, Lt0/e;->b:F
+    :catchall_0
+    new-instance v0, Landroid/widget/EdgeEffect;
 
-    float-to-double p2, p2
+    invoke-direct {v0, p1}, Landroid/widget/EdgeEffect;-><init>(Landroid/content/Context;)V
 
-    invoke-static {p2, p3}, Ljava/lang/Math;->ceil(D)D
+    :goto_0
+    return-object v0
+.end method
 
-    move-result-wide p2
+.method public final b(Landroid/widget/EdgeEffect;)F
+    .locals 1
 
-    double-to-float p2, p2
+    const-string v0, "edgeEffect"
 
-    float-to-int p2, p2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    int-to-float p3, p2
+    :try_start_0
+    invoke-virtual {p1}, Landroid/widget/EdgeEffect;->getDistance()F
 
-    const/high16 p4, 0x3f800000    # 1.0f
+    move-result p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    mul-float p3, p3, p4
+    goto :goto_0
 
-    int-to-float p1, p1
+    :catchall_0
+    const/4 p1, 0x0
 
-    div-float/2addr p3, p1
+    :goto_0
+    return p1
+.end method
 
-    .line 3
-    iget p1, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+.method public final c(Landroid/widget/EdgeEffect;FF)F
+    .locals 1
 
-    int-to-double p4, p1
+    const-string v0, "edgeEffect"
 
-    float-to-double v0, p3
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    mul-double p4, p4, v0
+    .line 1
+    :try_start_0
+    invoke-virtual {p1, p2, p3}, Landroid/widget/EdgeEffect;->onPullDistance(FF)F
 
-    invoke-static {p4, p5}, Ljava/lang/Math;->ceil(D)D
+    move-result p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result-wide p3
+    goto :goto_0
 
-    double-to-int p1, p3
+    .line 2
+    :catchall_0
+    invoke-virtual {p1, p2, p3}, Landroid/widget/EdgeEffect;->onPull(FF)V
 
-    iput p1, p6, Landroid/graphics/Paint$FontMetricsInt;->descent:I
+    const/4 p1, 0x0
 
-    sub-int/2addr p1, p2
-
-    .line 4
-    iput p1, p6, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
-
-    return-void
+    :goto_0
+    return p1
 .end method

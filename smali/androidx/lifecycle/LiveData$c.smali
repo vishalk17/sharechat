@@ -1,4 +1,4 @@
-.class abstract Landroidx/lifecycle/LiveData$c;
+.class public abstract Landroidx/lifecycle/LiveData$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,35 +9,35 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x402
+    accessFlags = 0x401
     name = "c"
 .end annotation
 
 
 # instance fields
-.field final b:Landroidx/lifecycle/i0;
+.field public final b:Landroidx/lifecycle/l0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Landroidx/lifecycle/i0<",
+            "Landroidx/lifecycle/l0<",
             "-TT;>;"
         }
     .end annotation
 .end field
 
-.field c:Z
+.field public c:Z
 
-.field d:I
+.field public d:I
 
-.field final synthetic e:Landroidx/lifecycle/LiveData;
+.field public final synthetic e:Landroidx/lifecycle/LiveData;
 
 
 # direct methods
-.method constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/i0;)V
+.method public constructor <init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/l0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/lifecycle/i0<",
+            "Landroidx/lifecycle/l0<",
             "-TT;>;)V"
         }
     .end annotation
@@ -53,15 +53,15 @@
     iput p1, p0, Landroidx/lifecycle/LiveData$c;->d:I
 
     .line 3
-    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->b:Landroidx/lifecycle/i0;
+    iput-object p2, p0, Landroidx/lifecycle/LiveData$c;->b:Landroidx/lifecycle/l0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method a(Z)V
-    .locals 1
+.method public final a(Z)V
+    .locals 5
 
     .line 1
     iget-boolean v0, p0, Landroidx/lifecycle/LiveData$c;->c:Z
@@ -77,6 +77,8 @@
     .line 3
     iget-object v0, p0, Landroidx/lifecycle/LiveData$c;->e:Landroidx/lifecycle/LiveData;
 
+    const/4 v1, 0x1
+
     if-eqz p1, :cond_1
 
     const/4 p1, 0x1
@@ -86,30 +88,115 @@
     :cond_1
     const/4 p1, -0x1
 
-    :goto_0
-    invoke-virtual {v0, p1}, Landroidx/lifecycle/LiveData;->c(I)V
-
     .line 4
-    iget-boolean p1, p0, Landroidx/lifecycle/LiveData$c;->c:Z
+    :goto_0
+    iget v2, v0, Landroidx/lifecycle/LiveData;->c:I
+
+    add-int/2addr p1, v2
+
+    .line 5
+    iput p1, v0, Landroidx/lifecycle/LiveData;->c:I
+
+    .line 6
+    iget-boolean p1, v0, Landroidx/lifecycle/LiveData;->d:Z
 
     if-eqz p1, :cond_2
 
-    .line 5
+    goto :goto_5
+
+    .line 7
+    :cond_2
+    iput-boolean v1, v0, Landroidx/lifecycle/LiveData;->d:Z
+
+    :goto_1
+    const/4 p1, 0x0
+
+    .line 8
+    :try_start_0
+    iget v3, v0, Landroidx/lifecycle/LiveData;->c:I
+
+    if-eq v2, v3, :cond_7
+
+    if-nez v2, :cond_3
+
+    if-lez v3, :cond_3
+
+    const/4 v4, 0x1
+
+    goto :goto_2
+
+    :cond_3
+    const/4 v4, 0x0
+
+    :goto_2
+    if-lez v2, :cond_4
+
+    if-nez v3, :cond_4
+
+    const/4 v2, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    const/4 v2, 0x0
+
+    :goto_3
+    if-eqz v4, :cond_5
+
+    .line 9
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->h()V
+
+    goto :goto_4
+
+    :cond_5
+    if-eqz v2, :cond_6
+
+    .line 10
+    invoke-virtual {v0}, Landroidx/lifecycle/LiveData;->i()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_6
+    :goto_4
+    move v2, v3
+
+    goto :goto_1
+
+    .line 11
+    :cond_7
+    iput-boolean p1, v0, Landroidx/lifecycle/LiveData;->d:Z
+
+    .line 12
+    :goto_5
+    iget-boolean p1, p0, Landroidx/lifecycle/LiveData$c;->c:Z
+
+    if-eqz p1, :cond_8
+
+    .line 13
     iget-object p1, p0, Landroidx/lifecycle/LiveData$c;->e:Landroidx/lifecycle/LiveData;
 
-    invoke-virtual {p1, p0}, Landroidx/lifecycle/LiveData;->e(Landroidx/lifecycle/LiveData$c;)V
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/LiveData;->c(Landroidx/lifecycle/LiveData$c;)V
 
-    :cond_2
+    :cond_8
     return-void
+
+    :catchall_0
+    move-exception v1
+
+    .line 14
+    iput-boolean p1, v0, Landroidx/lifecycle/LiveData;->d:Z
+
+    .line 15
+    throw v1
 .end method
 
-.method e()V
+.method public c()V
     .locals 0
 
     return-void
 .end method
 
-.method f(Landroidx/lifecycle/x;)Z
+.method public d(Landroidx/lifecycle/b0;)Z
     .locals 0
 
     const/4 p1, 0x0
@@ -117,5 +204,5 @@
     return p1
 .end method
 
-.method abstract g()Z
+.method public abstract f()Z
 .end method

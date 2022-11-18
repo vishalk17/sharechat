@@ -1,9 +1,6 @@
-.class Lb4/a$a;
+.class public final synthetic Lb4/a$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/util/concurrent/Callable;
 
 
 # annotations
@@ -12,123 +9,138 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1009
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/concurrent/Callable<",
-        "Ljava/lang/Void;",
-        ">;"
-    }
-.end annotation
 
-
-# instance fields
-.field final synthetic b:Lb4/a;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method constructor <init>(Lb4/a;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    iput-object p1, p0, Lb4/a$a;->b:Lb4/a;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public a()Ljava/lang/Void;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lb4/a$a;->b:Lb4/a;
-
-    monitor-enter v0
-
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Lb4/a$a;->b:Lb4/a;
-
-    invoke-static {v1}, Lb4/a;->b(Lb4/a;)Ljava/io/Writer;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    .line 3
-    monitor-exit v0
-
-    return-object v2
-
-    .line 4
-    :cond_0
-    iget-object v1, p0, Lb4/a$a;->b:Lb4/a;
-
-    invoke-static {v1}, Lb4/a;->d(Lb4/a;)V
-
-    .line 5
-    iget-object v1, p0, Lb4/a$a;->b:Lb4/a;
-
-    invoke-static {v1}, Lb4/a;->k(Lb4/a;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 6
-    iget-object v1, p0, Lb4/a$a;->b:Lb4/a;
-
-    invoke-static {v1}, Lb4/a;->l(Lb4/a;)V
-
-    .line 7
-    iget-object v1, p0, Lb4/a$a;->b:Lb4/a;
-
-    const/4 v3, 0x0
-
-    invoke-static {v1, v3}, Lb4/a;->m(Lb4/a;I)I
-
-    .line 8
-    :cond_1
-    monitor-exit v0
-
-    return-object v2
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v1
-.end method
-
-.method public bridge synthetic call()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Lb4/a$a;->a()Ljava/lang/Void;
+    invoke-static {}, Landroidx/constraintlayout/widget/a$b;->values()[Landroidx/constraintlayout/widget/a$b;
 
     move-result-object v0
 
-    return-object v0
+    array-length v0, v0
+
+    new-array v0, v0, [I
+
+    sput-object v0, Lb4/a$a;->a:[I
+
+    :try_start_0
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->INT_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :try_start_1
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->FLOAT_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x2
+
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->COLOR_DRAWABLE_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x3
+
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->COLOR_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x4
+
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->STRING_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x5
+
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->BOOLEAN_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x6
+
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v0, Lb4/a$a;->a:[I
+
+    sget-object v1, Landroidx/constraintlayout/widget/a$b;->DIMENSION_TYPE:Landroidx/constraintlayout/widget/a$b;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/4 v2, 0x7
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
+    return-void
 .end method

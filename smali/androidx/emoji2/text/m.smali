@@ -11,226 +11,218 @@
 .end annotation
 
 
-# instance fields
-.field private final a:Lc2/b;
-
-.field private final b:[C
-
-.field private final c:Landroidx/emoji2/text/m$a;
-
-.field private final d:Landroid/graphics/Typeface;
-
-
 # direct methods
-.method private constructor <init>(Landroid/graphics/Typeface;Lc2/b;)V
-    .locals 1
+.method private constructor <init>()V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Landroidx/emoji2/text/m;->d:Landroid/graphics/Typeface;
-
-    .line 3
-    iput-object p2, p0, Landroidx/emoji2/text/m;->a:Lc2/b;
-
-    .line 4
-    new-instance p1, Landroidx/emoji2/text/m$a;
-
-    const/16 v0, 0x400
-
-    invoke-direct {p1, v0}, Landroidx/emoji2/text/m$a;-><init>(I)V
-
-    iput-object p1, p0, Landroidx/emoji2/text/m;->c:Landroidx/emoji2/text/m$a;
-
-    .line 5
-    invoke-virtual {p2}, Lc2/b;->k()I
-
-    move-result p1
-
-    mul-int/lit8 p1, p1, 0x2
-
-    new-array p1, p1, [C
-
-    iput-object p1, p0, Landroidx/emoji2/text/m;->b:[C
-
-    .line 6
-    invoke-direct {p0, p2}, Landroidx/emoji2/text/m;->a(Lc2/b;)V
-
     return-void
 .end method
 
-.method private a(Lc2/b;)V
-    .locals 5
-
-    .line 1
-    invoke-virtual {p1}, Lc2/b;->k()I
-
-    move-result p1
-
-    const/4 v0, 0x0
-
-    :goto_0
-    if-ge v0, p1, :cond_0
-
-    .line 2
-    new-instance v1, Landroidx/emoji2/text/f;
-
-    invoke-direct {v1, p0, v0}, Landroidx/emoji2/text/f;-><init>(Landroidx/emoji2/text/m;I)V
-
-    .line 3
-    invoke-virtual {v1}, Landroidx/emoji2/text/f;->f()I
-
-    move-result v2
-
-    iget-object v3, p0, Landroidx/emoji2/text/m;->b:[C
-
-    mul-int/lit8 v4, v0, 0x2
-
-    invoke-static {v2, v3, v4}, Ljava/lang/Character;->toChars(I[CI)I
-
-    .line 4
-    invoke-virtual {p0, v1}, Landroidx/emoji2/text/m;->h(Landroidx/emoji2/text/f;)V
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-void
-.end method
-
-.method public static b(Landroid/graphics/Typeface;Ljava/nio/ByteBuffer;)Landroidx/emoji2/text/m;
-    .locals 1
+.method public static a(Ljava/nio/ByteBuffer;)Lm5/b;
+    .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
         }
     .end annotation
 
-    :try_start_0
-    const-string v0, "EmojiCompat.MetadataRepo.create"
-
     .line 1
-    invoke-static {v0}, Lr1/k;->a(Ljava/lang/String;)V
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
+
+    move-result-object p0
 
     .line 2
-    new-instance v0, Landroidx/emoji2/text/m;
+    new-instance v0, Landroidx/emoji2/text/m$a;
 
-    invoke-static {p1}, Landroidx/emoji2/text/l;->b(Ljava/nio/ByteBuffer;)Lc2/b;
+    invoke-direct {v0, p0}, Landroidx/emoji2/text/m$a;-><init>(Ljava/nio/ByteBuffer;)V
 
-    move-result-object p1
-
-    invoke-direct {v0, p0, p1}, Landroidx/emoji2/text/m;-><init>(Landroid/graphics/Typeface;Lc2/b;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 v1, 0x4
 
     .line 3
-    invoke-static {}, Lr1/k;->b()V
-
-    return-object v0
-
-    :catchall_0
-    move-exception p0
-
-    invoke-static {}, Lr1/k;->b()V
+    invoke-virtual {v0, v1}, Landroidx/emoji2/text/m$a;->b(I)V
 
     .line 4
-    throw p0
-.end method
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->getShort()S
 
+    move-result v2
 
-# virtual methods
-.method public c()[C
-    .locals 1
+    const v3, 0xffff
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m;->b:[C
+    and-int/2addr v2, v3
 
-    return-object v0
-.end method
+    const/16 v3, 0x64
 
-.method public d()Lc2/b;
-    .locals 1
+    const-string v4, "Cannot read metadata."
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m;->a:Lc2/b;
+    if-gt v2, v3, :cond_5
 
-    return-object v0
-.end method
+    const/4 v3, 0x6
 
-.method e()I
-    .locals 1
+    .line 5
+    invoke-virtual {v0, v3}, Landroidx/emoji2/text/m$a;->b(I)V
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m;->a:Lc2/b;
+    const/4 v3, 0x0
 
-    invoke-virtual {v0}, Lc2/b;->l()I
+    const/4 v5, 0x0
 
-    move-result v0
+    :goto_0
+    const-wide/16 v6, -0x1
 
-    return v0
-.end method
+    if-ge v5, v2, :cond_1
 
-.method f()Landroidx/emoji2/text/m$a;
-    .locals 1
+    .line 6
+    iget-object v8, v0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m;->c:Landroidx/emoji2/text/m$a;
+    invoke-virtual {v8}, Ljava/nio/ByteBuffer;->getInt()I
 
-    return-object v0
-.end method
+    move-result v8
 
-.method g()Landroid/graphics/Typeface;
-    .locals 1
+    .line 7
+    invoke-virtual {v0, v1}, Landroidx/emoji2/text/m$a;->b(I)V
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m;->d:Landroid/graphics/Typeface;
+    .line 8
+    invoke-virtual {v0}, Landroidx/emoji2/text/m$a;->a()J
 
-    return-object v0
-.end method
+    move-result-wide v9
 
-.method h(Landroidx/emoji2/text/f;)V
-    .locals 4
+    .line 9
+    invoke-virtual {v0, v1}, Landroidx/emoji2/text/m$a;->b(I)V
 
-    const-string v0, "emoji metadata cannot be null"
+    const v11, 0x6d657461
 
-    .line 1
-    invoke-static {p1, v0}, Lt1/h;->h(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    if-ne v11, v8, :cond_0
 
-    .line 2
-    invoke-virtual {p1}, Landroidx/emoji2/text/f;->c()I
+    goto :goto_1
 
-    move-result v0
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    if-lez v0, :cond_0
-
-    const/4 v0, 0x1
+    :cond_0
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
-    :cond_0
-    const/4 v0, 0x0
+    :cond_1
+    move-wide v9, v6
 
-    :goto_0
-    const-string v3, "invalid metadata codepoint length"
+    :goto_1
+    cmp-long v1, v9, v6
 
-    invoke-static {v0, v3}, Lt1/h;->b(ZLjava/lang/Object;)V
+    if-eqz v1, :cond_4
 
-    .line 3
-    iget-object v0, p0, Landroidx/emoji2/text/m;->c:Landroidx/emoji2/text/m$a;
+    .line 10
+    iget-object v1, v0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {p1}, Landroidx/emoji2/text/f;->c()I
+    invoke-virtual {v1}, Ljava/nio/Buffer;->position()I
 
-    move-result v3
+    move-result v1
 
-    sub-int/2addr v3, v1
+    int-to-long v1, v1
 
-    invoke-virtual {v0, p1, v2, v3}, Landroidx/emoji2/text/m$a;->c(Landroidx/emoji2/text/f;II)V
+    sub-long v1, v9, v1
 
-    return-void
+    long-to-int v2, v1
+
+    .line 11
+    invoke-virtual {v0, v2}, Landroidx/emoji2/text/m$a;->b(I)V
+
+    const/16 v1, 0xc
+
+    .line 12
+    invoke-virtual {v0, v1}, Landroidx/emoji2/text/m$a;->b(I)V
+
+    .line 13
+    invoke-virtual {v0}, Landroidx/emoji2/text/m$a;->a()J
+
+    move-result-wide v1
+
+    :goto_2
+    int-to-long v5, v3
+
+    cmp-long v7, v5, v1
+
+    if-gez v7, :cond_4
+
+    .line 14
+    iget-object v5, v0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
+
+    invoke-virtual {v5}, Ljava/nio/ByteBuffer;->getInt()I
+
+    move-result v5
+
+    .line 15
+    invoke-virtual {v0}, Landroidx/emoji2/text/m$a;->a()J
+
+    move-result-wide v6
+
+    .line 16
+    invoke-virtual {v0}, Landroidx/emoji2/text/m$a;->a()J
+
+    const v8, 0x456d6a69
+
+    if-eq v8, v5, :cond_3
+
+    const v8, 0x656d6a69
+
+    if-ne v8, v5, :cond_2
+
+    goto :goto_3
+
+    :cond_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_2
+
+    :cond_3
+    :goto_3
+    add-long/2addr v6, v9
+
+    long-to-int v0, v6
+
+    .line 17
+    invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 18
+    new-instance v0, Lm5/b;
+
+    invoke-direct {v0}, Lm5/b;-><init>()V
+
+    .line 19
+    sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
+
+    invoke-virtual {p0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
+
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Ljava/nio/ByteBuffer;->getInt(I)I
+
+    move-result v1
+
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
+
+    move-result v2
+
+    add-int/2addr v2, v1
+
+    .line 20
+    invoke-virtual {v0, v2, p0}, Lm5/c;->b(ILjava/nio/ByteBuffer;)V
+
+    return-object v0
+
+    .line 21
+    :cond_4
+    new-instance p0, Ljava/io/IOException;
+
+    invoke-direct {p0, v4}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 22
+    :cond_5
+    new-instance p0, Ljava/io/IOException;
+
+    invoke-direct {p0, v4}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

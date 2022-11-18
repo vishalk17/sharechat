@@ -87,20 +87,6 @@
 
 .field public static final FontFamily_fontProviderSystemFontFamily:I = 0x6
 
-.field public static final Fragment:[I
-
-.field public static final FragmentContainerView:[I
-
-.field public static final FragmentContainerView_android_name:I = 0x0
-
-.field public static final FragmentContainerView_android_tag:I = 0x1
-
-.field public static final Fragment_android_id:I = 0x1
-
-.field public static final Fragment_android_name:I = 0x0
-
-.field public static final Fragment_android_tag:I = 0x2
-
 .field public static final GradientColor:[I
 
 .field public static final GradientColorItem:[I
@@ -176,71 +162,59 @@
 
     sput-object v1, Landroidx/databinding/library/R$styleable;->FontFamilyFont:[I
 
-    const/4 v1, 0x3
+    const/16 v1, 0xc
 
     new-array v1, v1, [I
 
     fill-array-data v1, :array_5
 
-    sput-object v1, Landroidx/databinding/library/R$styleable;->Fragment:[I
-
-    new-array v1, v0, [I
-
-    fill-array-data v1, :array_6
-
-    sput-object v1, Landroidx/databinding/library/R$styleable;->FragmentContainerView:[I
-
-    const/16 v1, 0xc
-
-    new-array v1, v1, [I
-
-    fill-array-data v1, :array_7
-
     sput-object v1, Landroidx/databinding/library/R$styleable;->GradientColor:[I
 
     new-array v0, v0, [I
 
-    fill-array-data v0, :array_8
+    fill-array-data v0, :array_6
 
     sput-object v0, Landroidx/databinding/library/R$styleable;->GradientColorItem:[I
 
     return-void
+
+    nop
 
     :array_0
     .array-data 4
         0x10101a5
         0x101031f
         0x1010647
-        0x7f04003c
-        0x7f0402e9
+        0x7f040039
+        0x7f040337
     .end array-data
 
     :array_1
     .array-data 4
-        0x7f0402e8
-        0x7f040554
+        0x7f040336
+        0x7f04059c
     .end array-data
 
     :array_2
     .array-data 4
         0x10100b3
-        0x7f0402f5
-        0x7f0402f6
-        0x7f0402f7
-        0x7f040328
-        0x7f040338
-        0x7f040339
+        0x7f040344
+        0x7f040345
+        0x7f040346
+        0x7f040377
+        0x7f040387
+        0x7f040388
     .end array-data
 
     :array_3
     .array-data 4
-        0x7f04026d
-        0x7f04026e
-        0x7f04026f
-        0x7f040270
-        0x7f040271
-        0x7f040272
-        0x7f040273
+        0x7f0402b4
+        0x7f0402b5
+        0x7f0402b6
+        0x7f0402b7
+        0x7f0402b8
+        0x7f0402b9
+        0x7f0402ba
     .end array-data
 
     :array_4
@@ -250,27 +224,14 @@
         0x101053f
         0x101056f
         0x1010570
-        0x7f04026b
-        0x7f040274
-        0x7f040275
-        0x7f040276
-        0x7f04061a
+        0x7f0402b2
+        0x7f0402bb
+        0x7f0402bc
+        0x7f0402bd
+        0x7f04067e
     .end array-data
 
     :array_5
-    .array-data 4
-        0x1010003
-        0x10100d0
-        0x10100d1
-    .end array-data
-
-    :array_6
-    .array-data 4
-        0x1010003
-        0x10100d1
-    .end array-data
-
-    :array_7
     .array-data 4
         0x101019d
         0x101019e
@@ -286,7 +247,7 @@
         0x1010513
     .end array-data
 
-    :array_8
+    :array_6
     .array-data 4
         0x10101a5
         0x1010514

@@ -1,69 +1,126 @@
-.class final Landroidx/lifecycle/f$b;
-.super Lkotlin/coroutines/jvm/internal/d;
+.class public final Landroidx/lifecycle/f$b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/lifecycle/f;->r(Lkotlin/coroutines/d;)Ljava/lang/Object;
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/lifecycle/f;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
-    name = null
+    accessFlags = 0x19
+    name = "b"
 .end annotation
 
-.annotation runtime Lkotlin/coroutines/jvm/internal/f;
-    c = "androidx.lifecycle.CoroutineLiveData"
-    f = "CoroutineLiveData.kt"
-    l = {
-        0xea
-    }
-    m = "clearSource$lifecycle_livedata_ktx_release"
+.annotation runtime Ljava/lang/Deprecated;
 .end annotation
 
 
 # instance fields
-.field synthetic b:Ljava/lang/Object;
+.field public final a:I
 
-.field c:I
-
-.field final synthetic d:Landroidx/lifecycle/f;
-
-.field e:Ljava/lang/Object;
+.field public final b:Ljava/lang/reflect/Method;
 
 
 # direct methods
-.method constructor <init>(Landroidx/lifecycle/f;Lkotlin/coroutines/d;)V
+.method public constructor <init>(ILjava/lang/reflect/Method;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/lifecycle/f$b;->d:Landroidx/lifecycle/f;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/d;-><init>(Lkotlin/coroutines/d;)V
+    .line 2
+    iput p1, p0, Landroidx/lifecycle/f$b;->a:I
+
+    .line 3
+    iput-object p2, p0, Landroidx/lifecycle/f$b;->b:Ljava/lang/reflect/Method;
+
+    const/4 p1, 0x1
+
+    .line 4
+    invoke-virtual {p2, p1}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
-    iput-object p1, p0, Landroidx/lifecycle/f$b;->b:Ljava/lang/Object;
+    const/4 v0, 0x1
 
-    iget p1, p0, Landroidx/lifecycle/f$b;->c:I
+    if-ne p0, p1, :cond_0
 
-    const/high16 v0, -0x80000000
+    return v0
 
-    or-int/2addr p1, v0
+    .line 1
+    :cond_0
+    instance-of v1, p1, Landroidx/lifecycle/f$b;
 
-    iput p1, p0, Landroidx/lifecycle/f$b;->c:I
+    const/4 v2, 0x0
 
-    iget-object p1, p0, Landroidx/lifecycle/f$b;->d:Landroidx/lifecycle/f;
+    if-nez v1, :cond_1
 
-    invoke-virtual {p1, p0}, Landroidx/lifecycle/f;->r(Lkotlin/coroutines/d;)Ljava/lang/Object;
+    return v2
+
+    .line 2
+    :cond_1
+    check-cast p1, Landroidx/lifecycle/f$b;
+
+    .line 3
+    iget v1, p0, Landroidx/lifecycle/f$b;->a:I
+
+    iget v3, p1, Landroidx/lifecycle/f$b;->a:I
+
+    if-ne v1, v3, :cond_2
+
+    iget-object v1, p0, Landroidx/lifecycle/f$b;->b:Ljava/lang/reflect/Method;
+
+    invoke-virtual {v1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object p1, p1, Landroidx/lifecycle/f$b;->b:Ljava/lang/reflect/Method;
+
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    return-object p1
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    iget v0, p0, Landroidx/lifecycle/f$b;->a:I
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Landroidx/lifecycle/f$b;->b:Ljava/lang/reflect/Method;
+
+    invoke-virtual {v1}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
 .end method

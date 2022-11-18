@@ -1,88 +1,92 @@
-.class Landroidx/appcompat/widget/m0$a;
+.class public final Landroidx/appcompat/widget/m0$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/m0;-><init>(Landroidx/appcompat/widget/Toolbar;ZII)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/appcompat/widget/m0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x19
+    name = "a"
 .end annotation
 
 
 # instance fields
-.field final b:Landroidx/appcompat/view/menu/a;
+.field public final a:Landroid/widget/TextView;
 
-.field final synthetic c:Landroidx/appcompat/widget/m0;
+.field public final b:Landroid/widget/TextView;
+
+.field public final c:Landroid/widget/ImageView;
+
+.field public final d:Landroid/widget/ImageView;
+
+.field public final e:Landroid/widget/ImageView;
 
 
 # direct methods
-.method constructor <init>(Landroidx/appcompat/widget/m0;)V
-    .locals 8
+.method public constructor <init>(Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/m0$a;->c:Landroidx/appcompat/widget/m0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v7, Landroidx/appcompat/view/menu/a;
-
-    iget-object v0, p1, Landroidx/appcompat/widget/m0;->a:Landroidx/appcompat/widget/Toolbar;
-
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    iget-object v6, p1, Landroidx/appcompat/widget/m0;->i:Ljava/lang/CharSequence;
-
-    const/4 v2, 0x0
-
-    const v3, 0x102002c
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    move-object v0, v7
-
-    invoke-direct/range {v0 .. v6}, Landroidx/appcompat/view/menu/a;-><init>(Landroid/content/Context;IIIILjava/lang/CharSequence;)V
-
-    iput-object v7, p0, Landroidx/appcompat/widget/m0$a;->b:Landroidx/appcompat/view/menu/a;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-
-    .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/m0$a;->c:Landroidx/appcompat/widget/m0;
-
-    iget-object v0, p1, Landroidx/appcompat/widget/m0;->l:Landroid/view/Window$Callback;
-
-    if-eqz v0, :cond_0
-
-    iget-boolean p1, p1, Landroidx/appcompat/widget/m0;->m:Z
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x0
+    const v0, 0x1020014
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/m0$a;->b:Landroidx/appcompat/view/menu/a;
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-interface {v0, p1, v1}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z
+    move-result-object v0
 
-    :cond_0
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/m0$a;->a:Landroid/widget/TextView;
+
+    const v0, 0x1020015
+
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/m0$a;->b:Landroid/widget/TextView;
+
+    const v0, 0x1020007
+
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/m0$a;->c:Landroid/widget/ImageView;
+
+    const v0, 0x1020008
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    iput-object v0, p0, Landroidx/appcompat/widget/m0$a;->d:Landroid/widget/ImageView;
+
+    .line 6
+    sget v0, Landroidx/appcompat/R$id;->edit_query:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ImageView;
+
+    iput-object p1, p0, Landroidx/appcompat/widget/m0$a;->e:Landroid/widget/ImageView;
+
     return-void
 .end method

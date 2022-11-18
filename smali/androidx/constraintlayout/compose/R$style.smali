@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final DialogWindowTheme:I = 0x7f130112
+.field public static final DialogWindowTheme:I = 0x7f130139
 
 
 # direct methods

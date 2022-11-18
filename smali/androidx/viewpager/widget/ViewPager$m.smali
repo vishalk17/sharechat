@@ -21,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,13 +28,13 @@
 
 
 # virtual methods
-.method public onPageScrollStateChanged(I)V
+.method public final onPageScrollStateChanged(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public onPageScrolled(IFI)V
+.method public final onPageScrolled(IFI)V
     .locals 0
 
     return-void

@@ -7,5 +7,5 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
         <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:background="@color/dark_primary" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tabIndicatorColor="@color/link" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
     </com.google.android.material.appbar.AppBarLayout>
-    <in.mohalla.sharechat.common.views.CustomViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <in.mohalla.sharechat.appx.basesharechat.util.CustomViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

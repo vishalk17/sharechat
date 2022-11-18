@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/platform/q2;
@@ -23,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,22 +30,35 @@
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/platform/AndroidComposeView;)V
+.method public final a(Landroid/view/View;Lc2/t0;)V
     .locals 1
 
-    const-string v0, "ownerView"
+    const-string v0, "view"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-eqz p2, :cond_0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getParent()Landroid/view/ViewParent;
+    iget-object v0, p2, Lc2/t0;->a:Landroid/graphics/RenderEffect;
+
+    if-nez v0, :cond_1
+
+    invoke-virtual {p2}, Lc2/t0;->a()Landroid/graphics/RenderEffect;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    iput-object v0, p2, Lc2/t0;->a:Landroid/graphics/RenderEffect;
 
-    invoke-interface {v0, p1, p1}, Landroid/view/ViewParent;->onDescendantInvalidated(Landroid/view/View;Landroid/view/View;)V
+    goto :goto_0
 
     :cond_0
+    const/4 v0, 0x0
+
+    .line 2
+    :cond_1
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/view/View;->setRenderEffect(Landroid/graphics/RenderEffect;)V
+
     return-void
 .end method

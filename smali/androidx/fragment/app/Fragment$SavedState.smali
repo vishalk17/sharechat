@@ -30,14 +30,13 @@
 
 
 # instance fields
-.field final b:Landroid/os/Bundle;
+.field public final b:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/Fragment$SavedState$a;
 
     invoke-direct {v0}, Landroidx/fragment/app/Fragment$SavedState$a;-><init>()V
@@ -47,7 +46,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Bundle;)V
+.method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
@@ -59,7 +58,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
 
     .line 3
@@ -85,7 +84,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -93,10 +92,9 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Landroidx/fragment/app/Fragment$SavedState;->b:Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V

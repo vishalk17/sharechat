@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:id="@id/fl_ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" xmlns:app="http://schemas.android.com/apk/res-auto"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <sharechat.ads.manager.ima.customui.InStreamVideoView android:layout_gravity="center" android:id="@id/ad_view_post_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:controller_layout_id="@layout/itemview_empty" />
-</FrameLayout>

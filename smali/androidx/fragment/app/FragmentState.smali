@@ -19,38 +19,37 @@
 
 
 # instance fields
-.field final b:Ljava/lang/String;
+.field public final b:Ljava/lang/String;
 
-.field final c:Ljava/lang/String;
+.field public final c:Ljava/lang/String;
 
-.field final d:Z
+.field public final d:Z
 
-.field final e:I
+.field public final e:I
 
-.field final f:I
+.field public final f:I
 
-.field final g:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field final h:Z
+.field public final h:Z
 
-.field final i:Z
+.field public final i:Z
 
-.field final j:Z
+.field public final j:Z
 
-.field final k:Landroid/os/Bundle;
+.field public final k:Landroid/os/Bundle;
 
-.field final l:Z
+.field public final l:Z
 
-.field final m:I
+.field public final m:I
 
-.field n:Landroid/os/Bundle;
+.field public n:Landroid/os/Bundle;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/FragmentState$a;
 
     invoke-direct {v0}, Landroidx/fragment/app/FragmentState$a;-><init>()V
@@ -60,7 +59,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
 
     .line 14
@@ -212,7 +211,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroidx/fragment/app/Fragment;)V
+.method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 1
 
     .line 1
@@ -280,7 +279,7 @@
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentState;->l:Z
 
     .line 13
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->mMaxState:Landroidx/lifecycle/q$c;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->mMaxState:Landroidx/lifecycle/t$c;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -293,7 +292,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -301,7 +300,7 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -441,7 +440,7 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1

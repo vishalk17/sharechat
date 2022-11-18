@@ -6,7 +6,9 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroidx/transition/R$anim;,
         Landroidx/transition/R$attr;,
+        Landroidx/transition/R$bool;,
         Landroidx/transition/R$color;,
         Landroidx/transition/R$dimen;,
         Landroidx/transition/R$drawable;,

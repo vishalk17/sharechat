@@ -1,0 +1,32 @@
+#type vertex
+
+attribute vec3 a_Position;
+varying vec3 v_CubeTexCoord;
+uniform mat4 rotmat;
+uniform mat4 mvp;
+
+vec4 vertex(){
+    v_CubeTexCoord = a_Position;
+    return mvp * rotmat * vec4(a_Position, 1.0);
+}
+
+#type fragment
+precision mediump float;
+varying vec3 v_CubeTexCoord;
+uniform samplerCube u_CubeMapTexture;
+vec4 fragment(){
+    vec4 texColor = textureCube(u_CubeMapTexture, v_CubeTexCoord);
+    return texColor;
+}
+
+#type shader_data
+{
+  "ShaderData" : [
+    {
+      "type" : "Vec4",
+      "value" : "[0.2,0.1,0.3,1.0]",
+      "name" : "u_Color",
+      "function" : "fragment"
+    }
+  ]
+}

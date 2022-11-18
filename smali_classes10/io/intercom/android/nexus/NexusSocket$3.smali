@@ -9,20 +9,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic this$0:Lio/intercom/android/nexus/NexusSocket;
+.field public final synthetic this$0:Lio/intercom/android/nexus/NexusSocket;
 
 
 # direct methods
-.method constructor <init>(Lio/intercom/android/nexus/NexusSocket;)V
+.method public constructor <init>(Lio/intercom/android/nexus/NexusSocket;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-direct {p0}, Lokhttp3/WebSocketListener;-><init>()V
@@ -290,7 +289,7 @@
 .end method
 
 .method public onFailure(Lokhttp3/WebSocket;Ljava/lang/Throwable;Lokhttp3/Response;)V
-    .locals 1
+    .locals 0
 
     .line 1
     invoke-static {p3}, Lio/intercom/android/nexus/NexusSocket;->shouldReconnectFromFailure(Lokhttp3/Response;)Z
@@ -320,14 +319,14 @@
 
     move-result-object p1
 
-    new-instance p3, Ljava/lang/StringBuilder;
+    const-string p3, "onFailure: "
 
-    invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
+    .line 5
+    invoke-static {p3}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, "onFailure: "
+    move-result-object p3
 
-    invoke-virtual {p3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 6
     invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object p2
@@ -340,7 +339,7 @@
 
     invoke-virtual {p1, p2}, Lcom/intercom/twig/Twig;->internal(Ljava/lang/String;)V
 
-    .line 5
+    .line 7
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {p1}, Lio/intercom/android/nexus/NexusSocket;->access$700(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusListener;
@@ -366,7 +365,7 @@
     return-void
 .end method
 
-.method public onMessage(Lokhttp3/WebSocket;Lokio/f;)V
+.method public onMessage(Lokhttp3/WebSocket;Lmt0/f;)V
     .locals 2
 
     .line 3
@@ -405,7 +404,7 @@
 .end method
 
 .method public onOpen(Lokhttp3/WebSocket;Lokhttp3/Response;)V
-    .locals 3
+    .locals 2
 
     .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
@@ -414,14 +413,14 @@
 
     move-result-object v0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "onOpen: "
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    .line 2
+    invoke-static {v1}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v2, "onOpen: "
+    move-result-object v1
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 3
     invoke-virtual {p2}, Lokhttp3/Response;->message()Ljava/lang/String;
 
     move-result-object p2
@@ -434,17 +433,17 @@
 
     invoke-virtual {v0, p2}, Lcom/intercom/twig/Twig;->internal(Ljava/lang/String;)V
 
-    .line 2
+    .line 4
     iget-object p2, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {p2, p1}, Lio/intercom/android/nexus/NexusSocket;->access$302(Lio/intercom/android/nexus/NexusSocket;Lokhttp3/WebSocket;)Lokhttp3/WebSocket;
 
-    .line 3
+    .line 5
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {p1}, Lio/intercom/android/nexus/NexusSocket;->access$400(Lio/intercom/android/nexus/NexusSocket;)V
 
-    .line 4
+    .line 6
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {p1}, Lio/intercom/android/nexus/NexusSocket;->access$500(Lio/intercom/android/nexus/NexusSocket;)Lio/intercom/android/nexus/NexusTopicProvider;
@@ -455,14 +454,14 @@
 
     move-result-object p1
 
-    .line 5
+    .line 7
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p2
 
     if-nez p2, :cond_0
 
-    .line 6
+    .line 8
     iget-object p2, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {p1}, Lio/intercom/android/nexus/NexusEvent;->getSubscribeEvent(Ljava/util/List;)Lio/intercom/android/nexus/NexusEvent;
@@ -475,7 +474,7 @@
 
     invoke-virtual {p2, p1}, Lio/intercom/android/nexus/NexusSocket;->fire(Ljava/lang/String;)V
 
-    .line 7
+    .line 9
     :cond_0
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
@@ -485,7 +484,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 8
+    .line 10
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 
     invoke-static {}, Lio/intercom/android/nexus/NexusEvent;->getUserPresenceEvent()Lio/intercom/android/nexus/NexusEvent;
@@ -498,7 +497,7 @@
 
     invoke-virtual {p1, p2}, Lio/intercom/android/nexus/NexusSocket;->fire(Ljava/lang/String;)V
 
-    .line 9
+    .line 11
     :cond_1
     iget-object p1, p0, Lio/intercom/android/nexus/NexusSocket$3;->this$0:Lio/intercom/android/nexus/NexusSocket;
 

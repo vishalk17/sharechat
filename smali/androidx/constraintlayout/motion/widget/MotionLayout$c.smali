@@ -1,4 +1,4 @@
-.class synthetic Landroidx/constraintlayout/motion/widget/MotionLayout$c;
+.class public final synthetic Landroidx/constraintlayout/motion/widget/MotionLayout$c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,21 +9,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
-    invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$k;->values()[Landroidx/constraintlayout/motion/widget/MotionLayout$k;
+    invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->values()[Landroidx/constraintlayout/motion/widget/MotionLayout$j;
 
     move-result-object v0
 
@@ -34,7 +33,7 @@
     sput-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:[I
 
     :try_start_0
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$k;->UNDEFINED:Landroidx/constraintlayout/motion/widget/MotionLayout$k;
+    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->UNDEFINED:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -50,7 +49,7 @@
     :try_start_1
     sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:[I
 
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$k;->SETUP:Landroidx/constraintlayout/motion/widget/MotionLayout$k;
+    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->SETUP:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -66,7 +65,7 @@
     :try_start_2
     sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:[I
 
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$k;->MOVING:Landroidx/constraintlayout/motion/widget/MotionLayout$k;
+    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->MOVING:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -82,7 +81,7 @@
     :try_start_3
     sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:[I
 
-    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$k;->FINISHED:Landroidx/constraintlayout/motion/widget/MotionLayout$k;
+    sget-object v1, Landroidx/constraintlayout/motion/widget/MotionLayout$j;->FINISHED:Landroidx/constraintlayout/motion/widget/MotionLayout$j;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

@@ -19,16 +19,15 @@
 
 
 # instance fields
-.field private final b:I
+.field public final b:I
 
-.field private final c:Landroid/content/Intent;
+.field public final c:Landroid/content/Intent;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/activity/result/ActivityResult$a;
 
     invoke-direct {v0}, Landroidx/activity/result/ActivityResult$a;-><init>()V
@@ -53,7 +52,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
     .line 4
@@ -92,54 +91,9 @@
     return-void
 .end method
 
-.method public static c(I)Ljava/lang/String;
-    .locals 1
-
-    const/4 v0, -0x1
-
-    if-eq p0, v0, :cond_1
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-
-    :cond_0
-    const-string p0, "RESULT_CANCELED"
-
-    return-object p0
-
-    :cond_1
-    const-string p0, "RESULT_OK"
-
-    return-object p0
-.end method
-
 
 # virtual methods
-.method public a()Landroid/content/Intent;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/activity/result/ActivityResult;->c:Landroid/content/Intent;
-
-    return-object v0
-.end method
-
-.method public b()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/activity/result/ActivityResult;->b:I
-
-    return v0
-.end method
-
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -147,25 +101,42 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "ActivityResult{resultCode="
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "ActivityResult{resultCode="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Landroidx/activity/result/ActivityResult;->b:I
+    move-result-object v0
 
     .line 2
-    invoke-static {v1}, Landroidx/activity/result/ActivityResult;->c(I)Ljava/lang/String;
+    iget v1, p0, Landroidx/activity/result/ActivityResult;->b:I
+
+    const/4 v2, -0x1
+
+    if-eq v1, v2, :cond_1
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v1
 
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "RESULT_CANCELED"
+
+    goto :goto_0
+
+    :cond_1
+    const-string v1, "RESULT_OK"
+
+    .line 4
+    :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, ", data="
@@ -187,7 +158,7 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1

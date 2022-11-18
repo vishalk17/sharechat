@@ -2,56 +2,103 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/io/Closeable;
-.implements Lkotlinx/coroutines/s0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # instance fields
-.field private final b:Lkotlin/coroutines/g;
+.field public a:Lyr0/l1;
+
+.field public b:Lyr0/d2;
+
+.field public final c:Landroidx/lifecycle/h;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroidx/lifecycle/h<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Ldp0/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/p<",
+            "Landroidx/lifecycle/g0<",
+            "TT;>;",
+            "Lvo0/d<",
+            "-",
+            "Lro0/x;",
+            ">;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:J
+
+.field public final f:Lyr0/e0;
+
+.field public final g:Ldp0/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/coroutines/g;)V
+.method public constructor <init>(Landroidx/lifecycle/h;Ldp0/p;JLyr0/e0;Ldp0/a;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/lifecycle/h<",
+            "TT;>;",
+            "Ldp0/p<",
+            "-",
+            "Landroidx/lifecycle/g0<",
+            "TT;>;-",
+            "Lvo0/d<",
+            "-",
+            "Lro0/x;",
+            ">;+",
+            "Ljava/lang/Object;",
+            ">;J",
+            "Lyr0/e0;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
 
-    const-string v0, "context"
+    const-string v0, "liveData"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Landroidx/lifecycle/e;->b:Lkotlin/coroutines/g;
+    iput-object p1, p0, Landroidx/lifecycle/e;->c:Landroidx/lifecycle/h;
+
+    iput-object p2, p0, Landroidx/lifecycle/e;->d:Ldp0/p;
+
+    iput-wide p3, p0, Landroidx/lifecycle/e;->e:J
+
+    iput-object p5, p0, Landroidx/lifecycle/e;->f:Lyr0/e0;
+
+    iput-object p6, p0, Landroidx/lifecycle/e;->g:Ldp0/a;
 
     return-void
-.end method
-
-
-# virtual methods
-.method public close()V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/lifecycle/e;->oj()Lkotlin/coroutines/g;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    invoke-static {v0, v1, v2, v1}, Lkotlinx/coroutines/k2;->e(Lkotlin/coroutines/g;Ljava/util/concurrent/CancellationException;ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method public oj()Lkotlin/coroutines/g;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/lifecycle/e;->b:Lkotlin/coroutines/g;
-
-    return-object v0
 .end method

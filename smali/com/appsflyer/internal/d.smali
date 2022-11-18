@@ -28,16 +28,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 0
 
-    return-void
-.end method
-
-.method constructor <init>()V
-    .locals 0
-
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -157,14 +150,14 @@
 
     invoke-static {v4, v7, v8, v9, v10}, Lcom/appsflyer/internal/by;->AFInAppEventParameterName([CCCCC)V
 
-    .line 10
     aget-char v7, v4, v0
 
+    .line 10
     aput-char v7, v2, v5
 
-    .line 11
     aget-char v7, v4, v1
 
+    .line 11
     aput-char v7, v2, v6
 
     add-int/lit8 v5, v5, 0x2
@@ -950,7 +943,7 @@
     return-object v2
 .end method
 
-.method static values(Landroid/content/Context;J)Ljava/lang/String;
+.method public static values(Landroid/content/Context;J)Ljava/lang/String;
     .locals 11
 
     .line 1

@@ -1,59 +1,128 @@
-.class public final Landroidx/compose/ui/platform/v0;
+.class public interface abstract Landroidx/compose/ui/platform/v0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public static final a(Lr00/l;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .locals 3
+# virtual methods
+.method public abstract A(F)V
+.end method
+
+.method public abstract B(F)V
+.end method
+
+.method public abstract C(Landroid/graphics/Outline;)V
+.end method
+
+.method public abstract D(Z)V
+.end method
+
+.method public abstract E(IIII)Z
+.end method
+
+.method public abstract F()V
+.end method
+
+.method public abstract G()Z
+.end method
+
+.method public abstract H(Lc2/s;Lc2/l0;Ldp0/l;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lr00/l<",
+            "(",
+            "Lc2/s;",
+            "Lc2/l0;",
+            "Ldp0/l<",
             "-",
-            "Ljava/lang/Long;",
-            "+TR;>;",
-            "Lkotlin/coroutines/d<",
-            "-TR;>;)",
-            "Ljava/lang/Object;"
+            "Lc2/r;",
+            "Lro0/x;",
+            ">;)V"
         }
     .end annotation
+.end method
 
-    .line 1
-    invoke-interface {p1}, Lkotlin/coroutines/d;->getContext()Lkotlin/coroutines/g;
+.method public abstract I(I)V
+.end method
 
-    move-result-object v0
+.method public abstract J(I)V
+.end method
 
-    sget-object v1, Landroidx/compose/ui/platform/u0;->f0:Landroidx/compose/ui/platform/u0$a;
+.method public abstract K()F
+.end method
 
-    invoke-interface {v0, v1}, Lkotlin/coroutines/g;->get(Lkotlin/coroutines/g$c;)Lkotlin/coroutines/g$b;
+.method public abstract c(F)V
+.end method
 
-    move-result-object v0
+.method public abstract d()I
+.end method
 
-    check-cast v0, Landroidx/compose/ui/platform/u0;
+.method public abstract e()I
+.end method
 
-    if-nez v0, :cond_0
+.method public abstract f(F)V
+.end method
 
-    .line 2
-    invoke-static {p0, p1}, Landroidx/compose/runtime/p0;->b(Lr00/l;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public abstract g(F)V
+.end method
 
-    move-result-object p0
+.method public abstract getHeight()I
+.end method
 
-    return-object p0
+.method public abstract getWidth()I
+.end method
 
-    .line 3
-    :cond_0
-    new-instance v1, Landroidx/compose/ui/platform/v0$a;
+.method public abstract h(F)V
+.end method
 
-    const/4 v2, 0x0
+.method public abstract i(F)V
+.end method
 
-    invoke-direct {v1, p0, v2}, Landroidx/compose/ui/platform/v0$a;-><init>(Lr00/l;Lkotlin/coroutines/d;)V
+.method public abstract j()I
+.end method
 
-    invoke-interface {v0, v1, p1}, Landroidx/compose/ui/platform/u0;->u(Lr00/l;Lkotlin/coroutines/d;)Ljava/lang/Object;
+.method public abstract k(F)V
+.end method
 
-    move-result-object p0
+.method public abstract l()I
+.end method
 
-    return-object p0
+.method public abstract m(F)V
+.end method
+
+.method public abstract n()F
+.end method
+
+.method public abstract o(F)V
+.end method
+
+.method public abstract p(Lc2/t0;)V
+.end method
+
+.method public abstract q(F)V
+.end method
+
+.method public abstract r(Landroid/graphics/Canvas;)V
+.end method
+
+.method public abstract s(Z)V
+.end method
+
+.method public abstract t(F)V
+.end method
+
+.method public abstract u(I)V
+.end method
+
+.method public abstract v()Z
+.end method
+
+.method public abstract w()Z
+.end method
+
+.method public abstract x()Z
+.end method
+
+.method public abstract y(Landroid/graphics/Matrix;)V
+.end method
+
+.method public abstract z(I)V
 .end method

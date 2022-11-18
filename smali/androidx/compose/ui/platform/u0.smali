@@ -1,51 +1,64 @@
-.class public interface abstract Landroidx/compose/ui/platform/u0;
+.class public final Landroidx/compose/ui/platform/u0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/coroutines/g$b;
+.implements Landroidx/compose/ui/platform/a2;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/compose/ui/platform/u0$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final f0:Landroidx/compose/ui/platform/u0$a;
+# instance fields
+.field public final a:Lf3/y;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lf3/y;)V
+    .locals 0
 
-    sget-object v0, Landroidx/compose/ui/platform/u0$a;->b:Landroidx/compose/ui/platform/u0$a;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Landroidx/compose/ui/platform/u0;->f0:Landroidx/compose/ui/platform/u0$a;
+    .line 2
+    iput-object p1, p0, Landroidx/compose/ui/platform/u0;->a:Lf3/y;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract u(Lr00/l;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<R:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lr00/l<",
-            "-",
-            "Lkotlin/coroutines/d<",
-            "-TR;>;+",
-            "Ljava/lang/Object;",
-            ">;",
-            "Lkotlin/coroutines/d<",
-            "-TR;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+.method public final a()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/platform/u0;->a:Lf3/y;
+
+    .line 2
+    iget-object v0, v0, Lf3/y;->a:Lf3/s;
+
+    invoke-interface {v0}, Lf3/s;->c()V
+
+    return-void
+.end method
+
+.method public final show()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/ui/platform/u0;->a:Lf3/y;
+
+    .line 2
+    iget-object v1, v0, Lf3/y;->b:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    iget-object v0, v0, Lf3/y;->a:Lf3/s;
+
+    invoke-interface {v0}, Lf3/s;->d()V
+
+    :cond_0
+    return-void
 .end method

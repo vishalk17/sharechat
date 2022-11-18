@@ -1,42 +1,70 @@
-.class public final synthetic Lq50/s;
-.super Ljava/lang/Object;
+.class public final Lq50/s;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Ldp0/p;
 
 
-# static fields
-.field public static final synthetic b:Lq50/s;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Lo50/m;",
+        "Lo50/m;",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lq50/b;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lq50/s;
-
-    invoke-direct {v0}, Lq50/s;-><init>()V
-
-    sput-object v0, Lq50/s;->b:Lq50/s;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
+.method public constructor <init>(Lq50/b;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq50/s;->b:Lq50/b;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-    invoke-static {p1}, Lq50/t;->J6(Landroid/view/View;)V
+    .line 1
+    check-cast p1, Lo50/m;
 
-    return-void
+    check-cast p2, Lo50/m;
+
+    const-string v0, "old"
+
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "new"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object v0, p0, Lq50/s;->b:Lq50/b;
+
+    invoke-static {v0, p1, p2}, Lq50/b;->h0(Lq50/b;Lo50/m;Lo50/m;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
 .end method

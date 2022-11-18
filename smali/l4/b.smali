@@ -1,104 +1,77 @@
-.class public Ll4/b;
+.class public interface abstract Ll4/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ll4/d;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ll4/d<",
-        "Landroid/graphics/drawable/Drawable;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:I
-
-.field private final b:Z
-
-
-# direct methods
-.method public constructor <init>(IZ)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput p1, p0, Ll4/b;->a:I
-
-    .line 3
-    iput-boolean p2, p0, Ll4/b;->b:Z
-
-    return-void
-.end method
+.implements Landroid/view/MenuItem;
 
 
 # virtual methods
-.method public bridge synthetic a(Ljava/lang/Object;Ll4/d$a;)Z
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {p0, p1, p2}, Ll4/b;->b(Landroid/graphics/drawable/Drawable;Ll4/d$a;)Z
-
-    move-result p1
-
-    return p1
+.method public abstract a()Lv4/b;
 .end method
 
-.method public b(Landroid/graphics/drawable/Drawable;Ll4/d$a;)Z
-    .locals 4
+.method public abstract b(Lv4/b;)Ll4/b;
+.end method
 
-    .line 1
-    invoke-interface {p2}, Ll4/d$a;->c()Landroid/graphics/drawable/Drawable;
+.method public abstract collapseActionView()Z
+.end method
 
-    move-result-object v0
+.method public abstract expandActionView()Z
+.end method
 
-    const/4 v1, 0x0
+.method public abstract getActionView()Landroid/view/View;
+.end method
 
-    if-nez v0, :cond_0
+.method public abstract getAlphabeticModifiers()I
+.end method
 
-    .line 2
-    new-instance v0, Landroid/graphics/drawable/ColorDrawable;
+.method public abstract getContentDescription()Ljava/lang/CharSequence;
+.end method
 
-    invoke-direct {v0, v1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+.method public abstract getIconTintList()Landroid/content/res/ColorStateList;
+.end method
 
-    .line 3
-    :cond_0
-    new-instance v2, Landroid/graphics/drawable/TransitionDrawable;
+.method public abstract getIconTintMode()Landroid/graphics/PorterDuff$Mode;
+.end method
 
-    const/4 v3, 0x2
+.method public abstract getNumericModifiers()I
+.end method
 
-    new-array v3, v3, [Landroid/graphics/drawable/Drawable;
+.method public abstract getTooltipText()Ljava/lang/CharSequence;
+.end method
 
-    aput-object v0, v3, v1
+.method public abstract isActionViewExpanded()Z
+.end method
 
-    const/4 v0, 0x1
+.method public abstract setActionView(I)Landroid/view/MenuItem;
+.end method
 
-    aput-object p1, v3, v0
+.method public abstract setActionView(Landroid/view/View;)Landroid/view/MenuItem;
+.end method
 
-    invoke-direct {v2, v3}, Landroid/graphics/drawable/TransitionDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
+.method public abstract setAlphabeticShortcut(CI)Landroid/view/MenuItem;
+.end method
 
-    .line 4
-    iget-boolean p1, p0, Ll4/b;->b:Z
+.method public abstract setContentDescription(Ljava/lang/CharSequence;)Ll4/b;
+.end method
 
-    invoke-virtual {v2, p1}, Landroid/graphics/drawable/TransitionDrawable;->setCrossFadeEnabled(Z)V
+.method public abstract setIconTintList(Landroid/content/res/ColorStateList;)Landroid/view/MenuItem;
+.end method
 
-    .line 5
-    iget p1, p0, Ll4/b;->a:I
+.method public abstract setIconTintMode(Landroid/graphics/PorterDuff$Mode;)Landroid/view/MenuItem;
+.end method
 
-    invoke-virtual {v2, p1}, Landroid/graphics/drawable/TransitionDrawable;->startTransition(I)V
+.method public abstract setNumericShortcut(CI)Landroid/view/MenuItem;
+.end method
 
-    .line 6
-    invoke-interface {p2, v2}, Ll4/d$a;->b(Landroid/graphics/drawable/Drawable;)V
+.method public abstract setShortcut(CCII)Landroid/view/MenuItem;
+.end method
 
-    return v0
+.method public abstract setShowAsAction(I)V
+.end method
+
+.method public abstract setShowAsActionFlags(I)Landroid/view/MenuItem;
+.end method
+
+.method public abstract setTooltipText(Ljava/lang/CharSequence;)Ll4/b;
 .end method

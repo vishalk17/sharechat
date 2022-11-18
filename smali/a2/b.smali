@@ -2,87 +2,44 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/datastore/core/b;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Landroidx/datastore/core/b<",
-        "TT;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Lr00/l;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lr00/l<",
-            "Landroidx/datastore/core/a;",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
 
 # direct methods
-.method public constructor <init>(Lr00/l;)V
-    .locals 1
+.method public static final a(Lx1/h;Ldp0/l;)Lx1/h;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lr00/l<",
+            "Lx1/h;",
+            "Ldp0/l<",
             "-",
-            "Landroidx/datastore/core/a;",
-            "+TT;>;)V"
+            "La2/a0;",
+            "Lro0/x;",
+            ">;)",
+            "Lx1/h;"
         }
     .end annotation
 
-    const-string v0, "produceNewData"
+    const-string v0, "<this>"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "onFocusChanged"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Landroidx/compose/ui/platform/j1;->a:Landroidx/compose/ui/platform/j1$a;
+
+    sget-object v0, Landroidx/compose/ui/platform/j1;->a:Landroidx/compose/ui/platform/j1$a;
 
     .line 2
-    iput-object p1, p0, La2/b;->a:Lr00/l;
+    new-instance v1, La2/b$a;
 
-    return-void
-.end method
+    invoke-direct {v1, p1}, La2/b$a;-><init>(Ldp0/l;)V
 
+    invoke-static {p0, v0, v1}, Lx1/g;->a(Lx1/h;Ldp0/l;Ldp0/q;)Lx1/h;
 
-# virtual methods
-.method public a(Landroidx/datastore/core/a;Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroidx/datastore/core/a;",
-            "Lkotlin/coroutines/d<",
-            "-TT;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+    move-result-object p0
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object p2, p0, La2/b;->a:Lr00/l;
-
-    invoke-interface {p2, p1}, Lr00/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    return-object p1
+    return-object p0
 .end method

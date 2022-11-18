@@ -1,43 +1,42 @@
-.class Landroidx/fragment/app/Fragment$g;
+.class public final Landroidx/fragment/app/Fragment$g;
 .super Landroidx/fragment/app/Fragment$k;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/fragment/app/Fragment;->prepareCallInternal(Ld/a;Ll/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+    value = Landroidx/fragment/app/Fragment;->prepareCallInternal(Lh/a;Lt/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Ll/a;
+.field public final synthetic a:Lt/a;
 
-.field final synthetic b:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final synthetic b:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field final synthetic c:Ld/a;
+.field public final synthetic c:Lh/a;
 
-.field final synthetic d:Landroidx/activity/result/a;
+.field public final synthetic d:Landroidx/activity/result/a;
 
-.field final synthetic e:Landroidx/fragment/app/Fragment;
+.field public final synthetic e:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/Fragment;Ll/a;Ljava/util/concurrent/atomic/AtomicReference;Ld/a;Landroidx/activity/result/a;)V
+.method public constructor <init>(Landroidx/fragment/app/Fragment;Lt/a;Ljava/util/concurrent/atomic/AtomicReference;Lh/a;Landroidx/activity/result/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/Fragment$g;->e:Landroidx/fragment/app/Fragment;
 
-    iput-object p2, p0, Landroidx/fragment/app/Fragment$g;->a:Ll/a;
+    iput-object p2, p0, Landroidx/fragment/app/Fragment$g;->a:Lt/a;
 
     iput-object p3, p0, Landroidx/fragment/app/Fragment$g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
-    iput-object p4, p0, Landroidx/fragment/app/Fragment$g;->c:Ld/a;
+    iput-object p4, p0, Landroidx/fragment/app/Fragment$g;->c:Lh/a;
 
     iput-object p5, p0, Landroidx/fragment/app/Fragment$g;->d:Landroidx/activity/result/a;
 
@@ -50,7 +49,7 @@
 
 
 # virtual methods
-.method a()V
+.method public final a()V
     .locals 6
 
     .line 1
@@ -61,11 +60,11 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/Fragment$g;->a:Ll/a;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment$g;->a:Lt/a;
 
     const/4 v2, 0x0
 
-    invoke-interface {v1, v2}, Ll/a;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v1, v2}, Lt/a;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -76,11 +75,11 @@
 
     iget-object v3, p0, Landroidx/fragment/app/Fragment$g;->e:Landroidx/fragment/app/Fragment;
 
-    iget-object v4, p0, Landroidx/fragment/app/Fragment$g;->c:Ld/a;
+    iget-object v4, p0, Landroidx/fragment/app/Fragment$g;->c:Lh/a;
 
     iget-object v5, p0, Landroidx/fragment/app/Fragment$g;->d:Landroidx/activity/result/a;
 
-    invoke-virtual {v1, v0, v3, v4, v5}, Landroidx/activity/result/ActivityResultRegistry;->i(Ljava/lang/String;Landroidx/lifecycle/x;Ld/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
+    invoke-virtual {v1, v0, v3, v4, v5}, Landroidx/activity/result/ActivityResultRegistry;->d(Ljava/lang/String;Landroidx/lifecycle/b0;Lh/a;Landroidx/activity/result/a;)Landroidx/activity/result/c;
 
     move-result-object v0
 

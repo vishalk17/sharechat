@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 2
 
     .line 1
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method final values(Landroid/content/Context;)Lcom/appsflyer/internal/c$e;
+.method public final values(Landroid/content/Context;)Lcom/appsflyer/internal/c$e;
     .locals 6
 
     const/4 v0, 0x0

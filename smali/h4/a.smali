@@ -1,103 +1,63 @@
-.class public Lh4/a;
+.class public final Lh4/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lh4/e;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lh4/e<",
-        "Landroid/graphics/Bitmap;",
-        "[B>;"
-    }
-.end annotation
-
-
-# instance fields
-.field private final a:Landroid/graphics/Bitmap$CompressFormat;
-
-.field private final b:I
-
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
-
-    .line 1
-    sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
-
-    const/16 v1, 0x64
-
-    invoke-direct {p0, v0, v1}, Lh4/a;-><init>(Landroid/graphics/Bitmap$CompressFormat;I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/graphics/Bitmap$CompressFormat;I)V
+.method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    iput-object p1, p0, Lh4/a;->a:Landroid/graphics/Bitmap$CompressFormat;
-
-    .line 4
-    iput p2, p0, Lh4/a;->b:I
 
     return-void
 .end method
 
+.method public static a(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
+    .locals 0
 
-# virtual methods
-.method public a(Lcom/bumptech/glide/load/engine/v;Lcom/bumptech/glide/load/i;)Lcom/bumptech/glide/load/engine/v;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/bumptech/glide/load/engine/v<",
-            "Landroid/graphics/Bitmap;",
-            ">;",
-            "Lcom/bumptech/glide/load/i;",
-            ")",
-            "Lcom/bumptech/glide/load/engine/v<",
-            "[B>;"
-        }
-    .end annotation
+    invoke-virtual {p0}, Landroid/content/pm/SigningInfo;->getApkContentsSigners()[Landroid/content/pm/Signature;
 
-    .line 1
-    new-instance p2, Ljava/io/ByteArrayOutputStream;
+    move-result-object p0
 
-    invoke-direct {p2}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    return-object p0
+.end method
 
-    .line 2
-    invoke-interface {p1}, Lcom/bumptech/glide/load/engine/v;->get()Ljava/lang/Object;
+.method public static b(Landroid/content/pm/PackageInfo;)J
+    .locals 2
 
-    move-result-object v0
+    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
 
-    check-cast v0, Landroid/graphics/Bitmap;
+    move-result-wide v0
 
-    iget-object v1, p0, Lh4/a;->a:Landroid/graphics/Bitmap$CompressFormat;
+    return-wide v0
+.end method
 
-    iget v2, p0, Lh4/a;->b:I
+.method public static c(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
+    .locals 0
 
-    invoke-virtual {v0, v1, v2, p2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+    invoke-virtual {p0}, Landroid/content/pm/SigningInfo;->getSigningCertificateHistory()[Landroid/content/pm/Signature;
 
-    .line 3
-    invoke-interface {p1}, Lcom/bumptech/glide/load/engine/v;->recycle()V
+    move-result-object p0
 
-    .line 4
-    new-instance p1, Le4/b;
+    return-object p0
+.end method
 
-    invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+.method public static d(Landroid/content/pm/SigningInfo;)Z
+    .locals 0
 
-    move-result-object p2
+    invoke-virtual {p0}, Landroid/content/pm/SigningInfo;->hasMultipleSigners()Z
 
-    invoke-direct {p1, p2}, Le4/b;-><init>([B)V
+    move-result p0
 
-    return-object p1
+    return p0
+.end method
+
+.method public static e(Landroid/content/pm/PackageManager;Ljava/lang/String;[BI)Z
+    .locals 0
+
+    invoke-virtual {p0, p1, p2, p3}, Landroid/content/pm/PackageManager;->hasSigningCertificate(Ljava/lang/String;[BI)Z
+
+    move-result p0
+
+    return p0
 .end method

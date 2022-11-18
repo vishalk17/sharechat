@@ -15,8 +15,5 @@
 
 
 # virtual methods
-.method public abstract a(I)Landroidx/media/AudioAttributesImpl$a;
-.end method
-
 .method public abstract build()Landroidx/media/AudioAttributesImpl;
 .end method

@@ -1,103 +1,103 @@
-.class public Ls2/g;
-.super Ls2/c;
+.class public final Ls2/g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "Ls2/c<",
-        "Lr2/b;",
-        ">;"
+        Ls2/g$a;
     }
 .end annotation
 
 
+# instance fields
+.field public final a:Ls2/i;
+
+.field public b:Ll1/w0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll1/w0<",
+            "Lq2/c0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public c:Lq2/c0;
+
+
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lw2/a;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    .line 1
-    invoke-static {p1, p2}, Lt2/g;->c(Landroid/content/Context;Lw2/a;)Lt2/g;
+    new-instance v0, Ls2/g$a;
 
-    move-result-object p1
+    const/4 v1, 0x0
 
-    invoke-virtual {p1}, Lt2/g;->d()Lt2/e;
+    invoke-direct {v0, v1}, Ls2/g$a;-><init>(Lep0/k;)V
 
-    move-result-object p1
+    return-void
+.end method
 
-    invoke-direct {p0, p1}, Ls2/c;-><init>(Lt2/d;)V
+.method public constructor <init>(Ls2/i;)V
+    .locals 1
+
+    const-string v0, "layoutNode"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Ls2/g;->a:Ls2/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method b(Landroidx/work/impl/model/p;)Z
-    .locals 1
+.method public final a()Lq2/c0;
+    .locals 2
 
     .line 1
-    iget-object p1, p1, Landroidx/work/impl/model/p;->j:Landroidx/work/c;
+    iget-object v0, p0, Ls2/g;->b:Ll1/w0;
 
-    invoke-virtual {p1}, Landroidx/work/c;->b()Landroidx/work/m;
+    if-nez v0, :cond_1
 
-    move-result-object p1
+    iget-object v0, p0, Ls2/g;->c:Lq2/c0;
 
-    sget-object v0, Landroidx/work/m;->UNMETERED:Landroidx/work/m;
+    if-eqz v0, :cond_0
 
-    if-ne p1, v0, :cond_0
+    invoke-static {v0}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
 
-    const/4 p1, 0x1
+    move-result-object v0
 
     goto :goto_0
 
     :cond_0
-    const/4 p1, 0x0
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    :goto_0
-    return p1
-.end method
+    const-string v1, "Intrinsic size is queried but there is no measure policy in place."
 
-.method bridge synthetic c(Ljava/lang/Object;)Z
-    .locals 0
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 1
-    check-cast p1, Lr2/b;
+    move-result-object v1
 
-    invoke-virtual {p0, p1}, Ls2/g;->i(Lr2/b;)Z
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    move-result p1
+    throw v0
 
-    return p1
-.end method
-
-.method i(Lr2/b;)Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Lr2/b;->a()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    invoke-virtual {p1}, Lr2/b;->b()Z
-
-    move-result p1
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x0
-
-    goto :goto_1
-
+    .line 2
     :cond_1
     :goto_0
-    const/4 p1, 0x1
+    iput-object v0, p0, Ls2/g;->b:Ll1/w0;
 
-    :goto_1
-    return p1
+    .line 3
+    invoke-interface {v0}, Ll1/w0;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lq2/c0;
+
+    return-object v0
 .end method

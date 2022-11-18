@@ -1,151 +1,493 @@
-.class public final enum Lx3/b;
-.super Ljava/lang/Enum;
+.class public final Lx3/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lx3/b;",
-        ">;"
-    }
-.end annotation
-
-
 # static fields
-.field private static final synthetic $VALUES:[Lx3/b;
+.field public static final h:Ljava/lang/Object;
 
-.field public static final enum DEBUG:Lx3/b;
+.field public static final i:Ljava/lang/Object;
 
-.field public static final enum ERROR:Lx3/b;
+.field public static final j:Ljava/lang/Object;
 
-.field public static final enum FATAL:Lx3/b;
+.field public static final k:Ljava/lang/Object;
 
-.field public static final enum INFO:Lx3/b;
+.field public static final l:Ljava/lang/Object;
 
-.field public static final enum WARN:Lx3/b;
+.field public static final m:Ljava/lang/Object;
+
+
+# instance fields
+.field public a:I
+
+.field public b:I
+
+.field public c:F
+
+.field public d:I
+
+.field public e:Ljava/lang/String;
+
+.field public f:Ljava/lang/Object;
+
+.field public g:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->h:Ljava/lang/Object;
+
+    .line 2
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->i:Ljava/lang/Object;
+
+    .line 3
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->j:Ljava/lang/Object;
+
+    .line 4
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->k:Ljava/lang/Object;
+
+    .line 5
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->l:Ljava/lang/Object;
+
+    .line 6
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lx3/b;->m:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lx3/b;->a:I
+
+    const v1, 0x7fffffff
+
+    .line 3
+    iput v1, p0, Lx3/b;->b:I
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 4
+    iput v1, p0, Lx3/b;->c:F
+
+    .line 5
+    iput v0, p0, Lx3/b;->d:I
+
+    const/4 v1, 0x0
+
+    .line 6
+    iput-object v1, p0, Lx3/b;->e:Ljava/lang/String;
+
+    .line 7
+    sget-object v1, Lx3/b;->i:Ljava/lang/Object;
+
+    iput-object v1, p0, Lx3/b;->f:Ljava/lang/Object;
+
+    .line 8
+    iput-boolean v0, p0, Lx3/b;->g:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 10
+    iput v0, p0, Lx3/b;->a:I
+
+    const v1, 0x7fffffff
+
+    .line 11
+    iput v1, p0, Lx3/b;->b:I
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 12
+    iput v1, p0, Lx3/b;->c:F
+
+    .line 13
+    iput v0, p0, Lx3/b;->d:I
+
+    const/4 v1, 0x0
+
+    .line 14
+    iput-object v1, p0, Lx3/b;->e:Ljava/lang/String;
+
+    .line 15
+    iput-boolean v0, p0, Lx3/b;->g:Z
+
+    .line 16
+    iput-object p1, p0, Lx3/b;->f:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public static a()Lx3/b;
+    .locals 3
+
+    sget-object v0, Lx3/b;->i:Ljava/lang/Object;
+
+    .line 1
+    new-instance v1, Lx3/b;
+
+    sget-object v2, Lx3/b;->h:Ljava/lang/Object;
+
+    invoke-direct {v1, v2}, Lx3/b;-><init>(Ljava/lang/Object;)V
+
+    .line 2
+    iput-object v0, v1, Lx3/b;->f:Ljava/lang/Object;
+
+    .line 3
+    instance-of v2, v0, Ljava/lang/Integer;
+
+    if-eqz v2, :cond_0
+
+    .line 4
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    iput v0, v1, Lx3/b;->d:I
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, v1, Lx3/b;->f:Ljava/lang/Object;
+
+    :cond_0
+    return-object v1
+.end method
+
+.method public static b(I)Lx3/b;
+    .locals 2
 
     .line 1
     new-instance v0, Lx3/b;
 
-    const-string v1, "FATAL"
+    sget-object v1, Lx3/b;->h:Ljava/lang/Object;
+
+    invoke-direct {v0, v1}, Lx3/b;-><init>(Ljava/lang/Object;)V
+
+    const/4 v1, 0x0
+
+    .line 2
+    iput-object v1, v0, Lx3/b;->f:Ljava/lang/Object;
+
+    .line 3
+    iput p0, v0, Lx3/b;->d:I
+
+    return-object v0
+.end method
+
+.method public static c(Ljava/lang/Object;)Lx3/b;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lx3/b;
+
+    invoke-direct {v0}, Lx3/b;-><init>()V
+
+    .line 2
+    iput-object p0, v0, Lx3/b;->f:Ljava/lang/Object;
+
+    const/4 p0, 0x1
+
+    .line 3
+    iput-boolean p0, v0, Lx3/b;->g:Z
+
+    return-object v0
+.end method
+
+.method public static d()Lx3/b;
+    .locals 2
+
+    new-instance v0, Lx3/b;
+
+    sget-object v1, Lx3/b;->i:Ljava/lang/Object;
+
+    invoke-direct {v0, v1}, Lx3/b;-><init>(Ljava/lang/Object;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final e(Lz3/e;I)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lx3/b;->e:Ljava/lang/String;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {p1, v0}, Lz3/e;->P(Ljava/lang/String;)V
+
+    :cond_0
+    const/4 v0, 0x2
+
+    const v1, 0x7fffffff
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, v1, v2}, Lx3/b;-><init>(Ljava/lang/String;I)V
+    const/4 v3, 0x1
 
-    sput-object v0, Lx3/b;->FATAL:Lx3/b;
-
-    .line 2
-    new-instance v1, Lx3/b;
-
-    const-string v3, "ERROR"
-
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4}, Lx3/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lx3/b;->ERROR:Lx3/b;
+    if-nez p2, :cond_8
 
     .line 3
-    new-instance v3, Lx3/b;
+    iget-boolean p2, p0, Lx3/b;->g:Z
 
-    const-string v5, "INFO"
-
-    const/4 v6, 0x2
-
-    invoke-direct {v3, v5, v6}, Lx3/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v3, Lx3/b;->INFO:Lx3/b;
+    if-eqz p2, :cond_3
 
     .line 4
-    new-instance v5, Lx3/b;
+    sget-object p2, Lz3/e$b;->MATCH_CONSTRAINT:Lz3/e$b;
 
-    const-string v7, "WARN"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8}, Lx3/b;-><init>(Ljava/lang/String;I)V
-
-    sput-object v5, Lx3/b;->WARN:Lx3/b;
+    invoke-virtual {p1, p2}, Lz3/e;->T(Lz3/e$b;)V
 
     .line 5
-    new-instance v7, Lx3/b;
+    iget-object p2, p0, Lx3/b;->f:Ljava/lang/Object;
 
-    const-string v9, "DEBUG"
+    sget-object v1, Lx3/b;->i:Ljava/lang/Object;
 
-    const/4 v10, 0x4
+    if-ne p2, v1, :cond_1
 
-    invoke-direct {v7, v9, v10}, Lx3/b;-><init>(Ljava/lang/String;I)V
+    const/4 v0, 0x1
 
-    sput-object v7, Lx3/b;->DEBUG:Lx3/b;
-
-    const/4 v9, 0x5
-
-    new-array v9, v9, [Lx3/b;
-
-    aput-object v0, v9, v2
-
-    aput-object v1, v9, v4
-
-    aput-object v3, v9, v6
-
-    aput-object v5, v9, v8
-
-    aput-object v7, v9, v10
+    goto :goto_0
 
     .line 6
-    sput-object v9, Lx3/b;->$VALUES:[Lx3/b;
+    :cond_1
+    sget-object v1, Lx3/b;->l:Ljava/lang/Object;
 
+    if-ne p2, v1, :cond_2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 7
+    :goto_0
+    iget p2, p0, Lx3/b;->a:I
+
+    iget v1, p0, Lx3/b;->b:I
+
+    iget v2, p0, Lx3/b;->c:F
+
+    invoke-virtual {p1, v0, p2, v1, v2}, Lz3/e;->U(IIIF)V
+
+    goto/16 :goto_2
+
+    .line 8
+    :cond_3
+    iget p2, p0, Lx3/b;->a:I
+
+    if-lez p2, :cond_4
+
+    .line 9
+    invoke-virtual {p1, p2}, Lz3/e;->W(I)V
+
+    .line 10
+    :cond_4
+    iget p2, p0, Lx3/b;->b:I
+
+    if-ge p2, v1, :cond_5
+
+    .line 11
+    iget-object v0, p1, Lz3/e;->E:[I
+
+    aput p2, v0, v2
+
+    .line 12
+    :cond_5
+    iget-object p2, p0, Lx3/b;->f:Ljava/lang/Object;
+
+    sget-object v0, Lx3/b;->i:Ljava/lang/Object;
+
+    if-ne p2, v0, :cond_6
+
+    .line 13
+    sget-object p2, Lz3/e$b;->WRAP_CONTENT:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->T(Lz3/e$b;)V
+
+    goto/16 :goto_2
+
+    .line 14
+    :cond_6
+    sget-object v0, Lx3/b;->k:Ljava/lang/Object;
+
+    if-ne p2, v0, :cond_7
+
+    .line 15
+    sget-object p2, Lz3/e$b;->MATCH_PARENT:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->T(Lz3/e$b;)V
+
+    goto :goto_2
+
+    :cond_7
+    if-nez p2, :cond_10
+
+    .line 16
+    sget-object p2, Lz3/e$b;->FIXED:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->T(Lz3/e$b;)V
+
+    .line 17
+    iget p2, p0, Lx3/b;->d:I
+
+    invoke-virtual {p1, p2}, Lz3/e;->Z(I)V
+
+    goto :goto_2
+
+    .line 18
+    :cond_8
+    iget-boolean p2, p0, Lx3/b;->g:Z
+
+    if-eqz p2, :cond_b
+
+    .line 19
+    sget-object p2, Lz3/e$b;->MATCH_CONSTRAINT:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->X(Lz3/e$b;)V
+
+    .line 20
+    iget-object p2, p0, Lx3/b;->f:Ljava/lang/Object;
+
+    sget-object v1, Lx3/b;->i:Ljava/lang/Object;
+
+    if-ne p2, v1, :cond_9
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    .line 21
+    :cond_9
+    sget-object v1, Lx3/b;->l:Ljava/lang/Object;
+
+    if-ne p2, v1, :cond_a
+
+    goto :goto_1
+
+    :cond_a
+    const/4 v0, 0x0
+
+    .line 22
+    :goto_1
+    iget p2, p0, Lx3/b;->a:I
+
+    iget v1, p0, Lx3/b;->b:I
+
+    iget v2, p0, Lx3/b;->c:F
+
+    invoke-virtual {p1, v0, p2, v1, v2}, Lz3/e;->Y(IIIF)V
+
+    goto :goto_2
+
+    .line 23
+    :cond_b
+    iget p2, p0, Lx3/b;->a:I
+
+    if-lez p2, :cond_c
+
+    .line 24
+    invoke-virtual {p1, p2}, Lz3/e;->V(I)V
+
+    .line 25
+    :cond_c
+    iget p2, p0, Lx3/b;->b:I
+
+    if-ge p2, v1, :cond_d
+
+    .line 26
+    iget-object v0, p1, Lz3/e;->E:[I
+
+    aput p2, v0, v3
+
+    .line 27
+    :cond_d
+    iget-object p2, p0, Lx3/b;->f:Ljava/lang/Object;
+
+    sget-object v0, Lx3/b;->i:Ljava/lang/Object;
+
+    if-ne p2, v0, :cond_e
+
+    .line 28
+    sget-object p2, Lz3/e$b;->WRAP_CONTENT:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->X(Lz3/e$b;)V
+
+    goto :goto_2
+
+    .line 29
+    :cond_e
+    sget-object v0, Lx3/b;->k:Ljava/lang/Object;
+
+    if-ne p2, v0, :cond_f
+
+    .line 30
+    sget-object p2, Lz3/e$b;->MATCH_PARENT:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->X(Lz3/e$b;)V
+
+    goto :goto_2
+
+    :cond_f
+    if-nez p2, :cond_10
+
+    .line 31
+    sget-object p2, Lz3/e$b;->FIXED:Lz3/e$b;
+
+    invoke-virtual {p1, p2}, Lz3/e;->X(Lz3/e$b;)V
+
+    .line 32
+    iget p2, p0, Lx3/b;->d:I
+
+    invoke-virtual {p1, p2}, Lz3/e;->S(I)V
+
+    :cond_10
+    :goto_2
     return-void
-.end method
-
-.method private constructor <init>(Ljava/lang/String;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lx3/b;
-    .locals 1
-
-    .line 1
-    const-class v0, Lx3/b;
-
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    move-result-object p0
-
-    check-cast p0, Lx3/b;
-
-    return-object p0
-.end method
-
-.method public static values()[Lx3/b;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lx3/b;->$VALUES:[Lx3/b;
-
-    invoke-virtual {v0}, [Lx3/b;->clone()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, [Lx3/b;
-
-    return-object v0
 .end method

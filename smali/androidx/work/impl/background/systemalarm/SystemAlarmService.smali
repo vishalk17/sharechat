@@ -1,29 +1,28 @@
 .class public Landroidx/work/impl/background/systemalarm/SystemAlarmService;
-.super Landroidx/lifecycle/b0;
+.super Landroidx/lifecycle/e0;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/work/impl/background/systemalarm/e$c;
+.implements Landroidx/work/impl/background/systemalarm/d$c;
 
 
 # static fields
-.field private static final e:Ljava/lang/String;
+.field public static final e:Ljava/lang/String;
 
 
 # instance fields
-.field private c:Landroidx/work/impl/background/systemalarm/e;
+.field public c:Landroidx/work/impl/background/systemalarm/d;
 
-.field private d:Z
+.field public d:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     const-string v0, "SystemAlarmService"
 
-    .line 1
-    invoke-static {v0}, Landroidx/work/l;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lu6/n;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -35,32 +34,55 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Landroidx/lifecycle/b0;-><init>()V
-
-    return-void
-.end method
-
-.method private e()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/work/impl/background/systemalarm/e;
-
-    invoke-direct {v0, p0}, Landroidx/work/impl/background/systemalarm/e;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/e;
-
-    .line 2
-    invoke-virtual {v0, p0}, Landroidx/work/impl/background/systemalarm/e;->m(Landroidx/work/impl/background/systemalarm/e$c;)V
+    invoke-direct {p0}, Landroidx/lifecycle/e0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public b()V
+.method public final a()V
     .locals 4
+
+    .line 1
+    new-instance v0, Landroidx/work/impl/background/systemalarm/d;
+
+    invoke-direct {v0, p0}, Landroidx/work/impl/background/systemalarm/d;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/d;
+
+    .line 2
+    iget-object v1, v0, Landroidx/work/impl/background/systemalarm/d;->k:Landroidx/work/impl/background/systemalarm/d$c;
+
+    if-eqz v1, :cond_0
+
+    .line 3
+    invoke-static {}, Lu6/n;->c()Lu6/n;
+
+    move-result-object v0
+
+    sget-object v1, Landroidx/work/impl/background/systemalarm/d;->l:Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Throwable;
+
+    const-string v3, "A completion listener for SystemAlarmDispatcher already exists."
+
+    invoke-virtual {v0, v1, v3, v2}, Lu6/n;->b(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    iput-object p0, v0, Landroidx/work/impl/background/systemalarm/d;->k:Landroidx/work/impl/background/systemalarm/d$c;
+
+    :goto_0
+    return-void
+.end method
+
+.method public final b()V
+    .locals 8
 
     const/4 v0, 0x1
 
@@ -68,37 +90,128 @@
     iput-boolean v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->d:Z
 
     .line 2
-    invoke-static {}, Landroidx/work/l;->c()Landroidx/work/l;
+    invoke-static {}, Lu6/n;->c()Lu6/n;
 
-    move-result-object v0
+    move-result-object v1
 
-    sget-object v1, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->e:Ljava/lang/String;
-
-    const/4 v2, 0x0
-
-    new-array v2, v2, [Ljava/lang/Throwable;
+    sget-object v2, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->e:Ljava/lang/String;
 
     const-string v3, "All commands completed in dispatcher"
 
-    invoke-virtual {v0, v1, v3, v2}, Landroidx/work/l;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    const/4 v4, 0x0
+
+    new-array v5, v4, [Ljava/lang/Throwable;
+
+    invoke-virtual {v1, v2, v3, v5}, Lu6/n;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     .line 3
-    invoke-static {}, Lv2/k;->a()V
+    sget-object v1, Le7/q;->a:Ljava/lang/String;
 
     .line 4
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 5
+    sget-object v2, Le7/q;->b:Ljava/util/WeakHashMap;
+
+    monitor-enter v2
+
+    .line 6
+    :try_start_0
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+
+    .line 7
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 8
+    invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_0
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/os/PowerManager$WakeLock;
+
+    if-eqz v3, :cond_0
+
+    .line 9
+    invoke-virtual {v3}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const-string v5, "WakeLock held for %s"
+
+    new-array v6, v0, [Ljava/lang/Object;
+
+    .line 10
+    invoke-virtual {v1, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    aput-object v3, v6, v4
+
+    invoke-static {v5, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 11
+    invoke-static {}, Lu6/n;->c()Lu6/n;
+
+    move-result-object v5
+
+    sget-object v6, Le7/q;->a:Ljava/lang/String;
+
+    new-array v7, v4, [Ljava/lang/Throwable;
+
+    invoke-virtual {v5, v6, v3, v7}, Lu6/n;->f(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+
+    goto :goto_0
+
+    .line 12
+    :cond_1
     invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
 
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    .line 13
+    :try_start_1
+    monitor-exit v2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
 .end method
 
-.method public onCreate()V
+.method public final onCreate()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/lifecycle/b0;->onCreate()V
+    invoke-super {p0}, Landroidx/lifecycle/e0;->onCreate()V
 
     .line 2
-    invoke-direct {p0}, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->e()V
+    invoke-virtual {p0}, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->a()V
 
     const/4 v0, 0x0
 
@@ -108,11 +221,11 @@
     return-void
 .end method
 
-.method public onDestroy()V
+.method public final onDestroy()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/lifecycle/b0;->onDestroy()V
+    invoke-super {p0}, Landroidx/lifecycle/e0;->onDestroy()V
 
     const/4 v0, 0x1
 
@@ -120,18 +233,18 @@
     iput-boolean v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->d:Z
 
     .line 3
-    iget-object v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/e;
+    iget-object v0, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/d;
 
-    invoke-virtual {v0}, Landroidx/work/impl/background/systemalarm/e;->j()V
+    invoke-virtual {v0}, Landroidx/work/impl/background/systemalarm/d;->c()V
 
     return-void
 .end method
 
-.method public onStartCommand(Landroid/content/Intent;II)I
+.method public final onStartCommand(Landroid/content/Intent;II)I
     .locals 4
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/lifecycle/b0;->onStartCommand(Landroid/content/Intent;II)I
+    invoke-super {p0, p1, p2, p3}, Landroidx/lifecycle/e0;->onStartCommand(Landroid/content/Intent;II)I
 
     .line 2
     iget-boolean p2, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->d:Z
@@ -139,7 +252,7 @@
     if-eqz p2, :cond_0
 
     .line 3
-    invoke-static {}, Landroidx/work/l;->c()Landroidx/work/l;
+    invoke-static {}, Lu6/n;->c()Lu6/n;
 
     move-result-object p2
 
@@ -151,15 +264,15 @@
 
     const-string v3, "Re-initializing SystemAlarmDispatcher after a request to shut-down."
 
-    invoke-virtual {p2, v0, v3, v2}, Landroidx/work/l;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
+    invoke-virtual {p2, v0, v3, v2}, Lu6/n;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;)V
 
     .line 4
-    iget-object p2, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/e;
+    iget-object p2, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/d;
 
-    invoke-virtual {p2}, Landroidx/work/impl/background/systemalarm/e;->j()V
+    invoke-virtual {p2}, Landroidx/work/impl/background/systemalarm/d;->c()V
 
     .line 5
-    invoke-direct {p0}, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->e()V
+    invoke-virtual {p0}, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->a()V
 
     .line 6
     iput-boolean v1, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->d:Z
@@ -168,9 +281,9 @@
     if-eqz p1, :cond_1
 
     .line 7
-    iget-object p2, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/e;
+    iget-object p2, p0, Landroidx/work/impl/background/systemalarm/SystemAlarmService;->c:Landroidx/work/impl/background/systemalarm/d;
 
-    invoke-virtual {p2, p1, p3}, Landroidx/work/impl/background/systemalarm/e;->a(Landroid/content/Intent;I)Z
+    invoke-virtual {p2, p1, p3}, Landroidx/work/impl/background/systemalarm/d;->a(Landroid/content/Intent;I)Z
 
     :cond_1
     const/4 p1, 0x3

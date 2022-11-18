@@ -1,95 +1,178 @@
-.class public Le4/b;
+.class public final Le4/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lcom/bumptech/glide/load/engine/v;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<T:",
         "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/load/engine/v<",
-        "[B>;"
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
 # instance fields
-.field private final b:[B
+.field public final a:Landroidx/core/util/Pools$SimplePool;
+
+.field public final b:Lp0/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lp0/g<",
+            "TT;",
+            "Ljava/util/ArrayList<",
+            "TT;>;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>([B)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p1}, Lcom/bumptech/glide/util/j;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    new-instance v0, Landroidx/core/util/Pools$SimplePool;
 
-    move-result-object p1
+    const/16 v1, 0xa
 
-    check-cast p1, [B
+    invoke-direct {v0, v1}, Landroidx/core/util/Pools$SimplePool;-><init>(I)V
 
-    iput-object p1, p0, Le4/b;->b:[B
+    iput-object v0, p0, Le4/b;->a:Landroidx/core/util/Pools$SimplePool;
+
+    .line 3
+    new-instance v0, Lp0/g;
+
+    invoke-direct {v0}, Lp0/g;-><init>()V
+
+    iput-object v0, p0, Le4/b;->b:Lp0/g;
+
+    .line 4
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Le4/b;->c:Ljava/util/ArrayList;
+
+    .line 5
+    new-instance v0, Ljava/util/HashSet;
+
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
+
+    iput-object v0, p0, Le4/b;->d:Ljava/util/HashSet;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a()Ljava/lang/Class;
-    .locals 1
+.method public final a(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/lang/Class<",
-            "[B>;"
+            "(TT;",
+            "Ljava/util/ArrayList<",
+            "TT;>;",
+            "Ljava/util/HashSet<",
+            "TT;>;)V"
         }
     .end annotation
 
     .line 1
-    const-class v0, [B
+    invoke-virtual {p2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
-    return-object v0
-.end method
+    move-result v0
 
-.method public b()[B
-    .locals 1
+    if-eqz v0, :cond_0
 
-    .line 1
-    iget-object v0, p0, Le4/b;->b:[B
+    return-void
 
-    return-object v0
-.end method
+    .line 2
+    :cond_0
+    invoke-virtual {p3, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
-.method public c()I
-    .locals 1
+    move-result v0
 
-    .line 1
-    iget-object v0, p0, Le4/b;->b:[B
+    if-nez v0, :cond_2
 
-    array-length v0, v0
+    .line 3
+    invoke-virtual {p3, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    return v0
-.end method
+    .line 4
+    iget-object v0, p0, Le4/b;->b:Lp0/g;
 
-.method public bridge synthetic get()Ljava/lang/Object;
-    .locals 1
+    const/4 v1, 0x0
 
-    .line 1
-    invoke-virtual {p0}, Le4/b;->b()[B
+    .line 5
+    invoke-virtual {v0, p1, v1}, Lp0/g;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    .line 6
+    check-cast v0, Ljava/util/ArrayList;
 
-.method public recycle()V
-    .locals 0
+    if-eqz v0, :cond_1
+
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v2
+
+    :goto_0
+    if-ge v1, v2, :cond_1
+
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {p0, v3, p2, p3}, Le4/b;->a(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p3, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
+
+    .line 10
+    invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
+
+    .line 11
+    :cond_2
+    new-instance p1, Ljava/lang/RuntimeException;
+
+    const-string p2, "This graph contains cyclic dependencies"
+
+    invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

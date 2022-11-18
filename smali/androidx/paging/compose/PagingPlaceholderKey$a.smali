@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/paging/compose/PagingPlaceholderKey;-><clinit>()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/paging/compose/PagingPlaceholderKey;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,14 +37,15 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Landroidx/paging/compose/PagingPlaceholderKey;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
     new-instance v0, Landroidx/paging/compose/PagingPlaceholderKey;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -57,33 +57,10 @@
     return-object v0
 .end method
 
-.method public b(I)[Landroidx/paging/compose/PagingPlaceholderKey;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Landroidx/paging/compose/PagingPlaceholderKey;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/paging/compose/PagingPlaceholderKey$a;->a(Landroid/os/Parcel;)Landroidx/paging/compose/PagingPlaceholderKey;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/paging/compose/PagingPlaceholderKey$a;->b(I)[Landroidx/paging/compose/PagingPlaceholderKey;
-
-    move-result-object p1
 
     return-object p1
 .end method

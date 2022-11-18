@@ -14,21 +14,13 @@
 .end annotation
 
 .annotation runtime Lkotlin/Metadata;
-    bv = {
-        0x1,
-        0x0,
-        0x3
-    }
+    bv = {}
     d1 = {
-        "\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0005\u0008\u0083\u0008\u0018\u00002\u00020\u0001:\u0001\u0006B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u00a2\u0006\u0004\u0008\u0004\u0010\u0005\u00a8\u0006\u0007"
+        "\u0000\u000c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0002\u0008\u0083\u0008\u0018\u00002\u00020\u0001:\u0001\u0002\u00a8\u0006\u0003"
     }
     d2 = {
         "Landroidx/paging/compose/PagingPlaceholderKey;",
         "Landroid/os/Parcelable;",
-        "",
-        "index",
-        "<init>",
-        "(I)V",
         "b",
         "paging-compose_release"
     }
@@ -54,20 +46,19 @@
 
 
 # instance fields
-.field private final b:I
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
     new-instance v0, Landroidx/paging/compose/PagingPlaceholderKey$b;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Landroidx/paging/compose/PagingPlaceholderKey$b;-><init>(Lkotlin/jvm/internal/h;)V
+    invoke-direct {v0, v1}, Landroidx/paging/compose/PagingPlaceholderKey$b;-><init>(Lep0/k;)V
 
-    .line 1
     new-instance v0, Landroidx/paging/compose/PagingPlaceholderKey$a;
 
     invoke-direct {v0}, Landroidx/paging/compose/PagingPlaceholderKey$a;-><init>()V
@@ -91,7 +82,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -99,7 +90,7 @@
     return v0
 .end method
 
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     const/4 v0, 0x1
@@ -132,7 +123,7 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 1
 
     iget v0, p0, Landroidx/paging/compose/PagingPlaceholderKey;->b:I
@@ -140,40 +131,36 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "PagingPlaceholderKey(index="
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 1
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "PagingPlaceholderKey(index="
+    move-result-object v0
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 2
     iget v1, p0, Landroidx/paging/compose/PagingPlaceholderKey;->b:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const/16 v2, 0x29
 
-    const/16 v1, 0x29
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Lf9/d;->e(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     iget p2, p0, Landroidx/paging/compose/PagingPlaceholderKey;->b:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

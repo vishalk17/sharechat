@@ -12,18 +12,7 @@
 
 
 # instance fields
-.field final w:Ln/g;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ln/g<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private x:Ljava/util/List;
+.field public n:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -40,19 +29,8 @@
 
     const/4 v0, 0x0
 
-    .line 13
-    invoke-direct {p0, p1, p2, v0}, Landroidx/preference/PreferenceGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    .line 12
-    invoke-direct {p0, p1, p2, p3, v0}, Landroidx/preference/PreferenceGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    .line 14
+    invoke-direct {p0, p1, p2, v0, v0}, Landroidx/preference/PreferenceGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
 .end method
@@ -61,174 +39,106 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3}, Landroidx/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
-    new-instance v0, Ln/g;
+    new-instance p4, Lp0/g;
 
-    invoke-direct {v0}, Ln/g;-><init>()V
-
-    iput-object v0, p0, Landroidx/preference/PreferenceGroup;->w:Ln/g;
+    invoke-direct {p4}, Lp0/g;-><init>()V
 
     .line 3
-    new-instance v0, Landroid/os/Handler;
+    new-instance p4, Landroid/os/Handler;
 
-    invoke-direct {v0}, Landroid/os/Handler;-><init>()V
+    invoke-direct {p4}, Landroid/os/Handler;-><init>()V
 
     .line 4
-    new-instance v0, Landroidx/preference/PreferenceGroup$a;
+    new-instance p4, Ljava/util/ArrayList;
 
-    invoke-direct {v0, p0}, Landroidx/preference/PreferenceGroup$a;-><init>(Landroidx/preference/PreferenceGroup;)V
+    invoke-direct {p4}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object p4, p0, Landroidx/preference/PreferenceGroup;->n:Ljava/util/ArrayList;
 
     .line 5
-    new-instance v0, Ljava/util/ArrayList;
+    sget-object p4, Landroidx/preference/R$styleable;->PreferenceGroup:[I
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const/4 v0, 0x0
 
-    iput-object v0, p0, Landroidx/preference/PreferenceGroup;->x:Ljava/util/List;
-
-    .line 6
-    sget-object v0, Landroidx/preference/R$styleable;->PreferenceGroup:[I
-
-    invoke-virtual {p1, p2, v0, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, p4, p3, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 7
+    .line 6
     sget p2, Landroidx/preference/R$styleable;->PreferenceGroup_orderingFromXml:I
 
     const/4 p3, 0x1
 
-    .line 8
-    invoke-static {p1, p2, p2, p3}, Lm1/j;->b(Landroid/content/res/TypedArray;IIZ)Z
+    .line 7
+    invoke-static {p1, p2, p2, p3}, Li4/l;->b(Landroid/content/res/TypedArray;IIZ)Z
 
-    .line 9
+    .line 8
     sget p2, Landroidx/preference/R$styleable;->PreferenceGroup_initialExpandedChildrenCount:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
-    move-result p3
+    move-result p4
 
-    if-eqz p3, :cond_0
+    if-eqz p4, :cond_0
 
-    const p3, 0x7fffffff
+    const p4, 0x7fffffff
+
+    .line 9
+    invoke-virtual {p1, p2, p4}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v0
 
     .line 10
-    invoke-static {p1, p2, p2, p3}, Lm1/j;->d(Landroid/content/res/TypedArray;III)I
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
-    invoke-virtual {p0, p2}, Landroidx/preference/PreferenceGroup;->N(I)V
+    if-eq p2, p4, :cond_0
 
     .line 11
-    :cond_0
-    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+    iget-object p2, p0, Landroidx/preference/Preference;->f:Ljava/lang/String;
 
-    return-void
-.end method
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    move-result p2
 
-# virtual methods
-.method public L(I)Landroidx/preference/Preference;
-    .locals 1
+    xor-int/2addr p2, p3
 
-    .line 1
-    iget-object v0, p0, Landroidx/preference/PreferenceGroup;->x:Ljava/util/List;
+    if-nez p2, :cond_0
 
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 12
+    new-instance p2, Ljava/lang/StringBuilder;
 
-    move-result-object p1
-
-    check-cast p1, Landroidx/preference/Preference;
-
-    return-object p1
-.end method
-
-.method public M()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/preference/PreferenceGroup;->x:Ljava/util/List;
-
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public N(I)V
-    .locals 1
-
-    const v0, 0x7fffffff
-
-    if-eq p1, v0, :cond_0
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/preference/Preference;->q()Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    .line 2
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v0
+    move-result-object p3
 
-    invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+    invoke-virtual {p3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object p3
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v0, " should have a key defined if it contains an expandable preference"
+    const-string p3, " should have a key defined if it contains an expandable preference"
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object p2
 
-    const-string v0, "PreferenceGroup"
+    const-string p3, "PreferenceGroup"
 
-    invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p3, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 13
     :cond_0
-    return-void
-.end method
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-.method public u(Z)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Landroidx/preference/Preference;->u(Z)V
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/preference/PreferenceGroup;->M()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-ge v1, v0, :cond_0
-
-    .line 3
-    invoke-virtual {p0, v1}, Landroidx/preference/PreferenceGroup;->L(I)Landroidx/preference/Preference;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p0, p1}, Landroidx/preference/Preference;->y(Landroidx/preference/Preference;Z)V
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
     return-void
 .end method

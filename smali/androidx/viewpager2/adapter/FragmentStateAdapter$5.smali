@@ -3,34 +3,22 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/u;
-
-
-# annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/viewpager2/adapter/FragmentStateAdapter;->P()V
-.end annotation
-
-.annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
-.end annotation
+.implements Landroidx/lifecycle/z;
 
 
 # instance fields
-.field final synthetic b:Landroid/os/Handler;
+.field public final synthetic b:Landroid/os/Handler;
 
-.field final synthetic c:Ljava/lang/Runnable;
+.field public final synthetic c:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Landroidx/viewpager2/adapter/FragmentStateAdapter;Landroid/os/Handler;Ljava/lang/Runnable;)V
+.method public constructor <init>(Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
-    iput-object p2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter$5;->b:Landroid/os/Handler;
+    iput-object p1, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter$5;->b:Landroid/os/Handler;
 
-    iput-object p3, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter$5;->c:Ljava/lang/Runnable;
+    iput-object p2, p0, Landroidx/viewpager2/adapter/FragmentStateAdapter$5;->c:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,11 +27,11 @@
 
 
 # virtual methods
-.method public h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
+.method public final e(Landroidx/lifecycle/b0;Landroidx/lifecycle/t$b;)V
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/lifecycle/q$b;->ON_DESTROY:Landroidx/lifecycle/q$b;
+    sget-object v0, Landroidx/lifecycle/t$b;->ON_DESTROY:Landroidx/lifecycle/t$b;
 
     if-ne p2, v0, :cond_0
 
@@ -55,11 +43,11 @@
     invoke-virtual {p2, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 3
-    invoke-interface {p1}, Landroidx/lifecycle/x;->getLifecycle()Landroidx/lifecycle/q;
+    invoke-interface {p1}, Landroidx/lifecycle/b0;->getLifecycle()Landroidx/lifecycle/t;
 
     move-result-object p1
 
-    invoke-virtual {p1, p0}, Landroidx/lifecycle/q;->c(Landroidx/lifecycle/w;)V
+    invoke-virtual {p1, p0}, Landroidx/lifecycle/t;->c(Landroidx/lifecycle/a0;)V
 
     :cond_0
     return-void

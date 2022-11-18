@@ -1,107 +1,69 @@
-.class public Lp3/l;
-.super Lp3/a;
+.class public final Lp3/l;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp3/a<",
-        "Ls3/l;",
-        "Landroid/graphics/Path;",
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Ln3/i;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field private final i:Ls3/l;
-
-.field private final j:Landroid/graphics/Path;
+.field public final synthetic b:Lp3/v;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public constructor <init>(Lp3/v;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lv3/a<",
-            "Ls3/l;",
-            ">;>;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lp3/a;-><init>(Ljava/util/List;)V
+    iput-object p1, p0, Lp3/l;->b:Lp3/v;
 
-    .line 2
-    new-instance p1, Ls3/l;
+    const/4 p1, 0x1
 
-    invoke-direct {p1}, Ls3/l;-><init>()V
-
-    iput-object p1, p0, Lp3/l;->i:Ls3/l;
-
-    .line 3
-    new-instance p1, Landroid/graphics/Path;
-
-    invoke-direct {p1}, Landroid/graphics/Path;-><init>()V
-
-    iput-object p1, p0, Lp3/l;->j:Landroid/graphics/Path;
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic i(Lv3/a;F)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lp3/l;->p(Lv3/a;F)Landroid/graphics/Path;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public p(Lv3/a;F)Landroid/graphics/Path;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/a<",
-            "Ls3/l;",
-            ">;F)",
-            "Landroid/graphics/Path;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p1, Lv3/a;->b:Ljava/lang/Object;
-
-    check-cast v0, Ls3/l;
+    check-cast p1, Ln3/i;
 
     .line 2
-    iget-object p1, p1, Lv3/a;->c:Ljava/lang/Object;
-
-    check-cast p1, Ls3/l;
+    iget-wide v0, p1, Ln3/i;->a:J
 
     .line 3
-    iget-object v1, p0, Lp3/l;->i:Ls3/l;
-
-    invoke-virtual {v1, v0, p1, p2}, Ls3/l;->c(Ls3/l;Ls3/l;F)V
+    iget-object p1, p0, Lp3/l;->b:Lp3/v;
 
     .line 4
-    iget-object p1, p0, Lp3/l;->i:Ls3/l;
+    new-instance v2, Ln3/i;
 
-    iget-object p2, p0, Lp3/l;->j:Landroid/graphics/Path;
-
-    invoke-static {p1, p2}, Lcom/airbnb/lottie/utils/g;->i(Ls3/l;Landroid/graphics/Path;)V
+    invoke-direct {v2, v0, v1}, Ln3/i;-><init>(J)V
 
     .line 5
-    iget-object p1, p0, Lp3/l;->j:Landroid/graphics/Path;
+    invoke-virtual {p1, v2}, Lp3/v;->setPopupContentSize-fhxjrPA(Ln3/i;)V
+
+    .line 6
+    iget-object p1, p0, Lp3/l;->b:Lp3/v;
+
+    invoke-virtual {p1}, Lp3/v;->p()V
+
+    .line 7
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

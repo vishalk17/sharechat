@@ -310,17 +310,14 @@
 .method public final AFInAppEventType()Ljava/lang/String;
     .locals 3
 
-    .line 28
-    new-instance v0, Ljava/lang/StringBuilder;
+    const-string v0, "com.appsflyer,"
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 1
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, "com.appsflyer,"
+    move-result-object v0
 
-    .line 29
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
+    .line 2
     iget-object v1, p0, Lcom/appsflyer/AFKeystoreWrapper;->values:Ljava/lang/Object;
 
     monitor-enter v1
@@ -328,7 +325,7 @@
     :try_start_0
     const-string v2, "KSAppsFlyerId="
 
-    .line 31
+    .line 3
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Lcom/appsflyer/AFKeystoreWrapper;->AFInAppEventType:Ljava/lang/String;
@@ -341,19 +338,19 @@
 
     const-string v2, "KSAppsFlyerRICounter="
 
-    .line 32
+    .line 4
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget v2, p0, Lcom/appsflyer/AFKeystoreWrapper;->valueOf:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 33
+    .line 5
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 34
+    .line 6
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -363,7 +360,7 @@
     :catchall_0
     move-exception v0
 
-    .line 35
+    .line 7
     monitor-exit v1
 
     throw v0
@@ -374,7 +371,7 @@
 
     const-string v0, "Creating a new key with alias: "
 
-    .line 1
+    .line 11
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -385,13 +382,13 @@
 
     invoke-static {v0}, Lcom/appsflyer/AFLogger;->AFKeystoreWrapper(Ljava/lang/String;)V
 
-    .line 2
+    .line 12
     :try_start_0
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 3
+    .line 13
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v1
@@ -400,19 +397,19 @@
 
     const/4 v3, 0x5
 
-    .line 4
+    .line 14
     invoke-virtual {v1, v2, v3}, Ljava/util/Calendar;->add(II)V
 
     const/4 v2, 0x0
 
-    .line 5
+    .line 15
     iget-object v3, p0, Lcom/appsflyer/AFKeystoreWrapper;->values:Ljava/lang/Object;
 
     monitor-enter v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 6
+    .line 16
     :try_start_1
     iget-object v4, p0, Lcom/appsflyer/AFKeystoreWrapper;->AFInAppEventParameterName:Ljava/security/KeyStore;
 
@@ -422,14 +419,14 @@
 
     if-nez v4, :cond_2
 
-    .line 7
+    .line 17
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v5, 0x17
 
     if-lt v4, v5, :cond_0
 
-    .line 8
+    .line 18
     new-instance v2, Landroid/security/keystore/KeyGenParameterSpec$Builder;
 
     const/4 v4, 0x3
@@ -442,19 +439,19 @@
 
     invoke-direct {p1, v4}, Ljavax/security/auth/x500/X500Principal;-><init>(Ljava/lang/String;)V
 
-    .line 9
+    .line 19
     invoke-virtual {v2, p1}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->setCertificateSubject(Ljavax/security/auth/x500/X500Principal;)Landroid/security/keystore/KeyGenParameterSpec$Builder;
 
     move-result-object p1
 
     sget-object v2, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
-    .line 10
+    .line 20
     invoke-virtual {p1, v2}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->setCertificateSerialNumber(Ljava/math/BigInteger;)Landroid/security/keystore/KeyGenParameterSpec$Builder;
 
     move-result-object p1
 
-    .line 11
+    .line 21
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -463,7 +460,7 @@
 
     move-result-object p1
 
-    .line 12
+    .line 22
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -472,33 +469,29 @@
 
     move-result-object p1
 
-    .line 13
+    .line 23
     invoke-virtual {p1}, Landroid/security/keystore/KeyGenParameterSpec$Builder;->build()Landroid/security/keystore/KeyGenParameterSpec;
 
     move-result-object v2
 
     goto :goto_0
 
+    .line 24
     :cond_0
-    const/16 v5, 0x12
-
-    if-lt v4, v5, :cond_1
-
-    .line 14
     invoke-static {}, Lcom/appsflyer/internal/aa;->values()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 15
+    .line 25
     new-instance v2, Landroid/security/KeyPairGeneratorSpec$Builder;
 
     iget-object v4, p0, Lcom/appsflyer/AFKeystoreWrapper;->AFKeystoreWrapper:Landroid/content/Context;
 
     invoke-direct {v2, v4}, Landroid/security/KeyPairGeneratorSpec$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 16
+    .line 26
     invoke-virtual {v2, p1}, Landroid/security/KeyPairGeneratorSpec$Builder;->setAlias(Ljava/lang/String;)Landroid/security/KeyPairGeneratorSpec$Builder;
 
     move-result-object p1
@@ -509,19 +502,19 @@
 
     invoke-direct {v2, v4}, Ljavax/security/auth/x500/X500Principal;-><init>(Ljava/lang/String;)V
 
-    .line 17
+    .line 27
     invoke-virtual {p1, v2}, Landroid/security/KeyPairGeneratorSpec$Builder;->setSubject(Ljavax/security/auth/x500/X500Principal;)Landroid/security/KeyPairGeneratorSpec$Builder;
 
     move-result-object p1
 
     sget-object v2, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
-    .line 18
+    .line 28
     invoke-virtual {p1, v2}, Landroid/security/KeyPairGeneratorSpec$Builder;->setSerialNumber(Ljava/math/BigInteger;)Landroid/security/KeyPairGeneratorSpec$Builder;
 
     move-result-object p1
 
-    .line 19
+    .line 29
     invoke-virtual {v0}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -530,7 +523,7 @@
 
     move-result-object p1
 
-    .line 20
+    .line 30
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v0
@@ -539,7 +532,7 @@
 
     move-result-object p1
 
-    .line 21
+    .line 31
     invoke-virtual {p1}, Landroid/security/KeyPairGeneratorSpec$Builder;->build()Landroid/security/KeyPairGeneratorSpec;
 
     move-result-object v2
@@ -550,15 +543,15 @@
 
     const-string v0, "AndroidKeyStore"
 
-    .line 22
+    .line 32
     invoke-static {p1, v0}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;Ljava/lang/String;)Ljava/security/KeyPairGenerator;
 
     move-result-object p1
 
-    .line 23
+    .line 33
     invoke-virtual {p1, v2}, Ljava/security/KeyPairGenerator;->initialize(Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 24
+    .line 34
     invoke-virtual {p1}, Ljava/security/KeyPairGeneratorSpi;->generateKeyPair()Ljava/security/KeyPair;
 
     goto :goto_1
@@ -566,7 +559,7 @@
     :cond_2
     const-string v0, "Alias already exists: "
 
-    .line 25
+    .line 35
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -577,7 +570,7 @@
 
     invoke-static {p1}, Lcom/appsflyer/AFLogger;->AFKeystoreWrapper(Ljava/lang/String;)V
 
-    .line 26
+    .line 36
     :goto_1
     monitor-exit v3
     :try_end_1
@@ -598,7 +591,7 @@
     :catchall_1
     move-exception p1
 
-    .line 27
+    .line 37
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Exception "

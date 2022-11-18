@@ -1,40 +1,69 @@
-.class public final synthetic Lq50/j;
+.class public final Lq50/j;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lbs0/i;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lbs0/i<",
+        "Lo50/x;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Lq50/m;
+.field public final synthetic b:Lbs0/i;
 
-.field public final synthetic c:Ljava/lang/String;
+.field public final synthetic c:Lq50/b;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq50/m;Ljava/lang/String;)V
+.method public constructor <init>(Lbs0/i;Lq50/b;)V
     .locals 0
 
+    iput-object p1, p0, Lq50/j;->b:Lbs0/i;
+
+    iput-object p2, p0, Lq50/j;->c:Lq50/b;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lq50/j;->b:Lq50/m;
-
-    iput-object p2, p0, Lq50/j;->c:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 2
+.method public final collect(Lbs0/j;Lvo0/d;)Ljava/lang/Object;
+    .locals 3
 
-    iget-object v0, p0, Lq50/j;->b:Lq50/m;
+    .line 1
+    iget-object v0, p0, Lq50/j;->b:Lbs0/i;
 
-    iget-object v1, p0, Lq50/j;->c:Ljava/lang/String;
+    new-instance v1, Lq50/j$a;
 
-    invoke-static {v0, v1, p1}, Lq50/m;->L6(Lq50/m;Ljava/lang/String;Landroid/view/View;)V
+    iget-object v2, p0, Lq50/j;->c:Lq50/b;
 
-    return-void
+    invoke-direct {v1, p1, v2}, Lq50/j$a;-><init>(Lbs0/j;Lq50/b;)V
+
+    invoke-interface {v0, v1, p2}, Lbs0/i;->collect(Lbs0/j;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 2
+    sget-object p2, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
 .end method

@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Lin/mohalla/sharechat/web/WebViewFragment$a;-><init>()V
@@ -32,69 +32,37 @@
     return-void
 .end method
 
-.method public static synthetic b(Lin/mohalla/sharechat/web/WebViewFragment$a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Lin/mohalla/sharechat/web/WebViewFragment;
-    .locals 1
-
-    and-int/lit8 p5, p4, 0x2
+.method public static a(Lin/mohalla/sharechat/web/WebViewFragment$a;Ljava/lang/String;)Lin/mohalla/sharechat/web/WebViewFragment;
+    .locals 3
 
     const/4 v0, 0x0
 
-    if-eqz p5, :cond_0
-
-    move-object p2, v0
-
-    :cond_0
-    and-int/lit8 p4, p4, 0x4
-
-    if-eqz p4, :cond_1
-
-    move-object p3, v0
-
     .line 1
-    :cond_1
-    invoke-virtual {p0, p1, p2, p3}, Lin/mohalla/sharechat/web/WebViewFragment$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lin/mohalla/sharechat/web/WebViewFragment;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lin/mohalla/sharechat/web/WebViewFragment;
-    .locals 3
-
-    const-string v0, "webUrl"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/web/WebViewFragment;
-
-    invoke-direct {v0}, Lin/mohalla/sharechat/web/WebViewFragment;-><init>()V
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    new-instance v1, Landroid/os/Bundle;
+    new-instance p0, Lin/mohalla/sharechat/web/WebViewFragment;
 
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+    invoke-direct {p0}, Lin/mohalla/sharechat/web/WebViewFragment;-><init>()V
 
-    const-string v2, "postid"
+    const-string v1, "postid"
+
+    const-string v2, "browserurl"
 
     .line 3
-    invoke-virtual {v1, v2, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2, p1}, Lcom/facebook/internal/z;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
-    const-string p2, "browserurl"
+    move-result-object p1
+
+    const-string v0, "ARG_SOURCE"
+
+    const-string v1, "cricket_detail_screen"
 
     .line 4
-    invoke-virtual {v1, p2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string p1, "ARG_SOURCE"
+    invoke-virtual {p1, v0, v1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    invoke-virtual {v1, p1, p3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 6
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
-
-    return-object v0
+    return-object p0
 .end method

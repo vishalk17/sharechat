@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,14 +37,15 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
     new-instance v0, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -57,33 +57,10 @@
     return-object v0
 .end method
 
-.method public b(I)[Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey$a;->a(Landroid/os/Parcel;)Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/compose/foundation/lazy/layout/DefaultLazyKey$a;->b(I)[Landroidx/compose/foundation/lazy/layout/DefaultLazyKey;
-
-    move-result-object p1
 
     return-object p1
 .end method

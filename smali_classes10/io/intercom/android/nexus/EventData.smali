@@ -52,14 +52,40 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     .line 3
-    instance-of v0, p1, Ljava/lang/Long;
+    instance-of v0, p1, Ljava/lang/Integer;
 
     if-eqz v0, :cond_0
+
+    .line 4
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 5
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    move-result p1
+
+    int-to-long p1, p1
+
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide p1
+
+    return-wide p1
+
+    .line 6
+    :cond_0
+    instance-of v0, p1, Ljava/lang/Long;
+
+    if-eqz v0, :cond_1
 
     check-cast p1, Ljava/lang/Long;
 
@@ -67,7 +93,7 @@
 
     move-result-wide p2
 
-    :cond_0
+    :cond_1
     return-wide p2
 .end method
 
@@ -88,7 +114,7 @@
     .locals 1
 
     .line 2
-    invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Ljava/util/AbstractMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

@@ -1,0 +1,63 @@
+.class public abstract Lvj/i;
+.super Llk/b;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    const-string v0, "com.google.android.gms.common.moduleinstall.internal.IModuleInstallStatusListener"
+
+    invoke-direct {p0, v0}, Llk/b;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final P1(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    const/4 p3, 0x1
+
+    if-ne p1, p3, :cond_0
+
+    .line 1
+    sget-object p1, Lcom/google/android/gms/common/moduleinstall/ModuleInstallStatusUpdate;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    invoke-static {p2, p1}, Llk/c;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/google/android/gms/common/moduleinstall/ModuleInstallStatusUpdate;
+
+    .line 2
+    invoke-static {p2}, Llk/c;->b(Landroid/os/Parcel;)V
+
+    .line 3
+    move-object p2, p0
+
+    check-cast p2, Lvj/c;
+
+    .line 4
+    iget-object p2, p2, Lvj/c;->b:Loj/j;
+
+    new-instance v0, Lvj/b;
+
+    invoke-direct {v0, p1}, Lvj/b;-><init>(Lcom/google/android/gms/common/moduleinstall/ModuleInstallStatusUpdate;)V
+
+    invoke-virtual {p2, v0}, Loj/j;->b(Loj/j$b;)V
+
+    return p3
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method

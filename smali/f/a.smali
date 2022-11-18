@@ -1,32 +1,35 @@
-.class public interface abstract Lf/a;
+.class public final Lf/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/IInterface;
-
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lf/a$a;
+        "<I:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# virtual methods
-.method public abstract getId()Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
+# instance fields
+.field public a:Landroidx/activity/result/c;
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Landroid/os/RemoteException;
+            "Landroidx/activity/result/c<",
+            "TI;>;"
         }
     .end annotation
-.end method
+.end field
 
-.method public abstract v5()Z
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method

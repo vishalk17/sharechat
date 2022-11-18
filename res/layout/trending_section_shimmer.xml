@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.mohalla.sharechat.appx.shimmer.ShimmerLayout android:id="@id/post_loading_shimmer_container" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_angle="0" app:shimmer_color="@color/secondary_bg" app:shimmer_mask_width="0.6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/top_section" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_shimmer_top_section" />
+        <include android:id="@id/postLoadingShimmer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintTop_toBottomOf="@id/top_section" layout="@layout/layout_shimmer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</in.mohalla.sharechat.appx.shimmer.ShimmerLayout>

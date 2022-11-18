@@ -1,38 +1,56 @@
-.class public final synthetic Lq90/h;
-.super Ljava/lang/Object;
+.class public final Lq90/h;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lrz/m;
+.implements Ldp0/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Landroid/app/Activity;",
+        "Lro0/x;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic b:Lq90/r;
+.field public final synthetic b:Lq90/f;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lq90/r;)V
+.method public constructor <init>(Lq90/f;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lq90/h;->b:Lq90/f;
 
-    iput-object p1, p0, Lq90/h;->b:Lq90/r;
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lq90/h;->b:Lq90/r;
+    .line 1
+    check-cast p1, Landroid/app/Activity;
 
-    check-cast p1, Lqo0/a;
+    .line 2
+    iget-object v0, p0, Lq90/h;->b:Lq90/f;
 
-    invoke-static {v0, p1}, Lq90/r;->ul(Lq90/r;Lqo0/a;)Li00/o;
+    .line 3
+    iput-object p1, v0, Lq90/f;->f:Landroid/app/Activity;
 
-    move-result-object p1
+    .line 4
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

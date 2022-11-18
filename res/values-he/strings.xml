@@ -9,8 +9,4 @@
     <string name="crop_image_menu_rotate_left">סובב נגד כיוון השעון</string>
     <string name="crop_image_menu_rotate_right">סובב</string>
     <string name="pick_image_intent_chooser_title">בחר מקור</string>
-    <string name="zxing_app_name">סורק ברקודים</string>
-    <string name="zxing_button_ok">אישור</string>
-    <string name="zxing_msg_camera_framework_bug">סליחה, מצלמת האנדרואיד נתקלה בבעיה. ייתכן שיהיה עליך להפעיל מחדש את המכשיר.</string>
-    <string name="zxing_msg_default_status">הצב ברקוד בתוך המלבן כדי לסרוק אותו.</string>
 </resources>

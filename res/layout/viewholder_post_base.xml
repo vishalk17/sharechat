@@ -4,7 +4,7 @@
     <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guide_line_top" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.0" app:layout_constraintTop_toTopOf="parent" />
     <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_pinned_post" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="guide_line_top" />
     <include layout="@layout/layout_post_top_new" />
-    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="divider_caption,tv_add_location_in_caption" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="divider_caption,tv_add_location_in_caption,barrier_pinned_post" />
     <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_post_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/barrier_post_top" app:resize_mode="fixed_width" />
     <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="fl_post_content" />
     <include layout="@layout/layout_post_content" />

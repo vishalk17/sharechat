@@ -19,7 +19,6 @@
                 <ImageButton android:id="@id/ib_sticker_unselected_2" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_sticker_stroke_24" />
                 <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/sticker_icon_red_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_dot_red" android:layout_marginStart="10.0dip" />
             </FrameLayout>
-            <ImageButton android:id="@id/ib_gallery_unselected_2" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_image_stroke_24" />
             <ImageButton android:id="@id/ib_gif_unselected" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_gif_filled_24" />
             <ImageButton android:id="@id/ib_gallery_unselected" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/ic_image_stroke_24" />
         </LinearLayout>

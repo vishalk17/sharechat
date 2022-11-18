@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field b:I
+.field public b:I
 
-.field final c:Ljava/util/HashMap;
+.field public final c:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -17,17 +17,17 @@
     .end annotation
 .end field
 
-.field final d:Landroid/os/RemoteCallbackList;
+.field public final d:Landroidx/room/MultiInstanceInvalidationService$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/os/RemoteCallbackList<",
-            "Landroidx/room/w;",
+            "Landroidx/room/a;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private final e:Landroidx/room/x$a;
+.field public final e:Landroidx/room/MultiInstanceInvalidationService$b;
 
 
 # direct methods
@@ -54,25 +54,24 @@
 
     invoke-direct {v0, p0}, Landroidx/room/MultiInstanceInvalidationService$a;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->d:Landroid/os/RemoteCallbackList;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->d:Landroidx/room/MultiInstanceInvalidationService$a;
 
     .line 5
     new-instance v0, Landroidx/room/MultiInstanceInvalidationService$b;
 
     invoke-direct {v0, p0}, Landroidx/room/MultiInstanceInvalidationService$b;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->e:Landroidx/room/x$a;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->e:Landroidx/room/MultiInstanceInvalidationService$b;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+.method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    .line 1
-    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->e:Landroidx/room/x$a;
+    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->e:Landroidx/room/MultiInstanceInvalidationService$b;
 
     return-object p1
 .end method

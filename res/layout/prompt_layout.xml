@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/plotline_modal_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/part_layout_close" />
+    <LinearLayout style="@style/plotline_modal_inner">
+        <include layout="@layout/part_layout_question" />
+        <include layout="@layout/part_layout_submit_button" />
+        <include layout="@layout/part_layout_progress" />
+    </LinearLayout>
+</LinearLayout>

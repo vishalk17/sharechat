@@ -1,338 +1,80 @@
 .class public final Lz0/h;
-.super Ljava/lang/Object;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/l;
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lz0/h$a;
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Ll1/d0;",
+        "Ll1/c0;",
+        ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final b:Lz0/h$a;
-
-.field private static final c:I
-
-.field private static final d:I
-
-.field private static final e:I
-
-.field private static final f:I
-
-.field private static final g:I
-
-
 # instance fields
-.field private final a:I
+.field public final synthetic b:Lz0/e;
+
+.field public final synthetic c:Lz0/j;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lz0/e;Lz0/j;)V
+    .locals 0
 
-    new-instance v0, Lz0/h$a;
+    iput-object p1, p0, Lz0/h;->b:Lz0/e;
 
-    const/4 v1, 0x0
+    iput-object p2, p0, Lz0/h;->c:Lz0/j;
 
-    invoke-direct {v0, v1}, Lz0/h$a;-><init>(Lkotlin/jvm/internal/h;)V
+    const/4 p1, 0x1
 
-    sput-object v0, Lz0/h;->b:Lz0/h$a;
-
-    const/4 v0, 0x1
-
-    .line 1
-    invoke-static {v0}, Lz0/h;->g(I)I
-
-    move-result v0
-
-    sput v0, Lz0/h;->c:I
-
-    const/4 v0, 0x2
-
-    .line 2
-    invoke-static {v0}, Lz0/h;->g(I)I
-
-    move-result v0
-
-    sput v0, Lz0/h;->d:I
-
-    const/4 v0, 0x3
-
-    .line 3
-    invoke-static {v0}, Lz0/h;->g(I)I
-
-    move-result v0
-
-    sput v0, Lz0/h;->e:I
-
-    const/4 v0, 0x4
-
-    .line 4
-    invoke-static {v0}, Lz0/h;->g(I)I
-
-    move-result v0
-
-    sput v0, Lz0/h;->f:I
-
-    const/4 v0, 0x5
-
-    .line 5
-    invoke-static {v0}, Lz0/h;->g(I)I
-
-    move-result v0
-
-    sput v0, Lz0/h;->g:I
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
-.end method
-
-.method private synthetic constructor <init>(I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, Lz0/h;->a:I
-
-    return-void
-.end method
-
-.method public static final synthetic a()I
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->e:I
-
-    return v0
-.end method
-
-.method public static final synthetic b()I
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->f:I
-
-    return v0
-.end method
-
-.method public static final synthetic c()I
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->g:I
-
-    return v0
-.end method
-
-.method public static final synthetic d()I
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->c:I
-
-    return v0
-.end method
-
-.method public static final synthetic e()I
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->d:I
-
-    return v0
-.end method
-
-.method public static final synthetic f(I)Lz0/h;
-    .locals 1
-
-    new-instance v0, Lz0/h;
-
-    invoke-direct {v0, p0}, Lz0/h;-><init>(I)V
-
-    return-object v0
-.end method
-
-.method public static g(I)I
-    .locals 0
-
-    return p0
-.end method
-
-.method public static h(ILjava/lang/Object;)Z
-    .locals 2
-
-    instance-of v0, p1, Lz0/h;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    :cond_0
-    check-cast p1, Lz0/h;
-
-    invoke-virtual {p1}, Lz0/h;->l()I
-
-    move-result p1
-
-    if-eq p0, p1, :cond_1
-
-    return v1
-
-    :cond_1
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method public static final i(II)Z
-    .locals 0
-
-    if-ne p0, p1, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static j(I)I
-    .locals 0
-
-    return p0
-.end method
-
-.method public static k(I)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    sget v0, Lz0/h;->c:I
-
-    invoke-static {p0, v0}, Lz0/h;->i(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string p0, "Ltr"
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    sget v0, Lz0/h;->d:I
-
-    invoke-static {p0, v0}, Lz0/h;->i(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string p0, "Rtl"
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    sget v0, Lz0/h;->e:I
-
-    invoke-static {p0, v0}, Lz0/h;->i(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    const-string p0, "Content"
-
-    goto :goto_0
-
-    .line 4
-    :cond_2
-    sget v0, Lz0/h;->f:I
-
-    invoke-static {p0, v0}, Lz0/h;->i(II)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const-string p0, "ContentOrLtr"
-
-    goto :goto_0
-
-    .line 5
-    :cond_3
-    sget v0, Lz0/h;->g:I
-
-    invoke-static {p0, v0}, Lz0/h;->i(II)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_4
-
-    const-string p0, "ContentOrRtl"
-
-    goto :goto_0
-
-    :cond_4
-    const-string p0, "Invalid"
-
-    :goto_0
-    return-object p0
 .end method
 
 
 # virtual methods
-.method public equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    iget v0, p0, Lz0/h;->a:I
-
-    invoke-static {v0, p1}, Lz0/h;->h(ILjava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public hashCode()I
-    .locals 1
-
-    iget v0, p0, Lz0/h;->a:I
-
-    invoke-static {v0}, Lz0/h;->j(I)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final synthetic l()I
-    .locals 1
-
-    iget v0, p0, Lz0/h;->a:I
-
-    return v0
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget v0, p0, Lz0/h;->a:I
+    check-cast p1, Ll1/d0;
 
-    invoke-static {v0}, Lz0/h;->k(I)Ljava/lang/String;
+    const-string v0, "$this$DisposableEffect"
 
-    move-result-object v0
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object v0
+    .line 3
+    iget-object p1, p0, Lz0/h;->b:Lz0/e;
+
+    check-cast p1, Lz0/f;
+
+    .line 4
+    iget-object p1, p1, Lz0/f;->a:Lm1/e;
+
+    .line 5
+    iget-object v0, p0, Lz0/h;->c:Lz0/j;
+
+    .line 6
+    invoke-virtual {p1, v0}, Lm1/e;->b(Ljava/lang/Object;)V
+
+    .line 7
+    iget-object p1, p0, Lz0/h;->b:Lz0/e;
+
+    iget-object v0, p0, Lz0/h;->c:Lz0/j;
+
+    .line 8
+    new-instance v1, Lz0/g;
+
+    invoke-direct {v1, p1, v0}, Lz0/g;-><init>(Lz0/e;Lz0/j;)V
+
+    return-object v1
 .end method

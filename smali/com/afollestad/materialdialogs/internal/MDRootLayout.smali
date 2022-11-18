@@ -3,51 +3,53 @@
 .source "SourceFile"
 
 
+# static fields
+.field public static final synthetic u:I
+
+
 # instance fields
-.field private final b:[Lcom/afollestad/materialdialogs/internal/MDButton;
+.field public final b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-.field private c:I
+.field public c:I
 
-.field private d:Landroid/view/View;
+.field public d:Landroid/view/View;
 
-.field private e:Landroid/view/View;
+.field public e:Landroid/view/View;
 
-.field private f:Z
+.field public f:Z
 
-.field private g:Z
+.field public g:Z
 
-.field private h:Lcom/afollestad/materialdialogs/g;
+.field public h:Lc8/d;
 
-.field private i:Z
+.field public i:Z
 
-.field private j:Z
+.field public j:Z
 
-.field private k:Z
+.field public k:Z
 
-.field private l:Z
+.field public l:I
 
-.field private m:I
+.field public m:I
 
-.field private n:I
+.field public n:I
 
-.field private o:I
+.field public o:Lc8/c;
 
-.field private p:Lcom/afollestad/materialdialogs/e;
+.field public p:I
 
-.field private q:I
+.field public q:Landroid/graphics/Paint;
 
-.field private r:Landroid/graphics/Paint;
+.field public r:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
 
-.field private s:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
+.field public s:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
 
-.field private t:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-.field private u:I
+.field public t:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 2
+    .locals 4
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -68,9 +70,9 @@
     iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
 
     .line 5
-    sget-object v1, Lcom/afollestad/materialdialogs/g;->ADAPTIVE:Lcom/afollestad/materialdialogs/g;
+    sget-object v1, Lc8/d;->ADAPTIVE:Lc8/d;
 
-    iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lcom/afollestad/materialdialogs/g;
+    iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lc8/d;
 
     .line 6
     iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->i:Z
@@ -81,632 +83,111 @@
     iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
 
     .line 8
-    sget-object v1, Lcom/afollestad/materialdialogs/e;->START:Lcom/afollestad/materialdialogs/e;
+    sget-object v2, Lc8/c;->START:Lc8/c;
 
-    iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
-
-    .line 9
-    invoke-direct {p0, p1, p2, v0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-
-    return-void
-.end method
-
-.method static synthetic a(Landroid/webkit/WebView;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l(Landroid/webkit/WebView;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method static synthetic b(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Z)Z
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
-
-    return p1
-.end method
-
-.method static synthetic c(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Z)Z
-    .locals 0
-
-    .line 1
-    iput-boolean p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
-
-    return p1
-.end method
-
-.method static synthetic d(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h(Landroid/view/ViewGroup;ZZ)V
-
-    return-void
-.end method
-
-.method static synthetic e(Lcom/afollestad/materialdialogs/internal/MDRootLayout;)[Lcom/afollestad/materialdialogs/internal/MDButton;
-    .locals 0
-
-    .line 1
-    iget-object p0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
-
-    return-object p0
-.end method
-
-.method static synthetic f(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZZ)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p(Landroid/view/ViewGroup;ZZZ)V
-
-    return-void
-.end method
-
-.method static synthetic g(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/webkit/WebView;ZZZ)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q(Landroid/webkit/WebView;ZZZ)V
-
-    return-void
-.end method
-
-.method private h(Landroid/view/ViewGroup;ZZ)V
-    .locals 1
-
-    if-nez p3, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    if-eqz p3, :cond_4
-
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    if-nez v0, :cond_4
-
-    .line 2
-    :cond_1
-    instance-of v0, p1, Landroidx/recyclerview/widget/RecyclerView;
-
-    if-eqz v0, :cond_2
-
-    .line 3
-    new-instance v0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
-
-    .line 4
-    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
-
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->l(Landroidx/recyclerview/widget/RecyclerView$u;)V
-
-    const/4 p2, 0x0
-
-    .line 5
-    invoke-virtual {v0, p1, p2, p2}, Landroidx/recyclerview/widget/RecyclerView$u;->onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
-
-    goto :goto_1
-
-    .line 6
-    :cond_2
-    new-instance v0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;
-
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
-
-    if-nez p3, :cond_3
-
-    .line 7
-    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    .line 8
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
-
-    goto :goto_0
+    iput-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
 
     .line 9
-    :cond_3
-    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    .line 10
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
-
-    .line 11
-    :goto_0
-    invoke-interface {v0}, Landroid/view/ViewTreeObserver$OnScrollChangedListener;->onScrollChanged()V
-
-    :cond_4
-    :goto_1
-    return-void
-.end method
-
-.method private static i(Landroid/widget/AdapterView;)Z
-    .locals 5
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, -0x1
-
-    if-ne v0, v2, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
-
-    move-result v0
-
-    const/4 v2, 0x1
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 3
-    :goto_0
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
-
-    move-result v3
-
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getCount()I
-
-    move-result v4
-
-    sub-int/2addr v4, v2
-
-    if-ne v3, v4, :cond_2
-
-    const/4 v3, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v3, 0x0
-
-    :goto_1
-    if-eqz v0, :cond_5
-
-    if-eqz v3, :cond_5
-
-    .line 4
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getChildCount()I
-
-    move-result v0
-
-    if-lez v0, :cond_5
-
-    .line 5
-    invoke-virtual {p0, v1}, Landroid/widget/AdapterView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/View;->getTop()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getPaddingTop()I
-
-    move-result v3
-
-    if-ge v0, v3, :cond_3
-
-    return v2
-
-    .line 6
-    :cond_3
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getChildCount()I
-
-    move-result v0
-
-    sub-int/2addr v0, v2
-
-    invoke-virtual {p0, v0}, Landroid/widget/AdapterView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
-
-    move-result v0
-
-    .line 7
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getHeight()I
-
-    move-result v3
-
-    invoke-virtual {p0}, Landroid/widget/AdapterView;->getPaddingBottom()I
-
-    move-result p0
-
-    sub-int/2addr v3, p0
-
-    if-le v0, v3, :cond_4
-
-    const/4 v1, 0x1
-
-    :cond_4
-    return v1
-
-    :cond_5
-    return v2
-.end method
-
-.method public static j(Landroidx/recyclerview/widget/RecyclerView;)Z
-    .locals 1
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$p;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$p;->w()Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method private static k(Landroid/widget/ScrollView;)Z
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/ScrollView;->getChildCount()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0, v1}, Landroid/widget/ScrollView;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v0
-
-    .line 3
-    invoke-virtual {p0}, Landroid/widget/ScrollView;->getMeasuredHeight()I
-
-    move-result v2
-
-    invoke-virtual {p0}, Landroid/widget/ScrollView;->getPaddingTop()I
-
-    move-result v3
-
-    sub-int/2addr v2, v3
-
-    invoke-virtual {p0}, Landroid/widget/ScrollView;->getPaddingBottom()I
-
-    move-result p0
-
-    sub-int/2addr v2, p0
-
-    if-ge v2, v0, :cond_1
-
-    const/4 v1, 0x1
-
-    :cond_1
-    return v1
-.end method
-
-.method private static l(Landroid/webkit/WebView;)Z
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/webkit/WebView;->getMeasuredHeight()I
-
-    move-result v0
-
-    int-to-float v0, v0
-
-    invoke-virtual {p0}, Landroid/webkit/WebView;->getContentHeight()I
-
-    move-result v1
-
-    int-to-float v1, v1
-
-    invoke-virtual {p0}, Landroid/webkit/WebView;->getScale()F
-
-    move-result p0
-
-    mul-float v1, v1, p0
-
-    cmpg-float p0, v0, v1
-
-    if-gez p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method private static m(Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 5
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
-
-    :goto_0
-    if-ltz v1, :cond_2
-
-    .line 3
-    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    .line 4
-    invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    .line 5
-    invoke-virtual {v2}, Landroid/view/View;->getBottom()I
-
-    move-result v3
-
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getMeasuredHeight()I
-
-    move-result v4
-
-    if-ne v3, v4, :cond_1
-
-    move-object v0, v2
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v1, v1, -0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return-object v0
-.end method
-
-.method private static n(Landroid/view/ViewGroup;)Landroid/view/View;
-    .locals 4
-
-    const/4 v0, 0x0
-
-    if-eqz p0, :cond_2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    goto :goto_1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, -0x1
-
-    :goto_0
-    if-ltz v1, :cond_2
-
-    .line 3
-    invoke-virtual {p0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
-
-    move-result-object v2
-
-    .line 4
-    invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    invoke-virtual {v2}, Landroid/view/View;->getTop()I
-
-    move-result v3
-
-    if-nez v3, :cond_1
-
-    move-object v0, v2
-
-    goto :goto_1
-
-    :cond_1
-    add-int/lit8 v1, v1, -0x1
-
-    goto :goto_0
-
-    :cond_2
-    :goto_1
-    return-object v0
-.end method
-
-.method private o(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 3
-
-    .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v0
+    move-result-object v2
 
-    .line 2
-    sget-object v1, Lcom/afollestad/materialdialogs/R$styleable;->MDRootLayout:[I
+    .line 10
+    sget-object v3, Lcom/afollestad/materialdialogs/R$styleable;->MDRootLayout:[I
 
-    const/4 v2, 0x0
-
-    invoke-virtual {p1, p2, v1, p3, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, v3, v0, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
-    .line 3
-    sget p3, Lcom/afollestad/materialdialogs/R$styleable;->MDRootLayout_md_reduce_padding_no_title_no_buttons:I
+    .line 11
+    sget v3, Lcom/afollestad/materialdialogs/R$styleable;->MDRootLayout_md_reduce_padding_no_title_no_buttons:I
 
-    const/4 v1, 0x1
+    .line 12
+    invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
-    .line 4
-    invoke-virtual {p2, p3, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    move-result v1
 
-    move-result p3
+    iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->k:Z
 
-    iput-boolean p3, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->k:Z
-
-    .line 5
+    .line 13
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 6
+    .line 14
     sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_notitle_vertical_padding:I
 
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p2
+
+    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:I
+
+    .line 15
+    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_frame_vertical_padding:I
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
     iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
-    .line 7
-    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_frame_vertical_padding:I
+    .line 16
+    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_padding_frame_side:I
 
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result p2
+
+    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:I
+
+    .line 17
+    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_height:I
+
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
     iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
 
-    .line 8
-    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_padding_frame_side:I
-
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result p2
-
-    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:I
-
-    .line 9
-    sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_button_height:I
-
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    move-result p2
-
-    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:I
-
-    .line 10
+    .line 18
     new-instance p2, Landroid/graphics/Paint;
 
     invoke-direct {p2}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Landroid/graphics/Paint;
+    iput-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:Landroid/graphics/Paint;
 
-    .line 11
+    .line 19
     sget p2, Lcom/afollestad/materialdialogs/R$dimen;->md_divider_height:I
 
-    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p2
 
-    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u:I
+    iput p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:I
 
-    .line 12
-    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Landroid/graphics/Paint;
+    .line 20
+    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:Landroid/graphics/Paint;
 
-    sget p3, Lcom/afollestad/materialdialogs/R$attr;->md_divider_color:I
+    sget v1, Lcom/afollestad/materialdialogs/R$attr;->md_divider_color:I
 
-    invoke-static {p1, p3}, Lm3/a;->m(Landroid/content/Context;I)I
+    .line 21
+    invoke-static {p1, v1, v0}, Le8/b;->h(Landroid/content/Context;II)I
 
     move-result p1
 
+    .line 22
     invoke-virtual {p2, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 13
-    invoke-virtual {p0, v2}, Landroid/view/ViewGroup;->setWillNotDraw(Z)V
+    .line 23
+    invoke-virtual {p0, v0}, Landroid/view/View;->setWillNotDraw(Z)V
 
     return-void
 .end method
 
-.method private p(Landroid/view/ViewGroup;ZZZ)V
+.method public static a(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZZ)V
     .locals 3
+
+    .line 1
+    invoke-static {p0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -714,19 +195,19 @@
 
     if-eqz p2, :cond_1
 
-    .line 1
+    .line 2
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result p2
 
     if-lez p2, :cond_1
 
-    .line 2
+    .line 3
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d:Landroid/view/View;
 
     if-eqz p2, :cond_0
 
-    .line 3
+    .line 4
     invoke-virtual {p2}, Landroid/view/View;->getVisibility()I
 
     move-result p2
@@ -735,26 +216,26 @@
 
     if-eq p2, v2, :cond_0
 
-    .line 4
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getScrollY()I
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result p2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getPaddingTop()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
 
-    add-int/2addr p2, v2
+    add-int/2addr v2, p2
 
     invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
-    move-result-object v2
+    move-result-object p2
 
-    invoke-virtual {v2}, Landroid/view/View;->getTop()I
+    invoke-virtual {p2}, Landroid/view/View;->getTop()I
 
-    move-result v2
+    move-result p2
 
-    if-le p2, v2, :cond_0
+    if-le v2, p2, :cond_0
 
     const/4 p2, 0x1
 
@@ -769,7 +250,7 @@
     :cond_1
     if-eqz p3, :cond_3
 
-    .line 5
+    .line 6
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result p2
@@ -778,31 +259,31 @@
 
     if-eqz p4, :cond_2
 
-    .line 6
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getScrollY()I
+    .line 7
+    invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
     move-result p2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p3
 
-    add-int/2addr p2, p3
+    add-int/2addr p3, p2
 
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->getPaddingBottom()I
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
-    move-result p3
+    move-result p2
 
-    sub-int/2addr p2, p3
+    sub-int/2addr p3, p2
 
-    .line 7
+    .line 8
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
-    move-result p3
+    move-result p2
 
-    sub-int/2addr p3, v0
+    sub-int/2addr p2, v0
 
-    invoke-virtual {p1, p3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -810,7 +291,7 @@
 
     move-result p1
 
-    if-ge p2, p1, :cond_2
+    if-ge p3, p1, :cond_2
 
     goto :goto_1
 
@@ -824,175 +305,7 @@
     return-void
 .end method
 
-.method private q(Landroid/webkit/WebView;ZZZ)V
-    .locals 3
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    if-eqz p2, :cond_1
-
-    .line 1
-    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d:Landroid/view/View;
-
-    if-eqz p2, :cond_0
-
-    .line 2
-    invoke-virtual {p2}, Landroid/view/View;->getVisibility()I
-
-    move-result p2
-
-    const/16 v2, 0x8
-
-    if-eq p2, v2, :cond_0
-
-    .line 3
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getScrollY()I
-
-    move-result p2
-
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getPaddingTop()I
-
-    move-result v2
-
-    add-int/2addr p2, v2
-
-    if-lez p2, :cond_0
-
-    const/4 p2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    iput-boolean p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
-
-    :cond_1
-    if-eqz p3, :cond_3
-
-    if-eqz p4, :cond_2
-
-    .line 4
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getScrollY()I
-
-    move-result p2
-
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getMeasuredHeight()I
-
-    move-result p3
-
-    add-int/2addr p2, p3
-
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getPaddingBottom()I
-
-    move-result p3
-
-    sub-int/2addr p2, p3
-
-    int-to-float p2, p2
-
-    .line 5
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getContentHeight()I
-
-    move-result p3
-
-    int-to-float p3, p3
-
-    invoke-virtual {p1}, Landroid/webkit/WebView;->getScale()F
-
-    move-result p1
-
-    mul-float p3, p3, p1
-
-    cmpg-float p1, p2, p3
-
-    if-gez p1, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :goto_1
-    iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
-
-    :cond_3
-    return-void
-.end method
-
-.method private r()V
-    .locals 3
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x11
-
-    if-ge v0, v1, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object v0
-
-    .line 3
-    invoke-virtual {v0}, Landroid/content/res/Configuration;->getLayoutDirection()I
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_3
-
-    .line 4
-    sget-object v0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$d;->a:[I
-
-    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
-
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v2
-
-    aget v0, v0, v2
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    sget-object v0, Lcom/afollestad/materialdialogs/e;->START:Lcom/afollestad/materialdialogs/e;
-
-    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
-
-    goto :goto_0
-
-    .line 6
-    :cond_2
-    sget-object v0, Lcom/afollestad/materialdialogs/e;->END:Lcom/afollestad/materialdialogs/e;
-
-    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
-
-    :cond_3
-    :goto_0
-    return-void
-.end method
-
-.method private static s(Landroid/view/View;)Z
+.method public static c(Landroid/view/View;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -1058,8 +371,94 @@
     return v2
 .end method
 
-.method private u(Landroid/view/View;ZZ)V
-    .locals 2
+
+# virtual methods
+.method public final b(Landroid/view/ViewGroup;ZZ)V
+    .locals 1
+
+    if-nez p3, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    if-eqz p3, :cond_4
+
+    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    if-nez v0, :cond_4
+
+    .line 2
+    :cond_1
+    instance-of v0, p1, Landroidx/recyclerview/widget/RecyclerView;
+
+    if-eqz v0, :cond_2
+
+    .line 3
+    new-instance v0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$a;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$a;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
+
+    .line 4
+    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
+
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->j(Landroidx/recyclerview/widget/RecyclerView$s;)V
+
+    const/4 p2, 0x0
+
+    .line 5
+    invoke-virtual {v0, p1, p2, p2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$a;->onScrolled(Landroidx/recyclerview/widget/RecyclerView;II)V
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    new-instance v0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
+
+    if-nez p3, :cond_3
+
+    .line 7
+    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    .line 8
+    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
+
+    goto :goto_0
+
+    .line 9
+    :cond_3
+    iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    .line 10
+    invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s:Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;
+
+    invoke-virtual {p1, p2}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
+
+    .line 11
+    :goto_0
+    invoke-virtual {v0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$b;->onScrollChanged()V
+
+    :cond_4
+    :goto_1
+    return-void
+.end method
+
+.method public final d(Landroid/view/View;Z)V
+    .locals 6
 
     if-nez p1, :cond_0
 
@@ -1069,170 +468,430 @@
     :cond_0
     instance-of v0, p1, Landroid/widget/ScrollView;
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    if-eqz v0, :cond_3
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_5
 
     .line 2
     check-cast p1, Landroid/widget/ScrollView;
 
     .line 3
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->k(Landroid/widget/ScrollView;)Z
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
+
+    goto :goto_0
 
     .line 4
-    invoke-direct {p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h(Landroid/view/ViewGroup;ZZ)V
-
-    goto :goto_0
-
     :cond_1
-    if-eqz p2, :cond_2
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
-    .line 5
-    iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
+    move-result-object v0
 
-    :cond_2
-    if-eqz p3, :cond_b
-
-    .line 6
-    iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
-
-    goto :goto_0
-
-    .line 7
-    :cond_3
-    instance-of v0, p1, Landroid/widget/AdapterView;
-
-    if-eqz v0, :cond_6
-
-    .line 8
-    check-cast p1, Landroid/widget/AdapterView;
-
-    .line 9
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->i(Landroid/widget/AdapterView;)Z
+    invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    .line 5
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    if-ge v3, v0, :cond_2
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 6
+    invoke-virtual {p0, p1, p2, v1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b(Landroid/view/ViewGroup;ZZ)V
+
+    goto/16 :goto_c
+
+    :cond_3
+    if-eqz p2, :cond_4
+
+    .line 7
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
+
+    .line 8
+    :cond_4
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
+
+    goto/16 :goto_c
+
+    .line 9
+    :cond_5
+    instance-of v0, p1, Landroid/widget/AdapterView;
+
+    const/4 v3, -0x1
+
+    if-eqz v0, :cond_e
 
     .line 10
-    invoke-direct {p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h(Landroid/view/ViewGroup;ZZ)V
-
-    goto :goto_0
-
-    :cond_4
-    if-eqz p2, :cond_5
+    check-cast p1, Landroid/widget/AdapterView;
 
     .line 11
-    iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
 
-    :cond_5
-    if-eqz p3, :cond_b
+    move-result v0
+
+    if-ne v0, v3, :cond_6
+
+    goto :goto_4
 
     .line 12
-    iput-boolean v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
+    :cond_6
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
-    goto :goto_0
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    const/4 v0, 0x1
+
+    goto :goto_2
+
+    :cond_7
+    const/4 v0, 0x0
 
     .line 13
-    :cond_6
-    instance-of v0, p1, Landroid/webkit/WebView;
+    :goto_2
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getLastVisiblePosition()I
 
-    if-eqz v0, :cond_7
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/widget/AdapterView;->getCount()I
+
+    move-result v4
+
+    sub-int/2addr v4, v1
+
+    if-ne v3, v4, :cond_8
+
+    const/4 v3, 0x1
+
+    goto :goto_3
+
+    :cond_8
+    const/4 v3, 0x0
+
+    :goto_3
+    if-eqz v0, :cond_b
+
+    if-eqz v3, :cond_b
 
     .line 14
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    if-lez v0, :cond_b
+
+    .line 15
+    invoke-virtual {p1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->getTop()I
+
+    move-result v0
+
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
+
+    move-result v3
+
+    if-ge v0, v3, :cond_9
+
+    goto :goto_5
+
+    .line 16
+    :cond_9
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    sub-int/2addr v0, v1
+
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
+
+    move-result v0
+
+    .line 17
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
+
+    move-result v4
+
+    sub-int/2addr v3, v4
+
+    if-le v0, v3, :cond_a
+
+    goto :goto_5
+
+    :cond_a
+    :goto_4
+    const/4 v0, 0x0
+
+    goto :goto_6
+
+    :cond_b
+    :goto_5
+    const/4 v0, 0x1
+
+    :goto_6
+    if-eqz v0, :cond_c
+
+    .line 18
+    invoke-virtual {p0, p1, p2, v1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b(Landroid/view/ViewGroup;ZZ)V
+
+    goto/16 :goto_c
+
+    :cond_c
+    if-eqz p2, :cond_d
+
+    .line 19
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
+
+    .line 20
+    :cond_d
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
+
+    goto/16 :goto_c
+
+    .line 21
+    :cond_e
+    instance-of v0, p1, Landroid/webkit/WebView;
+
+    if-eqz v0, :cond_f
+
+    .line 22
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    new-instance v1, Lcom/afollestad/materialdialogs/internal/MDRootLayout$a;
+    new-instance v1, Ld8/b;
 
-    invoke-direct {v1, p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout$a;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/View;ZZ)V
+    invoke-direct {v1, p0, p1, p2}, Ld8/b;-><init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/View;Z)V
 
-    .line 15
+    .line 23
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    goto :goto_0
+    goto/16 :goto_c
 
-    .line 16
-    :cond_7
+    .line 24
+    :cond_f
     instance-of v0, p1, Landroidx/recyclerview/widget/RecyclerView;
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_12
 
-    .line 17
+    .line 25
     move-object v0, p1
 
     check-cast v0, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {v0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j(Landroidx/recyclerview/widget/RecyclerView;)Z
+    .line 26
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
 
-    move-result v0
+    move-result-object v3
 
-    if-eqz p2, :cond_8
+    if-eqz v3, :cond_10
 
-    .line 18
-    iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
-
-    :cond_8
-    if-eqz p3, :cond_9
-
-    .line 19
-    iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
-
-    :cond_9
-    if-eqz v0, :cond_b
-
-    .line 20
-    check-cast p1, Landroid/view/ViewGroup;
-
-    invoke-direct {p0, p1, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h(Landroid/view/ViewGroup;ZZ)V
-
-    goto :goto_0
-
-    .line 21
-    :cond_a
-    instance-of v0, p1, Landroid/view/ViewGroup;
-
-    if-eqz v0, :cond_b
-
-    .line 22
-    check-cast p1, Landroid/view/ViewGroup;
-
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n(Landroid/view/ViewGroup;)Landroid/view/View;
+    .line 27
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$n;
 
     move-result-object v0
 
-    .line 23
-    invoke-direct {p0, v0, p2, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u(Landroid/view/View;ZZ)V
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$n;->s()Z
 
-    .line 24
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m(Landroid/view/ViewGroup;)Landroid/view/View;
+    move-result v0
 
-    move-result-object p1
+    if-eqz v0, :cond_10
 
-    if-eq p1, v0, :cond_b
+    const/4 v2, 0x1
 
-    const/4 p2, 0x1
+    :cond_10
+    if-eqz p2, :cond_11
 
-    .line 25
-    invoke-direct {p0, p1, v1, p2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u(Landroid/view/View;ZZ)V
+    .line 28
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->f:Z
 
-    :cond_b
-    :goto_0
+    .line 29
+    :cond_11
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->g:Z
+
+    if-eqz v2, :cond_19
+
+    .line 30
+    check-cast p1, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0, p1, p2, v1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b(Landroid/view/ViewGroup;ZZ)V
+
+    goto :goto_c
+
+    .line 31
+    :cond_12
+    instance-of v0, p1, Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_19
+
+    .line 32
+    check-cast p1, Landroid/view/ViewGroup;
+
+    .line 33
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_13
+
+    goto :goto_8
+
+    .line 34
+    :cond_13
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v0
+
+    add-int/2addr v0, v3
+
+    :goto_7
+    if-ltz v0, :cond_15
+
+    .line 35
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    .line 36
+    invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
+
+    move-result v5
+
+    if-nez v5, :cond_14
+
+    invoke-virtual {v4}, Landroid/view/View;->getTop()I
+
+    move-result v5
+
+    if-nez v5, :cond_14
+
+    goto :goto_9
+
+    :cond_14
+    add-int/lit8 v0, v0, -0x1
+
+    goto :goto_7
+
+    :cond_15
+    :goto_8
+    move-object v4, v1
+
+    .line 37
+    :goto_9
+    invoke-virtual {p0, v4, p2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d(Landroid/view/View;Z)V
+
+    .line 38
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result p2
+
+    if-nez p2, :cond_16
+
+    goto :goto_b
+
+    .line 39
+    :cond_16
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result p2
+
+    add-int/2addr p2, v3
+
+    :goto_a
+    if-ltz p2, :cond_18
+
+    .line 40
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    .line 41
+    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
+
+    move-result v3
+
+    if-nez v3, :cond_17
+
+    .line 42
+    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
+
+    move-result v3
+
+    invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v5
+
+    if-ne v3, v5, :cond_17
+
+    move-object v1, v0
+
+    goto :goto_b
+
+    :cond_17
+    add-int/lit8 p2, p2, -0x1
+
+    goto :goto_a
+
+    :cond_18
+    :goto_b
+    if-eq v1, v4, :cond_19
+
+    .line 43
+    invoke-virtual {p0, v1, v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d(Landroid/view/View;Z)V
+
+    :cond_19
+    :goto_c
     return-void
 .end method
 
-
-# virtual methods
-.method public onDraw(Landroid/graphics/Canvas;)V
+.method public final onDraw(Landroid/graphics/Canvas;)V
     .locals 7
 
     .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onDraw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
@@ -1252,13 +911,13 @@
     const/4 v2, 0x0
 
     .line 5
-    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u:I
+    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:I
 
     sub-int v1, v0, v1
 
     int-to-float v3, v1
 
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
 
@@ -1266,7 +925,7 @@
 
     int-to-float v5, v0
 
-    iget-object v6, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:Landroid/graphics/Paint;
 
     move-object v1, p1
 
@@ -1290,19 +949,19 @@
     int-to-float v3, v0
 
     .line 8
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getMeasuredWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
 
     int-to-float v4, v1
 
-    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u:I
+    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->t:I
 
     add-int/2addr v0, v1
 
     int-to-float v5, v0
 
-    iget-object v6, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Landroid/graphics/Paint;
+    iget-object v6, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:Landroid/graphics/Paint;
 
     move-object v1, p1
 
@@ -1312,11 +971,11 @@
     return-void
 .end method
 
-.method public onFinishInflate()V
+.method public final onFinishInflate()V
     .locals 5
 
     .line 1
-    invoke-super {p0}, Landroid/view/ViewGroup;->onFinishInflate()V
+    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
 
     const/4 v0, 0x0
 
@@ -1423,13 +1082,13 @@
     return-void
 .end method
 
-.method protected onLayout(ZIIII)V
+.method public final onLayout(ZIIII)V
     .locals 8
 
     .line 1
     iget-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d:Landroid/view/View;
 
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result p1
 
@@ -1455,16 +1114,12 @@
 
     .line 4
     :cond_0
-    iget-boolean p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:Z
-
-    if-nez p1, :cond_1
-
     iget-boolean p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
 
     if-eqz p1, :cond_1
 
     .line 5
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:I
 
     add-int/2addr p3, p1
 
@@ -1473,7 +1128,7 @@
     :goto_0
     iget-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
-    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {p1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result p1
 
@@ -1494,14 +1149,14 @@
     :cond_2
     iget-boolean p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->i:Z
 
-    const/4 p3, 0x1
+    const/4 p3, 0x0
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     if-eqz p1, :cond_4
 
     .line 9
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
     sub-int/2addr p5, p1
 
@@ -1511,35 +1166,35 @@
     array-length v1, p1
 
     :goto_1
-    if-ge v0, v1, :cond_10
+    if-ge p3, v1, :cond_10
 
-    aget-object v2, p1, v0
+    aget-object v2, p1, p3
 
     .line 11
-    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v3
 
     if-eqz v3, :cond_3
 
     .line 12
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredHeight()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v3
 
     sub-int v3, p5, v3
 
-    invoke-virtual {v2, p2, v3, p4, p5}, Landroid/widget/TextView;->layout(IIII)V
+    invoke-virtual {v2, p2, v3, p4, p5}, Landroid/view/View;->layout(IIII)V
 
     .line 13
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredHeight()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v2
 
     sub-int/2addr p5, v2
 
     :cond_3
-    add-int/lit8 v0, v0, 0x1
+    add-int/lit8 p3, p3, 0x1
 
     goto :goto_1
 
@@ -1550,18 +1205,18 @@
     if-eqz p1, :cond_5
 
     .line 15
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
     sub-int/2addr p5, p1
 
     .line 16
     :cond_5
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
 
     sub-int p1, p5, p1
 
     .line 17
-    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:I
+    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:I
 
     .line 18
     iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
@@ -1570,7 +1225,7 @@
 
     aget-object v2, v2, v3
 
-    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v2
 
@@ -1579,9 +1234,9 @@
     if-eqz v2, :cond_7
 
     .line 19
-    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
+    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
 
-    sget-object v5, Lcom/afollestad/materialdialogs/e;->END:Lcom/afollestad/materialdialogs/e;
+    sget-object v5, Lc8/c;->END:Lc8/c;
 
     if-ne v2, v5, :cond_6
 
@@ -1592,7 +1247,7 @@
 
     aget-object v5, v5, v3
 
-    invoke-virtual {v5}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
 
@@ -1612,7 +1267,7 @@
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
@@ -1628,14 +1283,14 @@
 
     aget-object v7, v7, v3
 
-    invoke-virtual {v7, v2, p1, v6, p5}, Landroid/widget/TextView;->layout(IIII)V
+    invoke-virtual {v7, v2, p1, v6, p5}, Landroid/view/View;->layout(IIII)V
 
     .line 23
     iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
     aget-object v2, v2, v3
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
@@ -1650,18 +1305,18 @@
     :goto_3
     iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v2, v2, p3
+    aget-object v2, v2, v0
 
-    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v2
 
     if-eqz v2, :cond_a
 
     .line 25
-    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
+    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
 
-    sget-object v6, Lcom/afollestad/materialdialogs/e;->END:Lcom/afollestad/materialdialogs/e;
+    sget-object v6, Lc8/c;->END:Lc8/c;
 
     if-ne v2, v6, :cond_8
 
@@ -1670,22 +1325,19 @@
     .line 26
     iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v2, v2, p3
+    aget-object v2, v2, v0
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
     add-int/2addr v2, v1
 
-    :goto_4
-    const/4 v6, -0x1
-
-    goto :goto_5
+    goto :goto_4
 
     .line 27
     :cond_8
-    sget-object v6, Lcom/afollestad/materialdialogs/e;->START:Lcom/afollestad/materialdialogs/e;
+    sget-object v6, Lc8/c;->START:Lc8/c;
 
     if-ne v2, v6, :cond_9
 
@@ -1694,28 +1346,31 @@
     .line 28
     iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v1, v1, p3
+    aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
 
     sub-int v1, v2, v1
 
-    goto :goto_4
+    :goto_4
+    const/4 v6, -0x1
+
+    goto :goto_5
 
     .line 29
     :cond_9
-    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:I
+    iget v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:I
 
     add-int/2addr v1, p2
 
     .line 30
     iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v2, v2, p3
+    aget-object v2, v2, v0
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
@@ -1727,9 +1382,9 @@
     :goto_5
     iget-object v7, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v7, v7, p3
+    aget-object v7, v7, v0
 
-    invoke-virtual {v7, v1, p1, v2, p5}, Landroid/widget/TextView;->layout(IIII)V
+    invoke-virtual {v7, v1, p1, v2, p5}, Landroid/view/View;->layout(IIII)V
 
     goto :goto_6
 
@@ -1740,32 +1395,32 @@
     :goto_6
     iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v1, v1, v0
+    aget-object v1, v1, p3
 
-    invoke-static {v1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v1}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v1
 
     if-eqz v1, :cond_10
 
     .line 33
-    iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
+    iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
 
-    sget-object v2, Lcom/afollestad/materialdialogs/e;->END:Lcom/afollestad/materialdialogs/e;
+    sget-object v2, Lc8/c;->END:Lc8/c;
 
     if-ne v1, v2, :cond_b
 
     .line 34
-    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:I
+    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:I
 
     sub-int/2addr p4, p2
 
     .line 35
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p2, p2, v0
+    aget-object p2, p2, p3
 
-    invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
@@ -1775,21 +1430,21 @@
 
     .line 36
     :cond_b
-    sget-object v2, Lcom/afollestad/materialdialogs/e;->START:Lcom/afollestad/materialdialogs/e;
+    sget-object v2, Lc8/c;->START:Lc8/c;
 
     if-ne v1, v2, :cond_c
 
     .line 37
-    iget p4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:I
+    iget p4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:I
 
     add-int/2addr p2, p4
 
     .line 38
     iget-object p4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p4, p4, v0
+    aget-object p4, p4, p3
 
-    invoke-virtual {p4}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p4}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p4
 
@@ -1805,9 +1460,9 @@
     .line 39
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p2, p2, v0
+    aget-object p2, p2, p3
 
-    invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
@@ -1823,9 +1478,9 @@
     .line 40
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p2, p2, v0
+    aget-object p2, p2, p3
 
-    invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
@@ -1841,9 +1496,9 @@
 
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p2, p2, v0
+    aget-object p2, p2, p3
 
-    invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
@@ -1854,14 +1509,14 @@
     .line 42
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object p2, p2, v0
+    aget-object p2, p2, p3
 
-    invoke-virtual {p2}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
 
     :goto_7
-    add-int v5, v6, p2
+    add-int v5, p2, v6
 
     :cond_f
     :goto_8
@@ -1873,20 +1528,20 @@
     :goto_9
     iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->b:[Lcom/afollestad/materialdialogs/internal/MDButton;
 
-    aget-object v0, v1, v0
+    aget-object p3, v1, p3
 
-    invoke-virtual {v0, p2, p1, p4, p5}, Landroid/widget/TextView;->layout(IIII)V
+    invoke-virtual {p3, p2, p1, p4, p5}, Landroid/view/View;->layout(IIII)V
 
     .line 44
     :cond_10
     iget-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
-    invoke-direct {p0, p1, p3, p3}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->u(Landroid/view/View;ZZ)V
+    invoke-virtual {p0, p1, v0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d(Landroid/view/View;Z)V
 
     return-void
 .end method
 
-.method public onMeasure(II)V
+.method public final onMeasure(II)V
     .locals 11
 
     .line 1
@@ -1913,9 +1568,9 @@
     iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
 
     .line 5
-    iget-object v3, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lcom/afollestad/materialdialogs/g;
+    iget-object v3, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lc8/d;
 
-    sget-object v4, Lcom/afollestad/materialdialogs/g;->ALWAYS:Lcom/afollestad/materialdialogs/g;
+    sget-object v4, Lc8/d;->ALWAYS:Lc8/d;
 
     const/4 v5, 0x0
 
@@ -1923,20 +1578,20 @@
 
     const/4 v3, 0x1
 
-    :goto_0
-    const/4 v8, 0x0
-
-    goto :goto_2
+    goto :goto_0
 
     .line 6
     :cond_1
-    sget-object v4, Lcom/afollestad/materialdialogs/g;->NEVER:Lcom/afollestad/materialdialogs/g;
+    sget-object v4, Lc8/d;->NEVER:Lc8/d;
 
     if-ne v3, v4, :cond_2
 
     const/4 v3, 0x0
 
-    goto :goto_0
+    :goto_0
+    const/4 v8, 0x0
+
+    goto :goto_2
 
     .line 7
     :cond_2
@@ -1958,20 +1613,20 @@
     if-eqz v9, :cond_3
 
     .line 8
-    invoke-static {v9}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v9}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v10
 
     if-eqz v10, :cond_3
 
     .line 9
-    invoke-virtual {v9, v5, v5}, Lcom/afollestad/materialdialogs/internal/MDButton;->b(ZZ)V
+    invoke-virtual {v9, v5, v5}, Lcom/afollestad/materialdialogs/internal/MDButton;->a(ZZ)V
 
     .line 10
     invoke-virtual {p0, v9, p1, p2}, Landroid/view/ViewGroup;->measureChild(Landroid/view/View;II)V
 
     .line 11
-    invoke-virtual {v9}, Landroid/widget/TextView;->getMeasuredWidth()I
+    invoke-virtual {v9}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v8
 
@@ -1986,7 +1641,7 @@
 
     .line 12
     :cond_4
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -2036,20 +1691,20 @@
     if-eqz v9, :cond_6
 
     .line 15
-    invoke-static {v9}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v9}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v10
 
     if-eqz v10, :cond_6
 
     .line 16
-    invoke-virtual {v9, v2, v5}, Lcom/afollestad/materialdialogs/internal/MDButton;->b(ZZ)V
+    invoke-virtual {v9, v2, v5}, Lcom/afollestad/materialdialogs/internal/MDButton;->a(ZZ)V
 
     .line 17
     invoke-virtual {p0, v9, p1, p2}, Landroid/view/ViewGroup;->measureChild(Landroid/view/View;II)V
 
     .line 18
-    invoke-virtual {v9}, Landroid/widget/TextView;->getMeasuredHeight()I
+    invoke-virtual {v9}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v8
 
@@ -2076,51 +1731,51 @@
     sub-int p1, v1, v7
 
     .line 20
-    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
-
-    mul-int/lit8 v3, p2, 0x2
-
-    add-int/2addr v3, v5
+    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
     mul-int/lit8 p2, p2, 0x2
 
     add-int/2addr p2, v5
 
+    move v3, p2
+
     goto :goto_5
 
     .line 21
     :cond_9
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
 
     sub-int p1, v1, p1
 
     .line 22
-    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
+    iget p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
     mul-int/lit8 p2, p2, 0x2
 
-    add-int/lit8 v3, p2, 0x0
+    add-int/2addr p2, v5
 
     goto :goto_4
 
     .line 23
     :cond_a
-    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->n:I
+    iget p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
 
     mul-int/lit8 p1, p1, 0x2
 
-    add-int/lit8 v3, p1, 0x0
+    add-int/2addr p1, v5
+
+    move p2, p1
 
     move p1, v1
 
     :goto_4
-    const/4 p2, 0x0
+    const/4 v3, 0x0
 
     .line 24
     :goto_5
     iget-object v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d:Landroid/view/View;
 
-    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v4
 
@@ -2152,97 +1807,73 @@
 
     .line 29
     :cond_b
-    iget-boolean v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:Z
+    iget v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:I
 
-    if-nez v4, :cond_c
+    add-int/2addr p2, v4
 
     .line 30
-    iget v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->m:I
-
-    add-int/2addr v3, v4
-
-    .line 31
-    :cond_c
     :goto_6
     iget-object v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
-    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_10
+    if-eqz v4, :cond_f
 
-    .line 32
+    .line 31
     iget-object v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
-    .line 33
+    .line 32
     invoke-static {v0, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v6
 
-    sub-int v7, p1, p2
+    sub-int v7, p1, v3
 
     const/high16 v9, -0x80000000
 
-    .line 34
+    .line 33
     invoke-static {v7, v9}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v7
 
-    .line 35
+    .line 34
     invoke-virtual {v4, v6, v7}, Landroid/view/View;->measure(II)V
 
-    .line 36
+    .line 35
     iget-object v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v4
 
-    sub-int v6, p1, v3
+    sub-int v6, p1, p2
 
-    if-gt v4, v6, :cond_f
+    if-gt v4, v6, :cond_e
 
-    .line 37
+    .line 36
     iget-boolean v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->k:Z
 
-    if-eqz v4, :cond_e
+    if-eqz v4, :cond_d
 
     iget-object v4, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->d:Landroid/view/View;
 
-    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->s(Landroid/view/View;)Z
+    invoke-static {v4}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c(Landroid/view/View;)Z
 
     move-result v4
 
-    if-nez v4, :cond_e
+    if-nez v4, :cond_d
 
-    if-eqz v8, :cond_d
+    if-eqz v8, :cond_c
 
     goto :goto_7
 
-    .line 38
-    :cond_d
+    .line 37
+    :cond_c
     iput-boolean v5, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
 
-    .line 39
-    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
-
-    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
-
-    move-result v2
-
-    add-int/2addr v2, p2
-
-    sub-int v5, p1, v2
-
-    goto :goto_8
-
-    .line 40
-    :cond_e
-    :goto_7
-    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
-
-    .line 41
+    .line 38
     iget-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getMeasuredHeight()I
@@ -2255,37 +1886,105 @@
 
     goto :goto_8
 
-    .line 42
-    :cond_f
+    .line 39
+    :cond_d
+    :goto_7
+    iput-boolean v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
+
+    .line 40
+    iget-object v2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->e:Landroid/view/View;
+
+    invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
+
+    move-result v2
+
+    add-int/2addr v2, p2
+
+    sub-int v5, p1, v2
+
+    goto :goto_8
+
+    .line 41
+    :cond_e
     iput-boolean v5, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->j:Z
 
     goto :goto_8
 
-    :cond_10
+    :cond_f
     move v5, p1
 
     :goto_8
     sub-int/2addr v1, v5
 
-    .line 43
-    invoke-virtual {p0, v0, v1}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
+    .line 42
+    invoke-virtual {p0, v0, v1}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
 .end method
 
-.method public setButtonGravity(Lcom/afollestad/materialdialogs/e;)V
-    .locals 0
+.method public setButtonGravity(Lc8/c;)V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->p:Lcom/afollestad/materialdialogs/e;
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
 
     .line 2
-    invoke-direct {p0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r()V
+    invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
+
+    move-result-object p1
+
+    .line 3
+    invoke-virtual {p1}, Landroid/content/res/Configuration;->getLayoutDirection()I
+
+    move-result p1
+
+    const/4 v0, 0x1
+
+    if-ne p1, v0, :cond_2
+
+    .line 4
+    sget-object p1, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->a:[I
+
+    iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aget p1, p1, v1
+
+    if-eq p1, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-eq p1, v0, :cond_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    sget-object p1, Lc8/c;->START:Lc8/c;
+
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
+
+    goto :goto_0
+
+    .line 6
+    :cond_1
+    sget-object p1, Lc8/c;->END:Lc8/c;
+
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->o:Lc8/c;
+
+    :cond_2
+    :goto_0
     return-void
 .end method
 
-.method public setButtonStackedGravity(Lcom/afollestad/materialdialogs/e;)V
+.method public setButtonStackedGravity(Lc8/c;)V
     .locals 4
 
     .line 1
@@ -2303,7 +2002,7 @@
     if-eqz v3, :cond_0
 
     .line 2
-    invoke-virtual {v3, p1}, Lcom/afollestad/materialdialogs/internal/MDButton;->setStackedGravity(Lcom/afollestad/materialdialogs/e;)V
+    invoke-virtual {v3, p1}, Lcom/afollestad/materialdialogs/internal/MDButton;->setStackedGravity(Lc8/c;)V
 
     :cond_0
     add-int/lit8 v2, v2, 0x1
@@ -2318,12 +2017,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->r:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->q:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
@@ -2331,31 +2030,19 @@
 .method public setMaxHeight(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->c:I
 
     return-void
 .end method
 
-.method public setStackingBehavior(Lcom/afollestad/materialdialogs/g;)V
+.method public setStackingBehavior(Lc8/d;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lcom/afollestad/materialdialogs/g;
+    iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->h:Lc8/d;
 
     .line 2
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
-
-    return-void
-.end method
-
-.method public t()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    .line 1
-    iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->l:Z
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method

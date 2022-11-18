@@ -1,13 +1,21 @@
-.class public abstract Landroidx/fragment/app/d;
+.class public final Landroidx/fragment/app/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lp4/d$a;
+
+
+# instance fields
+.field public final synthetic a:Landroid/animation/Animator;
+
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 1
+    iput-object p1, p0, Landroidx/fragment/app/d;->a:Landroid/animation/Animator;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -15,21 +23,12 @@
 
 
 # virtual methods
-.method public b(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/fragment/app/Fragment;
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+.method public final Z0()V
+    .locals 1
 
-    .line 1
-    invoke-static {p1, p2, p3}, Landroidx/fragment/app/Fragment;->instantiate(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;)Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/d;->a:Landroid/animation/Animator;
 
-    move-result-object p1
+    invoke-virtual {v0}, Landroid/animation/Animator;->end()V
 
-    return-object p1
-.end method
-
-.method public abstract c(I)Landroid/view/View;
-.end method
-
-.method public abstract d()Z
+    return-void
 .end method

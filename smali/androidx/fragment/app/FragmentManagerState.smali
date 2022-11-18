@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field b:Ljava/util/ArrayList;
+.field public b:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field c:Ljava/util/ArrayList;
+.field public c:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -39,13 +39,13 @@
     .end annotation
 .end field
 
-.field d:[Landroidx/fragment/app/BackStackState;
+.field public d:[Landroidx/fragment/app/BackStackState;
 
-.field e:I
+.field public e:I
 
-.field f:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field g:Ljava/util/ArrayList;
+.field public g:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -55,7 +55,7 @@
     .end annotation
 .end field
 
-.field h:Ljava/util/ArrayList;
+.field public h:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -65,7 +65,7 @@
     .end annotation
 .end field
 
-.field i:Ljava/util/ArrayList;
+.field public i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -77,10 +77,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/FragmentManagerState$a;
 
     invoke-direct {v0}, Landroidx/fragment/app/FragmentManagerState$a;-><init>()V
@@ -214,7 +213,7 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
     const/4 v0, 0x0
@@ -222,7 +221,7 @@
     return v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1

@@ -35,11 +35,11 @@
 
 .field public static final abc_slide_out_top:I = 0x7f010009
 
-.field public static final decelerate_cubic:I = 0x7f010025
+.field public static final decelerate_cubic:I = 0x7f01001f
 
-.field public static final popup_enter:I = 0x7f010051
+.field public static final popup_enter:I = 0x7f01004f
 
-.field public static final popup_exit:I = 0x7f010052
+.field public static final popup_exit:I = 0x7f010050
 
 
 # direct methods

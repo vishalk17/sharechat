@@ -63,47 +63,47 @@
 
 .field public static final btn_radio_to_on_mtrl_ring_outer_path_animation:I = 0x7f01001d
 
-.field public static final design_bottom_sheet_slide_in:I = 0x7f010026
+.field public static final design_bottom_sheet_slide_in:I = 0x7f010020
 
-.field public static final design_bottom_sheet_slide_out:I = 0x7f010027
+.field public static final design_bottom_sheet_slide_out:I = 0x7f010021
 
-.field public static final design_snackbar_in:I = 0x7f010028
+.field public static final design_snackbar_in:I = 0x7f010022
 
-.field public static final design_snackbar_out:I = 0x7f010029
+.field public static final design_snackbar_out:I = 0x7f010023
 
-.field public static final fragment_fast_out_extra_slow_in:I = 0x7f010034
+.field public static final fragment_fast_out_extra_slow_in:I = 0x7f01002d
 
-.field public static final intercom_accelerate_interpolator:I = 0x7f01003a
+.field public static final intercom_accelerate_interpolator:I = 0x7f010033
 
-.field public static final intercom_composer_slide_down:I = 0x7f01003b
+.field public static final intercom_composer_slide_down:I = 0x7f010034
 
-.field public static final intercom_composer_slide_up:I = 0x7f01003c
+.field public static final intercom_composer_slide_up:I = 0x7f010035
 
-.field public static final intercom_composer_stay:I = 0x7f01003d
+.field public static final intercom_composer_stay:I = 0x7f010036
 
-.field public static final intercom_conversation_slide_in:I = 0x7f01003e
+.field public static final intercom_conversation_slide_in:I = 0x7f010037
 
-.field public static final intercom_home_card_slide_in:I = 0x7f01003f
+.field public static final intercom_home_card_slide_in:I = 0x7f010038
 
-.field public static final intercom_home_header_slide_in:I = 0x7f010040
+.field public static final intercom_home_header_slide_in:I = 0x7f010039
 
-.field public static final intercom_home_layout_animator:I = 0x7f010041
+.field public static final intercom_home_layout_animator:I = 0x7f01003a
 
-.field public static final intercom_inbox_layout_animator:I = 0x7f010042
+.field public static final intercom_inbox_layout_animator:I = 0x7f01003b
 
-.field public static final intercom_inbox_slide_in:I = 0x7f010043
+.field public static final intercom_inbox_slide_in:I = 0x7f01003c
 
-.field public static final intercom_profile_slide_in:I = 0x7f010044
+.field public static final intercom_profile_slide_in:I = 0x7f01003d
 
-.field public static final intercom_video_slide_out_down:I = 0x7f010045
+.field public static final intercom_video_slide_out_down:I = 0x7f01003e
 
-.field public static final intercom_video_slide_up_in:I = 0x7f010046
+.field public static final intercom_video_slide_up_in:I = 0x7f01003f
 
-.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f01004b
+.field public static final mtrl_bottom_sheet_slide_in:I = 0x7f010044
 
-.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f01004c
+.field public static final mtrl_bottom_sheet_slide_out:I = 0x7f010045
 
-.field public static final mtrl_card_lowers_interpolator:I = 0x7f01004d
+.field public static final mtrl_card_lowers_interpolator:I = 0x7f010046
 
 
 # direct methods

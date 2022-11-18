@@ -11,7 +11,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -127,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/appsflyer/AppsFlyer2dXConversionCallback;->onAppOpenAttributionNative(Ljava/lang/Object;)V
 
     return-void
@@ -141,7 +139,6 @@
 
     const-string v0, "onInstallConversionFailure"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lcom/appsflyer/AppsFlyer2dXConversionCallback;->AFInAppEventType(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -155,7 +152,6 @@
 
     const-string v0, "onAttributionFailure"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lcom/appsflyer/AppsFlyer2dXConversionCallback;->AFInAppEventType(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -173,7 +169,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/appsflyer/AppsFlyer2dXConversionCallback;->onInstallConversionDataLoadedNative(Ljava/lang/Object;)V
 
     return-void
@@ -182,7 +177,6 @@
 .method public onDeepLinking(Lcom/appsflyer/deeplink/DeepLinkResult;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/appsflyer/AppsFlyer2dXConversionCallback;->onDeepLinkingNative(Lcom/appsflyer/deeplink/DeepLinkResult;)V
 
     return-void

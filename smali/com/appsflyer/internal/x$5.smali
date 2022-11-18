@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -26,10 +26,9 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/internal/x;[FJ)V
+.method public constructor <init>(Lcom/appsflyer/internal/x;[FJ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/x$5;->values:Lcom/appsflyer/internal/x;
 
     iput-object p2, p0, Lcom/appsflyer/internal/x$5;->AFKeystoreWrapper:[F

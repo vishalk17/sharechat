@@ -296,7 +296,7 @@
     goto :goto_5
 .end method
 
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 51
 
     const-class v1, [B
@@ -5111,7 +5111,7 @@
     const/4 v5, 0x1
 
     .line 97
-    invoke-virtual {v4, v5}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v4, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 98
     invoke-virtual {v4, v3}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -5149,7 +5149,7 @@
     const/4 v9, 0x1
 
     .line 101
-    invoke-virtual {v8, v9}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v8, v9}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
     :try_end_51
     .catch Ljava/lang/Exception; {:try_start_51 .. :try_end_51} :catch_b
     .catchall {:try_start_51 .. :try_end_51} :catchall_23
@@ -5183,7 +5183,7 @@
     const/4 v7, 0x1
 
     .line 103
-    invoke-virtual {v6, v7}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+    invoke-virtual {v6, v7}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 104
     invoke-virtual {v8, v5}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -7170,7 +7170,7 @@
     move-result-object v3
 
     .line 163
-    invoke-virtual {v3, v6}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    invoke-virtual {v3, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     const/4 v5, 0x2
 
@@ -7566,7 +7566,7 @@
     move-result-object v3
 
     .line 176
-    invoke-virtual {v3, v5}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
+    invoke-virtual {v3, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     const/4 v4, 0x2
 
@@ -8833,7 +8833,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -9305,7 +9304,7 @@
     throw p0
 .end method
 
-.method static init$0()V
+.method public static init$0()V
     .locals 5
 
     sget v0, Lcom/appsflyer/internal/a;->onValidateInApp:I

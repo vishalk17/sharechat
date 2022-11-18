@@ -1,9 +1,9 @@
-.class Landroidx/fragment/app/FragmentActivity$b;
+.class public final Landroidx/fragment/app/FragmentActivity$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lc/b;
+.implements Lg/b;
 
 
 # annotations
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/fragment/app/FragmentActivity;
+.field public final synthetic a:Landroidx/fragment/app/FragmentActivity;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/FragmentActivity;)V
+.method public constructor <init>(Landroidx/fragment/app/FragmentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentActivity$b;->a:Landroidx/fragment/app/FragmentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,46 +34,74 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;)V
-    .locals 1
+.method public final a(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
     iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$b;->a:Landroidx/fragment/app/FragmentActivity;
 
-    iget-object p1, p1, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/e;
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Landroidx/fragment/app/e;->a(Landroidx/fragment/app/Fragment;)V
+    iget-object p1, p1, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/m;
 
     .line 2
+    iget-object p1, p1, Landroidx/fragment/app/m;->a:Landroidx/fragment/app/o;
+
+    iget-object v0, p1, Landroidx/fragment/app/o;->e:Landroidx/fragment/app/s;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, p1, p1, v1}, Landroidx/fragment/app/FragmentManager;->b(Landroidx/fragment/app/o;Landroidx/fragment/app/l;Landroidx/fragment/app/Fragment;)V
+
+    .line 3
     iget-object p1, p0, Landroidx/fragment/app/FragmentActivity$b;->a:Landroidx/fragment/app/FragmentActivity;
 
-    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->getSavedStateRegistry()Landroidx/savedstate/b;
+    invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->getSavedStateRegistry()Lk6/a;
 
     move-result-object p1
 
     const-string v0, "android:support:fragments"
 
-    .line 3
-    invoke-virtual {p1, v0}, Landroidx/savedstate/b;->b(Ljava/lang/String;)Landroid/os/Bundle;
+    .line 4
+    invoke-virtual {p1, v0}, Lk6/a;->a(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p1
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    .line 4
+    .line 5
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    .line 5
+    .line 6
     iget-object v0, p0, Landroidx/fragment/app/FragmentActivity$b;->a:Landroidx/fragment/app/FragmentActivity;
 
-    iget-object v0, v0, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/e;
+    iget-object v0, v0, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/m;
 
-    invoke-virtual {v0, p1}, Landroidx/fragment/app/e;->w(Landroid/os/Parcelable;)V
+    .line 7
+    iget-object v0, v0, Landroidx/fragment/app/m;->a:Landroidx/fragment/app/o;
 
+    instance-of v1, v0, Landroidx/lifecycle/g1;
+
+    if-eqz v1, :cond_0
+
+    .line 8
+    iget-object v0, v0, Landroidx/fragment/app/o;->e:Landroidx/fragment/app/s;
+
+    invoke-virtual {v0, p1}, Landroidx/fragment/app/FragmentManager;->f0(Landroid/os/Parcelable;)V
+
+    goto :goto_0
+
+    .line 9
     :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "Your FragmentHostCallback must implement ViewModelStoreOwner to call restoreSaveState(). Call restoreAllState()  if you\'re still using retainNestedNonConfig()."
+
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_1
+    :goto_0
     return-void
 .end method

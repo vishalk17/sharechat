@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final Base_CardView:I = 0x7f130016
+.field public static final Base_CardView:I = 0x7f130015
 
-.field public static final CardView:I = 0x7f1300fe
+.field public static final CardView:I = 0x7f130126
 
-.field public static final CardView_Dark:I = 0x7f1300ff
+.field public static final CardView_Dark:I = 0x7f130127
 
-.field public static final CardView_Light:I = 0x7f130100
+.field public static final CardView_Light:I = 0x7f130128
 
 
 # direct methods

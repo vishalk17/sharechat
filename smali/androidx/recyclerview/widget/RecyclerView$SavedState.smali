@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field d:Landroid/os/Parcelable;
+.field public d:Landroid/os/Parcelable;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$SavedState$a;
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$SavedState$a;-><init>()V
@@ -44,7 +43,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
 
     .line 1
@@ -56,7 +55,7 @@
 
     .line 2
     :cond_0
-    const-class p2, Landroidx/recyclerview/widget/RecyclerView$p;
+    const-class p2, Landroidx/recyclerview/widget/RecyclerView$n;
 
     invoke-virtual {p2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -73,7 +72,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcelable;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
     .line 4
@@ -84,22 +83,13 @@
 
 
 # virtual methods
-.method b(Landroidx/recyclerview/widget/RecyclerView$SavedState;)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$SavedState;->d:Landroid/os/Parcelable;
-
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$SavedState;->d:Landroid/os/Parcelable;
-
-    return-void
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
     iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$SavedState;->d:Landroid/os/Parcelable;

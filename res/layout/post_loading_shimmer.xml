@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.mohalla.sharechat.appx.shimmer.ShimmerLayout android:id="@id/post_loading_shimmer_container" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_angle="0" app:shimmer_color="@color/secondary_bg" app:shimmer_mask_width="0.6"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/postLoadingShimmer" layout="@layout/layout_shimmer" />
+    <include android:id="@id/postLoadingShimmerVideo" android:visibility="gone" layout="@layout/layout_shimmer_video" />
+</in.mohalla.sharechat.appx.shimmer.ShimmerLayout>

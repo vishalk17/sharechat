@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout android:id="@id/intercom_team_profile" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/intercom_toolbar_height"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/team_wallpaper_image" android:layout_width="fill_parent" android:layout_height="100.0dip" style="@style/intercom_wallpaper_image_style" />
-    <RelativeLayout android:id="@id/toolbar_content_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/intercom_toolbar_height"
-      xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/team_wallpaper_image" android:layout_width="fill_parent" android:layout_height="100.0dip" android:contentDescription="Header wallpaper" style="@style/intercom_wallpaper_image_style" />
+    <RelativeLayout android:id="@id/toolbar_content_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/intercom_toolbar_height">
         <TextView android:ellipsize="end" android:gravity="center" android:id="@id/intercom_collapsing_team_bio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" android:layout_marginBottom="8.0dip" android:maxLines="5" android:layout_below="@id/intercom_collapsing_title" android:lineSpacingExtra="3.0sp" android:alpha="@dimen/intercom_header_text_alpha" android:paddingStart="48.0dip" android:paddingEnd="48.0dip" style="@style/intercom_profile_team_bio" />
         <LinearLayout android:orientation="horizontal" android:id="@id/intercom_team_profiles_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/intercom_collapsing_team_bio" android:layout_centerHorizontal="true">
             <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <ImageView android:id="@id/intercom_collapsing_team_avatar1" android:visibility="gone" style="@style/intercom_profile_team_avatar" />
+                <ImageView android:id="@id/intercom_collapsing_team_avatar1" android:visibility="gone" android:contentDescription="Teammate avatar" style="@style/intercom_profile_team_avatar" />
                 <TextView android:id="@id/intercom_collapsing_team_name_1" android:visibility="gone" style="@style/intercom_profile_team_member_style" />
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <ImageView android:id="@id/intercom_collapsing_team_avatar2" android:visibility="gone" style="@style/intercom_profile_team_avatar" />
+                <ImageView android:id="@id/intercom_collapsing_team_avatar2" android:visibility="gone" android:contentDescription="Teammate avatar" style="@style/intercom_profile_team_avatar" />
                 <TextView android:id="@id/intercom_collapsing_team_name_2" android:visibility="gone" style="@style/intercom_profile_team_member_style" />
             </LinearLayout>
             <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
-                <ImageView android:id="@id/intercom_collapsing_team_avatar3" android:visibility="gone" style="@style/intercom_profile_team_avatar" />
+                <ImageView android:id="@id/intercom_collapsing_team_avatar3" android:visibility="gone" android:contentDescription="Teammate avatar" style="@style/intercom_profile_team_avatar" />
                 <TextView android:id="@id/intercom_collapsing_team_name_3" android:visibility="gone" style="@style/intercom_profile_team_member_style" />
             </LinearLayout>
         </LinearLayout>

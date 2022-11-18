@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
@@ -27,14 +27,13 @@
 
 
 # instance fields
-.field final synthetic this$0:Lcom/appsflyer/oaid/OaidClient;
+.field public final synthetic this$0:Lcom/appsflyer/oaid/OaidClient;
 
 
 # direct methods
-.method constructor <init>(Lcom/appsflyer/oaid/OaidClient;)V
+.method public constructor <init>(Lcom/appsflyer/oaid/OaidClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/oaid/OaidClient$1;->this$0:Lcom/appsflyer/oaid/OaidClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

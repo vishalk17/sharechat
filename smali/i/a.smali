@@ -1,67 +1,79 @@
-.class public Li/a;
+.class public final Li/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/text/method/TransformationMethod;
+.implements Lq3/b$c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lq3/b$c<",
+        "Li/e;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field private b:Ljava/util/Locale;
+.field public final synthetic a:Landroid/content/Context;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
+    iput-object p1, p0, Li/a;->a:Landroid/content/Context;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
-
-    move-result-object p1
-
-    iget-object p1, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
-
-    iput-object p1, p0, Li/a;->b:Ljava/util/Locale;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
-    .locals 0
-
-    if-eqz p1, :cond_0
+.method public final a(Lq3/b$a;)Ljava/lang/Object;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lq3/b$a<",
+            "Li/e;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 
     .line 1
-    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    iget-object v0, p0, Li/a;->a:Landroid/content/Context;
 
-    move-result-object p1
+    .line 2
+    sget-object v1, Li/d;->a:Ljava/util/concurrent/ExecutorService;
 
-    iget-object p2, p0, Li/a;->b:Ljava/util/Locale;
+    new-instance v2, Li/b;
 
-    invoke-virtual {p1, p2}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    invoke-direct {v2, v0, p1}, Li/b;-><init>(Landroid/content/Context;Lq3/b$a;)V
 
-    move-result-object p1
+    invoke-interface {v1, v2}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
-    goto :goto_0
+    move-result-object v0
 
-    :cond_0
-    const/4 p1, 0x0
+    .line 3
+    sget-object v1, Li/d;->b:Ljava/util/concurrent/ScheduledExecutorService;
 
-    :goto_0
+    new-instance v2, Li/c;
+
+    invoke-direct {v2, v0, p1}, Li/c;-><init>(Ljava/util/concurrent/Future;Lq3/b$a;)V
+
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+
+    const-wide/16 v3, 0x14
+
+    invoke-interface {v1, v2, v3, v4, p1}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    const-string p1, "getAdvertisingIdInfo"
+
     return-object p1
-.end method
-
-.method public onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
-    .locals 0
-
-    return-void
 .end method

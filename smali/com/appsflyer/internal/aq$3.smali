@@ -34,7 +34,6 @@
 .method public constructor <init>(Lcom/appsflyer/internal/aq;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/appsflyer/internal/aq$3;->values:Lcom/appsflyer/internal/aq;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

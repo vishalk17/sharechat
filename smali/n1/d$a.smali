@@ -1,6 +1,10 @@
-.class Ln1/d$a;
-.super Ln1/c;
+.class public interface abstract Ln1/d$a;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/util/Map;
+.implements Lfp0/d;
 
 
 # annotations
@@ -9,40 +13,32 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x609
     name = "a"
 .end annotation
 
-
-# direct methods
-.method constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ln1/c;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-
-    return-void
-.end method
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Map<",
+        "TK;TV;>;",
+        "Lfp0/d;"
+    }
+.end annotation
 
 
 # virtual methods
-.method c(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
-    .locals 6
-
-    const/4 v5, 0x0
-
-    move v0, p1
-
-    move v1, p2
-
-    move v2, p3
-
-    move-object v3, p4
-
-    move-object v4, p5
-
-    .line 1
-    invoke-static/range {v0 .. v5}, Landroidx/core/view/f;->a(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
-
-    return-void
+.method public abstract build()Ln1/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ln1/d<",
+            "TK;TV;>;"
+        }
+    .end annotation
 .end method

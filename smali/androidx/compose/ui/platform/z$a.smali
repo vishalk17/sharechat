@@ -1,9 +1,9 @@
-.class final Landroidx/compose/ui/platform/z$a;
-.super Lkotlin/jvm/internal/r;
+.class public final Landroidx/compose/ui/platform/z$a;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/a;
+.implements Ldp0/l;
 
 
 # annotations
@@ -12,15 +12,16 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/a<",
-        "Landroid/content/res/Configuration;",
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Lf3/s;",
+        "Lf3/y;",
         ">;"
     }
 .end annotation
@@ -31,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/platform/z$a;
@@ -43,40 +44,33 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/content/res/Configuration;
-    .locals 1
-
-    const-string v0, "LocalConfiguration"
-
-    .line 1
-    invoke-static {v0}, Landroidx/compose/ui/platform/z;->e(Ljava/lang/String;)Ljava/lang/Void;
-
-    new-instance v0, Li00/e;
-
-    invoke-direct {v0}, Li00/e;-><init>()V
-
-    throw v0
-.end method
-
-.method public bridge synthetic invoke()Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/compose/ui/platform/z$a;->a()Landroid/content/res/Configuration;
+    check-cast p1, Lf3/s;
 
-    move-result-object v0
+    const-string v0, "it"
+
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    new-instance v0, Lf3/y;
+
+    invoke-direct {v0, p1}, Lf3/y;-><init>(Lf3/s;)V
 
     return-object v0
 .end method

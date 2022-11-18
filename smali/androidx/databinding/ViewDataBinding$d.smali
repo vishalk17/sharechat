@@ -1,4 +1,4 @@
-.class Landroidx/databinding/ViewDataBinding$d;
+.class public final Landroidx/databinding/ViewDataBinding$d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,16 +12,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +28,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/databinding/ViewDataBinding;ILjava/lang/ref/ReferenceQueue;)Landroidx/databinding/p;
+.method public final a(Landroidx/databinding/ViewDataBinding;ILjava/lang/ref/ReferenceQueue;)Landroidx/databinding/o;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -39,19 +38,17 @@
             "Ljava/lang/ref/ReferenceQueue<",
             "Landroidx/databinding/ViewDataBinding;",
             ">;)",
-            "Landroidx/databinding/p;"
+            "Landroidx/databinding/o;"
         }
     .end annotation
 
     .line 1
-    new-instance v0, Landroidx/databinding/ViewDataBinding$j;
+    new-instance v0, Landroidx/databinding/ViewDataBinding$i;
 
-    invoke-direct {v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding$j;-><init>(Landroidx/databinding/ViewDataBinding;ILjava/lang/ref/ReferenceQueue;)V
+    invoke-direct {v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding$i;-><init>(Landroidx/databinding/ViewDataBinding;ILjava/lang/ref/ReferenceQueue;)V
 
     .line 2
-    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding$j;->g()Landroidx/databinding/p;
-
-    move-result-object p1
+    iget-object p1, v0, Landroidx/databinding/ViewDataBinding$i;->a:Landroidx/databinding/o;
 
     return-object p1
 .end method

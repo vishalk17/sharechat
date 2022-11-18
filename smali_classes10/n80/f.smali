@@ -1,36 +1,69 @@
-.class public final synthetic Ln80/f;
-.super Ljava/lang/Object;
+.class public final Ln80/f;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/i0;
+.implements Ldp0/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Lc6/s1<",
+        "Ljava/lang/Integer;",
+        "Lox1/n;",
+        ">;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Ld80/b1;
+.field public final synthetic b:Ln80/d;
+
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:I
+
+.field public final synthetic e:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ld80/b1;)V
+.method public constructor <init>(Ln80/d;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Ln80/f;->b:Ln80/d;
 
-    iput-object p1, p0, Ln80/f;->a:Ld80/b1;
+    iput-object p2, p0, Ln80/f;->c:Ljava/lang/String;
+
+    iput p3, p0, Ln80/f;->d:I
+
+    iput-object p4, p0, Ln80/f;->e:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 5
 
-    iget-object v0, p0, Ln80/f;->a:Ld80/b1;
+    new-instance v0, Ln80/e;
 
-    check-cast p1, Li00/o;
+    iget-object v1, p0, Ln80/f;->b:Ln80/d;
 
-    invoke-static {v0, p1}, Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;->uy(Ld80/b1;Li00/o;)V
+    iget-object v2, p0, Ln80/f;->c:Ljava/lang/String;
 
-    return-void
+    iget v3, p0, Ln80/f;->d:I
+
+    iget-object v4, p0, Ln80/f;->e:Ljava/lang/String;
+
+    invoke-direct {v0, v1, v2, v3, v4}, Ln80/e;-><init>(Ln80/d;Ljava/lang/String;ILjava/lang/String;)V
+
+    return-object v0
 .end method

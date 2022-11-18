@@ -1,22 +1,33 @@
-.class public interface abstract Landroidx/appcompat/view/menu/g$a;
+.class public final Landroidx/appcompat/view/menu/g$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lv4/b$a;
+
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Landroidx/appcompat/view/menu/g;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/appcompat/view/menu/g;->b(Lv4/b;)Ll4/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x609
-    name = "a"
+    accessFlags = 0x1
+    name = null
 .end annotation
 
 
-# virtual methods
-.method public abstract a(Landroidx/appcompat/view/menu/g;Landroid/view/MenuItem;)Z
-.end method
+# instance fields
+.field public final synthetic a:Landroidx/appcompat/view/menu/g;
 
-.method public abstract b(Landroidx/appcompat/view/menu/g;)V
+
+# direct methods
+.method public constructor <init>(Landroidx/appcompat/view/menu/g;)V
+    .locals 0
+
+    iput-object p1, p0, Landroidx/appcompat/view/menu/g$a;->a:Landroidx/appcompat/view/menu/g;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method

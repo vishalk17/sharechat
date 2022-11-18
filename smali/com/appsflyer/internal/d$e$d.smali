@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field AFInAppEventParameterName:Ljava/lang/Boolean;
+.field public AFInAppEventParameterName:Ljava/lang/Boolean;
 
 .field public final valueOf:Ljava/lang/Boolean;
 
@@ -23,31 +23,30 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-.method constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;)V
-    .locals 0
-
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
     iput-object p1, p0, Lcom/appsflyer/internal/d$e$d;->values:Ljava/lang/String;
 
-    .line 4
+    .line 3
     iput-object p2, p0, Lcom/appsflyer/internal/d$e$d;->valueOf:Ljava/lang/Boolean;
 
     return-void
 .end method
 
-.method static AFInAppEventType([B)[B
+.method public static AFInAppEventType([B)[B
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -84,7 +83,7 @@
     return-object p0
 .end method
 
-.method static valueOf(Ljava/lang/String;)[B
+.method public static valueOf(Ljava/lang/String;)[B
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -92,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p0
@@ -100,7 +98,7 @@
     return-object p0
 .end method
 
-.method static values([B)Ljava/lang/String;
+.method public static values([B)Ljava/lang/String;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {

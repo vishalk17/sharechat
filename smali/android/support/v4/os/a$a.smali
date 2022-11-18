@@ -23,6 +23,10 @@
 .end annotation
 
 
+# static fields
+.field public static final synthetic b:I
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 1
@@ -38,53 +42,15 @@
     return-void
 .end method
 
-.method public static w1(Landroid/os/IBinder;)Landroid/support/v4/os/a;
-    .locals 2
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x0
-
-    return-object p0
-
-    :cond_0
-    const-string v0, "android.support.v4.os.IResultReceiver"
-
-    .line 1
-    invoke-interface {p0, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    instance-of v1, v0, Landroid/support/v4/os/a;
-
-    if-eqz v1, :cond_1
-
-    .line 3
-    check-cast v0, Landroid/support/v4/os/a;
-
-    return-object v0
-
-    .line 4
-    :cond_1
-    new-instance v0, Landroid/support/v4/os/a$a$a;
-
-    invoke-direct {v0, p0}, Landroid/support/v4/os/a$a$a;-><init>(Landroid/os/IBinder;)V
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public asBinder()Landroid/os/IBinder;
+.method public final asBinder()Landroid/os/IBinder;
     .locals 0
 
     return-object p0
 .end method
 
-.method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+.method public final onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -147,7 +113,19 @@
 
     .line 7
     :goto_0
-    invoke-interface {p0, p1, p2}, Landroid/support/v4/os/a;->T1(ILandroid/os/Bundle;)V
+    move-object p3, p0
+
+    check-cast p3, Landroid/support/v4/os/ResultReceiver$b;
+
+    .line 8
+    iget-object p4, p3, Landroid/support/v4/os/ResultReceiver$b;->c:Landroid/support/v4/os/ResultReceiver;
+
+    invoke-static {p4}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    iget-object p3, p3, Landroid/support/v4/os/ResultReceiver$b;->c:Landroid/support/v4/os/ResultReceiver;
+
+    invoke-virtual {p3, p1, p2}, Landroid/support/v4/os/ResultReceiver;->a(ILandroid/os/Bundle;)V
 
     return v0
 .end method

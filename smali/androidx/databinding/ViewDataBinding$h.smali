@@ -1,51 +1,71 @@
-.class Landroidx/databinding/ViewDataBinding$h;
+.class public final Landroidx/databinding/ViewDataBinding$h;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/Choreographer$FrameCallback;
-
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/databinding/ViewDataBinding;-><init>(Landroidx/databinding/f;Landroid/view/View;I)V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/databinding/ViewDataBinding;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
-    name = null
+    accessFlags = 0x9
+    name = "h"
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/databinding/ViewDataBinding;
+.field public final a:[[Ljava/lang/String;
+
+.field public final b:[[I
+
+.field public final c:[[I
 
 
 # direct methods
-.method constructor <init>(Landroidx/databinding/ViewDataBinding;)V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Landroidx/databinding/ViewDataBinding$h;->b:Landroidx/databinding/ViewDataBinding;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-array v0, p1, [[Ljava/lang/String;
+
+    iput-object v0, p0, Landroidx/databinding/ViewDataBinding$h;->a:[[Ljava/lang/String;
+
+    .line 3
+    new-array v0, p1, [[I
+
+    iput-object v0, p0, Landroidx/databinding/ViewDataBinding$h;->b:[[I
+
+    .line 4
+    new-array p1, p1, [[I
+
+    iput-object p1, p0, Landroidx/databinding/ViewDataBinding$h;->c:[[I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public doFrame(J)V
-    .locals 0
+.method public final a(I[Ljava/lang/String;[I[I)V
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/databinding/ViewDataBinding$h;->b:Landroidx/databinding/ViewDataBinding;
+    iget-object v0, p0, Landroidx/databinding/ViewDataBinding$h;->a:[[Ljava/lang/String;
 
-    invoke-static {p1}, Landroidx/databinding/ViewDataBinding;->g(Landroidx/databinding/ViewDataBinding;)Ljava/lang/Runnable;
+    aput-object p2, v0, p1
 
-    move-result-object p1
+    .line 2
+    iget-object p2, p0, Landroidx/databinding/ViewDataBinding$h;->b:[[I
 
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    aput-object p3, p2, p1
+
+    .line 3
+    iget-object p2, p0, Landroidx/databinding/ViewDataBinding$h;->c:[[I
+
+    aput-object p4, p2, p1
 
     return-void
 .end method

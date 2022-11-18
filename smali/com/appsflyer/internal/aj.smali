@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field AFInAppEventParameterName:Z
+.field public AFInAppEventParameterName:Z
 
 .field private AFInAppEventType:Z
 
@@ -36,12 +36,6 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
 .method private constructor <init>()V
     .locals 4
 
@@ -442,7 +436,6 @@
 .method private AFLogger$LogLevel()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/aj;->AFInAppEventParameterName:Z
 
     if-eqz v0, :cond_1
@@ -575,7 +568,7 @@
     return-object v0
 .end method
 
-.method static valueOf(Ljava/lang/String;Landroid/content/pm/PackageManager;)V
+.method public static valueOf(Ljava/lang/String;Landroid/content/pm/PackageManager;)V
     .locals 6
 
     .line 25
@@ -671,7 +664,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v5}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v5
 
@@ -900,7 +893,7 @@
 
 
 # virtual methods
-.method final declared-synchronized AFInAppEventParameterName()V
+.method public final declared-synchronized AFInAppEventParameterName()V
     .locals 4
 
     monitor-enter p0
@@ -956,7 +949,7 @@
     throw v0
 .end method
 
-.method final declared-synchronized AFInAppEventParameterName(Ljava/lang/String;)V
+.method public final declared-synchronized AFInAppEventParameterName(Ljava/lang/String;)V
     .locals 0
 
     monitor-enter p0
@@ -980,7 +973,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized AFInAppEventType()V
+.method public final declared-synchronized AFInAppEventType()V
     .locals 1
 
     monitor-enter p0
@@ -1179,7 +1172,7 @@
     throw p1
 .end method
 
-.method final declared-synchronized AFKeystoreWrapper()V
+.method public final declared-synchronized AFKeystoreWrapper()V
     .locals 1
 
     monitor-enter p0
@@ -1208,16 +1201,15 @@
     throw v0
 .end method
 
-.method final getLevel()Z
+.method public final getLevel()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/aj;->getLevel:Z
 
     return v0
 .end method
 
-.method final declared-synchronized values()V
+.method public final declared-synchronized values()V
     .locals 4
 
     monitor-enter p0

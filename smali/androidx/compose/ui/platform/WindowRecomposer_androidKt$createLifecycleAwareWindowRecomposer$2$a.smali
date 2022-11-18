@@ -19,10 +19,10 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Landroidx/lifecycle/q$b;->values()[Landroidx/lifecycle/q$b;
+    invoke-static {}, Landroidx/lifecycle/t$b;->values()[Landroidx/lifecycle/t$b;
 
     move-result-object v0
 
@@ -30,7 +30,7 @@
 
     new-array v0, v0, [I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_CREATE:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_CREATE:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,7 +40,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_START:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -50,7 +50,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_STOP:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_STOP:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -60,7 +60,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_DESTROY:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_DESTROY:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -70,7 +70,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_PAUSE:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_PAUSE:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -80,7 +80,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_RESUME:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_RESUME:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -90,7 +90,7 @@
 
     aput v2, v0, v1
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_ANY:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_ANY:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

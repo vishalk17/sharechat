@@ -2,30 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lv0/k;
 
-# static fields
-.field private static final a:Lv0/h;
+
+# instance fields
+.field public final a:Lv0/h;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lv0/h;)V
+    .locals 0
 
-    .line 1
-    invoke-static {}, Lv0/d;->a()Lv0/h;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
-
-    sput-object v0, Lv0/i;->a:Lv0/h;
+    iput-object p1, p0, Lv0/i;->a:Lv0/h;
 
     return-void
-.end method
-
-.method public static final a()Lv0/h;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lv0/i;->a:Lv0/h;
-
-    return-object v0
 .end method

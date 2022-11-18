@@ -1,898 +1,1105 @@
-.class public Landroidx/profileinstaller/b;
+.class public final Landroidx/profileinstaller/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final a:Landroid/content/res/AssetManager;
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/profileinstaller/b$c;
+    }
+.end annotation
 
-.field private final b:Ljava/util/concurrent/Executor;
 
-.field private final c:Landroidx/profileinstaller/h$c;
+# static fields
+.field public static final a:Landroidx/profileinstaller/b$a;
 
-.field private final d:[B
-
-.field private final e:Ljava/io/File;
-
-.field private final f:Ljava/lang/String;
-
-.field private final g:Ljava/lang/String;
-
-.field private final h:Ljava/lang/String;
-
-.field private i:Z
-
-.field private j:[Landroidx/profileinstaller/c;
-
-.field private k:[B
+.field public static final b:Landroidx/profileinstaller/b$b;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/res/AssetManager;Ljava/util/concurrent/Executor;Landroidx/profileinstaller/h$c;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V
+.method public static constructor <clinit>()V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/profileinstaller/b$a;
 
-    const/4 v0, 0x0
+    invoke-direct {v0}, Landroidx/profileinstaller/b$a;-><init>()V
+
+    sput-object v0, Landroidx/profileinstaller/b;->a:Landroidx/profileinstaller/b$a;
 
     .line 2
-    iput-boolean v0, p0, Landroidx/profileinstaller/b;->i:Z
+    new-instance v0, Landroidx/profileinstaller/b$b;
 
-    .line 3
-    iput-object p1, p0, Landroidx/profileinstaller/b;->a:Landroid/content/res/AssetManager;
+    invoke-direct {v0}, Landroidx/profileinstaller/b$b;-><init>()V
 
-    .line 4
-    iput-object p2, p0, Landroidx/profileinstaller/b;->b:Ljava/util/concurrent/Executor;
-
-    .line 5
-    iput-object p3, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
-
-    .line 6
-    iput-object p4, p0, Landroidx/profileinstaller/b;->f:Ljava/lang/String;
-
-    .line 7
-    iput-object p5, p0, Landroidx/profileinstaller/b;->g:Ljava/lang/String;
-
-    .line 8
-    iput-object p6, p0, Landroidx/profileinstaller/b;->h:Ljava/lang/String;
-
-    .line 9
-    iput-object p7, p0, Landroidx/profileinstaller/b;->e:Ljava/io/File;
-
-    .line 10
-    invoke-static {}, Landroidx/profileinstaller/b;->c()[B
-
-    move-result-object p1
-
-    iput-object p1, p0, Landroidx/profileinstaller/b;->d:[B
+    sput-object v0, Landroidx/profileinstaller/b;->b:Landroidx/profileinstaller/b$b;
 
     return-void
 .end method
 
-.method public static synthetic a(Landroidx/profileinstaller/b;ILjava/lang/Object;)V
+.method private constructor <init>()V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Landroidx/profileinstaller/b;->e(ILjava/lang/Object;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method private b()V
+.method public static a(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/profileinstaller/b;->i:Z
+    new-instance v0, Ljava/io/File;
 
-    if-eqz v0, :cond_0
+    const-string v1, "profileinstaller_profileWrittenFor_lastUpdateTime.dat"
 
-    return-void
-
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "This device doesn\'t support aot. Did you call deviceSupportsAotProfile()?"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method private static c()[B
-    .locals 3
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x18
-
-    if-ge v0, v2, :cond_0
-
-    return-object v1
-
-    :cond_0
-    packed-switch v0, :pswitch_data_0
-
-    return-object v1
+    invoke-direct {v0, p1, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 2
-    :pswitch_0
-    sget-object v0, Landroidx/profileinstaller/n;->a:[B
-
-    return-object v0
-
-    .line 3
-    :pswitch_1
-    sget-object v0, Landroidx/profileinstaller/n;->b:[B
-
-    return-object v0
-
-    .line 4
-    :pswitch_2
-    sget-object v0, Landroidx/profileinstaller/n;->c:[B
-
-    return-object v0
-
-    .line 5
-    :pswitch_3
-    sget-object v0, Landroidx/profileinstaller/n;->d:[B
-
-    return-object v0
-
-    .line 6
-    :pswitch_4
-    sget-object v0, Landroidx/profileinstaller/n;->e:[B
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x18
-        :pswitch_4
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method private synthetic e(ILjava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
-
-    invoke-interface {v0, p1, p2}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
-
-    return-void
-.end method
-
-.method private static g()Z
-    .locals 4
-
-    .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x18
-
-    if-ge v0, v2, :cond_0
-
-    return v1
-
-    :cond_0
-    const/4 v3, 0x1
-
-    if-eq v0, v2, :cond_1
-
-    const/16 v2, 0x19
-
-    if-eq v0, v2, :cond_1
-
-    const/16 v2, 0x1f
-
-    if-eq v0, v2, :cond_1
-
-    return v1
-
-    :cond_1
-    return v3
-.end method
-
-.method private h(ILjava/lang/Object;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Landroidx/profileinstaller/b;->b:Ljava/util/concurrent/Executor;
-
-    new-instance v1, Landroidx/profileinstaller/a;
-
-    invoke-direct {v1, p0, p1, p2}, Landroidx/profileinstaller/a;-><init>(Landroidx/profileinstaller/b;ILjava/lang/Object;)V
-
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public d()Z
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Landroidx/profileinstaller/b;->d:[B
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x3
-
-    .line 2
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-direct {p0, v0, v2}, Landroidx/profileinstaller/b;->h(ILjava/lang/Object;)V
-
-    return v1
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Landroidx/profileinstaller/b;->e:Ljava/io/File;
-
-    invoke-virtual {v0}, Ljava/io/File;->canWrite()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x4
-
-    const/4 v2, 0x0
-
-    .line 4
-    invoke-direct {p0, v0, v2}, Landroidx/profileinstaller/b;->h(ILjava/lang/Object;)V
-
-    return v1
-
-    :cond_1
-    const/4 v0, 0x1
-
-    .line 5
-    iput-boolean v0, p0, Landroidx/profileinstaller/b;->i:Z
-
-    return v0
-.end method
-
-.method public f()Landroidx/profileinstaller/b;
-    .locals 7
-
-    .line 1
-    invoke-direct {p0}, Landroidx/profileinstaller/b;->b()V
-
-    .line 2
-    iget-object v0, p0, Landroidx/profileinstaller/b;->d:[B
-
-    if-nez v0, :cond_0
-
-    return-object p0
-
-    :cond_0
-    const/16 v0, 0x8
-
-    const/4 v1, 0x7
-
-    .line 3
     :try_start_0
-    iget-object v2, p0, Landroidx/profileinstaller/b;->a:Landroid/content/res/AssetManager;
+    new-instance p1, Ljava/io/DataOutputStream;
 
-    iget-object v3, p0, Landroidx/profileinstaller/b;->g:Ljava/lang/String;
+    new-instance v1, Ljava/io/FileOutputStream;
 
-    invoke-virtual {v2, v3}, Landroid/content/res/AssetManager;->openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+    invoke-direct {v1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    move-result-object v2
+    invoke-direct {p1, v1}, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
     :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 3
+    :try_start_1
+    iget-wide v0, p0, Landroid/content/pm/PackageInfo;->lastUpdateTime:J
+
+    invoke-virtual {p1, v0, v1}, Ljava/io/DataOutputStream;->writeLong(J)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 4
-    :try_start_1
-    invoke-virtual {v2}, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
-
-    move-result-object v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
-
-    .line 5
     :try_start_2
-    sget-object v4, Landroidx/profileinstaller/m;->a:[B
-
-    invoke-static {v3, v4}, Landroidx/profileinstaller/m;->o(Ljava/io/InputStream;[B)[B
-
-    move-result-object v4
-
-    .line 6
-    iget-object v5, p0, Landroidx/profileinstaller/b;->f:Ljava/lang/String;
-
-    invoke-static {v3, v4, v5}, Landroidx/profileinstaller/m;->w(Ljava/io/InputStream;[BLjava/lang/String;)[Landroidx/profileinstaller/c;
-
-    move-result-object v4
-
-    iput-object v4, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    invoke-virtual {p1}, Ljava/io/OutputStream;->close()V
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
-    if-eqz v3, :cond_1
-
-    .line 7
-    :try_start_3
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 8
-    :cond_1
-    :try_start_4
-    invoke-virtual {v2}, Landroid/content/res/AssetFileDescriptor;->close()V
-    :try_end_4
-    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_2
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_0
-
-    goto :goto_2
+    goto :goto_1
 
     :catchall_0
-    move-exception v4
+    move-exception p0
 
-    if-eqz v3, :cond_2
-
-    .line 9
-    :try_start_5
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    .line 5
+    :try_start_3
+    invoke-virtual {p1}, Ljava/io/OutputStream;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     goto :goto_0
 
     :catchall_1
-    move-exception v3
+    move-exception p1
 
-    :try_start_6
-    invoke-virtual {v4, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_start_4
+    invoke-virtual {p0, p1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    :cond_2
     :goto_0
-    throw v4
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
-
-    :catchall_2
-    move-exception v3
-
-    if-eqz v2, :cond_3
-
-    .line 10
-    :try_start_7
-    invoke-virtual {v2}, Landroid/content/res/AssetFileDescriptor;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
-    goto :goto_1
-
-    :catchall_3
-    move-exception v2
-
-    :try_start_8
-    invoke-virtual {v3, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    :cond_3
-    :goto_1
-    throw v3
-    :try_end_8
-    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_2
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_8 .. :try_end_8} :catch_0
+    throw p0
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
     :catch_0
-    move-exception v2
+    :goto_1
+    return-void
+.end method
 
-    .line 11
-    iget-object v3, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+.method public static b(Ljava/util/concurrent/Executor;Landroidx/profileinstaller/b$c;ILjava/lang/Object;)V
+    .locals 1
 
-    invoke-interface {v3, v0, v2}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    new-instance v0, Le6/i;
 
-    goto :goto_2
+    invoke-direct {v0, p1, p2, p3}, Le6/i;-><init>(Landroidx/profileinstaller/b$c;ILjava/lang/Object;)V
 
-    :catch_1
-    move-exception v2
+    invoke-interface {p0, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 12
-    iget-object v3, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    return-void
+.end method
 
-    invoke-interface {v3, v1, v2}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+.method public static c(Landroid/content/Context;Ljava/util/concurrent/Executor;Landroidx/profileinstaller/b$c;Z)V
+    .locals 16
 
-    goto :goto_2
+    move-object/from16 v4, p2
 
-    :catch_2
-    move-exception v2
+    .line 1
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
-    .line 13
-    iget-object v3, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    move-result-object v0
 
-    const/4 v4, 0x6
+    .line 2
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    invoke-interface {v3, v4, v2}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    move-result-object v1
 
-    .line 14
-    :goto_2
-    iget-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    .line 3
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
-    if-eqz v2, :cond_7
+    move-result-object v2
 
-    .line 15
-    invoke-static {}, Landroidx/profileinstaller/b;->g()Z
+    .line 4
+    invoke-virtual {v0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
+
+    move-result-object v7
+
+    .line 5
+    new-instance v0, Ljava/io/File;
+
+    iget-object v2, v2, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 6
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    const/4 v2, 0x0
+
+    .line 7
+    :try_start_0
+    invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v9
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_b
+
+    .line 8
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object v10
+
+    const/4 v11, 0x0
+
+    const-string v2, "ProfileInstaller"
+
+    const/4 v12, 0x1
+
+    if-nez p3, :cond_4
+
+    .line 9
+    new-instance v0, Ljava/io/File;
+
+    const-string v3, "profileinstaller_profileWrittenFor_lastUpdateTime.dat"
+
+    invoke-direct {v0, v10, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 10
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v3
 
-    if-eqz v3, :cond_7
+    if-nez v3, :cond_0
+
+    goto :goto_2
+
+    .line 11
+    :cond_0
+    :try_start_1
+    new-instance v3, Ljava/io/DataInputStream;
+
+    new-instance v5, Ljava/io/FileInputStream;
+
+    invoke-direct {v5, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-direct {v3, v5}, Ljava/io/DataInputStream;-><init>(Ljava/io/InputStream;)V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 12
+    :try_start_2
+    invoke-virtual {v3}, Ljava/io/DataInputStream;->readLong()J
+
+    move-result-wide v5
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 13
+    :try_start_3
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
+
+    .line 14
+    iget-wide v13, v9, Landroid/content/pm/PackageInfo;->lastUpdateTime:J
+
+    cmp-long v0, v5, v13
+
+    if-nez v0, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_2
+
+    const/4 v3, 0x2
+
+    .line 15
+    invoke-interface {v4, v3, v11}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    goto :goto_3
+
+    :catchall_0
+    move-exception v0
+
+    move-object v5, v0
 
     .line 16
-    :try_start_9
-    iget-object v3, p0, Landroidx/profileinstaller/b;->a:Landroid/content/res/AssetManager;
+    :try_start_4
+    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    iget-object v4, p0, Landroidx/profileinstaller/b;->h:Ljava/lang/String;
+    goto :goto_1
+
+    :catchall_1
+    move-exception v0
+
+    move-object v3, v0
+
+    :try_start_5
+    invoke-virtual {v5, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_1
+    throw v5
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
+
+    :catch_0
+    :goto_2
+    const/4 v0, 0x0
+
+    :cond_2
+    :goto_3
+    if-nez v0, :cond_3
+
+    goto :goto_4
+
+    :cond_3
+    const-string v0, "Skipping profile installation for "
+
+    .line 17
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 18
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto/16 :goto_1a
+
+    :cond_4
+    :goto_4
+    const-string v0, "Installing profile for "
+
+    .line 19
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 20
+    invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 21
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 22
+    new-instance v13, Ljava/io/File;
+
+    new-instance v2, Ljava/io/File;
+
+    const-string v3, "/data/misc/profiles/cur/0"
+
+    invoke-direct {v2, v3, v1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v1, "primary.prof"
+
+    invoke-direct {v13, v2, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 23
+    new-instance v14, Landroidx/profileinstaller/a;
+
+    const-string v15, "dexopt/baseline.prof"
+
+    move-object v1, v14
+
+    move-object v2, v7
+
+    move-object/from16 v3, p1
+
+    move-object/from16 v4, p2
+
+    move-object v5, v8
+
+    move-object v6, v13
+
+    invoke-direct/range {v1 .. v6}, Landroidx/profileinstaller/a;-><init>(Landroid/content/res/AssetManager;Ljava/util/concurrent/Executor;Landroidx/profileinstaller/b$c;Ljava/lang/String;Ljava/io/File;)V
+
+    .line 24
+    iget-object v1, v14, Landroidx/profileinstaller/a;->d:[B
+
+    if-nez v1, :cond_5
+
+    const/4 v1, 0x3
+
+    .line 25
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {v14, v1, v0}, Landroidx/profileinstaller/a;->b(ILjava/lang/Object;)V
+
+    goto :goto_5
+
+    .line 26
+    :cond_5
+    invoke-virtual {v13}, Ljava/io/File;->canWrite()Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    const/4 v0, 0x4
+
+    .line 27
+    invoke-virtual {v14, v0, v11}, Landroidx/profileinstaller/a;->b(ILjava/lang/Object;)V
+
+    :goto_5
+    const/4 v0, 0x0
+
+    goto :goto_6
+
+    .line 28
+    :cond_6
+    iput-boolean v12, v14, Landroidx/profileinstaller/a;->f:Z
+
+    const/4 v0, 0x1
+
+    :goto_6
+    if-nez v0, :cond_7
+
+    goto/16 :goto_1a
+
+    .line 29
+    :cond_7
+    invoke-virtual {v14}, Landroidx/profileinstaller/a;->a()V
+
+    .line 30
+    iget-object v0, v14, Landroidx/profileinstaller/a;->d:[B
+
+    const/4 v1, 0x6
+
+    const/16 v2, 0x8
+
+    if-nez v0, :cond_8
+
+    goto/16 :goto_e
+
+    .line 31
+    :cond_8
+    :try_start_6
+    invoke-virtual {v7, v15}, Landroid/content/res/AssetManager;->openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+
+    move-result-object v3
+    :try_end_6
+    .catch Ljava/io/FileNotFoundException; {:try_start_6 .. :try_end_6} :catch_3
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_6 .. :try_end_6} :catch_1
+
+    .line 32
+    :try_start_7
+    invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
+
+    move-result-object v4
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_4
+
+    .line 33
+    :try_start_8
+    sget-object v0, Le6/k;->a:[B
+
+    invoke-static {v4, v0}, Le6/k;->f(Ljava/io/InputStream;[B)[B
+
+    move-result-object v0
+
+    .line 34
+    invoke-static {v4, v0, v8}, Le6/k;->j(Ljava/io/InputStream;[BLjava/lang/String;)[Le6/b;
+
+    move-result-object v0
+
+    iput-object v0, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_2
+
+    .line 35
+    :try_start_9
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_4
+
+    .line 36
+    :try_start_a
+    invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->close()V
+    :try_end_a
+    .catch Ljava/io/FileNotFoundException; {:try_start_a .. :try_end_a} :catch_3
+    .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_a .. :try_end_a} :catch_1
+
+    goto :goto_9
+
+    :catchall_2
+    move-exception v0
+
+    move-object v5, v0
+
+    if-eqz v4, :cond_9
+
+    .line 37
+    :try_start_b
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_b
+    .catchall {:try_start_b .. :try_end_b} :catchall_3
+
+    goto :goto_7
+
+    :catchall_3
+    move-exception v0
+
+    move-object v4, v0
+
+    :try_start_c
+    invoke-virtual {v5, v4}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :cond_9
+    :goto_7
+    throw v5
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_4
+
+    :catchall_4
+    move-exception v0
+
+    move-object v4, v0
+
+    if-eqz v3, :cond_a
+
+    .line 38
+    :try_start_d
+    invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->close()V
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_5
+
+    goto :goto_8
+
+    :catchall_5
+    move-exception v0
+
+    move-object v3, v0
+
+    :try_start_e
+    invoke-virtual {v4, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :cond_a
+    :goto_8
+    throw v4
+    :try_end_e
+    .catch Ljava/io/FileNotFoundException; {:try_start_e .. :try_end_e} :catch_3
+    .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_2
+    .catch Ljava/lang/IllegalStateException; {:try_start_e .. :try_end_e} :catch_1
+
+    :catch_1
+    move-exception v0
+
+    .line 39
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
+
+    invoke-interface {v3, v2, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    goto :goto_9
+
+    :catch_2
+    move-exception v0
+
+    .line 40
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
+
+    const/4 v4, 0x7
+
+    invoke-interface {v3, v4, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    goto :goto_9
+
+    :catch_3
+    move-exception v0
+
+    .line 41
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
+
+    invoke-interface {v3, v1, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    .line 42
+    :goto_9
+    iget-object v0, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+
+    if-eqz v0, :cond_f
+
+    .line 43
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v4, 0x18
+
+    if-ge v3, v4, :cond_b
+
+    goto :goto_a
+
+    :cond_b
+    if-eq v3, v4, :cond_c
+
+    const/16 v4, 0x19
+
+    if-eq v3, v4, :cond_c
+
+    const/16 v4, 0x1f
+
+    if-eq v3, v4, :cond_c
+
+    :goto_a
+    const/4 v3, 0x0
+
+    goto :goto_b
+
+    :cond_c
+    const/4 v3, 0x1
+
+    :goto_b
+    if-eqz v3, :cond_f
+
+    .line 44
+    :try_start_f
+    iget-object v3, v14, Landroidx/profileinstaller/a;->a:Landroid/content/res/AssetManager;
+
+    const-string v4, "dexopt/baseline.profm"
 
     invoke-virtual {v3, v4}, Landroid/content/res/AssetManager;->openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
 
     move-result-object v3
-    :try_end_9
-    .catch Ljava/io/FileNotFoundException; {:try_start_9 .. :try_end_9} :catch_5
-    .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_4
-    .catch Ljava/lang/IllegalStateException; {:try_start_9 .. :try_end_9} :catch_3
+    :try_end_f
+    .catch Ljava/io/FileNotFoundException; {:try_start_f .. :try_end_f} :catch_6
+    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_5
+    .catch Ljava/lang/IllegalStateException; {:try_start_f .. :try_end_f} :catch_4
 
-    .line 17
-    :try_start_a
+    .line 45
+    :try_start_10
     invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->createInputStream()Ljava/io/FileInputStream;
 
     move-result-object v4
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_6
+    :try_end_10
+    .catchall {:try_start_10 .. :try_end_10} :catchall_8
 
-    .line 18
-    :try_start_b
-    sget-object v5, Landroidx/profileinstaller/m;->b:[B
+    .line 46
+    :try_start_11
+    sget-object v5, Le6/k;->b:[B
 
-    invoke-static {v4, v5}, Landroidx/profileinstaller/m;->o(Ljava/io/InputStream;[B)[B
+    invoke-static {v4, v5}, Le6/k;->f(Ljava/io/InputStream;[B)[B
 
     move-result-object v5
 
-    .line 19
-    iget-object v6, p0, Landroidx/profileinstaller/b;->d:[B
+    .line 47
+    iget-object v6, v14, Landroidx/profileinstaller/a;->d:[B
 
-    invoke-static {v4, v5, v6, v2}, Landroidx/profileinstaller/m;->q(Ljava/io/InputStream;[B[B[Landroidx/profileinstaller/c;)[Landroidx/profileinstaller/c;
+    invoke-static {v4, v5, v6, v0}, Le6/k;->g(Ljava/io/InputStream;[B[B[Le6/b;)[Le6/b;
 
-    move-result-object v2
+    move-result-object v0
 
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_4
+    iput-object v0, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+    :try_end_11
+    .catchall {:try_start_11 .. :try_end_11} :catchall_6
 
-    if-eqz v4, :cond_4
-
-    .line 20
-    :try_start_c
+    .line 48
+    :try_start_12
     invoke-virtual {v4}, Ljava/io/InputStream;->close()V
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_6
+    :try_end_12
+    .catchall {:try_start_12 .. :try_end_12} :catchall_8
 
-    .line 21
-    :cond_4
-    :try_start_d
+    .line 49
+    :try_start_13
     invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->close()V
-    :try_end_d
-    .catch Ljava/io/FileNotFoundException; {:try_start_d .. :try_end_d} :catch_5
-    .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_4
-    .catch Ljava/lang/IllegalStateException; {:try_start_d .. :try_end_d} :catch_3
+    :try_end_13
+    .catch Ljava/io/FileNotFoundException; {:try_start_13 .. :try_end_13} :catch_6
+    .catch Ljava/io/IOException; {:try_start_13 .. :try_end_13} :catch_5
+    .catch Ljava/lang/IllegalStateException; {:try_start_13 .. :try_end_13} :catch_4
 
-    return-object p0
-
-    :catchall_4
-    move-exception v2
-
-    if-eqz v4, :cond_5
-
-    .line 22
-    :try_start_e
-    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_5
-
-    goto :goto_3
-
-    :catchall_5
-    move-exception v4
-
-    :try_start_f
-    invoke-virtual {v2, v4}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    :cond_5
-    :goto_3
-    throw v2
-    :try_end_f
-    .catchall {:try_start_f .. :try_end_f} :catchall_6
+    goto :goto_e
 
     :catchall_6
-    move-exception v2
+    move-exception v0
 
-    if-eqz v3, :cond_6
+    move-object v5, v0
 
-    .line 23
-    :try_start_10
-    invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->close()V
-    :try_end_10
-    .catchall {:try_start_10 .. :try_end_10} :catchall_7
+    if-eqz v4, :cond_d
 
-    goto :goto_4
+    .line 50
+    :try_start_14
+    invoke-virtual {v4}, Ljava/io/InputStream;->close()V
+    :try_end_14
+    .catchall {:try_start_14 .. :try_end_14} :catchall_7
+
+    goto :goto_c
 
     :catchall_7
-    move-exception v3
+    move-exception v0
 
-    :try_start_11
-    invoke-virtual {v2, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    move-object v4, v0
 
-    :cond_6
-    :goto_4
-    throw v2
-    :try_end_11
-    .catch Ljava/io/FileNotFoundException; {:try_start_11 .. :try_end_11} :catch_5
-    .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_4
-    .catch Ljava/lang/IllegalStateException; {:try_start_11 .. :try_end_11} :catch_3
+    :try_start_15
+    invoke-virtual {v5, v4}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    :catch_3
-    move-exception v1
+    :cond_d
+    :goto_c
+    throw v5
+    :try_end_15
+    .catchall {:try_start_15 .. :try_end_15} :catchall_8
 
-    const/4 v2, 0x0
+    :catchall_8
+    move-exception v0
 
-    .line 24
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    move-object v4, v0
 
-    .line 25
-    iget-object v2, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    if-eqz v3, :cond_e
 
-    invoke-interface {v2, v0, v1}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    .line 51
+    :try_start_16
+    invoke-virtual {v3}, Landroid/content/res/AssetFileDescriptor;->close()V
+    :try_end_16
+    .catchall {:try_start_16 .. :try_end_16} :catchall_9
 
-    goto :goto_5
+    goto :goto_d
+
+    :catchall_9
+    move-exception v0
+
+    move-object v3, v0
+
+    :try_start_17
+    invoke-virtual {v4, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :cond_e
+    :goto_d
+    throw v4
+    :try_end_17
+    .catch Ljava/io/FileNotFoundException; {:try_start_17 .. :try_end_17} :catch_6
+    .catch Ljava/io/IOException; {:try_start_17 .. :try_end_17} :catch_5
+    .catch Ljava/lang/IllegalStateException; {:try_start_17 .. :try_end_17} :catch_4
 
     :catch_4
     move-exception v0
 
-    .line 26
-    iget-object v2, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    .line 52
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
 
-    invoke-interface {v2, v1, v0}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    .line 53
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
 
-    goto :goto_5
+    invoke-interface {v3, v2, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    goto :goto_e
 
     :catch_5
     move-exception v0
 
-    .line 27
-    iget-object v1, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    .line 54
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
 
-    const/16 v2, 0x9
+    const/4 v4, 0x7
 
-    invoke-interface {v1, v2, v0}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    invoke-interface {v3, v4, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
 
-    :cond_7
-    :goto_5
-    return-object p0
-.end method
+    goto :goto_e
 
-.method public i()Landroidx/profileinstaller/b;
-    .locals 4
+    :catch_6
+    move-exception v0
 
-    .line 1
-    iget-object v0, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    .line 55
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
 
-    .line 2
-    iget-object v1, p0, Landroidx/profileinstaller/b;->d:[B
+    const/16 v4, 0x9
 
-    if-eqz v0, :cond_2
+    invoke-interface {v3, v4, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
 
-    if-nez v1, :cond_0
+    .line 56
+    :cond_f
+    :goto_e
+    iget-object v0, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
 
-    goto :goto_2
+    .line 57
+    iget-object v3, v14, Landroidx/profileinstaller/a;->d:[B
 
-    .line 3
-    :cond_0
-    invoke-direct {p0}, Landroidx/profileinstaller/b;->b()V
+    if-eqz v0, :cond_12
 
-    const/4 v2, 0x0
+    if-nez v3, :cond_10
 
-    .line 4
-    :try_start_0
-    new-instance v3, Ljava/io/ByteArrayOutputStream;
+    goto :goto_11
 
-    invoke-direct {v3}, Ljava/io/ByteArrayOutputStream;-><init>()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 58
+    :cond_10
+    invoke-virtual {v14}, Landroidx/profileinstaller/a;->a()V
 
-    .line 5
-    :try_start_1
-    invoke-static {v3, v1}, Landroidx/profileinstaller/m;->E(Ljava/io/OutputStream;[B)V
+    .line 59
+    :try_start_18
+    new-instance v4, Ljava/io/ByteArrayOutputStream;
 
-    .line 6
-    invoke-static {v3, v1, v0}, Landroidx/profileinstaller/m;->B(Ljava/io/OutputStream;[B[Landroidx/profileinstaller/c;)Z
+    invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    :try_end_18
+    .catch Ljava/io/IOException; {:try_start_18 .. :try_end_18} :catch_8
+    .catch Ljava/lang/IllegalStateException; {:try_start_18 .. :try_end_18} :catch_7
+
+    .line 60
+    :try_start_19
+    sget-object v5, Le6/k;->a:[B
+
+    invoke-virtual {v4, v5}, Ljava/io/OutputStream;->write([B)V
+
+    .line 61
+    invoke-virtual {v4, v3}, Ljava/io/OutputStream;->write([B)V
+
+    .line 62
+    invoke-static {v4, v3, v0}, Le6/k;->l(Ljava/io/OutputStream;[B[Le6/b;)Z
 
     move-result v0
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_11
 
-    .line 7
-    iget-object v0, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    .line 63
+    iget-object v0, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
 
-    const/4 v1, 0x5
+    const/4 v3, 0x5
 
-    invoke-interface {v0, v1, v2}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    invoke-interface {v0, v3, v11}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
 
-    .line 8
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .line 64
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+    :try_end_19
+    .catchall {:try_start_19 .. :try_end_19} :catchall_a
 
-    .line 9
-    :try_start_2
-    invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_2
-    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_2 .. :try_end_2} :catch_0
+    .line 65
+    :try_start_1a
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_1a
+    .catch Ljava/io/IOException; {:try_start_1a .. :try_end_1a} :catch_8
+    .catch Ljava/lang/IllegalStateException; {:try_start_1a .. :try_end_1a} :catch_7
 
-    return-object p0
+    goto :goto_11
 
-    .line 10
-    :cond_1
-    :try_start_3
-    invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+    .line 66
+    :cond_11
+    :try_start_1b
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/profileinstaller/b;->k:[B
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    iput-object v0, v14, Landroidx/profileinstaller/a;->h:[B
+    :try_end_1b
+    .catchall {:try_start_1b .. :try_end_1b} :catchall_a
 
-    .line 11
-    :try_start_4
-    invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_4 .. :try_end_4} :catch_0
+    .line 67
+    :try_start_1c
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_1c
+    .catch Ljava/io/IOException; {:try_start_1c .. :try_end_1c} :catch_8
+    .catch Ljava/lang/IllegalStateException; {:try_start_1c .. :try_end_1c} :catch_7
 
-    goto :goto_1
+    goto :goto_10
 
-    :catchall_0
+    :catchall_a
     move-exception v0
 
-    .line 12
-    :try_start_5
-    invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    move-object v3, v0
 
-    goto :goto_0
+    .line 68
+    :try_start_1d
+    invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->close()V
+    :try_end_1d
+    .catchall {:try_start_1d .. :try_end_1d} :catchall_b
 
-    :catchall_1
-    move-exception v1
+    goto :goto_f
 
-    :try_start_6
-    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    :goto_0
-    throw v0
-    :try_end_6
-    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_1
-    .catch Ljava/lang/IllegalStateException; {:try_start_6 .. :try_end_6} :catch_0
-
-    :catch_0
+    :catchall_b
     move-exception v0
 
-    .line 13
-    iget-object v1, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    move-object v4, v0
 
-    const/16 v3, 0x8
+    :try_start_1e
+    invoke-virtual {v3, v4}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    invoke-interface {v1, v3, v0}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    :goto_f
+    throw v3
+    :try_end_1e
+    .catch Ljava/io/IOException; {:try_start_1e .. :try_end_1e} :catch_8
+    .catch Ljava/lang/IllegalStateException; {:try_start_1e .. :try_end_1e} :catch_7
 
-    goto :goto_1
-
-    :catch_1
+    :catch_7
     move-exception v0
 
-    .line 14
-    iget-object v1, p0, Landroidx/profileinstaller/b;->c:Landroidx/profileinstaller/h$c;
+    .line 69
+    iget-object v3, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
+
+    invoke-interface {v3, v2, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
+
+    goto :goto_10
+
+    :catch_8
+    move-exception v0
+
+    .line 70
+    iget-object v2, v14, Landroidx/profileinstaller/a;->c:Landroidx/profileinstaller/b$c;
 
     const/4 v3, 0x7
 
-    invoke-interface {v1, v3, v0}, Landroidx/profileinstaller/h$c;->a(ILjava/lang/Object;)V
+    invoke-interface {v2, v3, v0}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
 
-    .line 15
-    :goto_1
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    .line 71
+    :goto_10
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
 
-    :cond_2
-    :goto_2
-    return-object p0
-.end method
+    .line 72
+    :cond_12
+    :goto_11
+    iget-object v0, v14, Landroidx/profileinstaller/a;->h:[B
 
-.method public j()Z
-    .locals 5
+    if-nez v0, :cond_13
 
-    .line 1
-    iget-object v0, p0, Landroidx/profileinstaller/b;->k:[B
+    goto :goto_18
 
-    const/4 v1, 0x0
+    .line 73
+    :cond_13
+    invoke-virtual {v14}, Landroidx/profileinstaller/a;->a()V
 
-    if-nez v0, :cond_0
+    .line 74
+    :try_start_1f
+    new-instance v2, Ljava/io/ByteArrayInputStream;
 
-    return v1
+    invoke-direct {v2, v0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+    :try_end_1f
+    .catch Ljava/io/FileNotFoundException; {:try_start_1f .. :try_end_1f} :catch_a
+    .catch Ljava/io/IOException; {:try_start_1f .. :try_end_1f} :catch_9
+    .catchall {:try_start_1f .. :try_end_1f} :catchall_10
 
-    .line 2
-    :cond_0
-    invoke-direct {p0}, Landroidx/profileinstaller/b;->b()V
+    .line 75
+    :try_start_20
+    new-instance v3, Ljava/io/FileOutputStream;
 
-    const/4 v2, 0x0
+    iget-object v0, v14, Landroidx/profileinstaller/a;->e:Ljava/io/File;
 
-    .line 3
-    :try_start_0
-    new-instance v3, Ljava/io/ByteArrayInputStream;
+    invoke-direct {v3, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+    :try_end_20
+    .catchall {:try_start_20 .. :try_end_20} :catchall_e
 
-    invoke-direct {v3, v0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
-    :try_end_0
-    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_4
+    const/16 v0, 0x200
 
-    .line 4
-    :try_start_1
-    new-instance v0, Ljava/io/FileOutputStream;
+    :try_start_21
+    new-array v0, v0, [B
 
-    iget-object v4, p0, Landroidx/profileinstaller/b;->e:Ljava/io/File;
+    .line 76
+    :goto_12
+    invoke-virtual {v2, v0}, Ljava/io/InputStream;->read([B)I
 
-    invoke-direct {v0, v4}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+    move-result v4
 
-    .line 5
-    :try_start_2
-    invoke-static {v3, v0}, Landroidx/profileinstaller/d;->l(Ljava/io/InputStream;Ljava/io/OutputStream;)V
+    if-lez v4, :cond_14
 
-    const/4 v4, 0x1
+    const/4 v5, 0x0
 
-    .line 6
-    invoke-direct {p0, v4, v2}, Landroidx/profileinstaller/b;->h(ILjava/lang/Object;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .line 77
+    invoke-virtual {v3, v0, v5, v4}, Ljava/io/OutputStream;->write([BII)V
 
-    .line 7
-    :try_start_3
-    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+    goto :goto_12
 
-    :try_start_4
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-    :try_end_4
-    .catch Ljava/io/FileNotFoundException; {:try_start_4 .. :try_end_4} :catch_1
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_4
+    .line 78
+    :cond_14
+    invoke-virtual {v14, v12, v11}, Landroidx/profileinstaller/a;->b(ILjava/lang/Object;)V
+    :try_end_21
+    .catchall {:try_start_21 .. :try_end_21} :catchall_c
 
-    .line 8
-    iput-object v2, p0, Landroidx/profileinstaller/b;->k:[B
+    .line 79
+    :try_start_22
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
+    :try_end_22
+    .catchall {:try_start_22 .. :try_end_22} :catchall_e
 
-    .line 9
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
+    :try_start_23
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
+    :try_end_23
+    .catch Ljava/io/FileNotFoundException; {:try_start_23 .. :try_end_23} :catch_a
+    .catch Ljava/io/IOException; {:try_start_23 .. :try_end_23} :catch_9
+    .catchall {:try_start_23 .. :try_end_23} :catchall_10
 
-    return v4
+    .line 80
+    iput-object v11, v14, Landroidx/profileinstaller/a;->h:[B
 
-    :catchall_0
-    move-exception v4
+    .line 81
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
 
-    .line 10
-    :try_start_5
-    invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    const/4 v0, 0x1
 
-    goto :goto_0
+    goto :goto_19
 
-    :catchall_1
+    :catchall_c
     move-exception v0
 
-    :try_start_6
-    invoke-virtual {v4, v0}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    move-object v4, v0
 
-    :goto_0
+    .line 82
+    :try_start_24
+    invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
+    :try_end_24
+    .catchall {:try_start_24 .. :try_end_24} :catchall_d
+
+    goto :goto_13
+
+    :catchall_d
+    move-exception v0
+
+    move-object v3, v0
+
+    :try_start_25
+    invoke-virtual {v4, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_13
     throw v4
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    :try_end_25
+    .catchall {:try_start_25 .. :try_end_25} :catchall_e
 
-    :catchall_2
+    :catchall_e
     move-exception v0
 
-    :try_start_7
-    invoke-virtual {v3}, Ljava/io/InputStream;->close()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
+    move-object v3, v0
 
-    goto :goto_1
+    :try_start_26
+    invoke-virtual {v2}, Ljava/io/InputStream;->close()V
+    :try_end_26
+    .catchall {:try_start_26 .. :try_end_26} :catchall_f
 
-    :catchall_3
-    move-exception v3
+    goto :goto_14
 
-    :try_start_8
-    invoke-virtual {v0, v3}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :catchall_f
+    move-exception v0
 
-    :goto_1
+    move-object v2, v0
+
+    :try_start_27
+    invoke-virtual {v3, v2}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    :goto_14
+    throw v3
+    :try_end_27
+    .catch Ljava/io/FileNotFoundException; {:try_start_27 .. :try_end_27} :catch_a
+    .catch Ljava/io/IOException; {:try_start_27 .. :try_end_27} :catch_9
+    .catchall {:try_start_27 .. :try_end_27} :catchall_10
+
+    :catch_9
+    move-exception v0
+
+    goto :goto_15
+
+    :catch_a
+    move-exception v0
+
+    goto :goto_16
+
+    :catchall_10
+    move-exception v0
+
+    goto :goto_1b
+
+    :goto_15
+    const/4 v1, 0x7
+
+    .line 83
+    :try_start_28
+    invoke-virtual {v14, v1, v0}, Landroidx/profileinstaller/a;->b(ILjava/lang/Object;)V
+
+    goto :goto_17
+
+    .line 84
+    :goto_16
+    invoke-virtual {v14, v1, v0}, Landroidx/profileinstaller/a;->b(ILjava/lang/Object;)V
+    :try_end_28
+    .catchall {:try_start_28 .. :try_end_28} :catchall_10
+
+    .line 85
+    :goto_17
+    iput-object v11, v14, Landroidx/profileinstaller/a;->h:[B
+
+    .line 86
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+
+    :goto_18
+    const/4 v0, 0x0
+
+    :goto_19
+    if-eqz v0, :cond_15
+
+    .line 87
+    invoke-static {v9, v10}, Landroidx/profileinstaller/b;->a(Landroid/content/pm/PackageInfo;Ljava/io/File;)V
+
+    :cond_15
+    :goto_1a
+    return-void
+
+    .line 88
+    :goto_1b
+    iput-object v11, v14, Landroidx/profileinstaller/a;->h:[B
+
+    .line 89
+    iput-object v11, v14, Landroidx/profileinstaller/a;->g:[Le6/b;
+
+    .line 90
     throw v0
-    :try_end_8
-    .catch Ljava/io/FileNotFoundException; {:try_start_8 .. :try_end_8} :catch_1
-    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_0
-    .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
-    :catchall_4
+    :catch_b
     move-exception v0
 
-    goto :goto_3
+    move-object v1, v0
 
-    :catch_0
-    move-exception v0
+    const/4 v0, 0x7
 
-    const/4 v3, 0x7
+    .line 91
+    invoke-interface {v4, v0, v1}, Landroidx/profileinstaller/b$c;->a(ILjava/lang/Object;)V
 
-    .line 11
-    :try_start_9
-    invoke-direct {p0, v3, v0}, Landroidx/profileinstaller/b;->h(ILjava/lang/Object;)V
-
-    goto :goto_2
-
-    :catch_1
-    move-exception v0
-
-    const/4 v3, 0x6
-
-    .line 12
-    invoke-direct {p0, v3, v0}, Landroidx/profileinstaller/b;->h(ILjava/lang/Object;)V
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_4
-
-    .line 13
-    :goto_2
-    iput-object v2, p0, Landroidx/profileinstaller/b;->k:[B
-
-    .line 14
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
-
-    return v1
-
-    .line 15
-    :goto_3
-    iput-object v2, p0, Landroidx/profileinstaller/b;->k:[B
-
-    .line 16
-    iput-object v2, p0, Landroidx/profileinstaller/b;->j:[Landroidx/profileinstaller/c;
-
-    .line 17
-    throw v0
+    return-void
 .end method

@@ -1,0 +1,64 @@
+.class public final synthetic Lfk/sd1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lfk/yx1;
+
+
+# instance fields
+.field public final synthetic a:Lfk/ag0;
+
+.field public final synthetic b:Lfk/mo1;
+
+.field public final synthetic c:Lfk/q21;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lfk/ag0;Lfk/mo1;Lfk/q21;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lfk/sd1;->a:Lfk/ag0;
+
+    iput-object p2, p0, Lfk/sd1;->b:Lfk/mo1;
+
+    iput-object p3, p0, Lfk/sd1;->c:Lfk/q21;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object p1, p0, Lfk/sd1;->a:Lfk/ag0;
+
+    iget-object v0, p0, Lfk/sd1;->b:Lfk/mo1;
+
+    iget-object v1, p0, Lfk/sd1;->c:Lfk/q21;
+
+    iget-boolean v0, v0, Lfk/mo1;->N:Z
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {p1}, Lfk/ag0;->T()V
+
+    .line 3
+    :cond_0
+    invoke-interface {p1}, Lfk/ag0;->N()V
+
+    .line 4
+    invoke-interface {p1}, Lfk/ag0;->onPause()V
+
+    .line 5
+    invoke-virtual {v1}, Lfk/q21;->k()Lfk/p21;
+
+    move-result-object p1
+
+    return-object p1
+.end method

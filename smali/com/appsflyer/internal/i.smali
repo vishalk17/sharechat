@@ -14,10 +14,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -84,7 +83,7 @@
 
     move-result-object v0
 
-    invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 7
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -99,7 +98,7 @@
 
     move-result-object v0
 
-    invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 8
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -114,15 +113,15 @@
 
     move-result-object p0
 
-    invoke-interface {v2, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object v2
 .end method
 
 
 # virtual methods
-.method final AFInAppEventType(Ljava/util/List;)Ljava/util/Map;
-    .locals 16
+.method public final AFInAppEventType(Ljava/util/List;)Ljava/util/Map;
+    .locals 15
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -254,7 +253,7 @@
     if-eqz v11, :cond_5
 
     .line 12
-    invoke-interface {v3, v12, v11}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v12, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_4
 
@@ -262,7 +261,7 @@
     const-string v11, "uk"
 
     .line 13
-    invoke-interface {v3, v12, v11}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v12, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 14
     :goto_4
@@ -305,19 +304,17 @@
 
     move-result-object v2
 
-    invoke-interface {v12, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+    invoke-virtual {v12, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 20
     :cond_6
     sget-object v2, Lcom/appsflyer/internal/i$b;->AFKeystoreWrapper:Lcom/appsflyer/internal/i$b;
 
-    const/4 v8, 0x3
+    const/4 v8, 0x2
 
-    const/4 v13, 0x2
+    const/4 v13, 0x5
 
-    const/4 v14, 0x5
-
-    const-string v15, "##.#"
+    const-string v14, "##.#"
 
     if-ne v11, v2, :cond_8
 
@@ -327,13 +324,13 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 22
-    invoke-interface {v12, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljava/math/BigDecimal;
 
-    invoke-interface {v12, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -367,7 +364,7 @@
     .line 26
     new-instance v5, Ljava/text/DecimalFormat;
 
-    invoke-direct {v5, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 27
     sget-object v6, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -389,10 +386,10 @@
 
     move-result-object v5
 
-    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 31
-    invoke-interface {v12, v13}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -401,7 +398,7 @@
     .line 32
     new-instance v6, Ljava/text/DecimalFormat;
 
-    invoke-direct {v6, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 33
     sget-object v7, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -423,7 +420,7 @@
 
     move-result-object v5
 
-    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 37
     new-instance v5, Ljava/util/ArrayList;
@@ -431,14 +428,16 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 38
-    invoke-interface {v12}, Ljava/util/List;->size()I
+    invoke-virtual {v12}, Ljava/util/ArrayList;->size()I
 
     move-result v6
 
-    if-le v6, v14, :cond_7
+    if-le v6, v13, :cond_7
+
+    const/4 v6, 0x3
 
     .line 39
-    invoke-interface {v12, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -446,16 +445,20 @@
 
     const/4 v7, 0x4
 
-    invoke-interface {v12, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljava/math/BigDecimal;
 
+    move-object v8, v10
+
+    move-object v13, v11
+
     .line 40
     invoke-virtual {v6}, Ljava/lang/Number;->doubleValue()D
 
-    move-result-wide v13
+    move-result-wide v10
 
     .line 41
     invoke-virtual {v7}, Ljava/lang/Number;->doubleValue()D
@@ -463,13 +466,13 @@
     move-result-wide v6
 
     .line 42
-    invoke-static {v6, v7, v13, v14}, Ljava/lang/Math;->atan2(DD)D
+    invoke-static {v6, v7, v10, v11}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v6
 
-    const-wide v13, 0x404ca5dc1a63c1f8L    # 57.29577951308232
+    const-wide v10, 0x404ca5dc1a63c1f8L    # 57.29577951308232
 
-    mul-double v6, v6, v13
+    mul-double v6, v6, v10
 
     invoke-static {v6, v7}, Ljava/math/BigDecimal;->valueOf(D)Ljava/math/BigDecimal;
 
@@ -483,7 +486,7 @@
     .line 44
     new-instance v6, Ljava/text/DecimalFormat;
 
-    invoke-direct {v6, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 45
     sget-object v7, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -505,12 +508,12 @@
 
     move-result-object v4
 
-    invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v4, 0x5
 
     .line 49
-    invoke-interface {v12, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -518,7 +521,7 @@
 
     const/4 v6, 0x2
 
-    invoke-interface {v12, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -531,7 +534,7 @@
     .line 50
     new-instance v6, Ljava/text/DecimalFormat;
 
-    invoke-direct {v6, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 51
     sget-object v7, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -553,24 +556,33 @@
 
     move-result-object v4
 
-    invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_5
+
+    :cond_7
+    move-object v8, v10
+
+    move-object v13, v11
 
     .line 55
-    :cond_7
+    :goto_5
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 56
-    invoke-interface {v4, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 57
-    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
     :cond_8
-    move-object v11, v5
+    move-object v13, v5
+
+    move-object v8, v10
 
     .line 58
     new-instance v2, Ljava/util/ArrayList;
@@ -578,7 +590,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 59
-    invoke-interface {v12}, Ljava/util/List;->size()I
+    invoke-virtual {v12}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
@@ -586,14 +598,16 @@
 
     if-le v4, v5, :cond_9
 
+    const/4 v4, 0x3
+
     .line 60
-    invoke-interface {v12, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/math/BigDecimal;
 
-    invoke-interface {v12, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -606,12 +620,12 @@
     .line 61
     new-instance v5, Ljava/text/DecimalFormat;
 
-    invoke-direct {v5, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 62
-    sget-object v8, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
+    sget-object v10, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
 
-    invoke-virtual {v5, v8}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
+    invoke-virtual {v5, v10}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
 
     .line 63
     invoke-virtual {v5, v4}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
@@ -628,18 +642,18 @@
 
     move-result-object v4
 
-    invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v4, 0x4
 
     .line 66
-    invoke-interface {v12, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/math/BigDecimal;
 
-    invoke-interface {v12, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -652,12 +666,12 @@
     .line 67
     new-instance v5, Ljava/text/DecimalFormat;
 
-    invoke-direct {v5, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 68
-    sget-object v8, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
+    sget-object v10, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
 
-    invoke-virtual {v5, v8}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
+    invoke-virtual {v5, v10}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
 
     .line 69
     invoke-virtual {v5, v4}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
@@ -674,12 +688,12 @@
 
     move-result-object v4
 
-    invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v4, 0x5
 
     .line 72
-    invoke-interface {v12, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -687,25 +701,25 @@
 
     const/4 v5, 0x2
 
-    invoke-interface {v12, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    move-result-object v8
+    move-result-object v5
 
-    check-cast v8, Ljava/math/BigDecimal;
+    check-cast v5, Ljava/math/BigDecimal;
 
-    invoke-virtual {v4, v8}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
+    invoke-virtual {v4, v5}, Ljava/math/BigDecimal;->subtract(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
 
     move-result-object v4
 
     .line 73
     new-instance v5, Ljava/text/DecimalFormat;
 
-    invoke-direct {v5, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 74
-    sget-object v8, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
+    sget-object v10, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
 
-    invoke-virtual {v5, v8}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
+    invoke-virtual {v5, v10}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
 
     .line 75
     invoke-virtual {v5, v4}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
@@ -722,7 +736,7 @@
 
     move-result-object v4
 
-    invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 78
     :cond_9
@@ -731,7 +745,7 @@
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 79
-    invoke-interface {v12, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -740,12 +754,12 @@
     .line 80
     new-instance v7, Ljava/text/DecimalFormat;
 
-    invoke-direct {v7, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 81
-    sget-object v8, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
+    sget-object v10, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
 
-    invoke-virtual {v7, v8}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
+    invoke-virtual {v7, v10}, Ljava/text/DecimalFormat;->setRoundingMode(Ljava/math/RoundingMode;)V
 
     .line 82
     invoke-virtual {v7, v5}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
@@ -755,17 +769,17 @@
     .line 83
     invoke-static {v5}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
-    move-result-wide v7
+    move-result-wide v10
 
     .line 84
-    invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    invoke-static {v10, v11}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v5
 
-    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 85
-    invoke-interface {v12, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -774,7 +788,7 @@
     .line 86
     new-instance v6, Ljava/text/DecimalFormat;
 
-    invoke-direct {v6, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 87
     sget-object v7, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -796,12 +810,12 @@
 
     move-result-object v5
 
-    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 v5, 0x2
 
     .line 91
-    invoke-interface {v12, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-virtual {v12, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -810,7 +824,7 @@
     .line 92
     new-instance v6, Ljava/text/DecimalFormat;
 
-    invoke-direct {v6, v15}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v14}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
     .line 93
     sget-object v7, Ljava/math/RoundingMode;->DOWN:Ljava/math/RoundingMode;
@@ -832,7 +846,7 @@
 
     move-result-object v5
 
-    invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 97
     new-instance v5, Ljava/util/ArrayList;
@@ -840,18 +854,18 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 98
-    invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 99
-    invoke-interface {v5, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     move-object v4, v5
 
-    :goto_5
+    :goto_6
     const-string v2, "v"
 
     .line 100
-    invoke-interface {v3, v2, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v2, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 101
     invoke-static {}, Lcom/appsflyer/internal/i$e;->values()[Lcom/appsflyer/internal/i$e;
@@ -868,29 +882,28 @@
     iget-object v2, v2, Lcom/appsflyer/internal/i$e;->AFInAppEventType:Ljava/lang/String;
 
     .line 103
-    invoke-interface {v0, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 104
     sget-object v2, Lcom/appsflyer/internal/i$a;->values:Lcom/appsflyer/internal/i$a;
 
-    if-ne v11, v2, :cond_0
+    if-ne v13, v2, :cond_0
 
     const-string v2, "no_svs"
 
-    invoke-interface {v0, v10, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v8, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_0
 
-    .line 105
     :cond_a
-    new-instance v0, Ljava/util/HashMap;
+    move-object v8, v10
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const-string v0, "na"
 
-    const-string v1, "na"
+    .line 105
+    invoke-static {v8, v0}, Lcom/appsflyer/internal/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
-    .line 106
-    invoke-interface {v0, v10, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object v0
 
     :cond_b
     return-object v0

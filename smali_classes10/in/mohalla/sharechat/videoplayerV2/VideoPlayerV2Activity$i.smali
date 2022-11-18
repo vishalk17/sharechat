@@ -1,77 +1,80 @@
-.class final Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$i;
-.super Lkotlin/jvm/internal/r;
+.class public final Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$i;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/a;
+.implements Ldp0/a;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;->Vg()V
+    value = Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;-><init>()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/a<",
-        "Li00/a0;",
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Ljava/lang/Long;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
+.field public final synthetic b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
 
 
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;)V
+.method public constructor <init>(Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;)V
     .locals 0
 
     iput-object p1, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$i;->b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
 
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$i;->invoke()V
-
-    sget-object v0, Li00/a0;->a:Li00/a0;
-
-    return-object v0
-.end method
-
-.method public final invoke()V
-    .locals 1
-
-    .line 2
     iget-object v0, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$i;->b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
 
-    invoke-static {v0}, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;->Te(Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;)Lru/g0;
+    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    iget-object v0, v0, Lru/g0;->z:Lcom/airbnb/lottie/LottieAnimationView;
+    invoke-virtual {v0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
+    const-string v1, "START_POSITION"
+
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getLong(Ljava/lang/String;)J
+
+    move-result-wide v0
+
+    goto :goto_0
 
     :cond_0
-    return-void
+    const-wide/16 v0, 0x0
+
+    :goto_0
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    return-object v0
 .end method

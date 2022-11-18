@@ -1,4 +1,4 @@
-.class Landroidx/work/Worker$a;
+.class public final Landroidx/work/Worker$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -8,24 +8,23 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/work/Worker;->startWork()Lcom/google/common/util/concurrent/c;
+    value = Landroidx/work/Worker;->startWork()Lxm/b;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Landroidx/work/Worker;
+.field public final synthetic b:Landroidx/work/Worker;
 
 
 # direct methods
-.method constructor <init>(Landroidx/work/Worker;)V
+.method public constructor <init>(Landroidx/work/Worker;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/work/Worker$a;->b:Landroidx/work/Worker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public run()V
+.method public final run()V
     .locals 2
 
     .line 1
@@ -49,9 +48,9 @@
     .line 2
     iget-object v1, p0, Landroidx/work/Worker$a;->b:Landroidx/work/Worker;
 
-    iget-object v1, v1, Landroidx/work/Worker;->g:Landroidx/work/impl/utils/futures/c;
+    iget-object v1, v1, Landroidx/work/Worker;->g:Lf7/c;
 
-    invoke-virtual {v1, v0}, Landroidx/work/impl/utils/futures/c;->q(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Lf7/c;->l(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -63,9 +62,9 @@
     .line 3
     iget-object v1, p0, Landroidx/work/Worker$a;->b:Landroidx/work/Worker;
 
-    iget-object v1, v1, Landroidx/work/Worker;->g:Landroidx/work/impl/utils/futures/c;
+    iget-object v1, v1, Landroidx/work/Worker;->g:Lf7/c;
 
-    invoke-virtual {v1, v0}, Landroidx/work/impl/utils/futures/c;->r(Ljava/lang/Throwable;)Z
+    invoke-virtual {v1, v0}, Lf7/c;->m(Ljava/lang/Throwable;)Z
 
     :goto_0
     return-void

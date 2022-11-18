@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 7
 
     const/4 v1, 0x0
@@ -92,7 +92,6 @@
 .method public AFLogger$LogLevel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/appsflyer/internal/g;->AFInAppEventType()Ljava/util/Map;
 
     move-result-object v0
@@ -111,7 +110,6 @@
 .method public final AppsFlyer2dXConversionCallback()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/bf;->onConversionDataFail:Z
 
     return v0
@@ -120,7 +118,6 @@
 .method public final getLevel()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/bf;->onInstallConversionDataLoadedNative:Z
 
     return v0
@@ -129,7 +126,6 @@
 .method public final init()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/bf;->onDeepLinkingNative:Z
 
     return v0

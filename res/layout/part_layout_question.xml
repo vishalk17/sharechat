@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/plotline_title" android:id="@id/question_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="What's the main reason you haven't setup UPI Pay?" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/plotline_description" android:id="@id/description_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="This will help us improve your experience" />
+</LinearLayout>

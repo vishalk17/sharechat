@@ -9,7 +9,6 @@
 
     const-string v0, "samsung"
 
-    .line 1
     invoke-direct {p0, v0, p1}, Lcom/appsflyer/internal/bq;-><init>(Ljava/lang/String;Ljava/lang/Runnable;)V
 
     return-void

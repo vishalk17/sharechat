@@ -67,7 +67,6 @@
 .method public getDeepLink()Lcom/appsflyer/deeplink/DeepLink;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/deeplink/DeepLinkResult;->deepLink:Lcom/appsflyer/deeplink/DeepLink;
 
     return-object v0
@@ -76,7 +75,6 @@
 .method public getError()Lcom/appsflyer/deeplink/DeepLinkResult$Error;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/deeplink/DeepLinkResult;->error:Lcom/appsflyer/deeplink/DeepLinkResult$Error;
 
     return-object v0
@@ -85,7 +83,6 @@
 .method public getStatus()Lcom/appsflyer/deeplink/DeepLinkResult$Status;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/deeplink/DeepLinkResult;->status:Lcom/appsflyer/deeplink/DeepLinkResult$Status;
 
     return-object v0

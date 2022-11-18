@@ -1,4 +1,4 @@
-.class final Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState$a;
+.class public final Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = null
 .end annotation
 
@@ -27,10 +27,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,10 +37,10 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
+    .line 2
     new-instance v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
 
     const/4 v1, 0x0
@@ -51,7 +50,7 @@
     return-object v0
 .end method
 
-.method public b(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
+.method public final createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 1
 
     .line 1
@@ -62,44 +61,10 @@
     return-object v0
 .end method
 
-.method public c(I)[Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
+.method public final newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState$a;->a(Landroid/os/Parcel;)Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
-    .locals 0
-
-    .line 2
-    invoke-virtual {p0, p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState$a;->b(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public bridge synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState$a;->c(I)[Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;
-
-    move-result-object p1
 
     return-object p1
 .end method

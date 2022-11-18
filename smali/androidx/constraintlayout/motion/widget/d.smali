@@ -1,27 +1,48 @@
-.class public abstract Landroidx/constraintlayout/motion/widget/d;
+.class public final Landroidx/constraintlayout/motion/widget/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static f:I = -0x1
-
-
 # instance fields
-.field a:I
+.field public final a:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-.field b:I
-
-.field c:Ljava/lang/String;
-
-.field protected d:I
-
-.field e:Ljava/util/HashMap;
+.field public b:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Landroidx/constraintlayout/widget/a;",
+            "Ljava/util/ArrayList<",
+            "Landroidx/constraintlayout/motion/widget/c;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public c:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashSet<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public d:Ljava/lang/String;
+
+.field public e:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Landroidx/constraintlayout/motion/widget/c$a;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public f:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Landroidx/constraintlayout/motion/widget/c$a;",
             ">;"
         }
     .end annotation
@@ -29,159 +50,101 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Landroidx/constraintlayout/motion/widget/d;->f:I
+    new-instance v0, Ljava/util/ArrayList;
 
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/d;->a:I
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->b:Ljava/util/ArrayList;
+
+    const-string v0, "ViewTransitionController"
 
     .line 3
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/d;->b:I
-
-    const/4 v0, 0x0
+    iput-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->d:Ljava/lang/String;
 
     .line 4
-    iput-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->c:Ljava/lang/String;
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->f:Ljava/util/ArrayList;
+
+    .line 5
+    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/d;->a:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a(Ljava/util/HashMap;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Landroidx/constraintlayout/motion/utils/d;",
-            ">;)V"
-        }
-    .end annotation
-.end method
-
-.method public abstract b()Landroidx/constraintlayout/motion/widget/d;
-.end method
-
-.method public c(Landroidx/constraintlayout/motion/widget/d;)Landroidx/constraintlayout/motion/widget/d;
+.method public final a()V
     .locals 1
 
-    .line 1
-    iget v0, p1, Landroidx/constraintlayout/motion/widget/d;->a:I
+    iget-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->a:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/d;->a:I
-
-    .line 2
-    iget v0, p1, Landroidx/constraintlayout/motion/widget/d;->b:I
-
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/d;->b:I
-
-    .line 3
-    iget-object v0, p1, Landroidx/constraintlayout/motion/widget/d;->c:Ljava/lang/String;
-
-    iput-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->c:Ljava/lang/String;
-
-    .line 4
-    iget v0, p1, Landroidx/constraintlayout/motion/widget/d;->d:I
-
-    iput v0, p0, Landroidx/constraintlayout/motion/widget/d;->d:I
-
-    .line 5
-    iget-object p1, p1, Landroidx/constraintlayout/motion/widget/d;->e:Ljava/util/HashMap;
-
-    iput-object p1, p0, Landroidx/constraintlayout/motion/widget/d;->e:Ljava/util/HashMap;
-
-    return-object p0
-.end method
-
-.method public bridge synthetic clone()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/CloneNotSupportedException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/constraintlayout/motion/widget/d;->b()Landroidx/constraintlayout/motion/widget/d;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method abstract d(Ljava/util/HashSet;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/HashSet<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-.end method
-
-.method abstract e(Landroid/content/Context;Landroid/util/AttributeSet;)V
-.end method
-
-.method f(Ljava/lang/String;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/motion/widget/d;->c:Ljava/lang/String;
-
-    if-eqz v0, :cond_1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    invoke-virtual {p1, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
-
-    move-result p1
-
-    return p1
-
-    :cond_1
-    :goto_0
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public g(Ljava/util/HashMap;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/Integer;",
-            ">;)V"
-        }
-    .end annotation
+    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     return-void
 .end method
 
-.method public h(I)Landroidx/constraintlayout/motion/widget/d;
-    .locals 0
+.method public final b(Landroidx/constraintlayout/motion/widget/c;Z)V
+    .locals 3
 
     .line 1
-    iput p1, p0, Landroidx/constraintlayout/motion/widget/d;->b:I
+    invoke-static {}, Landroidx/constraintlayout/widget/ConstraintLayout;->getSharedValues()Ld4/b;
 
-    return-object p0
+    move-result-object p2
+
+    .line 2
+    iget p1, p1, Landroidx/constraintlayout/motion/widget/c;->u:I
+
+    .line 3
+    new-instance v0, Landroidx/constraintlayout/motion/widget/d$a;
+
+    invoke-direct {v0}, Landroidx/constraintlayout/motion/widget/d$a;-><init>()V
+
+    .line 4
+    iget-object v1, p2, Ld4/b;->a:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/HashSet;
+
+    if-nez v1, :cond_0
+
+    .line 5
+    new-instance v1, Ljava/util/HashSet;
+
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
+
+    .line 6
+    iget-object p2, p2, Ld4/b;->a:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    invoke-virtual {p2, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 7
+    :cond_0
+    new-instance p1, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {p1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+
+    return-void
 .end method

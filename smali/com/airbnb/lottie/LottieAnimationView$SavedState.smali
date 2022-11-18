@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xa
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,26 +27,25 @@
 
 
 # instance fields
-.field b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
-.field c:I
+.field public c:I
 
-.field d:F
+.field public d:F
 
-.field e:Z
+.field public e:Z
 
-.field f:Ljava/lang/String;
+.field public f:Ljava/lang/String;
 
-.field g:I
+.field public g:I
 
-.field h:I
+.field public h:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/airbnb/lottie/LottieAnimationView$SavedState$a;
 
     invoke-direct {v0}, Lcom/airbnb/lottie/LottieAnimationView$SavedState$a;-><init>()V
@@ -56,27 +55,27 @@
     return-void
 .end method
 
-.method private constructor <init>(Landroid/os/Parcel;)V
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 3
+    .line 2
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 4
+    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->b:Ljava/lang/String;
 
-    .line 5
+    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->d:F
 
-    .line 6
+    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -93,21 +92,21 @@
     :goto_0
     iput-boolean v1, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->e:Z
 
-    .line 7
+    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->f:Ljava/lang/String;
 
-    .line 8
+    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/airbnb/lottie/LottieAnimationView$SavedState;->g:I
 
-    .line 9
+    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -117,19 +116,10 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/airbnb/lottie/LottieAnimationView$a;)V
+.method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/airbnb/lottie/LottieAnimationView$SavedState;-><init>(Landroid/os/Parcel;)V
-
-    return-void
-.end method
-
-.method constructor <init>(Landroid/os/Parcelable;)V
-    .locals 0
-
-    .line 2
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -137,7 +127,7 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1

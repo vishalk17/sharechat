@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_instruction">शूट करे खातिर टैप करीं, रिकॉर्ड करे खातिर होल्ड करीं</string>
+    <string name="close">बंद</string>
+    <string name="countdown_timer">Cकाउंटडाउन टाइमर</string>
+    <string name="countdown_timer_desc">रिकॉर्डिंग से पहिले केतना सेकंड इंतजार करब?</string>
+    <string name="delete_clip">क्लिप डिलीट करीं</string>
+    <string name="delete_clip_subheader">का रउवा वाकई में लास्ट क्लिप के डिलीट करल चाहत बानी?</string>
+    <string name="delete_last_clip">लास्ट क्लिप डिलीट करीं</string>
+    <string name="drafts">ड्राफ्ट्स</string>
+    <string name="filters">फिल्टर्स</string>
+    <string name="flash_off">फ्लैश</string>
+    <string name="more">अधिक</string>
+    <string name="music">म्यूजिक</string>
+    <string name="record">रिकॉर्ड</string>
+    <string name="record_duration">रिकॉर्ड के अवधि</string>
+    <string name="speed_off">स्पीड</string>
+    <string name="stickers">स्टिकर्स</string>
+</resources>

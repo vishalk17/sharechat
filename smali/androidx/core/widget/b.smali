@@ -4,14 +4,13 @@
 
 
 # static fields
-.field public static final h0:Z
+.field public static final c0:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1b
@@ -26,7 +25,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    sput-boolean v0, Landroidx/core/widget/b;->h0:Z
+    sput-boolean v0, Landroidx/core/widget/b;->c0:Z
 
     return-void
 .end method

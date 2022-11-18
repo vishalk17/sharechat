@@ -23,10 +23,9 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +34,6 @@
 .method public static a()Landroidx/work/ListenableWorker$a;
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/work/ListenableWorker$a$a;
 
     invoke-direct {v0}, Landroidx/work/ListenableWorker$a$a;-><init>()V
@@ -46,32 +44,9 @@
 .method public static b()Landroidx/work/ListenableWorker$a;
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/work/ListenableWorker$a$b;
 
     invoke-direct {v0}, Landroidx/work/ListenableWorker$a$b;-><init>()V
-
-    return-object v0
-.end method
-
-.method public static c()Landroidx/work/ListenableWorker$a;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/work/ListenableWorker$a$c;
-
-    invoke-direct {v0}, Landroidx/work/ListenableWorker$a$c;-><init>()V
-
-    return-object v0
-.end method
-
-.method public static d(Landroidx/work/e;)Landroidx/work/ListenableWorker$a;
-    .locals 1
-
-    .line 1
-    new-instance v0, Landroidx/work/ListenableWorker$a$c;
-
-    invoke-direct {v0, p0}, Landroidx/work/ListenableWorker$a$c;-><init>(Landroidx/work/e;)V
 
     return-object v0
 .end method

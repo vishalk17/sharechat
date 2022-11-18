@@ -1,181 +1,123 @@
-.class public Lp3/e;
-.super Lp3/f;
+.class public final Lp3/e;
+.super Lep0/u;
 .source "SourceFile"
+
+# interfaces
+.implements Ldp0/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lp3/f<",
+        "Lep0/u;",
+        "Ldp0/p<",
+        "Ll1/g;",
         "Ljava/lang/Integer;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
+# instance fields
+.field public final synthetic b:Ll1/l2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ll1/l2<",
+            "Ldp0/p<",
+            "Ll1/g;",
+            "Ljava/lang/Integer;",
+            "Lro0/x;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public constructor <init>(Ll1/l2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/List<",
-            "Lv3/a<",
+            "Ll1/l2<",
+            "+",
+            "Ldp0/p<",
+            "-",
+            "Ll1/g;",
+            "-",
             "Ljava/lang/Integer;",
+            "Lro0/x;",
             ">;>;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lp3/f;-><init>(Ljava/util/List;)V
+    iput-object p1, p0, Lp3/e;->b:Ll1/l2;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method bridge synthetic i(Lv3/a;F)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lp3/e;->r(Lv3/a;F)Ljava/lang/Integer;
+    check-cast p1, Ll1/g;
 
-    move-result-object p1
+    check-cast p2, Ljava/lang/Number;
 
-    return-object p1
-.end method
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
-.method public p()I
-    .locals 2
+    move-result p2
 
-    .line 1
-    invoke-virtual {p0}, Lp3/a;->b()Lv3/a;
+    and-int/lit8 p2, p2, 0xb
 
-    move-result-object v0
+    const/4 v0, 0x2
 
-    invoke-virtual {p0}, Lp3/a;->d()F
-
-    move-result v1
-
-    invoke-virtual {p0, v0, v1}, Lp3/e;->q(Lv3/a;F)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method q(Lv3/a;F)I
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/a<",
-            "Ljava/lang/Integer;",
-            ">;F)I"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p1, Lv3/a;->b:Ljava/lang/Object;
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lv3/a;->c:Ljava/lang/Object;
-
-    if-eqz v0, :cond_1
+    if-ne p2, v0, :cond_1
 
     .line 2
-    iget-object v1, p0, Lp3/a;->e:Lv3/c;
+    invoke-interface {p1}, Ll1/g;->b()Z
 
-    if-eqz v1, :cond_0
+    move-result p2
+
+    if-nez p2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {p1}, Ll1/g;->j()V
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    iget-object p2, p0, Lp3/e;->b:Ll1/l2;
 
     .line 3
-    iget v2, p1, Lv3/a;->g:F
+    invoke-interface {p2}, Ll1/l2;->getValue()Ljava/lang/Object;
 
-    iget-object v0, p1, Lv3/a;->h:Ljava/lang/Float;
+    move-result-object p2
 
-    invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
+    check-cast p2, Ldp0/p;
 
-    move-result v3
-
-    iget-object v4, p1, Lv3/a;->b:Ljava/lang/Object;
-
-    iget-object v5, p1, Lv3/a;->c:Ljava/lang/Object;
+    const/4 v0, 0x0
 
     .line 4
-    invoke-virtual {p0}, Lp3/a;->e()F
-
-    move-result v7
-
-    invoke-virtual {p0}, Lp3/a;->f()F
-
-    move-result v8
-
-    move v6, p2
-
-    .line 5
-    invoke-virtual/range {v1 .. v8}, Lv3/c;->b(FFLjava/lang/Object;Ljava/lang/Object;FFF)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Integer;
+    invoke-interface {p2, p1, v0}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v0, :cond_0
-
-    .line 6
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    move-result p1
-
-    return p1
-
-    .line 7
-    :cond_0
-    invoke-virtual {p1}, Lv3/a;->g()I
-
-    move-result v0
-
-    invoke-virtual {p1}, Lv3/a;->d()I
-
-    move-result p1
-
-    invoke-static {v0, p1, p2}, Lcom/airbnb/lottie/utils/g;->l(IIF)I
-
-    move-result p1
-
-    return p1
-
-    .line 8
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string p2, "Missing values for keyframe."
-
-    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method r(Lv3/a;F)Ljava/lang/Integer;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lv3/a<",
-            "Ljava/lang/Integer;",
-            ">;F)",
-            "Ljava/lang/Integer;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lp3/e;->q(Lv3/a;F)I
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object p1
+    .line 5
+    :goto_1
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

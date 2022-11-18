@@ -1,73 +1,37 @@
-.class public abstract Landroidx/preference/a;
+.class public final Landroidx/preference/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static a(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    return-void
-.end method
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-# virtual methods
-.method public a(Ljava/lang/String;Z)Z
-    .locals 0
+    move-result-object v1
 
-    return p2
-.end method
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public b(Ljava/lang/String;I)I
-    .locals 0
+    const-string v1, "_preferences"
 
-    return p2
-.end method
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public c(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    return-object p2
-.end method
+    move-result-object v0
 
-.method public d(Ljava/lang/String;Z)V
-    .locals 0
+    const/4 v1, 0x0
 
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    .line 2
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    const-string p2, "Not implemented on this data store"
+    move-result-object p0
 
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public e(Ljava/lang/String;I)V
-    .locals 0
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    const-string p2, "Not implemented on this data store"
-
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public f(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    const-string p2, "Not implemented on this data store"
-
-    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    throw p1
+    return-object p0
 .end method

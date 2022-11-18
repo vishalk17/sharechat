@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0xc
+    accessFlags = 0x9
     name = "SavedState"
 .end annotation
 
@@ -27,22 +27,21 @@
 
 
 # instance fields
-.field d:I
+.field public d:I
 
-.field e:I
+.field public e:I
 
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
-.field h:I
+.field public h:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState$a;
 
     invoke-direct {v0}, Landroidx/drawerlayout/widget/DrawerLayout$SavedState$a;-><init>()V
@@ -117,11 +116,13 @@
 
 
 # virtual methods
-.method public writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
     iget p2, p0, Landroidx/drawerlayout/widget/DrawerLayout$SavedState;->d:I

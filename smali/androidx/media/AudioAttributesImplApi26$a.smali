@@ -1,4 +1,4 @@
-.class Landroidx/media/AudioAttributesImplApi26$a;
+.class public final Landroidx/media/AudioAttributesImplApi26$a;
 .super Landroidx/media/AudioAttributesImplApi21$a;
 .source "SourceFile"
 
@@ -9,16 +9,15 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/media/AudioAttributesImplApi21$a;-><init>()V
 
     return-void
@@ -26,10 +25,9 @@
 
 
 # virtual methods
-.method public build()Landroidx/media/AudioAttributesImpl;
+.method public final build()Landroidx/media/AudioAttributesImpl;
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/media/AudioAttributesImplApi26;
 
     iget-object v1, p0, Landroidx/media/AudioAttributesImplApi21$a;->a:Landroid/media/AudioAttributes$Builder;

@@ -1,4 +1,4 @@
-.class Landroidx/emoji2/text/m$a;
+.class public final Landroidx/emoji2/text/m$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,129 +9,75 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
 
 # instance fields
-.field private final a:Landroid/util/SparseArray;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/util/SparseArray<",
-            "Landroidx/emoji2/text/m$a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private b:Landroidx/emoji2/text/f;
+.field public final a:Ljava/nio/ByteBuffer;
 
 
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>(Ljava/nio/ByteBuffer;)V
     .locals 1
-
-    const/4 v0, 0x1
 
     .line 1
-    invoke-direct {p0, v0}, Landroidx/emoji2/text/m$a;-><init>(I)V
-
-    return-void
-.end method
-
-.method constructor <init>(I)V
-    .locals 1
-
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-object p1, p0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
+
     .line 3
-    new-instance v0, Landroid/util/SparseArray;
+    sget-object v0, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
-    invoke-direct {v0, p1}, Landroid/util/SparseArray;-><init>(I)V
-
-    iput-object v0, p0, Landroidx/emoji2/text/m$a;->a:Landroid/util/SparseArray;
+    invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method a(I)Landroidx/emoji2/text/m$a;
-    .locals 1
+.method public final a()J
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m$a;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
 
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroidx/emoji2/text/m$a;
-
-    :goto_0
-    return-object p1
-.end method
-
-.method final b()Landroidx/emoji2/text/f;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/emoji2/text/m$a;->b:Landroidx/emoji2/text/f;
-
-    return-object v0
-.end method
-
-.method c(Landroidx/emoji2/text/f;II)V
-    .locals 3
-
-    .line 1
-    invoke-virtual {p1, p2}, Landroidx/emoji2/text/f;->b(I)I
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Landroidx/emoji2/text/m$a;->a(I)Landroidx/emoji2/text/m$a;
+    int-to-long v0, v0
 
-    move-result-object v0
+    const-wide v2, 0xffffffffL
 
-    if-nez v0, :cond_0
+    and-long/2addr v0, v2
 
-    .line 2
-    new-instance v0, Landroidx/emoji2/text/m$a;
+    return-wide v0
+.end method
 
-    invoke-direct {v0}, Landroidx/emoji2/text/m$a;-><init>()V
+.method public final b(I)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
-    .line 3
-    iget-object v1, p0, Landroidx/emoji2/text/m$a;->a:Landroid/util/SparseArray;
+    iget-object v0, p0, Landroidx/emoji2/text/m$a;->a:Ljava/nio/ByteBuffer;
 
-    invoke-virtual {p1, p2}, Landroidx/emoji2/text/f;->b(I)I
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
-    move-result v2
+    move-result v1
 
-    invoke-virtual {v1, v2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+    add-int/2addr v1, p1
 
-    :cond_0
-    if-le p3, p2, :cond_1
+    invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    add-int/lit8 p2, p2, 0x1
-
-    .line 4
-    invoke-virtual {v0, p1, p2, p3}, Landroidx/emoji2/text/m$a;->c(Landroidx/emoji2/text/f;II)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    iput-object p1, v0, Landroidx/emoji2/text/m$a;->b:Landroidx/emoji2/text/f;
-
-    :goto_0
     return-void
 .end method

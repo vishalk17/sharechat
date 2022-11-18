@@ -19,16 +19,15 @@
 
 
 # instance fields
-.field private final b:I
+.field public final b:I
 
-.field private final c:F
+.field public final c:F
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/RatingCompat$a;
 
     invoke-direct {v0}, Landroid/support/v4/media/RatingCompat$a;-><init>()V
@@ -38,7 +37,7 @@
     return-void
 .end method
 
-.method constructor <init>(IF)V
+.method public constructor <init>(IF)V
     .locals 0
 
     .line 1
@@ -55,27 +54,25 @@
 
 
 # virtual methods
-.method public describeContents()I
+.method public final describeContents()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroid/support/v4/media/RatingCompat;->b:I
 
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
+.method public final toString()Ljava/lang/String;
     .locals 3
 
+    const-string v0, "Rating:style="
+
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
-    const-string v1, "Rating:style="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    .line 2
     iget v1, p0, Landroid/support/v4/media/RatingCompat;->b:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -84,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
+    .line 3
     iget v1, p0, Landroid/support/v4/media/RatingCompat;->c:F
 
     const/4 v2, 0x0
@@ -112,7 +109,7 @@
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1

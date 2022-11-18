@@ -145,7 +145,6 @@
 .method public getConnectionTimeout()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/intercom/android/nexus/NexusConfig;->connectionTimeout:I
 
     return v0
@@ -162,7 +161,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/intercom/android/nexus/NexusConfig;->endpoints:Ljava/util/List;
 
     return-object v0
@@ -171,7 +169,6 @@
 .method public getPresenceHeartbeatInterval()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/intercom/android/nexus/NexusConfig;->presenceHeartbeatInterval:I
 
     return v0

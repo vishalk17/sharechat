@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method static values(II)[J
+.method public static values(II)[J
     .locals 8
 
     const/4 v0, 0x4
@@ -38,7 +38,6 @@
 
     add-int/lit8 p1, p0, -0x1
 
-    .line 1
     aget-wide v2, v1, p1
 
     const-wide/32 v4, 0x6c078965

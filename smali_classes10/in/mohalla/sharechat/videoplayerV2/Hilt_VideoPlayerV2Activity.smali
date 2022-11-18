@@ -1,25 +1,25 @@
 .class public abstract Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;
-.super Lin/mohalla/base/BaseActivity;
+.super Lin/mohalla/sharechat/appx/BaseActivity;
 .source "SourceFile"
 
 # interfaces
-.implements Ltl/c;
+.implements Liz/b;
 
 
 # instance fields
-.field private volatile b:Ldagger/hilt/android/internal/managers/a;
+.field public volatile b:Ldagger/hilt/android/internal/managers/a;
 
-.field private final c:Ljava/lang/Object;
+.field public final c:Ljava/lang/Object;
 
-.field private d:Z
+.field public d:Z
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lin/mohalla/base/BaseActivity;-><init>()V
+    invoke-direct {p0}, Lin/mohalla/sharechat/appx/BaseActivity;-><init>()V
 
     .line 2
     new-instance v0, Ljava/lang/Object;
@@ -34,57 +34,32 @@
     iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->d:Z
 
     .line 4
-    invoke-direct {p0}, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->se()V
+    new-instance v0, Lwm0/b;
 
-    return-void
-.end method
+    invoke-direct {v0, p0}, Lwm0/b;-><init>(Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;)V
 
-.method private se()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity$a;
-
-    invoke-direct {v0, p0}, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity$a;-><init>(Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;)V
-
-    invoke-virtual {p0, v0}, Landroidx/activity/ComponentActivity;->addOnContextAvailableListener(Lc/b;)V
+    invoke-virtual {p0, v0}, Landroidx/activity/ComponentActivity;->addOnContextAvailableListener(Lg/b;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public getDefaultViewModelProviderFactory()Landroidx/lifecycle/w0$b;
+.method public final getDefaultViewModelProviderFactory()Landroidx/lifecycle/e1$b;
     .locals 1
 
-    .line 1
-    invoke-super {p0}, Landroidx/activity/ComponentActivity;->getDefaultViewModelProviderFactory()Landroidx/lifecycle/w0$b;
+    invoke-super {p0}, Landroidx/activity/ComponentActivity;->getDefaultViewModelProviderFactory()Landroidx/lifecycle/e1$b;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Ldagger/hilt/android/internal/lifecycle/a;->a(Landroidx/activity/ComponentActivity;Landroidx/lifecycle/w0$b;)Landroidx/lifecycle/w0$b;
+    invoke-static {p0, v0}, Lgz/a;->a(Landroidx/activity/ComponentActivity;Landroidx/lifecycle/e1$b;)Landroidx/lifecycle/e1$b;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final pr()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->ve()Ldagger/hilt/android/internal/managers/a;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ldagger/hilt/android/internal/managers/a;->pr()Ljava/lang/Object;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final ve()Ldagger/hilt/android/internal/managers/a;
+.method public final ms()Ljava/lang/Object;
     .locals 2
 
     .line 1
@@ -104,13 +79,14 @@
     if-nez v1, :cond_0
 
     .line 4
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->we()Ldagger/hilt/android/internal/managers/a;
+    new-instance v1, Ldagger/hilt/android/internal/managers/a;
 
-    move-result-object v1
-
-    iput-object v1, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->b:Ldagger/hilt/android/internal/managers/a;
+    invoke-direct {v1, p0}, Ldagger/hilt/android/internal/managers/a;-><init>(Landroid/app/Activity;)V
 
     .line 5
+    iput-object v1, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->b:Ldagger/hilt/android/internal/managers/a;
+
+    .line 6
     :cond_0
     monitor-exit v0
 
@@ -125,53 +101,15 @@
 
     throw v1
 
-    .line 6
+    .line 7
     :cond_1
     :goto_0
     iget-object v0, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->b:Ldagger/hilt/android/internal/managers/a;
 
-    return-object v0
-.end method
-
-.method protected we()Ldagger/hilt/android/internal/managers/a;
-    .locals 1
-
-    .line 1
-    new-instance v0, Ldagger/hilt/android/internal/managers/a;
-
-    invoke-direct {v0, p0}, Ldagger/hilt/android/internal/managers/a;-><init>(Landroid/app/Activity;)V
-
-    return-object v0
-.end method
-
-.method protected ye()V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->d:Z
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->d:Z
-
-    .line 3
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayerV2/Hilt_VideoPlayerV2Activity;->pr()Ljava/lang/Object;
+    .line 8
+    invoke-virtual {v0}, Ldagger/hilt/android/internal/managers/a;->ms()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lin/mohalla/sharechat/videoplayerV2/h;
-
-    invoke-static {p0}, Ltl/e;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
-
-    invoke-interface {v0, v1}, Lin/mohalla/sharechat/videoplayerV2/h;->w(Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;)V
-
-    :cond_0
-    return-void
+    return-object v0
 .end method

@@ -1,140 +1,83 @@
-.class final Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;
-.super Lkotlin/jvm/internal/r;
+.class public final synthetic Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;
+.super Lep0/q;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/a;
+.implements Ldp0/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->G3(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    value = Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->da(Ljava/lang/String;Lom0/j;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x1001
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/a<",
-        "Li00/a0;",
+        "Lep0/q;",
+        "Ldp0/l<",
+        "Lom0/y2;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field final synthetic b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-.field final synthetic c:Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;Lin/mohalla/sharechat/data/repository/post/PostModel;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 7
 
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+    const-class v3, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    iput-object p2, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->c:Lin/mohalla/sharechat/data/repository/post/PostModel;
+    const/4 v1, 0x1
 
-    const/4 p1, 0x0
+    const-string v4, "setViewHolderCallback"
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    const-string v5, "setViewHolderCallback(Lin/mohalla/sharechat/videoplayer/ViewHolderContract;)V"
+
+    const/4 v6, 0x0
+
+    move-object v0, p0
+
+    move-object v2, p1
+
+    invoke-direct/range {v0 .. v6}, Lep0/q;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->invoke()V
+    check-cast p1, Lom0/y2;
 
-    sget-object v0, Li00/a0;->a:Li00/a0;
-
-    return-object v0
-.end method
-
-.method public final invoke()V
-    .locals 4
+    const-string v0, "p0"
 
     .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->c:Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    invoke-interface {v0, v1}, Lin/mohalla/sharechat/videoplayer/p;->u7(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+    iget-object v0, p0, Lep0/f;->receiver:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->vz()Lin/mohalla/sharechat/videoplayer/p;
+    check-cast v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
 
-    move-result-object v0
-
-    iget-object v1, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->c:Lin/mohalla/sharechat/data/repository/post/PostModel;
-
-    invoke-interface {v0, v1}, Lin/mohalla/sharechat/videoplayer/p;->Em(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+    sget-object v1, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->g1:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$a;
 
     .line 4
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
-
-    invoke-static {v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Uy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lru/q2;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const-string v2, "binding"
-
-    if-nez v0, :cond_0
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :cond_0
-    iget-object v0, v0, Lru/q2;->g:Landroid/widget/FrameLayout;
-
-    const-string v3, "binding.fragmentContainerReplace"
-
-    invoke-static {v0, v3}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment$k;->b:Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;
+    iput-object p1, v0, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->d1:Lom0/y2;
 
-    invoke-static {v0}, Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;->Uy(Lin/mohalla/sharechat/videoplayer/VideoPlayerFragment;)Lru/q2;
+    .line 6
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
-    move-result-object v0
-
-    if-nez v0, :cond_1
-
-    invoke-static {v2}, Lkotlin/jvm/internal/p;->u(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    move-object v1, v0
-
-    :goto_0
-    iget-object v0, v1, Lru/q2;->n:Landroid/view/View;
-
-    const-string v1, "binding.viewOutside"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v0}, Lkp/e;->t(Landroid/view/View;)V
-
-    return-void
+    return-object p1
 .end method

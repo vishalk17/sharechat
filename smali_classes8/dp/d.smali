@@ -2,32 +2,39 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lep/a$a;
+
 
 # direct methods
-.method public static final a(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/drawable/Drawable;
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
     .locals 2
 
-    const-string v0, "<this>"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
-
-    move-result-object p0
-
-    const-string v0, "mutate()"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    sget-object v0, Ldp/c;->e:Lip/a;
 
     .line 2
-    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
+    invoke-static {}, Lym/e;->e()Lym/e;
 
-    sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
+    move-result-object v0
 
-    invoke-direct {v0, p1, v1}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+    const-class v1, Ldp/c;
 
-    invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+    invoke-virtual {v0, v1}, Lym/e;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
-    return-object p0
+    move-result-object v0
+
+    check-cast v0, Ldp/c;
+
+    return-void
 .end method

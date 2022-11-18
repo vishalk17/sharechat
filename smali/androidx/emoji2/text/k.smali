@@ -1,34 +1,44 @@
-.class public final synthetic Landroidx/emoji2/text/k;
-.super Ljava/lang/Object;
+.class public final Landroidx/emoji2/text/k;
+.super Landroidx/emoji2/text/e$c;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/emoji2/text/k$a;,
+        Landroidx/emoji2/text/k$b;
+    }
+.end annotation
 
 
-# instance fields
-.field public final synthetic b:Landroidx/emoji2/text/i$b;
+# static fields
+.field public static final d:Landroidx/emoji2/text/k$a;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroidx/emoji2/text/i$b;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Landroidx/emoji2/text/k$a;
 
-    iput-object p1, p0, Landroidx/emoji2/text/k;->b:Landroidx/emoji2/text/i$b;
+    invoke-direct {v0}, Landroidx/emoji2/text/k$a;-><init>()V
+
+    sput-object v0, Landroidx/emoji2/text/k;->d:Landroidx/emoji2/text/k$a;
 
     return-void
 .end method
 
+.method public constructor <init>(Landroid/content/Context;Lr4/g;)V
+    .locals 2
 
-# virtual methods
-.method public final run()V
-    .locals 1
+    new-instance v0, Landroidx/emoji2/text/k$b;
 
-    iget-object v0, p0, Landroidx/emoji2/text/k;->b:Landroidx/emoji2/text/i$b;
+    sget-object v1, Landroidx/emoji2/text/k;->d:Landroidx/emoji2/text/k$a;
 
-    invoke-virtual {v0}, Landroidx/emoji2/text/i$b;->d()V
+    invoke-direct {v0, p1, p2, v1}, Landroidx/emoji2/text/k$b;-><init>(Landroid/content/Context;Lr4/g;Landroidx/emoji2/text/k$a;)V
+
+    invoke-direct {p0, v0}, Landroidx/emoji2/text/e$c;-><init>(Landroidx/emoji2/text/e$g;)V
 
     return-void
 .end method

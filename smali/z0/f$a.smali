@@ -1,101 +1,87 @@
 .class public final Lz0/f$a;
-.super Ljava/lang/Object;
+.super Lxo0/c;
 .source "SourceFile"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lz0/f;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lz0/f;->a(Lb2/d;Lvo0/d;)Ljava/lang/Object;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
     accessFlags = 0x19
-    name = "a"
+    name = null
+.end annotation
+
+.annotation runtime Lxo0/e;
+    c = "androidx.compose.foundation.relocation.BringIntoViewRequesterImpl"
+    f = "BringIntoViewRequester.kt"
+    l = {
+        0x79
+    }
+    m = "bringIntoView"
 .end annotation
 
 
+# instance fields
+.field public b:Lb2/d;
+
+.field public c:[Ljava/lang/Object;
+
+.field public d:I
+
+.field public e:I
+
+.field public synthetic f:Ljava/lang/Object;
+
+.field public final synthetic g:Lz0/f;
+
+.field public h:I
+
+
 # direct methods
-.method private constructor <init>()V
+.method public constructor <init>(Lz0/f;Lvo0/d;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lz0/f;",
+            "Lvo0/d<",
+            "-",
+            "Lz0/f$a;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lz0/f$a;->g:Lz0/f;
 
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
-    .locals 0
-
-    invoke-direct {p0}, Lz0/f$a;-><init>()V
+    invoke-direct {p0, p2}, Lxo0/c;-><init>(Lvo0/d;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    invoke-static {}, Lz0/f;->a()I
+    iput-object p1, p0, Lz0/f$a;->f:Ljava/lang/Object;
 
-    move-result v0
+    iget p1, p0, Lz0/f$a;->h:I
 
-    return v0
-.end method
+    const/high16 v0, -0x80000000
 
-.method public final b()I
-    .locals 1
+    or-int/2addr p1, v0
 
-    .line 1
-    invoke-static {}, Lz0/f;->b()I
+    iput p1, p0, Lz0/f$a;->h:I
 
-    move-result v0
+    iget-object p1, p0, Lz0/f$a;->g:Lz0/f;
 
-    return v0
-.end method
+    const/4 v0, 0x0
 
-.method public final c()I
-    .locals 1
+    invoke-virtual {p1, v0, p0}, Lz0/f;->a(Lb2/d;Lvo0/d;)Ljava/lang/Object;
 
-    .line 1
-    invoke-static {}, Lz0/f;->c()I
+    move-result-object p1
 
-    move-result v0
-
-    return v0
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lz0/f;->d()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final e()I
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lz0/f;->e()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final f()I
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lz0/f;->f()I
-
-    move-result v0
-
-    return v0
+    return-object p1
 .end method

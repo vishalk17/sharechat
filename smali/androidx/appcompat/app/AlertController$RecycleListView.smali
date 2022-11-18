@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field private final b:I
+.field public final b:I
 
-.field private final c:I
+.field public final c:I
 
 
 # direct methods
@@ -54,58 +54,5 @@
 
     iput p1, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->b:I
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public a(ZZ)V
-    .locals 2
-
-    if-eqz p2, :cond_0
-
-    if-nez p1, :cond_3
-
-    .line 1
-    :cond_0
-    invoke-virtual {p0}, Landroid/widget/ListView;->getPaddingLeft()I
-
-    move-result v0
-
-    if-eqz p1, :cond_1
-
-    .line 2
-    invoke-virtual {p0}, Landroid/widget/ListView;->getPaddingTop()I
-
-    move-result p1
-
-    goto :goto_0
-
-    :cond_1
-    iget p1, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->b:I
-
-    .line 3
-    :goto_0
-    invoke-virtual {p0}, Landroid/widget/ListView;->getPaddingRight()I
-
-    move-result v1
-
-    if-eqz p2, :cond_2
-
-    .line 4
-    invoke-virtual {p0}, Landroid/widget/ListView;->getPaddingBottom()I
-
-    move-result p2
-
-    goto :goto_1
-
-    :cond_2
-    iget p2, p0, Landroidx/appcompat/app/AlertController$RecycleListView;->c:I
-
-    .line 5
-    :goto_1
-    invoke-virtual {p0, v0, p1, v1, p2}, Landroid/widget/ListView;->setPadding(IIII)V
-
-    :cond_3
     return-void
 .end method

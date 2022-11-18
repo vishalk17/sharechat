@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field private b:Landroidx/emoji2/viewsintegration/f;
+.field public b:Ln5/f;
 
-.field private c:Z
+.field public c:Z
 
 
 # direct methods
@@ -17,53 +17,51 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->a()V
+    iget-boolean p1, p0, Landroidx/emoji2/widget/EmojiTextView;->c:Z
 
-    return-void
-.end method
+    if-nez p1, :cond_0
 
-.method private a()V
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Landroidx/emoji2/widget/EmojiTextView;->c:Z
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Landroidx/emoji2/widget/EmojiTextView;->c:Z
+    const/4 p1, 0x1
 
     .line 3
-    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Landroidx/emoji2/viewsintegration/f;
+    iput-boolean p1, p0, Landroidx/emoji2/widget/EmojiTextView;->c:Z
 
-    move-result-object v0
+    .line 4
+    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Ln5/f;
 
-    invoke-virtual {v0}, Landroidx/emoji2/viewsintegration/f;->c()V
+    move-result-object p1
+
+    .line 5
+    iget-object p1, p1, Ln5/f;->a:Ln5/f$b;
+
+    invoke-virtual {p1}, Ln5/f$b;->e()V
 
     :cond_0
     return-void
 .end method
 
-.method private getEmojiTextViewHelper()Landroidx/emoji2/viewsintegration/f;
-    .locals 1
+.method private getEmojiTextViewHelper()Ln5/f;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Landroidx/emoji2/viewsintegration/f;
+    iget-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Ln5/f;
 
     if-nez v0, :cond_0
 
     .line 2
-    new-instance v0, Landroidx/emoji2/viewsintegration/f;
+    new-instance v0, Ln5/f;
 
-    invoke-direct {v0, p0}, Landroidx/emoji2/viewsintegration/f;-><init>(Landroid/widget/TextView;)V
-
-    iput-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Landroidx/emoji2/viewsintegration/f;
+    const/4 v1, 0x1
 
     .line 3
+    invoke-direct {v0, p0, v1}, Ln5/f;-><init>(Landroid/widget/TextView;Z)V
+
+    .line 4
+    iput-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Ln5/f;
+
+    .line 5
     :cond_0
-    iget-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Landroidx/emoji2/viewsintegration/f;
+    iget-object v0, p0, Landroidx/emoji2/widget/EmojiTextView;->b:Ln5/f;
 
     return-object v0
 .end method
@@ -77,11 +75,14 @@
     invoke-super {p0, p1}, Landroid/widget/TextView;->setAllCaps(Z)V
 
     .line 2
-    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Landroidx/emoji2/viewsintegration/f;
+    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Ln5/f;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroidx/emoji2/viewsintegration/f;->b(Z)V
+    .line 3
+    iget-object v0, v0, Ln5/f;->a:Ln5/f$b;
+
+    invoke-virtual {v0, p1}, Ln5/f$b;->c(Z)V
 
     return-void
 .end method
@@ -90,7 +91,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Landroidx/core/widget/i;->t(Landroid/widget/TextView;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
+    invoke-static {p0, p1}, Landroidx/core/widget/i;->i(Landroid/widget/TextView;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode$Callback;
 
     move-result-object p1
 
@@ -104,14 +105,18 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Landroidx/emoji2/viewsintegration/f;
+    invoke-direct {p0}, Landroidx/emoji2/widget/EmojiTextView;->getEmojiTextViewHelper()Ln5/f;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroidx/emoji2/viewsintegration/f;->a([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
+    .line 2
+    iget-object v0, v0, Ln5/f;->a:Ln5/f$b;
+
+    invoke-virtual {v0, p1}, Ln5/f$b;->a([Landroid/text/InputFilter;)[Landroid/text/InputFilter;
 
     move-result-object p1
 
+    .line 3
     invoke-super {p0, p1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     return-void

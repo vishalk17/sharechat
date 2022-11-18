@@ -3,6 +3,7 @@
     <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowActionBar">false</item>
         <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="colorAccent">@color/link</item>
         <item name="colorPrimary">@color/secondary_bg</item>
@@ -31,6 +32,16 @@
     <style name="CardView" parent="@style/Base.CardView">
         <item name="cardBackgroundColor">?android:colorBackgroundFloating</item>
     </style>
+    <style name="Intercom.BaseMaterial" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/intercom_white</item>
+        <item name="android:colorEdgeEffect">@color/intercom_ripple_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorControlNormal">@color/intercom_help_center_grey</item>
+        <item name="colorOnBackground">@color/intercom_help_center_text</item>
+        <item name="colorSecondary">@color/intercom_help_center_grey</item>
+        <item name="colorSurface">@color/intercom_help_center_button_grey</item>
+        <item name="shapeAppearanceSmallComponent">@style/Intercom_ShapeAppearance.SmallComponent</item>
+    </style>
     <style name="MyNewTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:screenOrientation">portrait</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -39,6 +50,38 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="actionBarStyle">@style/MyActionBar</item>
         <item name="colorControlNormal">@color/primary</item>
+    </style>
+    <style name="ThemeOverlay.Material3.AutoCompleteTextView" parent="@style/Base.ThemeOverlay.Material3.AutoCompleteTextView">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="ThemeOverlay.Material3.TextInputEditText" parent="@style/Base.ThemeOverlay.Material3.TextInputEditText">
+        <item name="colorControlNormal">@color/m3_textfield_indicator_text_color</item>
+    </style>
+    <style name="Widget.Material3.ActionBar.Solid" parent="@style/Base.Widget.Material3.ActionBar.Solid">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.ActionMode" parent="@style/Base.Widget.Material3.ActionMode">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.CheckBox" parent="@style/Base.Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.RadioButton" parent="@style/Base.Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/m3_radiobutton_ripple</item>
+    </style>
+    <style name="Widget.Material3.CompoundButton.Switch" parent="@style/Base.Widget.Material3.CompoundButton.Switch">
+        <item name="android:background">@drawable/m3_selection_control_ripple</item>
+    </style>
+    <style name="Widget.Material3.Light.ActionBar.Solid" parent="@style/Base.Widget.Material3.Light.ActionBar.Solid">
+        <item name="background">@drawable/m3_appbar_background</item>
+        <item name="backgroundSplit">@drawable/m3_appbar_background</item>
+        <item name="backgroundStacked">@drawable/m3_appbar_background</item>
+    </style>
+    <style name="Widget.Material3.TabLayout.OnSurface" parent="@style/Base.Widget.Material3.TabLayout.OnSurface">
+        <item name="android:background">@drawable/m3_tabs_transparent_background</item>
     </style>
     <style name="Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu">
         <item name="android:popupBackground">?popupMenuBackground</item>

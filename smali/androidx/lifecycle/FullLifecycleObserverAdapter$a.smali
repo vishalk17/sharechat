@@ -1,4 +1,4 @@
-.class synthetic Landroidx/lifecycle/FullLifecycleObserverAdapter$a;
+.class public final synthetic Landroidx/lifecycle/FullLifecycleObserverAdapter$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,21 +9,20 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
 
 
 # static fields
-.field static final synthetic a:[I
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
-    invoke-static {}, Landroidx/lifecycle/q$b;->values()[Landroidx/lifecycle/q$b;
+    invoke-static {}, Landroidx/lifecycle/t$b;->values()[Landroidx/lifecycle/t$b;
 
     move-result-object v0
 
@@ -34,7 +33,7 @@
     sput-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
     :try_start_0
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_CREATE:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_CREATE:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -50,7 +49,7 @@
     :try_start_1
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_START:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_START:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -66,7 +65,7 @@
     :try_start_2
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_RESUME:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_RESUME:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -82,7 +81,7 @@
     :try_start_3
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_PAUSE:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_PAUSE:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -98,7 +97,7 @@
     :try_start_4
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_STOP:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_STOP:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -114,7 +113,7 @@
     :try_start_5
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_DESTROY:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_DESTROY:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -130,7 +129,7 @@
     :try_start_6
     sget-object v0, Landroidx/lifecycle/FullLifecycleObserverAdapter$a;->a:[I
 
-    sget-object v1, Landroidx/lifecycle/q$b;->ON_ANY:Landroidx/lifecycle/q$b;
+    sget-object v1, Landroidx/lifecycle/t$b;->ON_ANY:Landroidx/lifecycle/t$b;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

@@ -24,31 +24,10 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lkotlin/jvm/internal/h;)V
+.method public synthetic constructor <init>(Lep0/k;)V
     .locals 0
 
     invoke-direct {p0}, Lin/mohalla/sharechat/settings/debug/DebugSettingsDialogFragment$a;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Landroidx/fragment/app/FragmentManager;)V
-    .locals 2
-
-    const-string v0, "supportFragmentManager"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    new-instance v0, Lin/mohalla/sharechat/settings/debug/DebugSettingsDialogFragment;
-
-    invoke-direct {v0}, Lin/mohalla/sharechat/settings/debug/DebugSettingsDialogFragment;-><init>()V
-
-    const-string v1, "DebugSettingsDialogFragment"
-
-    invoke-virtual {v0, p1, v1}, Lin/mohalla/base/BaseDialogFragment;->show(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     return-void
 .end method

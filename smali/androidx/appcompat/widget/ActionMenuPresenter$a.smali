@@ -1,5 +1,5 @@
-.class Landroidx/appcompat/widget/ActionMenuPresenter$a;
-.super Landroidx/appcompat/view/menu/l;
+.class public final Landroidx/appcompat/widget/ActionMenuPresenter$a;
+.super Landroidx/appcompat/view/menu/h;
 .source "SourceFile"
 
 
@@ -9,18 +9,18 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x2
+    accessFlags = 0x1
     name = "a"
 .end annotation
 
 
 # instance fields
-.field final synthetic m:Landroidx/appcompat/widget/ActionMenuPresenter;
+.field public final synthetic m:Landroidx/appcompat/widget/ActionMenuPresenter;
 
 
 # direct methods
-.method public constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/r;Landroid/view/View;)V
-    .locals 6
+.method public constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/l;Landroid/view/View;)V
+    .locals 7
 
     .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$a;->m:Landroidx/appcompat/widget/ActionMenuPresenter;
@@ -30,6 +30,8 @@
 
     const/4 v4, 0x0
 
+    const/4 v6, 0x0
+
     move-object v0, p0
 
     move-object v1, p2
@@ -38,48 +40,46 @@
 
     move-object v3, p4
 
-    invoke-direct/range {v0 .. v5}, Landroidx/appcompat/view/menu/l;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/g;Landroid/view/View;ZI)V
-
     .line 3
-    invoke-virtual {p3}, Landroidx/appcompat/view/menu/r;->getItem()Landroid/view/MenuItem;
-
-    move-result-object p2
-
-    check-cast p2, Landroidx/appcompat/view/menu/i;
+    invoke-direct/range {v0 .. v6}, Landroidx/appcompat/view/menu/h;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/e;Landroid/view/View;ZII)V
 
     .line 4
-    invoke-virtual {p2}, Landroidx/appcompat/view/menu/i;->l()Z
+    iget-object p2, p3, Landroidx/appcompat/view/menu/l;->A:Landroidx/appcompat/view/menu/g;
+
+    .line 5
+    invoke-virtual {p2}, Landroidx/appcompat/view/menu/g;->g()Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
-    .line 5
+    .line 6
     iget-object p2, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->k:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-nez p2, :cond_0
 
-    invoke-static {p1}, Landroidx/appcompat/widget/ActionMenuPresenter;->v(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/n;
+    .line 7
+    iget-object p2, p1, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/j;
 
-    move-result-object p2
-
+    .line 8
     check-cast p2, Landroid/view/View;
 
+    .line 9
     :cond_0
-    invoke-virtual {p0, p2}, Landroidx/appcompat/view/menu/l;->f(Landroid/view/View;)V
+    iput-object p2, p0, Landroidx/appcompat/view/menu/h;->f:Landroid/view/View;
 
-    .line 6
+    .line 10
     :cond_1
-    iget-object p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$f;
+    iget-object p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroidx/appcompat/widget/ActionMenuPresenter$f;
 
-    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/l;->j(Landroidx/appcompat/view/menu/m$a;)V
+    invoke-virtual {p0, p1}, Landroidx/appcompat/view/menu/h;->d(Landroidx/appcompat/view/menu/i$a;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method protected e()V
+.method public final c()V
     .locals 2
 
     .line 1
@@ -87,15 +87,15 @@
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iput-object v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     const/4 v1, 0x0
 
     .line 2
-    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->D:I
+    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:I
 
     .line 3
-    invoke-super {p0}, Landroidx/appcompat/view/menu/l;->e()V
+    invoke-super {p0}, Landroidx/appcompat/view/menu/h;->c()V
 
     return-void
 .end method

@@ -3,364 +3,229 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        "V:",
+        "Lr0/m;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lr0/o1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lr0/o1<",
+            "TT;TV;>;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field public final c:J
+
+.field public final d:Ldp0/a;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+.field public f:Lr0/m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TV;"
+        }
+    .end annotation
+.end field
+
+.field public g:J
+
+.field public h:J
+
+.field public final i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+
 # direct methods
-.method public static synthetic a(Li00/o;Li00/o;)I
-    .locals 0
+.method public constructor <init>(Ljava/lang/Object;Lr0/o1;Lr0/m;JLjava/lang/Object;JLdp0/a;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lr0/o1<",
+            "TT;TV;>;TV;JTT;JZ",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
 
-    invoke-static {p0, p1}, Lr0/g;->d(Li00/o;Li00/o;)I
+    const-string v0, "typeConverter"
 
-    move-result p0
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return p0
-.end method
+    const-string v0, "initialVelocityVector"
 
-.method public static final synthetic b(FLjava/lang/CharSequence;Landroid/text/TextPaint;)Z
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lr0/g;->e(FLjava/lang/CharSequence;Landroid/text/TextPaint;)Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public static final c(Ljava/lang/CharSequence;Landroid/text/TextPaint;)F
-    .locals 8
-
-    const-string v0, "text"
-
-    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "paint"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-virtual {p1}, Landroid/text/TextPaint;->getTextLocale()Ljava/util/Locale;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/text/BreakIterator;->getLineInstance(Ljava/util/Locale;)Ljava/text/BreakIterator;
-
-    move-result-object v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v1, Lr0/b;
-
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v2
-
-    const/4 v3, 0x0
-
-    invoke-direct {v1, p0, v3, v2}, Lr0/b;-><init>(Ljava/lang/CharSequence;II)V
-
-    invoke-virtual {v0, v1}, Ljava/text/BreakIterator;->setText(Ljava/text/CharacterIterator;)V
+    iput-object p2, p0, Lr0/g;->a:Lr0/o1;
 
     .line 3
-    new-instance v1, Ljava/util/PriorityQueue;
+    iput-object p6, p0, Lr0/g;->b:Ljava/lang/Object;
 
     .line 4
-    sget-object v2, Lr0/f;->b:Lr0/f;
-
-    const/16 v4, 0xa
+    iput-wide p7, p0, Lr0/g;->c:J
 
     .line 5
-    invoke-direct {v1, v4, v2}, Ljava/util/PriorityQueue;-><init>(ILjava/util/Comparator;)V
+    iput-object p9, p0, Lr0/g;->d:Ldp0/a;
 
     .line 6
-    invoke-virtual {v0}, Ljava/text/BreakIterator;->next()I
-
-    move-result v2
-
-    move v3, v2
-
-    const/4 v2, 0x0
-
-    :goto_0
-    const/4 v5, -0x1
-
-    if-eq v3, v5, :cond_2
-
-    .line 7
-    invoke-virtual {v1}, Ljava/util/PriorityQueue;->size()I
-
-    move-result v5
-
-    if-ge v5, v4, :cond_0
-
-    .line 8
-    new-instance v5, Li00/o;
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    invoke-direct {v5, v2, v6}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-virtual {v1, v5}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    .line 9
-    :cond_0
-    invoke-virtual {v1}, Ljava/util/PriorityQueue;->peek()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Li00/o;
-
-    if-eqz v5, :cond_1
-
-    .line 10
-    invoke-virtual {v5}, Li00/o;->f()Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/Number;
-
-    invoke-virtual {v6}, Ljava/lang/Number;->intValue()I
-
-    move-result v6
-
-    invoke-virtual {v5}, Li00/o;->e()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/Number;
-
-    invoke-virtual {v5}, Ljava/lang/Number;->intValue()I
-
-    move-result v5
-
-    sub-int/2addr v6, v5
-
-    sub-int v5, v3, v2
-
-    if-ge v6, v5, :cond_1
-
-    .line 11
-    invoke-virtual {v1}, Ljava/util/PriorityQueue;->poll()Ljava/lang/Object;
-
-    .line 12
-    new-instance v5, Li00/o;
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    invoke-direct {v5, v2, v6}, Li00/o;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    invoke-virtual {v1, v5}, Ljava/util/PriorityQueue;->add(Ljava/lang/Object;)Z
-
-    .line 13
-    :cond_1
-    :goto_1
-    invoke-virtual {v0}, Ljava/text/BreakIterator;->next()I
-
-    move-result v2
-
-    move v7, v3
-
-    move v3, v2
-
-    move v2, v7
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 14
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_3
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Li00/o;
-
-    .line 15
-    invoke-virtual {v2}, Li00/o;->a()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/Number;
-
-    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
-
-    move-result v3
-
-    invoke-virtual {v2}, Li00/o;->b()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Number;
-
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
-    move-result v2
-
-    .line 16
-    invoke-static {p0, v3, v2, p1}, Landroid/text/Layout;->getDesiredWidth(Ljava/lang/CharSequence;IILandroid/text/TextPaint;)F
-
-    move-result v2
-
-    .line 17
-    invoke-static {v0, v2}, Ljava/lang/Math;->max(FF)F
-
-    move-result v0
-
-    goto :goto_2
-
-    :cond_3
-    return v0
-.end method
-
-.method private static final d(Li00/o;Li00/o;)I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Li00/o;->f()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Number;
-
-    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Li00/o;->e()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
-
-    move-result p0
-
-    sub-int/2addr v0, p0
-
-    invoke-virtual {p1}, Li00/o;->f()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/Number;
-
-    invoke-virtual {p0}, Ljava/lang/Number;->intValue()I
-
-    move-result p0
-
-    invoke-virtual {p1}, Li00/o;->e()Ljava/lang/Object;
+    invoke-static {p1}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
 
     move-result-object p1
 
-    check-cast p1, Ljava/lang/Number;
+    check-cast p1, Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    iput-object p1, p0, Lr0/g;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    move-result p1
+    .line 7
+    invoke-static {p3}, Lds0/r;->L(Lr0/m;)Lr0/m;
 
-    sub-int/2addr p0, p1
+    move-result-object p1
 
-    sub-int/2addr v0, p0
+    iput-object p1, p0, Lr0/g;->f:Lr0/m;
+
+    .line 8
+    iput-wide p4, p0, Lr0/g;->g:J
+
+    const-wide/high16 p1, -0x8000000000000000L
+
+    .line 9
+    iput-wide p1, p0, Lr0/g;->h:J
+
+    .line 10
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    invoke-static {p1}, La/e;->H(Ljava/lang/Object;)Ll1/w0;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    iput-object p1, p0, Lr0/g;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lr0/g;->e()V
+
+    .line 2
+    iget-object v0, p0, Lr0/g;->d:Ldp0/a;
+
+    invoke-interface {v0}, Ldp0/a;->invoke()Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final b()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lr0/g;->e:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    invoke-virtual {v0}, Ll1/c2;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lr0/g;->a:Lr0/o1;
+
+    invoke-interface {v0}, Lr0/o1;->b()Ldp0/l;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lr0/g;->f:Lr0/m;
+
+    invoke-interface {v0, v1}, Ldp0/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr0/g;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
+
+    .line 2
+    invoke-virtual {v0}, Ll1/c2;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
 
     return v0
 .end method
 
-.method private static final e(FLjava/lang/CharSequence;Landroid/text/TextPaint;)Z
-    .locals 3
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    cmpg-float p0, p0, v0
-
-    if-nez p0, :cond_0
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    if-nez p0, :cond_2
+.method public final e()V
+    .locals 2
 
     .line 1
-    instance-of p0, p1, Landroid/text/Spanned;
+    iget-object v0, p0, Lr0/g;->i:Landroidx/compose/runtime/ParcelableSnapshotMutableState;
 
-    if-eqz p0, :cond_2
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
-    invoke-virtual {p2}, Landroid/text/TextPaint;->getLetterSpacing()F
+    invoke-virtual {v0, v1}, Ll1/c2;->setValue(Ljava/lang/Object;)V
 
-    move-result p0
-
-    cmpg-float p0, p0, v0
-
-    if-nez p0, :cond_1
-
-    const/4 p0, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 p0, 0x0
-
-    :goto_1
-    if-eqz p0, :cond_3
-
-    .line 3
-    check-cast p1, Landroid/text/Spanned;
-
-    const-class p0, Lt0/d;
-
-    invoke-static {p1, p0}, Lr0/j;->a(Landroid/text/Spanned;Ljava/lang/Class;)Z
-
-    move-result p0
-
-    if-nez p0, :cond_3
-
-    .line 4
-    const-class p0, Lt0/c;
-
-    invoke-static {p1, p0}, Lr0/j;->a(Landroid/text/Spanned;Ljava/lang/Class;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v1, 0x0
-
-    :cond_3
-    :goto_2
-    return v1
+    return-void
 .end method

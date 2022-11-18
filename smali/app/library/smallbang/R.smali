@@ -6,23 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lapp/library/smallbang/R$anim;,
-        Lapp/library/smallbang/R$animator;,
-        Lapp/library/smallbang/R$attr;,
-        Lapp/library/smallbang/R$bool;,
-        Lapp/library/smallbang/R$color;,
-        Lapp/library/smallbang/R$dimen;,
-        Lapp/library/smallbang/R$drawable;,
-        Lapp/library/smallbang/R$id;,
-        Lapp/library/smallbang/R$integer;,
-        Lapp/library/smallbang/R$interpolator;,
-        Lapp/library/smallbang/R$layout;,
-        Lapp/library/smallbang/R$menu;,
-        Lapp/library/smallbang/R$plurals;,
-        Lapp/library/smallbang/R$string;,
-        Lapp/library/smallbang/R$style;,
-        Lapp/library/smallbang/R$styleable;,
-        Lapp/library/smallbang/R$xml;
+        Lapp/library/smallbang/R$id;
     }
 .end annotation
 

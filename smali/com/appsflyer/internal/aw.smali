@@ -115,7 +115,7 @@
     return-object v0
 .end method
 
-.method protected abstract AFKeystoreWrapper()Ljava/lang/Object;
+.method public abstract AFKeystoreWrapper()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TT;"

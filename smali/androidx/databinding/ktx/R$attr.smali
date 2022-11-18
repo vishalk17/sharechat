@@ -15,47 +15,47 @@
 
 
 # static fields
-.field public static final alpha:I = 0x7f04003c
+.field public static final alpha:I = 0x7f040039
 
-.field public static final coordinatorLayoutStyle:I = 0x7f040181
+.field public static final coordinatorLayoutStyle:I = 0x7f04019d
 
-.field public static final font:I = 0x7f04026b
+.field public static final font:I = 0x7f0402b2
 
-.field public static final fontProviderAuthority:I = 0x7f04026d
+.field public static final fontProviderAuthority:I = 0x7f0402b4
 
-.field public static final fontProviderCerts:I = 0x7f04026e
+.field public static final fontProviderCerts:I = 0x7f0402b5
 
-.field public static final fontProviderFetchStrategy:I = 0x7f04026f
+.field public static final fontProviderFetchStrategy:I = 0x7f0402b6
 
-.field public static final fontProviderFetchTimeout:I = 0x7f040270
+.field public static final fontProviderFetchTimeout:I = 0x7f0402b7
 
-.field public static final fontProviderPackage:I = 0x7f040271
+.field public static final fontProviderPackage:I = 0x7f0402b8
 
-.field public static final fontProviderQuery:I = 0x7f040272
+.field public static final fontProviderQuery:I = 0x7f0402b9
 
-.field public static final fontStyle:I = 0x7f040274
+.field public static final fontStyle:I = 0x7f0402bb
 
-.field public static final fontVariationSettings:I = 0x7f040275
+.field public static final fontVariationSettings:I = 0x7f0402bc
 
-.field public static final fontWeight:I = 0x7f040276
+.field public static final fontWeight:I = 0x7f0402bd
 
-.field public static final keylines:I = 0x7f0402e8
+.field public static final keylines:I = 0x7f040336
 
-.field public static final layout_anchor:I = 0x7f0402f5
+.field public static final layout_anchor:I = 0x7f040344
 
-.field public static final layout_anchorGravity:I = 0x7f0402f6
+.field public static final layout_anchorGravity:I = 0x7f040345
 
-.field public static final layout_behavior:I = 0x7f0402f7
+.field public static final layout_behavior:I = 0x7f040346
 
-.field public static final layout_dodgeInsetEdges:I = 0x7f040328
+.field public static final layout_dodgeInsetEdges:I = 0x7f040377
 
-.field public static final layout_insetEdge:I = 0x7f040338
+.field public static final layout_insetEdge:I = 0x7f040387
 
-.field public static final layout_keyline:I = 0x7f040339
+.field public static final layout_keyline:I = 0x7f040388
 
-.field public static final statusBarBackground:I = 0x7f040554
+.field public static final statusBarBackground:I = 0x7f04059c
 
-.field public static final ttcIndex:I = 0x7f04061a
+.field public static final ttcIndex:I = 0x7f04067e
 
 
 # direct methods

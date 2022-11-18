@@ -1,48 +1,35 @@
-.class public final synthetic Lme0/c;
-.super Ljava/lang/Object;
+.class public final Lme0/c;
+.super Lia0/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lrz/c;
 
-
-# static fields
-.field public static final synthetic a:Lme0/c;
+# instance fields
+.field public final synthetic n:Lin/mohalla/sharechat/contacts/invitefragment/InviteUserFragment;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lme0/c;
-
-    invoke-direct {v0}, Lme0/c;-><init>()V
-
-    sput-object v0, Lme0/c;->a:Lme0/c;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
+.method public constructor <init>(Landroidx/recyclerview/widget/LinearLayoutManager;Lin/mohalla/sharechat/contacts/invitefragment/InviteUserFragment;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lme0/c;->n:Lin/mohalla/sharechat/contacts/invitefragment/InviteUserFragment;
+
+    invoke-direct {p0, p1}, Lia0/a;-><init>(Landroidx/recyclerview/widget/LinearLayoutManager;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final b(I)V
     .locals 0
 
-    check-cast p1, Ljava/lang/Integer;
+    iget-object p1, p0, Lme0/c;->n:Lin/mohalla/sharechat/contacts/invitefragment/InviteUserFragment;
 
-    check-cast p2, Lin/mohalla/sharechat/common/abtest/a;
-
-    invoke-static {p1, p2}, Lme0/l;->x(Ljava/lang/Integer;Lin/mohalla/sharechat/common/abtest/a;)Li00/o;
+    invoke-virtual {p1}, Lin/mohalla/sharechat/contacts/invitefragment/InviteUserFragment;->Fz()Lme0/a;
 
     move-result-object p1
 
-    return-object p1
+    invoke-interface {p1}, Lme0/a;->nc()V
+
+    return-void
 .end method

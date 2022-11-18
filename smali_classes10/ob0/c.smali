@@ -1,44 +1,37 @@
-.class public final synthetic Lob0/c;
+.class public interface abstract Lob0/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lrz/g;
+.implements Lq60/m;
 
 
-# static fields
-.field public static final synthetic b:Lob0/c;
-
-
-# direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lob0/c;
-
-    invoke-direct {v0}, Lob0/c;-><init>()V
-
-    sput-object v0, Lob0/c;->b:Lob0/c;
-
-    return-void
-.end method
-
-.method private synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lq60/m<",
+        "Lob0/d;",
+        ">;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 0
+.method public abstract Cf(ZLjava/lang/String;)V
+.end method
 
-    check-cast p1, Ljava/lang/Throwable;
+.method public abstract W5()V
+.end method
 
-    invoke-static {p1}, Lob0/e;->j(Ljava/lang/Throwable;)V
+.method public abstract Yc(Ljava/lang/String;Z)V
+.end method
 
-    return-void
+.method public abstract i2(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)V
+.end method
+
+.method public abstract wh(Lin/mohalla/sharechat/data/repository/user/UserModel;ILjava/lang/String;)V
+.end method
+
+.method public abstract x8(ILjava/lang/String;ILjava/lang/String;)V
 .end method

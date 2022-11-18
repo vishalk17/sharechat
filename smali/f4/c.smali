@@ -1,85 +1,40 @@
 .class public final Lf4/c;
-.super Lcom/bumptech/glide/i;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lcom/bumptech/glide/i<",
-        "Lf4/c;",
-        "Landroid/graphics/drawable/Drawable;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field public final synthetic b:Lf4/f$a;
+
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lf4/f$a;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lcom/bumptech/glide/i;-><init>()V
+    iput-object p1, p0, Lf4/c;->b:Lf4/f$a;
+
+    iput-object p2, p0, Lf4/c;->c:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static h()Lf4/c;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lf4/c;
-
-    invoke-direct {v0}, Lf4/c;-><init>()V
-
-    invoke-virtual {v0}, Lf4/c;->e()Lf4/c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public e()Lf4/c;
-    .locals 1
+.method public final run()V
+    .locals 2
 
-    .line 1
-    new-instance v0, Ll4/a$a;
+    iget-object v0, p0, Lf4/c;->b:Lf4/f$a;
 
-    invoke-direct {v0}, Ll4/a$a;-><init>()V
+    iget-object v1, p0, Lf4/c;->c:Ljava/lang/Object;
 
-    invoke-virtual {p0, v0}, Lf4/c;->f(Ll4/a$a;)Lf4/c;
+    iput-object v1, v0, Lf4/f$a;->b:Ljava/lang/Object;
 
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public f(Ll4/a$a;)Lf4/c;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p1}, Ll4/a$a;->a()Ll4/a;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lf4/c;->g(Ll4/a;)Lf4/c;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public g(Ll4/a;)Lf4/c;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lcom/bumptech/glide/i;->d(Ll4/e;)Lcom/bumptech/glide/i;
-
-    move-result-object p1
-
-    check-cast p1, Lf4/c;
-
-    return-object p1
+    return-void
 .end method

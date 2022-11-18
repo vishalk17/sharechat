@@ -1,36 +1,22 @@
-.class public final synthetic Ln60/d;
+.class public final Ln60/d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/lifecycle/i0;
+.implements Ln61/l;
 
 
 # instance fields
-.field public final synthetic a:Ld80/q0;
+.field public final synthetic a:Ln60/c$c;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ld80/q0;)V
+.method public constructor <init>(Ln60/c$c;)V
     .locals 0
 
+    iput-object p1, p0, Ln60/d;->a:Ln60/c$c;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ln60/d;->a:Ld80/q0;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 1
-
-    iget-object v0, p0, Ln60/d;->a:Ld80/q0;
-
-    check-cast p1, Lom0/e;
-
-    invoke-static {v0, p1}, Lsharechat/feature/chatroom/battle_mode/entry/BattleModeBattleOptionsFragment;->qy(Ld80/q0;Lom0/e;)V
 
     return-void
 .end method

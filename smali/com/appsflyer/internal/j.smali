@@ -4,15 +4,15 @@
 
 
 # static fields
-.field static final AFInAppEventType:I
+.field public static final AFInAppEventType:I
 
-.field static AFKeystoreWrapper:[Ljava/lang/String;
+.field public static AFKeystoreWrapper:[Ljava/lang/String;
 
-.field static AppsFlyer2dXConversionCallback:[Ljava/lang/String;
+.field public static AppsFlyer2dXConversionCallback:[Ljava/lang/String;
 
 .field private static init:Lcom/appsflyer/internal/j;
 
-.field static volatile valueOf:Z
+.field public static volatile valueOf:Z
 
 .field public static values:Landroid/content/Intent;
 
@@ -46,10 +46,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 3
 
-    .line 1
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x2
@@ -163,7 +162,7 @@
     return v1
 .end method
 
-.method static AFInAppEventType(Landroid/content/Intent;)Landroid/net/Uri;
+.method public static AFInAppEventType(Landroid/content/Intent;)Landroid/net/Uri;
     .locals 2
 
     if-eqz p0, :cond_0
@@ -447,7 +446,7 @@
 
     check-cast v7, Ljava/lang/String;
 
-    invoke-virtual {v3, v7}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -662,7 +661,7 @@
     return v5
 .end method
 
-.method static synthetic AFKeystoreWrapper(Ljava/lang/String;)Z
+.method public static synthetic AFKeystoreWrapper(Ljava/lang/String;)Z
     .locals 0
 
     .line 1
@@ -675,7 +674,7 @@
 
 
 # virtual methods
-.method final AFInAppEventType(Landroid/content/Context;Ljava/util/Map;Landroid/net/Uri;)V
+.method public final AFInAppEventType(Landroid/content/Context;Ljava/util/Map;Landroid/net/Uri;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -745,7 +744,7 @@
 
     invoke-direct {v1, p0, p3, p2, p1}, Lcom/appsflyer/internal/j$1;-><init>(Lcom/appsflyer/internal/j;Landroid/net/Uri;Ljava/util/Map;Landroid/content/Context;)V
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/ScheduledExecutorService;->execute(Ljava/lang/Runnable;)V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     goto :goto_0
 
@@ -766,7 +765,7 @@
     return-void
 .end method
 
-.method final AFKeystoreWrapper(Ljava/util/Map;Lcom/appsflyer/internal/au;Landroid/content/Intent;Landroid/content/Context;)V
+.method public final AFKeystoreWrapper(Ljava/util/Map;Lcom/appsflyer/internal/au;Landroid/content/Intent;Landroid/content/Context;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {

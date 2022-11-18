@@ -1,56 +1,58 @@
 .class public final Lt0/b;
-.super Landroid/text/style/MetricAffectingSpan;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final b:Ljava/lang/String;
+# static fields
+.field public static final a:Lt0/b$a;
+
+.field public static final b:Lx1/h;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
-
-    const-string v0, "fontFeatureSettings"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
+    new-instance v0, Lt0/b$a;
 
-    iput-object p1, p0, Lt0/b;->b:Ljava/lang/String;
+    invoke-direct {v0}, Lt0/b$a;-><init>()V
 
-    return-void
-.end method
+    sput-object v0, Lt0/b;->a:Lt0/b$a;
 
+    .line 2
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-# virtual methods
-.method public updateDrawState(Landroid/text/TextPaint;)V
-    .locals 1
+    const/16 v1, 0x1f
 
-    const-string v0, "textPaint"
+    if-lt v0, v1, :cond_0
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 3
+    sget-object v0, Lx1/h;->C0:Lx1/h$a;
 
-    .line 1
-    iget-object v0, p0, Lt0/b;->b:Ljava/lang/String;
+    .line 4
+    sget-object v1, Lt0/b$b;->b:Lt0/b$b;
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setFontFeatureSettings(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lrk/ba;->F(Lx1/h;Ldp0/q;)Lx1/h;
 
-    return-void
-.end method
+    move-result-object v0
 
-.method public updateMeasureState(Landroid/text/TextPaint;)V
-    .locals 1
+    .line 5
+    sget-object v1, Lt0/b$c;->b:Lt0/b$c;
 
-    const-string v0, "textPaint"
+    invoke-static {v0, v1}, Lrk/ba;->F(Lx1/h;Ldp0/q;)Lx1/h;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
-    .line 1
-    iget-object v0, p0, Lt0/b;->b:Ljava/lang/String;
+    goto :goto_0
 
-    invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setFontFeatureSettings(Ljava/lang/String;)V
+    .line 6
+    :cond_0
+    sget-object v0, Lx1/h;->C0:Lx1/h$a;
+
+    .line 7
+    :goto_0
+    sput-object v0, Lt0/b;->b:Lx1/h;
 
     return-void
 .end method

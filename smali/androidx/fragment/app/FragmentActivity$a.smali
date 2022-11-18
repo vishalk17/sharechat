@@ -1,9 +1,9 @@
-.class Landroidx/fragment/app/FragmentActivity$a;
+.class public final Landroidx/fragment/app/FragmentActivity$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Landroidx/savedstate/b$c;
+.implements Lk6/a$c;
 
 
 # annotations
@@ -12,20 +12,19 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = null
 .end annotation
 
 
 # instance fields
-.field final synthetic a:Landroidx/fragment/app/FragmentActivity;
+.field public final synthetic a:Landroidx/fragment/app/FragmentActivity;
 
 
 # direct methods
-.method constructor <init>(Landroidx/fragment/app/FragmentActivity;)V
+.method public constructor <init>(Landroidx/fragment/app/FragmentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentActivity$a;->a:Landroidx/fragment/app/FragmentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +34,7 @@
 
 
 # virtual methods
-.method public a()Landroid/os/Bundle;
+.method public final a()Landroid/os/Bundle;
     .locals 3
 
     .line 1
@@ -51,18 +50,23 @@
     .line 3
     iget-object v1, p0, Landroidx/fragment/app/FragmentActivity$a;->a:Landroidx/fragment/app/FragmentActivity;
 
-    iget-object v1, v1, Landroidx/fragment/app/FragmentActivity;->mFragmentLifecycleRegistry:Landroidx/lifecycle/z;
+    iget-object v1, v1, Landroidx/fragment/app/FragmentActivity;->mFragmentLifecycleRegistry:Landroidx/lifecycle/c0;
 
-    sget-object v2, Landroidx/lifecycle/q$b;->ON_STOP:Landroidx/lifecycle/q$b;
+    sget-object v2, Landroidx/lifecycle/t$b;->ON_STOP:Landroidx/lifecycle/t$b;
 
-    invoke-virtual {v1, v2}, Landroidx/lifecycle/z;->h(Landroidx/lifecycle/q$b;)V
+    invoke-virtual {v1, v2}, Landroidx/lifecycle/c0;->f(Landroidx/lifecycle/t$b;)V
 
     .line 4
     iget-object v1, p0, Landroidx/fragment/app/FragmentActivity$a;->a:Landroidx/fragment/app/FragmentActivity;
 
-    iget-object v1, v1, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/e;
+    iget-object v1, v1, Landroidx/fragment/app/FragmentActivity;->mFragments:Landroidx/fragment/app/m;
 
-    invoke-virtual {v1}, Landroidx/fragment/app/e;->x()Landroid/os/Parcelable;
+    .line 5
+    iget-object v1, v1, Landroidx/fragment/app/m;->a:Landroidx/fragment/app/o;
+
+    iget-object v1, v1, Landroidx/fragment/app/o;->e:Landroidx/fragment/app/s;
+
+    invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->g0()Landroid/os/Parcelable;
 
     move-result-object v1
 
@@ -70,7 +74,7 @@
 
     const-string v2, "android:support:fragments"
 
-    .line 5
+    .line 6
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     :cond_0

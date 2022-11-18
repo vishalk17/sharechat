@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x4018
+    accessFlags = 0x4019
     name = "c"
 .end annotation
 
@@ -59,7 +59,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 16
 
     .line 1
@@ -355,7 +355,7 @@
     return-object p0
 .end method
 
-.method static synthetic valueOf(Lcom/appsflyer/internal/al$c;)Ljava/lang/String;
+.method public static synthetic valueOf(Lcom/appsflyer/internal/al$c;)Ljava/lang/String;
     .locals 0
 
     .line 2
@@ -364,7 +364,7 @@
     return-object p0
 .end method
 
-.method static synthetic values(Lcom/appsflyer/internal/al$c;)Ljava/lang/String;
+.method public static synthetic values(Lcom/appsflyer/internal/al$c;)Ljava/lang/String;
     .locals 0
 
     .line 1

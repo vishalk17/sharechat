@@ -1,53 +1,39 @@
 .class public final Li2/d;
-.super Li2/c;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final a:Li2/d;
+
+.field public static final b:I
+
+
 # direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/Choreographer;Ljava/util/List;)V
+.method public static constructor <clinit>()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/view/View;",
-            "Landroid/view/Choreographer;",
-            "Ljava/util/List<",
-            "Li2/q;",
-            ">;)V"
-        }
-    .end annotation
 
-    const-string v0, "decorView"
+    new-instance v0, Li2/d;
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Li2/d;-><init>()V
 
-    const-string v0, "choreographer"
-
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "delegates"
-
-    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    sput-object v0, Li2/d;->a:Li2/d;
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Li2/c;-><init>(Landroid/view/View;Landroid/view/Choreographer;Ljava/util/List;)V
+    sget-object v0, Li2/b;->a:Li2/b$a;
+
+    const/16 v0, 0x9
+
+    .line 2
+    sput v0, Li2/d;->b:I
 
     return-void
 .end method
 
+.method private constructor <init>()V
+    .locals 0
 
-# virtual methods
-.method public f(Landroid/os/Message;)V
-    .locals 1
-
-    const-string v0, "message"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    .line 1
-    invoke-virtual {p1, v0}, Landroid/os/Message;->setAsynchronous(Z)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method

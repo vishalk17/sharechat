@@ -1,892 +1,644 @@
-.class public Lu0/b;
+.class public final Lu0/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lz0/k;
+.implements Lq2/m0;
+.implements Lq2/l0;
+
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        "V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        Lu0/b$a;
     }
 .end annotation
 
 
 # instance fields
-.field private final a:Lw0/k;
+.field public final b:Lyr0/e0;
 
-.field private final b:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "TK;TV;>;"
-        }
-    .end annotation
-.end field
+.field public final c:Lu0/m0;
 
-.field private final c:Ljava/util/LinkedHashSet;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/LinkedHashSet<",
-            "TK;>;"
-        }
-    .end annotation
-.end field
+.field public final d:Lu0/e1;
 
-.field private d:I
+.field public final e:Z
 
-.field private e:I
+.field public f:Lq2/q;
 
-.field private f:I
+.field public g:Lq2/q;
 
-.field private g:I
+.field public h:Ln3/i;
 
-.field private h:I
-
-.field private i:I
-
-.field private j:I
+.field public final i:Lx1/h;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 2
+.method public constructor <init>(Lyr0/e0;Lu0/m0;Lu0/e1;Z)V
+    .locals 1
+
+    const-string v0, "scope"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "orientation"
+
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "scrollableState"
+
+    invoke-static {p3, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, Lw0/j;->a()Lw0/k;
+    iput-object p1, p0, Lu0/b;->b:Lyr0/e0;
 
-    move-result-object v0
+    .line 3
+    iput-object p2, p0, Lu0/b;->c:Lu0/m0;
 
-    iput-object v0, p0, Lu0/b;->a:Lw0/k;
+    .line 4
+    iput-object p3, p0, Lu0/b;->d:Lu0/e1;
 
-    const/4 v0, 0x0
+    .line 5
+    iput-boolean p4, p0, Lu0/b;->e:Z
 
-    if-lez p1, :cond_0
+    .line 6
+    new-instance p1, Lu0/b$b;
 
-    const/4 v1, 0x1
+    invoke-direct {p1, p0}, Lu0/b$b;-><init>(Lu0/b;)V
+
+    sget-object p2, Lt0/d1;->a:Lr2/e;
+
+    .line 7
+    sget-object p2, Landroidx/compose/ui/platform/j1;->a:Landroidx/compose/ui/platform/j1$a;
+
+    sget-object p2, Landroidx/compose/ui/platform/j1;->a:Landroidx/compose/ui/platform/j1$a;
+
+    .line 8
+    new-instance p3, Lt0/e1;
+
+    invoke-direct {p3, p1}, Lt0/e1;-><init>(Ldp0/l;)V
+
+    invoke-static {p0, p2, p3}, Lx1/g;->a(Lx1/h;Ldp0/l;Ldp0/q;)Lx1/h;
+
+    move-result-object p1
+
+    const-string p3, "<this>"
+
+    .line 9
+    invoke-static {p1, p3}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 10
+    new-instance p3, Lz0/l;
+
+    invoke-direct {p3, p0}, Lz0/l;-><init>(Lz0/k;)V
+
+    invoke-static {p1, p2, p3}, Lx1/g;->a(Lx1/h;Ldp0/l;Ldp0/q;)Lx1/h;
+
+    move-result-object p1
+
+    .line 11
+    iput-object p1, p0, Lu0/b;->i:Lx1/h;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final B(Ljava/lang/Object;Ldp0/p;)Ljava/lang/Object;
+    .locals 0
+
+    invoke-interface {p2, p0, p1}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic D0(Ldp0/l;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Lx1/i;->a(Lx1/h$b;Ldp0/l;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final X(J)V
+    .locals 10
+
+    .line 1
+    iget-object v0, p0, Lu0/b;->g:Lq2/q;
+
+    .line 2
+    iget-object v1, p0, Lu0/b;->h:Ln3/i;
+
+    if-eqz v1, :cond_4
+
+    .line 3
+    iget-wide v2, v1, Ln3/i;->a:J
+
+    .line 4
+    invoke-static {v2, v3, p1, p2}, Ln3/i;->a(JJ)Z
+
+    move-result v2
+
+    if-nez v2, :cond_4
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Lq2/q;->B()Z
+
+    move-result v4
+
+    if-ne v4, v3, :cond_0
+
+    const/4 v4, 0x1
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    const/4 v4, 0x0
 
     :goto_0
-    if-eqz v1, :cond_1
-
-    .line 3
-    iput p1, p0, Lu0/b;->e:I
-
-    .line 4
-    new-instance p1, Ljava/util/HashMap;
-
-    const/high16 v1, 0x3f400000    # 0.75f
-
-    invoke-direct {p1, v0, v1}, Ljava/util/HashMap;-><init>(IF)V
-
-    iput-object p1, p0, Lu0/b;->b:Ljava/util/HashMap;
+    if-eqz v4, :cond_4
 
     .line 5
-    new-instance p1, Ljava/util/LinkedHashSet;
-
-    invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
-
-    iput-object p1, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    return-void
+    iget-wide v4, v1, Ln3/i;->a:J
 
     .line 6
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    iget-object v1, p0, Lu0/b;->c:Lu0/m0;
 
-    const-string v0, "maxSize <= 0"
+    sget-object v6, Lu0/m0;->Horizontal:Lu0/m0;
+
+    if-ne v1, v6, :cond_1
+
+    .line 7
+    invoke-interface {v0}, Lq2/q;->a()J
+
+    move-result-wide v6
+
+    sget-object v1, Ln3/i;->b:Ln3/i$a;
+
+    const/16 v1, 0x20
+
+    shr-long/2addr v6, v1
+
+    long-to-int v7, v6
+
+    shr-long v8, v4, v1
+
+    long-to-int v1, v8
+
+    if-ge v7, v1, :cond_2
+
+    goto :goto_1
+
+    .line 8
+    :cond_1
+    invoke-interface {v0}, Lq2/q;->a()J
+
+    move-result-wide v6
+
+    invoke-static {v6, v7}, Ln3/i;->b(J)I
+
+    move-result v1
+
+    invoke-static {v4, v5}, Ln3/i;->b(J)I
+
+    move-result v6
+
+    if-ge v1, v6, :cond_2
+
+    :goto_1
+    const/4 v1, 0x1
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v1, 0x0
+
+    :goto_2
+    if-nez v1, :cond_3
+
+    goto :goto_3
+
+    .line 9
+    :cond_3
+    iget-object v1, p0, Lu0/b;->f:Lq2/q;
+
+    if-eqz v1, :cond_4
+
+    .line 10
+    invoke-interface {v0, v1, v2}, Lq2/q;->b(Lq2/q;Z)Lb2/d;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    .line 11
+    sget-object v2, Lb2/c;->b:Lb2/c$a;
+
+    invoke-static {v2}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    sget-wide v6, Lb2/c;->c:J
+
+    .line 13
+    invoke-static {v4, v5}, Lsk/yc;->M(J)J
+
+    move-result-wide v4
+
+    invoke-static {v6, v7, v4, v5}, Lds0/m;->d(JJ)Lb2/d;
+
+    move-result-object v2
+
+    .line 14
+    invoke-interface {v0}, Lq2/q;->a()J
+
+    move-result-wide v4
+
+    invoke-virtual {p0, v1, v4, v5}, Lu0/b;->d(Lb2/d;J)Lb2/d;
+
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v2, v1}, Lb2/d;->f(Lb2/d;)Z
+
+    move-result v2
+
+    .line 16
+    invoke-static {v0, v1}, Lep0/s;->c(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    xor-int/2addr v3, v4
+
+    if-eqz v2, :cond_4
+
+    if-eqz v3, :cond_4
+
+    .line 17
+    iget-object v2, p0, Lu0/b;->b:Lyr0/e0;
+
+    new-instance v3, Lu0/c;
+
+    const/4 v4, 0x0
+
+    invoke-direct {v3, p0, v1, v0, v4}, Lu0/c;-><init>(Lu0/b;Lb2/d;Lb2/d;Lvo0/d;)V
+
+    const/4 v0, 0x3
+
+    invoke-static {v2, v4, v4, v3, v0}, Lyr0/h;->l(Lyr0/e0;Lvo0/f;Lyr0/f0;Ldp0/p;I)Lyr0/l1;
+
+    .line 18
+    :cond_4
+    :goto_3
+    new-instance v0, Ln3/i;
+
+    invoke-direct {v0, p1, p2}, Ln3/i;-><init>(J)V
+
+    .line 19
+    iput-object v0, p0, Lu0/b;->h:Ln3/i;
+
+    return-void
+.end method
+
+.method public final a(Lb2/d;Lvo0/d;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lb2/d;",
+            "Lvo0/d<",
+            "-",
+            "Lro0/x;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Lu0/b;->c(Lb2/d;)Lb2/d;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1, v0, p2}, Lu0/b;->e(Lb2/d;Lb2/d;Lvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 2
+    sget-object p2, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
+
+    if-ne p1, p2, :cond_0
+
+    return-object p1
+
+    .line 3
+    :cond_0
+    sget-object p1, Lro0/x;->a:Lro0/x;
+
+    return-object p1
+.end method
+
+.method public final c(Lb2/d;)Lb2/d;
+    .locals 2
+
+    const-string v0, "localRect"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    iget-object v0, p0, Lu0/b;->h:Ln3/i;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-wide v0, v0, Ln3/i;->a:J
+
+    .line 3
+    invoke-virtual {p0, p1, v0, v1}, Lu0/b;->d(Lb2/d;J)Lb2/d;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 4
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    const-string v0, "Expected BringIntoViewRequester to not be used before parents are placed."
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw p1
 .end method
 
-.method public static final synthetic a(Lu0/b;)Lw0/k;
-    .locals 0
+.method public final d(Lb2/d;J)Lb2/d;
+    .locals 3
 
     .line 1
-    iget-object p0, p0, Lu0/b;->a:Lw0/k;
+    invoke-static {p2, p3}, Lsk/yc;->M(J)J
 
-    return-object p0
-.end method
+    move-result-wide p2
 
-.method private final g(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;TV;)I"
-        }
-    .end annotation
+    .line 2
+    iget-object v0, p0, Lu0/b;->c:Lu0/m0;
 
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lu0/b;->i(Ljava/lang/Object;Ljava/lang/Object;)I
+    sget-object v1, Lu0/b$a;->a:[I
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
 
     move-result v0
 
-    if-ltz v0, :cond_0
+    aget v0, v1, v0
 
     const/4 v1, 0x1
 
+    const/4 v2, 0x0
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    .line 3
+    iget v0, p1, Lb2/d;->a:F
+
+    .line 4
+    iget v1, p1, Lb2/d;->c:F
+
+    .line 5
+    invoke-static {p2, p3}, Lb2/f;->f(J)F
+
+    move-result p2
+
+    invoke-virtual {p0, v0, v1, p2}, Lu0/b;->f(FFF)F
+
+    move-result p2
+
+    invoke-virtual {p1, p2, v2}, Lb2/d;->g(FF)Lb2/d;
+
+    move-result-object p1
+
     goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    new-instance p1, Lro0/k;
+
+    invoke-direct {p1}, Lro0/k;-><init>()V
+
+    throw p1
+
+    .line 6
+    :cond_1
+    iget v0, p1, Lb2/d;->b:F
+
+    .line 7
+    iget v1, p1, Lb2/d;->d:F
+
+    .line 8
+    invoke-static {p2, p3}, Lb2/f;->c(J)F
+
+    move-result p2
+
+    invoke-virtual {p0, v0, v1, p2}, Lu0/b;->f(FFF)F
+
+    move-result p2
+
+    invoke-virtual {p1, v2, p2}, Lb2/d;->g(FF)Lb2/d;
+
+    move-result-object p1
 
     :goto_0
-    if-eqz v1, :cond_1
-
-    return v0
-
-    .line 2
-    :cond_1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Negative size: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const/16 p1, 0x3d
-
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    new-instance p2, Ljava/lang/IllegalStateException;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p2
+    return-object p1
 .end method
 
-
-# virtual methods
-.method protected b(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final e(Lb2/d;Lb2/d;Lvo0/d;)Ljava/lang/Object;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TK;)TV;"
+            "(",
+            "Lb2/d;",
+            "Lb2/d;",
+            "Lvo0/d<",
+            "-",
+            "Lro0/x;",
+            ">;)",
+            "Ljava/lang/Object;"
         }
     .end annotation
 
-    const/4 p1, 0x0
+    .line 1
+    iget-object v0, p0, Lu0/b;->c:Lu0/m0;
+
+    sget-object v1, Lu0/b$a;->a:[I
+
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v0
+
+    aget v0, v1, v0
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :cond_1
+
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_0
+
+    .line 2
+    iget p1, p1, Lb2/d;->a:F
+
+    iget p2, p2, Lb2/d;->a:F
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    new-instance p1, Lro0/k;
+
+    invoke-direct {p1}, Lro0/k;-><init>()V
+
+    throw p1
+
+    .line 4
+    :cond_1
+    iget p1, p1, Lb2/d;->b:F
+
+    iget p2, p2, Lb2/d;->b:F
+
+    :goto_0
+    sub-float/2addr p1, p2
+
+    .line 5
+    iget-boolean p2, p0, Lu0/b;->e:Z
+
+    if-eqz p2, :cond_2
+
+    neg-float p1, p1
+
+    .line 6
+    :cond_2
+    iget-object p2, p0, Lu0/b;->d:Lu0/e1;
+
+    invoke-static {p2, p1, p3}, Lu0/t0;->b(Lu0/e1;FLvo0/d;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 7
+    sget-object p2, Lwo0/a;->COROUTINE_SUSPENDED:Lwo0/a;
+
+    if-ne p1, p2, :cond_3
+
+    return-object p1
+
+    .line 8
+    :cond_3
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method
 
-.method protected c(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ZTK;TV;TV;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;)TV;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lu0/b;->a:Lw0/k;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 4
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->remove(Ljava/lang/Object;)Z
-
-    .line 5
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
-
-    .line 6
-    iget p1, p0, Lu0/b;->i:I
-
-    add-int/lit8 p1, p1, 0x1
-
-    iput p1, p0, Lu0/b;->i:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 7
-    monitor-exit v0
-
-    return-object v1
-
-    .line 8
-    :cond_0
-    :try_start_1
-    iget v2, p0, Lu0/b;->j:I
-
-    add-int/lit8 v2, v2, 0x1
-
-    iput v2, p0, Lu0/b;->j:I
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 9
-    monitor-exit v0
-
-    .line 10
-    invoke-virtual {p0, p1}, Lu0/b;->b(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    if-nez v0, :cond_1
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    .line 11
-    :cond_1
-    iget-object v2, p0, Lu0/b;->a:Lw0/k;
-
-    .line 12
-    monitor-enter v2
-
-    .line 13
-    :try_start_2
-    iget v3, p0, Lu0/b;->g:I
-
-    add-int/lit8 v3, v3, 0x1
-
-    iput v3, p0, Lu0/b;->g:I
-
-    .line 14
-    iget-object v3, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v3, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    .line 15
-    iget-object v4, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v4, p1}, Ljava/util/LinkedHashSet;->remove(Ljava/lang/Object;)Z
-
-    .line 16
-    iget-object v4, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v4, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
-
-    if-eqz v3, :cond_2
-
-    .line 17
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-object v1, v3
-
-    goto :goto_0
-
-    .line 18
-    :cond_2
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v3
-
-    invoke-direct {p0, p1, v0}, Lu0/b;->g(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v4
-
-    add-int/2addr v3, v4
-
-    iput v3, p0, Lu0/b;->d:I
-
-    .line 19
-    :goto_0
-    sget-object v3, Li00/a0;->a:Li00/a0;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    monitor-exit v2
-
-    if-eqz v1, :cond_3
-
-    const/4 v2, 0x0
-
-    .line 20
-    invoke-virtual {p0, v2, p1, v0, v1}, Lu0/b;->c(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    return-object v1
-
-    .line 21
-    :cond_3
-    iget p1, p0, Lu0/b;->e:I
-
-    invoke-virtual {p0, p1}, Lu0/b;->j(I)V
-
-    return-object v0
-
-    :catchall_0
-    move-exception p1
-
-    .line 22
-    monitor-exit v2
-
-    throw p1
-
-    :catchall_1
-    move-exception p1
-
-    .line 23
-    monitor-exit v0
-
-    throw p1
-.end method
-
-.method public final e(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;TV;)TV;"
-        }
-    .end annotation
-
-    if-eqz p1, :cond_3
-
-    if-eqz p2, :cond_3
-
-    .line 1
-    iget-object v0, p0, Lu0/b;->a:Lw0/k;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    iget v1, p0, Lu0/b;->f:I
-
-    add-int/lit8 v1, v1, 0x1
-
-    iput v1, p0, Lu0/b;->f:I
-
-    .line 4
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v1
-
-    invoke-direct {p0, p1, p2}, Lu0/b;->g(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v2
-
-    add-int/2addr v1, v2
-
-    iput v1, p0, Lu0/b;->d:I
-
-    .line 5
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v2
-
-    invoke-direct {p0, p1, v1}, Lu0/b;->g(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v3
-
-    sub-int/2addr v2, v3
-
-    iput v2, p0, Lu0/b;->d:I
-
-    .line 7
-    :cond_0
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->contains(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 8
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->remove(Ljava/lang/Object;)Z
-
-    .line 9
-    :cond_1
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    if-eqz v1, :cond_2
-
-    const/4 v0, 0x0
-
-    .line 10
-    invoke-virtual {p0, v0, p1, v1, p2}, Lu0/b;->c(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 11
-    :cond_2
-    iget p1, p0, Lu0/b;->e:I
-
-    invoke-virtual {p0, p1}, Lu0/b;->j(I)V
-
-    return-object v1
-
-    :catchall_0
-    move-exception p1
-
-    .line 12
-    monitor-exit v0
-
-    throw p1
-
-    :cond_3
-    const/4 p1, 0x0
-
-    .line 13
-    throw p1
-.end method
-
-.method public final f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;)TV;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    iget-object v0, p0, Lu0/b;->a:Lw0/k;
-
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 5
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2, p1}, Ljava/util/LinkedHashSet;->remove(Ljava/lang/Object;)Z
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v2
-
-    invoke-direct {p0, p1, v1}, Lu0/b;->g(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v3
-
-    sub-int/2addr v2, v3
-
-    iput v2, p0, Lu0/b;->d:I
-
-    .line 7
-    :cond_0
-    sget-object v2, Li00/a0;->a:Li00/a0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    if-eqz v1, :cond_1
-
-    const/4 v0, 0x0
-
-    const/4 v2, 0x0
-
-    .line 8
-    invoke-virtual {p0, v0, p1, v1, v2}, Lu0/b;->c(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    :cond_1
-    return-object v1
-
-    :catchall_0
-    move-exception p1
-
-    .line 9
-    monitor-exit v0
-
-    throw p1
-.end method
-
-.method public final h()I
+.method public final f(FFF)F
     .locals 2
 
-    .line 1
-    invoke-static {p0}, Lu0/b;->a(Lu0/b;)Lw0/k;
+    const/4 v0, 0x0
 
-    move-result-object v0
+    cmpl-float v1, p1, v0
 
-    .line 2
-    monitor-enter v0
+    if-ltz v1, :cond_0
 
-    .line 3
-    :try_start_0
-    iget v1, p0, Lu0/b;->d:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    cmpg-float v1, p2, p3
 
-    monitor-exit v0
+    if-gtz v1, :cond_0
 
-    return v1
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-.end method
-
-.method protected i(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TK;TV;)I"
-        }
-    .end annotation
-
-    const/4 p1, 0x1
-
-    return p1
-.end method
-
-.method public j(I)V
-    .locals 7
-
-    .line 1
     :goto_0
-    iget-object v0, p0, Lu0/b;->a:Lw0/k;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v1
-
-    if-ltz v1, :cond_4
-
-    .line 4
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v1
-
-    if-nez v1, :cond_4
-
-    .line 5
-    :cond_0
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
-
-    move-result v1
-
-    iget-object v2, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-virtual {v2}, Ljava/util/LinkedHashSet;->isEmpty()Z
-
-    move-result v2
-
-    if-ne v1, v2, :cond_4
-
-    .line 6
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    if-le v1, p1, :cond_2
-
-    iget-object v1, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_2
-
-    .line 7
-    iget-object v1, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-static {v1}, Lkotlin/collections/t;->h0(Ljava/lang/Iterable;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 8
-    iget-object v4, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_1
-
-    .line 9
-    iget-object v5, p0, Lu0/b;->b:Ljava/util/HashMap;
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p0;->d(Ljava/lang/Object;)Ljava/util/Map;
-
-    move-result-object v5
-
-    invoke-interface {v5, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 10
-    iget-object v5, p0, Lu0/b;->c:Ljava/util/LinkedHashSet;
-
-    invoke-static {v5}, Lkotlin/jvm/internal/p0;->a(Ljava/lang/Object;)Ljava/util/Collection;
-
-    move-result-object v5
-
-    invoke-interface {v5, v1}, Ljava/util/Collection;->remove(Ljava/lang/Object;)Z
-
-    .line 11
-    invoke-virtual {p0}, Lu0/b;->h()I
-
-    move-result v5
-
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-direct {p0, v1, v4}, Lu0/b;->g(Ljava/lang/Object;Ljava/lang/Object;)I
-
-    move-result v6
-
-    sub-int/2addr v5, v6
-
-    iput v5, p0, Lu0/b;->d:I
-
-    .line 12
-    iget v5, p0, Lu0/b;->h:I
-
-    add-int/2addr v5, v2
-
-    iput v5, p0, Lu0/b;->h:I
+    const/4 p1, 0x0
 
     goto :goto_1
 
-    .line 13
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
+    :cond_0
+    cmpg-float v1, p1, v0
 
-    const-string v1, "inconsistent state"
+    if-gez v1, :cond_1
 
-    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    cmpl-float v1, p2, p3
 
-    throw p1
-
-    :cond_2
-    move-object v1, v3
-
-    move-object v4, v1
-
-    .line 14
-    :goto_1
-    sget-object v5, Li00/a0;->a:Li00/a0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit v0
-
-    if-nez v1, :cond_3
-
-    if-nez v4, :cond_3
-
-    return-void
-
-    .line 15
-    :cond_3
-    invoke-static {v1}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-static {v4}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v2, v1, v4, v3}, Lu0/b;->c(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    goto/16 :goto_0
-
-    .line 16
-    :cond_4
-    :try_start_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v1, "map/keySet size inconsistency"
-
-    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :catchall_0
-    move-exception p1
-
-    .line 17
-    monitor-exit v0
-
-    throw p1
-.end method
-
-.method public toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lu0/b;->a:Lw0/k;
-
-    .line 2
-    monitor-enter v0
-
-    .line 3
-    :try_start_0
-    iget v1, p0, Lu0/b;->i:I
-
-    iget v2, p0, Lu0/b;->j:I
-
-    add-int/2addr v2, v1
-
-    if-eqz v2, :cond_0
-
-    mul-int/lit8 v1, v1, 0x64
-
-    .line 4
-    div-int/2addr v1, v2
+    if-lez v1, :cond_1
 
     goto :goto_0
 
-    :cond_0
-    const/4 v1, 0x0
+    :cond_1
+    invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
-    .line 5
-    :goto_0
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result v0
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    sub-float/2addr p2, p3
 
-    const-string v3, "LruCache[maxSize="
+    invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result p3
 
-    iget v3, p0, Lu0/b;->e:I
+    cmpg-float p3, v0, p3
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    if-gez p3, :cond_2
 
-    const-string v3, ",hits="
+    goto :goto_1
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_2
+    move p1, p2
 
-    iget v3, p0, Lu0/b;->i:I
+    :goto_1
+    return p1
+.end method
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+.method public final s(Ljava/lang/Object;Ldp0/p;)Ljava/lang/Object;
+    .locals 1
 
-    const-string v3, ",misses="
+    const-string v0, "operation"
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p2, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget v3, p0, Lu0/b;->j:I
+    invoke-interface {p2, p1, p0}, Ldp0/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    const-string v3, ",hitRate="
+    return-object p1
+.end method
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public final synthetic v(Lx1/h;)Lx1/h;
+    .locals 0
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {p0, p1}, Lf9/d;->b(Lx1/h;Lx1/h;)Lx1/h;
 
-    const-string v1, "%]"
+    move-result-object p1
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    return-object p1
+.end method
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+.method public final x(Lq2/q;)V
+    .locals 1
 
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const-string v0, "coordinates"
 
-    monitor-exit v0
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    return-object v1
+    iput-object p1, p0, Lu0/b;->g:Lq2/q;
 
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
+    return-void
 .end method

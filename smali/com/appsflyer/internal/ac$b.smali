@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "b"
 .end annotation
 
@@ -22,7 +22,7 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/os/IBinder;)V
+.method public constructor <init>(Landroid/os/IBinder;)V
     .locals 0
 
     .line 1
@@ -103,13 +103,12 @@
 .method public final asBinder()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/appsflyer/internal/ac$b;->AFKeystoreWrapper:Landroid/os/IBinder;
 
     return-object v0
 .end method
 
-.method final values()Z
+.method public final values()Z
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {

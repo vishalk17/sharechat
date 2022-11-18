@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_teamA_background" android:layout_width="0.0dip" android:layout_height="@dimen/size84" android:layout_marginTop="@dimen/size48" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5" />
+    <ImageView android:id="@id/iv_teamB_background" android:layout_width="0.0dip" android:layout_height="@dimen/size84" android:layout_marginTop="@dimen/size48" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.5" />
+    <androidx.constraintlayout.widget.Group android:id="@id/group_four_x_four" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="iv_teamA_background, iv_teamB_background" />
     <androidx.recyclerview.widget.RecyclerView android:id="@id/audio_chat_slots" android:paddingBottom="4.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/gifter_battle" android:visibility="gone" android:layout="@layout/composeview" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

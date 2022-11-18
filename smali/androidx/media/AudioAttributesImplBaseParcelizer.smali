@@ -7,13 +7,12 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static read(Landroidx/versionedparcelable/b;)Landroidx/media/AudioAttributesImplBase;
+.method public static read(Lr6/b;)Landroidx/media/AudioAttributesImplBase;
     .locals 3
 
     .line 1
@@ -26,7 +25,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/b;->p(II)I
+    invoke-virtual {p0, v1, v2}, Lr6/b;->k(II)I
 
     move-result v1
 
@@ -37,7 +36,7 @@
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/b;->p(II)I
+    invoke-virtual {p0, v1, v2}, Lr6/b;->k(II)I
 
     move-result v1
 
@@ -48,7 +47,7 @@
 
     const/4 v2, 0x3
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/b;->p(II)I
+    invoke-virtual {p0, v1, v2}, Lr6/b;->k(II)I
 
     move-result v1
 
@@ -59,7 +58,7 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v1, v2}, Landroidx/versionedparcelable/b;->p(II)I
+    invoke-virtual {p0, v1, v2}, Lr6/b;->k(II)I
 
     move-result p0
 
@@ -68,41 +67,39 @@
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesImplBase;Landroidx/versionedparcelable/b;)V
+.method public static write(Landroidx/media/AudioAttributesImplBase;Lr6/b;)V
     .locals 2
 
-    const/4 v0, 0x0
-
     .line 1
-    invoke-virtual {p1, v0, v0}, Landroidx/versionedparcelable/b;->x(ZZ)V
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
     iget v0, p0, Landroidx/media/AudioAttributesImplBase;->a:I
 
     const/4 v1, 0x1
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/b;->F(II)V
+    invoke-virtual {p1, v0, v1}, Lr6/b;->u(II)V
 
     .line 3
     iget v0, p0, Landroidx/media/AudioAttributesImplBase;->b:I
 
     const/4 v1, 0x2
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/b;->F(II)V
+    invoke-virtual {p1, v0, v1}, Lr6/b;->u(II)V
 
     .line 4
     iget v0, p0, Landroidx/media/AudioAttributesImplBase;->c:I
 
     const/4 v1, 0x3
 
-    invoke-virtual {p1, v0, v1}, Landroidx/versionedparcelable/b;->F(II)V
+    invoke-virtual {p1, v0, v1}, Lr6/b;->u(II)V
 
     .line 5
     iget p0, p0, Landroidx/media/AudioAttributesImplBase;->d:I
 
     const/4 v0, 0x4
 
-    invoke-virtual {p1, p0, v0}, Landroidx/versionedparcelable/b;->F(II)V
+    invoke-virtual {p1, p0, v0}, Lr6/b;->u(II)V
 
     return-void
 .end method

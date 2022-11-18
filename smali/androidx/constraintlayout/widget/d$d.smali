@@ -1,4 +1,4 @@
-.class public Landroidx/constraintlayout/widget/d$d;
+.class public final Landroidx/constraintlayout/widget/d$d;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -59,7 +59,7 @@
 
 
 # virtual methods
-.method public a(Landroidx/constraintlayout/widget/d$d;)V
+.method public final a(Landroidx/constraintlayout/widget/d$d;)V
     .locals 1
 
     .line 1
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method b(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final b(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
     .line 1
@@ -152,13 +152,11 @@
     iput v1, p0, Landroidx/constraintlayout/widget/d$d;->b:I
 
     .line 9
-    invoke-static {}, Landroidx/constraintlayout/widget/d;->b()[I
+    sget-object v2, Landroidx/constraintlayout/widget/d;->g:[I
 
-    move-result-object v1
+    sget-object v2, Landroidx/constraintlayout/widget/d;->g:[I
 
-    iget v2, p0, Landroidx/constraintlayout/widget/d$d;->b:I
-
-    aget v1, v1, v2
+    aget v1, v2, v1
 
     iput v1, p0, Landroidx/constraintlayout/widget/d$d;->b:I
 

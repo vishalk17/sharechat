@@ -12,15 +12,15 @@
 
 
 # instance fields
-.field private b:Landroid/content/Context;
+.field public b:Landroid/content/Context;
 
-.field private c:Landroidx/work/WorkerParameters;
+.field public c:Landroidx/work/WorkerParameters;
 
-.field private volatile d:Z
+.field public volatile d:Z
 
-.field private e:Z
+.field public e:Z
 
-.field private f:Z
+.field public f:Z
 
 
 # direct methods
@@ -70,7 +70,6 @@
 .method public final getApplicationContext()Landroid/content/Context;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->b:Landroid/content/Context;
 
     return-object v0
@@ -82,9 +81,36 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->a()Ljava/util/concurrent/Executor;
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->f:Ljava/util/concurrent/Executor;
+
+    return-object v0
+.end method
+
+.method public getForegroundInfoAsync()Lxm/b;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lxm/b<",
+            "Lu6/g;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lf7/c;->k()Lf7/c;
 
     move-result-object v0
+
+    .line 2
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "Expedited WorkRequests require a ListenableWorker to provide an implementation for `getForegroundInfoAsync()`"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Lf7/c;->m(Ljava/lang/Throwable;)Z
 
     return-object v0
 .end method
@@ -95,22 +121,20 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->c()Ljava/util/UUID;
-
-    move-result-object v0
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->a:Ljava/util/UUID;
 
     return-object v0
 .end method
 
-.method public final getInputData()Landroidx/work/e;
+.method public final getInputData()Landroidx/work/b;
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->d()Landroidx/work/e;
-
-    move-result-object v0
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:Landroidx/work/b;
 
     return-object v0
 .end method
@@ -121,9 +145,10 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->e()Landroid/net/Network;
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Landroidx/work/WorkerParameters$a;
 
-    move-result-object v0
+    iget-object v0, v0, Landroidx/work/WorkerParameters$a;->c:Landroid/net/Network;
 
     return-object v0
 .end method
@@ -134,9 +159,8 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->g()I
-
-    move-result v0
+    .line 2
+    iget v0, v0, Landroidx/work/WorkerParameters;->e:I
 
     return v0
 .end method
@@ -155,22 +179,20 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->h()Ljava/util/Set;
-
-    move-result-object v0
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->c:Ljava/util/HashSet;
 
     return-object v0
 .end method
 
-.method public getTaskExecutor()Lw2/a;
+.method public getTaskExecutor()Lg7/a;
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->i()Lw2/a;
-
-    move-result-object v0
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->g:Lg7/a;
 
     return-object v0
 .end method
@@ -189,9 +211,10 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->j()Ljava/util/List;
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Landroidx/work/WorkerParameters$a;
 
-    move-result-object v0
+    iget-object v0, v0, Landroidx/work/WorkerParameters$a;->a:Ljava/util/List;
 
     return-object v0
 .end method
@@ -210,22 +233,22 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->k()Ljava/util/List;
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->d:Landroidx/work/WorkerParameters$a;
 
-    move-result-object v0
+    iget-object v0, v0, Landroidx/work/WorkerParameters$a;->b:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method public getWorkerFactory()Landroidx/work/x;
+.method public getWorkerFactory()Lu6/a0;
     .locals 1
 
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->l()Landroidx/work/x;
-
-    move-result-object v0
+    .line 2
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->h:Lu6/a0;
 
     return-object v0
 .end method
@@ -233,7 +256,6 @@
 .method public isRunInForeground()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/work/ListenableWorker;->f:Z
 
     return v0
@@ -242,7 +264,6 @@
 .method public final isStopped()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/work/ListenableWorker;->d:Z
 
     return v0
@@ -251,7 +272,6 @@
 .method public final isUsed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/work/ListenableWorker;->e:Z
 
     return v0
@@ -263,14 +283,14 @@
     return-void
 .end method
 
-.method public final setForegroundAsync(Landroidx/work/h;)Lcom/google/common/util/concurrent/c;
+.method public final setForegroundAsync(Lu6/g;)Lxm/b;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/work/h;",
+            "Lu6/g;",
             ")",
-            "Lcom/google/common/util/concurrent/c<",
+            "Lxm/b<",
             "Ljava/lang/Void;",
             ">;"
         }
@@ -284,11 +304,10 @@
     .line 2
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->b()Landroidx/work/i;
-
-    move-result-object v0
-
     .line 3
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->j:Lu6/h;
+
+    .line 4
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -297,21 +316,23 @@
 
     move-result-object v2
 
-    invoke-interface {v0, v1, v2, p1}, Landroidx/work/i;->a(Landroid/content/Context;Ljava/util/UUID;Landroidx/work/h;)Lcom/google/common/util/concurrent/c;
+    check-cast v0, Le7/s;
+
+    invoke-virtual {v0, v1, v2, p1}, Le7/s;->a(Landroid/content/Context;Ljava/util/UUID;Lu6/g;)Lxm/b;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final setProgressAsync(Landroidx/work/e;)Lcom/google/common/util/concurrent/c;
-    .locals 3
+.method public setProgressAsync(Landroidx/work/b;)Lxm/b;
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Landroidx/work/e;",
+            "Landroidx/work/b;",
             ")",
-            "Lcom/google/common/util/concurrent/c<",
+            "Lxm/b<",
             "Ljava/lang/Void;",
             ">;"
         }
@@ -320,24 +341,45 @@
     .line 1
     iget-object v0, p0, Landroidx/work/ListenableWorker;->c:Landroidx/work/WorkerParameters;
 
-    invoke-virtual {v0}, Landroidx/work/WorkerParameters;->f()Landroidx/work/q;
-
-    move-result-object v0
-
     .line 2
-    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->i:Lu6/t;
 
-    move-result-object v1
+    .line 3
+    invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getApplicationContext()Landroid/content/Context;
 
     invoke-virtual {p0}, Landroidx/work/ListenableWorker;->getId()Ljava/util/UUID;
 
+    move-result-object v1
+
+    check-cast v0, Le7/u;
+
+    invoke-static {v0}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    invoke-static {}, Lf7/c;->k()Lf7/c;
+
     move-result-object v2
 
-    invoke-interface {v0, v1, v2, p1}, Landroidx/work/q;->a(Landroid/content/Context;Ljava/util/UUID;Landroidx/work/e;)Lcom/google/common/util/concurrent/c;
+    .line 5
+    iget-object v3, v0, Le7/u;->b:Lg7/a;
 
-    move-result-object p1
+    new-instance v4, Le7/t;
 
-    return-object p1
+    invoke-direct {v4, v0, v1, p1, v2}, Le7/t;-><init>(Le7/u;Ljava/util/UUID;Landroidx/work/b;Lf7/c;)V
+
+    check-cast v3, Lg7/b;
+
+    invoke-virtual {v3, v4}, Lg7/b;->a(Ljava/lang/Runnable;)V
+
+    return-object v2
+.end method
+
+.method public setRunInForeground(Z)V
+    .locals 0
+
+    iput-boolean p1, p0, Landroidx/work/ListenableWorker;->f:Z
+
+    return-void
 .end method
 
 .method public final setUsed()V
@@ -345,17 +387,16 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Landroidx/work/ListenableWorker;->e:Z
 
     return-void
 .end method
 
-.method public abstract startWork()Lcom/google/common/util/concurrent/c;
+.method public abstract startWork()Lxm/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lcom/google/common/util/concurrent/c<",
+            "Lxm/b<",
             "Landroidx/work/ListenableWorker$a;",
             ">;"
         }

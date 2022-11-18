@@ -1,112 +1,75 @@
-.class public abstract Lfp/b;
-.super Lhl/a;
+.class public final Lfp/b;
+.super Lfp/u;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<B:",
-        "Landroidx/databinding/ViewDataBinding;",
-        ">",
-        "Lhl/a<",
-        "TB;>;"
+        "Lfp/u<",
+        "Ljava/lang/Boolean;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field private final f:I
-
-.field private g:Landroidx/databinding/ViewDataBinding;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TB;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static a:Lfp/b;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method private constructor <init>()V
     .locals 0
+
+    invoke-direct {p0}, Lfp/u;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(I)V
-    .locals 0
+.method public static declared-synchronized d()Lfp/b;
+    .locals 2
+
+    const-class v0, Lfp/b;
+
+    monitor-enter v0
 
     .line 1
-    invoke-direct {p0}, Lhl/a;-><init>()V
+    :try_start_0
+    sget-object v1, Lfp/b;->a:Lfp/b;
 
-    iput p1, p0, Lfp/b;->f:I
+    if-nez v1, :cond_0
 
-    return-void
+    .line 2
+    new-instance v1, Lfp/b;
+
+    invoke-direct {v1}, Lfp/b;-><init>()V
+
+    sput-object v1, Lfp/b;->a:Lfp/b;
+
+    .line 3
+    :cond_0
+    sget-object v1, Lfp/b;->a:Lfp/b;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    return-object v1
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
 .end method
 
 
 # virtual methods
-.method public F(Landroidx/databinding/ViewDataBinding;I)V
+.method public final b()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TB;I)V"
-        }
-    .end annotation
 
-    const-string v0, "viewBinding"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    iput-object p1, p0, Lfp/b;->g:Landroidx/databinding/ViewDataBinding;
-
-    .line 2
-    invoke-virtual {p0, p1, p2}, Lfp/b;->M(Landroidx/databinding/ViewDataBinding;I)V
-
-    .line 3
-    invoke-virtual {p1}, Landroidx/databinding/ViewDataBinding;->q()V
-
-    return-void
-.end method
-
-.method public final L()Landroid/content/Context;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lfp/b;->g:Landroidx/databinding/ViewDataBinding;
-
-    invoke-static {v0}, Lkotlin/jvm/internal/p;->f(Ljava/lang/Object;)V
-
-    invoke-virtual {v0}, Landroidx/databinding/ViewDataBinding;->b()Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    const-string v1, "_binding!!.root.context"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v0, "firebase_performance_collection_deactivated"
 
     return-object v0
-.end method
-
-.method public abstract M(Landroidx/databinding/ViewDataBinding;I)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TB;I)V"
-        }
-    .end annotation
-.end method
-
-.method public final r()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lfp/b;->f:I
-
-    return v0
 .end method

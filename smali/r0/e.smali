@@ -1,120 +1,120 @@
-.class public final Lr0/e;
-.super Ljava/lang/Object;
+.class public final enum Lr0/e;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field private final a:Li00/i;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lr0/e;",
+        ">;"
+    }
+.end annotation
 
-.field private final b:Li00/i;
 
-.field private final c:Li00/i;
+# static fields
+.field private static final synthetic $VALUES:[Lr0/e;
+
+.field public static final enum BoundReached:Lr0/e;
+
+.field public static final enum Finished:Lr0/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;I)V
-    .locals 2
+.method private static final synthetic $values()[Lr0/e;
+    .locals 3
 
-    const-string v0, "charSequence"
+    const/4 v0, 0x2
 
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    new-array v0, v0, [Lr0/e;
 
-    const-string v0, "textPaint"
+    sget-object v1, Lr0/e;->BoundReached:Lr0/e;
 
-    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v2, 0x0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    aput-object v1, v0, v2
 
-    .line 2
-    sget-object v0, Lkotlin/a;->NONE:Lkotlin/a;
+    sget-object v1, Lr0/e;->Finished:Lr0/e;
 
-    new-instance v1, Lr0/e$a;
+    const/4 v2, 0x1
 
-    invoke-direct {v1, p3, p1, p2}, Lr0/e$a;-><init>(ILjava/lang/CharSequence;Landroid/text/TextPaint;)V
-
-    invoke-static {v0, v1}, Li00/j;->a(Lkotlin/a;Lr00/a;)Li00/i;
-
-    move-result-object p3
-
-    iput-object p3, p0, Lr0/e;->a:Li00/i;
-
-    .line 3
-    new-instance p3, Lr0/e$c;
-
-    invoke-direct {p3, p1, p2}, Lr0/e$c;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;)V
-
-    invoke-static {v0, p3}, Li00/j;->a(Lkotlin/a;Lr00/a;)Li00/i;
-
-    move-result-object p3
-
-    iput-object p3, p0, Lr0/e;->b:Li00/i;
-
-    .line 4
-    new-instance p3, Lr0/e$b;
-
-    invoke-direct {p3, p0, p1, p2}, Lr0/e$b;-><init>(Lr0/e;Ljava/lang/CharSequence;Landroid/text/TextPaint;)V
-
-    invoke-static {v0, p3}, Li00/j;->a(Lkotlin/a;Lr00/a;)Li00/i;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lr0/e;->c:Li00/i;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Landroid/text/BoringLayout$Metrics;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lr0/e;->a:Li00/i;
-
-    invoke-interface {v0}, Li00/i;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/text/BoringLayout$Metrics;
+    aput-object v1, v0, v2
 
     return-object v0
 .end method
 
-.method public final b()F
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lr0/e;->c:Li00/i;
+    new-instance v0, Lr0/e;
 
-    invoke-interface {v0}, Li00/i;->getValue()Ljava/lang/Object;
+    const-string v1, "BoundReached"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lr0/e;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lr0/e;->BoundReached:Lr0/e;
+
+    .line 2
+    new-instance v0, Lr0/e;
+
+    const-string v1, "Finished"
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lr0/e;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lr0/e;->Finished:Lr0/e;
+
+    invoke-static {}, Lr0/e;->$values()[Lr0/e;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Number;
+    sput-object v0, Lr0/e;->$VALUES:[Lr0/e;
 
-    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
-
-    move-result v0
-
-    return v0
+    return-void
 .end method
 
-.method public final c()F
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lr0/e;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lr0/e;->b:Li00/i;
+    const-class v0, Lr0/e;
 
-    invoke-interface {v0}, Li00/i;->getValue()Ljava/lang/Object;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lr0/e;
+
+    return-object p0
+.end method
+
+.method public static values()[Lr0/e;
+    .locals 1
+
+    sget-object v0, Lr0/e;->$VALUES:[Lr0/e;
+
+    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Number;
+    check-cast v0, [Lr0/e;
 
-    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
-
-    move-result v0
-
-    return v0
+    return-object v0
 .end method

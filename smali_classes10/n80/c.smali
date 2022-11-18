@@ -1,46 +1,46 @@
-.class public final synthetic Ln80/c;
+.class public final Ln80/c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # instance fields
-.field public final synthetic b:Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;
+.field public final a:Lpz1/a;
 
-.field public final synthetic c:Ld80/b1;
+.field public b:Z
 
-.field public final synthetic d:Ljava/lang/String;
+.field public final c:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lox1/n;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;Ld80/b1;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Lpz1/a;Z)V
+    .locals 1
 
+    const-string v0, "tagChatService"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ln80/c;->b:Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;
+    iput-object p1, p0, Ln80/c;->a:Lpz1/a;
 
-    iput-object p2, p0, Ln80/c;->c:Ld80/b1;
+    iput-boolean p2, p0, Ln80/c;->b:Z
 
-    iput-object p3, p0, Ln80/c;->d:Ljava/lang/String;
+    .line 2
+    new-instance p1, Ljava/util/HashMap;
 
-    return-void
-.end method
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-
-# virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 3
-
-    iget-object v0, p0, Ln80/c;->b:Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;
-
-    iget-object v1, p0, Ln80/c;->c:Ld80/b1;
-
-    iget-object v2, p0, Ln80/c;->d:Ljava/lang/String;
-
-    invoke-static {v0, v1, v2, p1}, Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;->ry(Lsharechat/feature/chatroom/gifters/ChatRoomGifterFragment;Ld80/b1;Ljava/lang/String;Landroid/view/View;)V
+    iput-object p1, p0, Ln80/c;->c:Ljava/util/HashMap;
 
     return-void
 .end method

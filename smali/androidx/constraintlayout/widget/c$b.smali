@@ -1,4 +1,4 @@
-.class Landroidx/constraintlayout/widget/c$b;
+.class public final Landroidx/constraintlayout/widget/c$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,28 +9,28 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "b"
 .end annotation
 
 
 # instance fields
-.field a:F
+.field public a:F
 
-.field b:F
+.field public b:F
 
-.field c:F
+.field public c:F
 
-.field d:F
+.field public d:F
 
-.field e:I
+.field public e:I
 
-.field f:Landroidx/constraintlayout/widget/d;
+.field public f:Landroidx/constraintlayout/widget/d;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
-    .locals 5
+    .locals 6
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -134,17 +134,30 @@
     .line 17
     iget v3, p0, Landroidx/constraintlayout/widget/c$b;->e:I
 
-    invoke-virtual {v2, p1, v3}, Landroidx/constraintlayout/widget/d;->o(Landroid/content/Context;I)V
+    .line 18
+    invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    invoke-virtual {v4, v3, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    invoke-virtual {v2, v3}, Landroidx/constraintlayout/widget/d;->f(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     goto :goto_1
 
-    .line 18
+    .line 19
     :cond_0
     sget v3, Landroidx/constraintlayout/widget/R$styleable;->Variant_region_heightLessThan:I
 
     if-ne v2, v3, :cond_1
 
-    .line 19
+    .line 20
     iget v3, p0, Landroidx/constraintlayout/widget/c$b;->d:F
 
     invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -155,13 +168,13 @@
 
     goto :goto_1
 
-    .line 20
+    .line 21
     :cond_1
     sget v3, Landroidx/constraintlayout/widget/R$styleable;->Variant_region_heightMoreThan:I
 
     if-ne v2, v3, :cond_2
 
-    .line 21
+    .line 22
     iget v3, p0, Landroidx/constraintlayout/widget/c$b;->b:F
 
     invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -172,13 +185,13 @@
 
     goto :goto_1
 
-    .line 22
+    .line 23
     :cond_2
     sget v3, Landroidx/constraintlayout/widget/R$styleable;->Variant_region_widthLessThan:I
 
     if-ne v2, v3, :cond_3
 
-    .line 23
+    .line 24
     iget v3, p0, Landroidx/constraintlayout/widget/c$b;->c:F
 
     invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -189,13 +202,13 @@
 
     goto :goto_1
 
-    .line 24
+    .line 25
     :cond_3
     sget v3, Landroidx/constraintlayout/widget/R$styleable;->Variant_region_widthMoreThan:I
 
     if-ne v2, v3, :cond_4
 
-    .line 25
+    .line 26
     iget v3, p0, Landroidx/constraintlayout/widget/c$b;->a:F
 
     invoke-virtual {p2, v2, v3}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -211,16 +224,16 @@
 
     const-string v3, "Unknown tag"
 
-    .line 26
+    .line 27
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 27
+    .line 28
     :cond_6
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -229,7 +242,7 @@
 
 
 # virtual methods
-.method a(FF)Z
+.method public final a(FF)Z
     .locals 2
 
     .line 1

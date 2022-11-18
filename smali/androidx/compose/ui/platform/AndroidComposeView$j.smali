@@ -1,9 +1,9 @@
-.class final Landroidx/compose/ui/platform/AndroidComposeView$j;
-.super Lkotlin/jvm/internal/r;
+.class public final Landroidx/compose/ui/platform/AndroidComposeView$j;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/l;
+.implements Ldp0/l;
 
 
 # annotations
@@ -12,16 +12,16 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/l<",
-        "Landroidx/compose/ui/input/rotary/b;",
-        "Ljava/lang/Boolean;",
+        "Lep0/u;",
+        "Ldp0/l<",
+        "Lw2/b0;",
+        "Lro0/x;",
         ">;"
     }
 .end annotation
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Landroidx/compose/ui/platform/AndroidComposeView$j;
@@ -44,40 +44,31 @@
     return-void
 .end method
 
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, v0}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/compose/ui/input/rotary/b;)Ljava/lang/Boolean;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
     .line 1
-    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    check-cast p1, Lw2/b0;
 
-    return-object p1
-.end method
+    const-string v0, "$this$$receiver"
 
-.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 2
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    check-cast p1, Landroidx/compose/ui/input/rotary/b;
-
-    invoke-virtual {p0, p1}, Landroidx/compose/ui/platform/AndroidComposeView$j;->a(Landroidx/compose/ui/input/rotary/b;)Ljava/lang/Boolean;
-
-    move-result-object p1
+    .line 3
+    sget-object p1, Lro0/x;->a:Lro0/x;
 
     return-object p1
 .end method

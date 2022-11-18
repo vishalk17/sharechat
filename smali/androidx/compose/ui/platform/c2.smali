@@ -1,34 +1,32 @@
-.class public final synthetic Landroidx/compose/ui/platform/c2;
+.class public interface abstract Landroidx/compose/ui/platform/c2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroidx/lifecycle/u;
-
-
-# instance fields
-.field public final synthetic b:Landroidx/compose/ui/platform/a;
-
-
-# direct methods
-.method public synthetic constructor <init>(Landroidx/compose/ui/platform/a;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Landroidx/compose/ui/platform/c2;->b:Landroidx/compose/ui/platform/a;
-
-    return-void
-.end method
-
 
 # virtual methods
-.method public final h(Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
-    .locals 1
+.method public abstract a()V
+.end method
 
-    iget-object v0, p0, Landroidx/compose/ui/platform/c2;->b:Landroidx/compose/ui/platform/a;
+.method public abstract e()Landroidx/compose/ui/platform/e2;
+.end method
 
-    invoke-static {v0, p1, p2}, Landroidx/compose/ui/platform/d2;->a(Landroidx/compose/ui/platform/a;Landroidx/lifecycle/x;Landroidx/lifecycle/q$b;)V
-
-    return-void
+.method public abstract f(Lb2/d;Ldp0/a;Ldp0/a;Ldp0/a;Ldp0/a;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lb2/d;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;",
+            "Ldp0/a<",
+            "Lro0/x;",
+            ">;)V"
+        }
+    .end annotation
 .end method

@@ -1,5 +1,5 @@
-.class interface abstract Landroid/support/v4/media/MediaBrowserCompat$e;
-.super Ljava/lang/Object;
+.class public final Landroid/support/v4/media/MediaBrowserCompat$e;
+.super Landroid/support/v4/media/MediaBrowserCompat$d;
 .source "SourceFile"
 
 
@@ -9,17 +9,16 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x608
+    accessFlags = 0x9
     name = "e"
 .end annotation
 
 
-# virtual methods
-.method public abstract a()Landroid/support/v4/media/session/MediaSessionCompat$Token;
-.end method
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$b;)V
+    .locals 0
 
-.method public abstract connect()V
-.end method
+    invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/media/MediaBrowserCompat$d;-><init>(Landroid/content/Context;Landroid/content/ComponentName;Landroid/support/v4/media/MediaBrowserCompat$b;)V
 
-.method public abstract disconnect()V
+    return-void
 .end method

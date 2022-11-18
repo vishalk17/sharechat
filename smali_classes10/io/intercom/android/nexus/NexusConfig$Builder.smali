@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field connection_timeout:I
+.field public connection_timeout:I
 
-.field endpoints:Ljava/util/List;
+.field public endpoints:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -27,14 +27,13 @@
     .end annotation
 .end field
 
-.field presence_heartbeat_interval:I
+.field public presence_heartbeat_interval:I
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +44,6 @@
 .method public build()Lio/intercom/android/nexus/NexusConfig;
     .locals 1
 
-    .line 1
     new-instance v0, Lio/intercom/android/nexus/NexusConfig;
 
     invoke-direct {v0, p0}, Lio/intercom/android/nexus/NexusConfig;-><init>(Lio/intercom/android/nexus/NexusConfig$Builder;)V
@@ -56,7 +54,6 @@
 .method public withConnectionTimeout(I)Lio/intercom/android/nexus/NexusConfig$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/intercom/android/nexus/NexusConfig$Builder;->connection_timeout:I
 
     return-object p0
@@ -74,7 +71,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusConfig$Builder;->endpoints:Ljava/util/List;
 
     return-object p0
@@ -83,7 +79,6 @@
 .method public withPresenceHeartbeatInterval(I)Lio/intercom/android/nexus/NexusConfig$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lio/intercom/android/nexus/NexusConfig$Builder;->presence_heartbeat_interval:I
 
     return-object p0

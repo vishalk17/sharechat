@@ -1,5 +1,5 @@
-.class public Landroidx/recyclerview/widget/GridLayoutManager$b;
-.super Landroidx/recyclerview/widget/RecyclerView$q;
+.class public final Landroidx/recyclerview/widget/GridLayoutManager$b;
+.super Landroidx/recyclerview/widget/RecyclerView$o;
 .source "SourceFile"
 
 
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field f:I
+.field public f:I
 
-.field g:I
+.field public g:I
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .locals 0
 
     .line 4
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(II)V
+    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(II)V
 
     const/4 p1, -0x1
 
@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, -0x1
 
@@ -63,7 +63,7 @@
     .locals 0
 
     .line 10
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     const/4 p1, -0x1
 
@@ -82,7 +82,7 @@
     .locals 0
 
     .line 7
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$o;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
     const/4 p1, -0x1
 
@@ -95,24 +95,4 @@
     iput p1, p0, Landroidx/recyclerview/widget/GridLayoutManager$b;->g:I
 
     return-void
-.end method
-
-
-# virtual methods
-.method public f()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/GridLayoutManager$b;->f:I
-
-    return v0
-.end method
-
-.method public g()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/GridLayoutManager$b;->g:I
-
-    return v0
 .end method

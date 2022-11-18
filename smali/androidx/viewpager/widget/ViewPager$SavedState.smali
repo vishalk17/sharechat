@@ -27,18 +27,17 @@
 
 
 # instance fields
-.field d:I
+.field public d:I
 
-.field e:Landroid/os/Parcelable;
+.field public e:Landroid/os/Parcelable;
 
-.field f:Ljava/lang/ClassLoader;
+.field public f:Ljava/lang/ClassLoader;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/viewpager/widget/ViewPager$SavedState$a;
 
     invoke-direct {v0}, Landroidx/viewpager/widget/ViewPager$SavedState$a;-><init>()V
@@ -48,7 +47,7 @@
     return-void
 .end method
 
-.method constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
+.method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 1
 
     .line 2
@@ -97,17 +96,15 @@
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const-string v0, "FragmentPager.SavedState{"
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {v0}, La/a;->c(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "FragmentPager.SavedState{"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v0
 
     .line 2
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
@@ -126,24 +123,23 @@
 
     iget v1, p0, Landroidx/viewpager/widget/ViewPager$SavedState;->d:I
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v2, "}"
 
-    const-string v1, "}"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 3
+    invoke-static {v0, v1, v2}, Lq2/w;->c(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->b:Landroid/os/Parcelable;
+
+    invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
     iget v0, p0, Landroidx/viewpager/widget/ViewPager$SavedState;->d:I

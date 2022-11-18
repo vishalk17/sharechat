@@ -12,7 +12,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x0
+    accessFlags = 0x1
     name = "e"
 .end annotation
 
@@ -274,7 +274,7 @@
 
     move-result-object v0
 
-    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->shutdown()V
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
     .line 28
     iget-object v0, p0, Lcom/appsflyer/internal/ae$e;->AFInAppEventParameterName:Lcom/appsflyer/internal/ae;

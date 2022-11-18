@@ -1,4 +1,4 @@
-.class final Landroidx/recyclerview/widget/a$b;
+.class public final Landroidx/recyclerview/widget/a$b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,23 +9,23 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "b"
 .end annotation
 
 
 # instance fields
-.field a:I
+.field public a:I
 
-.field b:I
+.field public b:I
 
-.field c:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
-.field d:I
+.field public d:I
 
 
 # direct methods
-.method constructor <init>(IIILjava/lang/Object;)V
+.method public constructor <init>(IIILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -48,54 +48,7 @@
 
 
 # virtual methods
-.method a()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget v0, p0, Landroidx/recyclerview/widget/a$b;->a:I
-
-    const/4 v1, 0x1
-
-    if-eq v0, v1, :cond_3
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_2
-
-    const/4 v1, 0x4
-
-    if-eq v0, v1, :cond_1
-
-    const/16 v1, 0x8
-
-    if-eq v0, v1, :cond_0
-
-    const-string v0, "??"
-
-    return-object v0
-
-    :cond_0
-    const-string v0, "mv"
-
-    return-object v0
-
-    :cond_1
-    const-string v0, "up"
-
-    return-object v0
-
-    :cond_2
-    const-string v0, "rm"
-
-    return-object v0
-
-    :cond_3
-    const-string v0, "add"
-
-    return-object v0
-.end method
-
-.method public equals(Ljava/lang/Object;)Z
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     const/4 v0, 0x1
@@ -209,7 +162,7 @@
     return v0
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 2
 
     .line 1
@@ -232,8 +185,8 @@
     return v0
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 2
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -255,10 +208,48 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 2
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/a$b;->a()Ljava/lang/String;
+    iget v1, p0, Landroidx/recyclerview/widget/a$b;->a:I
 
-    move-result-object v1
+    const/4 v2, 0x1
 
+    if-eq v1, v2, :cond_3
+
+    const/4 v2, 0x2
+
+    if-eq v1, v2, :cond_2
+
+    const/4 v2, 0x4
+
+    if-eq v1, v2, :cond_1
+
+    const/16 v2, 0x8
+
+    if-eq v1, v2, :cond_0
+
+    const-string v1, "??"
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "mv"
+
+    goto :goto_0
+
+    :cond_1
+    const-string v1, "up"
+
+    goto :goto_0
+
+    :cond_2
+    const-string v1, "rm"
+
+    goto :goto_0
+
+    :cond_3
+    const-string v1, "add"
+
+    .line 3
+    :goto_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, ",s:"

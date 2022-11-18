@@ -12,10 +12,9 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "https://%sregister.%s/api/v"
@@ -66,7 +65,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/appsflyer/AppsFlyerLib;->getHostName()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/appsflyer/internal/ae;->getHostName()Ljava/lang/String;
 
     move-result-object v3
 
@@ -178,7 +177,7 @@
     return p0
 .end method
 
-.method static synthetic AFInAppEventType(Lcom/appsflyer/internal/bb;)V
+.method public static synthetic AFInAppEventType(Lcom/appsflyer/internal/bb;)V
     .locals 2
 
     .line 46

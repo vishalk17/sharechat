@@ -1,18 +1,13 @@
-.class public interface abstract Lmq/a;
+.class public final Lmq/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract getUniqueId(Lkotlin/coroutines/d;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/coroutines/d<",
-            "-",
-            "Ljava/lang/String;",
-            ">;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method

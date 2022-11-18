@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method constructor <init>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
@@ -86,7 +86,7 @@
 
 
 # virtual methods
-.method final AFInAppEventParameterName()Ljava/lang/String;
+.method public final AFInAppEventParameterName()Ljava/lang/String;
     .locals 5
 
     .line 1

@@ -1,40 +1,194 @@
-.class public final Ll1/a;
+.class public abstract Ll1/a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ll1/d;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ll1/d<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public c:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TT;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Ll1/a;->a:Ljava/lang/Object;
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Ll1/a;->b:Ljava/util/ArrayList;
+
+    .line 3
+    iput-object p1, p0, Ll1/a;->c:Ljava/lang/Object;
+
     return-void
 .end method
 
-.method public static a(Landroid/content/pm/PackageInfo;)J
+
+# virtual methods
+.method public final a()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Ll1/a;->c:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public synthetic c()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ll1/a;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    .line 2
+    iget-object v0, p0, Ll1/a;->a:Ljava/lang/Object;
+
+    .line 3
+    iput-object v0, p0, Ll1/a;->c:Ljava/lang/Object;
+
+    .line 4
+    invoke-virtual {p0}, Ll1/a;->j()V
+
+    return-void
+.end method
+
+.method public final synthetic d()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final h(Ljava/lang/Object;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Ll1/a;->b:Ljava/util/ArrayList;
+
+    .line 2
+    iget-object v1, p0, Ll1/a;->c:Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    iput-object p1, p0, Ll1/a;->c:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final i()V
     .locals 2
 
     .line 1
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    iget-object v0, p0, Ll1/a;->b:Ljava/util/ArrayList;
 
-    const/16 v1, 0x1c
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
-    if-lt v0, v1, :cond_0
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
+    iget-object v0, p0, Ll1/a;->b:Ljava/util/ArrayList;
 
-    move-result-wide v0
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    return-wide v0
+    move-result v1
+
+    add-int/lit8 v1, v1, -0x1
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    move-result-object v0
 
     .line 3
+    iput-object v0, p0, Ll1/a;->c:Ljava/lang/Object;
+
+    return-void
+
+    .line 4
     :cond_0
-    iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    int-to-long v0, p0
+    const-string v1, "Check failed."
 
-    return-wide v0
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public abstract j()V
 .end method

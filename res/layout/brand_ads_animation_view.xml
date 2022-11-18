@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/brand_animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:adjustViewBounds="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageButton android:id="@id/brand_close_button" android:background="@null" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/ic_close_cta" android:layout_marginEnd="8.0dip" android:translationZ="5.0dip" app:layout_constraintEnd_toEndOf="@id/brand_animation_view" app:layout_constraintTop_toTopOf="@id/brand_animation_view" />
+</merge>

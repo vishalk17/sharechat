@@ -1,9 +1,9 @@
-.class final Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;
-.super Lkotlin/jvm/internal/r;
+.class public final Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;
+.super Lep0/u;
 .source "SourceFile"
 
 # interfaces
-.implements Lr00/a;
+.implements Ldp0/a;
 
 
 # annotations
@@ -12,77 +12,51 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lkotlin/jvm/internal/r;",
-        "Lr00/a<",
-        "Ljava/lang/String;",
+        "Lep0/u;",
+        "Ldp0/a<",
+        "Landroidx/lifecycle/f1;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field final synthetic b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
+.field public final synthetic b:Landroidx/activity/ComponentActivity;
 
 
 # direct methods
-.method constructor <init>(Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;)V
+.method public constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;->b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
+    iput-object p1, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;->b:Landroidx/activity/ComponentActivity;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+    invoke-direct {p0, p1}, Lep0/u;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic invoke()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;->invoke()Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final invoke()Ljava/lang/String;
+.method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    .line 2
-    iget-object v0, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;->b:Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity;
+    iget-object v0, p0, Lin/mohalla/sharechat/videoplayerV2/VideoPlayerV2Activity$g;->b:Landroidx/activity/ComponentActivity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+    invoke-virtual {v0}, Landroidx/activity/ComponentActivity;->getViewModelStore()Landroidx/lifecycle/f1;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    const-string v1, "viewModelStore"
 
-    const-string v1, "POST_DATA"
+    invoke-static {v0, v1}, Lep0/s;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_1
-
-    :cond_0
-    const-string v0, ""
-
-    :cond_1
     return-object v0
 .end method

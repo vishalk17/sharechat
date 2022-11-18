@@ -67,93 +67,93 @@
 
 .field public static final abc_select_dialog_material:I = 0x7f0d001a
 
-.field public static final md_dialog_basic:I = 0x7f0d044e
+.field public static final md_dialog_basic:I = 0x7f0d048d
 
-.field public static final md_dialog_basic_check:I = 0x7f0d044f
+.field public static final md_dialog_basic_check:I = 0x7f0d048e
 
-.field public static final md_dialog_colorchooser:I = 0x7f0d0450
+.field public static final md_dialog_colorchooser:I = 0x7f0d048f
 
-.field public static final md_dialog_custom:I = 0x7f0d0451
+.field public static final md_dialog_custom:I = 0x7f0d0490
 
-.field public static final md_dialog_input:I = 0x7f0d0452
+.field public static final md_dialog_input:I = 0x7f0d0491
 
-.field public static final md_dialog_input_check:I = 0x7f0d0453
+.field public static final md_dialog_input_check:I = 0x7f0d0492
 
-.field public static final md_dialog_list:I = 0x7f0d0454
+.field public static final md_dialog_list:I = 0x7f0d0493
 
-.field public static final md_dialog_list_check:I = 0x7f0d0455
+.field public static final md_dialog_list_check:I = 0x7f0d0494
 
-.field public static final md_dialog_progress:I = 0x7f0d0456
+.field public static final md_dialog_progress:I = 0x7f0d0495
 
-.field public static final md_dialog_progress_indeterminate:I = 0x7f0d0457
+.field public static final md_dialog_progress_indeterminate:I = 0x7f0d0496
 
-.field public static final md_dialog_progress_indeterminate_horizontal:I = 0x7f0d0458
+.field public static final md_dialog_progress_indeterminate_horizontal:I = 0x7f0d0497
 
-.field public static final md_listitem:I = 0x7f0d0459
+.field public static final md_listitem:I = 0x7f0d0498
 
-.field public static final md_listitem_multichoice:I = 0x7f0d045a
+.field public static final md_listitem_multichoice:I = 0x7f0d0499
 
-.field public static final md_listitem_singlechoice:I = 0x7f0d045b
+.field public static final md_listitem_singlechoice:I = 0x7f0d049a
 
-.field public static final md_preference_custom:I = 0x7f0d045c
+.field public static final md_preference_custom:I = 0x7f0d049b
 
-.field public static final md_simplelist_item:I = 0x7f0d045d
+.field public static final md_simplelist_item:I = 0x7f0d049c
 
-.field public static final md_stub_actionbuttons:I = 0x7f0d045e
+.field public static final md_stub_actionbuttons:I = 0x7f0d049d
 
-.field public static final md_stub_colorchooser_custom:I = 0x7f0d045f
+.field public static final md_stub_colorchooser_custom:I = 0x7f0d049e
 
-.field public static final md_stub_colorchooser_grid:I = 0x7f0d0460
+.field public static final md_stub_colorchooser_grid:I = 0x7f0d049f
 
-.field public static final md_stub_inputpref:I = 0x7f0d0461
+.field public static final md_stub_inputpref:I = 0x7f0d04a0
 
-.field public static final md_stub_progress:I = 0x7f0d0462
+.field public static final md_stub_progress:I = 0x7f0d04a1
 
-.field public static final md_stub_progress_indeterminate:I = 0x7f0d0463
+.field public static final md_stub_progress_indeterminate:I = 0x7f0d04a2
 
-.field public static final md_stub_progress_indeterminate_horizontal:I = 0x7f0d0464
+.field public static final md_stub_progress_indeterminate_horizontal:I = 0x7f0d04a3
 
-.field public static final md_stub_titleframe:I = 0x7f0d0465
+.field public static final md_stub_titleframe:I = 0x7f0d04a4
 
-.field public static final md_stub_titleframe_lesspadding:I = 0x7f0d0466
+.field public static final md_stub_titleframe_lesspadding:I = 0x7f0d04a5
 
-.field public static final notification_action:I = 0x7f0d0494
+.field public static final notification_action:I = 0x7f0d04d9
 
-.field public static final notification_action_tombstone:I = 0x7f0d0495
+.field public static final notification_action_tombstone:I = 0x7f0d04da
 
-.field public static final notification_media_action:I = 0x7f0d049a
+.field public static final notification_media_action:I = 0x7f0d04df
 
-.field public static final notification_media_cancel_action:I = 0x7f0d049b
+.field public static final notification_media_cancel_action:I = 0x7f0d04e0
 
-.field public static final notification_template_big_media:I = 0x7f0d049c
+.field public static final notification_template_big_media:I = 0x7f0d04e1
 
-.field public static final notification_template_big_media_custom:I = 0x7f0d049d
+.field public static final notification_template_big_media_custom:I = 0x7f0d04e2
 
-.field public static final notification_template_big_media_narrow:I = 0x7f0d049e
+.field public static final notification_template_big_media_narrow:I = 0x7f0d04e3
 
-.field public static final notification_template_big_media_narrow_custom:I = 0x7f0d049f
+.field public static final notification_template_big_media_narrow_custom:I = 0x7f0d04e4
 
-.field public static final notification_template_custom_big:I = 0x7f0d04a0
+.field public static final notification_template_custom_big:I = 0x7f0d04e5
 
-.field public static final notification_template_icon_group:I = 0x7f0d04a1
+.field public static final notification_template_icon_group:I = 0x7f0d04e6
 
-.field public static final notification_template_lines_media:I = 0x7f0d04a2
+.field public static final notification_template_lines_media:I = 0x7f0d04e7
 
-.field public static final notification_template_media:I = 0x7f0d04a3
+.field public static final notification_template_media:I = 0x7f0d04e8
 
-.field public static final notification_template_media_custom:I = 0x7f0d04a4
+.field public static final notification_template_media_custom:I = 0x7f0d04e9
 
-.field public static final notification_template_part_chronometer:I = 0x7f0d04a5
+.field public static final notification_template_part_chronometer:I = 0x7f0d04ea
 
-.field public static final notification_template_part_time:I = 0x7f0d04a6
+.field public static final notification_template_part_time:I = 0x7f0d04eb
 
-.field public static final select_dialog_item_material:I = 0x7f0d04de
+.field public static final select_dialog_item_material:I = 0x7f0d0527
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d04df
+.field public static final select_dialog_multichoice_material:I = 0x7f0d0528
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d04e0
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d0529
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0502
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0549
 
 
 # direct methods

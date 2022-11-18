@@ -9,7 +9,7 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x18
+    accessFlags = 0x19
     name = "c"
 .end annotation
 
@@ -17,11 +17,11 @@
 # instance fields
 .field private final AFKeystoreWrapper:Z
 
-.field final valueOf:Ljava/lang/String;
+.field public final valueOf:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;Z)V
+.method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
     .line 1
@@ -38,10 +38,9 @@
 
 
 # virtual methods
-.method final AFInAppEventParameterName()Z
+.method public final AFInAppEventParameterName()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/appsflyer/internal/ac$c;->AFKeystoreWrapper:Z
 
     return v0

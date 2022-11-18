@@ -1,4 +1,4 @@
-.class Lio/intercom/android/nexus/NexusEvent$Builder;
+.class public Lio/intercom/android/nexus/NexusEvent$Builder;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,17 +9,17 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x8
+    accessFlags = 0x9
     name = "Builder"
 .end annotation
 
 
 # instance fields
-.field eventData:Lio/intercom/android/nexus/EventData;
+.field public eventData:Lio/intercom/android/nexus/EventData;
 
-.field final eventName:Lio/intercom/android/nexus/NexusEventType;
+.field public final eventName:Lio/intercom/android/nexus/NexusEventType;
 
-.field topics:Ljava/util/List;
+.field public topics:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,11 +29,11 @@
     .end annotation
 .end field
 
-.field userId:Ljava/lang/String;
+.field public userId:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lio/intercom/android/nexus/NexusEventType;)V
+.method public constructor <init>(Lio/intercom/android/nexus/NexusEventType;)V
     .locals 0
 
     .line 1
@@ -50,7 +50,6 @@
 .method public build()Lio/intercom/android/nexus/NexusEvent;
     .locals 1
 
-    .line 1
     new-instance v0, Lio/intercom/android/nexus/NexusEvent;
 
     invoke-direct {v0, p0}, Lio/intercom/android/nexus/NexusEvent;-><init>(Lio/intercom/android/nexus/NexusEvent$Builder;)V
@@ -61,7 +60,6 @@
 .method public withEventData(Lio/intercom/android/nexus/EventData;)Lio/intercom/android/nexus/NexusEvent$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusEvent$Builder;->eventData:Lio/intercom/android/nexus/EventData;
 
     return-object p0
@@ -79,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusEvent$Builder;->topics:Ljava/util/List;
 
     return-object p0
@@ -88,7 +85,6 @@
 .method public withUserId(Ljava/lang/String;)Lio/intercom/android/nexus/NexusEvent$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/intercom/android/nexus/NexusEvent$Builder;->userId:Ljava/lang/String;
 
     return-object p0

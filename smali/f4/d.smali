@@ -1,111 +1,40 @@
-.class final Lf4/d;
-.super Lf4/b;
+.class public final Lf4/d;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lf4/b<",
-        "Landroid/graphics/drawable/Drawable;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field public final synthetic b:Landroid/app/Application;
+
+.field public final synthetic c:Lf4/f$a;
 
 
 # direct methods
-.method private constructor <init>(Landroid/graphics/drawable/Drawable;)V
+.method public constructor <init>(Landroid/app/Application;Lf4/f$a;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Lf4/b;-><init>(Landroid/graphics/drawable/Drawable;)V
+    iput-object p1, p0, Lf4/d;->b:Landroid/app/Application;
+
+    iput-object p2, p0, Lf4/d;->c:Lf4/f$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method static d(Landroid/graphics/drawable/Drawable;)Lcom/bumptech/glide/load/engine/v;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/graphics/drawable/Drawable;",
-            ")",
-            "Lcom/bumptech/glide/load/engine/v<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;"
-        }
-    .end annotation
-
-    if-eqz p0, :cond_0
-
-    .line 1
-    new-instance v0, Lf4/d;
-
-    invoke-direct {v0, p0}, Lf4/d;-><init>(Landroid/graphics/drawable/Drawable;)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public a()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lf4/b;->b:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public c()I
+.method public final run()V
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lf4/b;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lf4/d;->b:Landroid/app/Application;
 
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
+    iget-object v1, p0, Lf4/d;->c:Lf4/f$a;
 
-    move-result v0
-
-    iget-object v1, p0, Lf4/b;->b:Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
-
-    move-result v1
-
-    mul-int v0, v0, v1
-
-    mul-int/lit8 v0, v0, 0x4
-
-    const/4 v1, 0x1
-
-    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public recycle()V
-    .locals 0
+    invoke-virtual {v0, v1}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     return-void
 .end method

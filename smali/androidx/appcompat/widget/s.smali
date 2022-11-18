@@ -1,38 +1,34 @@
-.class public interface abstract Landroidx/appcompat/widget/s;
+.class public final Landroidx/appcompat/widget/s;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()Z
-.end method
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/appcompat/widget/s$a;
+    }
+.end annotation
 
-.method public abstract b()Z
-.end method
 
-.method public abstract c()Z
-.end method
+# instance fields
+.field public a:Landroid/widget/TextView;
 
-.method public abstract d()Z
-.end method
+.field public b:Landroid/view/textclassifier/TextClassifier;
 
-.method public abstract e(Landroid/view/Menu;Landroidx/appcompat/view/menu/m$a;)V
-.end method
 
-.method public abstract f()V
-.end method
+# direct methods
+.method public constructor <init>(Landroid/widget/TextView;)V
+    .locals 0
 
-.method public abstract g()Z
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract h(I)V
-.end method
+    .line 2
+    invoke-static {p1}, Ljava/util/Objects;->requireNonNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public abstract k()V
-.end method
+    .line 3
+    iput-object p1, p0, Landroidx/appcompat/widget/s;->a:Landroid/widget/TextView;
 
-.method public abstract setWindowCallback(Landroid/view/Window$Callback;)V
-.end method
-
-.method public abstract setWindowTitle(Ljava/lang/CharSequence;)V
+    return-void
 .end method

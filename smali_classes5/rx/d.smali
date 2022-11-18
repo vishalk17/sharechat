@@ -2,28 +2,37 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# annotations
-.annotation runtime Ldagger/Module;
-.end annotation
+
+# instance fields
+.field public final b:Lcom/skydoves/balloon/Balloon;
 
 
 # direct methods
-.method private constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lcom/skydoves/balloon/Balloon;)V
+    .locals 1
 
-    .line 1
+    const-string v0, "balloon"
+
+    invoke-static {p1, v0}, Lep0/s;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lrx/d;->b:Lcom/skydoves/balloon/Balloon;
 
     return-void
 .end method
 
-.method public static a()Ljava/lang/String;
+
+# virtual methods
+.method public final run()V
     .locals 1
-    .annotation runtime Ldagger/Provides;
-    .end annotation
 
-    const-string v0, "in.mohalla.sharechat.login.signup.misc.TermsAndConditionViewModel"
+    iget-object v0, p0, Lrx/d;->b:Lcom/skydoves/balloon/Balloon;
 
-    return-object v0
+    invoke-virtual {v0}, Lcom/skydoves/balloon/Balloon;->l()V
+
+    return-void
 .end method

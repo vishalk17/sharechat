@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field AFInAppEventParameterName:Ljava/util/concurrent/ScheduledExecutorService;
+.field public AFInAppEventParameterName:Ljava/util/concurrent/ScheduledExecutorService;
 
-.field final AFInAppEventType:Ljava/util/concurrent/ThreadFactory;
+.field public final AFInAppEventType:Ljava/util/concurrent/ThreadFactory;
 
-.field AFKeystoreWrapper:Ljava/util/concurrent/Executor;
+.field public AFKeystoreWrapper:Ljava/util/concurrent/Executor;
 
-.field values:Ljava/util/concurrent/ScheduledExecutorService;
+.field public values:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     return-void
 .end method
 
-.method static AFKeystoreWrapper(Ljava/util/concurrent/ExecutorService;)V
+.method public static AFKeystoreWrapper(Ljava/util/concurrent/ExecutorService;)V
     .locals 4
 
     const-string v0, "killing non-finished tasks"
@@ -134,7 +134,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->isShutdown()Z
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
     move-result v0
 
@@ -143,7 +143,7 @@
     iget-object v0, p0, Lcom/appsflyer/internal/k;->values:Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 3
-    invoke-interface {v0}, Ljava/util/concurrent/ScheduledExecutorService;->isTerminated()Z
+    invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
 
     move-result v0
 

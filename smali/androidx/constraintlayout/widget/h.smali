@@ -1,94 +1,209 @@
-.class public Landroidx/constraintlayout/widget/h;
-.super Ljava/lang/Object;
+.class public abstract Landroidx/constraintlayout/widget/h;
+.super Landroidx/constraintlayout/widget/b;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroidx/constraintlayout/widget/h$a;
-    }
-.end annotation
-
-
 # instance fields
-.field private a:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/Integer;",
-            "Ljava/util/HashSet<",
-            "Ljava/lang/ref/WeakReference<",
-            "Landroidx/constraintlayout/widget/h$a;",
-            ">;>;>;"
-        }
-    .end annotation
-.end field
+.field public j:Z
+
+.field public k:Z
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 1
+# virtual methods
+.method public final f(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Landroid/util/SparseIntArray;
-
-    invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Landroidx/constraintlayout/widget/h;->a:Ljava/util/HashMap;
+    invoke-virtual {p0, p1}, Landroidx/constraintlayout/widget/b;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a(ILandroidx/constraintlayout/widget/h$a;)V
-    .locals 2
+.method public final i(Landroid/util/AttributeSet;)V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/constraintlayout/widget/h;->a:Ljava/util/HashMap;
+    invoke-super {p0, p1}, Landroidx/constraintlayout/widget/b;->i(Landroid/util/AttributeSet;)V
 
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz p1, :cond_3
 
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 2
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    check-cast v0, Ljava/util/HashSet;
+    sget-object v1, Landroidx/constraintlayout/widget/R$styleable;->ConstraintLayout_Layout:[I
 
-    if-nez v0, :cond_0
-
-    .line 2
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    .line 3
-    iget-object v1, p0, Landroidx/constraintlayout/widget/h;->a:Ljava/util/HashMap;
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v0, p1, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 3
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->getIndexCount()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_2
 
     .line 4
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
+
+    move-result v2
+
+    .line 5
+    sget v3, Landroidx/constraintlayout/widget/R$styleable;->ConstraintLayout_Layout_android_visibility:I
+
+    const/4 v4, 0x1
+
+    if-ne v2, v3, :cond_0
+
+    .line 6
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/h;->j:Z
+
+    goto :goto_1
+
+    .line 7
     :cond_0
-    new-instance p1, Ljava/lang/ref/WeakReference;
+    sget v3, Landroidx/constraintlayout/widget/R$styleable;->ConstraintLayout_Layout_android_elevation:I
 
-    invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+    if-ne v2, v3, :cond_1
 
-    invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+    .line 8
+    iput-boolean v4, p0, Landroidx/constraintlayout/widget/h;->k:Z
+
+    :cond_1
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 9
+    :cond_2
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    :cond_3
+    return-void
+.end method
+
+.method public final onAttachedToWindow()V
+    .locals 6
+
+    .line 1
+    invoke-super {p0}, Landroidx/constraintlayout/widget/b;->onAttachedToWindow()V
+
+    .line 2
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/h;->j:Z
+
+    if-nez v0, :cond_0
+
+    iget-boolean v0, p0, Landroidx/constraintlayout/widget/h;->k:Z
+
+    if-eqz v0, :cond_3
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    .line 4
+    instance-of v1, v0, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    if-eqz v1, :cond_3
+
+    .line 5
+    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
+
+    move-result v1
+
+    .line 7
+    invoke-virtual {p0}, Landroid/view/View;->getElevation()F
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    .line 8
+    :goto_0
+    iget v4, p0, Landroidx/constraintlayout/widget/b;->c:I
+
+    if-ge v3, v4, :cond_3
+
+    .line 9
+    iget-object v4, p0, Landroidx/constraintlayout/widget/b;->b:[I
+
+    aget v4, v4, v3
+
+    .line 10
+    invoke-virtual {v0, v4}, Landroidx/constraintlayout/widget/ConstraintLayout;->g(I)Landroid/view/View;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    .line 11
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/h;->j:Z
+
+    if-eqz v5, :cond_1
+
+    .line 12
+    invoke-virtual {v4, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 13
+    :cond_1
+    iget-boolean v5, p0, Landroidx/constraintlayout/widget/h;->k:Z
+
+    if-eqz v5, :cond_2
+
+    const/4 v5, 0x0
+
+    cmpl-float v5, v2, v5
+
+    if-lez v5, :cond_2
+
+    .line 14
+    invoke-virtual {v4}, Landroid/view/View;->getTranslationZ()F
+
+    move-result v5
+
+    add-float/2addr v5, v2
+
+    invoke-virtual {v4, v5}, Landroid/view/View;->setTranslationZ(F)V
+
+    :cond_2
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_3
+    return-void
+.end method
+
+.method public setElevation(F)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/View;->setElevation(F)V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/constraintlayout/widget/b;->d()V
+
+    return-void
+.end method
+
+.method public setVisibility(I)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroidx/constraintlayout/widget/b;->d()V
 
     return-void
 .end method

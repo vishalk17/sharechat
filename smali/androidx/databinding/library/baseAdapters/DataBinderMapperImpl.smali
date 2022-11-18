@@ -12,14 +12,13 @@
 
 
 # static fields
-.field private static final a:Landroid/util/SparseIntArray;
+.field public static final a:Landroid/util/SparseIntArray;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/util/SparseIntArray;
 
     const/4 v1, 0x0
@@ -34,7 +33,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/databinding/e;-><init>()V
 
     return-void
@@ -42,7 +40,7 @@
 
 
 # virtual methods
-.method public a()Ljava/util/List;
+.method public final a()Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -63,7 +60,7 @@
     return-object v0
 .end method
 
-.method public b(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
+.method public final b(Landroidx/databinding/f;Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
     .locals 0
 
     .line 1
@@ -101,40 +98,36 @@
     return-object p1
 .end method
 
-.method public c(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
-    .locals 1
-
-    const/4 p1, 0x0
-
-    if-eqz p2, :cond_2
+.method public final c(Landroidx/databinding/f;[Landroid/view/View;I)Landroidx/databinding/ViewDataBinding;
+    .locals 0
 
     .line 1
-    array-length v0, p2
+    array-length p1, p2
 
-    if-nez v0, :cond_0
+    if-nez p1, :cond_0
 
     goto :goto_0
 
     .line 2
     :cond_0
-    sget-object v0, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->a:Landroid/util/SparseIntArray;
+    sget-object p1, Landroidx/databinding/library/baseAdapters/DataBinderMapperImpl;->a:Landroid/util/SparseIntArray;
 
-    invoke-virtual {v0, p3}, Landroid/util/SparseIntArray;->get(I)I
+    invoke-virtual {p1, p3}, Landroid/util/SparseIntArray;->get(I)I
 
-    move-result p3
+    move-result p1
 
-    if-lez p3, :cond_2
+    if-lez p1, :cond_2
 
-    const/4 p3, 0x0
+    const/4 p1, 0x0
 
     .line 3
-    aget-object p2, p2, p3
+    aget-object p1, p2, p1
 
-    invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
-    move-result-object p2
+    move-result-object p1
 
-    if-eqz p2, :cond_1
+    if-eqz p1, :cond_1
 
     goto :goto_0
 
@@ -150,10 +143,12 @@
 
     :cond_2
     :goto_0
+    const/4 p1, 0x0
+
     return-object p1
 .end method
 
-.method public d(Ljava/lang/String;)I
+.method public final d(Ljava/lang/String;)I
     .locals 2
 
     const/4 v0, 0x0

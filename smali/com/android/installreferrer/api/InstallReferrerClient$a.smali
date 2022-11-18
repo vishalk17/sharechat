@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/installreferrer/api/InstallReferrerClient$a;
+.class public final synthetic Lcom/android/installreferrer/api/InstallReferrerClient$a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
@@ -9,6 +9,6 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1008
+    accessFlags = 0x1009
     name = null
 .end annotation
