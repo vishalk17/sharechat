@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="1.0dip">
+        <shape android:shape="oval">
+            <corners android:radius="12.0dip" />
+            <size android:height="24.0dip" android:width="24.0dip" />
+            <gradient android:startColor="#ffffc93c" android:endColor="#ffffa535" android:angle="270.0" />
+        </shape>
+    </item>
+    <item>
+        <vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0">
+            <path android:pathData="M6.5,12.9524L9.5968,16L18.5,8" android:strokeColor="#ffffffff" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round" />
+        </vector>
+    </item>
+</layer-list>

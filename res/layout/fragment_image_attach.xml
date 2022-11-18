@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root_cl" android:background="@drawable/rect_12_top_solid_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/drag_divider" android:background="@drawable/bg_dragable_divider" android:layout_width="32.0dip" android:layout_height="4.0dip" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_attach_image" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/drag_divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

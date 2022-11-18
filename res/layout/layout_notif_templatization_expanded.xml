@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root_expanded" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="10.0dip">
+        <ImageView android:id="@id/iv_logo" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@mipmap/ic_sharechat_logo" android:layout_alignParentStart="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharechat" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/iv_logo" />
+        <ImageView android:id="@id/iv_separator" android:layout_width="4.0dip" android:layout_height="4.0dip" android:src="@drawable/ic_indicator_deselected" android:baselineAlignBottom="true" android:layout_alignBaseline="@id/tv_title" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/tv_title" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/iv_separator" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="8.0dip" android:layout_height="5.0dip" android:src="@drawable/ic_notif_up_arrow_black" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_large" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="188.0dip" android:scaleType="fitXY" />
+</LinearLayout>

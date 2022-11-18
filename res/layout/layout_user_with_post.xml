@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="4.0dip" app:cardCornerRadius="8.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/view_user_with_post" android:visibility="gone" layout="@layout/viewholder_user_with_post" />
+    <include android:id="@id/view_tag_with_post" android:visibility="gone" layout="@layout/viewholder_tags_with_posts" />
+</androidx.cardview.widget.CardView>

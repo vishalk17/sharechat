@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@android:color/white" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin">
+                <include android:id="@id/layoutToolbar" layout="@layout/layout_toolbar_group_mini_profile" />
+            </androidx.appcompat.widget.Toolbar>
+            <include android:id="@id/layoutCollapsingToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_header_group_mini_profile" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/fl_fragment_post" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

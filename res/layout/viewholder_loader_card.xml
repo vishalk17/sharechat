@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="150.5dip" android:layout_height="208.0dip" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="visible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminateTint="@color/link" />
+</androidx.cardview.widget.CardView>

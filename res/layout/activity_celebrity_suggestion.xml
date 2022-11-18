@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/black100" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_celebrity_list" android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="bottom" android:id="@id/follow_all_bg_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/secondary_bg" android:gravity="center" android:layout_gravity="bottom" android:id="@id/follow_all" android:background="@drawable/bg_follow_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="Follow All" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    </FrameLayout>
+</LinearLayout>

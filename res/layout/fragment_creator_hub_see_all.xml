@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_main_view" android:tag="layout/fragment_creator_hub_see_all_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <io.supercharge.shimmerlayout.ShimmerLayout android:id="@id/shimmer_view" android:background="@color/secondary_bg" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_angle="20">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/vs_shimmer_edu" android:layout="@layout/shimmer_edu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/vs_shimmer_articles" android:layout="@layout/shimmer_articles" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:id="@id/vs_shimmer_events" android:layout="@layout/shimmer_events" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

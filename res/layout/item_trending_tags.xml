@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_rectangle_rounded_grey_border" android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_margin="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="96.0dip" android:layout_height="fill_parent" android:layout_margin="2.0dip" app:cardCornerRadius="8.0dip">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_trending_tag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_tag_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:maxLines="1" android:layout_marginStart="12.0dip" />
+</LinearLayout>

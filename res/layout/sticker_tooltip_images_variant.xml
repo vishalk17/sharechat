@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="212.0dip" android:layout_height="48.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:lottie_autoPlay="true" app:lottie_rawRes="@raw/anim_sticker_tooltip_v1" />
+    <View android:id="@id/open_sticker_section" android:layout_width="164.0dip" android:layout_height="48.0dip" />
+    <View android:layout_gravity="end" android:id="@id/close_sticker_tooltip" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+</FrameLayout>

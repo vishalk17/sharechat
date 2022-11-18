@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_content" android:background="@color/black100" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" app:resize_mode="fixed_width">
+        <FrameLayout android:layout_gravity="center" android:id="@id/fl_ima_ad_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.android.exoplayer2.ui.PlayerView android:layout_gravity="center" android:id="@id/exo_player_v2" android:background="@color/black100" android:layout_width="fill_parent" android:layout_height="fill_parent" app:auto_show="false" app:controller_layout_id="@layout/custom_exo_controller_feed" app:hide_on_touch="true" app:show_timeout="3000" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/anim_video_skip" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_thumb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/black100" android:scaleType="centerCrop" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_video_exo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/exo_back" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_arrow_left_white" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textColor="@color/white" android:layout_gravity="end|bottom|center" android:id="@id/ad_countdown_timer_v2" android:background="@color/black_translucent" android:padding="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" />
+        <ViewStub android:id="@id/vs_double_tap_like" android:layout="@layout/layout_double_tap" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.Group android:id="@id/group_video_player" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="fl_ima_ad_container,exo_player_v2" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <FrameLayout android:id="@id/fl_more_feed" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/fl_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

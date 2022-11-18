@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="144.0dip" android:layout_height="112.0dip" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip" android:elevation="3.0dip" app:cardCornerRadius="2.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/rl_phone_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_phone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="16.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_mobile" app:tint="@color/link" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_verify_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verify_phone_number_title" android:layout_centerInParent="true" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/secondary" android:ellipsize="end" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/verify_phone_number_message" android:maxLines="3" android:layout_below="@id/tv_verify_number" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

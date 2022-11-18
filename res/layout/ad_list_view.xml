@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/gam_native_ad_layout" />
+        <View android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

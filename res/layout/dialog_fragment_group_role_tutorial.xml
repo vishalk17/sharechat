@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="340.0dip" />
+        <me.relex.circleindicator.CircleIndicator2 android:id="@id/circle_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/recycler_view" app:ci_animator="@anim/circular_indicator_no_animation" app:ci_drawable="@drawable/circle_grey_8dp" app:ci_drawable_unselected="@drawable/circle_light_grey_8dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

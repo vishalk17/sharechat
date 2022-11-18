@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape andorid:shape="rectangle"
+  xmlns:andorid="http://schemas.android.com/apk/res/android">
+    <corners andorid:radius="4.0dip" />
+    <solid andorid:color="@color/secondary" />
+    <stroke andorid:width="1.0dip" andorid:color="@color/secondary_bg" />
+</shape>

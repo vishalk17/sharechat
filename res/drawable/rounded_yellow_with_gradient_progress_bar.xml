@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="18.0dip" />
+            <solid android:color="#80000000" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress" android:left="1.0dip" android:top="1.0dip" android:right="1.0dip" android:bottom="1.0dip">
+        <scale android:scaleWidth="100%">
+            <shape andorid:shape="rectangle"
+              xmlns:andorid="http://schemas.android.com/apk/res/android">
+                <corners andorid:radius="18.0dip" />
+                <gradient andorid:startColor="@color/champion_progress_bar_start_yellow" andorid:endColor="@color/champion_progress_bar_end_dark_yellow" andorid:angle="0.0" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

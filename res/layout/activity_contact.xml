@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/ib_back" android:background="@null" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+                <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:background="@drawable/bg_chat_search" android:layout_width="wrap_content" android:layout_height="48.0dip" app:collapseIcon="@drawable/ic_arrow_back_black_24dp" app:iconifiedByDefault="false" app:queryBackground="@color/transparent" app:queryHint="@string/search" app:searchIcon="@drawable/ic_search_explore">
+                    <requestFocus />
+                </androidx.appcompat.widget.SearchView>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@id/contact_tabs" android:layout_width="fill_parent" android:layout_height="50.0dip" app:tabBackground="@color/secondary_bg" app:tabIndicatorColor="@color/link" app:tabIndicatorHeight="3.0dip" app:tabSelectedTextColor="@color/link" app:tabTextColor="@color/primary" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/contact_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/primary" android:id="@id/tv_pinned_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:text="@string/pinned_post" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_pinned_post" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintRight_toLeftOf="@id/tv_pinned_post" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_pinned_post" />
+    <View android:id="@id/border_pinned_post" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/iv_pinned_post" />
+    <androidx.constraintlayout.widget.Group android:id="@id/cl_pinned_post" android:layout_width="wrap_content" android:layout_height="wrap_content" app:constraint_referenced_ids="iv_pinned_post,tv_pinned_post,border_pinned_post" />
+</merge>

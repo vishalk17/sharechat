@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@id/ib_post_image_download" android:background="@drawable/bg_rectangle_rounded_transparent_black" android:padding="12.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:foreground="?selectableItemBackgroundBorderless" app:srcCompat="@drawable/ic_file_download_white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

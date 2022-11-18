@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/swipe_back_layout" android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar_post" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="in.mohalla.sharechat.common.views.bottomsheet.base.BottomSheetParentAppBarBehavior">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+                <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip">
+                    <include android:id="@id/include_toolbar_post" layout="@layout/layout_toolbar_post" />
+                </androidx.appcompat.widget.Toolbar>
+                <FrameLayout android:id="@id/fl_collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tablayout_post" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@color/secondary_bg" app:tabIndicatorColor="@color/link" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager_post" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <FrameLayout android:id="@id/fl_suggested_post" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <include android:id="@id/include_user_blocked" app:layout_behavior="@string/appbar_scrolling_view_behavior" layout="@layout/layout_user_blocked" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_post" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_deleted" android:paddingBottom="56.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="in.mohalla.sharechat.common.views.FixedScrollingViewBehavior" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/swipe_back_layout">
+            <FrameLayout android:id="@id/fl_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </androidx.core.widget.NestedScrollView>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_post_comment_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_suggested_feed_nudge" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_more_like_this_nudge" android:background="@drawable/bg_round_rect_blue" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_like_this" android:drawablePadding="8.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:backgroundTint="@color/link" app:drawableStartCompat="@drawable/ic_down_arrow" />
+    </FrameLayout>
+    <View android:id="@id/view_outside" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/elanic_sheet_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="220.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="220.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_roundrect_top_white" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.home.profileV2.bottomsheet.DisclosureView android:id="@id/view_star_creator" android:layout_width="fill_parent" android:layout_height="wrap_content" app:disclosure_icon="@drawable/ic_user" app:disclosure_sub_title="@string/content_partnership" app:disclosure_title="@string/star_creator" app:layout_constraintTop_toTopOf="parent" />
+    <in.mohalla.sharechat.home.profileV2.bottomsheet.DisclosureView android:id="@id/view_powered_by" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:disclosure_icon="@drawable/ic_trends" app:layout_constraintTop_toBottomOf="@id/view_star_creator" />
+</androidx.constraintlayout.widget.ConstraintLayout>

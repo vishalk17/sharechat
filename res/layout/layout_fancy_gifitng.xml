@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/ic_gifter" android:visibility="invisible" android:layout_width="@dimen/size200" android:layout_height="56.0dip" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/show_confetti" android:visibility="visible" android:layout_width="112.0dip" android:layout_height="112.0dip" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="@id/audio_profile_user_view" app:layout_constraintEnd_toEndOf="@id/audio_profile_user_view" app:layout_constraintStart_toStartOf="@id/audio_profile_user_view" app:layout_constraintTop_toTopOf="@id/audio_profile_user_view" app:lottie_speed="2.0" />
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ToolbarTheme" android:id="@id/chat_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:contentInsetStart="0.0dip" android:contentInsetEnd="0.0dip" android:contentInsetLeft="0.0dip" android:contentInsetRight="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_chat_setup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:id="@id/chat_top_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="2.0dip" android:layout_weight="1.0" />
+        <include android:id="@id/layout_reply_1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/reply_layout_2" />
+        <include android:id="@id/ll_chat_item_footer" layout="@layout/item_chat_footer" />
+        <TextView android:textStyle="bold" android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_unblock_user" android:background="@color/success" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:text="@string/unblock_user" android:textAllCaps="true" />
+    </LinearLayout>
+    <include android:id="@id/topViewContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/custom_recycler_top" />
+    <include android:id="@id/rl_verify_chat_number" layout="@layout/item_number_verify_chat" />
+    <include android:id="@id/loader" layout="@layout/layout_full_screen_loader" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

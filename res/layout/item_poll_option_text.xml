@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/poll_option_radiobtn" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:id="@id/rl_progress" android:background="@drawable/bg_roundrect_grey_with_solid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_toRightOf="@id/poll_option_radiobtn" android:layout_centerVertical="true" android:layout_toEndOf="@id/poll_option_radiobtn">
+        <ProgressBar android:id="@id/poll_option_progressbar" android:layout_width="fill_parent" android:layout_height="56.0dip" android:progress="100" android:progressDrawable="@drawable/bg_roundrect_lightblue" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/primary" android:gravity="center" android:id="@id/poll_option_percenttv" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/primary" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/poll_option_tv" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:maxLines="2" android:layout_toLeftOf="@id/poll_option_percenttv" android:layout_toStartOf="@id/poll_option_percenttv" />
+    </RelativeLayout>
+</RelativeLayout>

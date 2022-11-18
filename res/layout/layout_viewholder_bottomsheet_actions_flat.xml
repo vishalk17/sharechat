@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="center_vertical" android:id="@id/tv_bottomsheet_action_label" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground" android:text="@string/remove_tag" android:drawablePadding="8.0dip" app:drawableStartCompat="@drawable/ic_bottomsheet_remove_tag" app:drawableTint="@color/error"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

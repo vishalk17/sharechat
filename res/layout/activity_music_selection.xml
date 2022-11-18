@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="95.0">
+        <LinearLayout android:id="@id/search_audio_layout" android:background="@drawable/bg_rectangle_rounded_system_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+            <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center_vertical" android:id="@id/iv_back_button" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="12.0dip" android:rotationY="@integer/ld_mirror_flip" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/ic_toolbar_back_white_24dp" app:tint="@color/primary" />
+            <androidx.appcompat.widget.SearchView android:id="@id/search_audio" android:layout_width="fill_parent" android:layout_height="48.0dip" app:iconifiedByDefault="false" app:queryBackground="@color/transparent" app:queryHint="@string/search_music" app:searchIcon="@null" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_pager_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/link" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+            <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fl_category_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_related_video_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

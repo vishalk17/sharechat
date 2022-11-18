@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RatingBar android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="4.3" android:stepSize="0.1" android:progressTint="@color/golden" android:progressBackgroundTint="@color/transparent" android:secondaryProgressTint="@color/grey7" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?android:ratingBarStyleSmall" />
+</androidx.constraintlayout.widget.ConstraintLayout>

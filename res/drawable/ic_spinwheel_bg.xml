@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="120.0dip" android:width="336.0dip" android:viewportWidth="336.0" android:viewportHeight="120.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_spinwheel_bg__0" android:pathData="M12,4L324,4A8,8 0,0 1,332 12L332,108A8,8 0,0 1,324 116L12,116A8,8 0,0 1,4 108L4,12A8,8 0,0 1,12 4z" />
+    <path android:fillColor="@drawable/$ic_spinwheel_bg__1" android:pathData="M12,4L324,4A8,8 0,0 1,332 12L332,108A8,8 0,0 1,324 116L12,116A8,8 0,0 1,4 108L4,12A8,8 0,0 1,12 4z" />
+    <path android:pathData="M20,37.05H35V22.05H20V37.05ZM154.619,37.05H169.619V22.05H154.619V37.05Z" />
+</vector>

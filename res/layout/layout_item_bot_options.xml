@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_layout_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:weightSum="10.0" android:minHeight="50.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="9.0">
+            <TextView android:textColor="@color/secondary" android:textColorLink="@color/link" android:autoLink="web" android:layout_gravity="center" android:id="@id/tv_message_item" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="" android:layout_marginStart="12.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <sharechat.library.ui.customImage.CustomImageView android:gravity="center" android:id="@id/tv_see_more" android:padding="4.0dip" android:layout_width="16.0sp" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:tint="@color/secondary" android:layout_alignParentRight="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_forward_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/bottomLine" android:background="@color/separator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/ll_layout_container" />
+</RelativeLayout>

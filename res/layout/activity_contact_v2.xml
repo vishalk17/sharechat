@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip" app:layout_scrollFlags="scroll|enterAlways|snap">
+            <include android:id="@id/layoutToolbar" layout="@layout/layout_toolbar_main" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/sharechat_contacts_container" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="350.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/link" android:layout_gravity="center_horizontal" android:id="@id/tv_sharechat_contacts" android:background="@drawable/shape_rectangle_rounded_light_blue_background" android:paddingLeft="36.0dip" android:paddingTop="4.0dip" android:paddingRight="36.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/see_all" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/invite_people" android:fontFamily="sans-serif-medium" />
+            <FrameLayout android:id="@id/mobile_contacts_container" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/link" android:layout_gravity="center_horizontal" android:id="@id/tv_phone_contacts" android:background="@drawable/shape_rectangle_rounded_light_blue_background" android:paddingLeft="36.0dip" android:paddingTop="4.0dip" android:paddingRight="36.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="32.0dip" android:text="@string/see_all" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

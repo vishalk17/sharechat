@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/header_image" android:layout_width="48.0dip" android:layout_height="64.0dip" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

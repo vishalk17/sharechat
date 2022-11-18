@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.DefaultTimeBar android:id="@id/exo_progress" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginLeft="-24.0dip" android:layout_marginRight="-24.0dip" app:bar_height="48.0dip" app:buffered_color="@color/secondary_bg" app:played_color="@color/overlay" app:scrubber_drawable="@drawable/ic_seeker" app:unplayed_color="@color/secondary_bg" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/exo_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0sp" android:layout_centerVertical="true" android:layout_marginStart="16.0sp" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="center" android:id="@id/exo_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0sp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16.0sp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="16.0dip" android:paddingTop="@dimen/button_text_size" android:paddingRight="16.0dip" android:paddingBottom="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="center" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_app_skin" />
+    <RadioGroup android:orientation="vertical" android:id="@id/appskin_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:theme="@style/ToggleSwitchBlueTheme" android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="start|center" android:id="@id/skin_default" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_default" />
+        <RadioButton android:theme="@style/ToggleSwitchBlueTheme" android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="start|center" android:id="@id/skin_english" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_english" />
+        <RadioButton android:theme="@style/ToggleSwitchBlueTheme" android:textSize="16.0sp" android:textColor="@color/primary" android:gravity="start|center" android:id="@id/skin_hinglish" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_hinglish" />
+    </RadioGroup>
+</LinearLayout>

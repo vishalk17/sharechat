@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>Saal</item>
+        <item>Mahinon</item>
+        <item>Dinon</item>
+        <item>Ghanton</item>
+        <item>Minaton</item>
+        <item>Seconds</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/camera_control_wrapper" android:background="@null" android:layout_width="fill_parent" android:layout_height="104.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/camera_left_controls_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_toLeftOf="@id/camera_takepicture_rl" android:layout_centerVertical="true" android:layout_toStartOf="@id/camera_takepicture_rl">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_stickers_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:padding="2.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/camera_stickers_white_32dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/stickers" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_filters_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:padding="2.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/camera_filters_white_24dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/filters" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/camera_right_controls_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_toRightOf="@id/camera_takepicture_rl" android:layout_centerVertical="true" android:layout_toEndOf="@id/camera_takepicture_rl">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_music_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_select_music" android:padding="2.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/camera_music_white_24dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:id="@id/tv_audio_name" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/music" android:lines="1" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/camera_switch_ll" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_camera_switch" android:padding="2.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/camera_flip_white_24dp" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:id="@id/tv_camera_switch" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/flip" android:lines="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <Space android:id="@id/camera_takepicture_rl" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

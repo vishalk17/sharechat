@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_parent" android:background="@color/link" android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.common.views.mention.CustomMentionTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_load_previous" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/load_previous_comments" />
+    <ProgressBar android:id="@id/pb_load_previous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip" style="@style/progressBarWhite" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_up_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginStart="8.0dip" app:srcCompat="@drawable/ic_upward_white_arrow" />
+</LinearLayout>

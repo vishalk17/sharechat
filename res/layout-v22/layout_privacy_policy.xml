@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/terms_and_condition" android:paddingLeft="@dimen/size16" android:paddingTop="@dimen/size10" android:paddingRight="@dimen/size16" android:paddingBottom="@dimen/size10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/size16" android:paddingVertical="@dimen/size10" app:layout_constraintTop_toBottomOf="@id/rl_phone_verify_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBox android:textColor="@color/secondary" android:textColorLink="@color/blue1" android:gravity="top" android:id="@id/terms_checkbox" android:paddingLeft="@dimen/size12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+    <TextView android:textSize="@dimen/font_13" android:id="@id/terms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_text" />
+</LinearLayout>

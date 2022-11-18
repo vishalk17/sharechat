@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>વર્ષ</item>
+        <item>મહિના</item>
+        <item>દિવસ</item>
+        <item>કલાક</item>
+        <item>મિનિટ</item>
+        <item>સેકન્ડ</item>
+    </string-array>
+</resources>

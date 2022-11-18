@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>ವರ್ಷಗಳು</item>
+        <item>ತಿಂಗಳು</item>
+        <item>ದಿನಗಳು</item>
+        <item>ಗಂಟೆಗಳು</item>
+        <item>ನಿಮಿಷಗಳು</item>
+        <item>ಸೆಕೆ೦ಡುಗಳು</item>
+    </string-array>
+</resources>

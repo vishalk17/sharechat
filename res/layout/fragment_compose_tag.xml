@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" app:elevation="4.0dip">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_tag_search" android:background="@drawable/bg_roundrect_grey_compose" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="4.0dip">
+            <androidx.appcompat.widget.AppCompatImageButton android:id="@id/ib_toolbar_search_back" android:background="?selectableItemBackgroundBorderless" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_centerVertical="true" android:rotationY="@integer/ld_mirror_flip" app:srcCompat="@drawable/ic_toolbar_back_24dp" app:tint="@color/secondary" />
+            <androidx.appcompat.widget.SearchView android:layout_gravity="end" android:id="@id/search_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="-16.0dip" android:layout_toRightOf="@id/ib_toolbar_search_back" android:layout_marginStart="-16.0dip" android:layout_toEndOf="@id/ib_toolbar_search_back" app:iconifiedByDefault="false" app:queryBackground="@color/transparent" app:queryHint="@string/search" app:searchIcon="@null" />
+        </RelativeLayout>
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="650.0dip">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:id="@id/bucket_load_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <android.widget.Button android:layout_gravity="center" android:id="@id/bucket_load_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry_text" />
+                <include android:id="@id/create_group_root" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" layout="@layout/layout_create_tag" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

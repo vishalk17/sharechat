@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/fl_post_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toBottomOf="@id/barrier_post_top"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <in.mohalla.sharechat.common.views.mention.CustomMentionTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/tv_post_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <in.mohalla.sharechat.common.views.mention.CustomMentionTextView android:textSize="16.0sp" android:textColor="@color/primary" android:id="@id/tv_post_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toTopOf="@id/fl_media_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_post_title" />
+        <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_media_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_post_desc" app:resize_mode="fixed_width">
+            <include android:id="@id/layout_image" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_post_image" />
+            <include android:id="@id/layout_video" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/layout_post_video" />
+            <include layout="@layout/layout_post_content_blur_warning" />
+        </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

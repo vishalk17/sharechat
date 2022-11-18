@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/overlay" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/previewer_image" android:visibility="gone" android:layout_width="328.0dip" android:layout_height="420.0dip" android:scaleType="fitXY" />
+    <VideoView android:layout_gravity="center" android:id="@id/previewer_video" android:background="@color/transparent" android:visibility="gone" android:layout_width="328.0dip" android:layout_height="420.0dip" />
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_post_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guide_line_top" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.0" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_pinned_post" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="guide_line_top" />
+    <include layout="@layout/layout_post_top_new" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="divider_caption,tv_add_location_in_caption" />
+    <include layout="@layout/layout_viewholder_post_audio_feed" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="root_audio_viewholder_layout" />
+    <include layout="@layout/layout_post_content" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_entire_post_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="barrier_post_content,fl_repost_conatiner_bottom" app:layout_constraintBottom_toBottomOf="parent" />
+    <ViewStub android:id="@id/vs_ad_cta_manager" android:layout="@layout/ad_cta_manager_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/barrier_entire_post_content" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_post_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="ad_cta_manager_container, ad_cta_layout,barrier_entire_post_content" />
+    <include layout="@layout/layout_post_bottom_new" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_unapproved_post" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="barrier_post_bottom_content,bg_unapproved" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/barrier_group_card" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="bottom" app:constraint_referenced_ids="barrier_unapproved_post,group_divider" />
+    <ViewStub android:id="@id/vs_faded_overlay" android:layout="@layout/layout_faded_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/vs_faded_overlay_header" android:layout="@layout/layout_faded_overlay" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/barrier_post_top" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/vs_ads_webview" android:layout="@layout/layout_ads_web_view_stub" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

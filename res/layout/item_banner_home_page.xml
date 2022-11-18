@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:tag="layout/item_banner_home_page_0" android:layout_width="298.0dip" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginEnd="8.0dip" app:cardCornerRadius="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cv_banner" android:tag="binding_1" android:layout_width="298.0dip" android:layout_height="wrap_content">
+        <sharechat.library.ui.customImage.CustomImageView android:tag="binding_2" android:layout_width="298.0dip" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/dark_primary" android:gravity="center" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

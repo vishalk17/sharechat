@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:background="@drawable/bg_rounded_rect_white_stroke" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_margin="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/item_bgimage_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_image_placeholder_grey" />
+        <View android:id="@id/color_view" android:background="@color/link" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8" />
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/item_selected_tick" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" app:srcCompat="@drawable/ic_comment_gallery_tick" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/item_bgimage_pb" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <FrameLayout android:id="@id/bg_tint" android:background="@drawable/bg_black_gradient_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white100" android:layout_gravity="bottom|center|right" android:id="@id/tv_duration" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:maxLines="1" android:drawablePadding="4.0dip" android:layout_marginEnd="4.0dip" app:drawableLeftCompat="@drawable/ic_vectoric_play" app:drawableStartCompat="@drawable/ic_vectoric_play" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

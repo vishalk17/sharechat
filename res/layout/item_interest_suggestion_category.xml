@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/font_16" android:textColor="@color/secondary" android:id="@id/tv_interest_suggestion_category" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size12" android:layout_marginBottom="@dimen/size12" android:fontFamily="@font/manrope_bold"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

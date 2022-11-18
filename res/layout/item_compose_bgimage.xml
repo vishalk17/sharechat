@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_rounded_rect_white_stroke" android:layout_width="60.0dip" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="56.0dip" android:layout_height="56.0dip" app:cardCornerRadius="9.0dip">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/item_bgimage_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:srcCompat="@drawable/ic_image_placeholder_grey" />
+        <View android:id="@id/color_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:id="@id/item_bgimage_pb" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

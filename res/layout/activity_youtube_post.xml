@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/youtube_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/post_action_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/youtube_frame" layout="@layout/layout_post_bottom_actions_light" />
+    <FrameLayout android:id="@id/comments_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/post_action_layout" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_post_comment_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/phone_verify_included" layout="@layout/item_phone_verify_bar" />
+    </FrameLayout>
+</RelativeLayout>

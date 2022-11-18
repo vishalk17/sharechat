@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_left_image" app:srcCompat="@drawable/ic_home_profile_24dp" app:tint="@color/primary" style="@style/AccountSettingsIconStyle" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/iv_left_image" android:layout_marginEnd="12.0dip" android:layout_toEndOf="@id/iv_left_image">
+        <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:boxBackgroundColor="@color/system_bg" app:boxStrokeWidth="0.0dip" app:boxStrokeWidthFocused="0.0dip" app:hintTextColor="@color/secondary" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+            <com.google.android.material.textfield.TextInputEditText android:theme="@style/MyEditTextTheme" android:textSize="16.0sp" android:id="@id/et_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" android:maxLength="50" android:imeOptions="actionDone" android:translationY="-5.0dip" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout android:id="@id/rl_actions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true">
+            <ProgressBar android:theme="@style/progressBarBlue" android:id="@id/pb_loading" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+            <ImageView android:id="@id/iv_right_image" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

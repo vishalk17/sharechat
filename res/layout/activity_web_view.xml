@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@color/secondary_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/web_toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" app:layout_scrollFlags="scroll|enterAlways" />
+        <ProgressBar android:id="@id/web_progress" android:background="@color/system_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.5dip" style="?android:progressBarStyleHorizontal" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/create_shortcut" android:background="#ff6260bb" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/create_shortcut" android:layout_alignParentBottom="true" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/create_shortcut" android:layout_below="@id/appBar" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_back_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:srcCompat="@drawable/ic_arrow_left" />
+</RelativeLayout>

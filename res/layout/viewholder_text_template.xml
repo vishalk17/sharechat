@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/viewholder_text_template_0" android:layout_width="96.0dip" android:layout_height="128.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_marginEnd="10.0dip" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:gravity="center" android:id="@id/item_bgimage_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <include android:id="@id/ll_blank" layout="@layout/viewholder_blank_layout" />
+</androidx.cardview.widget.CardView>

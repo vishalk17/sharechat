@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/interstitial_ad_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/splash_ui_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintEnd_toStartOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/entry_static_logo" android:layout_width="188.0dip" android:layout_height="188.0dip" android:layout_marginBottom="32.0dip" app:srcCompat="@drawable/ic_sharechat_logo" />
+        <ImageView android:id="@id/exit_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" app:srcCompat="@drawable/ic_namaste" />
+        <TextView android:textSize="36.0sp" android:textColor="@color/primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharechat" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/anim_view" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/primary" android:gravity="center" android:id="@id/splash_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/made_in_india" android:drawablePadding="8.0dip" app:drawableEndCompat="@drawable/ic_splash_made_in_india" app:drawableStartCompat="@drawable/ic_splash_made_in_india" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

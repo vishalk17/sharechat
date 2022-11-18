@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.supercharge.shimmerlayout.ShimmerLayout android:id="@id/shimmer_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_angle="20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/carousal_shimmer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/recycler_view_shimmer" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="200.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <View android:id="@id/tv_heading_shimmer" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/recycler_view_shimmer" />
+        <View android:id="@id/tv_sub_text_shimmer" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintTop_toBottomOf="@id/tv_heading_shimmer" />
+        <View android:id="@id/iv_footer_icon_shimmer" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="24.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_sub_text_shimmer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/fullview_shimmer" android:background="@color/secondary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintTop_toTopOf="parent" />
+</io.supercharge.shimmerlayout.ShimmerLayout>

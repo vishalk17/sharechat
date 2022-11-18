@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root_expanded" android:background="@color/notification_dark_theme_bg" android:layout_width="fill_parent" android:layout_height="176.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_tag" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:background="@drawable/bg_black_gradient_preview_screen" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/secondary_bg" android:ellipsize="end" android:id="@id/tv_tag_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/ll_indicator" android:layout_toStartOf="@id/ll_indicator" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/iv_indicator_one" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/ic_indicator_deselected" />
+            <ImageView android:id="@id/iv_indicator_two" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_indicator_deselected" android:layout_marginStart="3.0dip" />
+            <ImageView android:id="@id/iv_indicator_three" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_indicator_deselected" android:layout_marginStart="3.0dip" />
+            <ImageView android:id="@id/iv_indicator_four" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_indicator_deselected" android:layout_marginStart="3.0dip" />
+            <ImageView android:id="@id/iv_indicator_five" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_indicator_deselected" android:layout_marginStart="3.0dip" />
+            <ImageView android:id="@id/iv_indicator_six" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_indicator_deselected" android:layout_marginStart="3.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

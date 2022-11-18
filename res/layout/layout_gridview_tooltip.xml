@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_rectangle_rounded_blue" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_grid_tutorial" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/secondary_bg" android:ellipsize="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/gridview_tooltip" android:maxLines="2" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="60.0dip" android:layout_marginEnd="60.0dip" android:elevation="2.0dip" app:srcCompat="@drawable/ic_blue_down_arrow" />
+</LinearLayout>

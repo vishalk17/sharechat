@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/camera_top_controls_ll" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="end" android:id="@id/camera_flash_iv" android:padding="12.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/camera_flash_auto_white_32dp" />
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/camera_timer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginEnd="6.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/camera_timer_iv" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="46.0dip" android:layout_height="46.0dip" app:srcCompat="@drawable/camera_timer_white_32dp" />
+        <TextView android:textColor="@color/secondary_bg" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/timer" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/camera_time_travel_layout" android:layout_width="76.0dip" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_marginEnd="11.0dip">
+        <RelativeLayout android:layout_gravity="center" android:background="@drawable/video_timer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:backgroundTint="@color/overlay">
+            <ImageView android:id="@id/camera_time_travel_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/camera_speed_white_32dp" />
+            <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/secondary_bg" android:id="@id/camera_speed_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/video_speed_1x" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/secondary_bg" android:gravity="end" android:layout_gravity="end" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/speed" android:paddingEnd="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@id/camera_draft_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginEnd="6.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/camera_draft_iv" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:layout_width="46.0dip" android:layout_height="46.0dip" app:srcCompat="@drawable/camera_save_as_draft" />
+        <TextView android:textColor="@color/secondary_bg" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/save" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/camera_undo_video_iv" android:padding="11.0dip" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/camera_backspace_red_36dp" />
+    <ImageView android:layout_gravity="end" android:id="@id/camera_confirm_video_iv" android:padding="11.0dip" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" app:srcCompat="@drawable/camera_tick_blue_36dp" />
+</LinearLayout>

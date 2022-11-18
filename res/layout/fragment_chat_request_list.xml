@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_empty_view" android:background="@color/system_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/no_pending_request" android:lineSpacingExtra="2.0sp" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/included_recycler_view" layout="@layout/layout_recyclerview_only" />
+</androidx.constraintlayout.widget.ConstraintLayout>

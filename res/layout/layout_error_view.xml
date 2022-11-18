@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:id="@id/scroll_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_generic_error" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:layout_gravity="center" android:id="@id/tv_error_above" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/iv_error_lottie" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:lottie_loop="true" />
+        <TextView android:id="@id/tv_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <android.widget.Button android:id="@id/btn_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry_text" android:textAllCaps="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

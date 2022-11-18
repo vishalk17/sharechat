@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_share_link" android:background="@drawable/bg_grey_round_rect" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" app:layout_constraintTop_toTopOf="parent">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/civ_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:tint="@color/primary" android:layout_marginStart="16.0dip" app:srcCompat="@drawable/ic_share_24dp" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/ctv_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/share_chatroom_link" android:layout_toRightOf="@id/civ_icon" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/civ_icon" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

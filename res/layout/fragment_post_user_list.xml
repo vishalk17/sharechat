@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_post_user_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/tv_header" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/build_your_profile" />
+    <View android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <FrameLayout android:id="@id/container_layout" android:layout_width="fill_parent" android:layout_height="240.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_name" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="16.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_name_header" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_is_your_name_like" />
+            <sharechat.library.ui.customImage.CustomImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="12.0dip" app:srcCompat="@drawable/ic_user_face" />
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:boxBackgroundColor="@color/system_bg" app:boxStrokeWidth="0.0dip" app:boxStrokeWidthFocused="0.0dip" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:id="@id/et_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/add_your_name" android:maxLines="1" android:maxLength="50" android:inputType="text" android:imeOptions="actionDone" android:translationY="-5.0dip" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_gender" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <in.mohalla.sharechat.common.views.customText.CustomTextView android:layout_gravity="center_horizontal" android:id="@id/tv_gender" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_am_a" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:weightSum="2.0">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_gender_male" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ib_male" android:background="@null" android:layout_width="100.0dip" android:layout_height="100.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_mr_round_deselected" />
+                    <ImageView android:id="@id/iv_male_tick" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintRight_toRightOf="@id/ib_male" app:layout_constraintTop_toTopOf="@id/ib_male" app:srcCompat="@drawable/ic_check_circle" />
+                    <RadioButton android:textSize="14.0sp" android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_male" android:background="@drawable/bg_round_rect_grey" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/mister" app:layout_constraintBottom_toBottomOf="@id/ib_male" app:layout_constraintLeft_toLeftOf="@id/ib_male" app:layout_constraintRight_toRightOf="@id/ib_male" app:layout_constraintTop_toBottomOf="@id/ib_male" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_gender_female" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/cl_gender_male" app:layout_constraintTop_toBottomOf="@id/tv_gender">
+                    <ImageView android:id="@id/ib_female" android:background="@null" android:layout_width="100.0dip" android:layout_height="100.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_miss_round_deselected" />
+                    <ImageView android:id="@id/iv_female_tick" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintRight_toRightOf="@id/ib_female" app:layout_constraintTop_toTopOf="@id/ib_female" app:srcCompat="@drawable/ic_check_circle" />
+                    <RadioButton android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_female" android:background="@drawable/bg_round_rect_grey" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:button="@null" android:text="@string/miss" app:layout_constraintBottom_toBottomOf="@id/ib_female" app:layout_constraintLeft_toLeftOf="@id/ib_female" app:layout_constraintRight_toRightOf="@id/ib_female" app:layout_constraintTop_toBottomOf="@id/ib_female" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_success" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" app:srcCompat="@drawable/tick_icon_blue" />
+            <in.mohalla.sharechat.common.views.customText.CustomTextView android:layout_gravity="center_horizontal" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Welcome to ShareChat" />
+            <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="20.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/tv_success_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ashwin" />
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:id="@id/layout_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <Button android:textColor="@color/primary" android:id="@id/b_skip" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/skip" android:layout_weight="1.0" />
+        <View android:background="@color/system_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textStyle="bold" android:textColor="@color/link" android:id="@id/b_next" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/next" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

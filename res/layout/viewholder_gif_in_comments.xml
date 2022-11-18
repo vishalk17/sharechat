@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/cl_root" android:layout_width="fill_parent" android:layout_height="125.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginEnd="4.0dip" app:cardCornerRadius="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_media" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/gif" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+</androidx.cardview.widget.CardView>

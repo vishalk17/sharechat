@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cv_bannner_root" android:tag="layout/viewholder_section_title_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/primary" android:gravity="start|center" android:id="@id/tv_header" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="40.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/link" android:id="@id/tv_seemore" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_more" android:drawablePadding="8.0dip" app:drawableEndCompat="@drawable/ic_arrow_chevron_mini" app:drawableRightCompat="@drawable/ic_arrow_chevron_mini" app:drawableTint="@color/link" />
+</LinearLayout>

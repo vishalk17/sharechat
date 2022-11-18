@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_notif_container" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/primary" android:id="@id/iv_header" android:background="@color/secondary_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" style="@style/notificationHeader" />
+    <RelativeLayout android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_below="@id/iv_header">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_notif_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginHorizontal="16.0dip" fresco:srcCompat="@drawable/ic_like_enabled_24dp" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/iv_notif_image" android:layout_toRightOf="@id/iv_notif_icon" android:layout_toStartOf="@id/iv_notif_image" android:layout_toEndOf="@id/iv_notif_icon">
+            <TextView android:textColor="@color/primary" android:ellipsize="end" android:id="@id/tv_notif_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textColor="@color/primary" android:ellipsize="end" android:id="@id/tv_notif_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:minLines="1" />
+            <TextView android:textColor="@color/secondary" android:ellipsize="end" android:id="@id/tv_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_notif_image" android:background="@color/overlay" android:layout_width="48.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="4.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="4.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

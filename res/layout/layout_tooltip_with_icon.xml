@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" app:cardBackgroundColor="@color/secondary_bg" app:cardCornerRadius="4.0dip" app:cardElevation="2.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_profile_engagement_recent_24dp" />
+            <TextView android:textColor="@color/primary" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/tooltip_engagement_profile" android:layout_marginStart="2.0dip" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2.0dip" app:srcCompat="@drawable/ic_tooltip_arrow_bottom" />
+</LinearLayout>

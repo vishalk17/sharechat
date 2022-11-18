@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginTop="130.0dip" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_ugc_ban" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/color_failure" android:gravity="center" android:id="@id/tv_header" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/ugc_temporary_ban" android:layout_below="@id/imageView" />
+    <TextView android:gravity="center" android:id="@id/tv_sub_header" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_header" android:lineSpacingExtra="4.0dip" />
+    <ProgressBar android:theme="@style/progressBarBlue" android:id="@id/progress_bar" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <Button android:enabled="false" android:textSize="16.0sp" android:textColor="@color/secondary_bg" android:id="@id/btn_retry" android:background="@drawable/btn_ban_retry" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/tv_sub_header" android:layout_centerHorizontal="true" app:backgroundTint="@null" />
+</RelativeLayout>

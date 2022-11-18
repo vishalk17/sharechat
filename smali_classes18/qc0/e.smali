@@ -1,0 +1,53 @@
+.class public abstract Lqc0/e;
+.super Landroidx/databinding/ViewDataBinding;
+.source "SourceFile"
+
+
+# instance fields
+.field public final y:Landroid/widget/LinearLayout;
+
+
+# direct methods
+.method protected constructor <init>(Ljava/lang/Object;Landroid/view/View;ILandroid/widget/LinearLayout;Landroidx/appcompat/widget/AppCompatImageView;Landroidx/appcompat/widget/AppCompatTextView;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;-><init>(Ljava/lang/Object;Landroid/view/View;I)V
+
+    .line 2
+    iput-object p4, p0, Lqc0/e;->y:Landroid/widget/LinearLayout;
+
+    return-void
+.end method
+
+.method public static W(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lqc0/e;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Landroidx/databinding/g;->g()Landroidx/databinding/f;
+
+    move-result-object v0
+
+    invoke-static {p0, p1, p2, v0}, Lqc0/e;->X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;ZLjava/lang/Object;)Lqc0/e;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static X(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;ZLjava/lang/Object;)Lqc0/e;
+    .locals 1
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 1
+    sget v0, Lsharechat/feature/cvfeed/R$layout;->viewholder_cluster_additem:I
+
+    invoke-static {p0, v0, p1, p2, p3}, Landroidx/databinding/ViewDataBinding;->A(Landroid/view/LayoutInflater;ILandroid/view/ViewGroup;ZLjava/lang/Object;)Landroidx/databinding/ViewDataBinding;
+
+    move-result-object p0
+
+    check-cast p0, Lqc0/e;
+
+    return-object p0
+.end method

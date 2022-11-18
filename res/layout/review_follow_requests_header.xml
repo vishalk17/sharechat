@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/review_follow_requests_header_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_top" android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/primary" android:gravity="start|center" android:id="@id/tv_message" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/primary" android:gravity="center" android:id="@id/tv_pending_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" android:text="@string/review_follow_request" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <TextView android:textColor="@color/secondary" android:gravity="center" android:id="@id/tv_pending_message" android:tag="binding_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <View android:id="@id/divider_bottom" android:background="@color/system_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</LinearLayout>

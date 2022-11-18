@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Awesome">زبردست</string>
+    <string name="Ifsc_code">IFSC کوڈ</string>
+    <string name="Less">کم</string>
+    <string name="More">مزید</string>
+    <string name="Videos">ویڈیوز</string>
+    <string name="abc_action_bar_home_description">گھر کی طرف نیویگیٹ کریں</string>
+    <string name="abc_action_bar_up_description">اوپر نیویگیٹ کریں</string>
+    <string name="abc_action_menu_overflow_description">مزید اختیارات</string>
+    <string name="abc_action_mode_done">ہو گیا</string>
+    <string name="abc_activity_chooser_view_see_all">سبھی دیکھیں</string>
+    <string name="abc_activitychooserview_choose_application">ایک ایپ منتخب کریں</string>
+    <string name="abc_capital_off">آف</string>
+    <string name="abc_capital_on">آن</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+‎</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+‎</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+‎</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+‎</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+‎</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+‎</string>
+    <string name="abc_prepend_shortcut_label">Menu+‎</string>
+    <string name="abc_search_hint">تلاش کریں…</string>
+    <string name="abc_searchview_description_clear">استفسار صاف کریں</string>
+    <string name="abc_searchview_description_query">تلاش کا استفسار</string>
+    <string name="abc_searchview_description_search">تلاش کریں</string>
+    <string name="abc_searchview_description_submit">استفسار جمع کرائیں</string>
+    <string name="abc_searchview_description_voice">صوتی تلاش</string>
+    <string name="abc_shareactionprovider_share_with">اس کے ساتھ اشتراک کریں</string>
+    <string name="abc_shareactionprovider_share_with_application">%s کے ساتھ اشتراک کریں</string>
+    <string name="abc_toolbar_collapse_description">سکیڑیں</string>
+    <string name="about_private_profile">پرائیویٹ پروفائل کے بارے میں</string>
+    <string name="about_private_profile_desc">مزید جانیں</string>
+    <string name="abuse">براہ مہربانی کوئی بھی ایسی بات نہ کریں جس سے کسی کے جذبات کو نقصان پہنچے</string>
+    <string name="accept">قبول کریں</string>
+    <string name="accept_all">سب کو قبول کریں</string>
+    <string name="accept_all_received_requests">موصول ہوئی تمام درخواستوں کو قبول کریں</string>
+    <string name="accept_all_request_desc">کیا آپ واقعی سبھی زیر التوا درخواستوں کو قبول کرنا چاہتے ہیں؟</string>
+    <string name="accept_all_requests">سبھی درخواستوں کو قبول کریں</string>
+    <string name="accept_privacy_policy">براہ کرم آگے بڑھنے کے لئے ہماری پرائیویسی پالیسی قبول کریں</string>
+    <string name="accept_subtext">آپ کا چیٹ روم اب گِفٹِنگ آپشن کے لیے فعال ہے</string>
+    <string name="account_address">پتہ</string>
+    <string name="account_details">اکاؤنٹ کی تفصیلات</string>
+    <string name="account_details_mismatch">اکاؤنٹ کی تفصیلات میچ نہیں ہو رہی ہیں</string>
+    <string name="account_exist">اکاؤنٹ پہلے سے موجود ہے؟</string>
+    <string name="account_name">اکاؤنٹ نام</string>
+    <string name="account_number">اکاؤنٹ نمبر</string>
+    <string name="account_option">اکاؤنٹ کے اختیارات</string>
+    <string name="account_private_remove_followers">اب آپ کا اکاؤنٹ پرائیویٹ ہے۔ ان فالوورس کو ہٹا دیں جن کے ساتھ آپ بات چیت نہیں کرنا چاہتے</string>
+    <string name="account_recovery_message">درجہ ذیل تمام اکاؤنٹ ویری فائیڈ موبائل نمبر استعمال کررہے ہیں۔ براہ کرم نیچے دی گئی فہرست میں سے اکاؤنٹ کا انتخاب کریں جسے آپ دوبارہ بحال کرنا چاہتے ہیں</string>
+    <string name="account_setting_description">پروفائل تصویر، نام، حیثیت، مقام</string>
+    <string name="account_settings">اکاؤنٹ کی سیٹنگز</string>
+    <string name="account_type">اکاؤنٹ کی قسم</string>
+    <string name="accounts">اکاؤنٹس</string>
+    <string name="activity">آکٹیویٹی</string>
+    <string name="ad_adult_abusive">بالغ / بدسلوکی</string>
+    <string name="ad_fake_news">جعلی خبریں</string>
+    <string name="ad_in_appropriate">یہ نامناسب ہے</string>
+    <string name="ad_irrelevant">یہ غیر متعلقہ ہے</string>
+    <string name="ad_opt_out_not_interested">اس اشتہار میں کوئی دلچسپی نہیں ہے</string>
+    <string name="ad_opt_out_report">اشتہار کو رپورٹ کریں</string>
+    <string name="ad_opt_out_why">مجھے یہ اشتہار کیوں دکھائی دے رہا ہے ؟</string>
+    <string name="ad_opt_out_why_desc_1">شیئر چیٹ پر آپ کے تعامل اور شراکت داروں سے ملی معلومات پر مبنی اشتہارات دکھاۓ جاتے ہیں •</string>
+    <string name="ad_opt_out_why_desc_2">جب آپ کی ترجیحات اور معلومات ،اشتہاری کی درخواستوں سے میل کھاتی ہیں- تب ہم آپ کو آپ کے ترجیحات سے متعلقہ اشتہار کی نمائش کرتے ہیں- •</string>
+    <string name="ad_reason_for_reporting">براہ کرم رپورٹنگ کی وجہ کا انتخاب کریں</string>
+    <string name="ad_see_it_too_often">میں اسے اکثر دیکھتا ہوں</string>
+    <string name="add">شامل کریں</string>
+    <string name="add_a_comment">تبصرہ شامل کریں</string>
+    <string name="add_a_reply">جواب شامل کریں</string>
+    <string name="add_coins_to_buy">زیادہ بھیجنے کے لئے %1$d کو شامل کریں</string>
+    <string name="add_friend">\@دوست شامل کریں</string>
+    <string name="add_home_screen">ہوم اسکرین میں شامل کریں</string>
+    <string name="add_label">لیبل شامل کریں</string>
+    <string name="add_link">لنک شامل کریں۔</string>
+    <string name="add_location">لوکیشن جوڑیں</string>
+    <string name="add_new">نیا شامل کریں</string>
+    <string name="add_new_pack">نیا پیک بنائیں</string>
+    <string name="add_new_posts">نئے پوسٹس شامل کریں</string>
+    <string name="add_number">نمبر جوڑیں</string>
+    <string name="add_option">%1$s آپشن شامل کریں</string>
+    <string name="add_reason">وجہ شامل کریں (اختیاری)</string>
+    <string name="add_relevant_post">صرف متعلقہ پوسٹ کو گروپ میں شامل کریں</string>
+    <string name="add_shortcut">شارٹ کٹ شامل کریں۔</string>
+    <string name="add_tag">ٹیگ جوڑیں</string>
+    <string name="add_to_audio">نشست میں شامل کریں</string>
+    <string name="add_to_top_creator">ٹاپ کریٹر میں شامل کریں</string>
+    <string name="admin">ایڈمن</string>
+    <string name="admin_hint">&lt;u> آپ اس گروپ کے مالک اور ایڈمن بن جائیں گے &lt;/ u></string>
+    <string name="admin_powers">ایڈمن کے اختیارات کیا ہیں؟</string>
+    <string name="admin_powers_description">"اب آپ دیگر  پوسٹس کو منظور کرسکتے ہیں۔ صرف منظور شدہ  پوسٹس ہی دوسرے ممبروں کیلئے ہیں۔  n  n  آپ کی تمام پوسٹس خود بخود منظور شدہ ہیں
+"</string>
+    <string name="admin_promotion">\"٪ s اب ایک ایڈمن ہیں اور اس گروپ میں پوسٹوں کو منظور کرسکتے ہیں ۔</string>
+    <string name="admin_request">ایڈمن کو درخواست بھیجیں</string>
+    <string name="admin_rules">گروپ کے قواعد</string>
+    <string name="admin_tutorial_message">مبارک ہو! اب آپ اس گروپ کے ایڈمن ہیں۔</string>
+    <string name="ads_targeting">اشتہارات کو نشانہ بنانا</string>
+    <string name="ads_targeting_desc">ڈیوائس پر مبنی پرسنلائزیشن کو بند کریں</string>
+    <string name="ads_targeting_title">اشتہار کو نشانہ بنانا بند کریں</string>
+    <string name="adult_abuse">بالغ / بدسلوکی</string>
+    <string name="advanced_post_settings">ایڈوانس پوسٹ کی ترتیبات۔</string>
+    <string name="advertise">اشتہارات</string>
+    <string name="after_block_info">اس پروفائل کو بلاک کر دیا گیا ہے، ان بلاک کرنے کے لئے سیٹنگز میں جائیں</string>
+    <string name="after_report_info">پروفائل کی اطلاع دینے کے لئے شکریہ!</string>
+    <string name="age">عمر</string>
+    <string name="age_error_text">ہوسکتا ہے درج کی گئی عمر غلط ہو</string>
+    <string name="age_limit_comments">تبصرہ کی اجازت نہیں ہے</string>
+    <string name="age_limit_message">ہمارے نوجوان کریٹر کو محفوظ ایپ ماحول فراہم کرنے کے لئے، ہم نے آپ کی اشاعتوں کے کچھ فیچر بند کر دئے ہیں۔ اگر آپ کو لگتا ہے کہ یہ غلطی ہے تو ، براہ کرم پروفائل کے ترمیم سیکشن میں اپنی عمر کی جانچ کریں۔</string>
+    <string name="age_limit_share">شیئر کرنے کی اجازت نہیں ہے</string>
+    <string name="age_required_text">عمر ضروری ہے</string>
+    <string name="album">البم</string>
+    <string name="album_created_successfully">البم کامیابی کے ساتھ کریئٹ ہو گیا ہے!</string>
+    <string name="album_delete_success">البم کامیابی کے ساتھ ڈیلیٹ ہو گیا ہے!</string>
+    <string name="album_meta_updated_success">البم کی معلومات کامیابی کے ساتھ اپ ڈیٹ ہو گئی ہیں!</string>
+    <string name="album_name">البم کا نام</string>
+    <string name="album_post_updated_success">البم پوسٹ کامیابی کے ساتھ اپ ڈیٹ ہو گیا ہے!</string>
+    <string name="all">سب</string>
+    <string name="all_campaigns_empty_view">فی الحال کوئی ایکٹو کمپین نہیں ہیں۔ براہ کرم کچھ دیر بعد دوبارہ چیک کریں</string>
+    <string name="all_categories_text">سبھی کیٹیگریز</string>
+    <string name="all_completed">سب مکمّل ہو گیا ہے</string>
+    <string name="all_retry">پھر لوڈ کریں</string>
+    <string name="all_topics">سبھی ٹاپِکس</string>
+    <string name="allow">اجازت دیں</string>
+    <string name="almost_there">بس مکمل ہونے والی ہے!</string>
+    <string name="alternative_caption">اور بہترین پوسٹ دیکھنے کے لئے، یہاں کلک کریں!</string>
+    <string name="analytics">اینالیٹکس</string>
+    <string name="announcement">اعلانات</string>
+    <string name="anonymous">اجنبی</string>
+    <string name="any_download">کوئی بھی آپ کی پوسٹس ڈاؤن لوڈ کر سکتا ہے</string>
+    <string name="anything_else">اور کچھ</string>
+    <string name="apk_sharing_failed">شیئر چیٹ ایپ اشتراک نہیں ہو پایا ہے</string>
+    <string name="apk_sharing_success">شیئر چیٹ ایپ اشتراک ہو گیا ہے</string>
+    <string name="app_gallery">شیئر چیٹ گیلری</string>
+    <string name="app_name">شیئر چیٹ</string>
+    <string name="app_update">ایپ اپ ڈیٹ کریں</string>
+    <string name="application_not_found">اس قسم کی کارروائی کو سمبھالنے کے لئے کوئی ایپلیکیشن نہیں ہے</string>
+    <string name="apply">اپلائی</string>
+    <string name="apply_for_verification">ویریفیکیشن کے لیے درخواست دیں</string>
+    <string name="apply_label">لیبل اپلائی کریں</string>
+    <string name="appointed_you">%s نے آپ کو مقرر کیا</string>
+    <string name="approve">منظور کریں</string>
+    <string name="approve_pending">پوسٹ منظور کریں</string>
+    <string name="approve_post_description">گروپ میں شامل تمام پوسٹس کو گروپ کے فیڈ میں نظر آنے کے لئے ایڈمن کے ذریعہ منظوری دینی ہوگی۔</string>
+    <string name="approved_chat_list">منظور</string>
+    <string name="apps">ایپس</string>
+    <string name="apps_and_games">ایپس اور گیمز۔</string>
+    <string name="april">اپریل</string>
+    <string name="are_you_sure_you_want_to_delete_this_album">کیا آپ واقعی اس البم کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="are_you_sure_you_want_to_exit">کیا آپ واقعی باہر نکلنا چاہتے ہیں؟</string>
+    <string name="are_you_sure_you_want_to_unfollow_public">کیا آپ واقعی اس یوزر کو فالو کرنا بند کرنا چاہتے ہیں؟</string>
+    <string name="are_you_sure_you_wish_to_delete_this_text">کیا آپ واقعی اس ٹیکسٹ کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="astro_chat">نجومی چیٹ</string>
+    <string name="attach_link">لنک شامل کریں</string>
+    <string name="attach_yt_video">یو ٹیوب ویڈیو شامل کریں</string>
+    <string name="audioUpload">آڈیو اپلوڈ</string>
+    <string name="audio_chat_is_active">آڈیو چیٹ جاری ہے</string>
+    <string name="audio_chat_permissions_needed">براہ کرم آڈیو چیٹ میں شامل ہونے کی اجازت دیں</string>
+    <string name="audio_exit_message">نوٹیفکیشن سے باہر نکلیں</string>
+    <string name="audio_invited_success">کامیابی کے ساتھانوائٹ کیا گیا</string>
+    <string name="audio_loading">لوڈ ہو رہا ہے…</string>
+    <string name="audio_message">آڈیو پیغام</string>
+    <string name="audio_pause">رکیں</string>
+    <string name="audio_trim">آڈیو ٹرم۔</string>
+    <string name="august">اگست</string>
+    <string name="badge_text_medal">پاور یوزر</string>
+    <string name="badge_text_police">شیئرچیٹ پولیس</string>
+    <string name="badge_text_verified_user">ویری فائڈ یوزر</string>
+    <string name="bank">بینک</string>
+    <string name="banned_from_champions_till">آپ پر %s تک چیمپئنز پروگرام کے لئے پابندی لگا دی گئی ہیں</string>
+    <string name="be_the_first_to_comment">پہلےکمنٹ آپکی طرف سے</string>
+    <string name="better_luck_next_time">اگلی بارقسمت ساتھ دیگی</string>
+    <string name="blank_comment">خالی کمنٹ کیسے پوسٹ کریں یار !</string>
+    <string name="blank_template">خالی ٹیمپلیٹ</string>
+    <string name="block">بلاک کریں</string>
+    <string name="block_confirm_text">کیا آپ %s کوبلاک کرنا چاہتے ہیں؟</string>
+    <string name="block_failed">بلاک ناکام ہوگیا</string>
+    <string name="block_from_chatroom">چیٹ روم سے بلاک</string>
+    <string name="block_list">بلاک فہرست</string>
+    <string name="block_list_description">بلاک کیا گیا پروفائل دیکھیں</string>
+    <string name="block_list_title">بلاک فہرست</string>
+    <string name="block_list_zero_state">آپ نے کسی کو بلاک نہیں کیا ہے۔ یہ ایک اچھی چیز ہے۔</string>
+    <string name="block_members">بلاک ممبران</string>
+    <string name="block_user">بلاک کریں</string>
+    <string name="block_user_description">اگر کوئی قانون توڑتا ہے تو ایڈمن کسی کو بھی گروپ سے ہٹا سکتا ہے</string>
+    <string name="blocked">بلاکڈ</string>
+    <string name="blocked_accounts">بلاک کئے گئے اکاؤنٹس</string>
+    <string name="blocked_by_user">آپ کو یہ پوسٹ دیکھنے کی اجازت نہیں ہے</string>
+    <string name="blocked_on_action">ٹاسک نامکمل ہیں</string>
+    <string name="blocked_user">آپ نے اس یوزر کو بلاک کیا ہے</string>
+    <string name="blocked_user_zero_state">کوئی بلاک یوزر نہیں ہیں</string>
+    <string name="blocked_users">بلاک یوزر</string>
+    <string name="blue_tick_verified">بلیو ٹک ویریفائیڈ</string>
+    <string name="boost">بوسٹ</string>
+    <string name="boost_a_post_to_get_views">%1$s ویوز حاصل کرنے کے لئے زیادہ پوسٹ کریں ۔</string>
+    <string name="boost_left">آپ کے پاس %d پوسٹ باقی ہے۔</string>
+    <string name="boost_this_post_to_get_views">%d زیادہ ویوز کے لئے اس پوسٹ کو بوسٹ دیں۔</string>
+    <string name="boosts_target_remaining">"%1$d/%2$d بوسٹ  "</string>
+    <string name="both_screen">دونوں۔</string>
+    <string name="bottom_sheet_cancel_sub_text">آپ پوسٹ کرنے سے بس ایک کلک کی دوری پر ہیں۔ کیا آپ واپس جانا چاہتے ہیں؟</string>
+    <string name="bottomsheet_action_expand_halfway">نصف تک پھیلائیں</string>
+    <string name="browse_template">ٹیمپلیٹس براؤز کریں</string>
+    <string name="buy_coins">سکے خریدیں۔</string>
+    <string name="buy_karma">کرما خریدیں۔</string>
+    <string name="buy_now">ابھی خریدیں</string>
+    <string name="camera_instruction">ویڈیو کے لئے دباكے رکھیں، تصویر کے لئے ایک بار کلک کریں</string>
+    <string name="camera_instruction_photo_only">تصویر کے لئے کلک کریں</string>
+    <string name="campaign">مہمات(Campaigns)</string>
+    <string name="cancel">منسوخ/ رد کریں</string>
+    <string name="cancel_follow_request">فالو کی درخواست مسترد کریں</string>
+    <string name="cancel_request">فالو کی درخواست مسترد کریں</string>
+    <string name="cancel_request_desc">کیا آپ درخواست منسوخ کرنا چاہتے ہیں؟</string>
+    <string name="cancel_request_title">آپ کی درخواست پر نظرثانی جاری ہے</string>
+    <string name="cannot_chat_with_self">آپ خود سے بات نہیں کرسکتے ہیں۔</string>
+    <string name="cannot_delete_less_than_min_images">ٹیمپلیٹ میں کم از کم %1$s تصاویر ہونی چاہئیں</string>
+    <string name="cannot_select_more_than_8">آپ 8 سے زیادہ ممبران کا انتخاب نہیں کرسکتے ہیں</string>
+    <string name="capital_letter_error_message">ہینڈل میں بڑے حروف یا تمام نمبر نہیں ہوسکتے ہیں</string>
+    <string name="cashout">کیش نکالیں</string>
+    <string name="categories">کیٹگریز/ قسم</string>
+    <string name="category">کیٹیگری</string>
+    <string name="celebrities">مشہور شخصیات</string>
+    <string name="certificate_saved_toast_msg">سرٹیفکیٹ گیلری میں محفوظ ہو گیا ہے</string>
+    <string name="champion_referral_share">%1$s نے آپ کو شیئر چیٹ کے چیمپئنز پروگرام میں شامل ہونے کا بلاوا دیا ہے۔ شامل ہونے کے لئے نیچے کلک کریں</string>
+    <string name="champion_since">تب سے چیمپیئن</string>
+    <string name="change">تبدیل کریں</string>
+    <string name="change_comments_order">تبصروں کا آرڈر تبدیل کریں۔</string>
+    <string name="change_cover">کَور تبدیل کریں</string>
+    <string name="change_family_profile_pic">پروفائل تصویر تبدیل کریں</string>
+    <string name="change_language">زبان تبدیل کریں</string>
+    <string name="change_number">نمبر بدلیں</string>
+    <string name="change_will_be_discarded">تبدیلیاں رد کر دی جائیں گی</string>
+    <string name="changing_the_cover_image">کور امیج کو تبدیل کرنے سے آپ کا موڈ ہٹ جائے گا</string>
+    <string name="character_counter_content_description">%2$d میں سے %1$d حروف درج کیے گئے</string>
+    <string name="character_counter_overflowed_content_description">حروف کی تعداد کی حد %2$d سے %1$d پہنچ گئی</string>
+    <string name="characters_remaining">%s حروف باقی ہیں</string>
+    <string name="chat">چیٹ</string>
+    <string name="chat_abuse_text">اس پیغام میں غلط زبان بھی ہو سکتی ہے. اگر آپ اس پیغام سے متفق/ سہمت نہیں ہیں تو براہ مہربانی اطلاع دیں.</string>
+    <string name="chat_ended">آڈیو چیٹ ختم ہوچکی ہے!</string>
+    <string name="chat_moved_to_known_message">اب اس چیٹ کو اپنے سیکشن میں دیکھیں</string>
+    <string name="chat_notification">چیٹ نوٹیفکیشن</string>
+    <string name="chat_on_sharechat">شیئر چیٹ پر چیٹ کریں</string>
+    <string name="chat_pending_permission">%d درخواست پینڈنگ ہے</string>
+    <string name="chat_room">کرکٹ چیٹ</string>
+    <string name="chat_search_hint">نام تلاش کریں</string>
+    <string name="chat_with_friends_description">اپنے جذبات قریبی دوستوں کے ساتھ بانٹیں</string>
+    <string name="chat_with_friends_title">دوستوں کے ساتھ گپ شپ کریں</string>
+    <string name="chatroom_delete_failed">حذف کرنا ناکام ہوگیا۔ براہ کرم کچھ دیر بعد دوبارہ کوشش کریں</string>
+    <string name="chatroom_deleted">چیٹ روم ڈیلیٹ کر دیا گیا ہے</string>
+    <string name="chatroom_exit_locked_message">نئے ممبروں کے لئے چیٹ روم کو لاک کردیا جائے گا</string>
+    <string name="chatroom_exit_unlocked_message">صارفین چیٹ روم میں داخل ہوسکتے ہیں اور آپ کی غیر موجودگی میں دوسروں کے ساتھ بات چیت کرسکتے ہیں</string>
+    <string name="chatroom_lock_on_exit">باہر نکلنے پر چیٹ روم لاک کریں</string>
+    <string name="chatroom_locked_message">تمام آڈیو سیٹیں اور چیٹ ابھی لاک ہے جب تک میزبان واپس نہیں آ جاتا ہے۔</string>
+    <string name="chatroom_locked_toast">صرف آڈیو چیٹ ہی جاری ہے۔ کوئی نیا صارف شامل نہیں ہوسکتا</string>
+    <string name="chatroom_name">چیٹ روم کا نام</string>
+    <string name="chatroom_permission">چیٹ روم کی اجازت</string>
+    <string name="chatroom_poll_add_option_hint">آپشن شامل کریں</string>
+    <string name="chatroom_slot_invite_accepted_msg">آپ کو آڈیو چیٹ میں شامل کیا گیا ہے</string>
+    <string name="chatroom_slot_invite_desc">نے آپ کو سیٹ پرانوائٹ کیا ہے</string>
+    <string name="chatroom_suggestions_examples">مثالیں:%1$s</string>
+    <string name="chatroom_unlocked_toast">نئے صارف آپ کی غیر موجودگی میں شامل ہوسکتے ہیں اور بات کرسکتے ہیں۔</string>
+    <string name="chatroom_update_message">چیٹ روم خصوصیت کے لئے ایپ اپ ڈیٹ کی ضرورت ہے</string>
+    <string name="chatrooms">چیٹ روم</string>
+    <string name="check_explore">ایکسپلور چیک کریں</string>
+    <string name="checkout_tags">ان ٹیگس کو چیک کریں</string>
+    <string name="choose_bucket">کیٹیگری منتخب کریں</string>
+    <string name="choose_categorie_tooltip_text">یہاں اپنی پسندیدہ کیٹیگریز چنیں</string>
+    <string name="choose_to_share">اشتراک کے لئے ایپ کو منتخب کریں۔</string>
+    <string name="choose_your_category">اپنی کیٹگری منتخب کریں</string>
+    <string name="claim">دعویٰ کریں</string>
+    <string name="clear">صاف</string>
+    <string name="clear_all">پورا صاف کریں</string>
+    <string name="clear_text_end_icon_content_description">ٹیکسٹ صاف کریں</string>
+    <string name="click_again_message">باہر جانے کے لئے دوبارہ کلک کریں</string>
+    <string name="click_to_leave_seat">سیٹ چھوڑنے کے لیے یہاں کلک کریں</string>
+    <string name="close">بند کریں</string>
+    <string name="close_drawer">نیویگیشن مینو بند کریں</string>
+    <string name="close_sheet">شیٹ بند کریں</string>
+    <string name="coins">سکے</string>
+    <string name="collect_rewards">اپنے انعامات حاصل کریں</string>
+    <string name="comment_added">تبصرہ شامل کیا گیا ہے</string>
+    <string name="comment_delete_confirm">کمنٹ ہٹا دیں ؟</string>
+    <string name="comment_deleted">یہ تبصرہ ڈیلیٹ کر دیا گیا ہیں</string>
+    <string name="comment_here">یہاں تبصرہ کریں...</string>
+    <string name="comment_not_added">تبصرہ شامل نہیں کیا جاسکا۔ دوبارہ کوشش کریں</string>
+    <string name="comment_notification">رابطے / کمنٹ اطلاعات</string>
+    <string name="comment_placeholder">ایک تبصرہ ٹائپ کریں</string>
+    <string name="comment_posting">پوسٹ ہو رہا ہے</string>
+    <string name="comment_report_text">کیا آپ اس کمنٹ کوختم کرنا چاہتے ہیں؟</string>
+    <string name="commentary">کمنٹری</string>
+    <string name="comments">تبصرہ/کمنٹ</string>
+    <string name="comments_count">%d تبصرہ/کمنٹ</string>
+    <string name="common_google_play_services_enable_button">فعال کریں</string>
+    <string name="common_google_play_services_enable_text">‏جب تک آپ Google Play سروسز فعال نہیں کر لیتے، %1$s کام نہیں کرے گی۔</string>
+    <string name="common_google_play_services_enable_title">‏Google Play سروسز فعال کریں</string>
+    <string name="common_google_play_services_install_button">انسٹال کریں</string>
+    <string name="common_google_play_services_install_text">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جو آپ کے آلہ سے غائب ہیں۔</string>
+    <string name="common_google_play_services_install_title">‏Google Play سروسز حاصل کریں</string>
+    <string name="common_google_play_services_notification_channel_name">‏Google Play سروسز کی دستیابی</string>
+    <string name="common_google_play_services_notification_ticker">‏Google Play سروسز کی خرابی</string>
+    <string name="common_google_play_services_unknown_issue">‏%1$s کو Google Play سروسز کے ساتھ مسئلہ پیش آ رہا ہے۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="common_google_play_services_unsupported_text">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جن کی آپ کا آلہ معاونت نہیں کرتا۔</string>
+    <string name="common_google_play_services_update_button">اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_update_text">‏جب تک آپ Google Play سروسز اپ ڈیٹ نہیں کر لیتے ہیں %1$s تب تک نہیں چلے گی۔</string>
+    <string name="common_google_play_services_update_title">‏Google Play سروسز اپ ڈیٹ کریں</string>
+    <string name="common_google_play_services_updating_text">‏%1$s Google Play سروسز کے بغیر نہیں چلے گی، جو فی الحال اپ ڈیٹ ہو رہی ہیں۔</string>
+    <string name="common_google_play_services_wear_update_text">‏Google Play سروسز کے نئے ورژن کی ضرورت ہے۔ یہ تھوڑی دیر میں خود ہی اپنے آپ کو اپ ڈیٹ کر لے گا۔</string>
+    <string name="common_open_on_phone">فون پر کھولیں</string>
+    <string name="common_signin_button_text">سائن ان کریں</string>
+    <string name="common_signin_button_text_long">‏Google کے ساتھ سائن ان کریں</string>
+    <string name="complete_profile">اپنی پروفائل پوری بنائیں</string>
+    <string name="completed">مکمل</string>
+    <string name="compose_camera">کیمرہ</string>
+    <string name="compose_motion_video">موشن ویڈیو</string>
+    <string name="compose_tag_search_hint">ٹیگس تلاش کریں</string>
+    <string name="compose_video">ویڈیو</string>
+    <string name="confirm">تصدیق کریں</string>
+    <string name="confirm_account_number">اکاؤنٹ نمبر کی تصدیق کریں۔</string>
+    <string name="confirm_exit">کیا آپ کو یقین ہے کہ آپ ہیاں سے نکلنا چاہتے ہیں؟</string>
+    <string name="confirm_remove_tag_comment">کیا آپ اس تبصرہ سے اپنے پروفائل ٹیگ کو ہٹانا چاہتے ہیں؟</string>
+    <string name="confirm_top_creator_heading">ٹاپ کریٹر میں شامل کریں؟ %s</string>
+    <string name="confirm_top_creator_msg">اس کریٹر کی پوسٹ 3 بار ٹریڈنگ ٹیگ میں شامل کی گئ ہے۔ اسے ایک ٹاپ کریٹر بنائیں؟</string>
+    <string name="confirming">تصدیق کیا جا رہا ہے…</string>
+    <string name="congrats">🎉مبارک ہو🎉</string>
+    <string name="congratulations">مبارک ہو</string>
+    <string name="connect">شامل ہوں</string>
+    <string name="connect_and_make_friends">چیٹ رومز کے ساتھ نئے دوست بنائیں</string>
+    <string name="contact_follow">آپ کے دوست %s اب آپکو فالو کر رہے ہے انکو فالو کرنے کے لئے یہاں کلک کریں</string>
+    <string name="contact_invite_msg">ہیلو! شیئر چیٹ ایک 100% ہندوستانی ایپ ہے🔥۔ مضحکہ خیز ویڈیوز ، ویڈیو اسٹیٹس ، عشقیہ شاعری ، نعت شریف ڈاؤن لوڈ کریں۔ اجنبیوں کے ساتھ چیٹ کریں اور نئے دوست بنائیں۔ ابھی ڈاؤن لوڈ کریں!</string>
+    <string name="contact_permission_desc">اپنے رابطوں کو مستقل طور پر اپ لوڈ کرنے سے شیئر چیٹ کو ان لوگوں کی تجویز پیش کرنے میں مدد ملتی ہے جن کے ساتھ آپ رابطہ کرسکتے ہیں ، پیروی کرسکتے ہیں اور چیٹ کرسکتے ہیں۔ اس سے ہمیں ایپ کے تجربے کو بہتر بنانے اور بہتر خدمات پیش کرنے کی سہولت ملتی ہے۔</string>
+    <string name="contact_permission_description">براہ کرم شیئر چیٹ کو اپنے رابطے دیکھنے کی اجازت دیں کہ آپ کا کون سا دوست یہاں ہے!</string>
+    <string name="contact_permission_header">شیئر چیٹ پر اپنے فون کے رابطے تلاش کریں</string>
+    <string name="contact_permission_title">رابطے کی اجازت درکار ہے</string>
+    <string name="contact_title">میرے رابطے / کونٹیکٹ</string>
+    <string name="contact_us">ہم سے رابطہ کریں</string>
+    <string name="contacts_on_sharechat">شیئرچٹ پر رابطے۔</string>
+    <string name="content_and_community_mock_text">مواد اور کمیونٹی گائیڈلائنس</string>
+    <string name="content_audio">آڈیو</string>
+    <string name="content_gif">GIF</string>
+    <string name="content_image">تصویر</string>
+    <string name="content_partnership">شیئر چیٹ کے ساتھ مواد کی شراکت داری</string>
+    <string name="content_policy">مواد کی ہدایات</string>
+    <string name="content_text">ٹیکسٹ</string>
+    <string name="content_video">ویڈیو</string>
+    <string name="continue_editing">ایڈیٹنگ جاری رکھیں</string>
+    <string name="continue_enjoying_videos_here">یہاں ویڈیوز سے لطف اندوز ہوتے رہیں</string>
+    <string name="continue_pinning">پن کرنا جاری رکھیں؟</string>
+    <string name="continue_to_account">اکاؤنٹ پر جائیں</string>
+    <string name="convert">بدلیں</string>
+    <string name="convert_gold_to_coins">سکے میں سونے کو تبدیل کریں</string>
+    <string name="copied_to_clipboard">کلپ بورڈ میں کاپی ہو گیا ہے</string>
+    <string name="copy">کاپی کریں</string>
+    <string name="copy_link">لنک کاپی کریں</string>
+    <string name="copy_mood">کاپی موڈ</string>
+    <string name="create">بنائیں</string>
+    <string name="create_a_post">ایک پوسٹ بنائیں</string>
+    <string name="create_chatroom">چیٹ روم بنائیں</string>
+    <string name="create_group">گروپ بنائیں</string>
+    <string name="create_group_text">اب اپنی دلچسپیوں کے گرد اپنا ایک گروپ بنائیں اور اپنے تمام دوستوں کو اس میں شامل ہونے کی دعوت دیں</string>
+    <string name="create_karma_post">ایک پوسٹ بنائیں</string>
+    <string name="create_mv">موشن ویڈیو بنائیں</string>
+    <string name="create_new">نیا بنائیں</string>
+    <string name="create_new_post">نئی پوسٹ بنائیں</string>
+    <string name="create_new_post_text">نیا پوسٹ بنائیں</string>
+    <string name="create_new_tag">نیا ٹیگ بنائیں</string>
+    <string name="create_post_message">شاندار ویڈیو یا تصویر کو اشتراک کریں</string>
+    <string name="create_post_title">پوسٹ بنائیں</string>
+    <string name="create_profile">اپنی پروفائل بنائیں</string>
+    <string name="create_shortcut">ایپ شارٹ کٹ بنائیں</string>
+    <string name="create_something_new">کچھ نیا بنائیں</string>
+    <string name="create_tag">ٹیگ بنائیں</string>
+    <string name="create_tag_shortcut">ٹیگ شارٹ کٹ بنائیں۔</string>
+    <string name="create_top_post">اس طرح ایک ٹاپ پوسٹ بنائیں</string>
+    <string name="create_with_Background">بیک گراؤنڈ کے ساتھ بنائیں</string>
+    <string name="create_without_background">بغیر بیک گراؤنڈ کے بنائیں</string>
+    <string name="create_your_own_post">اپنا خود کا پوسٹ بنائیں</string>
+    <string name="creator_hub">لیڈر بورڈ</string>
+    <string name="creators">کریئٹرز</string>
+    <string name="cropping_error">تصویرکراپ نہیں ہو پایی ہے</string>
+    <string name="current_account">کرنٹ/موجودہ</string>
+    <string name="current_mv_downloading">موشن ویڈیو ڈاؤن لوڈنگ جاری ہے</string>
+    <string name="custom_download_msg">شیئر چیٹ -%100 بھارتی ایپ! فورن ڈاؤن لوڈ کریں</string>
+    <string name="custom_download_poll_msg">ووٹ کرنے کے لئے یہاں کلک کریں</string>
+    <string name="cutout">کٹ آؤٹ</string>
+    <string name="cutout_not_used">اب کٹ آؤٹ استعمال نہیں کرسکتے ہیں</string>
+    <string name="dashboard">ڈیش بورڈ</string>
+    <string name="data_save_off">آٹو ڈاؤن لوڈ میڈیا بند ہے</string>
+    <string name="data_save_on">آٹو ڈاؤن لوڈ میڈیا جاری ہے</string>
+    <string name="data_saver">ڈیٹا سیور</string>
+    <string name="data_saver_off">ڈیٹا سیور آف</string>
+    <string name="data_saver_off_message">اعلی ڈیٹا کی کھپت ، اعلی کوالٹی ویڈیو</string>
+    <string name="data_saver_on">ڈیٹا سیور آن</string>
+    <string name="data_saver_on_message">کم ڈیٹا کی کھپت ، اوسط کوالٹی ویڈیوز</string>
+    <string name="data_saver_title_message">"ڈیٹا سیور موڈ کو تبدیل کرنے سے ویڈیو پلیئر دوبارہ شروع ہوجائے گا اور اس میں 2  -10 سیکنڈ لگ سکتے ہیں"</string>
+    <string name="day">دن</string>
+    <string name="days">دن</string>
+    <string name="deactivate_account">پروفائل ہٹایں</string>
+    <string name="december">دسمبر</string>
+    <string name="default_error_message">غلط ان پٹ</string>
+    <string name="default_popup_window_title">پاپ اپ ونڈو</string>
+    <string name="delete">ڈ یلیٹ کریں</string>
+    <string name="delete_album">البم ڈیلیٹ کریں</string>
+    <string name="delete_chat">چیٹ کو ڈیلیٹ کریں</string>
+    <string name="delete_chat_content">کیا آپ واقعی اس چیٹ کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="delete_chat_failed">ڈیلیٹ نہیں ہو پایا. براہ مہربانی دوبارہ کوشش کریں</string>
+    <string name="delete_chat_hint">اب چیٹ کو ڈیلیٹ کرنے کے لئے دیر تک دبائیں</string>
+    <string name="delete_chatroom">چیٹ روم کو ڈیلیٹ کریں</string>
+    <string name="delete_chatroom_confirm">کیا آپ واقعی اس چیٹ روم کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="delete_dialog_confirm_text">اسسے آپکی پروفائل اور پوسٹ دونوں شیئر چیٹ کے دوستوں سے چھپا دے جاینگے ، واپس لوگ ان کرنے پر آپ اپنی پروفائل پا سکتے ہیں</string>
+    <string name="delete_family">فیملی ڈیلیٹ کریں</string>
+    <string name="delete_group">گروپ حذف کریں</string>
+    <string name="delete_group_confirmation">گروپ تصدیق ختم کریں</string>
+    <string name="delete_group_failed">اوہ! گروپ کو ہٹایا نہیں جاسکا۔ براہ کرم کچھ دیر بعد کوشش کریں۔</string>
+    <string name="delete_group_reason">میں اس گروپ کو حذف کرنا چاہتا ہوں کیونکہ</string>
+    <string name="delete_last_video_segment">کیا آپ واقعی آخری ویڈیو سیکشن کو ڈیلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="delete_message">پیغامات حذف کریں</string>
+    <string name="delete_notification">نوٹیفکیشن کو ڈیلیٹ کریں</string>
+    <string name="delete_post">ڈ یلیٹ کریں</string>
+    <string name="delete_post_action">پوسٹ ڈیلیٹ کریں</string>
+    <string name="delete_post_description">" اس گروپ سے ایسی پوسٹس حذف کریں جو لگتا ہے کہ گروپ کے قواعد کی خلاف ہیں۔
+"</string>
+    <string name="delete_private_chatroom">"پرائیویٹ چیٹ روم ہٹائیں "</string>
+    <string name="delete_private_chatroom_confirmation">"پرائیویٹ چیٹ روم ہٹانے کا کنفرمیشن "</string>
+    <string name="delete_text">ٹیکسٹ ڈیلیٹ کریں</string>
+    <string name="delivery">ترسیل/ ڈلیوری</string>
+    <string name="deny">انکار کریں</string>
+    <string name="detecting_otp">OTP کی شناخت ہو رہی ہے ...</string>
+    <string name="discard_change">نہیں</string>
+    <string name="discard_msg">آپکا پوسٹ شیئر چیٹ کی پالیسیز کے خلاف ہونے کی وجہ سے ہٹا دیا گیا ہے! براہ مہربانی کسی بھی طرح کی غلیظ پوسٹ یا اسپیم نا بھیجیں .</string>
+    <string name="discarded_18plus_msg">آپ کا پوسٹ ختم کردیا گیا ہے - کیونکہ آپ نے ایڈلٹ پوسٹ کیا اور اسپے NV ٹیگ لگانا بھول گئے، برائے مہربانی آگے سے ایڈلٹ پوسٹ پر NV کا ٹیگ لگانا نہ بھولیں |</string>
+    <string name="discount_text">%s چھوٹ</string>
+    <string name="discover_and_search">دریافت اور تلاش کریں</string>
+    <string name="discover_people">لوگوں کو تلاشیں</string>
+    <string name="dm_notification_new_messages">آپ کے دوستوں سے آپکو نیا پیغام آیا ہے</string>
+    <string name="dm_notification_title">شیئر چیٹ پیغام</string>
+    <string name="done">ہو گیا</string>
+    <string name="double_tap_tutorial_text">پوسٹ کو پسند کرنے کے لئے اب آپ ڈبل ٹیپ بھی کرسکتے ہیں</string>
+    <string name="download">ڈاؤن لوڈ</string>
+    <string name="download_battle_card">بیٹل کارڈ ڈاؤن لوڈ کرنے کے لیے یہاں کلک کریں</string>
+    <string name="download_cameramodule">اس خصوصیت کو ڈاؤن لوڈ کرنے کے لئے براہ کرم کیمرے ماڈیول کا استعمال کریں</string>
+    <string name="download_complete">ڈاؤن لوڈ ہو گیا</string>
+    <string name="download_failed">ڈاؤن لوڈ ناکام ہو گیا!</string>
+    <string name="download_in_progress">ڈاؤن لوڈ ہو رہا ہے ... براہ مہربانی انتظار کریں</string>
+    <string name="download_message">اپنی رنگ ٹون سیٹ کریں</string>
+    <string name="download_wallpaper">وال پیپر ڈاؤن لوڈ ہو رہا ہے</string>
+    <string name="download_wallpaper_description">وال پیپر کو فون گیلری میں محفوظ کیا جائے گا</string>
+    <string name="downloaded">ڈاؤن لوڈ ہو چکا ہے</string>
+    <string name="downloading">ڈاؤن لوڈ ہو رہا ہے</string>
+    <string name="downloading_assets_for_you_agora_dfm">آپ کے لیے اَیثَٹس ڈاؤن لوڈ ہو رہے ہیں</string>
+    <string name="downloading_percent">%s ڈاؤن لوڈ ہو رہا ہے</string>
+    <string name="draft">ڈرافٹ</string>
+    <string name="draft_max_char_limit">ڈرافٹ کا نام 50 حروف سے زیادہ نہیں ہوسکتا ہے</string>
+    <string name="draft_not_empty">ڈرافٹ کا نام خالی نہیں ہوسکتا!</string>
+    <string name="draft_saved">محفوظ بطور %1$s</string>
+    <string name="drafts">ڈرافٹس</string>
+    <string name="dropdown_menu">ڈراپ ڈاؤن مینو</string>
+    <string name="dubsmash">ڈبسمیش</string>
+    <string name="duplicate">ڈپلیکیٹ</string>
+    <string name="earlier">پہلے</string>
+    <string name="earn_on_referral_video">آپ نے اسکریچ کارڈ حاصل کیا ہے ، پیسہ جیتنے کے لئے کوئی بھی ویڈیو دیکھیں۔</string>
+    <string name="earning">کمائیں</string>
+    <string name="edit">ترمیم/ بدلاؤ</string>
+    <string name="edit_album">البم میں ترمیم کریں</string>
+    <string name="edit_cover">کور میں ترمیم کریں</string>
+    <string name="edit_image">تصویر ایڈِٹ کریں</string>
+    <string name="edit_label">لیبل ایڈِٹ کریں</string>
+    <string name="edit_link">لنک شامل کریں۔</string>
+    <string name="edit_mood">موڈ میں ترمیم کریں</string>
+    <string name="edit_profile">پروفائل ایڈِٹ کریں</string>
+    <string name="edit_profile_bio_hint">میرے بارے میں</string>
+    <string name="edit_profile_birthday_hint">سالگرہ</string>
+    <string name="edit_profile_full_name_hint">مکمل نام</string>
+    <string name="edit_profile_handle_hint">نک نام</string>
+    <string name="edit_profile_location_hint">مقام</string>
+    <string name="editor">ایڈیٹر</string>
+    <string name="editprofile">اپنی پروفائل میں ترمیم/ بدلاؤ کریں</string>
+    <string name="elanic_redirection">آپ کو خریداری مکمل کرنے کے لئے ایلینک (Elanic)پر بھیج دیا جائے گا</string>
+    <string name="empty_top_creator_message">ٹاپ کریٹر اور ایڈمنز کی پوسٹس خودبخود منظور ہوجائیں گی</string>
+    <string name="english">انگریزی</string>
+    <string name="english_skin">انگریزی زبان</string>
+    <string name="enjoy_chatrooms">چیٹ رومز کا لطف اٹھائیں!</string>
+    <string name="enter_account_name">براہ کرم یہاں اکاؤنٹ کا نام درج کریں۔</string>
+    <string name="enter_account_number">براہ کرم یہاں اکاؤنٹ کا نمبردرج کریں۔</string>
+    <string name="enter_address">براہ کرم یہاں پتہ درج کریں۔</string>
+    <string name="enter_album_name_to_proceed">البم کا نام لکھ کر آگے بڑھیں!</string>
+    <string name="enter_birth_date">"اپنی پیدائش کی تاریخ درج کریں "</string>
+    <string name="enter_confirm_account">برائے کرم اکاؤنٹ نمبر کی تصدیق کریں</string>
+    <string name="enter_different_number">براہ کرم ایک مختلف نمبر درج کریں</string>
+    <string name="enter_gold_to_convert">تبدیل کرنے کے لئے سونا درج کریں</string>
+    <string name="enter_ifsc">براہ کرم یہاںIFSC کوڈ درج کریں۔</string>
+    <string name="enter_message">اپنی رائے جمع کرنے کے لئے براہ مہربانی کچھ الفاظ لکھیں.</string>
+    <string name="enter_mobile_number_to_refer">برائے کرم ریفر کرنے کے لئے موبائل نمبر درج کریں</string>
+    <string name="enter_option">%1$s آپشن شامل کریں</string>
+    <string name="enter_pack_name">پیک کا نیا نام ڈالیں</string>
+    <string name="enter_pan_card_number">براہ کرم یہاں پین نمبر درج کریں۔</string>
+    <string name="enter_paytm_number">اپنا Paytm موبائل نمبر درج کریں</string>
+    <string name="enter_referral_code">ریفرل کوڈ درج کریں</string>
+    <string name="enter_state_name">براہ کرم یہاں ریاست کا نام درج کریں۔</string>
+    <string name="enter_url">URL درج کریں۔</string>
+    <string name="error">غلطیاں</string>
+    <string name="error_custom_cards">کسٹم کارڈ لوڈ ہونے میں کچھ خرابی ہو گی ہے</string>
+    <string name="error_enter_referral_code">جاری رکھنے کے لئے ریفرل کوڈ درج کریں</string>
+    <string name="error_icon_content_description">خرابی</string>
+    <string name="error_invalid_handle">غلط ہینڈل نام</string>
+    <string name="error_no_more_pending_posts">قبول / مسترد کرنے کے لئے مزید پوسٹس نہیں ہیں</string>
+    <string name="error_otp_request">OTP رکویسٹ پوری نہیں ہو پائی</string>
+    <string name="error_otp_verification">OTP کی جانچ ناکام ہوگئی</string>
+    <string name="events">ایوینٹز</string>
+    <string name="exclusive_chatroom">خصوصی چیٹ روم</string>
+    <string name="exit">باہر نکلیں</string>
+    <string name="exit_chat">چیٹ سے باہر نکلیں؟</string>
+    <string name="exit_chat_description">کیا آپ واقعی گروپ چیٹ سے باہر نکلنا چاہتے ہیں؟</string>
+    <string name="exo_controls_cc_disabled_description">سب ٹائٹلز کو فعال کریں</string>
+    <string name="exo_controls_cc_enabled_description">سب ٹائٹلز کو غیر فعال کریں</string>
+    <string name="exo_controls_fastforward_description">تیزی سے فارورڈ کریں</string>
+    <string name="exo_controls_fullscreen_enter_description">پوری اسکرین میں داخل ہوں</string>
+    <string name="exo_controls_fullscreen_exit_description">پوری اسکرین سے باہر نکلیں</string>
+    <string name="exo_controls_hide">پلیئر کنٹرولز چھپائیں</string>
+    <string name="exo_controls_next_description">آگے</string>
+    <string name="exo_controls_overflow_hide_description">اضافی ترتیبات چھپائیں</string>
+    <string name="exo_controls_overflow_show_description">اضافی ترتیبات دکھائیں</string>
+    <string name="exo_controls_pause_description">موقوف کریں</string>
+    <string name="exo_controls_play_description">چلائیں</string>
+    <string name="exo_controls_playback_speed">رفتار</string>
+    <string name="exo_controls_playback_speed_normal">عام</string>
+    <string name="exo_controls_previous_description">پیچھے</string>
+    <string name="exo_controls_repeat_all_description">سبھی کو دہرائیں</string>
+    <string name="exo_controls_repeat_off_description">کسی کو نہ دہرائیں</string>
+    <string name="exo_controls_repeat_one_description">ایک کو دہرائیں</string>
+    <string name="exo_controls_rewind_description">ریوائینڈ کریں</string>
+    <string name="exo_controls_seek_bar_description">پلے بیک کی پیش رفت</string>
+    <string name="exo_controls_settings_description">ترتیبات</string>
+    <string name="exo_controls_show">پلیئر کنٹرولز دکھائیں</string>
+    <string name="exo_controls_shuffle_off_description">شفل آف</string>
+    <string name="exo_controls_shuffle_on_description">شفل آن</string>
+    <string name="exo_controls_stop_description">روکیں</string>
+    <string name="exo_controls_vr_description">VR موڈ</string>
+    <string name="exo_download_completed">ڈاؤن لوڈ مکمل ہو گیا</string>
+    <string name="exo_download_description">ڈاؤن لوڈ کریں</string>
+    <string name="exo_download_downloading">ڈاؤن لوڈ ہو رہا ہے</string>
+    <string name="exo_download_failed">ڈاؤن لوڈ ناکام ہو گیا</string>
+    <string name="exo_download_notification_channel_name">ڈاؤن لوڈز</string>
+    <string name="exo_download_removing">ڈاؤن لوڈز کو ہٹایا جا رہا ہے</string>
+    <string name="exo_item_list">%1$s، %2$s</string>
+    <string name="exo_track_bitrate">%1$.2f Mbps</string>
+    <string name="exo_track_mono">مونو</string>
+    <string name="exo_track_resolution">%1$d × %2$d</string>
+    <string name="exo_track_role_alternate">متبادل</string>
+    <string name="exo_track_role_closed_captions">سب ٹائٹلز</string>
+    <string name="exo_track_role_commentary">تبصرہ</string>
+    <string name="exo_track_role_supplementary">اضافی</string>
+    <string name="exo_track_selection_auto">خودکار</string>
+    <string name="exo_track_selection_none">کوئی نہیں</string>
+    <string name="exo_track_selection_title_audio">آڈیو</string>
+    <string name="exo_track_selection_title_text">متن</string>
+    <string name="exo_track_selection_title_video">ویڈیو</string>
+    <string name="exo_track_stereo">اسٹیریو</string>
+    <string name="exo_track_surround">محیط آواز</string>
+    <string name="exo_track_surround_5_point_1">5.1 محیط آواز</string>
+    <string name="exo_track_surround_7_point_1">7.1 محیط آواز</string>
+    <string name="exo_track_unknown">نامعلوم</string>
+    <string name="expand">بڑھاییں</string>
+    <string name="expand_button_title">جدید ترین</string>
+    <string name="expired">میعاد ختم</string>
+    <string name="expires_in">اختتام مدت %1$s%2$s</string>
+    <string name="explore_animation_message">تمام نئے ٹرینڈ اورکیٹگری سے محروم نہ رہیں</string>
+    <string name="explore_tooptip_description">نئی دلچسپیاں ، عنوانات ، دوست اور بہت کچھ حاصل کریں</string>
+    <string name="explore_trending_tags">مقبول ٹیگس</string>
+    <string name="exposed_dropdown_menu_content_description">ڈراپ ڈاؤن مینو دکھائیں</string>
+    <string name="failed_to_register">رجِسٹریشن نہیں ہو پائی</string>
+    <string name="fake_news">جھوٹھی خبر</string>
+    <string name="family">فیملی</string>
+    <string name="family_badge_name">فیملی کا بیج نام</string>
+    <string name="family_battle_notf_desc">آپ کی چیٹ روم فیملی جلد ہی ایک بیٹل میں شامل ہونے والی ہے۔ اپنی فیملی کی مدد کرنے کے لیے یہاں کلک کریں!</string>
+    <string name="family_battle_notf_title">فیملی بیٹل میں شامل ہونے کے لیے ریمائنڈر۔</string>
+    <string name="family_handle_id">فیملی کی ہینڈل آئی ڈی</string>
+    <string name="family_name">فیملی کا نام</string>
+    <string name="fantasy">فینٹسی 11</string>
+    <string name="faq">اکثر پوچھے جانے والے سوالات (FAQ)</string>
+    <string name="faqs">"FAQ's"</string>
+    <string name="fav_buckets_heading">پسندیدہ</string>
+    <string name="favourites">پسندیدہ</string>
+    <string name="fcm_fallback_notification_channel_label">متفرق</string>
+    <string name="february">فروری</string>
+    <string name="feed_notification">ڈیلی نوٹیفکیشن/اطلاعات</string>
+    <string name="feed_save_text">محفوظ</string>
+    <string name="feedback_question_1">شیئر چیٹ پر اب تک آپکا تجربہ کیسا رہا؟</string>
+    <string name="feedback_question_2">شیئر چیٹ ایپ میں آپ کو سب سے زیادہ کیا پسند ہے؟</string>
+    <string name="feedback_question_2_alt">آپ کے مطابق کس پرابلم کو حل کرنے کی ضرورت ہے؟</string>
+    <string name="feedback_subtext">اس سے ہمیں آپ کے تجربے کو بہتر بنانے میں مدد ملے گی.</string>
+    <string name="feeling_confused">مزید معلومات حاصل کریں</string>
+    <string name="female">خاتون</string>
+    <string name="file_upload_Fail">پوسٹ اپ لوڈ نہیں ہو پایا</string>
+    <string name="fill_otp">OTP بھریں</string>
+    <string name="filter_messages">پیغامات کو فلٹر کریں۔</string>
+    <string name="filter_type_time">وقت منتخب کریں</string>
+    <string name="filters">فلٹر</string>
+    <string name="find_new_people_description">دلچسپ لوگوں سے بات کرنے کے لئے گمنام اور محفوظ طریقے سے چیٹ کریں۔</string>
+    <string name="finding_best_match">پورے ہندوستان سے نئے دوست بنائیں۔ آپ کے لئے سب سے بہترین میچ کی تلاش کی جا رہی ہے</string>
+    <string name="fix_notif">%s سونے سے پہلے یہ بہترین پوسٹ ضرور دیکھیں!</string>
+    <string name="flagged_fake_news">اس پوسٹ میں جعلی نیوز ہو سکتی ہےn براہ مہربانی اپنی سوجھ بوجھ سے کھولیں.</string>
+    <string name="flagged_image">یہ پوسٹ میں غلیظ یا نہ مناسب تصاویر ہو سکتی ہیں. n/ براہ مہربانی اپنی ذمہ داری پر دیکھیں.</string>
+    <string name="flip">فلپ کریں</string>
+    <string name="follow">فالو کریں</string>
+    <string name="follow_back">فالو کریں</string>
+    <string name="follow_creators_on_favourite_topics">"اپنے پسندہ عنوان پر ٹاپ کریئیٹرس کی پوسٹ کو فالو کریں "</string>
+    <string name="follow_creators_see_posts">"پوسٹ لوڈ کرنے کے لئے %1$s کریئیٹر کو فالو کریں "</string>
+    <string name="follow_first">ابھی %s کے پوسٹ فالو فیڈ میں دیکھیں</string>
+    <string name="follow_notification">فالو نوٹیفکیشن/اطلاعات</string>
+    <string name="follow_request_received_empty_state">نئے فالوورس حاصل کرنے کے لئے مزید مواد پوسٹ کرنا شروع کریں</string>
+    <string name="follow_request_sent_empty_state">آپ نے کسی کو فالو کرنے کی درخواست نہیں کی ہے</string>
+    <string name="follow_requests">فالو ریکویسٹ</string>
+    <string name="follow_suggestion_follow_bottom">اور بھی اچھی پوسٹ کے لئے ان یوزرس کو فالو کریں!</string>
+    <string name="follow_this_account_to_view_content">مزید دیکھنے کے لئے اس اکاؤنٹ کو فالو کریں۔ پرائیویٹ اکاؤنٹس کے بارے میں جاننے کے لئے یہاں کلک کریں</string>
+    <string name="follow_three_top_creators">فالو کریں 3 سے زیادہ کریئیٹراپنے پسندیدہ موضوع کے !</string>
+    <string name="follow_to_load_posts">پوسٹ لوڈ کرنے کے لیے فالو کریں</string>
+    <string name="follow_user">یوزر کو فالو کریں</string>
+    <string name="followed_successful">فالو ہو گیا</string>
+    <string name="follower">فالوورس</string>
+    <string name="followers_list">فالوورس کی فہرست</string>
+    <string name="following">فالوئنگ</string>
+    <string name="following_list">فالوئنگ کی فہرست</string>
+    <string name="for_you">آپ کے لیے</string>
+    <string name="free_delivery">مفت ڈلیوری</string>
+    <string name="fresh_feed">تازه</string>
+    <string name="full_score">کُل اسکور</string>
+    <string name="gallery">گیلری</string>
+    <string name="gallery_compose_variants">گیلری</string>
+    <string name="gallery_save_off">\"شیئرچیٹ میڈیا\" پر فائل ڈاؤن لوڈ بند ہے</string>
+    <string name="gallery_save_on">\"شیئرچیٹ میڈیا\" پر فائل ڈاؤن لوڈ جاری ہے</string>
+    <string name="gallery_select_images">تصاویر منتخب کریں(%1$d/%2$d)</string>
+    <string name="games">گیمز</string>
+    <string name="gender">جینڈر/صنف</string>
+    <string name="general_guidelines">عام ہدایات</string>
+    <string name="genre_verified">%s • ویریفائیڈ</string>
+    <string name="get_back_soon">ہم نے آپ کی رائے کو ذہن میں رکھاہے . ہمسے جتنی جلد ممکن ہوگا آپ سے رابطہ کرنے کی کوشش کریں گے.</string>
+    <string name="get_mobile_verification_badge">موبائل ویریفیکیش بیج حاصل کریں</string>
+    <string name="gifUpload">GIF اپلوڈ</string>
+    <string name="give_feedback">رائے دے</string>
+    <string name="give_storage_permission">اسٹوریج کی اجازت فراہم کریں</string>
+    <string name="go_back_to_post">چیٹ میں واپس جائیں</string>
+    <string name="go_live">لائیو پر جاییں</string>
+    <string name="go_profile">پروفائل پر جائیں۔</string>
+    <string name="go_to_chatrooms">چیٹ رومز پر جائیں</string>
+    <string name="gold">سونا</string>
+    <string name="gold_converted">%1$ d سونے کو%2$ d سکے میں تبدیل کیا گیا ہے</string>
+    <string name="gold_less_than_min_withdrawable">آپ کو تبدیل کرنے کے لئے کم از کم%1 $ d سونے کی ضرورت</string>
+    <string name="gold_points">گولڈ پوائنٹس</string>
+    <string name="golden_tick_verified">گولڈن ٹک ویریفائیڈ</string>
+    <string name="goodmorning">\#🌞صبح الخیر🌞</string>
+    <string name="goto_account">اپنے اکاؤنٹ پر جائیں</string>
+    <string name="graph">گراف</string>
+    <string name="gridview_tooltip">اس ٹیگ میں زیادہ کنٹینٹ دیکھنے کے لئے یہاں کلک کریں۔</string>
+    <string name="group_activity">گروپ سرگرمی / قواعد</string>
+    <string name="group_chat">گروپ چیٹ</string>
+    <string name="group_chatroom">گروپ چیٹ رومز</string>
+    <string name="group_chatrooms_will_be_deleted_as_well">گروپ چیٹ روم کو بھی ہٹا دیا جاۓ گا</string>
+    <string name="group_creator">گروپ کریٹر</string>
+    <string name="group_delete">s% گروپ حذف ہوگیا</string>
+    <string name="group_description">گروپ کی تفصیل</string>
+    <string name="group_description_limit">تفصیل % d حروف سے زیادہ نہیں ہونی چاہئے</string>
+    <string name="group_description_message">یہ گروپ ایسے مواد کا اشتراک اور ان کی تلاش کے لئے ہے جس میں ان کی دلچسپی ہے:</string>
+    <string name="group_description_min_limit">تفصیل خالی نہیں ہونی چاہئے</string>
+    <string name="group_description_title">کے بارے میں</string>
+    <string name="group_guidelines">گروپ ہدایات</string>
+    <string name="group_header_prefix_">گروپ جس میں</string>
+    <string name="group_headers_profile">&lt;small>%1$s&lt;br/>&lt;/small>%2$s</string>
+    <string name="group_invite">اپنے دوستوں کو اس گروپ میں مدعو کریں</string>
+    <string name="group_join">شامل ہوں</string>
+    <string name="group_join_message">\#%s میں شامل</string>
+    <string name="group_joined">آپ اس گروپ میں کامیابی کے ساتھ شامل ہوگئے ہیں</string>
+    <string name="group_karma">گروپ کرما</string>
+    <string name="group_member_title">ممبرز</string>
+    <string name="group_name">گروپ کا نام</string>
+    <string name="group_name_limit">گروپ کا نام% d حروف سے زیادہ نہیں ہونا چاہئے</string>
+    <string name="group_name_link_not_allowed">گروپ کا نام لنک نہیں ہوسکتا ہے</string>
+    <string name="group_name_min_limit">گروپ کا نام کم از کم %d حروف کا ہونا چاہئے</string>
+    <string name="group_name_not_removable">گروپ کے اندر پوسٹ بنانے کے دوران گروپ نام کو نہیں ہٹایا جاسکتا</string>
+    <string name="group_name_phone_numbers_not_allowed">گروپ کے نام میں فون نمبر نہیں ہوسکتے ہیں</string>
+    <string name="group_posts">گروپ پوسٹس</string>
+    <string name="group_private_chatroom_of_format">s% کا گروپ پرائیویٹ چیٹ روم ہٹا دیا جاۓ گا</string>
+    <string name="group_retry">پھر لوڈ کریں...</string>
+    <string name="group_rules">"آپ اس گروپ کے مالک ہیں۔ . n  n2۔ آپ ممبران کو شیئر چیٹ پر میسج کرکے یا گروپ کو واٹس ایپ اور دیگر ایپلی کیشنز پر لنک بھیج کر دعوت دے سکتے ہیں۔ . n  n3۔ مالک کے اختیارات  n • مالک کے پاس ایڈمنسٹریٹر کے تمام اختیارات ہیں  n • مالک دوسرے ایڈمن کو شامل یا ہٹا سکتا ہے  n  n4۔ ایڈمن کے پاس کیا اختیارات ہیں؟ . n • ​​ایڈمن مزید منتظمین شامل کرسکتا ہے لیکن دوسرے ایڈمن کو نہیں ہٹا سکتا ہے۔  n • ایڈمن گروپوں کے اندر کی پوسٹس کو ہٹا سکتا ہے۔  n • ایڈمن ٹرینڈنگ ہونے یا مین فیڈ میں ڈالنے کیلئے پوسٹ کا انتخاب کرسکتے ہیں۔ صرف ایڈمن پینڈنگ پوسٹ کی فیڈ دیکھے گا ، جہاں ایڈمنسٹریٹر پوسٹ کو ٹرینڈنگ فیڈ میں ڈالنے کی اجازت دے گا۔  n the ٹاپ کریٹر کا انتخاب اور ٹاپ کریٹر سے ہٹانا ایڈمن کے ذریعہ کیا جائے گا۔  n  n5 ٹاپ کریٹر بننے کے کیا فوائد ہیں؟ ایڈمنز یا سرفہرست ٹاپ کریٹر کے ذریعہ بنی پوسٹ خودبخود منظور ہوجائیں گی اور گروپ کے ٹرینڈنگ فیڈ میں آئیں گی۔"</string>
+    <string name="group_share_text" formatted="false">%s کے گروپ %s سے ابھی شیئر چیٹ پر جڑيےs\\u0025n</string>
+    <string name="group_tag_animation_message">اس پوسٹ کو اپنے گروپ میں ظاہر کرنے کے لئے منظور کریں</string>
+    <string name="group_tag_name_limit_msg">زیادہ سے زیادہ 100 حروف کی اجازت ہے</string>
+    <string name="group_tag_name_min_limit_msg">کم از کم%1 $ d حروف کی ضرورت ہے</string>
+    <string name="group_to_top_creator">گروپ -> ٹاپ کریٹر لسٹ</string>
+    <string name="group_updated_successfully">گروپ کامیابی کے ساتھ اپ ڈیٹ کیا گیا</string>
+    <string name="groups">گروپ</string>
+    <string name="guidelines">ہدایات</string>
+    <string name="handle_in_use">یہ نک نام دستیاب نہیں ہے</string>
+    <string name="handle_title">\@ پروفائل</string>
+    <string name="handler_name">\@%s</string>
+    <string name="hate_speech">نفرت انگیز بیاں</string>
+    <string name="help">مدد</string>
+    <string name="help_app_update">نوٹ: FAQ میں باقاعدگی سے نئے ورژن کو اپ ڈیٹ کیا جاتا ہے.ہم ایپ کے مسائل کو مسلسل حل اور اس کو اور بہتر بنانے کی کوشش کر رہے ہیں. تو براہ مہربانی پلے اسٹور میں جائیں اور یقین دلایں کہ آپ نے شیئر چیٹ ایپ کا نیا ورژن اپ ڈیٹ کیا ہے.</string>
+    <string name="help_feedback">مدد اور حمایت</string>
+    <string name="helpful">مفید</string>
+    <string name="hidden_chat">چھپائی گئی چیٹ</string>
+    <string name="hidden_count">چھپائی گئی چیٹ (%d)</string>
+    <string name="hide">چھپائیں</string>
+    <string name="hide_chat">چیٹ چھپائیں</string>
+    <string name="hide_chat_content">کیا آپ واقعی بات چیت کو چھپانا چاہتے ہیں؟</string>
+    <string name="hide_notification">اطلاعات چھپائيں</string>
+    <string name="hint">ہِنٹ:</string>
+    <string name="hold_and_drag_segments">سیگمنٹ کا بندوبست کرنے کیلئے ہولڈ اور ڈریگ کریں</string>
+    <string name="hold_for_video">ویڈیو کے لئے دبا کے رکھیں</string>
+    <string name="hold_on">رکیں!</string>
+    <string name="home_camera">SC کیمرا۔</string>
+    <string name="home_chat">چیٹ</string>
+    <string name="home_compose">پوسٹ کریں</string>
+    <string name="home_explore">خزانہ</string>
+    <string name="home_feed">ہوم</string>
+    <string name="home_follower">فالوئنگ</string>
+    <string name="home_profile">پروفائل</string>
+    <string name="home_screen">ہوم اسکرین</string>
+    <string name="home_title_moj_lite">موج لائٹ</string>
+    <string name="home_trending">مقبول</string>
+    <string name="home_videos">ویڈیوز</string>
+    <string name="host_rejection_message">آپ نے انویٹیشن کو مسترد کر دیا ہے</string>
+    <string name="hour">گھنٹے</string>
+    <string name="hours">گھنٹوں</string>
+    <string name="how_are_you">آج آپ کیسا محسوس کر رہے ہیں؟</string>
+    <string name="i_agree">میں راضی ہوں</string>
+    <string name="ic_apk_share">شیئر چیٹ ایپ</string>
+    <string name="ic_copylink">لنک کاپی کریں</string>
+    <string name="ic_facebook">فیس بک</string>
+    <string name="ic_instagram">انسٹا گرام</string>
+    <string name="ic_more">زیادہ</string>
+    <string name="ic_shareit">شیئراٹ</string>
+    <string name="ic_twitter">ٹویٹر</string>
+    <string name="ic_whatsapp">واٹس ایپ</string>
+    <string name="ic_xender">زینڈر</string>
+    <string name="icon_content_description">ڈائیلاگ کا آئیکن</string>
+    <string name="ideas">خیالات</string>
+    <string name="imageUpload">تصویر اپلوڈ کریں</string>
+    <string name="image_edit_exit">اس سے آپ کی ساری تبدیلیاں خارج ہوجائیں گی۔ کیا آپ جاری رکھنا چاہتے ہیں؟</string>
+    <string name="image_upload_starting">تصویر اپ لوڈ ہونا شروع ہوگئی ہے</string>
+    <string name="images">تصویر</string>
+    <string name="images_selected">" تصاویر منتخب کی گئیں"</string>
+    <string name="in_progress">پیشرفت میں</string>
+    <string name="in_review">نظرثانی میں</string>
+    <string name="includes_who_installed_app">ایپ کو انسٹال کرنے والے افراد کو شامل کریں</string>
+    <string name="indeterminate">نہ تو نشان زد کیا گیا نہ ہی نشان ہٹایا گیا</string>
+    <string name="info_reason_text">آپ کی تفصیلات آپ کے لئے بہترین موزوں مواد دکھانے اور شیئر چیٹ کو ایک محفوظ جگہ بنانے میں ہماری مدد کرتی ہیں</string>
+    <string name="info_reason_text1">%1$s تعداد میں صارفین نے پچھلے 24 گھنٹوں میں اس معلومات کو شیئر کئے ہیں اور ذاتی نوعیت کے تجربے سے لطف اندوز ہوئے ہیں</string>
+    <string name="information_share">مندرجہ ذیل تفصیلات %s کے ساتھ شیئر کی جائیں گی</string>
+    <string name="install">انسٹال کریں۔</string>
+    <string name="interaction_desc">آپ منتخب کر سکتے ہیں کہ کون شیئر چیٹ پر آپ کے ساتھ بات چیت کر سکتا ہے</string>
+    <string name="interest_suggestion_success">ہم آپ کے لئے چیزیں مرتب کررہے ہیں۔ آپ کی دلچسپی کی بنیاد پر آپ کی فیڈ کو پرسنل بنایا جائے گا!</string>
+    <string name="invalid">غلط</string>
+    <string name="invalidPhone">غلط موبائل نمبر</string>
+    <string name="invalid_mobile_badge_msg">آپ کا ہمارے ساتھ رجسٹرڈ موبائل نمبر غلط لگتا ہے۔ براہ کرم موبائل ویریفیکیش بیج حاصل کرنے کے لئے آگے جا کر اپنے موبائل نمبر کو اپڈیٹ کریں</string>
+    <string name="invalid_profile_image_type">صحیح پروفائل تصویر کا انتخاب کریں</string>
+    <string name="invalid_user_name">غلط نام</string>
+    <string name="invitation_sent_failure">کچھ خامی پیش آگئی۔ دوبارہ کوشش کریں</string>
+    <string name="invitation_sent_successfully">آپ کا انوائٹ کامیابی کے ساتھ بھیج دیا گیا ہے۔</string>
+    <string name="invitation_string">ہیلو، مجھے آپ سے چیٹ کرنی ہے.</string>
+    <string name="invite_button">دعوت دیں</string>
+    <string name="invite_friends">دوستوں کو دعوت دیں</string>
+    <string name="invite_link">اِنویٹیشن لنک</string>
+    <string name="invite_members">ابھی تک کوئی ممبر نہیں ہیں دوسروں کو دعوت دیں</string>
+    <string name="invite_message">دوستوں کو دعوت دیں</string>
+    <string name="invite_people">لوگوں کودعوت دیں ۔</string>
+    <string name="invite_sharechat_friend">شیئر چیٹ کے دوستوں کے ساتھ شیئر کریں</string>
+    <string name="invite_via">کے ذریعے دعوت دیں</string>
+    <string name="invite_via_whatsapp">واٹس ایپ کے ذریعے انوائٹ کریں</string>
+    <string name="is_live_on_sharechat">شیئرچیٹ پرلائیو ہے۔</string>
+    <string name="item_view_role_description">ٹیب</string>
+    <string name="january">جنوری</string>
+    <string name="join">شامل ہوں</string>
+    <string name="join_champions_program">چیمپئنز پروگرام میں شامل ہوں</string>
+    <string name="join_group_failed">گروپ میں شامل نہیں ہوئے</string>
+    <string name="join_group_to_comment">تبصرہ کرنے کے لئے گروپ میں شامل ہوں</string>
+    <string name="join_now">ابھی شامل ہوں</string>
+    <string name="join_requests">درخواستوں میں شامل ہوں</string>
+    <string name="joined">شامل ہوں</string>
+    <string name="joined_topics">موضوع جسمیں آپ شامل ہیں</string>
+    <string name="july">جولائی</string>
+    <string name="june">جون</string>
+    <string name="karma">کرما</string>
+    <string name="keep_editing">ایڈیٹنگ کرتے رہیں</string>
+    <string name="keep_location">مقام رکھیں</string>
+    <string name="known">اپنے</string>
+    <string name="label_suggested_tags">مجوزہ ٹیگس</string>
+    <string name="labels_are_status_indicators">لیبل اسٹیٹس انڈیکیٹر ہیں جو آپ کی پروفائل پِک کے ٹاپ پر لگائے جاتے ہیں</string>
+    <string name="language_change">اپنی زبان تبدیل کریں</string>
+    <string name="large_file">فائل کی سائز 200 mb سے کم رکھیں</string>
+    <string name="last_active">آخری بار ایکٹو %s</string>
+    <string name="last_seven_days">آخری 7 دن</string>
+    <string name="latest">تازہ</string>
+    <string name="leaderboard">لیڈر بورڈ</string>
+    <string name="leaderboard_empty_view">درجہ بندیپروگریس میں ہے۔ براہ کرم کچھ دیر بعد اپنا درجہ دیکھنے کےلئے چیک کریں</string>
+    <string name="learn_and_earn">سیکھن اور کمائیں</string>
+    <string name="learn_more">مزید جانیں</string>
+    <string name="leave_audio_chat">آڈیو ہٹایں</string>
+    <string name="leave_family_desc">کیا آپ فیملی کو چھوڑنا چاہتے ہیں؟</string>
+    <string name="leave_family_title">فیملی کو چھوڑیں</string>
+    <string name="leave_group">گروپ کو چھوڑیں</string>
+    <string name="left">بچا ہوا</string>
+    <string name="level_count">لیول%1$d</string>
+    <string name="library">لائبریری</string>
+    <string name="like">لائک</string>
+    <string name="like_notification">لائک نوٹیفکیشن/اطلاعات</string>
+    <string name="like_sharechat">شیئر چیٹ پسند ہے؟</string>
+    <string name="likes">لائک</string>
+    <string name="likes_count">%d لائک</string>
+    <string name="link_copied">لنک کاپی ہو چکی ہے</string>
+    <string name="link_label">لنک</string>
+    <string name="links">لنک</string>
+    <string name="live">Live</string>
+    <string name="live_stream_reported">اس لائیو اسٹریم کی رپورٹ کی گئی ہے۔</string>
+    <string name="live_streaming_ended">لائیو اسٹریم ختم ہوچکی ہے۔</string>
+    <string name="load_previous_comments">پچھلے تبصرے لوڈ کریں۔</string>
+    <string name="loading">لوڈنگ</string>
+    <string name="loading_comments">تبصرے لوڈ ہو رہے ہیں۔</string>
+    <string name="local">مقامی/لوکل</string>
+    <string name="lock_screen">لاک اسکرین</string>
+    <string name="lock_screen_notification">لاک اسکرین نوٹیفکیشن</string>
+    <string name="lock_slot_redirection_msg">میزبان واپس آنے تک چیٹ روم لاک ہے۔ آپ چیٹ روم سیکشن میں نیا چیٹ رومکریٹ کر سکتے ہیں۔</string>
+    <string name="locked">لاکڈ</string>
+    <string name="locked_spotlight_video_toast_msg">اسے ان لاک کرنے کے لیے آپ کو پچھلے تمام ٹریکس کو مکمل کرنا ہوگا</string>
+    <string name="login_error_mobile_number_required">موبائل نمبر خالی نہیں ہوسکتا</string>
+    <string name="login_privacy">آپ اور آپ کی رازداری ہمارے لئے اہم ہے، آپ کے موبائل نمبر کو کسی کے ساتھ بانٹا نہیں جائے گا.</string>
+    <string name="login_privacy_is_important">آپ کی رازداری ہمارے لئے اہم ہے ، اور آپ کے موبائل نمبرکو کسی کے ساتھ اشتراک نہیں کیا جائے گا۔ جاری رکھ کر ، آپ ہمارے%s سے اتفاق کرتے ہیں</string>
+    <string name="long_press_to_drag_and_reposition">ایڈٹ کرنے کے لیے لانگ پریس کریں</string>
+    <string name="long_press_to_know_more">مزید جاننے کے لیے گفٹ باکس پر \"لانگ پریس\" کریں</string>
+    <string name="low_storage_clear_storage_intent">ڈاؤن لوڈ جاری رکھنے کے لیے براہ مہربانی اپنے فون میں کچھ جگہ خالی کریں</string>
+    <string name="made_in_india">میڈ ان انڈیا</string>
+    <string name="make_account_private">اکاؤنٹ کو پرائیویٹ بنائیں</string>
+    <string name="make_admin">ایڈمن بنائیں</string>
+    <string name="make_admin_action">ایڈمن بنائیں</string>
+    <string name="make_admin_confirmation">کیا آپ واقعی میں اس گروپ کا %s ایڈمن بنانا چاہتے ہیں؟آپ انھیں بعد میں نہیں ہٹا پائیں گے</string>
+    <string name="make_admin_description">"      اپنے گروپ کی بہتر خدمت کرنے میں مدد کےلئے اپنی پسند کے ایڈمنز بنائیں۔
+"</string>
+    <string name="make_police">پولیس بنائیں</string>
+    <string name="make_police_description">ممبران کو پولیس میں ترقی دیں۔ پولیس اس گروپ سے پوسٹیں حذف کرسکتی ہے۔</string>
+    <string name="make_top_creator">ٹاپ کریٹر میں شامل کریں</string>
+    <string name="make_top_creator_action">"ٹاپ کریٹر بنائیں
+"</string>
+    <string name="make_top_creator_description">"ممبروں کو ٹاپ کریٹر میں بڑھاوا دیں۔ سرفہرست ٹاپ کریٹر کی تمام پوسٹس خود بخود منظور شدہ ہیں
+"</string>
+    <string name="male">مسٹر</string>
+    <string name="manage_text">ٹیکسٹ کو ترتیب دیں</string>
+    <string name="manage_your_own_profile">اپنی پروفائل کا نظم کریں</string>
+    <string name="manual_otp">براہ کرم OTPخود سے بھریں</string>
+    <string name="march">مارچ</string>
+    <string name="matching">\"%s\" میچِنگ</string>
+    <string name="material_clock_toggle_content_description">AM یا PM منتخب کریں</string>
+    <string name="material_hour_selection">گھنٹہ منتخب کریں</string>
+    <string name="material_hour_suffix">%1$s بجے</string>
+    <string name="material_minute_selection">منٹ منتخب کریں</string>
+    <string name="material_minute_suffix">%1$s منٹ</string>
+    <string name="material_timepicker_am">قبل از دوپہر</string>
+    <string name="material_timepicker_clock_mode_description">وقت ان پٹ کے لیے گھڑی و‏ضع پر سوئچ کریں۔</string>
+    <string name="material_timepicker_hour">گھنٹہ</string>
+    <string name="material_timepicker_minute">منٹ</string>
+    <string name="material_timepicker_pm">رات</string>
+    <string name="material_timepicker_select_time">وقت منتخب کریں</string>
+    <string name="material_timepicker_text_input_mode_description">وقت ان پٹ کے لیے ٹیکسٹ ان پٹ وضع پر سوئچ کریں۔</string>
+    <string name="max_album_limit_reached">البم اپنی انتہا کو پہنچ گئی ہے!</string>
+    <string name="max_files_moved_already">%s فائلس پہلے ہی منتقل کی جا رہی ہیں۔ مزید منتقل کرنے کے لیے پہلے انہیں محفوظ کریں۔</string>
+    <string name="max_gold_withdrawble_limit">آپ ایک لین دین میں صرف%1 $ d سونا واپس لے سکتے ہیں</string>
+    <string name="max_video_select_limit">آپ پہلے ہی %d کلِپس منتخب کر چکے ہیں</string>
+    <string name="maximum_tags_allowed">آپ %d ٹیگس سے زیادہ کا انتخاب نہیں کرسکتے ہیں</string>
+    <string name="maximum_user_allowed">آپ 5 سے زیادہ صارفین کو منتخب نہیں کرسکتے ہیں</string>
+    <string name="may">مئی</string>
+    <string name="media_download_notification_message">%d میڈیا فائل ڈاؤن لوڈ ہو گئی ہے</string>
+    <string name="member">ممبرز</string>
+    <string name="members">ممبرز</string>
+    <string name="mentions">ذکر و اذکار</string>
+    <string name="message">پیغام</string>
+    <string name="message_app_update">اس یوزر نے ایسا پوسٹ کیا ہے جو آپ کےایپ ورژن میں سپورٹ نہیں کر رہا ہے. براہ مہربانی گوگل پلے اسٹور پر جائیں اور ایپ اپ ڈیٹ کریں.</string>
+    <string name="message_unfeasible">آپ صرف ان یوزر کو پیغام دے سکتے ہیں جوآپکو فالو کر رہے ہیں</string>
+    <string name="min_char">کم سے کم 15 حروف لکھنا ضروری ہے</string>
+    <string name="min_characters_required_group">گروپ بنانے کے لئے کم سے کم %1$d حروف کی ضرورت ہے</string>
+    <string name="min_characters_required_tag">ٹیگ بنانے کے لئے کم سے کم %1$d حروف کی ضرورت ہے</string>
+    <string name="min_five_characters">کم از کم 5 حروف کی ضرورت ہے</string>
+    <string name="min_gold_withdrawable_limit">آپ کو کم از کم%1 $ d سونا واپس لینے کی ضرورت ہے</string>
+    <string name="min_trim_limit">ٹرم کا وقت 2 سیکنڈ سے کم نہیں ہوسکتا ہے</string>
+    <string name="mini_app_share_message">شیئر چیٹ ایپ میں %s کھولنے کے لئے نیچے کلک کریں۔</string>
+    <string name="minimise">کم سے کم کریں</string>
+    <string name="minimum_poll_characters">کم از کم 20 حرف ٹائپ کریں۔</string>
+    <string name="minute">منٹ</string>
+    <string name="minutes">منٹ</string>
+    <string name="miss">مس</string>
+    <string name="missing_pan_card_image">براہ کرم پین کارڈ کی تصویرانتخاب کریں</string>
+    <string name="mister">محترم / مسٹر</string>
+    <string name="mobile_verified">موبائل ویریفائیڈ</string>
+    <string name="mood">موڈ</string>
+    <string name="mood_delete_confirm">کیا آپ واقعی اس موڈ کو ڈلیٹ کرنا چاہتے ہیں؟</string>
+    <string name="mood_dupliacate">موڈ پہلے ہی موجود ہے۔</string>
+    <string name="mood_header_msg">پروفائل میں موڈ شامل کرنے سے بائیو اور کور کی تصویر آپ کے موڈ کے مطابق 24 گھنٹے کے لیے تبدیل ہو جائے گی</string>
+    <string name="mood_succesful">اپنا موڈ دیکھنے کے لئے اپنے پروفائل پر جائیں۔</string>
+    <string name="moods_preview_msg">موڈ اپڈیٹ ہونے کے 24 گھنٹے بعد آپ کی کور پِکچر ڈیفالٹ اِمیج کے ساتھ بدل دی جائے گی</string>
+    <string name="more_comments">دیگر تبصرے</string>
+    <string name="more_like_this">اس طرح مزید</string>
+    <string name="more_options">مزيد اختیارات</string>
+    <string name="more_pending_requests">%1 $ s درخواستیں پینڈنگ ہیں</string>
+    <string name="more_profiles">مزید پروفائلز</string>
+    <string name="more_stickers">مزید اسٹیکرز</string>
+    <string name="more_than_five_weeks_ago">5 ہفتے پہلے</string>
+    <string name="more_videos">مزید ویڈیوز</string>
+    <string name="motion_video_generation">آپ کی موشن ویڈیو تیار کی جارہی ہے</string>
+    <string name="motion_video_max_image_count_error">%d سے زیادہ تصویر منتخب نہیں کرسکتے ہیں</string>
+    <string name="motion_video_proceed_confirmation">یہ آپ کے ذریعہ کی گئی تمام کارروائیوں کو ختمی شکل دے گا ، اور آپ ویڈیو میں تبدیلیاں نہیں کرسکیں گے۔ کیا آپ واقعی جاری رکھنا چاہتے ہیں؟</string>
+    <string name="move_slider_to_trim">ٹرم کرنے کے لئے سلائیڈر کو موو کریں</string>
+    <string name="msg_admin">آپ &lt;b> ایڈمن &lt;/ b> ہیں</string>
+    <string name="msg_become_admin">ہاں! آپ اس ٹیگ کے ایڈمن بن جائیں گے</string>
+    <string name="msg_group_create_desc">اب آپ% s کے مالک اور ایڈمن ہیں</string>
+    <string name="msg_pending_posts_admin">% d پوسٹوں پر نظر ثانی کرنے کی ضرورت ہے</string>
+    <string name="msg_sending">جا رہا ہے</string>
+    <string name="msg_share_chat_room">%2$s زبردست گفتگو اور لطف اٹھانے کیلئے%1$s میں شامل ہوں</string>
+    <string name="msg_share_group_tag">گروپ میں شامل ہوں: شیئر چیٹ پر \"%1$s\"</string>
+    <string name="mtrl_badge_numberless_content_description">نئی اطلاع</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s کو ہٹائیں</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">%1$d سے زیادہ نئی اطلاعات</string>
+    <string name="mtrl_picker_a11y_next_month">اگلے مہینہ میں منتقل کریں</string>
+    <string name="mtrl_picker_a11y_prev_month">گزشتہ ماہ میں منتقل کریں</string>
+    <string name="mtrl_picker_announce_current_selection">موجودہ انتخاب: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">تاریخ منتخب کریں</string>
+    <string name="mtrl_picker_date_header_unselected">منتخب کردہ تاریخ</string>
+    <string name="mtrl_picker_day_of_week_column_header">دنوں کا کالم: %1$s</string>
+    <string name="mtrl_picker_invalid_format">غلط فارمیٹ۔</string>
+    <string name="mtrl_picker_invalid_format_example">مثال: %1$s۔</string>
+    <string name="mtrl_picker_invalid_format_use">%1$s استعمال کریں</string>
+    <string name="mtrl_picker_invalid_range">غلط رینج۔</string>
+    <string name="mtrl_picker_navigate_to_year_description">%1$s سال پر نیویگیٹ کریں</string>
+    <string name="mtrl_picker_out_of_range">حد سے باہر: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">تاریخ آغاز – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – تاریخ اختتام</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">رینج منتخب کریں</string>
+    <string name="mtrl_picker_range_header_unselected">تاریخ آغاز - تاریخ اختتام</string>
+    <string name="mtrl_picker_save">محفوظ کریں</string>
+    <string name="mtrl_picker_text_input_date_hint">تاریخ</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">تاریخ اختتام</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">تاریخ آغاز</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">کیلنڈر ان پٹ وضع پر سوئچ کریں</string>
+    <string name="mtrl_picker_toggle_to_day_selection">دن کو منتخب کرنے کے ليے سوئچ پر تھپتھپائیں</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">متنی ان پٹ وضع پر سوئچ کریں</string>
+    <string name="mtrl_picker_toggle_to_year_selection">سال کو منتخب کرنے کے ليے سوئچ پر تھپتھپائیں</string>
+    <string name="music">میوزک</string>
+    <string name="music_player_title">میوزک</string>
+    <string name="mute">میوٹ</string>
+    <string name="mute_notifications">اطلاعات خاموش کریں</string>
+    <string name="mutual_followers">باہمی فالوورس</string>
+    <string name="mv_download_message">موشن ویڈیو کو آپ کے فون گیلری میں ڈاؤن لوڈ کیا گیا ہے۔</string>
+    <string name="mv_downloading">آپ کا موشن ویڈیو اب ڈاؤن لوڈ ہو رہا ہے…</string>
+    <string name="mv_quote_add">آپ کی MV تیار ہورہی ہے</string>
+    <string name="my_activity">میری ایکٹیوٹی</string>
+    <string name="my_earnings">₹ میری کمائی</string>
+    <string name="my_groups">میرے گروپس</string>
+    <string name="my_post">میرے پوسٹ</string>
+    <string name="my_wallet">میرا بٹوا</string>
+    <string name="name">نام</string>
+    <string name="nameEmpty">نام خالی نہیں ہو سکتا</string>
+    <string name="name_your_draft">اپنے ڈرافٹ کو نام دیں</string>
+    <string name="navigation_menu">نیویگیشن مینو</string>
+    <string name="need_contact_permission">رابطے کی اجازت کی ضرورت ہے</string>
+    <string name="neterror">براہ مہربانی اپنا انٹرنیٹ کنکشن چیک کریں</string>
+    <string name="new_album">نیا البم</string>
+    <string name="new_mood">نیا موڈ۔</string>
+    <string name="new_phone_number">اپنا فون نمبر درج کریں</string>
+    <string name="new_string">نیا</string>
+    <string name="new_terms">شیئر چیٹ استعمال کرنے کے ساتھ آپ ہماری %s کو مانتے ہیں</string>
+    <string name="news">خبریں</string>
+    <string name="news_publisher">• نیوز پبلشر</string>
+    <string name="news_publisher_new">نیوز پبلشر</string>
+    <string name="next">اگلا</string>
+    <string name="no">رہنے دیں</string>
+    <string name="no_admin_text">اس گروپ میں فی الحال ایڈمن نہیں ہے</string>
+    <string name="no_bucket_selected">کوئی کیٹیگری منتخب نہیں ہے</string>
+    <string name="no_camera_permission">کیمرے کی اجازت نہیں دی گئی ہے</string>
+    <string name="no_contacts">شیئر چیٹ پر کوئی رابطہ نہیں ہے۔</string>
+    <string name="no_family_chatrooms">فیملی میں کوئی چیٹ رومز نہیں ہیں</string>
+    <string name="no_family_events">کوئی فیملی ایوینٹز نہیں بنائے گئے</string>
+    <string name="no_fav_error_detail">"جب بھی آپ کسی ٹیمپلیٹ کو پسند کریں گے، وہ یہاں آپ کے 'پسندیدہ' میں ظاہر ہوں گے"</string>
+    <string name="no_fav_error_title">"آپ کے پاس کوئی 'پسندیدہ' نہیں ہے"</string>
+    <string name="no_follow_request">آپ کی پروفائل پبلک ہے، اس لئے یہاں کوئی بھی فالو کی دخواست نہیں ہے</string>
+    <string name="no_groups_created">کوئی گروپ نہیں بنایا گیا</string>
+    <string name="no_item_were_found">کچھ نہیں ملا!</string>
+    <string name="no_message">اوہ ! آپ کے پاس کوئی پیغامات نہیں ہیں۔ نئے لوگوں کے پیغامات دیکھنے کے لئے یہاں واپس آجائیں۔</string>
+    <string name="no_of_post">%1$d پوسٹس</string>
+    <string name="no_pending_audiochat_request">"مزید آڈیو چیٹ کے لئے ابھی تک کوئی درخواست نہیں۔ 
+ انوائٹ اور 8 ممبروں تک منتخب کریں"</string>
+    <string name="no_pending_request">کوئی درخواست پینڈنگ نہیں ہے</string>
+    <string name="no_pic_chooser_available">عمل مکمل کرنے کے لئے ایپلیکیشن دستیاب نہیں ہے</string>
+    <string name="no_police_text">اس گروپ کے پاس فی الحال پولیس نہیں ہے</string>
+    <string name="no_post_profile_header">اور زبردست پوسٹ دیکھنے کے لئے دیگر پروفائل دیکھیں</string>
+    <string name="no_post_user_text">ارے! انہوں نے تو کوئی پوسٹ ہی نہیں کیا ہے</string>
+    <string name="no_posts_created">کوئی پوسٹ نہیں بنایا گیا</string>
+    <string name="no_recently_used_stickers">آپ نے حال ہی میں کسی بھی اسٹیکر کا استعمال نہیں کیا</string>
+    <string name="no_request_found">فیملی کی کوئی ریکویسٹ نہیں ملی</string>
+    <string name="no_text">نہیں</string>
+    <string name="no_thanks">جی نہیں شکریہ</string>
+    <string name="no_top_creator_text">اس گروپ میں فی الحال ٹاپ کریٹر نہیں ہے</string>
+    <string name="no_videos_with_this_audio">اس آڈیو کے ساتھ کوئی ویڈیو نہیں بنائی گئی ہے۔n سب سے پہلے آپ پوسٹ کریں</string>
+    <string name="no_viewers">اب تک کوئی ناظرین نہیں</string>
+    <string name="no_whatsapp_error">آپ کے فون میں واٹس ایپ نہیں ہے</string>
+    <string name="nobody_download">کوئی بھی آپ کی پوسٹس ڈاؤن لوڈ نہیں کر سکتا</string>
+    <string name="normal_buckets_heading">خزانہ</string>
+    <string name="not_a_member">کسی گروپ کا ممبر نہیں</string>
+    <string name="not_a_top_creator">کسی گروپ کا ٹاپ کریٹر نہیں</string>
+    <string name="not_allowed">اجازت یافتہ نہیں</string>
+    <string name="not_an_admin">کسی گروپ کاایڈمن نہیں</string>
+    <string name="not_an_owner">کسی گروپ کا مالک نہیں</string>
+    <string name="not_enough_gold_points">آپ کے پاس صرف% 1 $ d سونا ہے</string>
+    <string name="not_follow">%x اب آپکو فالو کر رہی/ رہے ہیں</string>
+    <string name="not_follow_agg" formatted="false">%x اور %y دوسرے لوگ آپکو فالو کر رہے ہیں</string>
+    <string name="not_helpful">بیکار</string>
+    <string name="not_interested">دلچسپی نہیں</string>
+    <string name="not_interested_message">اب سے آپ کو اس طرح کی کم پوسٹیں نظر آئیں گی۔</string>
+    <string name="not_selected">غیر منتخب کردہ</string>
+    <string name="not_set">سیٹ نہیں ہے</string>
+    <string name="note">نوٹ!</string>
+    <string name="note1" formatted="false">%n کے ہو گے ہیں %c سے زیادہ فولوورس ، دیکھئے انکے سبسے حالیہ پوسٹ اور اشتراک کریں</string>
+    <string name="note10" formatted="false">آپ کا دوست %author%🤘</string>
+    <string name="note11" formatted="false">%name% براہ کرم تبصرہ کریں😎</string>
+    <string name="note12" formatted="false">%author% : براہ کرم تبصرہ کریں👆</string>
+    <string name="note2">%n کا یہ پوسٹ ہو گیا ہے وائرل ! ابھی دیکھیں اوراشتراک کریں</string>
+    <string name="note3">اس پوسٹ سے ہو گے ہیں %n مشہو! ابھی فالو کریں</string>
+    <string name="note4" formatted="false">\"%n کے ہو گے ہیں %s سے زیادہ شیئر! ابھی دیکھئے اورشیئرکریں</string>
+    <string name="note5">دیکھو ! دیکھو ! وہ آ گیا ..واٹس ایپ کے لئے آج کا مزیدار پوسٹ آ گیا</string>
+    <string name="note6" formatted="false">👈%v% لوگوں نے اس پوسٹ کو دیکھا %name% 😎</string>
+    <string name="note7" formatted="false">👈%(s+l+f+c)% لوگوں نے اس پوسٹ کو پسند کیا!🤩</string>
+    <string name="note8" formatted="false">😎آپ کے دوست %author% کا پیغام آگیا ہے👆</string>
+    <string name="note9" formatted="false">آپ %name% کیسے ہیں😇</string>
+    <string name="notice_board_tooltip_text">نوٹس بورڈ دیکھنے کے لیے کلک کریں!</string>
+    <string name="notif_follow">فالو کریں</string>
+    <string name="notif_followers">فالوورز</string>
+    <string name="notif_title">اطلاعات کی ترتیبات/ سیٹنگز</string>
+    <string name="notif_title_3" formatted="false">%author% : مجھ سے آپ تک❤️</string>
+    <string name="notif_title_4" formatted="false">😇%author% : آپ کیسے ہیں؟</string>
+    <string name="notif_title_6">شیئر چیٹ سے پیغام آیا ہے🤘</string>
+    <string name="notif_title_7">🤘آپ کے ایک دوست کا پیغام آیا ہے</string>
+    <string name="notif_title_8">ایک وائرل پوسٹ👌</string>
+    <string name="notif_title_9">بس کلک کریں👇😍</string>
+    <string name="notification_comment_on_post" formatted="false">%s اور %n دیگر دوسروں نے آپ کے پوسٹ %p پر تبصرہ کیا</string>
+    <string name="notification_first_comment" formatted="false">%s نے آپ کے پوسٹ %p پر تبصرہ / کمنٹ کیا</string>
+    <string name="notification_other_post_comment" formatted="false">%a نے بھی \"%p \" پر تبصرہ کیا</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="notifications_off">نوٹیفکیشن آف</string>
+    <string name="notifications_on">نوٹیفکیشن آن</string>
+    <string name="notify_me">مجھے مطلع کریں</string>
+    <string name="november">نومبر</string>
+    <string name="now">تازہ</string>
+    <string name="now_you_ca_create_album">"  اب آپ اپنے پوسٹس کو اکٹھا یا اُس میں تبدیلی کر کے خوبصورت انداز میں البمز بنا سکتے ہیں اور انہیں اپنی پروفائل کے ٹاپ پر نمایاں کر سکتے ہیں"</string>
+    <string name="number_update_success">نمبر کامیابی کے ساتھ اپ ڈیٹ ہوا</string>
+    <string name="number_verified">نمبر ویری فائڈ</string>
+    <string name="numericOne">1</string>
+    <string name="october">اکتوبر</string>
+    <string name="off">آف ہے</string>
+    <string name="offline">آف لائن</string>
+    <string name="offline_notification_text">اشتہار کھولنے کیلئے تھپتھپائیں</string>
+    <string name="offline_notification_title">جب آپ آف لائن تھے تب آپ نے جس اشتہار کو محفوظ کیا تھا اس کا ملاحظہ کریں</string>
+    <string name="offline_opt_in_confirm">ٹھیک ہے</string>
+    <string name="offline_opt_in_confirmation">جب آپ آن لائن واپس آئیں گے تو آپ کو لنک کے ساتھ اطلاع حاصل ہوگی</string>
+    <string name="offline_opt_in_decline">نہیں شکریہ</string>
+    <string name="offline_opt_in_message">ہم آپ کو مشتہر کی سائٹ کے لنک کے ساتھ اطلاع بھیجیں گے۔</string>
+    <string name="offline_opt_in_title">آن لائن واپس آنے پر اشتہار کھولیں۔</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="okay_got_it">ٹھیک ہے ، سمجھ گیا!</string>
+    <string name="oldest">سب سے قدیم</string>
+    <string name="oldest_v2">سب سے قدیم</string>
+    <string name="on">آن ہے</string>
+    <string name="onboard_host">آن بورڈ ہوسٹ</string>
+    <string name="one_hour_ago">1 گھنٹہ پہلے</string>
+    <string name="online">آن لائن</string>
+    <string name="oopserror">کچھ غلطی ہو گیی ہے</string>
+    <string name="open">کھولیں</string>
+    <string name="open_camera">کیمرا کھولیں</string>
+    <string name="open_draft">ڈرافٹ کھولیں</string>
+    <string name="or">یا</string>
+    <string name="original_leaderboard">اوریجنل اسٹارز</string>
+    <string name="other_app">دوسری ایپ</string>
+    <string name="other_chat_started">%1$s نے آڈیو چیٹ شروع کردی ہے!</string>
+    <string name="other_exit_chat_message">%1$s نے گروپ چیٹ چھوڑ دیا ہے !!</string>
+    <string name="other_host_message">%1$s ہوسٹ بن گئے ہیں !</string>
+    <string name="other_join_request_sent">%1$s نے آڈیو چیٹ میں شامل ہونے کی درخواست کی ہے!</string>
+    <string name="other_muted_message">%1$s کو میوٹ کر دیا گیا ہے!</string>
+    <string name="other_unmuted_message">%1$s کومیوٹ سے ہٹا دیا گیا ہے!</string>
+    <string name="others">دیگر</string>
+    <string name="others_chat_joined_message">%1$s گروپ چیٹ میں شامل ہوئے!</string>
+    <string name="otp_already_requested">کی OTP درخواست پہلےہی کی گئی ہے ، کچھ دیر بعد کوشش کریں۔</string>
+    <string name="otp_attempts_remaining">%s کوششیں باقی ہیں</string>
+    <string name="otp_limit_reached">آپ نے تمام کوششوں کو آزمایا لیا ہے۔ براہ کرم ایک گھنٹے بعد کوشش کریں۔</string>
+    <string name="otp_request_error">OTP کی درخواست ناکام ہوگئی</string>
+    <string name="otp_verification_error">OTP کی جانچ ناکام ہوگئی</string>
+    <string name="over">اوور</string>
+    <string name="owner">مالک</string>
+    <string name="owner_label">مالک: @% s</string>
+    <string name="owner_name">%s ہے</string>
+    <string name="pack_name">پیک کا نام</string>
+    <string name="pan_image">پین تصویر</string>
+    <string name="pan_number">پین نمبر</string>
+    <string name="participants">امیدوار/حصّے دار</string>
+    <string name="participants_tag_chat">%s امیدوار</string>
+    <string name="partnership">پاٹنرشِپ</string>
+    <string name="password_toggle_content_description">پاس ورڈ دکھائیں</string>
+    <string name="payment_date">ادا کیا / پیڈ آن</string>
+    <string name="payment_status_complete">پیمنٹ پورا ہو گیا ہے</string>
+    <string name="payment_status_failed">پیمنٹ ناکام ہو گیا ہے</string>
+    <string name="payment_status_initiated">پیمنٹ شروع ہو گیا ہے</string>
+    <string name="payment_status_pending">پیمنٹ پینڈنگ ہے</string>
+    <string name="paytm">Paytm</string>
+    <string name="paytm_number">Paytmنمبر</string>
+    <string name="pending">پینڈنگ</string>
+    <string name="pending_chat_list">پینڈنگ</string>
+    <string name="pending_posts">پینڈنگ پوسٹس</string>
+    <string name="pending_requests">%d درخواستیں زیر التواء ہیں</string>
+    <string name="pending_uploads">%1$s اپ لوڈ باقی</string>
+    <string name="people_discussing">لوگ اس موضوع پر چرچہ کر رہے ہیں</string>
+    <string name="people_near_me_only">میرے قریب کے لوگ۔</string>
+    <string name="performance">پرفارمینس</string>
+    <string name="permission_accept">اجازت دیں</string>
+    <string name="permission_deny">انکار کریں</string>
+    <string name="permission_mobile_number">موبائل نمبر</string>
+    <string name="permission_popup_title">ہم جاننا چاہتے ہیں کی آپ کے شہر یا محلے یا آس - پاس میں کیا ہو رہا ہے</string>
+    <string name="permission_public_profile">عوامی/ پبلک پروفائل</string>
+    <string name="permission_publish_posts">پوسٹس شائع کریں</string>
+    <string name="permission_shown">%1$s کے لئے اجازت %2$s</string>
+    <string name="permission_user_activity">یوزر کی سرگرمی</string>
+    <string name="permission_user_age_range">یوزر کی عمر کی حد</string>
+    <string name="permission_user_followers">یوزر فالوور</string>
+    <string name="permission_user_location">یوزر کا مقام</string>
+    <string name="permission_user_posts">یوزر کی پوسٹس</string>
+    <string name="permission_user_wallet">یوزر کا پرس</string>
+    <string name="phone">موبائل نمبر</string>
+    <string name="phone_gallery">فون گیلری، نگارخانہ</string>
+    <string name="phone_not_verified">آپ کا فون نمبر ویری فائڈ نہیں ہے</string>
+    <string name="phone_number">فون نمبر</string>
+    <string name="phone_verification_message">نئے دوست بنانے کے لئے آپ کا فون نمبر براہ کرم ویریفائی کریں!</string>
+    <string name="pin_new_post_heading">پن پوسٹ؟</string>
+    <string name="pin_post_confirming">براہ کرم انتظار کریں جب تک کہ یہ پوسٹ #%s میں پن کی جارہی ہے</string>
+    <string name="pin_post_description">گروپ کے اوپری حصے میں ان کی خصوصیات کیلئے 1 پوسٹس تک پن کریں۔</string>
+    <string name="pin_post_retry">ہم اس پوسٹ کو #%s میں پن کرنے میں ناکامیاب رہے</string>
+    <string name="pin_posts_tooltip_text">" 2 پسندیدہ پوسٹس کو ٹاپ پر یعنی سب سے اوپر پِن کریں"</string>
+    <string name="pinned">پن</string>
+    <string name="pinned_poll">پنڈ پول</string>
+    <string name="pinned_post">پن کردہ پوسٹ</string>
+    <string name="pinning_post">پوسٹ پن ہو رہی ہے</string>
+    <string name="pinning_posts">پوسٹ پن ہو رہی ہے</string>
+    <string name="pinning_posts_description">ایڈمن گروپ میں کسی اچھے مواد کو پن کرکے فروغ دے سکتا ہے۔</string>
+    <string name="placeholder_errorView_btnText">پھر لوڈ کریں</string>
+    <string name="play_again">دوبارہ پلے کریں</string>
+    <string name="play_music">میوزک بجاییں</string>
+    <string name="please_enter_text_in_option">%1$s براہ مہربانی آپشن کے لئے یہاں ٹیکسٹ لکھیں</string>
+    <string name="please_remove_your_mood_if_you_want_to_view_or_change_your_default_cover_image">اگر آپ اپنی ڈیفالٹ کور اِمیج دیکھنا یا تبدیل کرنا چاہتے ہیں تو براہ مہربانی اپنا موڈ ہٹائیں</string>
+    <string name="police">پولیس</string>
+    <string name="police_promotion">\"%s اب ایک پولیس ہے۔ وہ اب اس گروپ کی پوسٹس کو حذف کرسکتے ہے۔</string>
+    <string name="police_tutorial_message">مبارک ہو! اب آپ اس گروپ کے پولیس ہیں۔</string>
+    <string name="politicians">سیاستدان۔</string>
+    <string name="poll">پول</string>
+    <string name="poll_label">پول</string>
+    <string name="poll_msg_at">نتائج کا اعلان کیا جائے گا</string>
+    <string name="poll_msg_on">نتائج کا اعلان کیا جائے گا</string>
+    <string name="poll_results">پول کے نتائج</string>
+    <string name="poll_running_time">پول چلانے کا وقت۔</string>
+    <string name="popular_categories">مشہور کیٹگری</string>
+    <string name="popular_searches">مقبول سرچِز</string>
+    <string name="post">پوسٹس</string>
+    <string name="post_bottom_comment_text">تبصرہ/کمنٹ</string>
+    <string name="post_bottom_like_text">لائک</string>
+    <string name="post_bottom_report_text">شکایت کریں</string>
+    <string name="post_bottom_share_text">شیئر</string>
+    <string name="post_button">پوسٹ</string>
+    <string name="post_deleted_text">یہ پوسٹ دستیاب نہیں ہے</string>
+    <string name="post_discard_dialogue">آپ کا پیغام ڈیلیٹ کردیا جائے گا. اس بات کو یقینی بنائیں کہ آپ اس پوسٹ کوڈیلیٹ کرنا چاہتے ہیں</string>
+    <string name="post_download_message">پوسٹ کو آپ کے فون گیلری میں ڈاؤن لوڈ کیا گیا ہے۔</string>
+    <string name="post_dzero_text">جب بھی آپ مواد پوسٹ کریں گے، وہ آپ کی پروفائل پر ظاہر ہو گا۔</string>
+    <string name="post_gif_text">GIF</string>
+    <string name="post_not_available">یہ پوسٹ دستیاب نہیں ہے</string>
+    <string name="post_upload_notification_title">پوسٹ اپ لوڈ ہو گیا ہے</string>
+    <string name="posted_by">پوسٹ کرنے والے:</string>
+    <string name="posts_changing">پوسٹ بدل رہا ہے</string>
+    <string name="posts_in_seven_days">%s پوسٹس</string>
+    <string name="posts_in_seven_days_police">پچھلے 7 دنوں میں %s پوسٹس کو حذف کردیا گیا</string>
+    <string name="posts_in_seven_days_top_creator">پچھلے 7 دنوں میں %s پوسٹس بنائی گیئ</string>
+    <string name="powered_by">%s کے ذریعہ تقویت یافتہ</string>
+    <string name="pre_signup_notification_msg">نئے دوست بنانے اور سب سے بہتر پوسٹ حاصل کرنے کے لئے شیئرچیٹ سائن اپ کریں</string>
+    <string name="preference_copied">\"%1$s\" کلپ بورڈ میں کاپی ہو گیا۔</string>
+    <string name="prefix_scratch_card">آپ جیت گئے</string>
+    <string name="prelogin_sign_in_msg">ایسے ہی بہترین پوسٹ کے لئے سائن ان کریں</string>
+    <string name="press_hold">"دیکھنے کے لئے دباۓ رکھیں  "</string>
+    <string name="privacy">پرائیویسی</string>
+    <string name="privacy_contacts_and_followers_and_following">میرے كانٹیکٹ ، میرے فالورز اور پروفائل جنہیں میں فالو کر رہا ہوں</string>
+    <string name="privacy_contacts_and_following">میرے رابطے اور پروفائل جنہیں میں فالو کر رہا ہوں</string>
+    <string name="privacy_everyone">ہر کوئی</string>
+    <string name="privacy_followers">سبھی فالوورس</string>
+    <string name="privacy_mutual">دونو طرف سے فالو</string>
+    <string name="privacy_my_followers">میرے فالوورس</string>
+    <string name="privacy_no_one">کوئی نہیں</string>
+    <string name="privacy_none">کوئی نہیں</string>
+    <string name="privacy_policy">پرائیویسی پالیسی</string>
+    <string name="privacy_policy_agree">متفق ہوں</string>
+    <string name="privacy_policy_mock_text">پرائیویسی پالیسی</string>
+    <string name="privacy_policy_text">یہاں پر کلک کرکے ، آپ شیئر چیٹ کے شرائط و ضوابط ، پرائیویسی پالیسی اور مواد اور کمیونٹی گائیڈلائنس سے اتفاق کرتے ہیں۔</string>
+    <string name="privacy_public">کوئی بھی</string>
+    <string name="privacy_settings">پوشیدہ سیٹنگز</string>
+    <string name="private_account">پرائیویٹ اکاؤنٹ</string>
+    <string name="private_account_desc">صارفین کو آپ کو فالو کرنے اور آپ کی پوسٹس دیکھنے کے لئے آپ کو فالو کی درخواست بھیجنی ہوگی</string>
+    <string name="private_chat_desc">&amp;اب آپ کے پاس رابطہ قائم کرنے کے لئے ایک نجی چیٹ روم ہے اپنے ساتھی گروپ لیڈرز سےگفتگو کریں</string>
+    <string name="private_information_header">ذاتی معلومات</string>
+    <string name="private_information_text">یہ معلومات پروفائلز بنانے کے لئے ہے. یہ معلومات نجی رہے گی یعنی کسی سے بھی شیئر نہیں کی جائے گی.</string>
+    <string name="pro_mode">پرو موڈ</string>
+    <string name="proceed">آگے بڑھیں</string>
+    <string name="process_message">ہم آپ کی ویڈیو پروسیس کر رہے ہیں۔ براہ کرم انتظار کریں</string>
+    <string name="processing">ہو رہا ہے</string>
+    <string name="processing_request">عمل جاری ہے</string>
+    <string name="processing_video">ویڈیو پروسیس ہو رہی ہے</string>
+    <string name="profile">پروفائلس</string>
+    <string name="profile_adult_description_off">ایڈلٹ جوک اور تصویر نہیں دکھائی دینگیں</string>
+    <string name="profile_adult_description_on">ایڈلٹ جوک اور تصویر دکھائی دینگے</string>
+    <string name="profile_app_skin">زبان تبدیل کریں</string>
+    <string name="profile_change">پروفائل میں کی گی تبدیلیاں محفوظ کریں</string>
+    <string name="profile_complete_message">مبارک ہو! آپ کی پروفائل %100 مکمل ہو گئی ہے</string>
+    <string name="profile_data_saver">ڈیٹا سیور</string>
+    <string name="profile_default_skin_on">پہلے سے طے شدہ موڈ آن ہے</string>
+    <string name="profile_edit_verify">نمبر منظور کروایں</string>
+    <string name="profile_english_skin_on">English موڈ آن ہے</string>
+    <string name="profile_fields_error_message">پروفائل کا نام یا ہینڈل نام خالی نہیں ہوسکتا ہے</string>
+    <string name="profile_following_privacy_text">میری فالوئنگ فہرست کون دیکھ سکتا ہے</string>
+    <string name="profile_help_description">کثرت سے پوچھے جانے والے سوالات (FAQ)، کمیونٹی ہدایات، صلاح</string>
+    <string name="profile_hinglish_skin_on">Hinglish موڈ آن ہے</string>
+    <string name="profile_name_error_message">پروفائل کا نام خالی نہیں ہوسکتا</string>
+    <string name="profile_notif_description">فالوورز، کمنٹ، لائک، شیئر</string>
+    <string name="profile_option_block_text">بلاک کریں</string>
+    <string name="profile_option_report_text">پروفائل رپورٹ کریں</string>
+    <string name="profile_parental_control">والدین کے کنٹرول</string>
+    <string name="profile_picture_message">اپنا جلوہ دکھائیں</string>
+    <string name="profile_picture_title">پروفائل تصویر</string>
+    <string name="profile_privacy">پرائیویسی</string>
+    <string name="profile_privacy_description">بلاک کئے گئے یوزر، فالوور فہرست</string>
+    <string name="profile_privacy_setting">پوشیدہ سیٹنگز</string>
+    <string name="profile_privacy_text">میری فالوور فہرست دیکھ سکتے ہیں ..</string>
+    <string name="profile_quick_settings">فوری سیٹنگز</string>
+    <string name="profile_save_failed">پروفائل میں تبدیلی نہیں ہو پایی ہے</string>
+    <string name="profile_settings">پروفائل سیٹنگز</string>
+    <string name="promote_remove">فروغ دینا / ہٹانا</string>
+    <string name="promote_role">ٹاپ کریٹر / ایڈمن کو بڑھاوا دیں</string>
+    <string name="promote_role_description">ایک مالک کسی بھی ممبر کو ایڈمن / ٹاپ کریٹر میں بدل سکتا ہے۔ ایک ایڈمن اور ٹاپ کریٹر کی پوسٹ خود بخود منظور شدہ ہیں۔</string>
+    <string name="purple_tick_verified">بینگنی ٹک ویریفائیڈ</string>
+    <string name="push_engagement_notification">مشغولیت کی اطلاعات کو پش کریں</string>
+    <string name="qr_share_message">شیئر کریں اوربڑا جیتیں QR کوڈ</string>
+    <string name="qr_win_msg">کوڈ کا استعمال کرکے شیئر QR میرے چیٹ کو اسکین کریں اور انسٹال کریں۔5000 روپے تک جیتنے کا موقع حاصل کری</string>
+    <string name="questionnaire_answer_toast">برائے مہربانی جواب دیں</string>
+    <string name="questionnaire_text_hint">یہاں ٹائپ کریں ...</string>
+    <string name="quick_tips">کویک ٹِپ</string>
+    <string name="range_end">رینج کا اختتام</string>
+    <string name="range_start">رینج کی شروعات</string>
+    <string name="rank">رینک</string>
+    <string name="rateUs">درجہ بندی/ ریٹ کریں</string>
+    <string name="rate_now">ابھی ریٹ کریں.</string>
+    <string name="rate_us">\@ اسٹرنگ / ریٹ دیں</string>
+    <string name="rate_us_play_store">براہ مہربانی پلے ا سٹور میں ہمیں 5 ریٹ دیں</string>
+    <string name="rating_text">بتائیں آپ کو شیئر چیٹ ایپ کتنا پسند آیا</string>
+    <string name="received">موصول ہوا</string>
+    <string name="recent">حال ہی میں</string>
+    <string name="recent_searches">تازہ تلاش کریں</string>
+    <string name="recommended">تجویز کردہ</string>
+    <string name="recommended_tags">تجویز کردہ عنوانات</string>
+    <string name="record_audio_permisssion">برائے مہربانی آڈیو ریکارڈ کرنے کی اجازت دیں</string>
+    <string name="record_video_with_this_sound">اس آواز کے ساتھ ویڈیو ریکارڈ کریں۔</string>
+    <string name="refer">ریفر</string>
+    <string name="refer_a_friend">دوست کو ریفر کریں</string>
+    <string name="refer_and_earn">ریفر کریں اور کمائیں</string>
+    <string name="refer_through_mobile_number">موبائل نمبر @%s کے لئے درج کریں</string>
+    <string name="referral">ریفرل</string>
+    <string name="referral_code_applied">ریفرل کوڈ اپلائی ہو گیا ہے</string>
+    <string name="referral_earn">کمائیں۔</string>
+    <string name="referral_earn_msg">اس QR کوڈ سے آپ کو ہر ویری فائیڈ سائن اپ کے لئے 15 روپے ملیں گے</string>
+    <string name="referral_print">پرنٹ کریں اور مزید کمائیں۔</string>
+    <string name="referral_print_msg">آپ اسQR کوڈ کا پرنٹ آؤٹ لے کر اپنے مقام پر رکھ سکتے ہیں (دکانیں ، اسٹال وغیرہ)</string>
+    <string name="referral_qr_save">محفوظ</string>
+    <string name="referral_reward_share" formatted="false">ہیلو ! میں نے شیئر چیٹ سےr%s% جیتے ہیں۔ دوست بنانے ، زوردار واٹس ایپ اسٹیٹس اور ویڈیوز بنانے کےلئے یہ ایک عمدہ ایپ ہے۔ پیسہ کمانے کے لئے ابھی شیئرچیٹ انسٹال کریں۔</string>
+    <string name="referral_setup_payment">پیمنٹ سیٹ اپ کریں۔</string>
+    <string name="referral_setup_payment_message">آپ نے اپنےPayTM بٹوے میں جو رقم کمائی ہے اسے وصول کرنے کے لئے اپنا پیمنٹ سیٹ اپ کریں ۔</string>
+    <string name="referral_share">اسکین اور انسٹال کریں۔</string>
+    <string name="referral_share_msg">اپنے دوست کو اس QR کوڈ کو اسکین کرنے اور ایپ کو انسٹال کرنے کے لئے کہیں ۔ QR اسکین کرنے کیلئے گوگل لینس یا MI اسکینر جیسی ایپس کا استعمال کریں۔</string>
+    <string name="referral_share_qr">شیئر</string>
+    <string name="reject">خارج کریں</string>
+    <string name="reject_all">سب کو مسترد کریں</string>
+    <string name="reject_all_received_requests">موصول ہوئی تمام درخواستوں کو مسترد کریں</string>
+    <string name="reject_all_request_desc">کیا آپ واقعی سبھی زیر التوا درخواستوں کو مسترد کرنا چاہتے ہیں؟</string>
+    <string name="reject_all_requests">سبھی درخواستوں کو مسترد کریں</string>
+    <string name="reject_subtext">آپ کے جواب کا شکریہ</string>
+    <string name="rejected">ریجیکٹ کر دیا گیا ہے</string>
+    <string name="related_tag">متعلقہ ٹیگس</string>
+    <string name="related_tags">متعلقہ ٹیگس</string>
+    <string name="related_videos">متعلقہ ویڈیوز</string>
+    <string name="reload">دوبارہ لوڈ کریں</string>
+    <string name="remaining">باقی:</string>
+    <string name="remove">ہٹائیں</string>
+    <string name="remove_admin">ایڈمن کو ہٹایں</string>
+    <string name="remove_audio">آڈیو ہٹایں</string>
+    <string name="remove_follower">فالوور ہٹائیں</string>
+    <string name="remove_from_album">البم سے ہٹائیں</string>
+    <string name="remove_from_audio_chat">آڈیو سیٹ سے ہٹائیں</string>
+    <string name="remove_from_family">فیملی سے نکالیں</string>
+    <string name="remove_location">لوکیشن ہٹایں</string>
+    <string name="remove_mention">پروفائل ٹیگ کو ہٹا دیں</string>
+    <string name="remove_mood">موڈ ہٹائیں</string>
+    <string name="remove_multi_member_desc">کیا آپ ان d% افراد کو فیملی سے نکالنا چاہتے ہیں؟</string>
+    <string name="remove_police">پولیس کو ہٹا دیں</string>
+    <string name="remove_single_member_desc">کیا آپ اس یوزر کو فیملی سے نکالنا چاہتے ہیں؟</string>
+    <string name="remove_tag">پروفائل ٹیگ کو ہٹا دیں</string>
+    <string name="remove_this_user_as_a_follower">اس یوزر کو فالوور کے درجے سے ہٹائیں؟</string>
+    <string name="remove_top_creator">ٹاپ کریٹر کو ہٹا دیں</string>
+    <string name="removed_access">کیلئے رسائی ہٹا دی گئی %s</string>
+    <string name="rename">نام تبدیل کریں</string>
+    <string name="rename_draft">ڈرافٹ کا نام تبدیل کریں</string>
+    <string name="replied_to_comment">%s کے کمنٹس میں رپلائی کیا</string>
+    <string name="replies_v2">%s جواب دیں</string>
+    <string name="reply">جواب دیں</string>
+    <string name="reply_to">%s کو جواب دیں۔</string>
+    <string name="reply_v2">جواب دیں</string>
+    <string name="report">رپورٹ</string>
+    <string name="report_abusive">گالی گلوچ</string>
+    <string name="report_abusive_language">بد زبانی</string>
+    <string name="report_comment_msg">رپورٹ کمینٹ</string>
+    <string name="report_decision_made">فیصلہ لیا گیا</string>
+    <string name="report_decision_made_subheading">ہم آپ کو جلد از جلد آپ کے رپورٹس پیج میں آنے والے نتائج سے آگاہ کریں گے</string>
+    <string name="report_fake_profile">جعلی / نقلی پروفائل</string>
+    <string name="report_group">رپورٹ گروپ</string>
+    <string name="report_heading">میں اس پوسٹ کی مخالفت کرتا ہوں کیوں کی یہ پوسٹ ....</string>
+    <string name="report_illegal_activities">غیر قانونی سرگرمیاں</string>
+    <string name="report_in_review">زیرِ غور ہے</string>
+    <string name="report_in_review_subheading">آپ کی رپورٹ زیر غور ہے۔ ہم ایسی ہر چیز، جو ہمارے معیار پر پوری نہیں اترتی، اسے جلد از جلد ہٹانے کے لئے ٹکنالوجی اور ریویو ٹیموں کا استعمال کرتے ہیں</string>
+    <string name="report_inappropriate_chatroom_name">نامناسب چیٹ روم کا نام</string>
+    <string name="report_inappropriate_chatroom_pic">نامناسب چیٹ روم تصویر</string>
+    <string name="report_inappropriate_handle">نامناسب یوزر کا نام / ہینڈل / اسٹیٹس</string>
+    <string name="report_inappropriate_profile_pic">نامناسب پروفائل تصویر</string>
+    <string name="report_new_subheader">رپورٹنگ کی وجہ کا انتخاب کریں</string>
+    <string name="report_offensive">دل شکن</string>
+    <string name="report_option1">اسپیم ہے</string>
+    <string name="report_option2">غلیظ ہے</string>
+    <string name="report_option3">پرتشدد</string>
+    <string name="report_option4">جھوٹھی خبر/ افواہ ہے</string>
+    <string name="report_option5">میں اسکے خلاف ہوں</string>
+    <string name="report_option6">+18 پوسٹس</string>
+    <string name="report_option7">"غلط گروپ / ٹیگ "</string>
+    <string name="report_option8">ذاتی پوسٹ</string>
+    <string name="report_other">اس کے علاوہ کچھ اور</string>
+    <string name="report_personal_info">ذاتی معلومات شیئر کرنا</string>
+    <string name="report_post">رپورٹ پوسٹ</string>
+    <string name="report_received">رپورٹ موصول ہوئی</string>
+    <string name="report_received_subheading">سب کے لئے شیئر چیٹ کو ایک محفوظ کمیونٹی بنانے کے لئے شکریہ</string>
+    <string name="report_sexually_explicit_discussions">جنسی طور پر واضح گفتگو</string>
+    <string name="report_success_string">تکلیف کے لئے معذرت چاہتے ہیں</string>
+    <string name="report_suicide_acts">خودکشی/جان لیوا کام</string>
+    <string name="report_tag">"رپورٹ ٹیگ
+"</string>
+    <string name="report_tag_msg">رپورٹ #ٹیگ</string>
+    <string name="report_terrorism">دہشت گردی</string>
+    <string name="report_user">یوزر کو رپورٹ کریں</string>
+    <string name="report_user_heading">رپورٹ کرنے کی وجہ :</string>
+    <string name="report_user_something_else_hint">براہ مہربانی ایک وجہ درج کریں</string>
+    <string name="report_violence">تشدد</string>
+    <string name="reported">رپورٹ کر دیا گیا ہے</string>
+    <string name="reported_successfully">کامیابی کے ساتھ رپورٹ ہوگئی</string>
+    <string name="reports">رپورٹس</string>
+    <string name="repost_button">ريپوسٹ</string>
+    <string name="repost_notification">نوٹیفکیشن دوبارہ کریں</string>
+    <string name="request">درخواست</string>
+    <string name="request_enter_otp">براہ مہربانی %s پر بھیجا ہوا OTP ڈالیں</string>
+    <string name="request_failed">درخواست ناکام ہوگئی۔</string>
+    <string name="request_otp">متفق ہوں اور نمبر کی تصدیق کریں</string>
+    <string name="request_room_creation">چیٹ روم بنانے کی درخواست کریں</string>
+    <string name="request_room_subheader">چیٹ روم بنانے کے لئے ایڈمن کی منظوری ضروری ہے</string>
+    <string name="request_sent">درخواست بھیج دی گئی ہے</string>
+    <string name="request_sent_message">درخواست بھیج دی گئی ہے.</string>
+    <string name="request_to_join">شامل ہونے کے لیے درخواست</string>
+    <string name="requested">درخواست</string>
+    <string name="requests">درخواست</string>
+    <string name="requires_internet">اس فیچر کے لئے اچھے انٹرنیٹ کنکشن کی ضرورت ہے. دوبارہ کوشش کریں</string>
+    <string name="resend_otp_text">OTP دوبارہ بھیجیں</string>
+    <string name="reset_timer">00:00</string>
+    <string name="respect_other_people_privacy_and_be_safe">دوسروں کی رازداری کا احترام کریں اور محفوظ رہیں</string>
+    <string name="restore_account">اکاؤنٹ کو بحال کریں۔</string>
+    <string name="retouch">سُدھار</string>
+    <string name="retry_text">پھر لوڈ کریں</string>
+    <string name="retry_upload">دوبارہ اپ لوڈ کریں۔</string>
+    <string name="reveal_dialog_content">بٹن دبانیں کے بعد اجنبی پروفائل کو آپ کے پروفائل کو دیکھنے کی اجازت دی جائے گی. کیا آپ واقعی اپنی پروفائل کو ظاہر کرنا چاہتے ہیں؟</string>
+    <string name="reveal_profile">میری پروفائل دکھائیں</string>
+    <string name="reveal_profile_failed">پروفائل کھل نہیں رہی</string>
+    <string name="reveal_profile_msg">اجنبی پروفائل کا پتہ چلا ہے</string>
+    <string name="review_follow_request">فالو کی درخواستوں کا جائزہ لیں</string>
+    <string name="review_follow_request_text">آپ کے پاس فالو کی درخواستیں زیر التوا ہیں۔ اپنی پروفائل کو پرائیویٹ بنانے سے پہلے تمام درخواستوں کو قبول یا مسترد کریں۔</string>
+    <string name="review_followers">فالوورس کا جائزہ لیں</string>
+    <string name="review_no_follow_request_text">آپ کے پاس فالو کی کوئی گزارش زیر التوا نہیں ہے۔</string>
+    <string name="ringtone_set_message">رنگ ٹون کامیابی کے ساتھ سیٹ ہوگئی ہے</string>
+    <string name="ringtone_title">رنگ ٹونز</string>
+    <string name="rising_leaderboard">رائزِنگ اسٹارز</string>
+    <string name="role_tutorial_user_info_1">26 پوسٹس • k4.4 لائک • 262 شیئرز</string>
+    <string name="role_tutorial_user_info_2">25 پوسٹس • k4.4 لائک • 250 شیئرز</string>
+    <string name="role_tutorial_user_info_3">23 پوسٹس • k4.4 لائک • 240 شیئرز</string>
+    <string name="room_access">روم تک رسائی</string>
+    <string name="room_access_remove_message">چیٹ روم تخلیق کی اجازت کو %1$s کے ساتھ ہٹانے کے ساتھ ہی تخلیق کردہ چیٹ روم کو حذف کردیا جائے گا&lt;b>%1$s&lt;/b></string>
+    <string name="run">رن</string>
+    <string name="runs">رنز</string>
+    <string name="s1">تصویر محفوظ کریں</string>
+    <string name="s2">اشتہار کو تصویری گیلری میں تصویر محفوظ کرنے کی اجازت دیں؟</string>
+    <string name="s3">قبول کریں</string>
+    <string name="s4">مسترد کریں</string>
+    <string name="s5">کیلنڈر ایونٹ بنائیں</string>
+    <string name="s6">اشتہار کو ایک کیلنڈر ایونٹ بنانے کی اجازت دیں؟</string>
+    <string name="s7">اشتہار ٹیسٹ کریں</string>
+    <string name="save">محفوظ</string>
+    <string name="save_a_post_text">پوسٹ سیو کریں</string>
+    <string name="save_as_draft_ask_user">کیا آپ ویڈیو محفوظ کرنا چاہتے ہیں اور بعد میں بھی جاری رکھنا چاہتے ہیں؟</string>
+    <string name="save_change">ہاں</string>
+    <string name="save_changes_button_text">تبدیلیوں کومقفل (لاک)کریں</string>
+    <string name="save_content">آف لائن پوسٹ کوگیلری میں محفوظ کریں</string>
+    <string name="save_details">تفصیلات محفوظ کریں۔</string>
+    <string name="save_to_gallery">آپ اس پوسٹ کو کہاں محفوظ کرنا چاہتے ہیں؟</string>
+    <string name="saved_in_gallery">گیلری میں محفوظ ہو گیا</string>
+    <string name="saved_in_sharechat_gallery">پوسٹ شیئرچیٹ گیلری میں محفوظ ہو گیا ہے</string>
+    <string name="saved_item_dzero_text">شیئر چیٹ پر جب بھی آپ مواد سیو یعنی محفوظ کریں گے، وہ آپ کی پروفائل پر ظاہر ہو گا۔</string>
+    <string name="saves">محفوظ کریں</string>
+    <string name="saving_account">بچت</string>
+    <string name="say_hi">ہیلوکہیں</string>
+    <string name="say_something">کچھ بولیں</string>
+    <string name="scan_qr_code">اس QR کوڈ کو اسکین کریں۔</string>
+    <string name="scratch_card_availability_msg">رات 9 بجے سے دستیاب ہے</string>
+    <string name="scroll_to_load_previous_comments">پچھلے تبصرے لوڈ کرنے کے لئے اسکرول کریں۔</string>
+    <string name="search">تلاش</string>
+    <string name="search_gif">Gifs تلاش کریں ...</string>
+    <string name="search_here">یہاں تلاش کریں ...</string>
+    <string name="search_menu_title">تلاش کریں</string>
+    <string name="search_music">میوزک تلاش کریں</string>
+    <string name="search_post_profile">پروفائل، پوسٹ تلاش کریں</string>
+    <string name="search_profile_title">پروفائل</string>
+    <string name="search_profiles">پروفائلز تلاش کریں</string>
+    <string name="search_sctv">تلاش کریں \"شیئر چیٹ ٹی وی\"</string>
+    <string name="search_sticker">اسٹیکرز تلاش کریں ...</string>
+    <string name="search_tag_title">ٹیگس</string>
+    <string name="search_to_refer">ریفر کرنے کے لئے تلاش کریں ...</string>
+    <string name="seeMore">مزید دیکھیں</string>
+    <string name="see_all">سبھی دیکھیں</string>
+    <string name="see_all_members">تمام ممبران دیکھیں</string>
+    <string name="see_all_posts">تمام پوسٹس دیکھیں</string>
+    <string name="see_all_tags">تمام ٹیگس دیکھیں</string>
+    <string name="see_follow_post">فالو فیڈ کے پوسٹ ابھی دیکھیں</string>
+    <string name="see_full_post">مکمل دیکھو</string>
+    <string name="see_hidden_comment">کمنٹ دیکھنے کے لئے آنکھ کےآئکن پر کلک کریں</string>
+    <string name="see_hidden_message">پوشیدہ پیغام دیکھنے کے لئے آنکھ پر کلک کریں۔</string>
+    <string name="see_more">اور دیکھیں</string>
+    <string name="see_more_categories">مزید کیٹگری دیکھیں</string>
+    <string name="see_more_label">مزید دیکھیں</string>
+    <string name="see_more_sticky_post">%1$s میں مزید دیکھیں</string>
+    <string name="see_more_tags">مزید ٹیگس دیکھیں</string>
+    <string name="see_new_posts">نئے پوسٹ دیکھیں</string>
+    <string name="see_other_post">دوسری پوسٹ دیکھیں</string>
+    <string name="see_video_now">اب ویڈیو دیکھیں۔</string>
+    <string name="see_whats_happening">دیکھیں آج کیا ہو رہا ہے</string>
+    <string name="see_your_own_karma">اپنا کرما دیکھیں</string>
+    <string name="select">منتخب کریں۔</string>
+    <string name="select_a_cover_image">ایک کور تصویر منتخب کریں</string>
+    <string name="select_a_district">ضلع منتخب کریں</string>
+    <string name="select_a_tehsil">تحصیل منتخب کریں</string>
+    <string name="select_account_type">براہ کرم اکاؤنٹ کی قسم منتخب کریں۔</string>
+    <string name="select_age_range">براہ مہربانی دیئے گئے عمر گروپوں (ایج گروپ) میں سے ایک کو منتخب کریں</string>
+    <string name="select_card_to_buy">گفٹ بھیجنے کے لئے ایک کارڈ کا انتخاب کریں۔</string>
+    <string name="select_category">زمرہ منتخب کریں</string>
+    <string name="select_chatroom_tag">ٹیگ منتخب کریں</string>
+    <string name="select_default">پہلے سے طے شدہ</string>
+    <string name="select_district_tehsil">مقامی خبروں کا تجربہ حاصل کرنے کے لئے اپنے ضلع اور تحصیل کا انتخاب کریں</string>
+    <string name="select_english">انگریزی</string>
+    <string name="select_gender_toast">مسٹر/ مس کو منتخب کریں</string>
+    <string name="select_group_for_tagging">اس پوسٹ کے لئے ٹیگ منتخب کریں</string>
+    <string name="select_hinglish">ہنگلش</string>
+    <string name="select_image">تصویر منتخب کریں</string>
+    <string name="select_images">تصویر منتخب کریں</string>
+    <string name="select_nearest">براہ کرم قریب ترین ضلع اور تحصیل منتخب کریں</string>
+    <string name="select_rating">براہ مہربانی ریٹنگ / درجہ بندی کو منتخب کریں!</string>
+    <string name="select_specializaion">اسپیشل کا انتخاب کریں</string>
+    <string name="select_tag">براہ کرم ایک ٹیگ منتخب کریں!</string>
+    <string name="select_upto_8_menebers">8 ممبروں تک منتخب کریں</string>
+    <string name="select_your_language">اپنی زبان منتخب کریں</string>
+    <string name="selected">منتخب کیا گیا</string>
+    <string name="selected_audio">چنا گیا آڈیو</string>
+    <string name="selected_color">چنیں ہوئے رنگ</string>
+    <string name="selected_images">تصویر منتخب کریں</string>
+    <string name="selected_posts">منتخب پوسٹس</string>
+    <string name="selected_size">منتخب کردہ سائز:</string>
+    <string name="self_chat_joined_message">آپ گروپ چیٹ میں شامل ہوئے ہیں!</string>
+    <string name="self_chat_started">آپ نے آڈیو چیٹ شروع کردی ہے!</string>
+    <string name="self_exit_chat_message">آپ نے گروپ چیٹ چھوڑ دیا ہے</string>
+    <string name="self_host_message">آپ اس آڈیو چیٹ روم کے ہوسٹ بن گئے ہیں!</string>
+    <string name="self_muted_message">آپ کو میوٹ کر دیا گیا ہے!</string>
+    <string name="self_unmuted_message">آپ کومیوٹ سے ہٹا دیا گیا ہے!</string>
+    <string name="send">بھیجیں</string>
+    <string name="send_as">کی طرح بھیجیں</string>
+    <string name="send_as_message">میسج کے طور پر شیئر کریں</string>
+    <string name="send_feedback">تاثرات بھیجیں</string>
+    <string name="sent">بھیجا گیا</string>
+    <string name="sent_request_message">ایڈمن کو درخواست بھیج دی گئی ہے</string>
+    <string name="septemper">ستمبر</string>
+    <string name="server_error_elanic_retry">سرور کی خرابی۔ دوبارہ کوشش کریں</string>
+    <string name="set_mood">موڈ کے طور پر مقرر کریں۔</string>
+    <string name="set_mood_description">24 گھنٹےکے لئے اپنے موڈ کے طور پر ایک زبردست ویڈیو سیٹ کریں۔ آپ کے دوست آپ کے موڈ کو دیکھیں گے جب وہ آپ کے پروفائل پر جائیں گے۔</string>
+    <string name="set_new_mood">نیا موڈ سیٹ کریں۔</string>
+    <string name="set_profile_picture">اسے میری پروفائل پکچر کے طور پراستعمال کریں</string>
+    <string name="set_profile_picture_failure">پروفائل تصویر تبدیل کرنے میں ناکام رہا!</string>
+    <string name="set_time">وقت سیٹ کریں</string>
+    <string name="set_wallpaper">وال پیپر کے طور پر سیٹ کریں</string>
+    <string name="setting_block_text">بلاک فہرست</string>
+    <string name="setting_dm_privac_text">مجھے کون میسیج کر سکتا ہے</string>
+    <string name="setting_download">پوسٹ ڈاؤن لوڈ</string>
+    <string name="setting_tags_privacy_text">کون مجھے پوسٹ پر ٹیگ کر سکتا ہے</string>
+    <string name="settings">ترتیبات</string>
+    <string name="shake_and_chat">شیک اور چیٹ کریں</string>
+    <string name="shake_connect_message">اب پورے بھارت میں کہیں بھی کریں لوگوں سے بات. بس فون کو شیک کریں اور چیٹ کریں</string>
+    <string name="shake_exit_dialog_content">اگر آپ ابھی چھوڑتے ہیں تو آپ اس شخص کے ساتھ چیٹ نہیں کر پاینگیں . کیا آپ واقعی شیک اور چیٹ سے باہر نکلنا چاہتے ہیں؟</string>
+    <string name="shake_exit_msg">آپ کے دوست نے چیٹ بند کر دی ہے</string>
+    <string name="shake_exit_user">شیک اور چیٹ سے باہر جائیں</string>
+    <string name="shake_search_error">کوئی بھی نہیں ملا، براہ کرم دوبارہ کوشش کریں.</string>
+    <string name="share">شیئر</string>
+    <string name="share_chat">شیئر</string>
+    <string name="share_chatroom_link">چیٹ روم لنک شیئر کریں</string>
+    <string name="share_disabled">شیئرنگ بند ہے</string>
+    <string name="share_dm">میسج کے طور پر شیئر کریں</string>
+    <string name="share_group_link">گروپ کا لنک اشتراک کیجئے</string>
+    <string name="share_group_with">کے ساتھ گروپ شیئر کریں</string>
+    <string name="share_label">اشتراک کریں</string>
+    <string name="share_notification">شیئرنوٹیفکیشن/اطلاعات</string>
+    <string name="share_on_whatsapp">واٹس ایپ پر اشتراک کریں</string>
+    <string name="share_other">دوسرے ایپس پراشتراک کریں</string>
+    <string name="share_post_with">کس کے ساتھ پوسٹ اشتراک کرنا چاہتے ہیں؟</string>
+    <string name="share_tag_msg">\#%1$s پردلچسپ پوسٹ دیکھیں</string>
+    <string name="share_your_opinion">اپنا تجربہ اشتراک/ شیئر کریں</string>
+    <string name="sharechat">شیئر چیٹ</string>
+    <string name="sharechat_permissions">شیئر چیٹ اجازتیں</string>
+    <string name="sharechat_policies">شیئر چیٹ پالیسیاں</string>
+    <string name="sharechat_top_creator_faq">شیئر چیٹ ٹاپ کریٹر عمومی سوالات (FAQ)</string>
+    <string name="sharechat_top_creator_faq_a1">اس بیج کا مطلب ہے کہ اس کریٹر نے اس موضوع پر اچھے پوسٹ کئے ہیں .</string>
+    <string name="sharechat_top_creator_faq_q1">اس بیج کاکیا مطلب ہے؟</string>
+    <string name="shares">شیئر</string>
+    <string name="shares_count">%d شیئر</string>
+    <string name="sharing_compose_option">شیئرنگ</string>
+    <string name="shortcut_message">ہوم اسکرین پر شارٹ کٹ بنایا جائے گا۔ ۔</string>
+    <string name="show_by_dates">تاریخ کے حساب سے دیکھیں</string>
+    <string name="show_folders">فولڈر دیکھیں</string>
+    <string name="show_news">خبریں دکھائیں</string>
+    <string name="show_post">پوسٹ دکھائیں</string>
+    <string name="signout">لاگ آؤٹ</string>
+    <string name="signout_dialog">کیا آپ لاگ آؤٹ کرنا چاہتے ہیں؟ فر سے لاگ ان کرنے کے لئے رجسٹرموبائل نمبر درج کریں</string>
+    <string name="signup">سائن اپ</string>
+    <string name="signup_block">بلاک کرنے کے لئے سائن اپ کریں</string>
+    <string name="signup_chat">چیٹ کے لئے سائن اپ کریں</string>
+    <string name="signup_comment">تبصرہ کے لئے سائن اپ کریں</string>
+    <string name="signup_compose">پوسٹ بنانے کے لئے سائن اپ کریں</string>
+    <string name="signup_follow">فالو کرنے کے لئے سائن اپ کریں</string>
+    <string name="signup_profile">پروفائل دیکھنے کے لئے سائن اپ کریں</string>
+    <string name="signup_report">رپورٹ کرنے کے لئے سائن اپ</string>
+    <string name="signup_repost">ری پوسٹ کرنے کے لئے سائن اپ کریں</string>
+    <string name="similar_groups">اسی طرح کے گروپس</string>
+    <string name="skip">چھوڑ دیں/ اسکپ</string>
+    <string name="skip_ad">اشتہاراسکپ کریں</string>
+    <string name="skip_ad_duration">%ss میں اشتہار چھوڑیں</string>
+    <string name="skipping_ad_duration">%ss میں اشتہار چھوڑ رہے ہیں ا</string>
+    <string name="slide_add_image">تصویر جوڑیں</string>
+    <string name="slide_add_transition">ٹرانزیشن جوڑیں</string>
+    <string name="slide_swap_heading">سویپ کریں</string>
+    <string name="slide_swap_instruction">تبدیل کرنے کے لئے دوسری تصویر پر کلک کریں</string>
+    <string name="slide_time_heading">وقت</string>
+    <string name="slide_time_maximum">ہر تصویر کے لئے کم سے کم وقت %d سیکنڈ ہے</string>
+    <string name="slide_time_minimum">ہر تصویر کے لئے کم سے کم وقت %d سیکنڈ ہے</string>
+    <string name="slide_time_not_enough_slides">آگے بڑھنے کے لئے آپ کو کم از کم 1 تصاویر کی ضرورت ہے</string>
+    <string name="spam">براہ مہربانی اسپیم یا ایسے پیغام نہ بھیجیں جو غیر محفوظ ہوں</string>
+    <string name="speak_to_search">تلاش کرنے کے لئے بولیں</string>
+    <string name="specialization">خاص</string>
+    <string name="specially_selected_for_you">خاص طور پر آپ کے لئے منتخب کیا گیا ہے</string>
+    <string name="speech_to_text_instructions">کمنٹ لکھنے کے لئے بولیں</string>
+    <string name="speed">رفتار</string>
+    <string name="sponsored_ad_label">اسپانسر کیا گیا</string>
+    <string name="sponsored_campaign_by">%s کے زیر اہتمام مہم</string>
+    <string name="star_creator">شیئر چیٹ اسٹار کرئیٹر</string>
+    <string name="star_sign">اسٹار سائن</string>
+    <string name="start_chat">بات چیت شروع کریں</string>
+    <string name="start_recording">ریکارڈنگ شروع کریں</string>
+    <string name="start_video">ویڈیو شروع کریں</string>
+    <string name="starting_download">چند لمحوں میں ڈاؤن لوڈ شروع ہو رہا ہے۔</string>
+    <string name="starting_live_stream">لائیو اسٹریم شروع کریں</string>
+    <string name="starts_in">شروع ہو رہا ہے</string>
+    <string name="state">ریاست</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+    <string name="status_message">دنیا کو اپنے بارے میں بتائیں</string>
+    <string name="status_title">اسٹیٹس</string>
+    <string name="stickers">اسٹیکر</string>
+    <string name="sticky_notification_landing_title">اب مقبول ہو رہا ہے</string>
+    <string name="sticky_notification_title">شیئر چیٹ پر اب مقبول ہو رہا ہے</string>
+    <string name="sticky_notification_toggle_subtext_off">مقبول نوٹیفکیشن کو بند کریں</string>
+    <string name="sticky_notification_toggle_subtext_on">مقبول نوٹیفکیشن کو شروع کریں</string>
+    <string name="sticky_notification_toggle_text">مقبول نوٹیفکیشن</string>
+    <string name="stop_stream">سلسلہ بند کریں</string>
+    <string name="storage_permission">براہ مہربانی شیئرچیٹ کو اپنے اسٹوریج تک پہنچنے کی اجازت دے.</string>
+    <string name="store">اسٹور</string>
+    <string name="submit">جمع کریں</string>
+    <string name="submit_proof">ثبوت پیش کریں</string>
+    <string name="submit_signup">جمع کریں</string>
+    <string name="successfully_updated">کامیابی کے ساتھ اپ ڈیٹ ہوا۔</string>
+    <string name="suggested">مشورہ دیا گیا ہے</string>
+    <string name="suggested_admin">تجویز کردہ ایڈمن</string>
+    <string name="suggested_post">تجویز کردہ پوسٹس</string>
+    <string name="suggested_profile">تجویز کردہ پروفائلز</string>
+    <string name="suggested_tags">\# مجوزہ ٹیگس</string>
+    <string name="suggested_topcreator">"تجویز کردہ  ٹاپ کریٹر "</string>
+    <string name="suggested_topics">تجویز کردہ عنوانات</string>
+    <string name="suggestion">مشورہ</string>
+    <string name="suggestions_for_you">آپ کے لیے تجاویز</string>
+    <string name="suggestions_title">مشورہ</string>
+    <string name="summary_collapsed_preference_list">%1$s، %2$s</string>
+    <string name="super_powers">سپر طاقتیں</string>
+    <string name="swipe_up_for_next_post">اگلی پوسٹ کیلئے سوائپ اپ کریں</string>
+    <string name="switch_to_english">انگریزی کر دیں</string>
+    <string name="sync_contacts">مطابقت پذیری کے رابطوں</string>
+    <string name="tab">ٹیب</string>
+    <string name="tag">ٹیگز</string>
+    <string name="tag_discuss">لوگ اس موضوع پر چرچہ کر رہے ہیں</string>
+    <string name="tag_limit_reached">آپ%1$s سے زیادہ ٹیگس منتخب نہیں کرسکتے</string>
+    <string name="tag_name_link_not_allowed">ٹیگ کا نام لنک نہیں ہوسکتا ہے</string>
+    <string name="tag_name_phone_numbers_not_allowed">ٹیگ نام میں فون نمبر شامل نہیں ہوسکتے ہیں</string>
+    <string name="tap_here">یہاں کلک کریں</string>
+    <string name="tap_here_to_learn_more">یہاں ٹیپ کریں مزید جاننے کے لئے</string>
+    <string name="tap_here_to_start">ریکارڈنگ شروع کرنے کے لئے کلک کریں</string>
+    <string name="tap_here_to_view_your_chatrooms">اپنے چیٹ رومز دیکھنے کے لیے یہاں کلک کریں</string>
+    <string name="tap_to_create_your_own_post_here">اپنا پوسٹ بنانے کے لیے یہاں کلک کریں</string>
+    <string name="tap_to_retry">دوبارہ کوشش کریں</string>
+    <string name="tap_to_start">لکھنا شروع کرنے کیلئے ٹیپ کریں</string>
+    <string name="tell_your_friends">اپنے دوستوں کو بتائیں</string>
+    <string name="template">ٹیمپلیٹس</string>
+    <string name="template_percent">%1$d فیصد۔</string>
+    <string name="template_selection_hint">اپنی ویڈیو بنانے کے لیے کلک کریں</string>
+    <string name="terms">%s اگر آپ ہم سےاتفاق کرتے ہیں تو، جمع کریں بٹن پر کلک کریں</string>
+    <string name="terms_and_conditions_mock_text">شرائط و ضوابط</string>
+    <string name="terms_highlight">قانون اورشرط</string>
+    <string name="text_continue">جاری رکھیں</string>
+    <string name="text_post_char_limit">براہ کرم کم از کم%1 $ s حرف ٹائپ کریں</string>
+    <string name="text_post_cta">یہاں کچھ زبردست لکھیں</string>
+    <string name="text_skip">چھوڑ دیں</string>
+    <string name="thanks">شکریہ!</string>
+    <string name="thanks_feedback">فیڈبیک کے لئے شکریہ</string>
+    <string name="they_wont_be_able_to_see_your_updates">وہ آپ کی اپڈیٹس نہیں دیکھ پائیں گے</string>
+    <string name="this_is_private_account">یہ ایک پرائیویٹ اکاؤنٹ ہے</string>
+    <string name="this_month">اس مہینے</string>
+    <string name="this_user_has_requested_to_follow_you">اس یوزر نے آپ کو فالو کرنے کی درخواست کی ہے</string>
+    <string name="this_user_will_no_longer_be_able_to_view">اب یہ یوزر آپ کی پوسٹس کو فالو فیڈ میں نہیں دیکھ سکے گا</string>
+    <string name="this_week">اس ہفتے</string>
+    <string name="time1">%d منٹ پہلے</string>
+    <string name="time2">%d گھنٹے پہلے</string>
+    <string name="time3">%d دن پہلے</string>
+    <string name="time4">%d مہینہ پہلے</string>
+    <string name="time5">%d سال پہلے</string>
+    <string name="time6">%d ہفتوں پہلے</string>
+    <string name="time7">%d گھنٹہ پہلے</string>
+    <string name="time8">%d دن پہلے</string>
+    <string name="time9">٪ d ہفتہ پہلے</string>
+    <string name="time_filter_1_day">آخری 1 دن</string>
+    <string name="time_filter_1_week">آخری 1 ہفتہ</string>
+    <string name="time_filter_7_hrs">آخری 7 گھنٹے</string>
+    <string name="time_filter_all_time">ہر وقت</string>
+    <string name="time_in_days">دن %d</string>
+    <string name="time_in_hours">گھنٹے %d</string>
+    <string name="time_in_minutes">منٹ %d</string>
+    <string name="time_in_months">مہینے %d</string>
+    <string name="time_is_longer_than_expected">یہ توقع سے زیادہ وقت لے رہا ہے۔ براہ کرم کچھ سیکنڈ کا انتظار کریں۔</string>
+    <string name="time_out">ٹائم آؤٹ</string>
+    <string name="timepass">ٹائمپاس</string>
+    <string name="timer">ٹائمر</string>
+    <string name="title_moj_lite">موج لائٹ</string>
+    <string name="title_my_groups">میرے گروپس</string>
+    <string name="today">آج</string>
+    <string name="today_mood_other">"%s'sآج کا موڈ۔"</string>
+    <string name="today_mood_self">میرا آج کا موڈ</string>
+    <string name="toff_accept_pending_req">آپ کو اپنا اکاؤنٹ پبلک کرنے کے لئے سبھی زیر التوا درخواستیں قبول یا مسترد کرنی ہوں گی۔</string>
+    <string name="toff_any_expand_profile_pic">کوئی بھی آپ کی پروفائل میں لگی تصویر بڑی کر سکتا ہے</string>
+    <string name="toff_any_follow">کوئی بھی آپ کو فالو کر سکتا ہے</string>
+    <string name="toff_any_msg">کوئی بھی آپ کو میسج کر سکتا ہے</string>
+    <string name="toff_any_view_groups">کوئی بھی ان گروپس کو دیکھ سکتا ہے جس میں آپ شامل ہیں</string>
+    <string name="toff_any_view_posts">کوئی بھی آپ کی پوسٹس دیکھ سکتا ہے</string>
+    <string name="ton_more_info_private">مزید معلومات کے لئے ہمارے پرائیویٹ پروفائلس کے بارے میں سیکشن کا جائزہ لیں</string>
+    <string name="ton_only_direct_msgs">صرف آپ کے فالوورس ہی آپ کو ڈائریکٹ میسج بھیج سکتے ہیں</string>
+    <string name="ton_only_expand_profile_pic">صرف آپ کے فالوورس ہی آپ کی پروفائل میں لگی تصویر بڑی کر سکتے ہیں</string>
+    <string name="ton_only_view_follow">صرف آپ کے فالوورس ہی آپ کی فالوور اور فالوئنگ کی فہرست دیکھ سکتے ہیں</string>
+    <string name="ton_only_view_groups">صرف آپ کے فالوورس ہی دیکھ سکتے ہیں کہ آپ کون سے گروپس سے جڑے ہوۓ ہیں</string>
+    <string name="ton_only_view_posts">صرف آپ کے فالوور ہی آپ کی پوسٹس دیکھ سکتے ہیں</string>
+    <string name="ton_you_choose_follow">آپ چن سکتے ہیں کہ کون شیئر چیٹ پر آپ کو فالو کر سکتا ہے</string>
+    <string name="tooltip_compose_string">پوسٹ کرنے کے لئے یہاں کلک کریں</string>
+    <string name="tooltip_engagement_profile">گزشتہ سات دن میں</string>
+    <string name="tooltip_explore_string">زیادہ کیٹیگری دیکھنے کے لئے یہاں کلک کریں</string>
+    <string name="tooltip_explore_string_v1">اپنی پسندیدہ کیٹیگری یہاں دیکھیں</string>
+    <string name="top">ٹاپ / اعلی</string>
+    <string name="top_champions">ٹاپ چیمپینز</string>
+    <string name="top_comment_from">ٹاپ کمنٹس</string>
+    <string name="top_commenter">ٹاپ کمنٹیٹر</string>
+    <string name="top_creator">%s ٹاپ کریٹر</string>
+    <string name="top_creator_label">ٹاپ کریٹر</string>
+    <string name="top_creator_only">صرف ٹاپ کریٹر</string>
+    <string name="top_creators">ٹاپ / اعلی کریٹر</string>
+    <string name="top_discussions">سر فہرست گفتگو</string>
+    <string name="top_family">سرفہرست فیملیز</string>
+    <string name="top_post">ٹاپ پوسٹ</string>
+    <string name="top_post_desc">وسیع پیمانے تک پہنچنے کے لئے صرف متعلقہ ٹیگز استعمال کریں جس سے زیادہ سے زیادہ ویوز ملتے ہیں</string>
+    <string name="top_profiles">ٹاپ / اعلی پروفائل</string>
+    <string name="topcreator_power_description">". آپ کے تمام پوسٹس خود بخود منظور شدہ ہیں
+"</string>
+    <string name="topcreator_promotion">\"% s اب ایک ٹاپ کریٹر ہیں ۔ اس کی تمام پوسٹس خود ہی منظور شدہ ہیں۔</string>
+    <string name="topcreator_tutorial_message">مبارک ہو! اب آپ اس گروپ کے ٹاپ کریٹر ہیں۔</string>
+    <string name="total_coins">کل سکے</string>
+    <string name="total_earnings">کل کمائی</string>
+    <string name="total_gold">کل سونا</string>
+    <string name="total_interaction">%s رابطہ / بات چیت</string>
+    <string name="total_referrals">کل ریفرلس</string>
+    <string name="total_referrals_description">ان لوگوں کی تعداد جو آپ کے حوالہ سے انسٹال کرتے ہیں</string>
+    <string name="total_replies">رپلائی %s</string>
+    <string name="total_reply">%s رپلائی</string>
+    <string name="total_vote">%1$s ووٹ</string>
+    <string name="total_votes">%1$s ووٹ</string>
+    <string name="tournament">"ٹی 20 اپ ڈیٹس
+"</string>
+    <string name="transform">تبدیلی</string>
+    <string name="trending">ٹرینڈنگ</string>
+    <string name="trending_feed">مقبول</string>
+    <string name="trending_now">اب مقبول ہو رہا ہے</string>
+    <string name="trending_post">ٹرینڈنگ پوسٹس</string>
+    <string name="trending_tags">مقبول ٹیگس</string>
+    <string name="trends">ٹرینڈز</string>
+    <string name="trim">کاٹیں</string>
+    <string name="trim_not_used">اب ٹرم استعمال نہیں کرسکتے ہیں</string>
+    <string name="try_again">دوبارہ کوشش کریں</string>
+    <string name="turn_off">بند کریں</string>
+    <string name="turn_off_privacy">پرائیویٹ اکاؤنٹ بند کریں</string>
+    <string name="turn_on">آن کریں</string>
+    <string name="turn_on_privacy">پرائیویٹ اکاؤنٹ آن کریں</string>
+    <string name="tv_shows">ٹی وی کے پروگرام</string>
+    <string name="type">لکھیں۔۔۔</string>
+    <string name="type_comment">تبصرہ ٹائپ کریں ...</string>
+    <string name="type_question">سوال ٹائپ کریں ...</string>
+    <string name="ugc_banned_with_time">آپکو%s کے لئے پوسٹ کرنے سے منع کر دیا گیا ہے</string>
+    <string name="ugc_failed_post_info">اپ لوڈ نہیں ہو پایا</string>
+    <string name="ugc_retry">پھر لوڈ کریں</string>
+    <string name="ugc_temporary_ban">آپ کو پوسٹ کرنے سے منع کیا گیا ہے</string>
+    <string name="unblock_confirm_text">%s کو ان بلاک کریں؟</string>
+    <string name="unblock_description">صارف چیٹ روم میں داخل ہوسکتا ہے اور دوسروں کے ساتھ بات چیت کرسکتا ہے</string>
+    <string name="unblock_failed">ان بلاک ناکام ہو گیا!</string>
+    <string name="unblock_members">ان بلاک</string>
+    <string name="unblock_message">وہ آپ کو فالو کرنے اور میسج کرنے کے اہل ہوں گے</string>
+    <string name="unblock_msg">اگر آپ% s کو ان بلاک کردیتے ہیں تو ، وہ گروپ کے مواد کو پوسٹ کرنے اور دیکھنے کے قابل ہوسکتے ہیں۔</string>
+    <string name="unblock_user">ان بلاک کریں</string>
+    <string name="unfollow_confirm_text">%s کو ان فالو کریں ؟</string>
+    <string name="unfollow_confirmation_text">کیا اَن فالو کرنا چاہتے ہیں %s ؟</string>
+    <string name="unfollow_user">یوزر کو فالو کرنا بند کریں</string>
+    <string name="unhide_chat">چیٹ دکھائیں</string>
+    <string name="unhide_chat_content">کیا آپ واقعی چیٹ دکھانا چاہتے ہیں؟</string>
+    <string name="unknown">انجان</string>
+    <string name="unmute">ان میوٹ</string>
+    <string name="unpin_post">انپین پوسٹ</string>
+    <string name="unregistered_spotlight_video_toast_msg">ویڈیوز کو ان لاک کرنے کے لیے پہلے آپ کو اس پروگرام کے لیے رجسٹر کرنا ہوگا</string>
+    <string name="unsuccessful">ناکام</string>
+    <string name="unverified">غیر تصدیق شدہ</string>
+    <string name="unverified_logout_no">نمبر منظور کروایں</string>
+    <string name="unverified_logout_title">لاگ آؤٹ کرنے سے پہلے اپنا نمبر منظورکروا لیں. ورنہ آپ دوبارہ اس اکاؤنٹ میں لاگ ان نہیں کر پاینگے</string>
+    <string name="unverified_logout_yes">لاگ آؤٹ</string>
+    <string name="update">اپ ڈیٹ</string>
+    <string name="update_app">ایپ اپ ڈیٹ کریں</string>
+    <string name="update_application">ایپلیکیشن اپ ڈیٹ کریں</string>
+    <string name="update_downloaded">ابھی ایک اپ ڈیٹ ڈاؤن لوڈ کی گئی ہے۔</string>
+    <string name="update_now">ابھی اپ ڈیٹ کریں.</string>
+    <string name="update_popup_message">بہت سے نئی خصوصیات، نئے ڈیزائن اور نئے تجربات کے لئے شیئر چیٹ اپ ڈیٹ کریں</string>
+    <string name="update_popup_title">اپنا شیئر چیٹ اپ ڈیٹ کریں</string>
+    <string name="updated_chatroom">اپ ڈیٹ چیٹ روم</string>
+    <string name="updating_cover_image">آپ کی کور پِک اپ ڈیٹ ہو رہی ہے ...</string>
+    <string name="updating_profile_image">آپ کی پروفائل پِک اپ ڈیٹ ہو رہی ہے ...</string>
+    <string name="uploadComplete">اپ لوڈ ہو چکا ہے</string>
+    <string name="upload_text">اپ لوڈ کریں</string>
+    <string name="uplodingcontent">اپلوڈ ہو رہا ہے</string>
+    <string name="use_english_skin">ایپ انگریزی میں ہوگی ، مندرجہ بالا آپشنز میں سے جس زبان کا انتخاب کریں گے اس میں مواد ہوگا</string>
+    <string name="use_only_20">صرف 200 حرف استعمال کریں</string>
+    <string name="use_template">ٹیمپلیٹ استعمال کریں</string>
+    <string name="use_upto_25_chars">25 الفاظ تک استعمال کریں</string>
+    <string name="used">استعمال کیا گیا</string>
+    <string name="user_1">نشا</string>
+    <string name="user_2">کپل شرما</string>
+    <string name="user_3">اشوک کمار</string>
+    <string name="user_blocked">اس یوزر کو بلاک کر دیا گیا ہے</string>
+    <string name="user_has_not_created_text">اس یوزر نے ابھی تک کوئی پوسٹ نہیں بنایا ہے</string>
+    <string name="user_in_no_group_text">یہ یوزر ابھی تک کسی بھی گروپ کا حصہ نہیں ہے۔</string>
+    <string name="user_name_limit">%d حروف سے زیادہ نہیں ہوسکتا</string>
+    <string name="user_name_lines_limit">%d لائنوں سے زیادہ نہیں ہوسکتا</string>
+    <string name="user_unblocked">s% کو بلاک کر دیا گیا ہے</string>
+    <string name="user_will_have_to_request_to_follow_again">اس یوزر کو آپ کی پوسٹس دیکھنے کے لئے دوبارہ فالو کرنے کی درخواست کرنی ہوگی</string>
+    <string name="username_verified_profile">ویریفائیڈ پروفائل ہے %s</string>
+    <string name="v7_preference_off">آف ہے</string>
+    <string name="v7_preference_on">آن</string>
+    <string name="valid_mobile_badge_msg">آپ کا موبائل نمبر پہلے ہی ویریفائیڈ ہے۔اپنا موبائل ویریفیکیش بیج حاصل کریں</string>
+    <string name="verification_failed">نمبر ویرفکیشن ناکام</string>
+    <string name="verification_in_progress">نمبر کی تصدیق جاری ہے</string>
+    <string name="verification_successful">نمبر ویرفکیشن کامیاب ہوا ۔</string>
+    <string name="verified">تصدیق شدہ۔/ ویرفائد</string>
+    <string name="verified_whatsapp_number">تصدیق شدہ واٹس ایپ نمبر</string>
+    <string name="verify_enjoy_commenting">اپنی شناخت کرائیں اور کمنٹ کا لطف اٹھائیں</string>
+    <string name="verify_phone_number_message">صرف تصدیق شدہ (ویری فائی) اکاؤنٹک ہی کمنٹ یا پوسٹ کرسکتے ہیں</string>
+    <string name="verify_phone_number_title">فون نمبر تصدیق (ویری فائی) کریں</string>
+    <string name="verify_your_phone_number">اپنا فون نمبر رجسٹر کریں</string>
+    <string name="videoUpload">ویڈیو اپلوڈ</string>
+    <string name="video_segment_too_small">آپ کو کم سے کم 2 سیکنڈ کا ویڈیو بنانا ہوگا</string>
+    <string name="video_timer_header">آپ کتنے سیکنڈ ریکارڈ کرنا چاہتے ہیں؟</string>
+    <string name="video_timer_seconds_placeholder">%ds</string>
+    <string name="video_trending">مقبول</string>
+    <string name="videocompress">ویڈیوکمپریسڈ ہو رہا ہے</string>
+    <string name="view">نے دیکھا</string>
+    <string name="view_adult_or_nfsw_content">بالغ پوسٹ دیکھیں</string>
+    <string name="view_family_profile_pic">پروفائل تصویر دیکھیں</string>
+    <string name="view_link">لنک دیکھیں</string>
+    <string name="view_messages">پیغام دیکھیں</string>
+    <string name="view_more">مزید دیکھیں</string>
+    <string name="view_poll">پول دیکھیں</string>
+    <string name="view_posts">"پوسٹ دیکھیں "</string>
+    <string name="view_profile">پروفائل دیکھیں</string>
+    <string name="view_text">دیکھیں</string>
+    <string name="viewers">ناظرین۔</string>
+    <string name="views">نے دیکھا</string>
+    <string name="views_label">نے دیکھا</string>
+    <string name="violations">خلاف ورزی</string>
+    <string name="visibility">نموداری</string>
+    <string name="visibility_desc">آپ طے کرسکتے ہیں کہ آپ کے شیئر چیٹ اکاؤنٹ پر درج ذیل تفصیلات کون دیکھ سکتا ہے</string>
+    <string name="wallpaper_set_message">وال پیپر کامیابی کے ساتھ سیٹ ہوگیا</string>
+    <string name="wallpaper_title">وال پیپر</string>
+    <string name="wallpaper_tooltip_message">یہ تصویر اپ لوڈ کی گئی تھی بذریعہ</string>
+    <string name="want_to_earn_more">مزید کرما حاصل کرنا چاہتے ہیں؟</string>
+    <string name="watch_tutorial">ٹیوٹوریئل دیکھیں</string>
+    <string name="we_are_loading_templates">ہم ٹیمپلیٹس لوڈ کر رہے ہیں...</string>
+    <string name="website_url">ویبسائٹ لنک</string>
+    <string name="week">ہفتہ</string>
+    <string name="weekly_karma_goal">ہفتہ وار کرما گول</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="welcome_to_sharechat">"شیئر چیٹ پر خوش آمدید "</string>
+    <string name="whatsapp">واٹس ایپ</string>
+    <string name="whatsapp_link_action_text">ہیلو ، مجھے شیئر چیٹ پر اس پوسٹ سے آپ کا نمبر ملا۔</string>
+    <string name="whatsapp_warning">ذرا سمبھال کے ! - اس سے آپ کا فون نمبرعام ہوجائے گا ، اور صارفین کو واٹس ایپ پر آپ کو میسج کرنے کی سہولت مل جائے گی۔</string>
+    <string name="who_can_followers_list">میری فالوورس کی فہرست کون دیکھ سکتا ہے</string>
+    <string name="who_can_following_list">کون میری فالوئنگ کی فہرست دیکھ سکتا ہے</string>
+    <string name="who_can_tag">کون مجھے ٹیگ کر سکتا ہے</string>
+    <string name="why_unhelpful">یہ بیکار کیوں تھا؟</string>
+    <string name="window_notification_permission_title">آپ کو بہتر اطلاعات دینے کے لئے ہمیں \"Draw Over App\" کی اجازت چاہیئے</string>
+    <string name="write_external_permission">براہ مہربانی باہری اسٹوریج میں لکھنے کی اجازت دیں</string>
+    <string name="write_quote">اپنے کوٹس خود لکھیں</string>
+    <string name="write_your_question">اپنا سوال یہاں لکھیں</string>
+    <string name="writesomething">کچھ زبردست پوسٹ کریں</string>
+    <string name="wrong_tagging">غلط ٹیگنگ</string>
+    <string name="wrong_tagging_desc">"غیر متعلقہ مواد شائع کرنے سے  na ) ٹاپ کریٹر سے عہدے سے ہٹانا 
+b) صارف پر پابندی عائد ہوسکتی ہے"</string>
+    <string name="yes">ہاں</string>
+    <string name="yes_delete">ہاں ، حذف کریں</string>
+    <string name="yesterday">کل</string>
+    <string name="you_are_already_moving_max_files">آپ پہلے ہی %s فائلس منتقل کر رہے ہیں۔ براہ مہربانی مزید فائلس منتقل کرنے کے لیے انہیں محفوظ کریں۔</string>
+    <string name="you_can_select_maximum_posts">آپ زیادہ سے زیادہ %s پوسٹس منتخب کر سکتے ہیں</string>
+    <string name="you_have">آپ کے پاس ہے</string>
+    <string name="you_have_already_selected_x_images">آپ نے پہلے ہی %n تصاویر منتخب کر لی ہیں</string>
+    <string name="you_have_no_referrals_yet">آپ کے پاس ابھی تک کوئی ریفرل نہیں ہے</string>
+    <string name="you_have_won">مبارک ہو ، آپ کا اسکریچ کارڈ اب دستیاب ہے۔ جاییں اوردیکھیں آپ کتنا حاصل کر چکے ہیں.</string>
+    <string name="you_ll_be_notif">آپ کو اطلاع دی جائے گی</string>
+    <string name="you_need_to_request_again">آپ کو انہیں فالو کرنے کے لئے دوبارہ درخواست کرنی پڑے گی۔</string>
+    <string name="you_verified_profile">آپ نے اپنی پروفائل ویریفائیڈ کرلی ہے</string>
+    <string name="your">آپ کا</string>
+    <string name="your_campaigns_empty_view">آپ نے اب تک کسی بھی کیمپین میں حصہ نہیں لیا ہے۔ تمام کیمپین پر جائیں اورپوسٹ کریٹ کریں</string>
+    <string name="your_cover_image_will_be_updated">آپ کی کور پِک جلد اپ ڈیٹ ہو جائے گی!</string>
+    <string name="your_mic_is_on_say_hello">آپ کا مائک آن ہے۔ دوسروں کو “&lt;b> ہیلو &lt;/ b>” کہیں!</string>
+    <string name="your_mood_removed">آپ کا موڈ ہٹا دیا جائے گا۔ اس کے بعد آپ کی کور پِکچر اور بائیو ڈیفالٹ پر ری سیٹ ہو جائے گی</string>
+    <string name="your_photos">آپ کی تصویر</string>
+    <string name="your_profile_image_will_be_updated">آپ کی پروفائل پِک جلد اپ ڈیٹ ہو جائے گی!</string>
+    <string name="your_profile_is_now_here">آپ کی پروفائل اب یہاں ہے</string>
+    <string name="your_profile_private">آپ کی پروفائل اب پرائیویٹ ہے</string>
+    <string name="your_profile_public">آپ کی پروفائل اب پبلک ہے</string>
+    <string name="your_profile_verified">اب آپ کی پروفائل ویریفائیڈ ہو گئی ہے</string>
+    <string name="youtube">یوٹیوب</string>
+    <string name="youtube_video">یو ٹیوب ویڈیو</string>
+    <string name="zero_search_error">معاف کیجیے گا، ہمیں \"%s\" کے لیے کوئی پوسٹ نہیں مل پایا۔ انہیں سرچ کریں</string>
+</resources>

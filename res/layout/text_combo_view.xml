@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/round_rect_grey_bg" android:padding="@dimen/size4" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="@dimen/size8" android:backgroundTint="@color/white100"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="17.0sp" android:textStyle="bold" android:gravity="center" android:id="@id/tv_text" android:paddingLeft="@dimen/size8" android:paddingRight="@dimen/size8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:elevation="@dimen/size8" android:letterSpacing="-0.1" />
+</FrameLayout>

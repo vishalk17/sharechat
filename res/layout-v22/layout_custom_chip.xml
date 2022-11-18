@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip android:paddingLeft="@dimen/size10" android:paddingRight="@dimen/size10" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkable="true" android:paddingHorizontal="@dimen/size10"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

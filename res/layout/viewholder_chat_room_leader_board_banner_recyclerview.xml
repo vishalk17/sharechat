@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="158.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.feature.chatroom.common.generic_listing.CustomRecyclerView android:orientation="horizontal" android:id="@id/leader_board_banner_recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:attachSnapHelper="false" app:disableInfiniteScroll="true" app:disableLoader="true" app:disablePullToRefresh="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <sharechat.feature.chatroom.free_frame.PageIndicator android:id="@id/page_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toStartOf="parent" app:piDefaultColor="@color/separator" app:piSelectedColor="@color/secondary_bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/custom_exo_root_v2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_controller_actions" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageButton android:id="@id/ib_video_prev" android:background="@drawable/shape_circle_black_translucent" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_skip_previous_white" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/exo_rew" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/exo_rew_video" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_rewind_10sec" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/exo_play" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_video_player_play" />
+            <ImageButton android:layout_gravity="center" android:id="@id/exo_pause" android:background="?selectableItemBackgroundBorderless" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_video_player_pause" />
+            <ImageButton android:layout_gravity="center" android:id="@id/ib_exo_pause" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_video_player_pause" />
+        </FrameLayout>
+        <ImageButton android:id="@id/ib_video_next" android:background="@drawable/shape_circle_black_translucent" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_skip_next_white" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/exo_ffwd_video" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_forward_10sec" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/exo_ffwd" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    </LinearLayout>
+</RelativeLayout>

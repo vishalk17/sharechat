@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "sharechat.manager.experimentation.data.model";
+option java_multiple_files = true;
+
+message Experiment {
+  // filter for showing / hiding completed tasks
+  string experimentId = 1;
+  string variant = 2;
+  string version = 3;
+  bool eventTriggered = 4;
+}
+
+message ExperimentationPreference {
+  map<string, Experiment> experiments = 1;
+}

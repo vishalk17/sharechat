@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/item_gallery_header_tv" android:background="@null" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="16.0sp" android:textColor="@color/link" android:id="@id/tv_see_all" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_all" app:drawableEndCompat="@drawable/ic_arrow_chevron_right_stroke_24" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/bottom_gift_member_list" android:paddingLeft="@dimen/size4" android:paddingTop="@dimen/size4" android:paddingRight="66.0dip" android:paddingBottom="@dimen/size4" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/size4" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/gradient_background" android:layout_width="66.0dip" android:layout_height="fill_parent">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="end" android:id="@id/send_ripple_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="@id/bottom_gift_member_list" app:layout_constraintEnd_toEndOf="@id/bottom_gift_member_list" app:layout_constraintTop_toTopOf="parent" />
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="end|center" android:id="@id/gift_send_button" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_send_v2" android:layout_marginEnd="12.0dip" android:elevation="@dimen/size4" app:layout_constraintBottom_toBottomOf="@id/bottom_gift_member_list" app:layout_constraintEnd_toEndOf="@id/bottom_gift_member_list" app:layout_constraintTop_toTopOf="@id/bottom_gift_member_list" />
+    </FrameLayout>
+</FrameLayout>

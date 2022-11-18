@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:gravity="center" android:background="@drawable/bg_circle_grey" android:padding="10.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" app:backgroundTint="@color/secondary_bg" app:srcCompat="@drawable/ic_arrow_forward_black" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/link" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/see_all" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:layout_gravity="center" android:id="@id/error_container" android:paddingTop="100.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:matProg_barColor="@color/link" app:matProg_progressIndeterminate="true" />
+</RelativeLayout>

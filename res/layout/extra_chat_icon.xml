@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="42.0dip" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_icon" android:background="?selectableItemBackgroundBorderless" android:padding="@dimen/size10" android:focusable="true" android:clickable="true" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginTop="@dimen/size4" android:layout_marginBottom="@dimen/size4" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_audio_emoji_new" />
+    <View android:id="@id/v_notifier" android:background="@drawable/bg_circle_grey" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="@dimen/size10" android:layout_marginEnd="@dimen/size10" android:backgroundTint="@color/error" app:layout_constraintEnd_toEndOf="@id/iv_icon" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

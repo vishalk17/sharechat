@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/light_toolbar" layout="@layout/toolbar_light" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:layout_gravity="center_vertical" android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/ll_unhide_chat" android:background="@color/success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_show" app:tint="@android:color/white" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/unhide_chat" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

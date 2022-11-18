@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/fl_fabs" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/fl_full_screen_progress" android:background="@color/separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways|snap">
+                <include android:id="@id/layout_toolbar_chat" layout="@layout/layout_toolbar_chat" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/tabBarSize" app:tabIndicatorColor="@color/link" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <sharechat.library.ui.custombuttonview.CustomButtonView android:textSize="18.0sp" android:textColor="@color/secondary_bg" android:id="@id/tv_start_chat" android:background="@drawable/background_start_chat" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/start_chat" android:drawablePadding="8.0dip" android:textAllCaps="false" android:layout_marginEnd="10.0dip" app:drawableStartCompat="@drawable/ic_start_chat_32dp" />
+        <include android:id="@id/item_number_verify_chat" layout="@layout/item_number_verify_chat" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <include android:id="@id/layout_toolbar_chat_options" layout="@layout/layout_toolbar_chat_options" />
+</FrameLayout>

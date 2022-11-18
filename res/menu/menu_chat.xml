@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_menu_block" android:id="@id/menu_block" android:title="@string/block_user" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_add" android:id="@id/menu_unblock" android:title="@string/unblock_user" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_hide" android:id="@id/menu_hide" android:visible="true" android:title="@string/hide_chat" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_show" android:id="@id/menu_unhide" android:visible="false" android:title="@string/unhide_chat" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_menu_delete" android:id="@id/menu_delete" android:visible="true" android:title="@string/delete_chat" app:showAsAction="never" />
+</menu>

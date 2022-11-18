@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/iv_coin_layout" android:background="@drawable/bg_rounded_chatroom_level_rewards" android:layout_width="56.0dip" android:layout_height="56.0dip" app:layout_constraintDimensionRatio="H,1:1"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_coin" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="7.0dip" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="@dimen/font_11" android:textColor="@color/golden_0" android:id="@id/tv_coin_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:fontFamily="@font/manrope_font_700" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_coin" />
+</androidx.constraintlayout.widget.ConstraintLayout>

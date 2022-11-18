@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/left_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/title_image_small" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            <ImageView android:id="@id/brand_name_iv" android:layout_width="wrap_content" android:layout_height="9.0dip" android:adjustViewBounds="true" android:layout_marginStart="8.0dip" app:srcCompat="@drawable/ic_sharechat_brand_text_black" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/notification_title_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="Follow Request Received" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black100" android:id="@id/notification_sub_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="❣️❣️❣️Bluffmaster_707❣️❣️ and 15 others" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/users_container_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <ImageView android:layout_gravity="end" android:id="@id/user_iv_rightmost" android:background="@drawable/bg_circle_white" android:padding="1.0dip" android:visibility="visible" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_profile_placeholder_32dp" />
+        <ImageView android:layout_gravity="end" android:id="@id/user_iv_middle" android:background="@drawable/bg_circle_white" android:padding="1.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginEnd="30.0dip" app:srcCompat="@drawable/ic_profile_placeholder_32dp" />
+        <ImageView android:layout_gravity="end" android:id="@id/user_iv_leftmost" android:background="@drawable/bg_circle_white" android:padding="1.0dip" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginEnd="60.0dip" app:srcCompat="@drawable/ic_profile_placeholder_32dp" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/black100" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <jp.co.cyberagent.android.gpuimage.GPUImageView android:layout_gravity="center" android:id="@id/gpu_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.theartofdev.edmodo.cropper.CropImageView android:layout_gravity="center" android:id="@id/crop_iv" android:background="@color/black100" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_rotate_image" android:background="@color/black100" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yalantis.ucrop.view.UCropView android:layout_gravity="center" android:id="@id/ucrop_straighten" android:background="@color/black100" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <sharechat.feature.composeTools.imageedit.views.BrushDrawingView android:id="@id/drawing_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/stickers_container_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/text_container_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_delete" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginBottom="40.0dip" app:srcCompat="@drawable/ic_delete_sticker_white_24dp" />
+</FrameLayout>

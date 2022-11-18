@@ -1,0 +1,70 @@
+.class final Lio/reactivex/internal/operators/observable/j$a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lio/reactivex/internal/operators/observable/j$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x10
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lio/reactivex/internal/operators/observable/j$a;
+
+
+# direct methods
+.method constructor <init>(Lio/reactivex/internal/operators/observable/j$a;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/reactivex/internal/operators/observable/j$a$a;->b:Lio/reactivex/internal/operators/observable/j$a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/j$a$a;->b:Lio/reactivex/internal/operators/observable/j$a;
+
+    iget-object v0, v0, Lio/reactivex/internal/operators/observable/j$a;->b:Lnz/y;
+
+    invoke-interface {v0}, Lnz/y;->a()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 2
+    iget-object v0, p0, Lio/reactivex/internal/operators/observable/j$a$a;->b:Lio/reactivex/internal/operators/observable/j$a;
+
+    iget-object v0, v0, Lio/reactivex/internal/operators/observable/j$a;->e:Lnz/z$c;
+
+    invoke-interface {v0}, Lpz/b;->dispose()V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    iget-object v1, p0, Lio/reactivex/internal/operators/observable/j$a$a;->b:Lio/reactivex/internal/operators/observable/j$a;
+
+    iget-object v1, v1, Lio/reactivex/internal/operators/observable/j$a;->e:Lnz/z$c;
+
+    invoke-interface {v1}, Lpz/b;->dispose()V
+
+    throw v0
+.end method

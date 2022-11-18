@@ -1,0 +1,78 @@
+.class final Lyd0/i$c;
+.super Lkotlin/jvm/internal/r;
+.source "SourceFile"
+
+# interfaces
+.implements Lr00/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lyd0/i;-><init>(Ltd0/s;Lpd0/b;ZLod0/h;Z)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/r;",
+        "Lr00/a<",
+        "Li00/a0;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lyd0/i;
+
+
+# direct methods
+.method constructor <init>(Lyd0/i;)V
+    .locals 0
+
+    iput-object p1, p0, Lyd0/i$c;->b:Lyd0/i;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/r;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lyd0/i$c;->invoke()V
+
+    sget-object v0, Li00/a0;->a:Li00/a0;
+
+    return-object v0
+.end method
+
+.method public final invoke()V
+    .locals 2
+
+    .line 2
+    iget-object v0, p0, Lyd0/i$c;->b:Lyd0/i;
+
+    invoke-static {v0}, Lyd0/i;->W6(Lyd0/i;)Lpd0/b;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lyd0/i$c;->b:Lyd0/i;
+
+    invoke-virtual {v1}, Lyd0/i;->h7()Lin/mohalla/sharechat/data/repository/post/PostModel;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lpd0/a;->Y(Lin/mohalla/sharechat/data/repository/post/PostModel;)V
+
+    return-void
+.end method

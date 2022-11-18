@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:id="@id/scrollview_compose" android:layout_width="fill_parent" android:layout_height="@dimen/size48" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toStartOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/compose_option" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</HorizontalScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/dark_purple" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/toolbar_miniapp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_above="@id/tv_create_shortcut" android:layout_below="@id/toolbar" />
+    <TextView android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_create_shortcut" android:background="@color/link" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/create_shortcut" android:layout_alignParentBottom="true" />
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:id="@id/error_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_create_shortcut" android:layout_below="@id/toolbar" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

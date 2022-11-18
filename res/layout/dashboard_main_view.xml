@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appBarLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsingToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:elevation="0.0dip" app:layout_scrollFlags="scroll|enterAlways|snap">
+            <include android:id="@id/toolbar_dashboard" layout="@layout/layout_toolbar_dashboard" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tabIndicatorColor="@color/link" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

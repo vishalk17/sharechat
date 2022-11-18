@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip" android:minWidth="85.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/primary" android:id="@id/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="1.0" style="@style/footnoteManRope" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lottie_onboard" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:adjustViewBounds="true" android:layout_marginStart="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/tab_text" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/new_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

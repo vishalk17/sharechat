@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/dialog_bottom_sheet_truecaller_compliance_0" android:background="@drawable/round_rect_bottomsheet" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/font_13" android:textColor="@color/black100" android:layout_gravity="right" android:id="@id/skip" android:padding="@dimen/size15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skip" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_privacy_policy" />
+    <TextView android:textSize="@dimen/font_17" android:textColor="@color/black100" android:id="@id/privacy_policy_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/size6" android:text="@string/terms_and_conditions_mock_text" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/size16" android:paddingTop="@dimen/size10" android:paddingRight="@dimen/size16" android:paddingBottom="@dimen/size10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/size16" android:paddingVertical="@dimen/size10">
+        <CheckBox android:textColor="@color/secondary" android:textColorLink="@color/blue1" android:gravity="top" android:id="@id/terms_checkbox" android:paddingLeft="@dimen/size12" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        <TextView android:textSize="@dimen/font_17" android:id="@id/terms_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_text" />
+    </LinearLayout>
+    <View android:background="@color/black10" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/size4" />
+    <Button android:textSize="@dimen/font_17" android:textColor="@color/link" android:id="@id/accept" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/privacy_policy_agree" android:textAllCaps="false" />
+</LinearLayout>

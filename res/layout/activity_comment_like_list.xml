@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/toolbar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_container" layout="@layout/layout_recyclerview_container" />
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:id="@id/error_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar_container" />
+    <ProgressBar android:theme="@style/progressBarBlue" android:id="@id/progress_bar" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="10.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_user_verified" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_badge_tick_blue"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="200.0dip" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/tv_lock_card_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_post_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fixed_width">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_image_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder" android:scaleType="centerCrop" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_post_video" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fixed_width">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_video_thumb" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/iv_play_video" android:clickable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" app:srcCompat="@drawable/exo_icon_play" />
+        <com.google.android.exoplayer2.ui.PlayerView android:id="@id/player_view_post_video" android:tag="portrait" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:use_controller="false" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_gif_thumb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</androidx.cardview.widget.CardView>

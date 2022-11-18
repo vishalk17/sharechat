@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_tags" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/primary" android:id="@id/tv_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:text="@string/handle_title" android:lineSpacingExtra="1.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="12.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/link" android:id="@id/tv_see_all_users" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/see_all" android:layout_alignParentRight="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_users" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="12.0dip" android:layout_below="@id/tv_handle" android:nestedScrollingEnabled="false" />
+</RelativeLayout>

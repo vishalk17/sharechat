@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_item_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_width="fill_parent" android:layout_height="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textStyle="bold" android:textColor="@color/secondary" android:ellipsize="end" android:gravity="start|center" android:id="@id/item_header" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:maxLines="1" android:layout_weight="3.0" android:layout_marginStart="12.0dip" />
+            <TextView android:textColor="@color/primary" android:gravity="end|center" android:id="@id/view_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip" android:text="@string/see_all" android:layout_weight="1.0" android:layout_marginEnd="12.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_user_container" android:background="@color/secondary_bg" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+        <FrameLayout android:id="@id/fl_profile_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_user_image" android:clickable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" app:srcCompat="@drawable/ic_profile_placeholder_32dp" />
+            <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_user_profile_verified" android:clickable="false" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_top_creator_badge" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/ll_user_action_container" android:layout_toRightOf="@id/fl_profile_image_container" android:layout_marginStart="12.0dip" android:layout_toStartOf="@id/ll_user_action_container" android:layout_toEndOf="@id/fl_profile_image_container">
+            <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:ellipsize="end" android:id="@id/tv_user_name" android:clickable="false" android:layout_width="wrap_content" android:layout_height="24.0dip" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary" android:ellipsize="end" android:id="@id/tv_user_bio" android:clickable="false" android:layout_width="wrap_content" android:layout_height="17.0dip" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/secondary" android:ellipsize="end" android:id="@id/tv_follower_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="17.0dip" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/ll_user_action_container" android:background="@drawable/shape_rectangle_rounded_blue" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginStart="12.0dip" android:layout_alignParentEnd="true">
+            <ProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:id="@id/pb_follow" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_user_follow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" android:maxLines="1" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

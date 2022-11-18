@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/main_stub" layout="@layout/dashboard_main_view" />
+    <androidx.appcompat.widget.AppCompatButton android:textColor="@color/secondary_bg" android:layout_gravity="bottom" android:id="@id/btn_see_follow" android:background="@drawable/btn_follow_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/see_follow_post" android:textAllCaps="false" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/dashboard_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

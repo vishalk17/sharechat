@@ -1,0 +1,63 @@
+.class Lio/grpc/internal/z$j$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lio/grpc/internal/z$j;->a(Lio/grpc/f1;Lio/grpc/v0;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lio/grpc/f1;
+
+.field final synthetic c:Lio/grpc/v0;
+
+.field final synthetic d:Lio/grpc/internal/z$j;
+
+
+# direct methods
+.method constructor <init>(Lio/grpc/internal/z$j;Lio/grpc/f1;Lio/grpc/v0;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lio/grpc/internal/z$j$c;->d:Lio/grpc/internal/z$j;
+
+    iput-object p2, p0, Lio/grpc/internal/z$j$c;->b:Lio/grpc/f1;
+
+    iput-object p3, p0, Lio/grpc/internal/z$j$c;->c:Lio/grpc/v0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lio/grpc/internal/z$j$c;->d:Lio/grpc/internal/z$j;
+
+    invoke-static {v0}, Lio/grpc/internal/z$j;->e(Lio/grpc/internal/z$j;)Lio/grpc/h$a;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lio/grpc/internal/z$j$c;->b:Lio/grpc/f1;
+
+    iget-object v2, p0, Lio/grpc/internal/z$j$c;->c:Lio/grpc/v0;
+
+    invoke-virtual {v0, v1, v2}, Lio/grpc/h$a;->a(Lio/grpc/f1;Lio/grpc/v0;)V
+
+    return-void
+.end method

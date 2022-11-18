@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_block_container" android:background="@color/secondary_bg" android:padding="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/primary" android:id="@id/tv_block_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blocked_user" />
+    <Button android:textColor="@color/primary" android:id="@id/bt_block_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/block_list_title" />
+</LinearLayout>

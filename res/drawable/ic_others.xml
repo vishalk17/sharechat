@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="86.0dip" android:width="86.0dip" android:viewportWidth="86.0" android:viewportHeight="86.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffffff" android:pathData="M13,2L73,2A10,10 0,0 1,83 12L83,72A10,10 0,0 1,73 82L13,82A10,10 0,0 1,3 72L3,12A10,10 0,0 1,13 2z" />
+    <path android:fillColor="#ffdddddd" android:pathData="M48.3333,52.6667L64.3333,52.6667L64.3333,58C64.3333,60.9455 61.9455,63.3333 59,63.3333H53.6667C50.7212,63.3333 48.3333,60.9455 48.3333,58V52.6667Z" android:strokeColor="#ff86868d" android:strokeWidth="5.33333" />
+    <path android:fillColor="#ffdddddd" android:pathData="M21.6667,52.6667L37.6667,52.6667L37.6667,58C37.6667,60.9455 35.2789,63.3333 32.3333,63.3333H27C24.0545,63.3333 21.6667,60.9455 21.6667,58V52.6667Z" android:strokeColor="#ff86868d" android:strokeWidth="5.33333" />
+    <path android:fillColor="#ffdddddd" android:pathData="M61.6667,39.3333V42H24.3333V39.3333C24.3333,29.024 32.6907,20.6667 43,20.6667C53.3093,20.6667 61.6667,29.024 61.6667,39.3333Z" android:strokeColor="#ff86868d" android:strokeWidth="5.33333" />
+    <path android:fillColor="#ff86868d" android:pathData="M48.3333,52.666H37.6667V57.9993H48.3333V52.666Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M67,39.334H19C16.0545,39.334 13.6667,41.7218 13.6667,44.6673H72.3333C72.3333,41.7218 69.9455,39.334 67,39.334Z" />
+    <group>
+        <clip-path android:pathData="M67,39.334H19C16.0545,39.334 13.6667,41.7218 13.6667,44.6673H72.3333C72.3333,41.7218 69.9455,39.334 67,39.334Z" />
+        <path android:fillColor="#ff86868d" android:pathData="M13.6667,44.6673H7.1481V51.1858H13.6667V44.6673ZM72.3333,44.6673V51.1858H78.8519V44.6673H72.3333ZM19,45.8525H67V32.8155H19V45.8525ZM13.6667,51.1858H72.3333V38.1488H13.6667V51.1858ZM67,45.8525C66.3454,45.8525 65.8148,45.3219 65.8148,44.6673H78.8519C78.8519,38.1217 73.5456,32.8155 67,32.8155V45.8525ZM19,32.8155C12.4544,32.8155 7.1481,38.1217 7.1481,44.6673H20.1852C20.1852,45.3219 19.6546,45.8525 19,45.8525V32.8155Z" />
+    </group>
+</vector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_search" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginStart="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_search_suggestion" />
+    <TextView android:textColor="@color/secondary" android:id="@id/tv_suggestion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_search" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/iv_search" app:layout_constraintTop_toTopOf="@id/iv_search" style="@style/subhead" />
+    <View android:id="@id/view2" android:background="@color/separator" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_search" />
+</androidx.constraintlayout.widget.ConstraintLayout>

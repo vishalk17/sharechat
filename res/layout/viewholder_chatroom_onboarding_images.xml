@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container_rl" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <me.relex.circleindicator.CircleIndicator2 android:id="@id/circle_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/recycler_view" app:ci_animator="@anim/circular_indicator_no_animation" app:ci_drawable="@drawable/circle_blue_8dp" app:ci_drawable_unselected="@drawable/circle_light_blue_8dp" app:ci_height="8.0dip" app:ci_width="8.0dip" />
+</RelativeLayout>

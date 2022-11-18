@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="13.0sp" android:textColor="@color/link" android:id="@id/title" android:paddingTop="@dimen/size8" android:paddingBottom="@dimen/size8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:textAlignment="textEnd" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/right_arrow" app:layout_constraintTop_toTopOf="parent" />
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/right_arrow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:tint="@color/link" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/title" app:layout_constraintVertical_bias="0.55" app:srcCompat="@drawable/ic_arrow_chevron_right_stroke_black_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

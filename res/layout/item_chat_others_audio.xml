@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="64.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:paddingStart="16.0dip" android:paddingEnd="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <androidx.cardview.widget.CardView android:id="@id/cardview" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/chat_others_yellow" app:cardCornerRadius="6.0dip" app:cardElevation="2.0dip" app:cardUseCompatPadding="true">
+            <RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_play_pause" android:background="@drawable/shape_circle_chat_primary" android:padding="8.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_play_arrow_white_36dp" />
+                <SeekBar android:theme="@style/ChatSeekBarTheme" android:id="@id/seek_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_toRightOf="@id/iv_play_pause" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/iv_play_pause" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/secondary" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_below="@id/seek_bar" android:layout_alignLeft="@id/seek_bar" android:lineSpacingExtra="7.0sp" android:layout_marginStart="12.0dip" android:layout_alignStart="@id/seek_bar" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="12.0sp" android:textColor="@color/secondary" android:layout_gravity="end" android:id="@id/tv_message_time" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="9.0sp" />
+    </LinearLayout>
+</RelativeLayout>

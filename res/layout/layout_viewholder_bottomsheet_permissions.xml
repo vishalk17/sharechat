@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="2.0dip" android:layout_marginStart="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_tick" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" app:srcCompat="@drawable/tick_icon_blue" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="12.0sp" android:id="@id/tv_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/iv_tick" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/iv_tick" />
+</RelativeLayout>

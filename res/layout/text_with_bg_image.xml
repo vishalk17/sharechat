@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center_horizontal" android:id="@id/iv_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" app:autoSizeMaxTextSize="100.0sp" app:autoSizeMinTextSize="24.0sp" app:autoSizeStepGranularity="1.0sp" app:autoSizeTextType="uniform" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/root_cluster" android:tag="layout/viewholder_cluster_horizontal_additem_0" android:background="@drawable/bg_rounded_rect_bordered_grey" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/tv_header" android:background="@drawable/bg_circle_blue" android:padding="8.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_plus_white_24dp" android:tint="@color/link" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:textColor="@color/link" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="8.0dip" android:text="@string/ic_more" />
+</LinearLayout>

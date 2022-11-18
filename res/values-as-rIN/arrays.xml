@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>basor</item>
+        <item>maah</item>
+        <item>din</item>
+        <item>Hours</item>
+        <item>minit</item>
+        <item>chhekend</item>
+    </string-array>
+</resources>

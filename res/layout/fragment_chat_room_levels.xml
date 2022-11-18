@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.feature.chatroom.common.generic_listing.CustomRecyclerView android:id="@id/crv_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" app:disableInfiniteScroll="true" app:disableLoader="true" app:disablePullToRefresh="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>

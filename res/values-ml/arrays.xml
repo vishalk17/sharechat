@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>വര്‍ഷം</item>
+        <item>മാസം</item>
+        <item>ദിവസം</item>
+        <item>മണിക്കൂര്‍</item>
+        <item>മിനിറ്റ്</item>
+        <item>സെക്കന്റ്‌</item>
+    </string-array>
+</resources>

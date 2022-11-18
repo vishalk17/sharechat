@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>barsa</item>
+        <item>mahina</item>
+        <item>din</item>
+        <item>ghanta</item>
+        <item>minute</item>
+        <item>second</item>
+    </string-array>
+</resources>

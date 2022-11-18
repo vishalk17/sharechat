@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:tag="layout/fragment_subgenre_feed_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <sharechat.library.ui.touch.NestedScrollableHost android:id="@id/rcv_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rcv_tabs" android:layoutAnimation="@anim/layout_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </sharechat.library.ui.touch.NestedScrollableHost>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <in.mohalla.sharechat.common.errorHandling.ErrorViewContainer android:layout_gravity="center" android:id="@id/error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

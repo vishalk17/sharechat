@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="155.0dip" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="130.0dip" app:cardCornerRadius="4.0dip">
+        <RelativeLayout android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="130.0dip">
+            <ImageView android:id="@id/iv_arrow" android:background="@drawable/ic_arrow_forward_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" android:rotationY="@integer/ld_mirror_flip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/see_more" android:layout_below="@id/iv_arrow" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/cv_add_slide" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" app:cardBackgroundColor="@color/secondary" app:cardCornerRadius="4.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/iv_plus_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/ic_circle_add_white" />
+</androidx.cardview.widget.CardView>

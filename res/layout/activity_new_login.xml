@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <ImageButton android:id="@id/iv_back" android:background="?actionBarItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:rotationY="@integer/ld_mirror_flip" app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/primary" android:id="@id/toolbar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginStart="32.0dip" />
+    </androidx.appcompat.widget.Toolbar>
+    <View android:id="@id/toolbar_shadow" android:background="@drawable/bg_toolbar_shadow" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_below="@id/toolbar" />
+    <ProgressBar android:theme="@style/progressBarBlue" android:id="@id/new_login_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+</RelativeLayout>

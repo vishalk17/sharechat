@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_activated="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/dark_tertiary_bg" />
+                    <corners android:radius="4.0dip" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/primary" />
+                    <corners android:radius="4.0dip" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item>
+        <vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0">
+            <path android:fillColor="#ffffffff" android:pathData="M17.9531,16H7.0986V11.1748C7.0986,9.9912 7.2803,9.0215 7.6435,8.2656C8.0127,7.5098 8.5869,6.9092 9.3662,6.4639C10.1514,6.0127 11.1592,5.7871 12.3896,5.7871C13.5205,5.7871 14.499,5.9717 15.3252,6.3408C16.1514,6.7041 16.7959,7.2637 17.2588,8.0195C17.7217,8.7754 17.9531,9.8389 17.9531,11.21V16ZM8.6543,14.7783H8.7422C10.084,13.7705 11.1211,12.7451 11.8535,11.7021C12.5918,10.6533 12.9609,9.6748 12.9609,8.7666C12.9609,8.2334 12.8379,7.8203 12.5918,7.5273C12.3516,7.2285 12,7.0791 11.5371,7.0791C10.7168,7.0791 10.0312,7.4394 9.4805,8.1602C8.9297,8.8809 8.6543,10.0029 8.6543,11.5264V14.7783ZM16.3975,11.5264C16.3975,10.0732 16.1748,9.0332 15.7295,8.4063C15.2842,7.7793 14.6748,7.3662 13.9014,7.167C14.124,7.4424 14.2793,7.7207 14.3672,8.002C14.4609,8.2773 14.5078,8.5879 14.5078,8.9336C14.5078,9.8477 14.2207,10.7734 13.6465,11.7109C13.0781,12.6484 12.1787,13.6738 10.9482,14.7871C11.4697,14.752 11.9854,14.7344 12.4951,14.7344H16.3975V11.5264Z" />
+        </vector>
+    </item>
+</layer-list>

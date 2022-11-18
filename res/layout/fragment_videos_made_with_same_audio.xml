@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/back_nav_view" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center_vertical" android:id="@id/iv_back_button" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:srcCompat="@drawable/ic_toolbar_back_white_24dp" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/primary" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/related_videos" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/top_recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_below="@id/back_nav_view" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/top_recyclerView" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/secondary_bg" android:id="@id/error_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="10.0dip" android:layout_centerInParent="true" app:drawableEndCompat="@drawable/ic_retry" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_below="@id/top_recyclerView">
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/empty_post" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_empty_post" />
+        <TextView android:textColor="@color/secondary_bg" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_videos_with_this_audio" />
+    </LinearLayout>
+</RelativeLayout>

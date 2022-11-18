@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cv_tag_card" android:background="@drawable/background_create_tag" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/background_create_tag" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/secondary_bg" android:gravity="center_vertical" android:id="@id/tv_plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="+" android:layout_marginStart="12.0dip" />
+        <TextView android:textStyle="bold" android:textColor="@color/secondary_bg" android:gravity="center_vertical" android:id="@id/tv_tag_name" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+</RelativeLayout>

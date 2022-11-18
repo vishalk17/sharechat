@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_no_users" />
+    <android.widget.Button android:layout_gravity="center" android:id="@id/bt_load_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seeMore" />
+    <ProgressBar android:theme="@style/progressBarBlue" android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" />
+</FrameLayout>

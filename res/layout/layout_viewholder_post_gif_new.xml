@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_post_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/barrier_post_top" app:resize_mode="fixed_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/vs_player_view_post_gif" android:layout="@layout/player_view_post_gif_vs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/vs_iv_post_gif" android:layout="@layout/iv_post_gif_vs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/vs_iv_post_gif_thumb" android:layout="@layout/iv_post_gif_thumb_vs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vs_tv_post_gif_button" android:layout="@layout/tv_post_gif_button_vs" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    <ViewStub android:gravity="center_vertical" android:id="@id/vs_tv_gif_info" android:paddingLeft="24.0dip" android:paddingTop="4.0dip" android:paddingRight="24.0dip" android:paddingBottom="4.0dip" android:layout="@layout/tv_gif_info_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:drawablePadding="4.0dip" android:layout_marginStart="5.0dip" />
+    <ViewStub android:layout_gravity="center" android:id="@id/vs_pb_post_gif" android:layout="@layout/pb_post_gif_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.google.android.exoplayer2.ui.AspectRatioFrameLayout>

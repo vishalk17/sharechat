@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/cv_video" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" app:cardCornerRadius="16.0dip" app:cardElevation="0.0dip" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/fl_post_video" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="fixed_width">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_video_thumb" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_gif_thumb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/iv_play_video" android:background="@drawable/bg_circle_black_trans_with_stroke" android:clickable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" app:srcCompat="@drawable/exo_icon_play" />
+        <com.google.android.exoplayer2.ui.PlayerView android:id="@id/player_view_post_video" android:tag="portrait" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:surface_type="texture_view" app:use_controller="false" />
+        <ImageView android:layout_gravity="end" android:id="@id/iv_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:srcCompat="@drawable/ic_close_circle_filled_24" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+</androidx.cardview.widget.CardView>

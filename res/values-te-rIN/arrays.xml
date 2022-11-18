@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>Samvastharalu</item>
+        <item>nelalu</item>
+        <item>rojulu</item>
+        <item>gantalu</item>
+        <item>nimishalu</item>
+        <item>secondulu</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape andorid:shape="rectangle"
+  xmlns:andorid="http://schemas.android.com/apk/res/android">
+    <gradient andorid:startColor="@color/champion_bg_purple" andorid:endColor="@color/dark_blue_champion_program" andorid:angle="0.0" />
+    <corners andorid:radius="30.0dip" />
+</shape>

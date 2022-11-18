@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/trending_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/ic_content_type_trending" app:tint="@color/primary" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:layout_gravity="center" android:id="@id/recent_search_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="36.0dip" android:maxLines="1" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="36.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/recent_search_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginEnd="12.0dip" app:srcCompat="@drawable/ic_cross_black_24dp" app:tint="@color/primary" />
+</LinearLayout>

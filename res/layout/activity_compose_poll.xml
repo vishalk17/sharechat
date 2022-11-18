@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/composepoll_options_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/poll_running_time" android:layout_marginStart="14.0dip" />
+        <TextView android:textStyle="bold" android:layout_gravity="end" android:id="@id/tv_endTime" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6 Hours" android:layout_alignParentRight="true" android:paddingEnd="8.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <SeekBar android:id="@id/seek_bar_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="4" android:progress="0" android:progressTint="@color/link" android:thumbTint="@color/link" style="@style/Widget.AppCompat.SeekBar.Discrete" />
+</LinearLayout>

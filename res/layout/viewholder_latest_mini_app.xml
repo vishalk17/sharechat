@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="296.0dip" android:layout_height="360.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginEnd="16.0dip" app:cardCornerRadius="12.0dip" app:cardUseCompatPadding="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_mini_app" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/tv_action" android:background="@drawable/shape_rectangle_white" android:paddingLeft="30.0dip" android:paddingTop="12.0dip" android:paddingRight="30.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="@string/open" android:layout_alignBottom="@id/iv_mini_app" android:layout_alignParentRight="true" android:fontFamily="sans-serif-medium" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/secondary_bg" android:id="@id/tv_miniapp_name" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_toLeftOf="@id/tv_action" android:layout_alignBottom="@id/iv_mini_app" android:layout_alignParentLeft="true" android:lineSpacingExtra="1.0sp" android:layout_toStartOf="@id/tv_action" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

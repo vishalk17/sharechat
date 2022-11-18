@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/fl_skip_ad" android:background="@color/overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="14.0sp" android:textColor="@color/secondary_bg" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_skip_ad" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" app:drawableStartCompat="@drawable/ic_skip_next_white" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

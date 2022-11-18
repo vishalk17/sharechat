@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_post_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/iv_post_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder" />
+    <include layout="@layout/layout_post_content_blur_warning" />
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="center" android:id="@id/ib_post_image_download" android:background="@drawable/bg_rectangle_rounded_black_8dp" android:padding="12.0dip" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:foreground="?selectableItemBackgroundBorderless" app:srcCompat="@drawable/ic_file_download_white" />
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/pb_post_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal" style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding" />
+</FrameLayout>

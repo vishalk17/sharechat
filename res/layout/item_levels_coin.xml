@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/ivReward" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitXY" android:layout_marginStart="@dimen/size16" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/white100" android:id="@id/tvReward" android:background="@drawable/shape_rectangle_rounded_16_black" android:paddingTop="@dimen/size2" android:paddingBottom="@dimen/size2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/size10" android:paddingEnd="@dimen/size10" android:backgroundTint="@color/yellow10" app:layout_constraintBottom_toBottomOf="@id/ivReward" app:layout_constraintEnd_toEndOf="@id/ivReward" app:layout_constraintStart_toStartOf="@id/ivReward" app:layout_constraintTop_toBottomOf="@id/ivReward" />
+</androidx.constraintlayout.widget.ConstraintLayout>

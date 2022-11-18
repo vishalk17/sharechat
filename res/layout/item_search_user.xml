@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_user" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/primary" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/iv_user" android:layout_toEndOf="@id/iv_user" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/secondary" android:ellipsize="end" android:id="@id/tv_user_handle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/iv_user" android:layout_below="@id/tv_name" android:layout_toEndOf="@id/iv_user" />
+</RelativeLayout>

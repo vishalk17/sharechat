@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/toolbar" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_margin="4.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <sharechat.library.ui.textSwitcher.AdvTextSwitcher android:textSize="16.0sp" android:textColor="@color/dark_secondary" android:layout_gravity="center_vertical" android:id="@id/tv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_here" android:layout_marginStart="@dimen/size10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:textSize="16.0sp" />
+    <ImageView android:id="@id/iv_search_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="@dimen/size10" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_search_explore" app:tint="@color/secondary" />
+</androidx.constraintlayout.widget.ConstraintLayout>

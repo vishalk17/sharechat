@@ -1,0 +1,26 @@
+{
+    "poslist": [
+        {
+            "adtype": 1,
+            "placeid": "1.314.1.1",
+            "info": [
+                {
+                    "name": "mi",
+                    "parameter": "1.314.1.1",
+                    "weight": 7
+                },
+                {
+                    "name": "fb",
+                    "parameter": "201337163804138_201337200470801",
+                    "weight": 6
+                },
+                {
+                    "name": "ab",
+                    "parameter": "ca-app-pub-4062377952200160/9048301073",
+                    "weight": 9
+                }
+            ]
+        }
+    ],
+    "extend":""
+}

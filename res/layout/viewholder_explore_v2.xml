@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/cd_parent_view" android:background="@color/secondary_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:cardCornerRadius="6.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/parent_preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/rl_user_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="8.0dip">
+                    <FrameLayout android:id="@id/fl_user_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_profile" android:background="@drawable/bg_circle_black" android:padding="1.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+                        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_post_user_verified" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_badge_tick_blue" />
+                    </FrameLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/secondary" android:ellipsize="end" android:id="@id/tv_user_name" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/fl_user_image" android:fontFamily="sans-serif-medium" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/fl_user_image" />
+                    <in.mohalla.sharechat.common.views.mention.CustomMentionTextView android:textSize="12.0sp" android:textColor="@color/primary" android:ellipsize="end" android:id="@id/tv_post_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/fl_user_image" android:layout_below="@id/tv_user_name" android:layout_alignLeft="@id/tv_user_name" android:lineSpacingExtra="1.0sp" android:layout_toEndOf="@id/fl_user_image" android:layout_alignStart="@id/tv_user_name" />
+                </RelativeLayout>
+                <in.mohalla.sharechat.common.views.PostPreviewView android:id="@id/post_preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/double_tap_animation" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="end|center|top" android:id="@id/profile_pinned_post_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/ic_profile_grid_pinned_post" android:layout_marginEnd="8.0dip" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <ImageView android:layout_gravity="end" android:id="@id/cv_pin_post" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_pinned_post_dialog" />
+</FrameLayout>

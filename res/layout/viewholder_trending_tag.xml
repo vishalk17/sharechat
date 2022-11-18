@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="140.0dip" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <in.mohalla.sharechat.common.views.PostPreviewView android:id="@id/post_preview_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:id="@id/tv_tag_name" android:background="@drawable/rect_gradient_top_bottom" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="6.0dip" android:maxLines="2" android:layout_alignParentBottom="true" android:fontFamily="sans-serif-medium" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center" android:id="@id/image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_group_views" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/primary" android:ellipsize="end" android:layout_gravity="center" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="dhcvdvcgsvcgsg" android:maxLines="1" />
+</LinearLayout>

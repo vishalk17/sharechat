@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView android:id="@id/admob_native_new" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.gms.ads.nativead.MediaView android:id="@id/unified_media_view" android:background="@color/overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/native_ad_content" android:background="@color/overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/video_grid_ad_footer_include" />
+        <include layout="@layout/native_ad_cta" />
+    </LinearLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

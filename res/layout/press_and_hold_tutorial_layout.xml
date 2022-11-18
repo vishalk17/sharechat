@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_press_and_hold" android:background="@drawable/bg_press_and_hold" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="bottom" android:id="@id/press_and_hold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="200.0dip" android:layout_marginStart="96.0dip" app:srcCompat="@drawable/ic_press_and_hold" />
+    <TextView android:textColor="@color/secondary_bg" android:gravity="center" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="152.0dip" android:text="@string/press_hold" android:layout_marginStart="80.0dip" />
+</FrameLayout>

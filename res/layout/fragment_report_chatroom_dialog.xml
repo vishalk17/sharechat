@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/report_user_parent" android:background="@color/secondary_bg" android:paddingLeft="16.0dip" android:paddingTop="@dimen/button_text_size" android:paddingRight="16.0dip" android:paddingBottom="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="@color/primary" android:id="@id/tv_report_title" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_user_heading" />
+        <RadioGroup android:orientation="vertical" android:id="@id/rg_report" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report_profile_pic" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_inappropriate_chatroom_name" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report1" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_inappropriate_chatroom_pic" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report2" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_abusive_language" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report3" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_sexually_explicit_discussions" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report4" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_option1" />
+            <RadioButton android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="start|center" android:id="@id/rb_report_other" android:padding="@dimen/button_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report_other" />
+        </RadioGroup>
+        <EditText android:enabled="false" android:id="@id/et_report_other" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/report_user_something_else_hint" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/secondary_bg" android:gravity="center" android:id="@id/tv_report_submit" android:background="@drawable/background_red_fill" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/feedcard_element_radius" android:text="@string/post_bottom_report_text" />
+    </LinearLayout>
+</FrameLayout>

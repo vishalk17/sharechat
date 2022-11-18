@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/cl_root_view" android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@android:color/white">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/secondary_bg" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:titleTextColor="@color/primary" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:background="@color/dark_primary" android:layout_width="fill_parent" android:layout_height="48.0dip" app:tabIndicatorColor="@color/link" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <in.mohalla.sharechat.common.views.CustomViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

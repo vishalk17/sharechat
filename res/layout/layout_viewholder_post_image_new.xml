@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:id="@id/fl_post_image" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/barrier_post_top" app:resize_mode="fixed_width">
+        <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_post_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ViewStub android:layout_gravity="bottom" android:id="@id/stub_post_see_full" android:layout="@layout/layout_post_content_full_post_non_merge" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/barrier_post_content" />
+        <ViewStub android:id="@id/stub_post_blur_layout" android:layout="@layout/layout_post_content_blur_warning" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:layout_gravity="center" android:id="@id/stub_post_image_download" android:layout="@layout/layout_image_download_button" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <ViewStub android:layout_gravity="start|center|top" android:id="@id/stub_post_image_info" android:layout="@layout/layout_image_image_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" />
+        <ProgressBar android:layout_gravity="bottom" android:id="@id/pb_post_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal" style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal.NoPadding" />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+</merge>

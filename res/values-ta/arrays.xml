@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_strings">
+        <item>வருடங்கள்</item>
+        <item>மாதங்கள்</item>
+        <item>நாட்கள்</item>
+        <item>மணிநேரங்கள்</item>
+        <item>நிமிடங்கள்</item>
+        <item>விநாடிகள்</item>
+    </string-array>
+</resources>

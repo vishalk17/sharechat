@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarSize" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_chat_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <androidx.appcompat.widget.AppCompatImageButton android:id="@id/ib_toolbar_search_back" android:background="?selectableItemBackgroundBorderless" android:layout_width="40.0dip" android:layout_height="40.0dip" android:rotationY="@integer/ld_mirror_flip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_toolbar_back_24dp" app:tint="@color/primary" />
+                <Space android:id="@id/space" android:layout_width="24.0dip" android:layout_height="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:background="@null" android:layout_width="0.0dip" android:layout_height="40.0dip" app:collapseIcon="@drawable/ic_arrow_back_black_24dp" app:iconifiedByDefault="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/ib_reply_mic" app:layout_constraintStart_toEndOf="@id/space" app:layout_constraintTop_toTopOf="parent" app:queryBackground="@color/transparent" app:queryHint="@string/search" app:searchIcon="@null">
+                    <requestFocus />
+                </androidx.appcompat.widget.SearchView>
+                <sharechat.library.ui.customImage.CustomImageView android:id="@id/ib_reply_mic" android:background="?selectableItemBackgroundBorderless" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_mic_white_24dp" app:tint="@color/primary" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@color/secondary_bg" app:tabIndicatorColor="@color/link" app:tabIndicatorHeight="2.0dip" app:tabSelectedTextColor="@color/link" app:tabTextAppearance="@style/HomeTabLayoutTextAppearance" app:tabTextColor="@color/primary" />
+        <View android:id="@id/margin_below_recent_search" android:background="@color/system_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <View android:id="@id/margin_above_recent_search" android:background="@color/system_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_recent_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/compose_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar_search" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

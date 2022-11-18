@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center" android:id="@id/anim_container" android:background="@drawable/group_tutorial_bg_rect_top_rounded_blue" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.exoplayer2.ui.PlayerView android:id="@id/player_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,328:256" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:shutter_background_color="@color/link" app:use_controller="false" />
+            <ImageView android:id="@id/iv_cross" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:tint="@color/secondary_bg" android:layout_alignParentRight="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_circle_close" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:gravity="center_vertical" android:background="@drawable/bg_rect_white_bottom_rounded" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/anim_container">
+            <RelativeLayout android:id="@id/rl_user_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <sharechat.library.ui.customImage.CustomImageView android:id="@id/iv_user" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="2.0dip" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_badge" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="2.0dip" android:layout_alignRight="@id/iv_user" android:layout_alignBottom="@id/iv_user" android:layout_alignEnd="@id/iv_user" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondary" android:id="@id/tv_role_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_toRightOf="@id/iv_user" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_user" />
+            </RelativeLayout>
+            <View android:id="@id/dotted_underline" android:background="@drawable/line_horizontal_dotted" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/rl_user_container" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/primary" android:id="@id/tv_rules_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/dotted_underline" />
+            <RelativeLayout android:id="@id/rl_action_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_action" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" app:srcCompat="@drawable/ic_delete_posts" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/primary" android:id="@id/tv_action_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_action" android:lineSpacingExtra="2.0sp" android:layout_toEndOf="@id/iv_action" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/secondary" android:id="@id/tv_action_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/iv_action" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

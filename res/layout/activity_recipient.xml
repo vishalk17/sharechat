@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:background="@color/secondary_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetLeft="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip">
+            <androidx.appcompat.widget.SearchView android:id="@id/search_view" android:background="@drawable/shape_rectangle_rounded_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_marginEnd="16.0dip" app:iconifiedByDefault="false" app:queryBackground="@color/transparent" app:queryHint="@string/search_profiles" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

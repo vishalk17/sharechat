@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_video_actions" android:paddingBottom="56.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/follow_v2_included" android:visibility="gone" layout="@layout/layout_follow_v2_video" />
+    <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom" android:id="@id/tv_post_share" app:iconSize="@dimen/size_video_medium" style="@style/VideoPlayerActionButtonStyle" />
+    <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom|center" android:id="@id/tv_post_comment" app:iconSize="@dimen/size_video_medium" style="@style/VideoPlayerActionButtonStyle" />
+    <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom" android:id="@id/tv_post_like" app:iconSize="@dimen/size_video_medium" style="@style/VideoPlayerActionButtonStyle" />
+    <in.mohalla.sharechat.common.views.PostBottomActionContainer android:layout_gravity="bottom" android:id="@id/tv_post_favourite" app:iconSize="@dimen/size_video_medium" style="@style/VideoPlayerActionButtonStyle" />
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_audio_convert" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <sharechat.library.ui.customImage.CustomImageView android:layout_gravity="center_horizontal" android:id="@id/ic_audio_convert_thumb" android:layout_width="40.0dip" android:layout_height="40.0dip" app:srcCompat="@drawable/ic_compose_audio" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_audio_convert_text" android:padding="2.0dip" android:layout_width="40.0dip" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/cv_link_action_fab" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <in.mohalla.sharechat.common.views.customText.CustomTextView android:textSize="12.0sp" android:textColor="@color/secondary_bg" android:ellipsize="end" android:gravity="center" android:id="@id/tv_text" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

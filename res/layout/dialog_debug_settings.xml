@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="400.0dip" app:cardBackgroundColor="@color/secondary_bg">
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_root_editbox" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/secondary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_settings" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/only_in_debug_mode" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/api_gateway_base_url" />
+                <EditText android:ellipsize="middle" android:id="@id/debug_api_gateway_baseurl_et" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                <CheckBox android:id="@id/check_show_meta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_meta" />
+                <CheckBox android:id="@id/check_show_post_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_post_id" />
+                <CheckBox android:id="@id/check_show_group_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/show_group_id" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="16.0sp" android:textColor="@color/secondary" android:gravity="center" android:id="@id/tv_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/please_restart_app" android:layout_below="@id/card_view" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_below="@id/tv_msg">
+        <androidx.appcompat.widget.AppCompatButton android:textColor="@color/secondary_bg" android:id="@id/debug_cancel_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" app:backgroundTint="@color/color_failure" />
+        <androidx.appcompat.widget.AppCompatButton android:textColor="@color/secondary_bg" android:id="@id/debug_submit_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/submit_signup" android:layout_weight="1.0" app:backgroundTint="@color/success" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/compose_container" android:background="@color/system_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="15.0sp" android:textColor="@color/primary" android:id="@id/tv_heading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/top_discussions" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:layout_constraintTop_toTopOf="parent" style="@style/subheadBoldManRope" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_posts" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingStart="16.0dip" app:layout_constraintTop_toBottomOf="@id/tv_heading" />
+</androidx.constraintlayout.widget.ConstraintLayout>
