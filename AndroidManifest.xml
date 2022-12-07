@@ -28,7 +28,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
-    <permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE" />
     <uses-permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE"/>
     <queries>
         <intent>
@@ -57,7 +57,7 @@
         </intent>
         <package android:name="com.facebook.katana"/>
     </queries>
-    <permission android:description="@string/remote_permission_desc" android:label="@string/remote_permission_label" android:name="in.mohalla.sharechat.permission.REMOTE_LOGIN" android:protectionLevel="normal"/>
+    <permission android:description="@string/remote_permission_desc" android:label="@string/remote_permission_label" android:name="in.mohalla.sharechat.permission.REMOTE_LOGIN" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
@@ -236,7 +236,7 @@
                 <data android:mimeType="audio/*"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="uiMode" android:exported="true" android:name="in.mohalla.sharechat.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/MySplashTheme">
+        <activity android:configChanges="uiMode" android:exported="true" android:name="sharechat.feature.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/MySplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
