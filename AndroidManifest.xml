@@ -28,7 +28,7 @@
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
-    <permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE" />
+    <permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE"/>
     <uses-permission android:name="in.mohalla.sharechat.permission.MIPUSH_RECEIVE"/>
     <queries>
         <intent>
@@ -57,7 +57,7 @@
         </intent>
         <package android:name="com.facebook.katana"/>
     </queries>
-    <permission android:description="@string/remote_permission_desc" android:label="@string/remote_permission_label" android:name="in.mohalla.sharechat.permission.REMOTE_LOGIN" />
+    <permission android:description="@string/remote_permission_desc" android:label="@string/remote_permission_label" android:name="in.mohalla.sharechat.permission.REMOTE_LOGIN"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
@@ -236,7 +236,7 @@
                 <data android:mimeType="audio/*"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="uiMode" android:exported="true" android:name="sharechat.feature.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/MySplashTheme">
+        <activity android:configChanges="uiMode" android:exported="true" android:name="in.mohalla.sharechat.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/MySplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -248,6 +248,9 @@
                 <data android:host="sharechat.onelink.me" android:pathPrefix="/3i9Y" android:scheme="https"/>
             </intent-filter>
         </activity>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="sharechat.feature.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTop" android:name="in.mohalla.sharechat.login.numberverify.NumberVerifyActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="sharechat.feature.login.truecaller.TrueCallerPhoneVerificationActivity" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.accounts.AccountSettingActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
         <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.contacts.ContactActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.contacts.contactScreenV2.ContactActivityV2" android:screenOrientation="portrait"/>
@@ -267,12 +270,9 @@
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.sharepost.SharePostChatActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="in.mohalla.sharechat.web.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/FinestWebViewTheme.Light"/>
         <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.compose.camera.CameraActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
-        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="sharechat.feature.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.notification.main.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
         <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.home.languageChange.LanguageChangeActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.post.standalone.news.NativeWebViewActivity" android:screenOrientation="portrait"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTop" android:name="in.mohalla.sharechat.login.numberverify.NumberVerifyActivity" android:windowSoftInputMode="adjustResize"/>
-        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="sharechat.feature.login.truecaller.TrueCallerPhoneVerificationActivity" android:windowSoftInputMode="adjustResize"/>
         <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="in.mohalla.sharechat.videoplayer.VideoPlayerActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/ImmersiveTheme" android:windowSoftInputMode="adjustPan"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.wssaver.saverscreen.WsSaverActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="in.mohalla.sharechat.feed.moremedia.MoreFeedActivity" android:screenOrientation="portrait" android:theme="@style/ImmersiveTheme"/>
@@ -653,7 +653,6 @@
         <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="agoraudio,base,camera,camera_sdk,ffmpeg_kit,gamdfm,livestream,motion_video,react,shutter_android_core,spatial_audio,video_editor"/>
         <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
         <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
-        <meta-data android:name="com.android.vending.splits" android:resource="@1963327488"/>
         <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
     </application>
 </manifest>
