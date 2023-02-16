@@ -188,6 +188,7 @@
                 <data android:pathPrefix="/family"/>
                 <data android:pathPrefix="/livestream"/>
                 <data android:pathPrefix="/live/"/>
+                <data android:pathPrefix="/tournament"/>
                 <data android:scheme="https"/>
                 <data android:scheme="http"/>
             </intent-filter>
@@ -348,11 +349,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <receiver android:enabled="true" android:exported="true" android:name="in.mohalla.sharechat.common.otpautoread.OtpBroadcastReciever">
-            <intent-filter>
-                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
-            </intent-filter>
-        </receiver>
         <service android:enabled="true" android:exported="false" android:name="in.mohalla.sharechat.common.utils.download.DownloadNotificationService"/>
         <service android:name="org.eclipse.paho.android.service.MqttService"/>
         <service android:enabled="true" android:exported="false" android:name="sharechat.feature.compose.service.PostUploadService"/>
@@ -441,6 +437,7 @@
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.private_consultation.PrivateConsultationNotificationActionActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.listing.SeeAllConsultationListingActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.discovery.available_astrologers.AvailableAstrologersActivity" android:theme="@style/Theme.ExplicitTransparent"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.dailyHoroscope.DailyHoroscopeActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.audio_player.ChatRoomAudioPlayerActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.leaderboard.ChatRoomLeaderBoardActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.levels.ChatRoomLevelsActivity" android:screenOrientation="portrait"/>
@@ -492,7 +489,7 @@
         <activity android:exported="false" android:name="sharechat.feature.albums.NewAlbumActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
         <activity android:exported="false" android:name="sharechat.feature.albums.AlbumActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
         <activity android:exported="false" android:name="sharechat.feature.albums.AlbumCoverPictureSelectionActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
-        <receiver android:enabled="true" android:exported="true" android:name="sharechat.feature.login.utils.OtpBroadcastReciever">
+        <receiver android:enabled="true" android:exported="true" android:name="sharechat.feature.login.utils.OtpBroadcastReciever" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
             </intent-filter>
@@ -734,7 +731,7 @@
         <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="agoraudio,base,camera,camera_sdk,ffmpeg_kit,gamdfm,livestream,motion_video,react,shutter_android_core,spatial_audio,video_editor"/>
         <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
         <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_STANDALONE_APK"/>
-        <meta-data android:name="com.android.vending.splits" android:resource="@1963786240"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@1963786240"/>
         <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
     </application>
 </manifest>
